@@ -1,0 +1,95 @@
+extends includes/layout.pug
+
+block title
+    | 客户管理
+
+block bkheader
+    script(src='js/vendor/holderjs/holder.min.js')
+
+block content
+    .banner.banner-about(style="background-image:url('img/temp/banner-about.jpg')")
+        .container
+            p.txt 让我们一起
+                br
+                | 看见更好
+                br
+                | 的未来
+    
+    .page.page-contact
+        section.s1.container
+            .title-section
+                h2 联系我们
+            .row
+                .col-md
+                    .office
+                        h2 广州 GUANGZHOU
+                        address 广东省广州番禺市桥珠坑村橫基路2号108
+                        address 108, LS-Sci Building, No.2 Hengji Road, Zhukeng Shiqiao, Panyu Guangdong, China 511400
+                        p +86 20 3999 3895
+                        p info@harboryltd.com
+                .col-md
+                    .office
+                        h2 香港 HONGKONG
+                        address 香港金钟金钟道 89 号力宝中心第一座 10 楼 1003
+                        address 1003, Block 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong
+                        p +86 20 3999 3895
+                        p info@harboryltd.com
+
+        section.s2.container
+            div.des
+                p 下面填写和提交表单,我同意我提供的个人资料可以与 HARBORY 共享,并同意 HARBORY 可通过电话或电子邮件联系的渠道联系我们。 任何使用我的个人资料的行为，均须遵守有关及适用的资料私隐法例.
+                p By filling out and submitting the form below, I agree that the personal data that I provide can be shared with Harbory and I agree to becontacted via phone or email by Harbory. Any use of my personal data will take place in compliance with the relevant and applicabledata privacy laws.
+                
+            form.contactform(action="contact.html", method="post")           
+                .form-group             
+                    label.col-form-label(for='firstname') 姓/First Name 
+                        span *                  
+                    input#firstname.form-control(type='text',name="firstName",required="required")                 
+                      
+                .form-group             
+                    label.col-form-label(for='firstname') 名/Last Name 
+                        span *                  
+                    input#lastname.form-control(type='text',name="lastName",required="required")        
+                .form-group
+                    label.col-form-label(for='inputEmail') 邮箱/Email Address 
+                        span *                  
+                    input#inputEmail.form-control(type='email',name="inputEmail",required="required")
+                .form-group             
+                    label.col-form-label(for='company') 公司名/Company
+                        span *                  
+                    input#company.form-control(type='text',name="company",required="required")        
+
+                .form-group             
+                    label.col-form-label(for='country') 国家/Country
+                        span *                  
+                    input#country.form-control(type='text',name="country",required="required")        
+                .form-group             
+                    label.col-form-label(for='country') 联系电话/Phone No.
+                        span *                  
+                    input#country.form-control(type='text',name="country",required="required")        
+                                
+                .form-group
+                    label.col-form-label(for='products') 感兴趣的产品/Product of Interest
+                        span *         
+                    select#products.form-control(name="products",required="required")
+                        option(value="") 请选择
+
+                
+                .form-group
+                    label.col-form-label(for='message') 邮件给我们/Email to Us*
+                        span *
+                    textarea#message.form-control(name="message",  rows="8",,required="required", placeholder="请告知我们您具体的产品需求以及应用范围/ Please Inform Us Of Your Specific Requirements And Application Scope")
+                
+                
+            
+                                        
+                footer.card-footer.text-center
+                    button.btn.btn-send(type='submit')
+                        i.iconfont.icon-save 
+                        | 提交/Submit
+                          
+
+
+        
+block bkfooter
+    

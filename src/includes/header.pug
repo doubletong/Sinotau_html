@@ -1,26 +1,163 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.navbar-primary
-    a#openav.navbar-brand(href='javascript:void(0);')
-        i.iconfont.icon-menu
-    #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-            li.nav-item.active
-                a.nav-link(href='index.html')
-                    | 首页 
-                    span.sr-only (current)
-            li.nav-item
-                a.nav-link(href='links.html') 链接
-            li.nav-item
-                a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') 待建
-        ul.navbar-nav.navbar-right
-            li.nav-item.dropdown
-                a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    | 你好，Admin
-                .dropdown-menu(aria-labelledby='navbarDropdown')
-                    a.dropdown-item(href='#') 修改密码
-                    a.dropdown-item(href='#') Another action
-                    .dropdown-divider
-                    a.dropdown-item(href='#') Something else here
-            li.nav-item
-                a.nav-link(href='/bbi-admin/loginOut.aspx')
-                    i.iconfont.icon-sign-out
-                    |  退出系统
+header.site-header
+    .container
+        .row.align-items-center
+            .col-auto
+                a.logo(href="/")
+                    img(src="img/logo.png")
+            .col
+                ul.mainav
+                    li
+                        a(href="index.html") 首页   
+                    li.hasnav(data-id='navbg0')
+                        a(href="about.html") 关于我们                          
+                    li.hasnav(data-id='navbg1')
+                        a(href="products.html") 产品   
+                    li
+                        a(href="news.html") 新闻                   
+                        
+            .col-auto
+                a#btnsearch.search(href="javascript:void(0);") 
+                    i.iconfont.icon-Search   
+            .col-auto
+                a.lang(href="#") EN
+            .col-auto.mobilemenu
+                .menu-toggle
+                    .one
+                    .two
+                    .three
+                 
+               
+    div#searchbox.searchbox
+        .container
+            form(action="search.html", method="get")
+                .row.align-items-center
+                    .col
+                        input#keywords(type="search", name="keywords",placeholder="请输入您要搜索的内容",required="required")
+                    .col-auto
+                        button.btn.btn-primary(type="submit") 确定
+    div#navbg0.nav-bg
+        .container
+            ul.subnav
+                li
+                    a(href="about.html") 关于我们   
+                li
+                    a(href="qualifications.html") 我们的资质
+                li
+                    a(href="job.html") 招贤纳士
+    div#navbg1.nav-bg
+        .tr
+            .container
+                .row
+                    .col-auto
+                        .icon
+                            i.iconfont.icon-filter
+                    .col
+                        .categories
+                            h3.title
+                                a(href="products.html") 空气过滤
+                            nav
+                                a(href="products.html")  聚丙烯熔喷过滤材料
+                                a(href="products.html")  复合纤维材料
+                                a(href="products.html")  中效袋式过滤材料
+                                a(href="products.html")  标准高效玻璃纤维过滤材料
+                                a(href="products.html")  高强度高效玻璃纤维过滤材料
+                                a(href="products.html")  玻纤袋式过滤材料
+        .tr
+            .container
+                .row
+                    .col-auto
+                        .icon
+                            i.iconfont.icon-filter2
+                    .col
+                        .categories
+                            h3.title
+                                a(href="products.html") 流体过滤
+                            h4.subtitle
+                                a(href="products.html") 过滤袋
+                            nav
+                                a(href="products.html")  针刺毡滤袋(POS/PES) 
+                                a(href="products.html")  尼龙单丝滤袋(NMS)
+                                a(href="products.html")  加长寿命型滤袋(POEM)
+                                a(href="products.html")  绝对精度滤袋(ABR)
+                                a(href="products.html")  高效吸油滤袋(DOA)
+                                a(href="products.html")  活性炭滤袋(ACM)
+                            h4.subtitle
+                                a(href="products.html") 过滤器
+                            nav
+                                a(href="products.html")  顶入式过滤器(FTPL/ETPL)
+                                a(href="products.html")  侧入式过滤器(FSDL/ESDL)
+                                a(href="products.html")  多袋式过滤器(EMBF)
+                                a(href="products.html")  塑料过滤器(EPBF)
+                                a(href="products.html")  芯式过滤器(HCH)
+                            
+                            h4.subtitle
+                                a(href="products.html") 滤芯
+                            nav
+                                a(href="products.html")  线绕滤芯(HSWC)
+                                a(href="products.html")  熔喷滤芯 (HMBC)
+                                a(href="products.html")  折叠膜滤芯(HPMC)
+                                a(href="products.html")  活性炭滤芯（HACC）
+                        
+                            h4.subtitle
+                                a(href="products.html") 针刺毡
+                            nav
+                                a(href="products.html")  聚丙烯滤布
+                                a(href="products.html")  聚酯滤布
+                                a(href="products.html")  加长寿命型滤布
+
+                            h4.subtitle
+                                a(href="products.html") 原配件
+                            nav
+                                a(href="products.html")  加强网
+                                a(href="products.html")  密封圈
+        .tr
+            .container
+                .row
+                    .col-auto
+                        .icon
+                            i.iconfont.icon-car
+                    .col
+                        .categories
+                            h3.title
+                                a(href="products.html") 汽车电子
+                            nav
+                                a(href="products.html")  车载安全
+                                a(href="products.html")  车载娱乐
+
+    div#overmenu.menu-over
+        ul.mobilenav
+            li
+                a(href="index.html") 首页   
+            li.hasnav
+                a(href="about.html") 关于我们  
+                ul.subnav
+                    li
+                        a(href="about.html") 关于我们   
+                    li
+                        a(href="qualifications.html") 我们的资质
+                    li
+                        a(href="job.html") 招贤纳士  
+
+            li.hasnav
+                a(href="products.html") 产品   
+                ul.subnav
+                    li
+                       a(href="products.html")  空气过滤
+                    li.hasnav
+                       a(href="products.html")  流体过滤
+                       ul.subnav
+                            li
+                                a(href="products.html")  过滤袋
+                            li
+                                a(href="products.html")  过滤器
+                            li
+                                a(href="products.html")  滤芯
+                            li
+                                a(href="products.html")  针刺毡
+                            li
+                                a(href="products.html")  原配件
+                    li
+                       a(href="products.html")  电子汽车
+            li
+                a(href="news.html") 新闻      
+    

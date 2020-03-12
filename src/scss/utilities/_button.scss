@@ -1,6 +1,28 @@
 .btn {
+  
+        border-radius: 10px;
+        background-color: rgb(2, 103, 209);
+       
+        padding: .3rem 1rem;
+      border:none;
+      
+      
     .iconfont {
         font-size: 14px;
+    }
+    &.btn-primary{
+        background-color: $color-primary;color: #fff;
+        &:hover{
+            background-color:darken($color-primary,10%);
+        }
+    }
+    &.btn-send{
+        background-color: $color-primary;color: #fff;
+        padding: .8rem 2rem;
+        border-radius: 0;
+        &:hover{
+            background-color:darken($color-primary,10%);
+        }
     }
 }
 

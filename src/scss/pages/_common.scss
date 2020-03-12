@@ -1,19 +1,24 @@
+
 body {
-    color: #666;
-    background-color: #f1f1f1;
+    color: #484848;
+    background-color: #fff;
     font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    padding-top: 50px;
+    padding-top: 45px;
     line-height: 1.8;
     font-size: rem(14);
+    text-align: justify;
     @include mq(md) {
-        padding-top: 65px;
+        padding-top: 70px;font-size: 1rem;
     }
     @include mq(lg) {
         font-size: rem(14);
         padding-top: 80px;
     }
     @include mq(xl) {
-        font-size: 1rem;
+        font-size: 1rem;padding-top: 100px;
+    }
+    @include mq(xxl) {
+        font-size: rem(18);
     }
 }
 
@@ -25,97 +30,103 @@ a {
         color: $color-primary;
     }
 }
-
+.container{
+    @include mq(xl) {
+        max-width: 1210px;
+    }
+}
 .page {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    @include mq(md) {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
 }
 
 .title-section {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background: url(../img/logo_min.png) no-repeat left -1px top .2rem;
+    padding-left: 2.8rem;
+    background-size: auto 38px;
     @include mq(md) {
-        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;background-size: auto auto; padding-left: 3.5rem;
     }
     h2 {
-        color: $color-primary;
-        font-size: rem(20);
-        margin: 0;
-        font-weight: normal;
+        line-height: 1.3;
+        color: #000;
+        font-size: rem(24);
+        margin: 0;       
+        font-weight: bold;
         @include mq(md) {
-            font-size: rem(24);
+            font-size: 2rem;
         }
     }
 }
 
 .banner {
-    height: 100px;
-    border-bottom: 2px $color-primary solid;
+    height: 200px;   
     background-color: #eaeef1;
-    background-size: auto 100px;
+    background-size: auto 200px;
     background-position: center center;
     background-repeat: no-repeat;
+    @include mq(md) {
+        height: 300px;
+        background-size: cover;
+    }
     @include mq(lg) {
-        height: 198px;
-        background-size: auto 198px;
+        height: 500px;
+        background-size: cover;
+    }
+    .container{
+        @include vertical-align(); 
+    }
+    .txt{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-primary;line-height: 1.6;
+        @include mq(md) {
+            font-size: 2rem;
+        }
+        @include mq(lg) {
+            font-size: 3rem;
+        }
+    }
+
+    &.banner-news{
+        height: 150px;
+        @include mq(md) {
+            height: 300px;
+           
+        }
+        @include mq(lg) {
+            height: 380px;
+        
+        }
+   
+        .txt{
+            text-align: right;
+            color: #fff;
+            
+        }
     }
 }
 
 .text-center {
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
 
 img {
     max-width: 100%;
-}
-
-.breadcrumb {
-    background-color: transparent;
-    font-size: rem(12);
-    padding: 0;
-    margin: 0;
-}
-
-.card { 
-    .expand{
-        display: block;
-    }
-    .compress{
-        display: none;
-    }
-    &.card-fixed {
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 9000;
-        width: 100%;
-        height: 100%;
-        .expand{
-            display: none;
-        }
-        .compress{
-            display: block;
-        }
-    }
- 
-    .card-title-v1{
-        .iconfont{
-            margin-right: .6rem;
-            font-size: rem(18);
-            color: $color-secondary;
-        }
-    }
-    
-}
-
-.table {
-    th{
-        font-weight: normal;
-        color: #333;
-        background-color: #f7f7f7;
-    }
-    td {
-        vertical-align: middle;
-        .btn {
-            margin-left: .3rem;
-        }
-    }
 }

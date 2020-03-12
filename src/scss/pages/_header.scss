@@ -1,36 +1,336 @@
 
 .site-header {
-    background-image: -webkit-gradient(linear,right top, left top,from(rgba(51,148,225,.18)),to(transparent));
-    background-image: linear-gradient(270deg,rgba(51,148,225,.18),transparent);
-    background-color: rgba(255, 255, 255, 0.1);
- 
+    background: #fff url(../img/bg_header.png) repeat-y center top;    
     position: fixed;
     left: 0;
     top: 0;
     z-index: 8000;
     width: 100%;
-    height: 50px;
-    box-shadow: 0 0 12px rgba(0,0,0,.15);
+    height: 45px; 
+    box-shadow: 0px 0px 32px 0px rgba(27, 101, 179, 0.22);   
+    background-size: auto 70%;
+      
     @include mq(md){
-        height: 65px;
+        height: 70px;  background-size: auto 100%;
+    }
+    @include mq(lg){
+        height: 80px;   background-size: auto 120px;
+    }
+    @include mq(xl){
+        height: 100px; 
+    }
+    .container,.row{
+        height: 100%;
     }
 
 
-
     .logo{
-        padding-top: .4rem;
+        display: block;
+        width: 100px;
         @include mq(md){
-            padding-top: .6rem;
+           width: 150px;
         }
+        @include mq(lg){
+            width: 160px;
+         }
+         @include mq(xl){
+            width: 400px;
+         }
         img{
-            height: 36px;
+          
             @include mq(md){
-                height: 46px;
+             
             }
         }
     
     }
         
-    
+    .mainav{
+        @include reset-list();     
+        display: none;
+     
+           height: 80px;
+            padding-left: 4rem;
+        @include mq(lg){
+            display: block; 
+        }
+         @include mq(xl){
+             height: 100px;padding-left: 0;
+         }
+        li{
+            display: inline-block;
+            padding: 0 rem(35);
+            position: relative; height: 100%;
+            @include mq(xl){
+                padding: 0 rem(40);
+            }
+            a{
+                display: block;
+                font-size: rem(18);
+                height: 100%;
+                line-height: 80px;
+                @include mq(xl){
+                    line-height: 100px;
+                }
+                &.active{
+                    border-bottom: 4px solid $color-primary;
+                    color: $color-primary;
+                }
+            }
+            
+        }
+    }
+    .lang{
+        border:1px $color-primary solid;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 0 .3rem;
+        color: $color-primary;
+    }
+    .search{
+        color: $color-primary;
+       
+        .iconfont{
+            font-size: 1rem;
+            @include mq(md){
+                font-size: rem(20);
+             }
+        }
+    }
 
+    .searchbox{
+        background-color: #2e3033;
+        position: absolute;
+        left: 0;
+      
+        width: 100%;
+   
+        z-index: 126;
+        padding-top: rem(28);
+        padding-bottom: rem(28);
+        display: none;
+        top: 45px;
+        @include mq(md){
+            top: 70px;
+        }
+        @include mq(lg){
+            top: 80px;
+        }     
+        @include mq(xl){
+            top: 100px;
+        }
+        form{
+          
+            border-radius: 10px;
+            background-color:#232528;            
+            height: 54px;
+            padding: 0 .8rem;
+            @include mq(md){
+                height: 98px; padding: 0 2rem;
+            }
+           .row{
+               height: 100%;
+           }
+             input{
+                 border:none;
+                 background-color: transparent;
+                 color: #fff;
+                 font-size: rem(18);
+                 width: 100%;
+                 outline: none;
+                 @include mq(md){
+                    font-size: rem(24);
+                }
+             }
+              
+        }
+      }
+
+    .mobilemenu {
+        @include mq(lg) {
+            display: none;
+        }
+        
+        .menu-toggle {
+            width: 28px;
+            cursor: pointer;
+            &.on{
+                .one {
+                    transform: rotate(45deg) translate(3px, 5px);
+                }
+                .two {
+                    opacity: 0;
+                }
+                .three {
+                    transform: rotate(-45deg) translate(6px, -8px);
+                }
+            }
+        }
+
+    }
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary;
+        margin: 6px auto;
+        backface-visibility: hidden;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+      
+      .nav-bg{          
+          background-color: #2e3033;
+          position: absolute;
+          z-index: 0;
+          left: 0;
+          width: 100%;
+          top: 100px;
+          display: none;
+          max-height: calc(100vh-100px);
+          overflow-y: auto;
+          .subnav{
+         
+            text-align: center;        
+            @include reset-list();
+         
+            li{
+                display: inline-block;
+                padding: 0;
+                a{
+                    padding: 0 2rem;
+                    line-height: 88px;
+                    color: #7b8088;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }                
+        }
+
+        .tr{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            &:nth-of-type(2){
+                background-color: #232528;
+            }
+        }
+        .icon{
+            line-height: 1;
+            .iconfont{
+                font-size: 3rem;
+            }
+        }
+      
+        .title{
+            color:#7b8088;
+            font-size: rem(24);
+            margin-bottom: 1rem;
+            margin-top: .3rem;
+        }
+        nav{
+            margin-bottom: 1rem;
+            a{
+                margin-right: 3rem;
+                font-size: rem(14);
+                color: #999;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+     
+      }
+
+      
+.menu-over {
+    position: fixed;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: calc(100% - 45px);
+    z-index: 1000;
+    background-color: #fff;
+    display: none;
+    @include mq(md) {
+        top: 70px;
+        height: calc(100% - 70px);
+    }
+    @include mq(lg) {
+        top: 90px;
+        height: calc(100% - 90px);
+    }
+    @include mq(xl) {
+        top: 100px;
+        height: calc(100% - 100px);
+    }
+    ul.mobilenav {
+        list-style: none;
+        margin: 0;
+        padding: 2rem 0 0 0;
+        height: 100%;
+        overflow-y: auto;
+        &>li {
+            position: relative;
+            transition: all .2s;
+            &>a {
+                display: block;
+                color: #333;
+                position: relative;
+                padding: .6rem 1rem;
+                border-bottom: 1px #ddd solid;
+                @include hover {
+                    color: $color-primary;
+                }
+                &.active {
+                    color: $color-primary;
+                }
+            }
+            &.down {
+                position: relative;
+                &::after {
+                    content: " ";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid #999;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    position: absolute;
+                    top: 21px;
+                    right: 1rem;
+                    z-index: 5000;
+                }
+            }
+            &.open {
+                &::after {
+                    border: 6px solid #999;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    top: 14px;
+                }
+            }
+            .subnav {
+                @include reset-list;
+                display: none;
+                li {
+                    padding-left: 2rem;
+                    a {
+                        display: block;
+                        padding: .5rem 1rem .5rem 0;
+                        border-bottom: 1px #eee solid;
+                        color: #666;
+                        font-size: rem(14);
+                    }
+                }
+            }
+        }
+    }
+
+}
 }

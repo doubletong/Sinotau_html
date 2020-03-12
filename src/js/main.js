@@ -1,66 +1,38 @@
 
 
-
-var app = function() {
-       var st =  void 0;
-       var wrapper = void 0;
-       var menu = void 0;
-//     var menuItems = void 0;
-
-       var init = function init() {
-         wrapper = document.getElementById('wrapper');
-         menu = document.getElementById('openav');
-         st = document.getElementById("sitetime");
-//         menuItems = document.querySelectorAll('.nav__list-item');
-
-         applyListeners();
-      };
-
-       var applyListeners = function applyListeners() {
-           console.log(wrapper);
-           menu.addEventListener('click', function() { 
-               return toggleClass(wrapper, 'wrap-nonav'); 
-            });
-
-           if(st){           
-            st.innerHTML = new Date();
-           }
-            
-       };
-
-    var toggleClass = function toggleClass(element, stringClass) {
-        if (element.classList.contains(stringClass))
-            element.classList.remove(stringClass);
-        else
-            element.classList.add(stringClass);
-        };
-
-     init();
-}();
-
-
 $(document).ready(function() {
 
 
-    $("#mainmenu .down-nav>a").click(function(e){
-        e.preventDefault();
-        var $that = $(this);
-        $that.next('.submenu').slideToggle(function(){
-            $that.closest('li.down-nav').toggleClass('open')
-        });
+    $("#btnsearch").click(function(e){
+        e.preventDefault();        
+        $("#searchbox").slideToggle();
     })
 
+    $(".hasnav").hover(function(e){     
+        var i = $(this).attr('data-id');       
+        $("#" + i).fadeIn();
+    },function(){
+        var i = $(this).attr('data-id'); 
+        $("#" + i).fadeOut();
+    })
 
+    $('.nav-bg').hover(function(e){
+        $(this).stop().fadeIn();
+    },function(){
+        $(this).stop().fadeOut();
+    })
 
-    $('a.expand').click(function (e) {
-        $(this).closest('.card').addClass('card-fixed');     
-        e.preventDefault();
+    $(".menu-toggle").on('click', function() {
+        $(this).toggleClass("on");
+        $("#overmenu").slideToggle();
     });
-    $('a.compress').click(function (e) {
-        $(this).closest('.card').removeClass('card-fixed');    
-        e.preventDefault();
-    });
 
+    $(".mobilenav li.hasnav>a").on("click", function(e) {
+        "use strict";
+        e.preventDefault();
+        $(this).next('.subnav').slideToggle();
+
+    });
 
 
     var url = location.pathname;

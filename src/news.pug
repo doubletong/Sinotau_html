@@ -1,0 +1,94 @@
+extends includes/layout.pug
+
+block title
+    | 新闻
+
+block content
+    .banner.banner-news(style="background-image:url('img/temp/banner-news.jpg')")
+        .container
+            p.txt NEWS
+                br
+                | 新闻
+
+   
+
+
+    .page.page-news
+        section.s1.container
+            div.recommend
+                .row
+                    .col-md
+                        a(href="news_detail.html")
+                            img(src="img/temp/news01.jpg")
+                    .col-md
+                        .des
+                            h3.title 
+                                a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                            .node 
+                                i.iconfont.icon-time
+                                | 2020.03.25 ~ 27
+                            p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
+                          
+        section.s2.container
+            .newslist
+                .row
+                    .col-md-6
+                        a.item(href="news_detail.html")
+                            .pic
+                                img(src="img/temp/news02.jpg")
+                            .txt
+                                h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
+                                time 
+                                    i.iconfont.icon-time
+                                    | 2020.03.09 ~ 03.11
+                    .col-md-6
+                        a.item(href="news_detail.html")
+                            .pic
+                                img(src="img/temp/news03.jpg")
+                            .txt
+                                h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
+                                time 
+                                    i.iconfont.icon-time
+                                    | 2020.03.09 ~ 03.11
+                    .col-md-6
+                        a.item(href="news_detail.html")
+                            .pic
+                                img(src="img/temp/news02.jpg")
+                            .txt
+                                h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
+                                time 
+                                    i.iconfont.icon-time
+                                    | 2020.03.09 ~ 03.11
+                    .col-md-6
+                        a.item(href="news_detail.html")
+                            .pic
+                                img(src="img/temp/news03.jpg")
+                            .txt
+                                h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
+                                time 
+                                    i.iconfont.icon-time
+                                    | 2020.03.09 ~ 03.11
+          
+       
+        footer.news-footer 
+                ul.pagination
+                    li.page-item.disabled
+                        a.page-link(href='#', tabindex='-1', aria-disabled='true') Previous
+                    li.page-item
+                        a.page-link(href='#') 1
+                    li.page-item.active(aria-current='page')
+                        a.page-link(href='#')
+                            | 2                          
+                    li.page-item
+                        a.page-link(href='#') 3
+                    li.page-item
+                        a.page-link(href='#') Next
+        
+block bkfooter
+    script.
+        $(function(){
+        $("#cbSelectAll").change(function(){
+        var isSelected = $(this).prop("checked");
+        $('td input[type="checkbox"]').prop("checked",isSelected)
+        })
+        })

@@ -4,7 +4,7 @@ html.no-js(lang='')
     meta(charset='utf-8')
     title 
        block title 
-       | -控制台
+       | -HARBORY
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='manifest', href='site.webmanifest')
@@ -12,21 +12,15 @@ html.no-js(lang='')
     // Place favicon.ico in the root directory
     meta(name='theme-color', content='#fafafa')
     link(href='fonts/iconfont.css', rel='stylesheet')
+    block bkheader
     link(href='css/styles.min.css', rel='stylesheet')
 
-    block bkheader
-      
   body
-    #wrapper.wrapper
-      include leftnav.pug
-      
-      section#rightcol.rightcol
-        include header.pug
+    include header.pug   
+
+    block content
         
-        .main-content          
-          block content
-        
-        include footer.pug
+    include footer.pug
     
     script(src='js/vendor/modernizr-3.8.0.min.js')
     script(src='js/vendor/jquery-3.4.1.min.js')

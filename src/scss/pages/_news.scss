@@ -1,66 +1,104 @@
-.mapsite{
-   
-    padding-bottom: 1rem;
- 
-    color: #ccc;
-    a{
-        color: #999;
-    }
-
-    span{
-        color: #333;
-    }
-}
 .page-news {
-    padding-top: 2rem;
-    .news-list{
+    .s1{
+        margin-bottom: 2rem;
+        @include mq(md){
+            margin-bottom: 3rem;
+        }
+        @include mq(lg){
+            margin-bottom: 4rem;
+        }
+      
+        .recommend{
+            background-color: #f6f8fb;
+        }
+        .des{
+            padding:1rem; 
+            @include mq(md) {
+                padding:1rem 1rem 1rem 0rem; 
+            }
+            @include mq(lg) {
+                padding:1.5rem 2rem 1rem 1.5rem; 
+            }
+            .title{
+                font-size: rem(24);
+                @include mq(md) {
+                    font-size: rem(30);
+                }
+                a{
+                    color: #000;
+                }
+            }
+            p{
+                color: #818181;      
+                @include mq(md) {
+                    display: none;
+                }
+                @include mq(lg) {
+                    display: block;
+                }        
+              
+            }
+            .node{
+                padding: .3rem 0 1rem;
+                @include mq(md) {
+                    padding: .5rem 0 1rem;
+                }
+                .iconfont{
+                    color:#acccee;
+                    margin-right: .5rem;
+                }            
+            }
+        }
+    }
+    .s2{
+        .newslist{
+           
+            @include mq(lg) {
+                margin-bottom: 2rem;
+            }
+            @include mq(xl) {
+                margin-bottom: 3rem;
+            }
+        }
         .item{
-            padding: 1rem;
-            background-color: #fff;
-            margin-bottom: 20px;               
-            a{
-                display: grid;
-                grid-template-columns: 1fr 3fr;
-                grid-gap: 20px;     
-                font-size: 14px;
-                line-height: 1.8;
-                transition: all .25s;        
-
-       
+            display: block;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 10px 0px rgba(1, 104, 209, 0.12);
+            margin-bottom: rem(20);
+              
+            .pic{
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    transition: all .2s;
+                }
+            }
+            .txt{
+                padding: 1rem;
+                @include mq(md) {
+                    padding: 1.5rem rem(25);
+                }
+            }
+            .title{
+                font-size: rem(18);
+                font-weight: normal;
+                @include mq(md) {
+                    font-size: rem(20);
+                }
+            }
+            time{
+                font-size: 1rem;
+                .iconfont{
+                    color:#acccee;
+                    margin-right: .8rem;
+                }
+            }
+            &:hover{
                 .pic{
+                   
                     img{
-                        transition: all .25s;
-                    }
-                }
-                .txt{
-                    .title{
-                        font-size: rem(24);font-weight: normal;margin: 0;
-                        color: #333;
-                    }
-                    .note{
-                        div{
-                            display: inline-block;
-                            color: #999; margin-right: 20px;
-                        }
-                    }
-                    .summary{
-                        color: #666;
-                        padding-top: 12px;
-                    }
-                }
-               
-                .count{                  
-                    color: #F60;
-                }
-                @include hover{
-                    .title{
-                       
-                        color:$color-primary;
-                    }
-                    .pic{
-                        img{
-                            transform: scale(1.05)
-                        }
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -69,19 +107,28 @@
 }
 
 .page-news-detail{
-    padding-top: 1rem;
-    .news-content{
-        background-color: #fff; padding: 2rem;
-        margin-bottom: 2rem;
-        img{
-            max-width: 100%;
-        }
-        .page-title{
+    article{
+        header{
             text-align: center;
-            margin-bottom: 3rem;
-            .note{
-                color: #999;
+            margin-bottom: 2rem;
+            @include mq(md) {
+                margin-bottom: 3rem;
+            }
+            h1{
+                font-size: rem(24);
+                margin-bottom: 2rem;
+                @include mq(md) {
+                    font-size: rem(30);  margin-bottom: 1rem;
+                }
+            }
+            time{
+                .iconfont{
+                    color: #acccee;
+                    margin-right: .8rem;
+                }
             }
         }
     }
+    
+  
 }

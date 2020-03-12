@@ -1,9 +1,27 @@
 
 
 
-.pagination {
-   
-        margin-bottom:0;
+.pagination {   
+        @include reset-list();
+        text-align: center;
+        padding: 2rem 0;
+        li{
+                display: inline-block;
+                margin: 0 .4rem;
+                a{
+                        display: block;
+                        padding: .2rem .8rem;
+                        border:1px $color-primary solid;
+                        border-radius: 3px;
+                        font-size: 1rem;
+                }
+                &.active{
+                        a{
+                                background-color: $color-primary;
+                                color: #fff;
+                        }
+                }
+        }
     
  }
  

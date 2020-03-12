@@ -1,62 +1,39 @@
 .page-contact {
-    background-color: #fff;
-    padding: 5rem 3rem;
-    margin-bottom: 1rem;
-    .twocol {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        .company {
-            padding-right: 2rem;
-            text-align: right;
-            span {
-                font-size: rem(12);
-            }
+    .s1{
+        margin-bottom: 4rem;
+        .office{
+            text-align: left;
         }
     }
-    .formsent {
-        padding-left: 2rem;
-        ul {
-            @include reset-list;
+
+    .s2{
+        .des{
             margin-bottom: 2rem;
-            li {
-                margin-bottom: 1rem;
+        }
+        .contactform{
+            label.col-form-label{
+                display: block;
+                font-weight: bold;
+                span{
+                    color: #ff3f3f;
+                }
+            }
+            .form-group{
+                margin-bottom: 1.5rem;
+                @include mq(md){
+                    margin-bottom: 3rem;
+                }
+            }
+            .form-control{
+                width: 100%;
+                padding: .6rem 1rem;
+                background-color: #f6f8fb;
+                border: none;
+                @include mq(md){
+                    padding: 1rem 1.5rem;
+                }
             }
         }
-    }
-    .form-contact {
-        .form-controls {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 2rem;
-        }
-        .input-group {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-        input,
-        textarea {
-            width: 100%;
-            padding: .6rem .6rem;
-            border: none;
-            outline: none;
-            box-sizing: border-box;
-            background-color: #eee;
-        }
-        .actions {
-            text-align: center;
-            padding: 1rem;
-            button {
-                margin: 0 1rem;
-            }
-        }
-    }
-    img {
-        max-width: initial !important;
     }
 }
 
-.baidumap {
-    min-height: 450px;
-    position: relative;
-    margin-bottom: 2rem;
-}

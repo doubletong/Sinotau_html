@@ -1,10 +1,37 @@
 .site-footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    font-size: rem(12);
-    color: #999;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #2e3033;
+   
+    font-size: rem(14);
+    color:#fff;
     text-align: center;
+    @include mq(md){
+        text-align: left;
+    }
+    a{
+        color: #fff;
+    }
+    .social{
+        a{
+            display: inline-block;
+            margin: 0 .5rem;
+            @include mq(md){
+                margin:0 0 0 1rem;
+            }
+            color:#1278f3;
+            &:nth-of-type(2){
+                color: #3face2;
+            }
+            &:nth-of-type(3){
+                color:#0b66c1;
+            }
+            &:nth-of-type(4){
+                color:#d22527;
+            }
+            .iconfont{
+                font-size: rem(20);
+            }
+        }
+    }
 }

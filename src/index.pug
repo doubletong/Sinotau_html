@@ -3,100 +3,189 @@ extends includes/layout.pug
 block title
     | 首页
 
-block content
-    .breadcrumb-container
-        .row
-            .col-md
-                nav(aria-label='breadcrumb')
-                    ol.breadcrumb
-                        li.breadcrumb-item
-                            a(href='#') 控制面板
-                        li.breadcrumb-item
-                            a(href='#') Library
-                        li.breadcrumb-item.active(aria-current='page') Data
-            .col-md-auto
-                time#sitetime
-    .page.page-home  
-        .row.mb-4
-            .col
-                .box
-                    h3.title 567
-                        small 篇
-                    p 新闻资讯
-                    i.iconfont.icon-newspaper
-            .col
-                .box.b2
-                    h3.title 567
-                        small 个
-                    p 页面
-                    i.iconfont.icon-file-text
-            .col
-                .box.b3
-                    h3.title 5667
-                        small 个
-                    p 产品展示
-                    i.iconfont.icon-windows
-            .col
-                .box.b4
-                    h3.title 567
-                        small 个
-                    p 广告位
-                    i.iconfont.icon-image
+block bkheader
+    link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
 
-        .row
-            .col-md-6 
-                .card
-                    header.card-header
-                        .row
-                            .col
-                                .card-title-v1 
-                                    i.iconfont.icon-file-text
-                                    | 最新文章
-                            .col-auto
-                                .control
-                                    a.expand(href='#')
-                                        i.iconfont.icon-fullscreen
-                                    a.compress(href='#')
-                                        i.iconfont.icon-shrink
-                    .card-body
-                        .list-group.list-group-flush
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 我们拒绝恶意报价，一份真实且具有竞争力的报价无疑可以让您更容易中标 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 积极响应与发包方的沟通交流，体现良好的职业素养及专业能力 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 认真详细阅读理解项目需求，认真详细填写竞标方案与您的竞标优势 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
-            .col-md-6 
-                .card
-                    header.card-header
-                        .row
-                            .col
-                                .card-title-v1 
-                                    i.iconfont.icon-file-text
-                                    | 最新产品
-                            .col-auto
-                                .control
-                                    a.expand(href='#')
-                                        i.iconfont.icon-fullscreen
-                                    a.compress(href='#')
-                                        i.iconfont.icon-shrink
-                    .card-body
-                        .list-group.list-group-flush
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 我们拒绝恶意报价，一份真实且具有竞争力的报价无疑可以让您更容易中标 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 积极响应与发包方的沟通交流，体现良好的职业素养及专业能力 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 认真详细阅读理解项目需求，认真详细填写竞标方案与您的竞标优势 
-                                small.text-info (2020-1-21)
-                            a.list-group-item.list-group-item-action(href="#") 完善您的相关信息，尤其是技术能力与专业经验 
-                                small.text-info (2020-1-21)
+block content
+    section.sliders.swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                a(href="/")
+                    img(src="img/slider01.jpg")
+            .swiper-slide
+                a(href="/")
+                    img(src="img/slider01.jpg")
+            .swiper-slide
+                a(href="/")
+                    img(src="img/slider01.jpg")
+        .swiper-pagination
+        //- .swiper-button-next
+        //- .swiper-button-prev
+
+    .page.page-home  
+        section.s1.container
+            .title-section
+                h2 关于我们
+            p HARBORY是一家多元化企业，
+                br
+                | 我们致力于为全球工业客户提供过滤、分离以及净化的解决方案。我们不断改进提升生产工艺和技术，为客户提供高效安全的过滤产品，帮助客户实现生产过程中的循环利用和零排放。为打造绿色工业而不断努力。与此同时我们为全球汽车企业研发生产优质的智能驾驶辅助系统，为客户提供更安全更智能更环保的汽车电子产品。
+
+            .recommends
+                .row.no-gutters
+                    .col-md
+                        .item
+                            .icon
+                                img(src="img/icon_03.png")
+                            h3 过滤方案 - 空气过滤
+                            h4 Air Filtration Solution
+                    .col-md
+                        .item
+                            .icon
+                                img(src="img/icon_05.png")
+                            h3 过滤方案 - 流体过滤
+                            h4 Fluid Filtration Solution
+                    .col-md
+                        .item
+                            .icon
+                                img(src="img/icon_07.png")
+                            h3 过滤方案 - 空气过滤
+                            h4 Automotive Electronics
+        
+        section.s2.container
+            .title-section
+                h2 我们的优势
+            .box
+                .row.r1
+                    .col
+                        .str 10
+                            small 年
+                        p OEM/ODM行业经验
+                    .col
+                        .str 60
+                            small +
+                        p 国家市场
+                    .col
+                        .str
+                            small TOP
+                            | 500
+                        p 我们的客户
+
+                .row
+                    .col
+                        .item
+                            .icon
+                                i.iconfont.icon-huabanfuben
+                            p 专业的
+                                br
+                                | 技术团队
+                    .col
+                        .item
+                            .icon2
+                                i.iconfont.icon-chanpin
+                            p 优质的
+                                br
+                                | 产品
+                    .col-md
+                        .item
+                            .icon3
+                                i.iconfont.icon-qiyerongyu
+                            p TUV  IOS9001
+                                br
+                                | 权威认证
+
+                    .col
+                        .item
+                            .icon4
+                                i.iconfont.icon-anquan
+                            p SGD/FDA/CE
+                                br
+                                | 安全保障
+                    .col
+                        .item
+                            .icon5
+                                i.iconfont.icon-jianzhu
+                            p 国际权威实验室
+                                br
+                                | 质量保证
+
+        section.s3
+            .container
+                .swiper-container.news-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            .row
+                                .col-md
+                                    a(href="news_detail.html")
+                                        img(src="img/temp/news01.jpg")
+                                .col-md
+                                    .des
+                                        h3.title 
+                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                                        .node 
+                                            i.iconfont.icon-time
+                                            | 2020.03.25 ~ 27
+                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
+                                        p.text-right 
+                                            a.more(href="news_detail.html") 更多新闻
+                        
+                        .swiper-slide
+                            .row
+                                .col-md
+                                    a(href="news_detail.html")
+                                        img(src="img/temp/news01.jpg")
+                                .col-md
+                                    .des
+                                        h3.title 
+                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                                        .node 
+                                            i.iconfont.icon-time
+                                            | 2020.03.25 ~ 27
+                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
+                                        p.text-right 
+                                            a.more(href="news_detail.html") 更多新闻
+                        .swiper-slide
+                            .row
+                                .col-md
+                                    a(href="news_detail.html")
+                                        img(src="img/temp/news01.jpg")
+                                .col-md
+                                    .des
+                                        h3.title 
+                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                                        .node 
+                                            i.iconfont.icon-time
+                                            | 2020.03.25 ~ 27
+                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
+                                        p.text-right 
+                                            a.more(href="news_detail.html") 更多新闻
+                    .swiper-pagination
+       
+        
+block bkfooter
+    script(src='plugins/swiper/js/swiper.min.js')
+    script.
+        var swiper = new Swiper('.sliders', {
+        pagination: {
+            el: '.swiper-pagination'        
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        //- navigation: {
+        //-     nextEl: '.swiper-button-next',
+        //-     prevEl: '.swiper-button-prev',
+        //- },
+        });
+
+        var swiper = new Swiper('.news-container', {
+        pagination: {
+            el: '.swiper-pagination'        
+        },
+        effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
+   
+        });
