@@ -61,11 +61,12 @@
         margin-bottom: 1rem;
         @include mq(md){
             height: 75px;
-            text-align: left;
+            text-align: left;  margin-bottom: 0;
         }
         
         .title{
             font-size: rem(30);
+            
         }
         .p-searchbox{
             border-width: 1px;
@@ -111,6 +112,7 @@
             margin: 0 -5px 20px;
             .pic{
                 overflow: hidden;
+                padding: 1px;
                 img{
                     display: block;
                     width: 100%;
@@ -179,14 +181,30 @@
                 a{
                     display: block;
                     margin-bottom: 5px;
+                    border:1px #eee solid;
+                    padding: 1px;
+                    &:hover{
+                        border-color: $color_primary;
+                    }
                     img{
                         display: block;
                         width: 70px;
+                        height: 35px;
+                        object-fit: cover;
                         @include mq(md){
                             width: 120px;
+                            height: 60px;
+                            object-fit: cover;
                         }
                         @include mq(lg){
-                            width: auto;
+                            width: 180px;
+                            height: 90px;
+                            object-fit: cover;
+                        }
+                        @include mq(xl){
+                            width: 220px;
+                            height: 110px;
+                            object-fit: cover;
                         }
                     }
                     &:last-child{

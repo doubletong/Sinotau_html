@@ -11,7 +11,14 @@
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+      
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -20,7 +27,7 @@
           <div class="col-auto"><a class="logo" href="/"><img src="img/logo.png"></a></div>
           <div class="col">
             <ul class="mainav">
-              <li><a href="index.html">首页   </a></li>
+              <li><a class="active" href="index.html">首页   </a></li>
               <li class="hasnav" data-id="navbg0"><a href="about.html">关于我们                          </a></li>
               <li class="hasnav" data-id="navbg1"><a href="products.html">产品   </a></li>
               <li><a href="news.html">新闻                   </a></li>
@@ -336,7 +343,7 @@
       </footer>
     </div>
     <footer class="site-footer" id="pagefooter">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md">Copyright © 2019 Harbory. 保留所有版权 | <a href="/contact.html">联系我们</a></div>
           <div class="col-md-auto">
@@ -345,6 +352,7 @@
         </div>
       </div>
     </footer>
+    <div class="contactus wow fadeInUp"><a href="contact.html">CONTACT US<i class="iconfont icon-left"></i></a></div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

@@ -7,7 +7,7 @@ block bkheader
     link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
 
 block content
-    section.sliders.swiper-container
+    section.sliders.swiper-container.wow.fadeInUp
         .swiper-wrapper
             .swiper-slide
                 a(href="/")
@@ -24,38 +24,53 @@ block content
 
     .page.page-home  
         section.s1.container
-            .title-section
+            .title-section.wow.fadeInUp
                 h2 关于我们
-            p HARBORY是一家多元化企业，
+            p.wow.fadeInUp HARBORY是一家多元化企业，
                 br
                 | 我们致力于为全球工业客户提供过滤、分离以及净化的解决方案。我们不断改进提升生产工艺和技术，为客户提供高效安全的过滤产品，帮助客户实现生产过程中的循环利用和零排放。为打造绿色工业而不断努力。与此同时我们为全球汽车企业研发生产优质的智能驾驶辅助系统，为客户提供更安全更智能更环保的汽车电子产品。
 
-            .recommends
+            .recommends.wow.fadeInUp
                 .row.no-gutters
+                    .col-md                        
+                        .item
+                            .row.no-gutters
+                                .icon.col-auto.col-md-12
+                                    a.item(href="products.html")
+                                        img(src="img/icon_03.png")
+                                .col.col-md-12.des
+                                    h3 
+                                        a.item(href="products.html") 过滤方案 - 空气过滤
+                                    h4 
+                                        a.item(href="products.html") Air Filtration Solution
                     .col-md
                         .item
-                            .icon
-                                img(src="img/icon_03.png")
-                            h3 过滤方案 - 空气过滤
-                            h4 Air Filtration Solution
+                            .row.no-gutters
+                                .icon.col-auto.col-md-12
+                                    a.item(href="products.html")
+                                        img(src="img/icon_05.png")
+                                .col.col-md-12.des
+                                    h3 
+                                        a.item(href="products.html") 过滤方案 - 流体过滤
+                                    h4 
+                                        a.item(href="products.html") Fluid Filtration Solution
                     .col-md
                         .item
-                            .icon
-                                img(src="img/icon_05.png")
-                            h3 过滤方案 - 流体过滤
-                            h4 Fluid Filtration Solution
-                    .col-md
-                        .item
-                            .icon
-                                img(src="img/icon_07.png")
-                            h3 过滤方案 - 空气过滤
-                            h4 Automotive Electronics
+                            .row.no-gutters
+                                .icon.col-auto.col-md-12  
+                                    a.item(href="products.html")                          
+                                        img(src="img/icon_07.png")
+                                .col.col-md-12.des
+                                    h3 
+                                        a.item(href="products.html") 过滤方案 - 空气过滤
+                                    h4 
+                                        a.item(href="products.html") Automotive Electronics
         
         section.s2.container
-            .title-section
+            .title-section.wow.fadeInUp
                 h2 我们的优势
-            .box
-                .row.r1
+            .box.wow.fadeInUp
+                .row.r1.wow.fadeInUp
                     .col
                         .str 10
                             small 年
@@ -70,7 +85,7 @@ block content
                             | 500
                         p 我们的客户
 
-                .row
+                .row.wow.fadeInUp
                     .col
                         .item
                             .icon
@@ -109,7 +124,7 @@ block content
                                 | 质量保证
 
         section.s3
-            .container
+            .container.wow.fadeInUp
                 .swiper-container.news-container
                     .swiper-wrapper
                         .swiper-slide

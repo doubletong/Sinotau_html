@@ -11,8 +11,15 @@
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
     <script src="js/vendor/holderjs/holder.min.js"></script>
     <link href="css/styles.min.css" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+      
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -21,7 +28,7 @@
           <div class="col-auto"><a class="logo" href="/"><img src="img/logo.png"></a></div>
           <div class="col">
             <ul class="mainav">
-              <li><a href="index.html">首页   </a></li>
+              <li><a class="active" href="index.html">首页   </a></li>
               <li class="hasnav" data-id="navbg0"><a href="about.html">关于我们                          </a></li>
               <li class="hasnav" data-id="navbg1"><a href="products.html">产品   </a></li>
               <li><a href="news.html">新闻                   </a></li>
@@ -146,19 +153,19 @@
         </ul>
       </div>
     </header>
-    <div class="banner banner-about" style="background-image:url('img/temp/banner-about.jpg')">
+    <div class="banner banner-about wow fadeInUp" style="background-image:url('img/temp/banner-about.jpg')">
       <div class="container">
         <p class="txt">让我们一起<br>看见更好<br>的未来</p>
       </div>
     </div>
     <div class="page page-contact">
       <section class="s1 container">
-        <div class="title-section">
+        <div class="title-section wow fadeInUp">
           <h2>联系我们</h2>
         </div>
-        <div class="row">
+        <div class="row contacts">
           <div class="col-md">
-            <div class="office">
+            <div class="office wow fadeInUp">
               <h2>广州 GUANGZHOU</h2>
               <address>广东省广州番禺市桥珠坑村橫基路2号108</address>
               <address>108, LS-Sci Building, No.2 Hengji Road, Zhukeng Shiqiao, Panyu Guangdong, China 511400</address>
@@ -167,7 +174,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="office">
+            <div class="office wow fadeInUp">
               <h2>香港 HONGKONG</h2>
               <address>香港金钟金钟道 89 号力宝中心第一座 10 楼 1003</address>
               <address>1003, Block 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong</address>
@@ -176,55 +183,53 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="s2 container">
         <div class="des">
-          <p>下面填写和提交表单,我同意我提供的个人资料可以与 HARBORY 共享,并同意 HARBORY 可通过电话或电子邮件联系的渠道联系我们。 任何使用我的个人资料的行为，均须遵守有关及适用的资料私隐法例.</p>
-          <p>By filling out and submitting the form below, I agree that the personal data that I provide can be shared with Harbory and I agree to becontacted via phone or email by Harbory. Any use of my personal data will take place in compliance with the relevant and applicabledata privacy laws.</p>
+          <p class="wow fadeInUp">下面填写和提交表单,我同意我提供的个人资料可以与 HARBORY 共享,并同意 HARBORY 可通过电话或电子邮件联系的渠道联系我们。 任何使用我的个人资料的行为，均须遵守有关及适用的资料私隐法例.</p>
+          <p class="wow fadeInUp">By filling out and submitting the form below, I agree that the personal data that I provide can be shared with Harbory and I agree to becontacted via phone or email by Harbory. Any use of my personal data will take place in compliance with the relevant and applicabledata privacy laws.</p>
         </div>
-        <form class="contactform" action="contact.html" method="post">          
-          <div class="form-group">            
+        <form class="contactform" id="editform" action="contact.html" method="post">          
+          <div class="form-group wow fadeInUp">            
             <label class="col-form-label" for="firstname">姓/First Name <span>*                  </span></label>
             <input class="form-control" id="firstname" type="text" name="firstName" required="required">
           </div>
-          <div class="form-group">            
+          <div class="form-group wow fadeInUp">            
             <label class="col-form-label" for="firstname">名/Last Name <span>*                  </span></label>
             <input class="form-control" id="lastname" type="text" name="lastName" required="required">
           </div>
-          <div class="form-group">
+          <div class="form-group wow fadeInUp">
             <label class="col-form-label" for="inputEmail">邮箱/Email Address <span>*                  </span></label>
             <input class="form-control" id="inputEmail" type="email" name="inputEmail" required="required">
           </div>
-          <div class="form-group">            
+          <div class="form-group wow fadeInUp">   
             <label class="col-form-label" for="company">公司名/Company<span>*                  </span></label>
             <input class="form-control" id="company" type="text" name="company" required="required">
           </div>
-          <div class="form-group">            
+          <div class="form-group wow fadeInUp">
             <label class="col-form-label" for="country">国家/Country<span>*                  </span></label>
             <input class="form-control" id="country" type="text" name="country" required="required">
           </div>
-          <div class="form-group">            
+          <div class="form-group wow fadeInUp">
             <label class="col-form-label" for="country">联系电话/Phone No.<span>*                  </span></label>
             <input class="form-control" id="country" type="text" name="country" required="required">
           </div>
-          <div class="form-group">
+          <div class="form-group wow fadeInUp">
             <label class="col-form-label" for="products">感兴趣的产品/Product of Interest<span>*         </span></label>
             <select class="form-control" id="products" name="products" required="required">
               <option value="">请选择</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group wow fadeInUp">
             <label class="col-form-label" for="message">邮件给我们/Email to Us*<span>*</span></label>
             <textarea class="form-control" id="message" name="message" rows="8"  required="required" placeholder="请告知我们您具体的产品需求以及应用范围/ Please Inform Us Of Your Specific Requirements And Application Scope"></textarea>
           </div>
           <footer class="card-footer text-center">
-            <button class="btn btn-send" type="submit"><i class="iconfont icon-save"> </i>提交/Submit</button>
+            <button class="btn btn-send wow fadeInUp" type="submit"><i class="iconfont icon-save"> </i>提交/Submit</button>
           </footer>
         </form>
       </section>
     </div>
     <footer class="site-footer" id="pagefooter">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md">Copyright © 2019 Harbory. 保留所有版权 | <a href="/contact.html">联系我们</a></div>
           <div class="col-md-auto">
@@ -233,6 +238,7 @@
         </div>
       </div>
     </footer>
+    <div class="contactus wow fadeInUp"><a href="contact.html">CONTACT US<i class="iconfont icon-left"></i></a></div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

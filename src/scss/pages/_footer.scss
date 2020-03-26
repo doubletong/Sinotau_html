@@ -35,3 +35,36 @@
         }
     }
 }
+
+.contactus{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -125px;
+    z-index: 2000;
+    font-size: rem(12);
+    @include mq(md){
+        font-size: rem(14);
+    }
+    a{
+        display: block;
+        background-color: $color-primary;
+        color: #fff;
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: vertical-rl;
+        padding: 1rem 0rem;
+        transition: all .2s;
+        .iconfont{
+
+            font-size: rem(24);
+            @include mq(md){
+                font-size: rem(32);
+            }
+            margin-top: .5rem;
+        }
+        &:hover{
+            background-color: darken($color: $color-primary, $amount: 10%);
+        }
+    }
+}

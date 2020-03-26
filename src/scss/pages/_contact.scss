@@ -1,12 +1,14 @@
 .page-contact {
     .s1{
-        margin-bottom: 4rem;
+      
         .office{
             text-align: left;
         }
-    }
 
-    .s2{
+        .contacts{
+            margin-bottom: 4rem;
+        }
+  
         .des{
             margin-bottom: 2rem;
         }
@@ -32,6 +34,9 @@
                 @include mq(md){
                     padding: 1rem 1.5rem;
                 }
+            }
+            .invalid-feedback{
+                color: $color-important;
             }
         }
     }

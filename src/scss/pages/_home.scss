@@ -34,38 +34,49 @@
                 padding-top: 3.5rem;
             }
             .item{
-            
-                text-align: center;
+               
+                text-align: left;
                 color: #fff;
-                padding: 0 3rem 4rem;
+                padding:1rem 0;
+                margin: 0 -15px;
                 @include mq(md){
-                    padding: 0 1rem 2rem;
+                    padding: 0 1rem 2rem;text-align: center;    margin: 0;          
                 }
                 @include mq(lg){
                     padding: 0 3rem 4rem;
                 }
                 background-color: #0368d3;
-                box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);
-                
-               
+                box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);                
+               a{
+                   color:#fff;
+               }
                   
-                .icon{
-                    text-align: center;
-                    padding-top: rem(34);
-                    margin-bottom: 2rem;
+                .icon{ 
                     @include mq(md){
                         padding-top: 1.6rem; margin-bottom: 1rem;
                     }
                     @include mq(lg){
                         padding-top: rem(34); margin-bottom: 2rem;
                     }
+                    img{
+                        width:120px;
+                        @include mq(md){
+                            width:auto;
+                        }
+                    }
+                }
+                .des{
+                    padding-top: 1rem;
+                    @include mq(md){
+                        padding-top: 0;
+                    }
                 }
                 h3{
-                    font-size: rem(24);
+                    font-size: rem(20);
                     border-bottom: 1px #0261c9 solid;
-                    padding-bottom: 1rem;
+                    padding-bottom: .5rem;
                     @include mq(md){
-                        font-size: rem(18);
+                        font-size: rem(18);  padding-bottom: 1rem;
                     }
                     @include mq(lg){
                         font-size: rem(20);
@@ -75,7 +86,8 @@
                     }
                 }
                 h4{
-                    font-size: rem(18);
+                    font-size: rem(16); font-weight: normal;
+                    margin-bottom: 0;
                     @include mq(md){
                         font-size: rem(14);
                         font-weight: normal;
@@ -114,9 +126,11 @@
         .box{
             background-color: #fff; 
             box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);
-            padding:3rem 2rem;
+            padding:3rem 1rem;
            text-align: center;
-      
+           @include mq(md) {
+                padding:3rem 2rem;
+            }
            .r1{
                margin-bottom: 4rem;
            }

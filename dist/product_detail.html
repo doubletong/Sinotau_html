@@ -11,7 +11,14 @@
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+      
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -20,7 +27,7 @@
           <div class="col-auto"><a class="logo" href="/"><img src="img/logo.png"></a></div>
           <div class="col">
             <ul class="mainav">
-              <li><a href="index.html">首页   </a></li>
+              <li><a class="active" href="index.html">首页   </a></li>
               <li class="hasnav" data-id="navbg0"><a href="about.html">关于我们                          </a></li>
               <li class="hasnav" data-id="navbg1"><a href="products.html">产品   </a></li>
               <li><a href="news.html">新闻                   </a></li>
@@ -145,7 +152,7 @@
         </ul>
       </div>
     </header>
-    <div class="banner banner-news" style="background-image:url('img/temp/banner-p-detail.jpg')">
+    <div class="banner banner-news wow fadeInUp" style="background-image:url('img/temp/banner-p-detail.jpg')">
       <div class="container">
         <p class="txt">PRODUCTS<br>产品</p>
       </div>
@@ -153,24 +160,24 @@
     <div class="page page-product-detail">
       <section class="s1 container">
         <div class="productPhotos">
-          <h1 class="title">多袋式过滤器（SMBF）</h1>
+          <h1 class="title wow fadeInUp">多袋式过滤器（SMBF）</h1>
           <div class="row">
             <div class="col">
-              <div class="photo"><img id="prophoto" src="img/temp/p01.jpg"></div>
+              <div class="photo wow fadeInUp"><img id="prophoto" src="img/temp/p01.jpg"></div>
             </div>
             <div class="col-auto">
-              <div class="pics"><a href="javascript:void(0)" data-p="img/temp/p01.jpg"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/thumb01.png"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/p01.jpg"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/thumb01.png"><img src="img/temp/thumb01.png"></a></div>
+              <div class="pics wow fadeInUp"><a href="javascript:void(0)" data-p="img/temp/p01.jpg"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/thumb01.png"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/p01.jpg"><img src="img/temp/thumb01.png"></a><a href="javascript:void(0)" data-p="img/temp/thumb01.png"><img src="img/temp/thumb01.png"></a></div>
             </div>
           </div>
         </div>
         <div class="intro">
-          <h3>产品描述：</h3>
-          <p>多袋式过滤器为了提高过滤效率，采用多袋式设计结构，满足客户对高容量大流量的过滤的要求。采用侧入底出的过滤设计，顶盖螺栓紧固闭合时配合优质的密封圈，压紧滤袋环口，过滤液体从高处平稳流向低位，渗透过所需要精度等级的滤袋即能获得合格的滤液。滤器中滤袋数量从2袋可增加至24袋。设计上满足ASME和CE的标准。</p>
+          <h3 class="wow fadeInUp">产品描述：</h3>
+          <p class="wow fadeInUp">多袋式过滤器为了提高过滤效率，采用多袋式设计结构，满足客户对高容量大流量的过滤的要求。采用侧入底出的过滤设计，顶盖螺栓紧固闭合时配合优质的密封圈，压紧滤袋环口，过滤液体从高处平稳流向低位，渗透过所需要精度等级的滤袋即能获得合格的滤液。滤器中滤袋数量从2袋可增加至24袋。设计上满足ASME和CE的标准。</p>
         </div>
       </section>
       <section class="s2 container">
         <header class="tab-header">
-          <ul>
+          <ul class="wow fadeInUp">
             <li>产品特征</li>
             <li class="active">技术参考</li>
             <li>行业应用</li>
@@ -259,7 +266,7 @@
       </section>
     </div>
     <footer class="site-footer" id="pagefooter">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md">Copyright © 2019 Harbory. 保留所有版权 | <a href="/contact.html">联系我们</a></div>
           <div class="col-md-auto">
@@ -268,6 +275,7 @@
         </div>
       </div>
     </footer>
+    <div class="contactus wow fadeInUp"><a href="contact.html">CONTACT US<i class="iconfont icon-left"></i></a></div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

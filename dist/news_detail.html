@@ -11,7 +11,14 @@
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      
+      
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -20,7 +27,7 @@
           <div class="col-auto"><a class="logo" href="/"><img src="img/logo.png"></a></div>
           <div class="col">
             <ul class="mainav">
-              <li><a href="index.html">首页   </a></li>
+              <li><a class="active" href="index.html">首页   </a></li>
               <li class="hasnav" data-id="navbg0"><a href="about.html">关于我们                          </a></li>
               <li class="hasnav" data-id="navbg1"><a href="products.html">产品   </a></li>
               <li><a href="news.html">新闻                   </a></li>
@@ -145,7 +152,7 @@
         </ul>
       </div>
     </header>
-    <div class="banner banner-news" style="background-image:url('img/temp/banner-news.jpg')">
+    <div class="banner banner-news wow fadeInUp" style="background-image:url('img/temp/banner-news.jpg')">
       <div class="container">
         <p class="txt">NEWS<br>新闻</p>
       </div>
@@ -153,17 +160,17 @@
     <div class="page page-news-detail">
       <article class="container">
         <header>
-          <h1 class="title-news">韩国仁川涂料胶粘膜展COATING  KOREA</h1>
-          <time> <i class="iconfont icon-time"></i>2020.03.25 ~ 27</time>
+          <h1 class="title-news wow fadeInUp">韩国仁川涂料胶粘膜展COATING  KOREA</h1>
+          <time class="wow fadeInUp"> <i class="iconfont icon-time"></i>2020.03.25 ~ 27</time>
         </header>
-        <main>
+        <main class="wow fadeInUp">
           <p>韩国涂料胶粘剂薄膜展COATING KOREA是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家协会机构的支持。每年一届，2018年3月成功举办的2018届展览会再次证明了韩国涂料、胶粘剂、薄膜展是代表韩国产业的展览会。中国、印度等12个国家与地区，200余家企业参加了展览会，包括俄罗斯、加拿大、日本、伊朗、埃及、法国等全球20个国家的约800余名买家，有19,000多名观众了参加本展览会，与参展企业进行了商务洽谈。国内外涂料、胶粘、薄膜相关产业主要需求方的很多买家访问了韩国涂料、胶粘剂、薄膜展，并与参展企业进行了商务交流及合作。韩国首届COATING SURFACE国际会议“SURFCOAT KOREA”及2019年国际表面处理、电镀工业、涂装展。全球20多个国家300余名专家和产业相关人士将出席此次会议，并对各领域40多个主题的新技术进行发表，提供产业间信息交流的机会。</p>
-          <figure><img src="img/temp/news04.jpg"></figure>
+          <figure class="wow fadeInUp"><img src="img/temp/news04.jpg"></figure>
         </main>
       </article>
     </div>
     <footer class="site-footer" id="pagefooter">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md">Copyright © 2019 Harbory. 保留所有版权 | <a href="/contact.html">联系我们</a></div>
           <div class="col-md-auto">
@@ -172,6 +179,7 @@
         </div>
       </div>
     </footer>
+    <div class="contactus wow fadeInUp"><a href="contact.html">CONTACT US<i class="iconfont icon-left"></i></a></div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

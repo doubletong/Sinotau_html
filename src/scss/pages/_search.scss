@@ -1,0 +1,50 @@
+.page-search{
+    .searchbox{
+        margin-bottom: 2rem;
+        form{
+            padding: .5rem;
+            border:1px #eee solid;
+            border-radius: 6px;
+            @include mq(md){
+                width: 70%;
+                margin: 0 auto;
+                
+            }
+            input{
+                width: 100%;
+                font-size: rem(20);
+                border: none;
+                outline: none;
+            }
+            button{
+                border-radius: 3px;
+            }
+        }
+    }
+    .count{
+        margin-bottom: 3rem;
+    }
+    .results{
+        ul{
+            @include reset-list();
+            li{
+                border-bottom: 1px #eee solid;
+                a{
+                    display: block;
+                    padding:1rem .5rem;
+                    font-size: rem(14);
+                    @include mq(md){
+                        font-size: rem(18);                        
+                    }
+                    @include mq(lg){
+                        font-size: rem(20);                        
+                    }
+                    time{
+                        font-size: rem(14);
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
