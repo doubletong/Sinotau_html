@@ -1,0 +1,41 @@
+.page-application{
+    .s2{
+        .goto{
+            padding: 2rem 0 5rem;
+            border-bottom: 1px #ddd solid;
+            margin-bottom: 1rem;
+        }
+        .btn{
+            font-size: rem(24);
+            padding: .6rem 4rem;
+        }
+
+        .phone{
+            font-size: rem(24);
+            color:$color-primary;
+            background: url(../img/tel.png) no-repeat left center;
+            padding-left:2.5rem;
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+                background: url(../img/tel@2x.png) no-repeat left center;
+                background-size: auto 30px;
+            }
+        }
+    }
+}
+
+.page-faq{
+    .faqlist{
+        .box{
+            border-bottom: 1px #ddd solid; margin-bottom: 2rem;
+            .title{
+                font-size: rem(28);
+               
+            }
+            .answer{
+                padding-left: 2.5rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}

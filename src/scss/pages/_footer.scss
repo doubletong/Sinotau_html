@@ -1,70 +1,69 @@
-.site-footer{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    background-color: #2e3033;
-   
-    font-size: rem(14);
-    color:#fff;
-    text-align: center;
-    @include mq(md){
-        text-align: left;
-    }
-    a{
+.site-contact{
+    background: #fff url(../img/home_bg.jpg) no-repeat right center;
+    overflow: hidden;
+    .c{
+        padding: 5rem 5rem 0;
+        height: 400px;
+        width: 640px;
+        background-color: $color_primary;
         color: #fff;
-    }
-    .social{
-        a{
-            display: inline-block;
-            margin: 0 .5rem;
-            @include mq(md){
-                margin:0 0 0 1rem;
-            }
-            color:#1278f3;
-            &:nth-of-type(2){
-                color: #3face2;
-            }
-            &:nth-of-type(3){
-                color:#0b66c1;
-            }
-            &:nth-of-type(4){
-                color:#d22527;
-            }
-            .iconfont{
-                font-size: rem(20);
+        img{
+            display: block;
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: center;
+        }
+        .actions{
+            margin-bottom: 2.5rem;
+        }
+        .list{
+            @include reset-list();
+            li{
+                padding-left: 2rem;
+                margin-bottom: 1.7rem;
+                &.phone{
+                    background: url(../img/phone.png) no-repeat left center;
+                }
+                &.address{
+                    background: url(../img/marker.png) no-repeat left center;
+                }
             }
         }
     }
 }
 
-.contactus{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    margin-top: -125px;
-    z-index: 2000;
-    font-size: rem(12);
-    @include mq(md){
-        font-size: rem(14);
+.site-footer{
+    padding-top: rem(150);
+    padding-bottom: 1.5rem;  
+    font-size: rem(14);  
+    text-align: center;
+    .botnav{
+        margin-bottom: 4rem;
     }
-    a{
-        display: block;
-        background-color: $color-primary;
-        color: #fff;
-        writing-mode: vertical-rl;
-        -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: vertical-rl;
-        padding: 1rem 0rem;
-        transition: all .2s;
-        .iconfont{
-
-            font-size: rem(24);
-            @include mq(md){
-                font-size: rem(32);
+    .item{
+        h3{
+            color: #221e1f;
+            font-size: rem(14);
+            font-weight: normal;
+        }
+        ul.nav{
+            @include reset-list();
+            li{
+                font-size: rem(12);
+                a{
+                    display: block;
+                    padding: .5rem 0;
+                    color: #999;
+                    &:hover{
+                        color: $color_primary;
+                    }
+                }
             }
-            margin-top: .5rem;
-        }
-        &:hover{
-            background-color: darken($color: $color-primary, $amount: 10%);
         }
     }
+    .copyright{
+        color: #999;
+    }
+   
 }

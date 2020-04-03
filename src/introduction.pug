@@ -1,0 +1,80 @@
+extends includes/layout.pug
+
+block title
+    | 课程介绍-特色教育
+
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url('img/temp/banner-about.jpg')")
+     
+    .page.page-about.page-environment
+        section.s1.container            
+            .row
+                .col-md-4
+                    .title-section.wow.fadeInLeft
+                        h2 课程介绍
+                .col-md-8
+                    .intro  
+                        p.wow.fadeInUp 金生幼儿园将紧密围绕我们的办学使命设置相关课程。我们从高起点、严要求起步，致力于为幼儿提供一个充满趣味性、挑战性的探究式体验课程。课程将以幼儿为中心，通过营造一个充满启发性与互动性的学习环境，让幼儿积极参与到学习情境中，保证他们能在自由探索中积极思考、踊跃提问，同时保持高度的好奇心与求知欲，让孩子在体能、社交与认知等方面获得长足发展。
+                        p.wow.fadeInUp 与此同时，我们充分尊重幼儿的思考与选择，鼓励他们独立决策，帮助他们成为拥有创造力、幸福力、跨文化沟通能力与合作精神的终身学习者。
+                        p.wow.fadeInUp 金生幼儿园计划引进国际知名的教育课程，带领幼儿以适合他们发展的方式开展超学科学习，打破传统学科的界限。我们将围绕「我们是谁」、「我们如何表达自己」、「我们如何组织自己」等六大超学科概念，与国家要求的幼儿园教学内容进行融合，构建我园独有的LEAD文化，把孩子培养成善良有爱、视野多元以及富有学习能动性的人，帮助他们为未来走向卓越人生奠定夯实的基础。
+
+        section.s1.s2
+            .container-fluid
+                .row.item.align-items-center
+                    .col-md-6
+                        .pic.il
+                            img.wow.fadeInLeft(src="img/jy_01.jpg", alt="")
+                    .col-md-6
+                        .intro
+                            header.header-intro
+                                h3.wow.fadeInUp One Teacher One Language
+                                h4.wow.fadeInUp 一师一语言：全浸式语言学习策略
+
+                            p.wow.fadeInUp 双语学习是发展幼儿跨文化沟通理解力的关键，更是塑造拥有国际视野人才的重要标志。于是我们推行「一师一语言」政策，为孩子营造一个自然的沉浸式中英文学习环境，将语言融入到孩子学习的每一个细节中。
+                            p.wow.fadeInUp 我们的教学团队包含中、外籍专业教师，他们将作为孩子们语言学习的引导者，彼此紧密协作，为孩子提供充满趣味性、相关性、挑战性和重要性的跨学科学习活动，让幼儿的双语能力获得全面发展。
+            
+            
+            .container-fluid     
+                .row.item.align-items-center                
+                    .col-md-6
+                        .intro.tl.tabs
+                            header.header-intro
+                                h3.wow.fadeInUp Learning Experience
+                                h4.wow.fadeInUp 学习体验
+
+                            dl.d1.open.wow.fadeInUp 
+                                dt 社会情感
+                                dd 如童话世界般的水晶绘本馆，阳光和绿荫肆意洒进，书香与诗意弥漫其中。这里是属于孩子的阅读天地，他们可以尽情享受阅读的快乐
+                            dl.d1.wow.fadeInUp 
+                                dt 语言发展
+                                dd 孩子是天生的艺术家，在创意美术天地充满艺术张力的空间里，他们恣意挥洒创意，大胆自由创作，用艺术的语言表达内在的灵性，从小涵养美学生活方式
+                            dl.d1.wow.fadeInUp 
+                                dt 教学思维
+                                dd 逻辑思维能力是探索未知的基础，我们采用适宜幼儿思维发展特点的方式，帮助他们理解数学中的一些基础核心概念、搭建基础的逻辑框架，为未来处理更复杂的逻辑问题奠定良好的基础。
+                            dl.d1.wow.fadeInUp 
+                                dt 科学启蒙
+                                dd 宽敞明亮的空间，精心布置的舞台，孩子的世界是童话，美妙的童话即将在这里上演，梦想也马上就要起航。在童话小剧场，孩子们可以用一百种语言表达自己
+                            dl.d1.wow.fadeInUp 
+                                dt 健康教育
+                                dd 宽敞明亮的空间，精心布置的舞台，孩子的世界是童话，美妙的童话即将在这里上演，梦想也马上就要起航。在童话小剧场，孩子们可以用一百种语言表达自己
+                            dl.d1.wow.fadeInUp 
+                                dt 艺术素养
+                                dd 宽敞明亮的空间，精心布置的舞台，孩子的世界是童话，美妙的童话即将在这里上演，梦想也马上就要起航。在童话小剧场，孩子们可以用一百种语言表达自己
+                    .col-md-6
+                        .pic.ir
+                            img.wow.fadeInRight(src="img/jy_02.jpg", alt="")
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

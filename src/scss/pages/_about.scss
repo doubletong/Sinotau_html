@@ -1,162 +1,116 @@
 .page-about{
-    @include mq(xl) {
-        padding-bottom: 4rem;
-        padding-top: 4rem;
-    }
+   
     .s1{
-        margin-bottom: 2rem;
-      
-        @include mq(lg) {
+        margin-bottom: 2rem;    
+        @include mq(md) {
             margin-bottom: 3rem;
-        }
-        @include mq(xl) {
+        }  
+        @include mq(lg) {
             margin-bottom: 4rem;
         }
-        .intro{
-            background-color: #f6f8fb;
-            padding: 1rem;
-            text-align: justify;         
-          
-            @include mq(xl) {
-                padding: 2.5rem 2.5rem 1.5rem;  line-height: 2;
+        @include mq(xl) {
+            margin-bottom: 5rem;
+        }
+        .intro{         
+            margin-bottom: 4rem;
+            text-align: justify;           
+            .header-intro{
+                margin-bottom: 3rem;
+                h3{
+                    font-size: rem(24);
+                    font-weight: normal;
+                    font-family: PoppinsRegular,PingFangSC-Regular, "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                    margin-bottom: 0;
+                }
+                h4{
+                    font-size: rem(14);
+                }
             }
+            .list{
+                @include reset-list();
+                margin-top: 2rem;
+                li{
+                    background: url(../img/check.png) no-repeat left center;
+                    padding-left: 2rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+    
+}
+
+.page-environment{
+    .s1{
+        
+        .env{
+            padding-bottom: 4rem;
+            border-bottom: 1px #ebebeb solid;
         }
     }
     .s2{
-        .txt{
-            @include mq(xl) {
-                padding-right: 1rem;
-          
-            }
-            h1{
-                font-size: 2.5rem;
-                font-weight: bold;
-                color: $color-primary;
-                line-height: 1.4;
-                margin-bottom: 2rem;
-                margin-top: 0;
-                @include mq(xl) {
-                    font-size: 3rem;   
-                    margin-bottom: 4rem;
-                }
-            }
-            p{
-               
-                @include mq(xl) {
-                    font-size: rem(20);
-                }
-            }
-        }
-        .pic{
-            margin-bottom: 2rem;
-        }
-        .shiming{
-            background-color: #00a8e7;
-            color: #fff;
-            padding:2rem 2.5rem 1.5rem;
-            h2{
-                font-size: rem(36);
-            }
-        }
-    }
-}
-
-.page-qualifications{
-    .qualist{
-        padding: 0 5px;
-    }
-    .item{
-        background-color: #f6f8fb;
-      
-        border:1px #eee solid;
-        margin: 0 -5px 20px;
-        .pic{
-            img{
-                display: block;
-                width: 100%;
-            }
-        }
-        h3.title{
-            padding: 2rem;
-            text-align: center;
-            margin: 0;
-            font-size: rem(18);
-            @include mq(lg) {
-                font-size: 1rem;
-            }
-            @include mq(xl) {
-                font-size: rem(20);
-            }
-        }
-    }
-}
-
-.page-jobs{
-    .joblist{
-        border-top: 60px #00a8e7 solid;
-        .address{
-            display: none;
-            @include mq(md) {
-               display: block;
-            }
-        }
-        .part{
-            display: none;
-            @include mq(md) {
-               display: block;
-            }
-        }
-        .addpart{
-            @include reset-list();
-            margin-bottom: 1rem;
-            border-bottom: 1px #eee solid;
-            padding-bottom: .8rem;
-            @include mq(md) {
-                display: none;
-             }
-        }
         .item{
-            margin-bottom: 3px;
-            background-color: #f6f8fb;
-            padding: 1rem 1rem;
-            font-weight: bold;
-            @include mq(md) {
-                padding: 2rem rem(45);
-            }
-            .opendetail{
-                color: #00a8e7;
-                .iconfont{
-                    display: inline-block;
-                    margin-left: .5rem;
-                    transition: all .2s;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 5rem;
+            min-height: 480px;
+            .intro{
+                margin-bottom: 0;
+                width: 580px;
+                &.tl{
+                    margin: 0 0 0 auto;
                 }
-                &.active{
-                    .iconfont{
-                       transform: rotate(180deg);
+
+                &.tabs{
+                    dl.d1{
+                        border-bottom: 1px #ebebeb solid;
+                        padding: 1rem 0;
+                        margin: 0;
+                        dt{
+                            cursor: pointer; padding: .5rem 0;
+                        }
+                        dd{
+                            display: none; 
+                        }
+                        &.open{
+                            dt{
+                                position: relative;
+                                &::before{
+                                    display: block;
+                                    position: absolute;
+                                    content: '';
+                                    width: 20px;
+                                    height: 6px;
+                                    left: -40px;
+                                    top: 1rem;
+                                    z-index: 200;
+                                    background: url(../img/dot.png) no-repeat left top;
+
+                                }
+                            }
+                            dd{
+                                display: block;
+                            }
+                        }
                     }
                 }
             }
-            .detail{
-                background-color: #fff;
-                margin-top: 1rem;
-                padding: 1rem;
-                font-weight: normal;
-                display: none;
-                @include mq(md) {
-                    margin-top: 2rem;
-                    padding: 2rem;
+            .pic{
+               
+                overflow: hidden;
+                &.il{
+                    padding-right: 5rem;
+                    margin-left: -15px;
                 }
-                h3{
-                    font-weight: bold;
+                &.ir{
+                    padding-left: 5rem;  margin-right: -15px;
                 }
-                ol{
-                    padding-left: 1rem;
-                    li{
-                        padding-top: .5rem;
-                        padding-bottom: .5rem;
-                    }
+                img{
+                    display: block;
                 }
             }
+        
         }
+
     }
 }

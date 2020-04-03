@@ -1,0 +1,39 @@
+extends includes/layout.pug
+
+block title
+    | 申请流程-入学申请
+
+block content
+    .banner.banner-team.wow.fadeInUp(style="background-image:url('img/temp/banner-team.jpg')")
+     
+    .page.page-about.page-team
+        section.s1.container         
+            .row
+                .col-md-4
+                    .title-section.wow.fadeInLeft
+                        h2 申请流程
+                .col-md-8
+                    p.wow.fadeInUp 金生幼儿园将开设小小班、小班、中班、大班共4个年龄段班级，为2-6岁的幼儿及其家庭提供精心周到的教学与服务，招收不同国籍之幼儿。
+        
+        
+                
+        section.s2
+            .container
+                figure.wow.fadeInUp
+                    img(src="img/app_01.png", alt="")
+                       
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

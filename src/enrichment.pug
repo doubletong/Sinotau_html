@@ -1,0 +1,81 @@
+extends includes/layout.pug
+
+block title
+    | 增润课程-特色教育
+
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url('img/temp/banner-about.jpg')")
+     
+    .page.page-about.page-education
+        section.s1.container            
+            .row
+                .col-md-4
+                    .title-section.wow.fadeInLeft
+                        h2 增润课程
+                .col-md-8
+                    p.wow.fadeInUp 幼儿的自我探索和体验在成长中不可或缺。我们通过开设增润课程，为幼儿提供专题探索和思考的机会，让他们能够在常规课程之外、别样的活动体验中感知自己的能力，发掘自己的潜力，充分展现领袖才能、创新能力与合作精神。我们开设的增润课程包括但不限于：
+                        
+
+        section.s2
+            .container
+                .item
+                    .row.align-items-center
+                        .col-md-auto
+                            .pic
+                                img.wow.fadeInLeft(src="img/enr_01.jpg", alt="")
+                        .col-md
+                            .des
+                                header.header-intro
+                                    h3.wow.fadeInUp Communities Of Practice
+                                    h4.wow.fadeInUp 社区实践
+                                p.wow.fadeInUp 在这门课里，孩子们将有机会实地探访各类社区与服务型机构，例如银行、大型超市、汽车服务中心、消防中心等等，借此机会了解社会如何分工，真切感受不同岗位的工作状态，充分培养孩子们的社会服务意识。
+                
+                .item
+                    .row.align-items-center
+                        .col-md-auto
+                            .pic
+                                img.wow.fadeInLeft(src="img/enr_02.jpg", alt="")
+                        .col-md
+                            .des
+                                header.header-intro
+                                    h3.wow.fadeInUp Special Events
+                                    h4.wow.fadeInUp 特别活动
+                                p.wow.fadeInUp 我们尊重中西方文化，希望孩子能感受各类节日在不同文化中的地位与重要性。孩子、教师和家长共同参与，透过游戏、音乐、创作了解彼此的节日文化、增添生活的仪式感，感知日常中的趣味与美好。
+                
+                .item
+                    .row.align-items-center
+                        .col-md-auto
+                            .pic
+                                img.wow.fadeInLeft(src="img/enr_03.jpg", alt="")
+                        .col-md
+                            .des
+                                header.header-intro
+                                    h3.wow.fadeInUp FUNDAY
+                                    h4.wow.fadeInUp 卡洛斯之旅
+                                p.wow.fadeInUp 我们尊重幼儿的选择权与主导权，并为幼儿提供更多自由探索的机会，去体验和感受自己的选择和意见的影响。在“卡洛斯之旅”时段里，幼儿可自主选择去往园内任意区域或活动室，尽情体验和发现。
+                
+                .item
+                    .row.align-items-center
+                        .col-md-auto
+                            .pic
+                                img.wow.fadeInLeft(src="img/enr_04.jpg", alt="")
+                        .col-md
+                            .des
+                                header.header-intro
+                                    h3.wow.fadeInUp Feeding Course
+                                    h4.wow.fadeInUp 食育课程
+                                p.wow.fadeInUp 「生活即教育」，食育是一种回归生活本源的教育。透过诸如种植、烘焙、共餐等活动，我们将给予幼儿有关食物的知识教育，帮助孩子理解不同的饮食文化，养成优雅的饮食习惯，从而明白生命教育的意义。
+                
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

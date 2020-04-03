@@ -9,198 +9,215 @@ block bkheader
 block content
     section.sliders.swiper-container.wow.fadeInUp
         .swiper-wrapper
-            .swiper-slide
-                a(href="/")
-                    img(src="img/slider01.jpg")
-            .swiper-slide
-                a(href="/")
-                    img(src="img/slider01.jpg")
-            .swiper-slide
-                a(href="/")
-                    img(src="img/slider01.jpg")
-        .swiper-pagination
+            .swiper-slide(style={'background-image':'url(img/temp/slider01.jpg)'})
+                .container.txtlist
+                    .txt
+                        h2.title Education is a 
+                            br
+                            | global enterprise
+                        h3.title2 教育是一份关乎全球发展的事业
+                        p Education is a global enterprise
+                    
+            .swiper-slide(style={'background-image':'url(img/temp/slider01.jpg)'})
+                .container.txtlist
+                    .txt
+                        h2.title Education is a 
+                            br
+                            | global enterprise
+                        h3.title2 教育是一份关乎全球发展的事业
+                        p Education is a global enterprise
+                    
+            .swiper-slide(style={'background-image':'url(img/temp/slider01.jpg)'})
+                .container.txtlist
+                    .txt
+                        h2.title Education is a 
+                            br
+                            | global enterprise
+                        h3.title2 教育是一份关乎全球发展的事业
+                        p Education is a global enterprise
+
+        .container.dots
+            .swiper-pagination
+
+        #godown.godown
+            a.animated.infinite.fadeInDown.delay-0s(href="javascript:void(0);")
+                i.iconfont.icon-down
+               
+        
         //- .swiper-button-next
         //- .swiper-button-prev
 
     .page.page-home  
-        section.s1.container
-            .title-section.wow.fadeInUp
-                h2 关于我们
-            p.wow.fadeInUp HARBORY是一家多元化企业，
-                br
-                | 我们致力于为全球工业客户提供过滤、分离以及净化的解决方案。我们不断改进提升生产工艺和技术，为客户提供高效安全的过滤产品，帮助客户实现生产过程中的循环利用和零排放。为打造绿色工业而不断努力。与此同时我们为全球汽车企业研发生产优质的智能驾驶辅助系统，为客户提供更安全更智能更环保的汽车电子产品。
-
-            .recommends.wow.fadeInUp
-                .row.no-gutters
-                    .col-md                        
-                        .item
-                            .row.no-gutters
-                                .icon.col-auto.col-md-12
-                                    a.item(href="products.html")
-                                        img(src="img/icon_03.png")
-                                .col.col-md-12.des
-                                    h3 
-                                        a.item(href="products.html") 过滤方案 - 空气过滤
-                                    h4 
-                                        a.item(href="products.html") Air Filtration Solution
-                    .col-md
-                        .item
-                            .row.no-gutters
-                                .icon.col-auto.col-md-12
-                                    a.item(href="products.html")
-                                        img(src="img/icon_05.png")
-                                .col.col-md-12.des
-                                    h3 
-                                        a.item(href="products.html") 过滤方案 - 流体过滤
-                                    h4 
-                                        a.item(href="products.html") Fluid Filtration Solution
-                    .col-md
-                        .item
-                            .row.no-gutters
-                                .icon.col-auto.col-md-12  
-                                    a.item(href="products.html")                          
-                                        img(src="img/icon_07.png")
-                                .col.col-md-12.des
-                                    h3 
-                                        a.item(href="products.html") 过滤方案 - 空气过滤
-                                    h4 
-                                        a.item(href="products.html") Automotive Electronics
         
-        section.s2.container
-            .title-section.wow.fadeInUp
-                h2 我们的优势
-            .box.wow.fadeInUp
-                .row.r1.wow.fadeInUp
-                    .col
-                        .str 10
-                            small 年
-                        p OEM/ODM行业经验
-                    .col
-                        .str 60
-                            small +
-                        p 国家市场
-                    .col
-                        .str
-                            small TOP
-                            | 500
-                        p 我们的客户
-
-                .row.wow.fadeInUp
-                    .col
-                        .item
-                            .icon
-                                i.iconfont.icon-huabanfuben
-                            p 专业的
-                                br
-                                | 技术团队
-                    .col
-                        .item
-                            .icon2
-                                i.iconfont.icon-chanpin
-                            p 优质的
-                                br
-                                | 产品
+        
+        section.s2            
+            .container
+                .row
                     .col-md
-                        .item
-                            .icon3
-                                i.iconfont.icon-qiyerongyu
-                            p TUV  IOS9001
-                                br
-                                | 权威认证
-
-                    .col
-                        .item
-                            .icon4
-                                i.iconfont.icon-anquan
-                            p SGD/FDA/CE
-                                br
-                                | 安全保障
-                    .col
-                        .item
-                            .icon5
-                                i.iconfont.icon-jianzhu
-                            p 国际权威实验室
-                                br
-                                | 质量保证
+                        .title-section.wow.fadeInLeft
+                            h2 特色校园
+                    .col-auto
+                        .gallery-thumbs.wow.fadeInRight
+                            a.link(href="#sl01") 特色教育
+                            a.link(href="#sl02")  教师团队
+                            a.link(href="#sl03") 安全管理
+                            a.link(href="#sl04") 科学膳食
+            .swiper-container.gallery-top
+                .swiper-wrapper
+                    .swiper-slide(data-hash="sl01")
+                        .row.no-gutters
+                            .col-md
+                                img.pic.wow.fadeInLeft(src="img/temp/h1.jpg", alt="特色教育")                                                       
+                            .col-md-auto
+                                .txt.wow.fadeInRight
+                                    .icon
+                                        img(src="img/temp/icon-001.png", alt="特色教育")
+                                    .title
+                                        img(src="img/temp/title-001.png", alt="特色教育")
+                                    p 科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短不超过30个字
+                    .swiper-slide(data-hash="sl02")
+                        .row.no-gutters
+                            .col-md
+                                img.pic(src="img/temp/h2.jpg", alt="教师团队")
+                            .col-md-auto
+                                .txt
+                                    .icon
+                                        img(src="img/temp/icon-001.png", alt="教师团队")
+                                    .title
+                                        img(src="img/temp/title-001.png", alt="教师团队")
+                                    p 科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短不超过30个字
+                    .swiper-slide(data-hash="sl03")
+                        .row.no-gutters
+                            .col-md
+                                img.pic(src="img/temp/h3.jpg", alt="安全管理")
+                            .col-md-auto
+                                .txt
+                                    .icon
+                                        img(src="img/temp/icon-001.png", alt="安全管理")
+                                    .title
+                                        img(src="img/temp/title-001.png", alt="安全管理")
+                                    p 科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短不超过30个字
+                    .swiper-slide(data-hash="sl04")
+                        .row.no-gutters
+                            .col-md
+                                img.pic(src="img/temp/h1.jpg", alt="科学膳食")
+                            .col-md-auto
+                                .txt
+                                    .icon
+                                        img(src="img/temp/icon-001.png", alt="科学膳食")
+                                    .title
+                                        img(src="img/temp/title-001.png", alt="科学膳食")
+                                    p 科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短介绍科学膳食剪短不超过30个字
+                .navgo.wow.fadeInRight
+                    .swiper-button-next
+                    .swiper-button-prev
+            
 
         section.s3
-            .container.wow.fadeInUp
-                .swiper-container.news-container
-                    .swiper-wrapper
-                        .swiper-slide
-                            .row
-                                .col-md
-                                    a(href="news_detail.html")
-                                        img(src="img/temp/news01.jpg")
-                                .col-md
-                                    .des
-                                        h3.title 
-                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
-                                        .node 
-                                            i.iconfont.icon-time
-                                            | 2020.03.25 ~ 27
-                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
-                                        p.text-right 
-                                            a.more(href="news_detail.html") 更多新闻
-                        
-                        .swiper-slide
-                            .row
-                                .col-md
-                                    a(href="news_detail.html")
-                                        img(src="img/temp/news01.jpg")
-                                .col-md
-                                    .des
-                                        h3.title 
-                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
-                                        .node 
-                                            i.iconfont.icon-time
-                                            | 2020.03.25 ~ 27
-                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
-                                        p.text-right 
-                                            a.more(href="news_detail.html") 更多新闻
-                        .swiper-slide
-                            .row
-                                .col-md
-                                    a(href="news_detail.html")
-                                        img(src="img/temp/news01.jpg")
-                                .col-md
-                                    .des
-                                        h3.title 
-                                            a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
-                                        .node 
-                                            i.iconfont.icon-time
-                                            | 2020.03.25 ~ 27
-                                        p.summary 韩国仁川涂料胶粘剂薄膜展 COATING  KOREA 是韩国国内专注于胶粘剂、涂料、薄膜片材、涂层、及相关化学原料的国际性展会。此展会由韩国涂料协会主办，得到了韩国化学商协会等多家......
-                                        p.text-right 
-                                            a.more(href="news_detail.html") 更多新闻
-                    .swiper-pagination
+                .title-section.wow.fadeInUp
+                    h2.text-center 最新资讯
+                .row.no-gutters                    
+                    .col-md-4
+                        .item.wow.fadeInUp                           
+                            a.pic(href="news_detail.html")
+                                img(src="img/temp/news01.jpg")
+                            .des
+                                .row.align-items-center
+                                    .col
+                                        .category 家园合作
+                                    .col-auto
+                                        time 2020.02.21
+                                    
+                                h3.title 
+                                    a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                                    
+                    
+                    .col-md-4
+                        .item.wow.fadeInUp                           
+                            a.pic(href="news_detail.html")
+                                img(src="img/temp/news02.jpg")
+                            .des
+                                .row.align-items-center
+                                    .col
+                                        .category 家园合作
+                                    .col-auto
+                                        time 2020.02.21
+                                    
+                                h3.title 
+                                    a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                    .col-md-4
+                        .item.wow.fadeInUp                           
+                            a.pic(href="news_detail.html")
+                                img(src="img/temp/news03.jpg")
+                            .des
+                                .row.align-items-center
+                                    .col
+                                        .category 家园合作
+                                    .col-auto
+                                        time 2020.02.21
+                                    
+                                h3.title 
+                                    a(href="news_detail.html") 韩国仁川涂料胶粘膜展 COATING  KOREA
+                    
+                .text-center.wow.fadeInUp
+                    a.more(href="news_detail.html") view all
+                   
        
         
 block bkfooter
     script(src='plugins/swiper/js/swiper.min.js')
     script.
         var swiper = new Swiper('.sliders', {
-        pagination: {
-            el: '.swiper-pagination'        
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        //- navigation: {
-        //-     nextEl: '.swiper-button-next',
-        //-     prevEl: '.swiper-button-prev',
-        //- },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            //- navigation: {
+            //-     nextEl: '.swiper-button-next',
+            //-     prevEl: '.swiper-button-prev',
+            //- },
         });
 
-        var swiper = new Swiper('.news-container', {
-        pagination: {
-            el: '.swiper-pagination'        
-        },
-        effect: 'fade',
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        }
-   
+
+
+         $("#godown").click(function(e) {
+            e.preventDefault();
+            var srcollto = $(window).height();
+
+            $("html, body").animate({
+                scrollTop: srcollto
+            }, 600);
+        })
+        //- var galleryThumbs = new Swiper('.gallery-thumbs', {
+        //-     spaceBetween: 0,
+        //-     slidesPerView: 5,
+        //-     freeMode: true,
+        //-     watchSlidesVisibility: true,
+        //-     watchSlidesProgress: true,
+        //- });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            hashNavigation: {
+                watchState: true,
+            }
+            //- thumbs: {
+            //-     swiper: galleryThumbs
+            //- }
         });
+
+        $(".link").eq(galleryTop.activeIndex).addClass("active");
+        galleryTop.on('slideChange', function () {
+          
+            $(".link.active").removeClass("active");
+            $(".link").eq(this.activeIndex).addClass("active");
+        });
+
+     

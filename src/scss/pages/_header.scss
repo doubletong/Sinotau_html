@@ -1,23 +1,21 @@
 
 .site-header {
-    background: #fff url(../img/bg_header.png) repeat-y center top;    
+   
     position: fixed;
     left: 0;
     top: 0;
     z-index: 8000;
     width: 100%;
-    height: 45px; 
-    box-shadow: 0px 0px 32px 0px rgba(27, 101, 179, 0.22);   
-    background-size: auto 70%;
+    height: 45px;  
       
     @include mq(md){
-        height: 70px;  background-size: auto 100%;
+        height: 70px; 
     }
     @include mq(lg){
-        height: 80px;   background-size: auto 120px;
+        height: 80px;  
     }
     @include mq(xl){
-        height: 100px; 
+        height: 96px; 
     }
     .container,.row{
         height: 100%;
@@ -26,125 +24,64 @@
 
     .logo{
         display: block;
+        padding-top: 1rem;
         width: 100px;
         @include mq(md){
-           width: 150px;
+           width: 140px;
         }
-        @include mq(lg){
-            width: 160px;
-         }
-         @include mq(xl){
-            width: 400px;
-         }
-        img{
-          
-            @include mq(md){
-             
-            }
-        }
+     
     
     }
         
     .mainav{
         @include reset-list();     
-        display: none;
-     
-           height: 80px;
-            padding-left: 4rem;
+        display: none;         
+        padding-left: 4rem;      
         @include mq(lg){
             display: block; 
         }
          @include mq(xl){
-             height: 100px;padding-left: 0;
+             padding-left: 0;
          }
         li{
             display: inline-block;
-            padding: 0 rem(35);
-            position: relative; height: 100%;
+            padding: 0 rem(24);
+            position: relative; 
+            @include mq(lg){
+                padding: 0 rem(24);
+            }
             @include mq(xl){
-                padding: 0 rem(40);
+                padding: 0 rem(30);
             }
             a{
                 display: block;
-                font-size: rem(18);
-                height: 100%;
-                line-height: 80px;
-                @include mq(xl){
-                    line-height: 100px;
-                }
+                color: #fff;
                 &.active{
-                    border-bottom: 4px solid $color-primary;
-                    color: $color-primary;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
                 }
             }
             
         }
     }
     .lang{
-        border:1px $color-primary solid;
-        border-radius: 3px;
+        border:1px #fff solid;      
         display: inline-block;
-        padding: 0 .3rem;
-        color: $color-primary;
-    }
-    .search{
-        color: $color-primary;
-       
+        padding: .3rem .6rem;
+        color: #fff;
         .iconfont{
-            font-size: 1rem;
-            @include mq(md){
-                font-size: rem(20);
-             }
+            font-size: rem(14);
         }
+    }
+    .btnBook{
+        color: $color-secondary;
+        background-color: #fff;      
+        display: inline-block;
+        border:1px #fff solid; 
+        padding: .3rem 1rem;
+        margin-left: -10px;
     }
 
-    .searchbox{
-        background-color: #2e3033;
-        position: absolute;
-        left: 0;
-      
-        width: 100%;
-   
-        z-index: 126;
-        padding-top: rem(28);
-        padding-bottom: rem(28);
-        display: none;
-        top: 45px;
-        @include mq(md){
-            top: 70px;
-        }
-        @include mq(lg){
-            top: 80px;
-        }     
-        @include mq(xl){
-            top: 100px;
-        }
-        form{
-          
-            border-radius: 10px;
-            background-color:#232528;            
-            height: 54px;
-            padding: 0 .8rem;
-            @include mq(md){
-                height: 98px; padding: 0 2rem;
-            }
-           .row{
-               height: 100%;
-           }
-             input{
-                 border:none;
-                 background-color: transparent;
-                 color: #fff;
-                 font-size: rem(18);
-                 width: 100%;
-                 outline: none;
-                 @include mq(md){
-                    font-size: rem(24);
-                }
-             }
-              
-        }
-      }
 
     .mobilemenu {
         @include mq(lg) {

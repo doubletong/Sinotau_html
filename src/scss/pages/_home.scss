@@ -1,181 +1,70 @@
 .page-home {
     padding-bottom: 0;
-    .s1{
-        margin-bottom: 2rem;
-        @include mq(md){
-            margin-bottom: 3rem;
-        }
-        @include mq(lg){
-            margin-bottom: 4rem;
-        }
-        @include mq(xl){
-            margin-bottom: 5rem;
-        }
-        p{
-            font-size: rem(14);
-            
-            @include mq(md){
-                font-size: 1rem;
-            }
-            @include mq(xl){
-                line-height: 2.5;
-                font-size: rem(18);
-            }
-        }
-        .recommends{
-            padding-top: .5rem;
-            @include mq(md){
-                padding-top: 1.5rem;
-            }
-            @include mq(lg){
-                padding-top: 2.5rem;
-            }
-            @include mq(xl){
-                padding-top: 3.5rem;
-            }
-            .item{
-               
-                text-align: left;
-                color: #fff;
-                padding:1rem 0;
-                margin: 0 -15px;
-                @include mq(md){
-                    padding: 0 1rem 2rem;text-align: center;    margin: 0;          
-                }
-                @include mq(lg){
-                    padding: 0 3rem 4rem;
-                }
-                background-color: #0368d3;
-                box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);                
-               a{
-                   color:#fff;
-               }
-                  
-                .icon{ 
-                    @include mq(md){
-                        padding-top: 1.6rem; margin-bottom: 1rem;
-                    }
-                    @include mq(lg){
-                        padding-top: rem(34); margin-bottom: 2rem;
-                    }
-                    img{
-                        width:120px;
-                        @include mq(md){
-                            width:auto;
-                        }
-                    }
-                }
-                .des{
-                    padding-top: 1rem;
-                    @include mq(md){
-                        padding-top: 0;
-                    }
-                }
-                h3{
-                    font-size: rem(20);
-                    border-bottom: 1px #0261c9 solid;
-                    padding-bottom: .5rem;
-                    @include mq(md){
-                        font-size: rem(18);  padding-bottom: 1rem;
-                    }
-                    @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(24);
-                    }
-                }
-                h4{
-                    font-size: rem(16); font-weight: normal;
-                    margin-bottom: 0;
-                    @include mq(md){
-                        font-size: rem(14);
-                        font-weight: normal;
-                    }
-                    @include mq(lg){
-                        font-size: rem(18);
-                    }
-                }
-
-                &:hover{
-                
-                        background-color:#0069da;
-                        box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);                   
-                       
-                          
-                          
-                      
-                }
-            }
-        }
-    }
+   
     .s2{
-        padding-bottom: 1rem;
-        @include mq(sm) {
-            padding-bottom: 2rem;
-        }
-        @include mq(md) {
-            padding-bottom: 3rem;
-        }
-        @include mq(lg) {
-            padding-bottom: 4rem;
-        }
-        @include mq(xl) {
-            padding-bottom: 5rem;
-        }
-        .box{
-            background-color: #fff; 
-            box-shadow: 0px 11px 51px 0px rgba(1, 104, 209, 0.12);
-            padding:3rem 1rem;
-           text-align: center;
-           @include mq(md) {
-                padding:3rem 2rem;
+        padding-bottom: 0;
+        
+
+        .gallery-thumbs{           
+            a.link{
+             
+                display: inline-block;
+                padding: .6rem 0;
+                cursor: pointer;       
+                margin-left: rem(60);    
+                &.active{
+                    background: url(../img/dot.png) no-repeat center top;
+                }  
             }
-           .r1{
-               margin-bottom: 4rem;
-           }
-           .str{
-               font-size: 3rem;
-               font-weight: bold;
-               small{
-                   font-size: 1rem;
-                   @include mq(sm) {
-                    font-size: rem(18);
-                    }
-                   @include mq(md) {
-                    font-size: rem(20);
-                    }
-                   @include mq(lg) {
-                    font-size: rem(22);
-                    }
-                   @include mq(xl) {
-                    font-size: rem(24);
-                    }
+           
+        }
+        .gallery-top{
+            .pic{
+                height: 500px;
+                object-fit: cover;
+                object-position: center center;              
+                @include mq(xl) {
+                    height: 600px;
+                }
+            }
+            
+            .txt{
+                width: 370px;
+                box-sizing: border-box;
+                padding: rem(48) 6rem 0 rem(40);
+                .icon{
+                    margin-bottom: 1rem;
+                }
+                .title{
+                    margin-bottom: 2rem;
+                }
+            }
+            .navgo{
+                position: absolute;
+                right: 0;
+                z-index: 6000;
+                bottom: 0;
+                width: 160px; 
+                border-bottom: 2px #000 solid;   
+                padding-right: 5rem;   
+               height: 70px;
+               .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+                   background-size: 16px auto;
+                   left: 0;
+                   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
                }
-           }
-           .iconfont{
-               font-size: 3rem;
-           }
-           .icon{
-               color: #4cbfc6;
-           }
-           .icon2{
-            color: #5a80cb;
+               .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+                   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+                   left:3rem;
+                   right: auto;background-size: 16px auto;
+               }
+            }
+       
         }
-        .icon3{
-            color: #479ac8;
-        }
-        .icon4{
-            color: #3dc4a3;
-        }
-        .icon5{
-            color: #7eb65b;
-        }
-              
-        }
+
     }
     .s3{
-        background-color: #f6f8fb;
+    
         padding-top: 1rem;   padding-bottom: 1rem;
         @include mq(sm) {
             padding-top: 2rem;   padding-bottom: 2rem;
@@ -187,59 +76,70 @@
             padding-top: 4rem;   padding-bottom: 4rem;
         }
         @include mq(xl) {
-            padding-top: 5rem;   padding-bottom: 5rem;
+            padding-top: 6rem;   padding-bottom: 6rem;
+        }
+        .item{
+            margin-bottom: 20px;
+            .pic{
+                display: block;
+                margin-bottom: .5rem;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    display: block;      
+                    transition: all .2s;         
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+           
         }
         .des{
-            padding-top: 1rem;
-            @include mq(lg) {
-                padding-left: 2rem;
-                padding-top: 0;
+            padding: 1rem 2rem;
+            .category{
+                font-size: rem(12);
+                display: inline-block;
+                border:1px #000 solid;
+                padding: .1rem .6rem;
+                
             }
-            .title{
-                font-size: rem(24);
-                @include mq(lg) {
-                    font-size: rem(30);
-                }
+            time{
+                font-size: rem(12);
+                color: #999;
+            }
+            h3.title{
+                font-size: 1rem;
+                text-align: left;
+                font-weight: bold;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 a{
                     color: #000;
+                    display: block;
+                    padding: 1rem 0;
                 }
             }
-            p{
-                color: #818181; 
-              
-                .more{
-                    display: inline-block;
-                    border-width: 1px;
-                    border-color: rgb(0, 156, 255);
-                    border-style: solid;
-                    border-radius: 6px;
-                    width: 122px;
-                    height: 38px;    
-                    text-align: center; 
-                    line-height: 36px;
-                    color: $color-primary;
-                      
-                }
-                &.summary{
-                    margin-bottom: 3rem;  
-                    @include mq(md) {
-                        display: none;
-                        }
-                       @include mq(lg) {
-                       display: block;
-                        }
-                }
-            }
-            .node{
-                padding: .3rem 0 .8rem;
-                @include mq(lg) {
-                    padding: .5rem 0 1rem;
-                }
-                .iconfont{
-                    color:#acccee;
-                    margin-right: .5rem;
-                }            
-            }
+            
+           
         }
+
+       
+        .more {
+            border-width: 1px;
+            border-color: rgb(34, 30, 31);
+            border-style: solid;
+            line-height: 50px;
+            width: 198px;
+            height: 52px;
+            display: inline-block;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+            }
+          }
+          
     }
 }

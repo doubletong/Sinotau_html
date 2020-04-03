@@ -1,135 +1,16 @@
 {
-  "id": "1677328",
-  "name": "因卡",
+  "id": "1722323",
+  "name": "金生",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "562685",
-      "name": "Left",
-      "font_class": "left",
-      "unicode": "e621",
-      "unicode_decimal": 58913
-    },
-    {
-      "icon_id": "514118",
-      "name": "down",
-      "font_class": "custom-down",
-      "unicode": "e628",
-      "unicode_decimal": 58920
-    },
-    {
-      "icon_id": "13407480",
-      "name": "filter",
-      "font_class": "filter",
-      "unicode": "e6bf",
-      "unicode_decimal": 59071
-    },
-    {
-      "icon_id": "13407481",
-      "name": "filter2",
-      "font_class": "filter2",
-      "unicode": "e6c0",
-      "unicode_decimal": 59072
-    },
-    {
-      "icon_id": "13407482",
-      "name": "car",
-      "font_class": "car",
-      "unicode": "e6c2",
-      "unicode_decimal": 59074
-    },
-    {
-      "icon_id": "4341704",
-      "name": "down",
-      "font_class": "allow-down",
-      "unicode": "e696",
-      "unicode_decimal": 59030
-    },
-    {
-      "icon_id": "581042",
-      "name": "time",
-      "font_class": "time",
-      "unicode": "e68f",
-      "unicode_decimal": 59023
-    },
-    {
-      "icon_id": "1037679",
-      "name": "企业荣誉",
-      "font_class": "qiyerongyu",
-      "unicode": "e612",
-      "unicode_decimal": 58898
-    },
-    {
-      "icon_id": "1599882",
-      "name": "网商银行无线端_安全",
-      "font_class": "anquan",
-      "unicode": "e627",
-      "unicode_decimal": 58919
-    },
-    {
-      "icon_id": "5093336",
-      "name": "建筑",
-      "font_class": "jianzhu",
-      "unicode": "e601",
-      "unicode_decimal": 58881
-    },
-    {
-      "icon_id": "5383808",
-      "name": "团队",
-      "font_class": "huabanfuben",
-      "unicode": "e652",
-      "unicode_decimal": 58962
-    },
-    {
-      "icon_id": "7134722",
-      "name": "产品",
-      "font_class": "chanpin",
-      "unicode": "e67c",
-      "unicode_decimal": 59004
-    },
-    {
-      "icon_id": "7685068",
-      "name": "down",
+      "icon_id": "7206016",
+      "name": "Down arrow",
       "font_class": "down",
-      "unicode": "e6f0",
-      "unicode_decimal": 59120
-    },
-    {
-      "icon_id": "11770319",
-      "name": "Search",
-      "font_class": "Search",
-      "unicode": "e66d",
-      "unicode_decimal": 58989
-    },
-    {
-      "icon_id": "405740",
-      "name": "twitter",
-      "font_class": "twitter",
-      "unicode": "e6aa",
-      "unicode_decimal": 59050
-    },
-    {
-      "icon_id": "792378",
-      "name": "in",
-      "font_class": "in",
-      "unicode": "e6c1",
-      "unicode_decimal": 59073
-    },
-    {
-      "icon_id": "3876489",
-      "name": "facebook",
-      "font_class": "facebook",
-      "unicode": "e66e",
-      "unicode_decimal": 58990
-    },
-    {
-      "icon_id": "11983519",
-      "name": "youtube",
-      "font_class": "youtube",
-      "unicode": "ea07",
-      "unicode_decimal": 59911
+      "unicode": "e630",
+      "unicode_decimal": 58928
     }
   ]
 }

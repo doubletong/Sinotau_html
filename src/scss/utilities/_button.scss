@@ -1,12 +1,14 @@
 .btn {
   
-        border-radius: 10px;
-        background-color: rgb(2, 103, 209);
-       
-        padding: .3rem 1rem;
-      border:none;
+    display: inline-block;
+    border:1px #fff solid;
+    color: #fff;
+    padding: .6rem 2rem;
       
-      
+    &:hover{
+        background-color: #fff;
+        color: $color-primary;
+    }  
     .iconfont {
         font-size: 14px;
     }

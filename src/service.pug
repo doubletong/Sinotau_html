@@ -1,0 +1,89 @@
+extends includes/layout.pug
+
+block title
+    | 校园服务
+
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url('img/temp/banner-about.jpg')")
+     
+    .page.page-about.page-environment.page-school
+        section.s1.container           
+            .title-section.wow.fadeInLeft
+                h2 校园服务
+              
+        section.s1.s2
+            .container-fluid
+                .row.item.align-items-center
+                    .col-md-6
+                        .pic.il
+                            img.wow.fadeInLeft(src="img/sch_03.jpg", alt="")
+                    .col-md-6
+                        .intro
+                            header.header-intro
+                                h3.wow.fadeInUp Diet Provide
+                                h4.wow.fadeInUp 饮食提供
+
+                            p.wow.fadeInUp 幼儿园为孩子提供两餐两点，包括早餐、水果茶点、午餐以及下午茶。
+                            p.wow.fadeInUp 我们为幼儿提供搭配科学、健康营养的膳食，把食品安全放在第一位。为确保食品的安全供应，从食材采购、储存，到材料加工处理、烹饪制作，从配餐分餐，最后到餐具的清洁消毒，我们将严格把控每一个环节，形成一系列标准化流程。
+            
+            
+            .container-fluid     
+                .row.item.align-items-center                
+                    .col-md-6
+                        .intro.tl.tabs
+                            header.header-intro
+                                h3.wow.fadeInUp In The Clothing
+                                h4.wow.fadeInUp 入园服装
+                            p.wow.fadeInUp 我们希望幼儿养成着装优雅的礼仪习惯，周一至周四穿着整洁之校服，从小培养仪式感。有关着装安排如下：
+                            
+                            dl.d2.first.wow.fadeInUp 
+                                dt 周一
+                                dd 礼服套
+                            dl.d2.wow.fadeInUp 
+                                dt 周二至周四
+                                dd 运动园服
+                            dl.d2.wow.fadeInUp 
+                                dt 周五
+                                dd 自由着装
+                            
+                    .col-md-6
+                        .pic.ir
+                            img.wow.fadeInRight(src="img/sch_04.jpg", alt="")
+
+        section.s3.container
+            .title-section-v2
+                h3.wow.fadeInUp Diet Provide
+                h4.wow.fadeInUp 饮食提供
+            .items
+                .row
+                    .col-md-4
+                        .item
+                            img(src="img/icon-shexiangtou.png", alt="")
+                            | 24小时高清监控系统
+                    .col-md-4
+                        .item
+                            img(src="img/icon-jingcha.png", alt="")
+                            | 24小时专业保安
+                    .col-md-4
+                        .item
+                            img(src="img/icon-shualian.png", alt="")
+                            | 刷脸门禁系统
+        section.s3.container
+            .title-section-v2
+                h3.wow.fadeInUp Transportation Arrangement
+                h4.wow.fadeInUp 接送安排
+            p.wow.fadeInUp 为便利家长接送幼儿，我们提供短暂停留泊车位，暂不提供校车服务，详情咨询招生老师。
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

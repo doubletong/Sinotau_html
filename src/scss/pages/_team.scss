@@ -1,0 +1,22 @@
+.page-team{
+    .s1{
+        .chart{
+            margin-top: 5rem;
+        }
+    }
+    .s2{
+        margin-bottom: 5rem;
+        .item{
+            text-align: center;
+            .pic{
+                margin-bottom: 1rem;
+                img{
+                    display: block;
+                }
+            }
+            .name{
+                font-size: rem(24);
+            }
+        }
+    }
+}

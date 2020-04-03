@@ -9,17 +9,24 @@ header.site-header
                     li
                         a.active(href="index.html") 首页   
                     li.hasnav(data-id='navbg0')
-                        a(href="about.html") 关于我们                          
+                        a(href="about.html") 关于金生                         
                     li.hasnav(data-id='navbg1')
-                        a(href="products.html") 产品   
+                        a(href="products.html") 教育特色
                     li
-                        a(href="news.html") 新闻                   
-                        
-            .col-auto
-                a#btnsearch.search(href="javascript:void(0);") 
-                    i.iconfont.icon-Search   
+                        a(href="news.html") 专业团队
+                    li
+                        a(href="news.html") 校园服务
+                    li
+                        a(href="news.html") 入学申请
+                    li
+                        a(href="news.html") 最新资讯
+
             .col-auto
                 a.lang(href="#") EN
+            .col-auto
+                a.btnBook(href="javascript:void(0);") 
+                    | 预约参观
+            
             .col-auto.mobilemenu
                 .menu-toggle
                     .one
@@ -27,14 +34,7 @@ header.site-header
                     .three
                  
                
-    div#searchbox.searchbox
-        .container
-            form(action="search.html", method="get")
-                .row.align-items-center
-                    .col
-                        input#keywords(type="search", name="keywords",placeholder="请输入您要搜索的内容",required="required")
-                    .col-auto
-                        button.btn.btn-primary(type="submit") 确定
+    
     div#navbg0.nav-bg
         .container
             ul.subnav

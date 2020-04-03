@@ -1,0 +1,40 @@
+extends includes/layout.pug
+
+block title
+    | 在线报名-特色教育
+
+block content
+    .banner.banner-team.wow.fadeInUp(style="background-image:url('img/temp/banner-team.jpg')")
+     
+    .page.page-about.page-application
+        section.s1.s2.container         
+            .row
+                .col-md-4
+                    .title-section.wow.fadeInLeft
+                        h2 在线报名
+                .col-md-8
+                    .intro                      
+                        p.wow.fadeInUp 您可以直接登陆金生幼儿园Open Apply招生系统填写相应的信息为孩子递交入学申请，我们将在接到申请后一个工作日内联系您，请保持您的邮件、电话等通讯畅通。
+                        .goto.wow.fadeInUp
+                            a.btn.btn-primary(href="#") 点击报名
+                        .row.wow.fadeInUp.align-items-center
+                            .col 您在操作中有任何疑问，都可以直接联系我们：        
+                            .col-auto 
+                                .phone 0755-66666688
+                
+        
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

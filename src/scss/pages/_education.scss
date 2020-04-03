@@ -1,0 +1,29 @@
+.page-education{
+    .s2{
+        .item{
+            margin-bottom: rem(60);
+            padding: 20px;
+            background-color: #fafafa;
+            .pic{
+                img{
+                    display: block;
+                }
+            }
+            .des{
+                padding: 0 3rem;
+                .header-intro{
+                    margin-bottom: 3rem;
+                    h3{
+                        font-size: rem(24);
+                        font-weight: normal;
+                        font-family: PoppinsRegular,PingFangSC-Regular, "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                        margin-bottom: 0;
+                    }
+                    h4{
+                        font-size: rem(14);
+                    }
+                }
+            }
+        }
+    }
+}

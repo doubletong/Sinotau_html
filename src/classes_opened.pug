@@ -1,0 +1,70 @@
+extends includes/layout.pug
+
+block title
+    | 班级开设-校园服务
+
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url('img/temp/banner-about.jpg')")
+     
+    .page.page-about.page-school
+        section.s1.container         
+            .title-section.wow.fadeInLeft
+                h2 班级开设
+                
+        section.s1.s2
+            .container-fluid
+                .row.item.align-items-center
+                    .col-md-6
+                        .pic.il
+                            img.wow.fadeInLeft(src="img/sch_01.jpg", alt="")
+                    .col-md-6
+                        .des
+                            .title-section-v2
+                                h3.wow.fadeInUp Classes
+                                h4.wow.fadeInUp 班级设置
+
+                            p.wow.fadeInUp 我们根据幼儿年龄段开设有小小班、小班、中班、大班，每班均配备中文班主任、英文班主任、中文助教、生活老师各1名，共同支持幼儿多样化的探究学习和生活，让幼儿积极与同伴、老师进行有意义的互动，促进幼儿社会情感的发展。各年龄段师幼比如下：
+
+                            table.table
+                                tr
+                                    th
+                                    th 小小班
+                                    th 小班
+                                    th 中班
+                                    th 大班
+                                tr
+                                    td 学生人数
+                                    td ≤20
+                                    td ≤24
+                                    td ≤26
+                                    td ≤28
+                                tr
+                                    td 教师人数
+                                    td 4
+                                    td 4
+                                    td 4
+                                    td 4
+                                tr
+                                    td 师  幼  比
+                                    td 1:5
+                                    td 1:6
+                                    td 1:6.5
+                                    td 1:7
+            
+            
+            
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     
