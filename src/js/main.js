@@ -1,7 +1,18 @@
 
 
 $(document).ready(function() {
-
+    $(window).scroll(function(){
+        if (40 < $(window).scrollTop()) {
+            $("#site-header").addClass("fixheader");
+            $("#logo").attr("src", "img/logo_black.png");
+         
+        } else {
+            $("#site-header").removeClass("fixheader");
+            $("#logo").attr("src", "img/logo.png");
+            $(".newsbody #logo").attr("src", "img/logo_black.png");
+        }
+    })
+   
 
     $("#btnsearch").click(function(e){
         e.preventDefault();        

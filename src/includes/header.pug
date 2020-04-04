@@ -1,29 +1,71 @@
-header.site-header
+header#site-header.site-header
     .container
         .row.align-items-center
             .col-auto
                 a.logo(href="/")
-                    img(src="img/logo.png")
+                    img#logo(src="img/logo.png")
             .col
                 ul.mainav
                     li
                         a.active(href="index.html") 首页   
-                    li.hasnav(data-id='navbg0')
-                        a(href="about.html") 关于金生                         
-                    li.hasnav(data-id='navbg1')
-                        a(href="products.html") 教育特色
-                    li
-                        a(href="news.html") 专业团队
-                    li
-                        a(href="news.html") 校园服务
-                    li
-                        a(href="news.html") 入学申请
-                    li
+                    li.hasnav
+                        a(href="about.html") 关于金生  
+                        ul.subnav
+                            li
+                                a(href='about.html') 园所概况
+                            li
+                                a(href='vision.html') 愿景使命
+                            li
+                                a(href='environment.html') 校园环境                       
+                    li.hasnav
+                        a(href="introduction.html") 教育特色
+                        ul.subnav
+                            li
+                                a(href='introduction.html') 课程介绍
+                            li
+                                a(href='evaluation.html') 评估课程
+                            li
+                                a(href='enrichment.html') 增润课程
+                    li.hasnav
+                        a(href="administrators.html") 专业团队
+                        ul.subnav
+                            li
+                                a(href='administrators.html') 管理团队
+                            li
+                                a(href='teachers.html') 教师团队
+                            li
+                                a(href='development.html') 教师成长
+                    li.hasnav
+                        a(href="classes_opened.html") 校园服务
+                        ul.subnav
+                            li
+                                a(href='classes_opened.html') 班级开设
+                            li
+                                a(href='service_time.html') 服务时间
+                            li
+                                a(href='service.html') 校园服务
+                    li.hasnav
+                        a(href="process.html") 入学申请
+                        ul.subnav
+                            li
+                                a(href='process.html') 申请流程
+                            li
+                                a(href='appointment.html') 参观预约
+                            li
+                                a(href='registration.html') 在线报名
+                            li
+                                a(href='FAQ.html') 常见问题
+                    li.hasnav
                         a(href="news.html") 最新资讯
+                        ul.subnav
+                            li
+                                a(href='news.html') 校园活动
+                            li
+                                a(href='news.html') 家园合作
 
             .col-auto
                 a.lang(href="#") EN
-            .col-auto
+            .col-auto.booking
                 a.btnBook(href="javascript:void(0);") 
                     | 预约参观
             
@@ -35,129 +77,65 @@ header.site-header
                  
                
     
-    div#navbg0.nav-bg
-        .container
-            ul.subnav
-                li
-                    a(href="about.html") 关于我们   
-                li
-                    a(href="qualifications.html") 我们的资质
-                li
-                    a(href="job.html") 招贤纳士
-    div#navbg1.nav-bg
-        .tr
-            .container
-                .row
-                    .col-auto
-                        .icon
-                            i.iconfont.icon-filter
-                    .col
-                        .categories
-                            h3.title
-                                a(href="products.html") 空气过滤
-                            nav
-                                a(href="products.html")  聚丙烯熔喷过滤材料
-                                a(href="products.html")  复合纤维材料
-                                a(href="products.html")  中效袋式过滤材料
-                                a(href="products.html")  标准高效玻璃纤维过滤材料
-                                a(href="products.html")  高强度高效玻璃纤维过滤材料
-                                a(href="products.html")  玻纤袋式过滤材料
-        .tr
-            .container
-                .row
-                    .col-auto
-                        .icon
-                            i.iconfont.icon-filter2
-                    .col
-                        .categories
-                            h3.title
-                                a(href="products.html") 流体过滤
-                            h4.subtitle
-                                a(href="products.html") 过滤袋
-                            nav
-                                a(href="products.html")  针刺毡滤袋(POS/PES) 
-                                a(href="products.html")  尼龙单丝滤袋(NMS)
-                                a(href="products.html")  加长寿命型滤袋(POEM)
-                                a(href="products.html")  绝对精度滤袋(ABR)
-                                a(href="products.html")  高效吸油滤袋(DOA)
-                                a(href="products.html")  活性炭滤袋(ACM)
-                            h4.subtitle
-                                a(href="products.html") 过滤器
-                            nav
-                                a(href="products.html")  顶入式过滤器(FTPL/ETPL)
-                                a(href="products.html")  侧入式过滤器(FSDL/ESDL)
-                                a(href="products.html")  多袋式过滤器(EMBF)
-                                a(href="products.html")  塑料过滤器(EPBF)
-                                a(href="products.html")  芯式过滤器(HCH)
-                            
-                            h4.subtitle
-                                a(href="products.html") 滤芯
-                            nav
-                                a(href="products.html")  线绕滤芯(HSWC)
-                                a(href="products.html")  熔喷滤芯 (HMBC)
-                                a(href="products.html")  折叠膜滤芯(HPMC)
-                                a(href="products.html")  活性炭滤芯（HACC）
-                        
-                            h4.subtitle
-                                a(href="products.html") 针刺毡
-                            nav
-                                a(href="products.html")  聚丙烯滤布
-                                a(href="products.html")  聚酯滤布
-                                a(href="products.html")  加长寿命型滤布
-
-                            h4.subtitle
-                                a(href="products.html") 原配件
-                            nav
-                                a(href="products.html")  加强网
-                                a(href="products.html")  密封圈
-        .tr
-            .container
-                .row
-                    .col-auto
-                        .icon
-                            i.iconfont.icon-car
-                    .col
-                        .categories
-                            h3.title
-                                a(href="products.html") 汽车电子
-                            nav
-                                a(href="products.html")  车载安全
-                                a(href="products.html")  车载娱乐
+    
+    
 
     div#overmenu.menu-over
         ul.mobilenav
             li
                 a(href="index.html") 首页   
             li.hasnav
-                a(href="about.html") 关于我们  
+                a(href="about.html") 关于金生  
                 ul.subnav
                     li
-                        a(href="about.html") 关于我们   
+                        a(href='about.html') 园所概况
                     li
-                        a(href="qualifications.html") 我们的资质
+                        a(href='vision.html') 愿景使命
                     li
-                        a(href="job.html") 招贤纳士  
-
+                        a(href='environment.html') 校园环境                       
             li.hasnav
-                a(href="products.html") 产品   
+                a(href="introduction.html") 教育特色
                 ul.subnav
                     li
-                       a(href="products.html")  空气过滤
-                    li.hasnav
-                       a(href="products.html")  流体过滤
-                       ul.subnav
-                            li
-                                a(href="products.html")  过滤袋
-                            li
-                                a(href="products.html")  过滤器
-                            li
-                                a(href="products.html")  滤芯
-                            li
-                                a(href="products.html")  针刺毡
-                            li
-                                a(href="products.html")  原配件
+                        a(href='introduction.html') 课程介绍
                     li
-                       a(href="products.html")  电子汽车
-            li
-                a(href="news.html") 新闻      
+                        a(href='evaluation.html') 评估课程
+                    li
+                        a(href='enrichment.html') 增润课程
+            li.hasnav
+                a(href="administrators.html") 专业团队
+                ul.subnav
+                    li
+                        a(href='administrators.html') 管理团队
+                    li
+                        a(href='teachers.html') 教师团队
+                    li
+                        a(href='development.html') 教师成长
+            li.hasnav
+                a(href="classes_opened.html") 校园服务
+                ul.subnav
+                    li
+                        a(href='classes_opened.html') 班级开设
+                    li
+                        a(href='service_time.html') 服务时间
+                    li
+                        a(href='service.html') 校园服务
+            li.hasnav
+                a(href="process.html") 入学申请
+                ul.subnav
+                    li
+                        a(href='process.html') 申请流程
+                    li
+                        a(href='appointment.html') 参观预约
+                    li
+                        a(href='registration.html') 在线报名
+                    li
+                        a(href='FAQ.html') 常见问题
+            li.hasnav
+                a(href="news.html") 最新资讯
+                ul.subnav
+                    li
+                        a(href='news.html') 校园活动
+                    li
+                        a(href='news.html') 家园合作   
     

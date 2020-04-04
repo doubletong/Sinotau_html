@@ -2,16 +2,28 @@
     padding-bottom: 0;
    
     .s2{
-        padding-bottom: 0;
-        
+        padding-bottom: 2rem;
+        @include mq(lg){
+            padding-bottom: 0;
+        }
+        .title-section{
+            text-align: center;
+            @include mq(lg){
+                text-align: left;
+            }
+        }
 
         .gallery-thumbs{           
             a.link{
-             
+                text-align: center;
                 display: inline-block;
-                padding: .6rem 0;
+                padding: .6rem .8rem;
                 cursor: pointer;       
-                margin-left: rem(60);    
+              
+                @include mq(lg){
+                    margin-left: rem(60);    padding: .6rem 0; 
+                    text-align: right;
+                }
                 &.active{
                     background: url(../img/dot.png) no-repeat center top;
                 }  
@@ -20,9 +32,15 @@
         }
         .gallery-top{
             .pic{
-                height: 500px;
+                height: 180px;
                 object-fit: cover;
-                object-position: center center;              
+                object-position: center center;   
+                @include mq(md) {
+                    height: 300px;
+                }   
+                @include mq(lg) {
+                    height: 600px;
+                }           
                 @include mq(xl) {
                     height: 600px;
                 }
@@ -31,12 +49,24 @@
             .txt{
                 width: 370px;
                 box-sizing: border-box;
-                padding: rem(48) 6rem 0 rem(40);
+                padding: 2rem 1rem 4rem 1rem;
+                @include mq(md) {
+                    height: 300px;   padding: rem(48) 6rem 0 rem(40);
+                } 
                 .icon{
                     margin-bottom: 1rem;
                 }
                 .title{
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
+                    @include mq(md) {
+                        margin-bottom: 2rem;
+                    } 
+                    img{
+                        height: 30px;
+                        @include mq(md) {
+                            height: auto;
+                        } 
+                    }
                 }
             }
             .navgo{
@@ -65,7 +95,8 @@
     }
     .s3{
     
-        padding-top: 1rem;   padding-bottom: 1rem;
+        padding-top: 1rem;   
+        padding-bottom: 4rem;
         @include mq(sm) {
             padding-top: 2rem;   padding-bottom: 2rem;
         }
@@ -79,7 +110,10 @@
             padding-top: 6rem;   padding-bottom: 6rem;
         }
         .item{
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
+            @include mq(md) {
+                margin-bottom: 20px;
+            }
             .pic{
                 display: block;
                 margin-bottom: .5rem;
@@ -98,7 +132,10 @@
            
         }
         .des{
-            padding: 1rem 2rem;
+            padding: 1rem;
+            @include mq(md) {
+                padding: 1rem 2rem;
+            }
             .category{
                 font-size: rem(12);
                 display: inline-block;
@@ -113,9 +150,13 @@
             h3.title{
                 font-size: 1rem;
                 text-align: left;
-                font-weight: bold;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                font-weight: bold;  
+                @include mq(md) {
+                    font-size: rem(14);  
+                }
+                @include mq(lg) {
+                    font-size: 1rem;
+                }
                 a{
                     color: #000;
                     display: block;
@@ -131,10 +172,14 @@
             border-width: 1px;
             border-color: rgb(34, 30, 31);
             border-style: solid;
-            line-height: 50px;
-            width: 198px;
-            height: 52px;
+            line-height: 43px;
+            width: 150px;
+            height: 45px;
             display: inline-block;
+            @include mq(md) {
+                width: 198px;
+                height: 52px;  line-height: 50px;
+            }
             &:hover{
                 background-color: #000;
                 color: #fff;

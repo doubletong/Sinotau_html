@@ -1,9 +1,18 @@
 .page-news {
     .s1{
-        padding-top: 12rem;
+        padding-top: 6rem;
+       
+        @include mq(md) {
+            padding-top: 8rem;
+            padding-bottom: 1rem;
+        }
+        @include mq(lg) {
+            padding-top: 12rem;
         padding-bottom: 5rem;
+        }
     }
     .s2{
+     
         .newslist{
            
             @include mq(lg) {
@@ -15,11 +24,20 @@
         }
         .item{
             
-            margin-bottom: 6rem;
-              
+            margin-bottom: 3rem;
+            @include mq(md) {
+                margin-bottom: 3rem;
+            }
+            @include mq(lg) {
+                margin-bottom: 6rem;
+            }
             .pic{
                 overflow: hidden;
                 display: block;
+                margin-bottom: 1rem;
+                @include mq(md) {
+                    margin-bottom: 0;
+                }
                 img{
                     display: block;
                     width: 100%;
@@ -35,13 +53,17 @@
             .title{
                 font-size: rem(18);
                 font-weight: normal;
-                margin-bottom: 2rem;
+             
                 @include mq(md) {
-                    font-size: rem(24);
+                    font-size: rem(24);   margin-bottom: 2rem;
                 }
             }
             .des{
                 color: #999;
+                display: none;
+                @include mq(lg) {
+                    display: block;
+                }
             }
             time{
                 color: #999;
@@ -62,6 +84,10 @@
     }
     .news-footer {
         text-align: center;
+        padding-bottom: 3rem;
+        @include mq(md){
+            padding-top: 2rem;
+        }
         .btn-default-outline{
             border: 1px #221e1f solid;
             padding: .8rem 5rem;
@@ -77,12 +103,31 @@
 }
 
 .page-news-detail{
+    padding-top: 45px;
+    @include mq(md){
+        padding-top: 70px;
+    }
+    @include mq(lg){
+        padding-top: 80px;
+    }
+    @include mq(xl){
+        padding-top: 96px;
+    }
     .top_pic{
-        height: 500px;
+        height: 200px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
+        @include mq(md){
+            height: 300px; margin-bottom: 3rem;
+        }
+        @include mq(lg){
+            height: 400px; margin-bottom: 4rem;
+        }
+        @include mq(xl){
+            height: 500px; margin-bottom: 5rem;
+        }
     }
     article{
         header{
@@ -93,7 +138,7 @@
             }
             h1{
                 font-size: rem(24);
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 @include mq(md) {
                     font-size: rem(28);  margin-bottom: 1rem;
                 }

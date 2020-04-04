@@ -1,27 +1,70 @@
 .site-contact{
-    background: #fff url(../img/home_bg.jpg) no-repeat right center;
+    padding-top: 180px;
+    background: #fff url(../img/home_bg.jpg) no-repeat right top;
+    background-size: auto 180px;
     overflow: hidden;
+    @include mq(md){
+        background: #fff url(../img/home_bg.jpg) no-repeat right -21rem center; padding-top: 0;
+    }
+    @include mq(lg){
+        background: #fff url(../img/home_bg.jpg) no-repeat right -22rem center;
+    }
+    @include mq(xl){
+        background: #fff url(../img/home_bg.jpg) no-repeat right center;
+    }
     .c{
-        padding: 5rem 5rem 0;
-        height: 400px;
-        width: 640px;
+        padding: 3rem 1rem 2rem;     
         background-color: $color_primary;
         color: #fff;
+        text-align: center;
+        @include mq(md){
+            height: 300px;
+            width: 540px;  padding: 3.5rem 2rem 0;
+            text-align: left;
+        }
+        @include mq(lg){
+            height: 350px;
+            width: 640px;  padding: 5rem 5rem 0;
+            text-align: left;
+        }
+        @include mq(xl){
+            height: 400px;
+            width: 640px;  padding: 5rem 5rem 0;
+            text-align: left;
+        }
         img{
             display: block;
-            margin-bottom: 1rem;
+            margin: 0 auto .5rem;
+            @include mq(md){
+                margin: 0 auto 1rem;
+            }
         }
         p{
             text-align: center;
+            margin-bottom: 2rem;
+            @include mq(md){
+                margin-bottom: auto;
+            }
         }
         .actions{
             margin-bottom: 2.5rem;
+            text-align: center;
+            .btn{
+                width: 100%;
+                @include mq(md){
+                    width: auto;
+                }
+            }
         }
         .list{
             @include reset-list();
+            text-align: left;
             li{
                 padding-left: 2rem;
-                margin-bottom: 1.7rem;
+                margin-bottom: 1rem;
+                @include mq(md){
+                    margin-bottom: 1.7rem;
+                }
                 &.phone{
                     background: url(../img/phone.png) no-repeat left center;
                 }
@@ -34,12 +77,19 @@
 }
 
 .site-footer{
-    padding-top: rem(150);
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;  
     font-size: rem(14);  
     text-align: center;
+    @include mq(lg){
+        padding-top: rem(150);
+    }
     .botnav{
         margin-bottom: 4rem;
+        display: none;
+        @include mq(lg){
+            display: flex;
+        }
     }
     .item{
         h3{

@@ -15,11 +15,11 @@ block content
             .newslist
                 .item
                     .row.justify-content-between.align-items-center
-                        .col-md-6                       
+                        .col-md-5.col-lg-6                 
                             a.pic.wow.fadeInLeft(href="news_detail.html")
                                 img(src="img/temp/news02.jpg")
                         
-                        .col-md-5
+                        .col-md-7.col-lg-5
                             a.txt.wow.fadeInRight(href="news_detail.html")  
                                 h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
                                 p.des 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。个人的力量是有限的，而团队的力量不可估量的。金生国际幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与与家长保持密切的沟通。
@@ -28,11 +28,11 @@ block content
                 
                 .item
                     .row.justify-content-between.align-items-center
-                        .col-md-6                       
+                        .col-md-5.col-lg-6                 
                             a.pic.wow.fadeInLeft(href="news_detail.html")
                                 img(src="img/temp/news02.jpg")
                         
-                        .col-md-5
+                        .col-md-7.col-lg-5
                             a.txt.wow.fadeInRight(href="news_detail.html")  
                                 h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
                                 p.des 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。个人的力量是有限的，而团队的力量不可估量的。金生国际幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与与家长保持密切的沟通。
@@ -40,11 +40,11 @@ block content
                                     | 2020.03.09
                 .item
                     .row.justify-content-between.align-items-center
-                        .col-md-6                       
+                        .col-md-5.col-lg-6                 
                             a.pic.wow.fadeInLeft(href="news_detail.html")
                                 img(src="img/temp/news02.jpg")
                         
-                        .col-md-5
+                        .col-md-7.col-lg-5
                             a.txt.wow.fadeInRight(href="news_detail.html")  
                                 h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
                                 p.des 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。个人的力量是有限的，而团队的力量不可估量的。金生国际幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与与家长保持密切的沟通。
@@ -52,23 +52,11 @@ block content
                                     | 2020.03.09
                 .item
                     .row.justify-content-between.align-items-center
-                        .col-md-6                       
+                        .col-md-5.col-lg-6                 
                             a.pic.wow.fadeInLeft(href="news_detail.html")
                                 img(src="img/temp/news02.jpg")
                         
-                        .col-md-5
-                            a.txt.wow.fadeInRight(href="news_detail.html")  
-                                h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
-                                p.des 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。个人的力量是有限的，而团队的力量不可估量的。金生国际幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与与家长保持密切的沟通。
-                                time                                     
-                                    | 2020.03.09
-                .item
-                    .row.justify-content-between.align-items-center
-                        .col-md-6                       
-                            a.pic.wow.fadeInLeft(href="news_detail.html")
-                                img(src="img/temp/news02.jpg")
-                        
-                        .col-md-5
+                        .col-md-7.col-lg-5
                             a.txt.wow.fadeInRight(href="news_detail.html")  
                                 h3.title 德国科隆过滤与分离技术设备工业展览会FILTECH
                                 p.des 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。个人的力量是有限的，而团队的力量不可估量的。金生国际幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与与家长保持密切的沟通。
@@ -96,8 +84,6 @@ block content
 block bkfooter
     script.
         $(function(){
-        $("#cbSelectAll").change(function(){
-        var isSelected = $(this).prop("checked");
-        $('td input[type="checkbox"]').prop("checked",isSelected)
-        })
+            $('body').addClass("newsbody");
+            $("#logo").attr('src','img/logo_black.png');
         })

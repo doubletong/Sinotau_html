@@ -44,8 +44,10 @@ a {
 }
 
 .title-section {  
-    margin-bottom: 2.5rem;
-
+    margin-bottom: 1.5rem;
+    @include mq(md) {
+        margin-bottom: 2.5rem;
+    }
    
     h2 {    
         color: #000;
@@ -57,12 +59,24 @@ a {
     }
 }
 .title-section-v2{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    @include mq(md) {
+        margin-bottom: 2rem;
+    }
+    @include mq(lg) {
+        margin-bottom: 3rem;
+    }
+    @include mq(xl) {
+        margin-bottom: 4rem;
+    }
     h3{
         font-size: rem(24);
         font-weight: normal;
         font-family: PoppinsRegular,PingFangSC-Regular, "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         margin-bottom: 0;
+        line-height: 1.3;
+        
     }
     h4{
         font-size: rem(14);
