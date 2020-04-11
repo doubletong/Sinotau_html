@@ -3,8 +3,8 @@
     display: inline-block;
     border:1px #fff solid;
     color: #fff;
-    padding: .6rem 2rem;
-      
+    padding: .9rem 4rem;
+      font-weight: bold;
     &:hover{
         background-color: #fff;
         color: $color-primary;
@@ -12,10 +12,26 @@
     .iconfont {
         font-size: 14px;
     }
+    &.btn-default-outline{
+        border:#fff 2px solid;
+        color:#fff;
+        &:hover{
+            background-color: #fff;
+            color: #333;
+        }
+    }
     &.btn-primary{
         background-color: $color-primary;color: #fff;
         &:hover{
             background-color:darken($color-primary,10%);
+        }
+    }
+    &.btn-primary-outline{
+        border:$color-primary 2px solid;
+        color:$color-primary;
+        &:hover{
+            background-color: $color-primary;
+            color: #fff;
         }
     }
     &.btn-send{

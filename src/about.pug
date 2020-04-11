@@ -1,30 +1,44 @@
 extends includes/layout.pug
 
 block title
-    | 园所概况-关于我们
+    | About Us
 
 block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url('img/temp/banner-about.jpg')")
-     
+    .container
+        .breadcrumb 
+            a(href="index.html") home
+            |-ABOUT
+        
     .page.page-about
-        section.s1.container
-            .row
-                .col-md-4
-                    .title-section.wow.fadeInLeft
-                        h2 园所概况
-                .col-md-8
-                    .intro.wow.fadeInUp
-                        header.title-section-v2
-                            h3 Introduction
-                            h4 园所概况
+        section.container
+            .title-section-v3 
+                h1 ABOUT US
 
-                        p 深圳市福田区金生幼儿园坐落在市中心香蜜湖片区，周边高端住宅林立，自然人文资源丰富，位置闹中取静，可谓得天独厚。幼儿园占地4000平方米，拥有户外游乐场2000平方米，室内建筑面积达8000平方米以上。我园致力为2-6岁学龄前儿童打造一所荟萃多元文化、高品质的双语国际幼儿园，计划于2020年9月正式开业。
-                        p 我园将引进世界知名的国际课程，透过全浸式双语互动及超学科探究的方式组织教学。
-                        p 我们相信，每个孩子都是独一无二的个体，他们应该得到充分的尊重。我园将践行适孩子年龄发展的探究课程，促使幼儿通过多感官积极探知周遭世界，从而发展多元视角和国际视野，与他人开展积极且富有意义的互动，在包容和理解中成长为具有国际情怀的终身学习者。
-                        
-                
+            .title-section-v4
+                h2 Premium Parts | About us
+            main.intro
+                p 
+                    strong At
+                    | Premium Part, our core competencies and focus revolves around quality service delivery. We strive to provide each and every client with a truly rapid manufacturing process that will yield premium, functional parts through the most cost-effective approach.
+                p Premium Parts specializes in a wide array of services for both low-volume and mass production quantities. Our array of services include rapid prototyping, low-volume manufacturing, CNC Machining, 3D Printing, Urethane Casting, Rapid tooling, Sheet metal services, Aluminium extrusion and Injection molding. We serve a variety of industries including but not limited to automotive, aerospace, consumer products, lighting and electronics. 
+                p We boast of a diverse team with a wealth of experience in variety of fields. Our services are well-grounded across international regions, local and foreign client bases. We also ensure that we offer affordable pricing, quick turnaround, faster lead-times, quality control, shipping and delivery options for both local and international customers. Premium Part specializes 
+            
+            .title-section-v4
+                h2 Mission and Vision
+            .box.mission(style={'background-image':'url(../img/bg_05.jpg)'})
+                .txt
+                    .txtwrap
+                        h3 Our Mission
+                        p To inspire and accelerate innovations through effective manufacturing practices that associates our company profile with the highest quality standards 
+               
               
-
+            .box.vision(style={'background-image':'url(../img/bg_06.jpg)'})
+                .txt
+                    .txtwrap
+                        h3 Our Mission
+                        p To inspire and accelerate innovations through effective manufacturing practices that associates our company profile with the highest quality standards 
+               
+              
 
         
 block bkfooter

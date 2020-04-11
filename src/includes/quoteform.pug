@@ -1,0 +1,46 @@
+
+form.quoteform(action="#")
+    .row
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="name",placeholder="Name:")
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="company",placeholder="Company:")
+    .row
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="email",placeholder="Email:")
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="phone",placeholder="Phone Number:")
+    .row
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="country",placeholder="Country:")
+        .col-md-6
+            .form-group
+                input.form-control(type="text", name="industry",placeholder="Industry:")
+
+    .row
+        .col-md-6
+            .form-group
+                input.form-control(type="date", name="delivery",placeholder="Delivery Due Day:")
+        .col-md-6
+            .form-group
+                input.form-control(type="date", name="expected",placeholder="Expected total price:")
+
+    .form-group
+        textarea.form-control(name="message", cols="30", rows="10",placeholder="Please describe your project including follow info: Part number, material, finish, quantity. ")
+
+    .note
+        h4 Reminder:
+        ol
+            li The parts files format we accept for quote: STL (.stl), STEP (.stp), IGES (.igs), PRT(.prt), X_T (.x_t), SolidWorks(.sldprt)
+            li The maximum uploaded file size is 2MB
+
+    .upload-el
+        button Upload Document
+
+    .text-center
+        button.btn.btn-primary(type="submit") SEND

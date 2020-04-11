@@ -1,5 +1,5 @@
 .site-header {
-   
+    background-color: $color-primary;
     position: fixed;
     left: 0;
     top: 0;
@@ -14,12 +14,10 @@
 
 
     .logo {
-        display: block;
-        padding-top: 1rem;
+        display: block;    
         width: 100px;
-
-        @include mq(md) {
-            width: 140px;
+        @include mq(lg) {
+            width: auto;
         }
 
 
@@ -28,14 +26,14 @@
     .mainav {
         @include reset-list();
         display: none;
-        padding-left: 2rem;
+        padding-left: 1rem;
         height: 100%;
         @include mq(lg) {
             display: block;
         }
 
         @include mq(xl) {
-            padding-left: 0; padding-left: 4rem;
+            padding-left: 0; padding-left: 2rem;
         }
 
         &>li {
@@ -47,11 +45,11 @@
                  
              }
             @include mq(xl) {
-               padding: 0 rem(24);
+               padding: 0 rem(20);
                 
             }
             @include mq(xxl) {
-                padding: 0 rem(30);
+                padding: 0 rem(22);
                  
              }
             &>a {
@@ -59,7 +57,7 @@
                 color: #fff;
                 height: 45px;
                 line-height: 45px;
-
+                text-transform: uppercase;
                 @include mq(md) {
                     height: 70px;
                     line-height: 70px;
@@ -71,8 +69,8 @@
                 }
             
                 @include mq(xl) {
-                    height: 96px;
-                    line-height: 96px;
+                    height: 100px;
+                    line-height: 100px;
                 }
                
                 &.active {
@@ -81,72 +79,11 @@
                 }
             }
 
-            .subnav{
-                position: absolute;
-                left: 50%;
-                @include reset-list();
-                margin-left: -75px;
-              z-index: 200;           
-              background-color: #fff;
-                    top: 80px;
-               
-                padding: 1rem;
-                width: 150px;
-                box-shadow: 0 0 12px rgba(0,0,0,.1);
-                border-radius: 6px;
-                display: none;
-                @include mq(xl) {
-                    top: 96px;
-                }
-
-                &::before{
-                    content: ' ';
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    left: 50%;
-                    border:8px #fff solid;
-                    margin-top: -16px;
-                    border-left-color: transparent;
-                    border-right-color: transparent;
-                    border-top-color: transparent;
-                    top: 0;
-                    display: block;
-                    margin-left: -8px;
-                   
-                }
-                li{
-                    margin: 0;
-                    text-align: center;
-                    a{
-                        padding: .6rem 1rem;
-                        display: block;
-                    }
-                }
-            }
-
-            &:hover{
-                .subnav{
-                    display: block;
-                }
-            }
 
         }
     }
 
-    .lang {
-        
-        display: inline-block;
-        padding: 0rem .5rem;
-        color: #fff;
-        @include mq(lg) {
-            padding: .3rem .6rem;
-            border: 1px #fff solid;
-        }
-        .iconfont {
-            font-size: rem(14);
-        }
-    }
+   
     .booking{
 
         display: none;
@@ -154,12 +91,13 @@
             display: block;
         }
         .btnBook {
-            color: $color-secondary;
-            background-color: #fff;
+            text-transform: uppercase;
+            color: #fff;           
             display: inline-block;
             border: 1px #fff solid;
-            padding: .3rem 1rem;
+            padding: .6rem 1.6rem;
             margin-left: -10px;
+         
         }
     }
 
@@ -312,40 +250,7 @@
     }
 
     &.fixheader{
-        background-color: #fff;
-        .mainav{
-            li{
-                a{
-                    color: #666;
-                }
-            }
-        }
-
-        .lang {
-           
-            color: #030303;    
-            @include mq(lg) {
-                border: 1px #030303 solid;        
-            }
-        }
-    
-        .btnBook {
-            color: #fff;
-            background-color: #030303;     
-            border: 1px #030303 solid; 
-            &:hover{
-                background-color: #fff;
-                color: #030303;
-            }         
-        }
-
-        .one,
-        .two,
-        .three {
-          
-            background-color: #030303;
-           
-        }
+       
         
     }
 }

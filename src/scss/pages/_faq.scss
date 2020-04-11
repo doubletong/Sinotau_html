@@ -1,0 +1,50 @@
+.page-faq{
+    .faqlist{
+        margin-bottom: 5rem;
+        .box{
+            border-bottom: 1px #e2e2e2 solid;
+            padding: 1.5rem 0;
+            margin-bottom: .5rem;
+            .title{
+                font-size: rem(28);
+                color: #333;
+                text-transform: uppercase;
+                margin-bottom: .8rem;
+                position: relative;
+                display: block;
+                padding-right: 100px;
+                text-align: left;
+                padding-left: 35px;
+                span{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 10;
+                }
+                .icon{
+                    position: absolute;
+                    z-index: 20;
+                    right: 0;
+                    top:.6rem;
+                    width: 28px;
+                    height: 28px;
+                    background: url(../img/icon-plus.png) no-repeat center center;
+                    &.open{
+                        background: url(../img/icon-minus.png) no-repeat center center;
+                    }
+                }
+            }
+            .answer{
+                padding-left: 2rem;
+                display: none;
+            }
+
+            &.first-child{
+                .answer{                 
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

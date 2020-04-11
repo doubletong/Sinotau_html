@@ -1,119 +1,90 @@
 .site-contact{
-    padding-top: 180px;
-    background: #fff url(../img/home_bg.jpg) no-repeat right top;
-    background-size: auto 180px;
-    overflow: hidden;
+   
+    background: #fff url(../img/footer_bg.jpg) no-repeat center top;
+    height: 100px;
+    background-size: cover;
+    color: #fff;
+
     @include mq(md){
-        background: #fff url(../img/home_bg.jpg) no-repeat right -21rem center; padding-top: 0;
+        height: 150px;
     }
     @include mq(lg){
-        background: #fff url(../img/home_bg.jpg) no-repeat right -22rem center;
+        height: 180px;
     }
     @include mq(xl){
-        background: #fff url(../img/home_bg.jpg) no-repeat right center;
+       height: 237px;
     }
-    .c{
-        padding: 3rem 1rem 2rem;     
-        background-color: $color_primary;
-        color: #fff;
-        text-align: center;
-        @include mq(md){
-            height: 300px;
-            width: 540px;  padding: 3.5rem 2rem 0;
-            text-align: left;
-        }
-        @include mq(lg){
-            height: 350px;
-            width: 640px;  padding: 5rem 5rem 0;
-            text-align: left;
-        }
-        @include mq(xl){
-            height: 400px;
-            width: 640px;  padding: 5rem 5rem 0;
-            text-align: left;
-        }
-        img{
-            display: block;
-            margin: 0 auto .5rem;
-            @include mq(md){
-                margin: 0 auto 1rem;
+    .container{
+        @include vertical-align();       
+        .title{
+            font-size: rem(38);
+            font-weight: bold;
+            line-height: 1.5;
+            max-width: 700px;
+            &::after{
+                content: " ";
+                display: block;
+                height: 6px;
+                width: 30px;
+                background-color: $color_primary;
+                margin-top: 1rem;
             }
         }
-        p{
-            text-align: center;
-            margin-bottom: 2rem;
-            @include mq(md){
-                margin-bottom: auto;
-            }
-        }
-        .actions{
-            margin-bottom: 2.5rem;
-            text-align: center;
-            .btn{
-                width: 100%;
-                @include mq(md){
-                    width: auto;
-                }
-            }
-        }
-        .list{
-            @include reset-list();
-            text-align: left;
-            li{
-                padding-left: 2rem;
-                margin-bottom: 1rem;
-                @include mq(md){
-                    margin-bottom: 1.7rem;
-                }
-                &.phone{
-                    background: url(../img/phone.png) no-repeat left center;
-                }
-                &.address{
-                    background: url(../img/marker.png) no-repeat left center;
-                }
-            }
-        }
+        
     }
 }
 
 .site-footer{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;  
-    font-size: rem(14);  
-    text-align: center;
-    @include mq(lg){
-        padding-top: rem(150);
-    }
-    .botnav{
-        margin-bottom: 4rem;
-        display: none;
-        @include mq(lg){
-            display: flex;
-        }
-    }
-    .item{
-        h3{
-            color: #221e1f;
-            font-size: rem(14);
-            font-weight: normal;
-        }
-        ul.nav{
-            @include reset-list();
-            li{
-                font-size: rem(12);
-                a{
-                    display: block;
-                    padding: .5rem 0;
-                    color: #999;
-                    &:hover{
-                        color: $color_primary;
-                    }
-                }
-            }
-        }
-    }
-    .copyright{
-        color: #999;
-    }
+    padding-top: 3rem;
+    padding-bottom: 3rem;  
    
+    text-align: center;
+   
+  
+    .item{
+        text-transform: uppercase;
+        .icon{
+            margin-bottom: .4rem;
+        }
+        .quote{
+            background-color: $color_primary;
+            display: inline-block;
+            padding: 1.3rem 3rem;
+            color: #fff;
+        }
+    }
+
+}
+.bot{
+    background-color: #e5e5e5;
+    color: #999696;
+    padding:.6rem 0 ;
+    font-size:rem(14);    
+    .add{
+        position: relative;
+        padding-left: 40px;
+   
+        .iconfont{
+            font-size: rem(28);
+            position: absolute;
+            left: 0;
+            top: 0rem;
+            z-index: 100;
+            line-height: 1;
+        }
+    }
+    
+}
+
+.toTop{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: block;
+    opacity: .5;
+    z-index: 2000;
+    display: none;
+    &:hover{
+        opacity: 1;
+    }
 }

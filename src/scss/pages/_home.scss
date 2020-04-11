@@ -1,96 +1,73 @@
-.page-home {
-    padding-bottom: 0;
-   
-    .s2{
-        padding-bottom: 2rem;
-        @include mq(lg){
-            padding-bottom: 0;
-        }
-        .title-section{
-            text-align: center;
-            @include mq(lg){
-                text-align: left;
-            }
-        }
 
-        .gallery-thumbs{           
-            a.link{
-                text-align: center;
-                display: inline-block;
-                padding: .6rem .8rem;
-                cursor: pointer;       
-              
-                @include mq(lg){
-                    margin-left: rem(60);    padding: .6rem 0; 
-                    text-align: right;
-                }
-                &.active{
-                    background: url(../img/dot.png) no-repeat center top;
-                }  
-            }
-           
-        }
-        .gallery-top{
-            .pic{
-                height: 180px;
-                object-fit: cover;
-                object-position: center center;   
-                @include mq(md) {
-                    height: 300px;
-                }   
-                @include mq(lg) {
-                    height: 600px;
-                }           
-                @include mq(xl) {
-                    height: 600px;
-                }
-            }
+
+.page-home {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .s1{ 
+  
+  
+        background-image: linear-gradient( 0deg, #1a1919 0%, #302e2e 100%);
             
+        height: 640px;
+         color: #fff;
+        
+          
+        .container{
+            @include vertical-align();
             .txt{
-                width: 370px;
-                box-sizing: border-box;
-                padding: 2rem 1rem 4rem 1rem;
-                @include mq(md) {
-                    height: 300px;   padding: rem(48) 6rem 0 rem(40);
-                } 
-                .icon{
-                    margin-bottom: 1rem;
+                max-width: 720px;
+                
+                h2{
+                    font-size: rem(60);
+                    text-transform: uppercase;
                 }
-                .title{
-                    margin-bottom: 1rem;
-                    @include mq(md) {
-                        margin-bottom: 2rem;
-                    } 
-                    img{
-                        height: 30px;
-                        @include mq(md) {
-                            height: auto;
-                        } 
+                p{
+                    font-size: rem(24);
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                }
+                .actions{
+                    padding-top: 3rem;
+                    a{
+                        color: #fff;
+                        .iconfont{
+                            font-size: 2.6rem;
+                        }
+                    }
+                    .quote{
+                        display: inline-block;
+                        padding: .6rem 2rem;
+                        background-color: $color-primary;
+                        color: #fff;
+                        text-transform: uppercase;
                     }
                 }
             }
-            .navgo{
-                position: absolute;
-                right: 0;
-                z-index: 6000;
-                bottom: 0;
-                width: 160px; 
-                border-bottom: 2px #000 solid;   
-                padding-right: 5rem;   
-               height: 70px;
-               .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-                   background-size: 16px auto;
-                   left: 0;
-                   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
-               }
-               .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
-                   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
-                   left:3rem;
-                   right: auto;background-size: 16px auto;
-               }
-            }
-       
         }
+    }
+   
+    .s2{
+        height: 750px;
+        background: #fff url(../img/bg_about.jpg) no-repeat center center;
+        .container{
+            @include vertical-align(); 
+            .intro{
+               
+                @include mq(lg){
+                    padding-left: rem(70);
+                }
+                @include mq(xl){
+                    padding-left: rem(115);
+                }
+                .btn{
+                    margin-top: 2rem;
+                    
+                }
+            }
+        }
+       
+      
 
     }
     .s3{
@@ -110,81 +87,215 @@
             padding-top: 6rem;   padding-bottom: 6rem;
         }
         .item{
-            margin-bottom: 1rem;
-            @include mq(md) {
-                margin-bottom: 20px;
-            }
+        
+            display: block;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        
             .pic{
-                display: block;
-                margin-bottom: .5rem;
+                display: block;              
                 overflow: hidden;
+                background-color: #000;
                 img{
                     width: 100%;
                     display: block;      
                     transition: all .2s;         
                 }
-                &:hover{
-                    img{
-                        transform: scale(1.1);
-                    }
-                }
+             
             }
            
-        }
-        .des{
-            padding: 1rem;
-            @include mq(md) {
-                padding: 1rem 2rem;
-            }
-            .category{
-                font-size: rem(12);
-                display: inline-block;
-                border:1px #000 solid;
-                padding: .1rem .6rem;
-                
-            }
-            time{
-                font-size: rem(12);
-                color: #999;
-            }
-            h3.title{
-                font-size: 1rem;
-                text-align: left;
-                font-weight: bold;  
+            .des{
+                padding: 1rem;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                bottom: -7.5rem;
+                z-index: 100;
+                background-image: linear-gradient( 90deg, #5b636e 0%, #5b636e00 100%);
+                transition: all .2s;
                 @include mq(md) {
-                    font-size: rem(14);  
+                    padding: 1rem 2rem;
                 }
-                @include mq(lg) {
-                    font-size: 1rem;
+               
+                h3.title{
+                    font-size: rem(20);
+                    text-align: left;
+                    font-weight: bold;  
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    @include mq(md) {
+                        font-size: rem(22);  
+                    }
+                    @include mq(lg) {
+                        font-size: rem(24);
+                    }   
                 }
-                a{
-                    color: #000;
-                    display: block;
-                    padding: 1rem 0;
+                p{
+                    margin-bottom: 4rem;
                 }
-            }
+        }
+        &:hover{
+            .pic{
+           
+                img{
+                   opacity: .5;    
+                   transform: scale(1.1);           
+                }
             
+            }
+            .des{
+                bottom: 3rem;
+                background-image: none;
+                h3.title{
+                    font-size: rem(28);
+                    text-align: left;
+                    font-weight: bold;  
+                    margin-bottom: 1.2rem;
+                    @include mq(md) {
+                        font-size: rem(32);  
+                    }
+                    @include mq(lg) {
+                        font-size: rem(36);
+                    }
+                    &::after{
+                        content: " ";
+                        display: block;
+                        width: 30px;
+                        height: 6px;
+                        background-color: #fff;
+                        margin-top: 1rem;
+                    }
+                }
+            
+            }
+        }
            
         }
 
-       
-        .more {
-            border-width: 1px;
-            border-color: rgb(34, 30, 31);
-            border-style: solid;
-            line-height: 43px;
-            width: 150px;
-            height: 45px;
-            display: inline-block;
-            @include mq(md) {
-                width: 198px;
-                height: 52px;  line-height: 50px;
-            }
-            &:hover{
-                background-color: #000;
-                color: #fff;
-            }
-          }
+    
+
           
     }
+   .s4{
+       .title-section-v2{
+           max-width: 820px;
+           margin-left:auto;
+           margin-right: auto;
+       }
+
+       .tab-header{
+           text-align: center;
+           padding-bottom: 3rem;
+           .item{
+               padding-top: 1.55rem;
+               display: block;
+               .icon{
+         
+                        border-radius: 50%;
+                        background-color: rgba(229, 46, 46,.078);     
+                        width: 48px;
+                        height: 48px;
+                        padding-top: 9px;
+                        margin: 0 auto 1rem;
+                    
+                }
+                .txt{
+                    font-size: rem(14);color: $color-primary;
+                    line-height: 1.2;
+                }
+
+                &.active{
+                    background: url(../img/bg_01.png) no-repeat center top;
+                    .icon{
+                        background-color: #fff;
+                        border:1px $color-primary solid;
+                    }
+                }
+           }
+          
+       }
+       .swiperel{
+           position: relative;
+           margin-bottom: rem(120);
+       }
+       .swiper01{
+
+           .item{
+               height: 340px;
+               background-position: right center;
+               background-repeat: no-repeat;
+               .txt{
+                   height: 100%;
+                   background: url(../img/bg_03.png) no-repeat right center;
+                   max-width: 630px;
+                   .txtwrap{
+                       @include vertical-align();
+                       padding: 0 7rem 0 3rem;
+                       color: #fff;
+                       h3{
+                           font-size: rem(28);
+                           text-transform: uppercase;
+                       }
+                       p{
+                           text-align: left;
+                       }
+                       &::after{
+                            content: " ";
+                            display: block;
+                            width: 30px;
+                            height: 6px;
+                            background-color: #fff;
+                            margin-top: 1rem;
+                        }
+                   }
+               }
+           }
+       }
+   }
+   .s5{
+       .item{
+           display: block;
+           background-color: #333;
+           background-size: cover;
+           background-position: center center;
+           background-repeat: no-repeat;
+           color: #fff;
+           height: 500px;
+           .module{
+               font-size: rem(24);
+               font-weight: bold;
+               @include vertical-align();
+               text-align: center;
+               text-transform: uppercase;
+           }
+           .des{
+            @include vertical-align();
+            padding: 1rem  1rem 2rem 5rem;
+            width: 900px;
+            h3{
+                font-size: rem(36);
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+            .more{
+                color: $color-primary;
+                background: url(../img/arrow-right.png) no-repeat right center;
+                padding-right: 3.4rem;
+               text-transform: uppercase;
+                display: inline-block;
+            }
+           }
+           &.material{
+               background-image:  url(../img/home_m.jpg) ;
+           }
+           &.blog{
+             background-image:  url(../img/home_b.jpg) ;
+           }
+           &.faq{
+            background-image:  url(../img/home_faq.jpg) ;
+          }
+       }
+   }
 }
