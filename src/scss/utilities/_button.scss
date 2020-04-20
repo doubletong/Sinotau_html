@@ -3,8 +3,11 @@
     display: inline-block;
     border:1px #fff solid;
     color: #fff;
-    padding: .9rem 4rem;
+    padding: .6rem 2rem;
       font-weight: bold;
+      @include mq(lg){
+        padding: .9rem 4rem;
+    }
     &:hover{
         background-color: #fff;
         color: $color-primary;
@@ -13,8 +16,11 @@
         font-size: 14px;
     }
     &.btn-default-outline{
-        border:#fff 2px solid;
+       
         color:#fff;
+        @include mq(lg){
+            border:#fff 2px solid;
+        }
         &:hover{
             background-color: #fff;
             color: #333;
@@ -27,8 +33,11 @@
         }
     }
     &.btn-primary-outline{
-        border:$color-primary 2px solid;
+        border:$color-primary 1px solid;
         color:$color-primary;
+        @include mq(lg){
+            border:$color-primary 2px solid;
+        }
         &:hover{
             background-color: $color-primary;
             color: #fff;

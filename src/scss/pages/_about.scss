@@ -1,7 +1,10 @@
 .page-about{
    
     .intro{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+        @include mq(lg){
+            margin-bottom: 5rem;
+           }
         strong{
             font-size: rem(24);
         }
@@ -12,18 +15,29 @@
         margin-bottom: 30px;
     
         .txt{
-            width: 760px;
+         
             height: 100%;
-          
+            @include mq(md){
+                width: 460px;
+               }
+           @include mq(lg){
+            width: 760px;
+           }
             position: relative;
             .txtwrap{
                 @include vertical-align();
-                padding: 0 11rem 2rem 4rem; 
+                padding: 0 6rem 2rem 1rem; 
+                @include mq(lg){
+                    padding: 0 11rem 2rem 4rem; 
+                   }
                 color: #fff;
                 h3{
-                    font-size: rem(36);
+                    font-size: rem(24);
                     font-weight: bolder;
                     text-transform: uppercase;
+                    @include mq(lg){
+                        font-size: rem(36);
+                    }
                 }
             }
 
@@ -41,13 +55,29 @@
         }
 
         &.mission{
-            background-position: right center;
+            background-position: right  -220px  center;
+            @include mq(md){
+                background-position: right -180px center;
+            }
+            @include mq(lg){
+                background-position: right center;
+            }
+            background-size: cover;
             .txt{
                 background: url(../img/bg_07.png) no-repeat right center;
             }
         }
         &.vision{
-            background-position: left center;
+            background-position: left  -220px  center;
+            @include mq(md){
+                background-position: left -180px center;
+            }
+            @include mq(lg){
+                background-position: left center;
+            }
+            @include mq(xl){
+                background-position: left center;
+            }
             .txt{
                 background: url(../img/bg_08.png) no-repeat left center;
                 margin: 0 0 0 auto;
@@ -55,7 +85,10 @@
 
                 .txtwrap{
                    text-align: right; 
-                   padding: 0 4rem 2rem 11rem; 
+                   padding: 0 1rem 2rem 6rem; 
+                   @include mq(lg){
+                    padding: 0 4rem 2rem 11rem; 
+                   }
                 }
 
                 &::after{

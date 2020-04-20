@@ -4,28 +4,60 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    .s1{ 
+    .s1{  
   
-  
-        background-image: linear-gradient( 0deg, #1a1919 0%, #302e2e 100%);
-            
-        height: 640px;
+        background-image: linear-gradient( 0deg, #1a1919 0%, #302e2e 100%);            
+        height: 340px;
          color: #fff;
-        
-          
+         @include mq(md){
+            height: 400px;
+        }
+        @include mq(lg){
+            height: 440px;
+        }
+        @include mq(xl){
+            height: 540px;
+        }
+        @include mq(xxl){
+            height: 640px;
+        }
         .container{
             @include vertical-align();
             .txt{
                 max-width: 720px;
-                
+               
                 h2{
-                    font-size: rem(60);
+                    font-size: rem(26);
                     text-transform: uppercase;
+                    @include mq(md){
+                        font-size: rem(42);
+                    }
+                    @include mq(lg){
+                        font-size: rem(48);
+                    }
+                    @include mq(xl){
+                        font-size: rem(54);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(60);
+                    }
                 }
                 p{
-                    font-size: rem(24);
+                    
                     font-weight: lighter;
                     text-transform: uppercase;
+                    @include mq(md){
+                        font-size: rem(18);
+                    }
+                    @include mq(lg){
+                        font-size: rem(20);
+                    }
+                    @include mq(xl){
+                        font-size: rem(22);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(24);
+                    }
                 }
                 .actions{
                     padding-top: 3rem;
@@ -48,10 +80,34 @@
     }
    
     .s2{
-        height: 750px;
+       
         background: #fff url(../img/bg_about.jpg) no-repeat center center;
+        background-size: cover;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        @include mq(lg){
+            height: 750px;
+        }
         .container{
-            @include vertical-align(); 
+           
+            @include mq(lg){
+                @include vertical-align(); 
+            }
+            .pic{
+                margin-bottom: 1rem;
+                @include mq(lg){
+                   margin-bottom: 0;
+                }
+                img{
+                    @include mq(md){
+                        width: 200px;
+                     }
+                     @include mq(lg){
+                        width: auto;
+                     }
+                }
+            }
             .intro{
                
                 @include mq(lg){
@@ -59,6 +115,12 @@
                 }
                 @include mq(xl){
                     padding-left: rem(115);
+                }
+                .more{
+                    text-align: center;
+                    @include mq(md){
+                        text-align: left;
+                     }
                 }
                 .btn{
                     margin-top: 2rem;
@@ -106,24 +168,35 @@
             }
            
             .des{
-                padding: 1rem;
+                padding: .6rem 1rem;
                 position: absolute;
                 left: 0;
                 width: 100%;
-                bottom: -7.5rem;
+                height: 100%;
+                top: 100%;
                 z-index: 100;
                 background-image: linear-gradient( 90deg, #5b636e 0%, #5b636e00 100%);
                 transition: all .2s;
+                margin-top: -5rem;
                 @include mq(md) {
+                    margin-top: -5.6rem;
+                    padding: .6rem 1rem;
+                }
+                @include mq(xl) {
+                    margin-top: -7rem;
+                    padding: 1rem 1.5rem;
+                }
+                @include mq(xxl) {
+                    margin-top: -7rem;
                     padding: 1rem 2rem;
                 }
-               
                 h3.title{
                     font-size: rem(20);
                     text-align: left;
                     font-weight: bold;  
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    margin-bottom: 0;
                     @include mq(md) {
                         font-size: rem(22);  
                     }
@@ -132,7 +205,19 @@
                     }   
                 }
                 p{
-                    margin-bottom: 4rem;
+                    margin-bottom: 1.5rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    @include mq(md) {
+                        margin-bottom: 1.5rem;
+                    }
+                    @include mq(xl) {
+                        margin-bottom: 2.5rem;
+                    }
+                    @include mq(xxl) {
+                        margin-bottom: 4rem;
+                    }
                 }
         }
         &:hover{
@@ -145,26 +230,47 @@
             
             }
             .des{
-                bottom: 3rem;
-                background-image: none;
+               
+                background-image: url(../img/cover.png);
+                background-size: cover;
+                background-repeat: no-repeat;     
+                top: 0;
+                margin-top: 0;
+                padding-top: 2rem;
+                @include mq(md) {
+                    padding-top: 1.5rem;
+                }
+                @include mq(xl) {
+                    padding-top: 2rem;
+                }
+                @include mq(xxl) {
+                    padding-top: 3rem;
+                }
                 h3.title{
                     font-size: rem(28);
                     text-align: left;
                     font-weight: bold;  
-                    margin-bottom: 1.2rem;
+                    margin-bottom: 1rem;
                     @include mq(md) {
-                        font-size: rem(32);  
+                        font-size: rem(28);    margin-bottom: 1rem; 
                     }
-                    @include mq(lg) {
+                    @include mq(xl) {
                         font-size: rem(36);
+                        margin-bottom: 1.2rem; 
                     }
                     &::after{
                         content: " ";
                         display: block;
                         width: 30px;
-                        height: 6px;
+                        height: 3px;
                         background-color: #fff;
-                        margin-top: 1rem;
+                        margin-top: .7rem;
+                        @include mq(md) {
+                            height: 3px;  margin-top: .7rem;
+                        }
+                        @include mq(lg) {
+                            height: 6px; margin-top: 1rem;
+                        }
                     }
                 }
             
@@ -217,7 +323,19 @@
        }
        .swiperel{
            position: relative;
-           margin-bottom: rem(120);
+           margin-bottom: rem(40);
+           @include mq(md){
+            margin-bottom: rem(60);
+           }
+           @include mq(lg){
+            margin-bottom: rem(80);
+           }
+           @include mq(xl){
+            margin-bottom: rem(100);
+           }
+           @include mq(xxl){
+            margin-bottom: rem(120);
+           }
        }
        .swiper01{
 
@@ -261,7 +379,19 @@
            background-position: center center;
            background-repeat: no-repeat;
            color: #fff;
-           height: 500px;
+           height: 250px;
+           @include mq(md){
+            height: 300px;
+        }
+           @include mq(lg){
+            height: 350px;
+        }
+           @include mq(xl){
+            height: 450px;
+        }
+        @include mq(xxl){
+            height: 500px;
+        }
            .module{
                font-size: rem(24);
                font-weight: bold;
@@ -271,8 +401,14 @@
            }
            .des{
             @include vertical-align();
-            padding: 1rem  1rem 2rem 5rem;
-            width: 900px;
+            padding: 1rem;
+           
+            @include mq(lg){
+                width: 480px; padding: 1rem  1rem 2rem 5rem;
+            }
+            @include mq(xl){
+                width: 900px;
+            }
             h3{
                 font-size: rem(36);
             }
@@ -295,6 +431,19 @@
            }
            &.faq{
             background-image:  url(../img/home_faq.jpg) ;
+            height: 350px;
+            @include mq(md){
+             height: 300px;
+            }
+                @include mq(lg){
+                height: 350px;
+            }
+                @include mq(xl){
+                height: 450px;
+            }
+            @include mq(xxl){
+                height: 500px;
+            }
           }
        }
    }

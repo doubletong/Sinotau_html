@@ -1,4 +1,8 @@
 .page-gallery{
+    padding-top: 0;
+    @include mq(md){
+        padding-top: 1rem;
+    }
     .gallery{
         .item{
             background-color: #f6f6f6;

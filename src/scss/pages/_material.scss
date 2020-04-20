@@ -1,10 +1,14 @@
 .page-material{
     .s1{
         .list{
+            margin-bottom: 1rem;
             .item{
                 display: block;
                 position: relative;
-                margin-bottom: 30px;
+              
+                @include mq(md){
+                    margin-bottom: 30px;
+                }
                 img{
                     display: block;
 
@@ -40,6 +44,12 @@
             overflow: auto;
        
             height: 653px;
+            @include mq(md){
+                height: 500px;
+            }
+            @include mq(lg){
+                height: 653px;
+            }
             @include mq(xl){
                 height: 812px;
             }
@@ -80,8 +90,12 @@
     }
     .material-footer {
         .pagination{
-            text-align: right;
+            text-align: center;
             padding-top: 0;
+            @include mq(lg){
+                text-align: right;padding-top: 0;
+            }
+            
             li{
                 a{
                     width: 40px;

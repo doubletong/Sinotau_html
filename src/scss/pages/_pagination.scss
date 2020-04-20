@@ -7,12 +7,18 @@
         padding: 2rem 0;
         li{
                 display: inline-block;
-                margin: 0 .4rem;
+                margin: 0 .1rem;
+                @include mq(md){
+                        margin: 0 .4rem;
+                }
                 a{
                         display: block;
-                        padding: .4rem 1rem;
+                        padding: .2rem .6rem;
                         border:1px $color-primary solid;                  
                         font-size: 1rem;
+                        @include mq(md){
+                                padding: .4rem 1rem;
+                        }
                 }
                 &.active{
                         a{

@@ -112,20 +112,67 @@ a {
     }
 }
 .title-section-v3 {
-    margin-bottom: 5rem;
+  
+        margin-bottom: 2rem;
+  
+    @include mq(lg){
+        margin-bottom: 3rem;
+    }
+    @include mq(xl){
+        margin-bottom: 4rem;
+    }
+    @include mq(xxl){
+        margin-bottom: 5rem;
+    }
     h1{
-        font-size: rem(60);
+        font-size: rem(24);
         font-weight: bolder;
+        @include mq(md){
+            font-size: rem(32);
+        }
+        @include mq(lg){
+            font-size: rem(48);
+        }
+        @include mq(xl){
+            font-size: rem(54);
+        }
+        @include mq(xxl){
+            font-size: rem(60);
+        }
     }
 }
 .title-section-v4 {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     padding-top: 2rem;
     background: url(../img/bg_04.png) no-repeat left top;
+    @include mq(md){
+        margin-bottom: 2rem;
+    }
+    @include mq(lg){
+        margin-bottom: 2rem;
+    }
+    @include mq(xl){
+        margin-bottom: 2rem;
+    }
+    @include mq(xxl){
+        margin-bottom: 2rem;
+    }
     h2{
-        font-size: rem(36);
+        font-size: rem(20);
         font-weight: bolder;
         text-transform: uppercase;
+        @include mq(md){
+            font-size: rem(24);
+        }
+        @include mq(lg){
+            font-size: rem(28);
+        }
+        @include mq(xl){
+            font-size: rem(32);
+        }
+        @include mq(xxl){
+            font-size: rem(36);
+        }
     }
 }
 .title-section-v5 {
@@ -135,9 +182,21 @@ a {
     border-bottom: 1px #e2e2e2 solid;
     position: relative;
     h2{
-        font-size: rem(60);
+        font-size: rem(24);
         font-weight: bolder;
         text-transform: uppercase;
+        @include mq(md){
+            font-size: rem(32);
+        }
+        @include mq(lg){
+            font-size: rem(48);
+        }
+        @include mq(xl){
+            font-size: rem(54);
+        }
+        @include mq(xxl){
+            font-size: rem(60);
+        }
     }
     img.line{
         display: block;
@@ -159,10 +218,14 @@ a {
         background-size: cover;
     }
     @include mq(lg) {
-        height: 400px;
+        height: 330px;
         background-size: cover;
     }
     @include mq(xl) {
+        height: 400px;
+        background-size: cover;
+    }
+    @include mq(xxl) {
         height: 480px;
         background-size: cover;
     }
@@ -216,9 +279,12 @@ img {
         padding: 1.5rem 0;
         a{
             display: inline-block;
-            padding: 0rem 2.5rem;
-            border-right: 1px #8c8c8c solid;
+            padding: 0rem 2rem 0 0;           
+            margin-bottom: .6rem;
             line-height: 1;
+            @include mq(lg) {
+                border-right: 1px #8c8c8c solid; padding: 0rem 2.5rem;margin-bottom: 0;               
+            }
             &.active{
                 color: $color-primary;
             }

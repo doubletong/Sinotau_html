@@ -1,9 +1,12 @@
+
 .site-contact{
    
-    background: #fff url(../img/footer_bg.jpg) no-repeat center top;
-    height: 100px;
+    background: #333 url(../img/footer_bg.jpg) no-repeat center top;
+    
     background-size: cover;
     color: #fff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     @include mq(md){
         height: 150px;
@@ -15,19 +18,38 @@
        height: 237px;
     }
     .container{
-        @include vertical-align();       
+       
+        @include mq(md){
+            @include vertical-align();     
+        }  
         .title{
-            font-size: rem(38);
+            font-size: rem(18);
             font-weight: bold;
             line-height: 1.5;
             max-width: 700px;
+         
+            @include mq(md){
+                font-size: rem(26);
+            }
+            @include mq(lg){
+                font-size: rem(30);
+            }
+            @include mq(xl){
+                font-size: rem(34);
+            }
+            @include mq(xxl){
+                font-size: rem(38);
+             }
             &::after{
                 content: " ";
                 display: block;
-                height: 6px;
+                height: 4px;
                 width: 30px;
                 background-color: $color_primary;
                 margin-top: 1rem;
+                @include mq(md){
+                    height: 6px;
+                }
             }
         }
         
@@ -63,7 +85,10 @@
     .add{
         position: relative;
         padding-left: 40px;
-   
+        padding-bottom: .5rem;
+        @include mq(md){
+           padding-bottom: 0;
+        }
         .iconfont{
             font-size: rem(28);
             position: absolute;
@@ -71,6 +96,15 @@
             top: 0rem;
             z-index: 100;
             line-height: 1;
+        }
+    }
+    .copyright{
+        text-align: center;
+        border-top: 1px #ccc solid;
+        padding-top: .5rem;
+        @include mq(md){
+            border-top: 0;
+            padding-top: 0;
         }
     }
     
@@ -84,7 +118,14 @@
     opacity: .5;
     z-index: 2000;
     display: none;
+    img{
+        width: 32px;
+        @include mq(md){
+            width: auto;
+        }
+    }
     &:hover{
         opacity: 1;
     }
 }
+
