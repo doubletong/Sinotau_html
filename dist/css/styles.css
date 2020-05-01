@@ -3945,19 +3945,19 @@ body {
 
 @media (min-width: 768px) {
   body {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 }
 
 @media (min-width: 1201px) {
   body {
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 1rem;
   }
 }
@@ -4387,19 +4387,19 @@ img {
 
 @media (min-width: 768px) {
   .site-header {
-    height: 70px;
+    height: 60px;
   }
 }
 
 @media (min-width: 992px) {
   .site-header {
-    height: 80px;
+    height: 70px;
   }
 }
 
 @media (min-width: 1201px) {
   .site-header {
-    height: 100px;
+    height: 80px;
   }
 }
 
@@ -4487,22 +4487,22 @@ img {
 
 @media (min-width: 768px) {
   .site-header .mainav > li > a {
-    height: 70px;
-    line-height: 70px;
+    height: 60px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: 992px) {
   .site-header .mainav > li > a {
-    height: 80px;
-    line-height: 80px;
+    height: 70px;
+    line-height: 70px;
   }
 }
 
 @media (min-width: 1201px) {
   .site-header .mainav > li > a {
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
   }
 }
 
@@ -4751,7 +4751,8 @@ img {
 }
 
 .page-home .s1 {
-  background-image: linear-gradient(0deg, #1a1919 0%, #302e2e 100%);
+  position: relative;
+  overflow: hidden;
   height: 340px;
   color: #fff;
 }
@@ -4778,6 +4779,21 @@ img {
   .page-home .s1 {
     height: 640px;
   }
+}
+
+.page-home .s1 video#videobg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../img/about.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
 }
 
 .page-home .s1 .container {

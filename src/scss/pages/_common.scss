@@ -13,13 +13,13 @@ body {
     margin: 0 auto;
     padding-top: 45px;
     @include mq(md){
-        padding-top: 70px;
+        padding-top: 60px;
     }
     @include mq(lg){
-        padding-top: 80px;
+        padding-top: 70px;
     }
     @include mq(xl){
-        padding-top: 100px;
+        padding-top: 80px;
         font-size: 1rem;
     }
 }

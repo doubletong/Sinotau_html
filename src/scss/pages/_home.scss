@@ -5,8 +5,8 @@
     padding-bottom: 0;
 
     .s1{  
-  
-        background-image: linear-gradient( 0deg, #1a1919 0%, #302e2e 100%);            
+        position: relative;
+        overflow: hidden;             
         height: 340px;
          color: #fff;
          @include mq(md){
@@ -21,6 +21,21 @@
         @include mq(xxl){
             height: 640px;
         }
+        video#videobg { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            background: url('../img/about.jpg') no-repeat;
+            background-size: cover;
+            transition: 1s opacity;
+        }
+
         .container{
             @include vertical-align();
             .txt{
