@@ -96,55 +96,75 @@
    
     .s2{
        
-        background: #fff url(../img/bg_about.jpg) no-repeat center center;
-        background-size: cover;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-        @include mq(lg){
-            height: 750px;
-        }
-        .container{
-           
-            @include mq(lg){
-                @include vertical-align(); 
-            }
-            .pic{
-                margin-bottom: 1rem;
-                @include mq(lg){
-                   margin-bottom: 0;
-                }
+        background: #fff url(../img/bg_001.jpg) no-repeat right top 120px;
+        background-size: auto;
+        .researchlist{
+            
+            .item{
+                display: block;
+                position: relative;
                 img{
-                    @include mq(md){
-                        width: 200px;
-                     }
-                     @include mq(lg){
-                        width: auto;
-                     }
+                    display: block;
+                    width: 100%;
                 }
-            }
-            .intro{
-               
-                @include mq(lg){
-                    padding-left: rem(70);
+                .txt{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    padding: 1rem; 
+                    width: 100%;
+                    height: 18%;
+                    transition: all .2s;
+                    box-sizing: border-box;
+                    padding-top: 2rem;
+                    .rateYo{
+                        display:none
+                    }
+                    h3{
+                        color: white; 
+                       margin-bottom: 1rem;
+                        margin-top: 1rem;
+                        font-size: rem(18);
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    p{
+                        line-height: 1.5;
+                        color:#fff;
+                        display:none;
+                        margin-bottom:2rem;
+                    }
+                    .more{
+                        display: inline-block;
+                        padding: .3rem 1.3rem;
+                        border:1px #fff solid;
+                        color: #fff;
+                        display:none
+                    }
                 }
-                @include mq(xl){
-                    padding-left: rem(115);
-                }
-                .more{
-                    text-align: center;
-                    @include mq(md){
-                        text-align: left;
-                     }
-                }
-                .btn{
-                    margin-top: 2rem;
-                    
+                &:hover{
+                    .txt{
+                        height: 100%;
+                        background-color: rgba(4, 105, 190,.9);
+                        .rateYo{
+                            display:block;
+                        }
+                        h3{
+                       
+                            font-size: rem(24);
+                        }
+                        p{
+                            display:block;
+                        }
+                        .more{
+                            display:inline-block;
+                        }
+                          
+                    }
                 }
             }
         }
-       
-      
 
     }
     .s3{
@@ -395,11 +415,14 @@
            background-repeat: no-repeat;
            color: #fff;
            height: 250px;
+           margin-bottom: 1rem;
            @include mq(md){
             height: 300px;
+            margin-bottom: 2rem;
         }
            @include mq(lg){
             height: 350px;
+            margin-bottom: 3rem;
         }
            @include mq(xl){
             height: 450px;

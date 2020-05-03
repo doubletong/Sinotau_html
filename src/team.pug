@@ -1,0 +1,64 @@
+extends includes/layout.pug
+
+block title
+    | Team
+
+block content    
+    .banner.banner-contact(style="background-image:url(../img/temp/banner-team.jpg)")
+        h1 Team Introduce
+
+    .page.page-team        
+        .container           
+            .row
+                .col-md-6.col-lg-4
+                    a.item(href="team_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/t1.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Shuguang Yuan
+                            p Center director -AI drug molecular design, new drug development, artificial intelligence
+                            span.btn.btn-default-outline MORE
+
+                .col-md-6.col-lg-4
+                    a.item(href="team_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/t2.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Shuguang Yuan
+                            p Center director -AI drug molecular design, new drug development, artificial intelligence
+                            span.btn.btn-default-outline MORE
+                
+                .col-md-6.col-lg-4
+                    a.item(href="team_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/t3.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Shuguang Yuan
+                            p Center director -AI drug molecular design, new drug development, artificial intelligence
+                            span.btn.btn-default-outline MORE
+
+                .col-md-6.col-lg-4
+                    a.item(href="team_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/t4.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Shuguang Yuan
+                            p Center director -AI drug molecular design, new drug development, artificial intelligence
+                            span.btn.btn-default-outline MORE
+
+        
+
+              
+        
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

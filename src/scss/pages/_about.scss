@@ -1,13 +1,9 @@
 .page-about{
    
     .intro{
-        margin-bottom: 3rem;
-        @include mq(lg){
-            margin-bottom: 5rem;
-           }
-        strong{
-            font-size: rem(24);
-        }
+        text-align: justify;
+        line-height: 1.8;
+        padding-top: 1rem;
     }
     .box{
         background-repeat: no-repeat;

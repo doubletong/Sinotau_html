@@ -171,14 +171,14 @@ function images() {
         .pipe(newer(bases.dist + "img"))
         .pipe(
             imagemin([
-                imagemin.gifsicle({ interlaced: true }),
-                imagemin.jpegtran({ progressive: true }),
+                imagemin.gifsicle({ interlaced: true }),             
+                imagemin.mozjpeg({quality: 80, progressive: true}),
                 imagemin.optipng({ optimizationLevel: 5 }),
                 imagemin.svgo({
-                    plugins: [{
-                        removeViewBox: false,
-                        collapseGroups: true
-                    }]
+                    plugins: [
+                        {removeViewBox: true},
+                        {cleanupIDs: false}
+                    ]
                 })
             ])
         )

@@ -1,14 +1,15 @@
 .page-news {
     .s1{
-        padding-top: 6rem;
-       
-        @include mq(md) {
-            padding-top: 8rem;
-            padding-bottom: 1rem;
-        }
-        @include mq(lg) {
-            padding-top: 12rem;
-        padding-bottom: 5rem;
+        margin-bottom: 4rem;
+        a{
+            display: inline-block;
+            padding-right: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            &.active{
+                font-size: rem(24);
+                color:$color-primary;
+            }
         }
     }
     .s2{
@@ -51,12 +52,19 @@
                 
             }
             .title{
-                font-size: rem(18);
-                font-weight: normal;
-             
+                font-size: rem(18);             
+                text-transform: uppercase;
+                color:#000;
                 @include mq(md) {
-                    font-size: rem(24);   margin-bottom: 2rem;
+                    font-size: rem(24);  
                 }
+                @include mq(xxl) {
+                    font-size: 2rem; 
+                }
+            }
+            .note{
+                color:#333;
+                margin-bottom:1rem;
             }
             .des{
                 color: #999;
@@ -70,16 +78,17 @@
                
             }
             &:hover{
-                .des{
-                    color: #999;
-                }
-             
-                .pic{                   
+                .pic{
                     img{
-                        transform: scale(1.05);
+                        transform: scale(1.1);
                     }
                 }
+                .btn{
+                    background-color: #000;
+                    color: #fff;
+                }
             }
+           
         }
     }
     .news-footer {
@@ -113,22 +122,7 @@
     @include mq(xl){
         padding-top: 96px;
     }
-    .top_pic{
-        height: 200px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 2rem;
-        @include mq(md){
-            height: 300px; margin-bottom: 3rem;
-        }
-        @include mq(lg){
-            height: 400px; margin-bottom: 4rem;
-        }
-        @include mq(xl){
-            height: 500px; margin-bottom: 5rem;
-        }
-    }
+    
     article{
         header{
           
@@ -137,13 +131,16 @@
                 margin-bottom: 3rem;
             }
             h1{
+                
                 font-size: rem(24);
                 margin-bottom: 1rem;
+                color: #000;
+                text-transform: uppercase;
                 @include mq(md) {
-                    font-size: rem(28);  margin-bottom: 1rem;
+                    font-size: 2rem;  margin-bottom: 1rem;
                 }
             }
-            time{
+            .note{
               color: #999;
             }
         }
@@ -151,6 +148,13 @@
             margin-top:3rem;
             margin-bottom:3rem;
             height: auto !important;
+        }
+        .pagenav{
+            text-align: right;
+            padding-top: 2rem;
+            a{
+                margin-left: 1rem;
+            }
         }
     }
     

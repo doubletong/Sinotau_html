@@ -1,0 +1,47 @@
+extends includes/layout.pug
+
+block title
+    | 教师团队-特色教育
+
+block content
+    .banner.banner-research(style="background-image:url(../img/temp/banner-research.jpg)")
+        h1 Research
+     
+    .page.page-about.page-team
+        section.s1.container         
+            .row
+                .col-md-4
+                    .title-section.wow.fadeInLeft
+                        h2 教师团队
+                .col-md-8
+                    .intro
+                        header.title-section-v2
+                            h3.wow.fadeInUp Teacher team
+                            h4.wow.fadeInUp 教师团队
+
+                        p.wow.fadeInUp 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。
+                        p.wow.fadeInUp 金生幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与家长保持密切的沟通。
+                        figure.chart.wow.fadeInUp
+                            img(src="img/chart.png", alt="")
+
+                
+        section.s2
+            .container
+                figure.wow.fadeInUp
+                    img(src="img/team.jpg", alt="")
+                       
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

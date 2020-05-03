@@ -1,0 +1,55 @@
+extends includes/layout.pug
+
+block title
+    | Join Us
+
+block content
+    .banner.banner-join.wow.fadeInUp(style="background-image:url('img/temp/banner-join.jpg')")
+        h1 Join Us
+    .page.page-join
+        section.s1.container         
+            .item
+                h3.title.wow.fadeInUp Talents Wanted at Hefei Institutes of Physical Science
+                p.wow.fadeInUp Hefei Institutes of Physical Science is located on an island and is all about science and engineer. That is why we are also called Science Island. We are Science Islanders as well as scientists, engineers, postdoctoral researchers, and many other kinds of specialists working together to seek grand science solutions to challenges of world’s scientific and technical frontiers.
+                time.wow.fadeInUp 23 January 2020
+                div.more.wow.fadeInUp
+                    a.btn.btn-default-outline(href="join_detail.html") View More
+            
+            .item
+                h3.title.wow.fadeInLeft Two Postdoc Positions in Plant Diversity and Genomics
+                p Hefei Institutes of Physical Science is located on an island and is all about science and engineer. That is why we are also called Science Island. We are Science Islanders as well as scientists, engineers, postdoctoral researchers, and many other kinds of specialists working together to seek grand science solutions to challenges of world’s scientific and technical frontiers.
+                time 23 January 2020
+                div.more 
+                    a.btn.btn-default-outline(href="join_detail.html") View More
+
+            .item
+                h3.title.wow.fadeInLeft Open Postdoctoral Position at the Kunming Institute of Botany, Chinese Academy of Sciences
+                p Hefei Institutes of Physical Science is located on an island and is all about science and engineer. That is why we are also called Science Island. We are Science Islanders as well as scientists, engineers, postdoctoral researchers, and many other kinds of specialists working together to seek grand science solutions to challenges of world’s scientific and technical frontiers.
+                time 23 January 2020
+                div.more 
+                    a.btn.btn-default-outline(href="join_detail.html") View More
+
+            .item
+                h3.title.wow.fadeInLeft Talents Wanted at Hefei Institutes of Physical Science
+                p Hefei Institutes of Physical Science is located on an island and is all about science and engineer. That is why we are also called Science Island. We are Science Islanders as well as scientists, engineers, postdoctoral researchers, and many other kinds of specialists working together to seek grand science solutions to challenges of world’s scientific and technical frontiers.
+                time 23 January 2020
+                div.more 
+                    a.btn.btn-default-outline(href="join_detail.html") View More
+        
+        
+            
+                
+
+
+        
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){  
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            //$(this).next().slideDown();
+        })
+        
+
+
+     

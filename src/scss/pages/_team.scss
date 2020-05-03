@@ -1,40 +1,33 @@
 .page-team{
-    .s1{
-        .chart{
-            margin-top: 2rem;
-            @include mq(md){
-                margin-top: 3rem;
+    .item{
+        display: block;
+        margin-bottom: 3rem;
+        .pic{
+            overflow: hidden;
+            margin-bottom: 1rem;
+            img{
+                display: block;
+                width: 100%;
+                max-width: none;
+                transition: all .2s;
             }
-            @include mq(lg){
-                margin-top: 4rem;
+        }
+        .txt{
+            h3{
+                font-size: rem(38);
+                color:#000;
+                text-transform: uppercase;
             }
-            @include mq(xl){
-                margin-top: 5rem;
-            }
         }
-    }
-    .s2{
-        margin-bottom: 2rem;
-        @include mq(md){
-            margin-bottom: 3rem;
-        }
-        @include mq(lg){
-            margin-bottom: 4rem;
-        }
-        @include mq(xl){
-            margin-bottom: 5rem;
-        }
-        .item{
-            text-align: center;
-            margin-bottom: rem(30);
+        &:hover{
             .pic{
-                margin-bottom: 1rem;
                 img{
-                    display: block;
+                    transform: scale(1.1);
                 }
             }
-            .name{
-                font-size: rem(24);
+            .btn{
+                background-color: #000;
+                color: #fff;
             }
         }
     }

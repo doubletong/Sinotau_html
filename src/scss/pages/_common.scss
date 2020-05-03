@@ -2,13 +2,10 @@
 // @include font-face(PoppinsRegular, '../fonts/Poppins-Regular', null, null, ttf);
 
 body {
-    color: #484848;
+    color: #666;
     background-color: #fff;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  
-    line-height: 1.8;
-    font-size: rem(14);
-   
+    font-family:  "Helvetica","Helvetica Neue", "Arial", sans-serif;     
+    font-size: 1rem;
     max-width: 1920px;
     margin: 0 auto;
     padding-top: 45px;
@@ -16,11 +13,14 @@ body {
         padding-top: 60px;
     }
     @include mq(lg){
-        padding-top: 70px;
+        padding-top: 70px;font-size: rem(14);
     }
     @include mq(xl){
         padding-top: 80px;
         font-size: 1rem;
+    }
+    &.home-body{
+        padding-top: 0;
     }
 }
 
@@ -56,25 +56,38 @@ a {
 
 .title-section {  
     margin-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
     @include mq(md) {
         margin-bottom: 1.5rem;
+        padding-top: 1.8rem;
     }
     @include mq(lg) {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; padding-top: 2.5rem;
+    }
+    &::before{
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 2px;
+        width: 40px;
+        z-index: 10;
+        background-color: #000;
     }
     h2 {    
         color: #000;
-        font-size: rem(24);     
-        font-weight: bold;
-        text-transform: uppercase;
+        font-size: rem(26);     
+        font-weight: bold;      
+        text-transform: uppercase; 
         @include mq(md) {
             font-size: rem(28);
         }
         @include mq(lg) {
-            font-size: rem(32);
+            font-size: rem(30);
         }
         @include mq(xl) {
-            font-size: rem(36);
+            font-size: rem(32);
         }
     }
 }
@@ -208,45 +221,53 @@ a {
 }
 
 .banner {
-    height: 200px;   
-    background-color: #eaeef1;
-    background-size: auto 200px;
+    height: 180px;   
+    background-color: $color-primary;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    text-align: center;
     @include mq(md) {
-        height: 300px;
-        background-size: cover;
+        height: 210px;       
     }
     @include mq(lg) {
-        height: 330px;
-        background-size: cover;
+        height: 240px;      
     }
     @include mq(xl) {
-        height: 400px;
-        background-size: cover;
+        height: 270px;      
     }
     @include mq(xxl) {
-        height: 480px;
-        background-size: cover;
+        height: 300px;    
     }
-    .container{
+    
+    h1{
+        @include vertical-align(); 
+        font-size: 2rem;
         color: #fff;
-        a{
-            color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            z-index: 10;
+            background-color: #fff;
+            left: -55px;
+            top: 1.7rem;
         }
-    }
-    .txt{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $color-primary;line-height: 1.6;
-        @include mq(md) {
-            font-size: 2rem;
-        }
-        @include mq(lg) {
-            font-size: 2.5rem;
-        }
-        @include mq(xl) {
-            font-size: 3rem;
+        &::after{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            z-index: 10;
+            background-color: #fff;
+            right: -55px;
+            top: 1.7rem;
         }
     }
 

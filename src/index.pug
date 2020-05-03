@@ -1,13 +1,32 @@
 extends includes/layout.pug
 
 block title
-    | 首页
+    | Home
 
 block bkheader
+    link(href='js/vendor/rateyo/min/jquery.rateyo.min.css', rel='stylesheet')
     link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
-
-block content
     
+block content
+    section.sliders.swiper-container.wow.fadeInUp
+        .swiper-wrapper
+            .swiper-slide
+                img(src="img/temp/slider_01.jpg", alt="")
+                    
+            .swiper-slide
+                img(src="img/temp/slider_01.jpg", alt="")
+                    
+            .swiper-slide
+                img(src="img/temp/slider_01.jpg", alt="")
+
+        .dots
+            .container
+                .swiper-pagination
+        
+        .swiper-next
+            i.iconfont.icon-next
+        .swiper-prev
+            i.iconfont.icon-prev
 
     .page.page-home  
         .s1
@@ -28,223 +47,134 @@ block content
         
         section.s2            
             .container
-                .row.align-items-center
-                    .col-md-auto
-                        .pic.wow.fadeInLeft
-                            img(src="img/about_01.jpg", alt="")
-                    .col-md
-                        .intro
-                            .title-section.wow.fadeInUp
-                                h2 ABOUT US
-                            p At  Premium Part, our core competencies and focus revolves around quality service delivery. We strive to provide each and every client with a truly rapid manufacturing process that will yield premium, functional parts through the most cost-effective approach.
-                            p Premium Parts specializes in a wide array of services for both low-volume and mass production quantities. Our array of services include rapid prototyping, low-volume manufacturing, CNC Machining, 3D Printing, Urethane ...
-                            .more
-                                a.btn.btn-primary-outline(href="about.html") MORE
-
-        section.s3
-                .title-section.wow.fadeInUp
-                    h2.text-center What we can do?
-                .row.no-gutters                    
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_01.jpg")
-                            .des      
-                                h3.title CNC Machining
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-                                    
-                    
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_02.jpg")
-                            .des      
-                                h3.title Sheet Metal
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_03.jpg")
-                            .des      
-                                h3.title Cast Urethane
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_04.jpg")
-                            .des      
-                                h3.title Aluminum Extrusion
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_05.jpg")
-                            .des      
-                                h3.title Rapid Tooling
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_06.jpg")
-                            .des      
-                                h3.title Plastic Injection Molding
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_07.jpg")
-                            .des      
-                                h3.title Die Casting
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_08.jpg")
-                            .des      
-                                h3.title 3D printing
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-
-                    .col-md-6.col-lg-4
-                        a.item.wow.fadeInUp(href="news_detail.html")
-                            .pic
-                                img(src="img/temp/news_09.jpg")
-                            .des      
-                                h3.title Post machining surface finishing service
-                                p CNC Machining CNC Machining CNC Machining
-                                .btn.btn-default-outline MORE
-                    
-        .section.s4
-            .container
-                .title-section-v2.wow.fadeInUp
-                    h2.text-center Why choose premium parts?
-                    p.text-center Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.
-                    
-                .tab-header.wow.fadeInUp
-                    .row
-                        .col-4.col-md-2
-                            a.item.active(href="#sl01")
-                                .icon
-                                    img(src="img/icon-01.png", srcset="img/icon-01.png, img/icon-01@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt Manufacturing 
-                                    br
-                                    | capabilities
-                        .col-4.col-md-2
-                            a.item(href="#sl02")
-                                .icon
-                                    img(src="img/icon-02.png", srcset="img/icon-02.png, img/icon-02@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt Garanteed on time 
-                                    br
-                                    | delivery
-                        .col-4.col-md-2
-                            a.item(href="#sl03")
-                                .icon
-                                    img(src="img/icon-03.png", srcset="img/icon-03.png, img/icon-03@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt Outstanding 
-                                    br
-                                    | team
-                        .col-4.col-md-2
-                            a.item(href="#sl04")
-                                .icon
-                                    img(src="img/icon-04.png", srcset="img/icon-04.png, img/icon-04@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt Money back quality
-                                    br
-                                    | garantee
-                        .col-4.col-md-2
-                            a.item(href="#sl05")
-                                .icon
-                                    img(src="img/icon-05.png", srcset="img/icon-05.png, img/icon-05@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt One Stop 
-                                    br
-                                    | Service
-                        .col-4.col-md-2
-                            a.item(href="#sl06")
-                                .icon
-                                    img(src="img/icon-06.png", srcset="img/icon-06.png, img/icon-06@2x.png 2x" alt="Manufacturing capabilities")
-                                .txt Affordable 
-                                    br
-                                    | price
-
-            .swiperel.wow.fadeInUp
-                .container
-                    .swiper01.swiper-container
+                .title-section
+                    h2 Research 
+                        br
+                        | Center
+                
+                
+                .researchlist
+                    .swiper-container.research-container
                         .swiper-wrapper
-                            .swiper-slide(data-hash="sl01")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_01.jpg", alt="")
                                     .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_02.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_03.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_01.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_02.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_03.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_01.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_02.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
+                            .swiper-slide
+                                a.item(href="research_detail.html")
+                                    img(src="img/temp/re_03.jpg", alt="")
+                                    .txt
+                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
+                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
+                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
+                                        .more MORE
 
-                            .swiper-slide(data-hash="sl02")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
-                                    .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
-                            .swiper-slide(data-hash="sl03")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
-                                    .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
-                            .swiper-slide(data-hash="sl04")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
-                                    .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
-                            .swiper-slide(data-hash="sl05")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
-                                    .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
-                            .swiper-slide(data-hash="sl06")
-                                .item(style={'background-image':'url(../img/bg_02.jpg)'})
-                                    .txt
-                                        .txtwrap
-                                            h3 Quick Turnaround
-                                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain long-term cooperation.”
-                .swiper-button-next
-                .swiper-button-prev
+                        .swiper-pagination                                   
+                        .swiper-button-next
+                        .swiper-button-prev
             
-        section.s5
-            .row.no-gutters
-                .col-6.col-md-3.col-xl-2
-                    a.item.material.wow.fadeInUp(href="material.html") 
-                        .module Select the material
-                .col-6.col-md-3.col-xl-2
-                    a.item.blog.wow.fadeInUp(href="blog.html") 
-                        .module BLOG
-                .col-md-6.col-xl-8
-                    a.item.faq.wow.fadeInUp(href="faq.html") 
-                        .des 
-                            h3 FAQs
-                            p Premium parts has the best team, which brings us good profits and attracts a large number of people Loyal customers,We will maintain 
-                            .more more
-
-
+        
 
 block bkfooter
+    script(src='js/vendor/rateyo/min/jquery.rateyo.min.js')
     script(src='plugins/swiper/js/swiper.min.js')
     script.
-    
+        //Make sure that the dom is ready
+        var swiper = new Swiper('.sliders', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
 
+        $(function () {
+            $('body').addClass('home-body')
+            $(".rateYo").rateYo();
+        
+        });
+        var swiper = new Swiper('.research-container', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
     
         var galleryTop = new Swiper('.swiper01', {
             spaceBetween: 0,

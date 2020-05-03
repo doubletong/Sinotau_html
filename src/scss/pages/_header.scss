@@ -1,5 +1,5 @@
 .site-header {
-    background-color: $color-primary;
+    background-color: #fff;
     position: fixed;
     left: 0;
     top: 0;
@@ -23,15 +23,19 @@
 
     .logo {
         display: block;    
+        height: 37px;
         width: 100px;
+        background: url(../img/logo_color.png) no-repeat local center;
+        background-size: contain;
         @include mq(md) {
-            width: 140px;
+            width: 117;
         }
         @include mq(lg) {
-            width: 200px;
+            width: 117;
         }
         @include mq(xl) {
-            width: auto;
+            width: 117;
+            
         }
 
     }
@@ -41,6 +45,7 @@
         display: none;
         padding-left: 1rem;
         height: 100%;
+        text-align: right;
         @include mq(lg) {
             display: block;
         }
@@ -67,7 +72,7 @@
              }
             &>a {
                 display: block;
-                color: #fff;
+                color: #000;
                 height: 45px;
                 line-height: 45px;
                 text-transform: uppercase;
@@ -85,10 +90,24 @@
                     height: 80px;
                     line-height: 80px;
                 }
-               
+               &:hover{
+                   color: $color-primary;
+               }
                 &.active {
-                    border-bottom: 1px solid #fff;
-                    color: #fff;
+                    position: relative;
+                    color: $color-primary;
+                    &::before{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 3px;
+                        background-color: $color-primary;
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        left: -1rem;
+                        top: 50%;
+                        margin-top: -3px;
+                    }
                 }
             }
 
@@ -104,13 +123,16 @@
             display: block;
         }
         .btnBook {
-            text-transform: uppercase;
-            color: #fff;           
+          
+            color: #000;           
             display: inline-block;
-            border: 1px #fff solid;
-            padding: .6rem 1.6rem;
+            border: 1px #000 solid;
+            padding: .2rem .6rem;
             margin-left: -10px;
-         
+         &:hover{
+             background-color: #000;
+             color: #fff;
+         }
         }
     }
 
@@ -263,18 +285,26 @@
     }
 
     &.fixheader{
-       
+       background-color: #fff;
         
     }
 }
 
-.newsbody{
+.home-body{
     .site-header{
-        .mainav{
-            li{
-                a{
-                    color: #666;
+        background-color: transparent;
+        .logo {           
+            background-image: url(../img/logo.png);    
+        }
+        .mainav {         
+    
+            &>li {
+                
+                &>a {                  
+                    color: #fff;
                 }
+    
+    
             }
         }
 
@@ -303,6 +333,24 @@
             background-color: #030303;
            
         }
+
+        &.fixheader{
+            background-color: #fff;
+            .logo {           
+                background-image: url(../img/logo_color.png);    
+            }
+            .mainav {         
+    
+                &>li {
+                    
+                    &>a {                  
+                        color: #000;
+                    }
+        
+        
+                }
+            }
+         }
     
     }
 }  

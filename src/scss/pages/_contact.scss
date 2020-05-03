@@ -1,43 +1,29 @@
 .page-contact {
-    .s1{
-      
-        .office{
-            text-align: left;
-        }
-
-        .contacts{
-            margin-bottom: 4rem;
-        }
-  
-        .des{
+    .formMessage{
+        .formline{
             margin-bottom: 2rem;
         }
-        .contactform{
-            label.col-form-label{
-                display: block;
-                font-weight: bold;
-                span{
-                    color: #ff3f3f;
+        label{
+            display: block;
+            width: 80px;
+            text-transform: uppercase;
+            @include mq(xxl){
+                font-size: rem(18);
+            }
+            &.requre{
+                &::after{
+                    content: '*';
+                    color: red;
                 }
             }
-            .form-group{
-                margin-bottom: 1.5rem;
-                @include mq(md){
-                    margin-bottom: 3rem;
-                }
-            }
-            .form-control{
-                width: 100%;
-                padding: .6rem 1rem;
-                background-color: #f6f8fb;
-                border: none;
-                @include mq(md){
-                    padding: 1rem 1.5rem;
-                }
-            }
-            .invalid-feedback{
-                color: $color-important;
-            }
+        }
+        input{
+            padding: .8rem 1rem;
+            border:1px #ddd solid;
+            width: 100%;
+        }
+        .form-grounp{
+            text-align: right;
         }
     }
 }

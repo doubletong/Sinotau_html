@@ -1,0 +1,53 @@
+extends includes/layout.pug
+
+block title
+    | About Us
+
+block content
+    .banner.banner-contact(style="background-image:url(../img/temp/banner-contact.jpg)")
+        h1 Contact Us 
+        
+    .page.page-contact
+        section.container
+            .title-section
+                h2 Online message
+            form.formMessage(action="#")
+                .row.formline
+                    .col-lg-6      
+                        .row.align-items-center
+                            .col-auto
+                                label.requre(for="name") Name          
+                            .col        
+                                input#name(type="text", name="name")    
+                        
+                        
+                    .col-lg-6
+                        .row.align-items-center
+                            .col-auto
+                                label.requre(for="email") Email
+                            .col        
+                                input#email(type="text", name="email")    
+
+
+                .row.formline
+                    .col-lg-6      
+                        .row.align-items-center
+                            .col-auto
+                                label(for="name") Phone          
+                            .col        
+                                input#phone(type="text", name="phone")    
+                        
+                .row.formline    
+                    .col-lg-12
+                        .row.align-items-center
+                            .col-auto
+                                label.requre(for="problem") Problem
+                            .col        
+                                input#problem(type="text", name="problem")    
+                .form-grounp
+                    button.btn.btn-primary(type="submit") SUBMIT
+ 
+
+        
+block bkfooter
+    

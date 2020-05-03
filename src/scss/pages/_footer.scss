@@ -1,111 +1,122 @@
 
 .site-contact{
    
-    background: #333 url(../img/footer_bg.jpg) no-repeat center top;
-    
+    background: $color-primary url(../img/bg_002.jpg) no-repeat center top;    
     background-size: cover;
-    color: #fff;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
-    @include mq(md){
-        height: 150px;
-    }
-    @include mq(lg){
-        height: 180px;
-    }
-    @include mq(xl){
-       height: 237px;
-    }
+    height: 500px;
     .container{
-       
+        height: 100%;
         @include mq(md){
             @include vertical-align();     
         }  
-        .title{
-            font-size: rem(18);
-            font-weight: bold;
-            line-height: 1.5;
-            max-width: 700px;
-         
+        .contact{
+            background: $color-primary url(../img/logo_bg.png) no-repeat left -1rem bottom -2.5rem;    
+            color: #fff;
+            height: 100%;
+            max-width: 500px;
+            padding: 1rem;
+            position: relative;
             @include mq(md){
-                font-size: rem(26);
+                padding: 2.5rem;
             }
             @include mq(lg){
-                font-size: rem(30);
+                padding: 3.6rem;
             }
-            @include mq(xl){
-                font-size: rem(34);
+            .row{
+                margin-bottom: 3rem;
             }
-            @include mq(xxl){
-                font-size: rem(38);
-             }
-            &::after{
-                content: " ";
-                display: block;
-                height: 4px;
-                width: 30px;
-                background-color: $color_primary;
-                margin-top: 1rem;
-                @include mq(md){
-                    height: 6px;
+            .list{
+                @include reset-list();
+                li{
+                    padding-top: .3rem;
+                    padding-bottom: .3rem;
+                    margin-bottom: 1rem;
+                    padding-left: 40px;
+                    &.add{
+                        background: url(../img/icon-marker.png) no-repeat left top;
+                        
+                    }
+                    &.email{
+                        background: url(../img/icon-email.png) no-repeat left top;
+                    
+                    }
+                    &.phone{
+                        background: url(../img/icon-phone.png) no-repeat left top;
+                    
+                    }
+                }
+            }
+            .qrcode{
+                position: absolute;
+                right: 3.6rem;
+                bottom: 5rem;
+                z-index: 100;
+                
+                .pic{
+                    padding: .6rem;
+                    background-color: #fff;
+                    img{
+                        display: block;
+                    }
+                }
+                .txt{
+                    padding: .4rem;
+                    text-align: center;
+                   
+                    background-color: rgba(255, 255, 255,.1);
+                    font-size: rem(14);
+             
+                      
                 }
             }
         }
+       
         
     }
 }
 
 .site-footer{
     padding-top: 3rem;
-    padding-bottom: 3rem;  
+    padding-bottom: 1rem;  
    
-    text-align: center;
-   
+ 
+    .navsoc{
+        border-bottom: 1px #c4c4c4 solid;
+        padding-bottom: 1rem;
+        .botnav{
+            @include reset-list();
+            li{
+                display: inline-block;
+                margin-right: 2.5rem;
+            }
+        }
+    }
   
-    .item{
-        text-transform: uppercase;
-        .icon{
-            margin-bottom: .4rem;
-        }
-        .quote{
-            background-color: $color_primary;
+    .social{
+        
+        a{
             display: inline-block;
-            padding: 1.3rem 3rem;
+            margin-left: rem(10);
+            background-color: #000;
             color: #fff;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: rem(20);
         }
+       
     }
 
 }
 .bot{
-    background-color: #e5e5e5;
-    color: #999696;
+   
     padding:.6rem 0 ;
-    font-size:rem(14);    
-    .add{
-        position: relative;
-        padding-left: 40px;
-        padding-bottom: .5rem;
-        @include mq(md){
-           padding-bottom: 0;
-        }
-        .iconfont{
-            font-size: rem(28);
-            position: absolute;
-            left: 0;
-            top: 0rem;
-            z-index: 100;
-            line-height: 1;
-        }
-    }
+    color: #c4c4c4;
+    
     .copyright{
-        text-align: center;
-        border-top: 1px #ccc solid;
-        padding-top: .5rem;
-        @include mq(md){
-            border-top: 0;
-            padding-top: 0;
-        }
+       
+ 
+     
     }
     
 }

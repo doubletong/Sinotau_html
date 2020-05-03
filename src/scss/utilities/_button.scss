@@ -2,9 +2,8 @@
   
     display: inline-block;
     border:1px #fff solid;
-    color: #fff;
+    color: #fff; 
     padding: .6rem 2rem;
-      font-weight: bold;
       @include mq(lg){
         padding: .9rem 4rem;
     }
@@ -16,14 +15,13 @@
         font-size: 14px;
     }
     &.btn-default-outline{
-       
-        color:#fff;
-        @include mq(lg){
-            border:#fff 2px solid;
-        }
+        padding: .3rem 1.3rem;
+        color:#000;
+        border:#000 1px solid;
+      
         &:hover{
-            background-color: #fff;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
     }
     &.btn-primary{

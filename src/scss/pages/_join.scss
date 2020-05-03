@@ -1,0 +1,25 @@
+.page-join{
+    .item{
+        margin-bottom: 4rem;
+        border-bottom: 1px #eee solid;
+        padding-bottom: 4rem;
+        .title{
+            color: #000;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+        p{
+            color: #999;
+        }
+        time{
+            color: #000;
+        }
+        .more{
+            text-align: right;
+            text-transform: uppercase;
+            .btn.btn-default-outline{
+                padding: .5rem 2rem;
+            }
+        }
+    }
+}
