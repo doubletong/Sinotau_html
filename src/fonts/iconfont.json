@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9081691",
+      "name": "htb－Arrow Right",
+      "font_class": "left",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "10379957",
+      "name": "htb－Arrow Right",
+      "font_class": "right",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
       "icon_id": "12552967",
       "name": "Icon - Keyboard Arrow - Down - Rounded",
       "font_class": "next",

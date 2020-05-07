@@ -74,21 +74,59 @@
       <div class="swiper-prev"><i class="iconfont icon-prev"></i></div>
     </section>
     <div class="page page-home"> 
-      <div class="s1">
-        <video autoplay poster="img/about.jpg" id="videobg" loop>
-          <source src="img/about.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-        <div class="container">
-          <div class="txt"> 
-            <h2>At premium parts, </h2>
-            <p>we ensure customer to receive, accurate, fast, on time, sufficient support and services</p>
-            <div class="row actions align-items-center">
-              <div class="col-auto"><a href="#"> <i class="iconfont icon-play"></i></a></div>
-              <div class="col"><a class="quote" href="javascript:void(0);">Request A Quote</a></div>
+      <section class="s1 container">
+        <div class="row">
+          <div class="col-lg-5 order-last">
+            <div class="title-section">
+              <h2>Latest <br>News   <a class="more" href="news.html">more</a></h2>
             </div>
           </div>
+          <div class="col-lg-7">
+            <nav class="categores wow fadeInLeft"><a class="active" href="news.html">Industry</a><a href="news.html">Scientific research</a><a href="news.html">Academic report</a><a href="news.html">Achievements transformation</a></nav>
+          </div>
         </div>
-      </div>
+        <div class="news-sliders">
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-hash="sl01">
+                <div class="row">                 
+                  <div class="col-md-7"><a class="item" href="news_detail.html"><img src="img/temp/n1.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                  <div class="col-md-5"><a class="item" href="news_detail.html"><img src="img/temp/n2.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-hash="sl01">
+                <div class="row">                 
+                  <div class="col-md-7"><a class="item" href="news_detail.html"><img src="img/temp/n1.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                  <div class="col-md-5"><a class="item" href="news_detail.html"><img src="img/temp/n2.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-hash="sl01">
+                <div class="row">                 
+                  <div class="col-md-7"><a class="item" href="news_detail.html"><img src="img/temp/n1.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                  <div class="col-md-5"><a class="item" href="news_detail.html"><img src="img/temp/n2.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-hash="sl01">
+                <div class="row">                 
+                  <div class="col-md-7"><a class="item" href="news_detail.html"><img src="img/temp/n1.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                  <div class="col-md-5"><a class="item" href="news_detail.html"><img src="img/temp/n2.jpg">
+                      <h3 class="title">Scientists Design Novel Algorithmic...</h3></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-next2"><i class="iconfont icon-right"></i></div>
+            <div class="swiper-prev2"><i class="iconfont icon-left"></i></div>
+          </div>
+        </div>
+      </section>
       <section class="s2">           
         <div class="container">
           <div class="title-section">
@@ -161,12 +199,22 @@
                       <div class="more">MORE</div>
                     </div></a></div>
               </div>
-              <div class="swiper-pagination">                                  </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="dots">
+                <div class="container">
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-next1"><i class="iconfont icon-right"></i></div>
+            <div class="swiper-prev1"><i class="iconfont icon-left"></i></div>
           </div>
         </div>
+      </section>
+      <section class="s3 container">
+        <div class="title-section">
+          <h2>About <br>Center</h2>
+        </div>
+        <video src="img/ZPX_BG.mp4" poster="img/ZPX_BG.jpg" controls="controls"></video>
       </section>
     </div>
     <div class="site-contact wow fadeInUp">
@@ -252,8 +300,8 @@
           slidesPerView: 3,
           spaceBetween: 20,
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-next1',
+              prevEl: '.swiper-prev1',
           },
           pagination: {
               el: '.swiper-pagination',
@@ -261,11 +309,15 @@
           },
       });
       
-      var galleryTop = new Swiper('.swiper01', {
+      var galleryTop = new Swiper('.gallery-top', {
           spaceBetween: 0,
           navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-next2',
+              prevEl: '.swiper-prev2',
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true
           },
           hashNavigation: {
               watchState: true,

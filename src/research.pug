@@ -1,46 +1,123 @@
 extends includes/layout.pug
 
 block title
-    | 教师团队-特色教育
-
+    | Research
+block bkheader
+    link(href='js/vendor/rateyo/min/jquery.rateyo.min.css', rel='stylesheet')
 block content
     .banner.banner-research(style="background-image:url(../img/temp/banner-research.jpg)")
         h1 Research
      
-    .page.page-about.page-team
-        section.s1.container         
+    .page.page-research
+        nav.s1.container 
+            a.active(href="research.html") Research Direction
+            a(href="research.html") Research results
+         
+        section.s2.container 
             .row
-                .col-md-4
-                    .title-section.wow.fadeInLeft
-                        h2 教师团队
-                .col-md-8
-                    .intro
-                        header.title-section-v2
-                            h3.wow.fadeInUp Teacher team
-                            h4.wow.fadeInUp 教师团队
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
 
-                        p.wow.fadeInUp 在金生，教师不仅仅是一份工作，更是一份责任，我们尊重幼儿的个体差异，因材施教，我们不仅传道授业，而且用心守护幼儿的健康成长。
-                        p.wow.fadeInUp 金生幼儿园拥有一支极具凝聚力的教师队伍，我们富有激情，坚持以幼儿为中心，为他们带来个性化、有创意的教学内容，并与家长保持密切的沟通。
-                        figure.chart.wow.fadeInUp
-                            img(src="img/chart.png", alt="")
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
+
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
+
+
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
+
+
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
+
+
+                .col-md-6.col-lg-4
+                    a.item(href="research_detail.html")
+                        .pic.wow.fadeInLeft
+                            img(src="img/temp/res_01.jpg", alt="")
+                        .txt.wow.fadeInLeft
+                            h3 Talents Wanted at Hefei Institutes of Physical Science...
+                            p.des Researchers from the Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Sciences designed a novel combined machine learning and deep learning framework ...
+                            .row
+                                .col 21 January 2020
+                                .col-auto
+                                    .rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#000",data-rateyo-normal-fill="#999",data-rateyo-star-width="18px")
+
 
                 
-        section.s2
-            .container
-                figure.wow.fadeInUp
-                    img(src="img/team.jpg", alt="")
-                       
-                
+            footer.container.material-footer       
+                ul.pagination
+                    li.page-item.disabled
+                        a.page-link(href='#', tabindex='-1', aria-disabled='true') 
+                            i.iconfont.icon-left
+                    li.page-item
+                        a.page-link(href='#') 1
+                    li.page-item.active(aria-current='page')
+                        a.page-link(href='#')
+                            | 2                          
+                    li.page-item
+                        a.page-link(href='#') 3
+                    li.page-item
+                        a.page-link(href='#') 
+                            i.iconfont.icon-right
 
 
         
 block bkfooter
+    script(src='js/vendor/rateyo/min/jquery.rateyo.min.js')
     script.
-        $('.d1 dt').click(function(e){  
-            $(this).closest('dl').siblings().removeClass('open');
-            $(this).closest('dl').addClass('open');        
-            //$(this).next().slideDown();
-        })
+         $(function () {
+          
+            $(".rateYo").rateYo();
+        
+        });
         
 
 

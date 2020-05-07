@@ -1,0 +1,51 @@
+.page-research {
+    .s1{
+        margin-bottom: 4rem;
+        a{
+            display: inline-block;
+            padding-right: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            &.active{
+                font-size: rem(24);
+                color:$color-primary;
+            }
+        }
+    }
+    .s2{
+        .item{
+            display: block;
+            margin-bottom: 3rem;
+            .pic{
+                margin-bottom: .6rem;
+                overflow: hidden;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: none;
+                    transition: all .2s;
+                }
+            }
+            h3{
+                color: #444;
+                font-size: rem(18);
+            }
+            .des{
+                color:#999;
+                font-size: 14px;
+            }
+            &:hover{
+                color: #000;
+                h3{
+                    color: #000;
+                }
+                .pic{
+                    img{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}

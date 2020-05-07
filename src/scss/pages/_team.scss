@@ -31,4 +31,59 @@
             }
         }
     }
+
+    
+}
+
+.page-team-detail{
+    .photo{
+        float: right;
+        margin-left: 4rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    h2.name{
+        text-transform: uppercase;
+        font-size: rem(38);
+        color: #000;
+    }
+    h3.title{
+        font-size: rem(24); color: #000;
+        text-transform: uppercase;
+    }
+    .line{
+        margin: 4rem 0;
+        border:none;
+        border-top: 1px #ddd solid;
+    }
+
+    .members{
+        padding-top: 2rem;
+        .item{
+            margin-bottom: 3rem;
+        }
+        .txt{
+            padding-left: 5rem;
+        }
+        .mbname{
+            text-transform: uppercase;
+        font-size: rem(38);
+        color: #000;
+        }
+        .note{
+            color:#000;
+        }
+        .des{
+            color:#999;
+        }
+    }
+    .list{
+        padding-top: 2rem;
+        .row{
+            margin-bottom: 3rem;
+            .col-md-2{
+                text-transform: uppercase;
+            }
+        }
+    }
 }

@@ -14,15 +14,23 @@
                 a{
                         display: block;
                         padding: .2rem .6rem;
-                        border:1px $color-primary solid;                  
+                        border:1px #000 solid;                  
                         font-size: 1rem;
                         @include mq(md){
                                 padding: .4rem 1rem;
                         }
+
                 }
+        &:hover{
+                a{
+                        background-color: #000;
+                        color: #fff;
+                }    
+        }
+
                 &.active{
                         a{
-                                background-color: $color-primary;
+                                background-color: #000;
                                 color: #fff;
                         }
                 }

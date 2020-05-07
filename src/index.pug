@@ -29,29 +29,85 @@ block content
             i.iconfont.icon-prev
 
     .page.page-home  
-        .s1
-            video(autoplay, poster="img/about.jpg", id="videobg", loop)
-                source(src="img/about.mp4", type="video/mp4")
-                | Your browser does not support the video tag. I suggest you upgrade your browser.
+        section.s1.container
+            .row
+                .col-lg-5.order-last
+                    .title-section
+                        h2 Latest 
+                            br
+                            | News   
+                            a.more(href="news.html") more
+                .col-lg-7
+                    nav.categores.wow.fadeInLeft
+                        a.active(href="news.html") Industry
+                        a(href="news.html") Scientific research
+                        a(href="news.html") Academic report
+                        a(href="news.html") Achievements transformation
  	
-            .container
-                .txt 
-                    h2 At premium parts, 
-                    p we ensure customer to receive, accurate, fast, on time, sufficient support and services
-                    .row.actions.align-items-center
-                        .col-auto
-                            a(href="#") 
-                                i.iconfont.icon-play
-                        .col
-                            a.quote(href="javascript:void(0);") Request A Quote
-        
+            .news-sliders
+                .swiper-container.gallery-top
+                    .swiper-wrapper
+                        .swiper-slide(data-hash="sl01")
+                            .row                  
+                                .col-md-7
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n1.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                                        
+                                .col-md-5
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n2.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                        .swiper-slide(data-hash="sl01")
+                            .row                  
+                                .col-md-7
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n1.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                                        
+                                .col-md-5
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n2.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+
+                        .swiper-slide(data-hash="sl01")
+                            .row                  
+                                .col-md-7
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n1.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                                        
+                                .col-md-5
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n2.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+
+                        .swiper-slide(data-hash="sl01")
+                            .row                  
+                                .col-md-7
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n1.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                                        
+                                .col-md-5
+                                    a.item(href="news_detail.html")
+                                        img(src="img/temp/n2.jpg")
+                                        h3.title Scientists Design Novel Algorithmic...
+                    
+                    .swiper-pagination
+                    .swiper-next2
+                        i.iconfont.icon-right
+                    .swiper-prev2
+                        i.iconfont.icon-left
+
+
         section.s2            
             .container
                 .title-section
                     h2 Research 
                         br
                         | Center
-                
+                       
                 
                 .researchlist
                     .swiper-container.research-container
@@ -132,10 +188,27 @@ block content
                                         p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
                                         .more MORE
 
-                        .swiper-pagination                                   
-                        .swiper-button-next
-                        .swiper-button-prev
-            
+                        //- .swiper-pagination                                   
+                        //- .swiper-button-next
+                        //- .swiper-button-prev
+                        .dots
+                            .container
+                                .swiper-pagination
+                        
+                    .swiper-next1
+                        i.iconfont.icon-right
+                    .swiper-prev1
+                        i.iconfont.icon-left
+
+
+        section.s3.container
+            .title-section
+                h2 About 
+                    br
+                    | Center
+                 
+            video(src="img/ZPX_BG.mp4", poster="img/ZPX_BG.jpg"  controls="controls")
+
         
 
 block bkfooter
@@ -167,8 +240,8 @@ block bkfooter
             slidesPerView: 3,
             spaceBetween: 20,
               navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-next1',
+                prevEl: '.swiper-prev1',
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -176,11 +249,15 @@ block bkfooter
             },
         });
     
-        var galleryTop = new Swiper('.swiper01', {
+        var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 0,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-next2',
+                prevEl: '.swiper-prev2',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
             },
             hashNavigation: {
                 watchState: true,

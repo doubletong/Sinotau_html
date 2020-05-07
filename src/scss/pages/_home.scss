@@ -1,105 +1,79 @@
 
 
 .page-home {
-    padding-top: 0;
-    padding-bottom: 0;
-
+ 
     .s1{  
-        position: relative;
-        overflow: hidden;             
-        height: 340px;
-         color: #fff;
-         @include mq(md){
-            height: 400px;
-        }
-        @include mq(lg){
-            height: 440px;
-        }
-        @include mq(xl){
-            height: 540px;
-        }
-        @include mq(xxl){
-            height: 640px;
-        }
-        video#videobg { 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            transform: translateX(-50%) translateY(-50%);
-            background: url('../img/about.jpg') no-repeat;
-            background-size: cover;
-            transition: 1s opacity;
-        }
-
-        .container{
-            @include vertical-align();
-            .txt{
-                max-width: 720px;
+        margin-bottom: 6rem;
+        nav.categores{
+            padding-top: 4rem;
+            a{
+                display: inline-block;
+                margin-right: 2.5rem;  
+                padding-bottom: .3rem;
+                margin-bottom: 1rem;            
                
-                h2{
-                    font-size: rem(26);
-                    text-transform: uppercase;
-                    @include mq(md){
-                        font-size: rem(42);
-                    }
-                    @include mq(lg){
-                        font-size: rem(48);
-                    }
-                    @include mq(xl){
-                        font-size: rem(54);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(60);
-                    }
-                }
-                p{
-                    
-                    font-weight: lighter;
-                    text-transform: uppercase;
-                    @include mq(md){
-                        font-size: rem(18);
-                    }
-                    @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(22);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(24);
-                    }
-                }
-                .actions{
-                    padding-top: 3rem;
-                    a{
-                        color: #fff;
-                        .iconfont{
-                            font-size: 2.6rem;
-                        }
-                    }
-                    .quote{
-                        display: inline-block;
-                        padding: .6rem 2rem;
-                        background-color: $color-primary;
-                        color: #fff;
-                        text-transform: uppercase;
-                    }
+                &.active{
+                    font-size: rem(24);
+                    color:$color-primary;
+                    font-weight: bolder;
+                    border-bottom: 2px $color-primary solid;
                 }
             }
         }
+        .news-sliders{
+            *{
+                box-sizing: border-box;
+            }
+            .item{
+                display: block;
+                position: relative;
+                img{
+                    display: block;
+                    width: 100%;
+                    max-width: none;
+                }
+                .title{
+                    margin: 0;
+                    padding: .5rem 1.2rem;
+                    position: absolute;
+                    bottom: 2rem;
+                    border:1px #eee solid;
+                    left: 2rem;
+                    right: 2rem;
+                    z-index: 100;
+                    background-color: rgba(255,255,255,.3);
+                    border-radius: 25px;
+                    color: #fff;
+                    font-weight: 500;
+                    
+                }
+                &:hover{
+                   
+                        .title{
+                            background-color: rgba(255,255,255,1); color: #000;
+                        }
+                }
+            }
+            .col-md-7{
+                .item{
+                    margin-right: 4rem;
+                }
+            }
+        }
+       
+        
     }
    
     .s2{
        
         background: #fff url(../img/bg_001.jpg) no-repeat right top 120px;
         background-size: auto;
+       
         .researchlist{
-            
+           position: relative;
+            .research-container{
+                padding-bottom: 4rem;
+            }
             .item{
                 display: block;
                 position: relative;
@@ -183,139 +157,9 @@
         @include mq(xl) {
             padding-top: 6rem;   padding-bottom: 6rem;
         }
-        .item{
-        
-            display: block;
-            position: relative;
-            overflow: hidden;
-            color: #fff;
-        
-            .pic{
-                display: block;              
-                overflow: hidden;
-                background-color: #000;
-                img{
-                    width: 100%;
-                    display: block;      
-                    transition: all .2s;         
-                }
-             
-            }
-           
-            .des{
-                padding: .6rem 1rem;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                top: 100%;
-                z-index: 100;
-                background-image: linear-gradient( 90deg, #5b636e 0%, #5b636e00 100%);
-                transition: all .2s;
-                margin-top: -5rem;
-                @include mq(md) {
-                    margin-top: -5.6rem;
-                    padding: .6rem 1rem;
-                }
-                @include mq(xl) {
-                    margin-top: -7rem;
-                    padding: 1rem 1.5rem;
-                }
-                @include mq(xxl) {
-                    margin-top: -7rem;
-                    padding: 1rem 2rem;
-                }
-                h3.title{
-                    font-size: rem(20);
-                    text-align: left;
-                    font-weight: bold;  
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    margin-bottom: 0;
-                    @include mq(md) {
-                        font-size: rem(22);  
-                    }
-                    @include mq(lg) {
-                        font-size: rem(24);
-                    }   
-                }
-                p{
-                    margin-bottom: 1.5rem;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    @include mq(md) {
-                        margin-bottom: 1.5rem;
-                    }
-                    @include mq(xl) {
-                        margin-bottom: 2.5rem;
-                    }
-                    @include mq(xxl) {
-                        margin-bottom: 4rem;
-                    }
-                }
+        video{
+            width: 100%;
         }
-        &:hover{
-            .pic{
-           
-                img{
-                   opacity: .5;    
-                   transform: scale(1.1);           
-                }
-            
-            }
-            .des{
-               
-                background-image: url(../img/cover.png);
-                background-size: cover;
-                background-repeat: no-repeat;     
-                top: 0;
-                margin-top: 0;
-                padding-top: 2rem;
-                @include mq(md) {
-                    padding-top: 1.5rem;
-                }
-                @include mq(xl) {
-                    padding-top: 2rem;
-                }
-                @include mq(xxl) {
-                    padding-top: 3rem;
-                }
-                h3.title{
-                    font-size: rem(28);
-                    text-align: left;
-                    font-weight: bold;  
-                    margin-bottom: 1rem;
-                    @include mq(md) {
-                        font-size: rem(28);    margin-bottom: 1rem; 
-                    }
-                    @include mq(xl) {
-                        font-size: rem(36);
-                        margin-bottom: 1.2rem; 
-                    }
-                    &::after{
-                        content: " ";
-                        display: block;
-                        width: 30px;
-                        height: 3px;
-                        background-color: #fff;
-                        margin-top: .7rem;
-                        @include mq(md) {
-                            height: 3px;  margin-top: .7rem;
-                        }
-                        @include mq(lg) {
-                            height: 6px; margin-top: 1rem;
-                        }
-                    }
-                }
-            
-            }
-        }
-           
-        }
-
-    
-
           
     }
    .s4{
