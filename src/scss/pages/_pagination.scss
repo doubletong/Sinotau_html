@@ -1,41 +1,48 @@
-
-
-
-.pagination {   
+.pagination {
         @include reset-list();
-        text-align: center;
-        padding: 2rem 0;
-        li{
+
+        li {
                 display: inline-block;
-                margin: 0 .1rem;
-                @include mq(md){
-                        margin: 0 .4rem;
-                }
-                a{
+                margin: 0;
+
+                a {
                         display: block;
-                        padding: .2rem .6rem;
-                        border:1px #000 solid;                  
-                        font-size: 1rem;
-                        @include mq(md){
-                                padding: .4rem 1rem;
+                        padding: .2rem .4rem;
+                        color: #999;
+                      
+
+                        @include mq(md) {
+                                padding: .2rem .5rem;
                         }
 
-                }
-        &:hover{
-                a{
-                        background-color: #000;
-                        color: #fff;
-                }    
-        }
+                     
 
-                &.active{
-                        a{
-                                background-color: #000;
+                }
+
+                &.active {
+                        a {
+                                color: $color-primary;
+                        }
+                }
+
+                &:hover {
+                        a {
+                                background-color: $color-primary;
                                 color: #fff;
                         }
                 }
+
+
         }
-    
- }
- 
- 
+
+}
+
+.page-link{
+        color: #999;
+        &:hover{
+            color: $color-primary;
+        }
+        .iconfont{
+              font-size: 2rem;
+        }
+}

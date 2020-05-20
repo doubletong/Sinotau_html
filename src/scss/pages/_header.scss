@@ -1,5 +1,5 @@
 .site-header {
-    background-color: #fff;
+    background-color: #f2f2f2;
     position: fixed;
     left: 0;
     top: 0;
@@ -15,6 +15,9 @@
     @include mq(xl) {
         height: 80px;       
     }
+    @include mq(xxl) {
+        height: 98px;       
+    }
     .container,
     .row {
         height: 100%;
@@ -22,11 +25,8 @@
 
 
     .logo {
-        display: block;    
-        height: 37px;
-        width: 100px;
-        background: url(../img/logo_color.png) no-repeat local center;
-        background-size: contain;
+       
+        width: 100px;  
         @include mq(md) {
             width: 117;
         }
@@ -37,7 +37,10 @@
             width: 117;
             
         }
-
+        img {
+            display: block;    
+            
+        }
     }
 
     .mainav {
@@ -90,24 +93,18 @@
                     height: 80px;
                     line-height: 80px;
                 }
+                @include mq(xxl){
+                    font-size: 1rem;
+                    height: 98px;
+                    line-height: 98px;
+                }
                &:hover{
                    color: $color-primary;
                }
                 &.active {
                     position: relative;
                     color: $color-primary;
-                    &::before{
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 3px;
-                        background-color: $color-primary;
-                        content: " ";
-                        display: block;
-                        position: absolute;
-                        left: -1rem;
-                        top: 50%;
-                        margin-top: -3px;
-                    }
+                   
                 }
             }
 
@@ -116,33 +113,12 @@
     }
 
    
-    .booking{
-
-        display: none;
-        @include mq(lg) {
-            display: block;
-        }
-        .btnBook {
-          
-            color: #000;           
-            display: inline-block;
-            border: 1px #000 solid;
-            padding: .2rem .6rem;
-            margin-left: -10px;
-         &:hover{
-             background-color: #000;
-             color: #fff;
-         }
-        }
-    }
-
+  
     
 
 
     .mobilemenu {
-        @include mq(lg) {
-            display: none;
-        }
+        
 
         .menu-toggle {
             width: 28px;
@@ -170,7 +146,7 @@
     .three {
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: $color-primary;
         margin: 6px auto;
         backface-visibility: hidden;
         -moz-transition-duration: 0.3s;

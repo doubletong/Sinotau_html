@@ -1,0 +1,103 @@
+.page-project{
+    
+    
+    .s1{
+        background: url(../img/projects_01.jpg) no-repeat right 15px center;
+        .intro{
+            background:$color-primary url(../img/projects_03.png) no-repeat right bottom;
+            color: #fff;
+            padding: 5rem 6rem 3rem;
+            width: 660px;
+            ul{
+                @include reset-list();
+                margin-bottom: 10rem;
+                li{
+                    margin-bottom: 3rem;
+                    padding-left: 1.3rem;
+                    position: relative;
+                    &::before{
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: .45rem;
+                        background-color: #fff;
+                        width: 7px;
+                        height: 7px;
+                        z-index: 10;
+                    }
+                }
+            }
+            p{
+                font-size: rem(12);
+                font-weight: lighter;
+                text-align: center;
+            }
+        }
+        .pic{
+            margin-left: 3rem;
+        }
+    }
+    .s2{
+        .schools{
+            padding: 0 1rem;
+            .item{
+                position: relative;
+                color: #fff;
+                overflow: hidden;
+                img{
+                    display: block; transition: all .25s;
+                }
+                .title{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 100;
+                    padding: 1rem;
+                    margin: 0;
+                    font-size: rem(18);
+                    font-style: italic;
+                   
+                }
+                .des{
+                    position: absolute;
+                    top: -2rem;
+                    left: 0;
+                    z-index: 90px;
+                    background-color: rgba(0,120,67,.9);
+                    padding: 1rem;
+                    width: 100%;
+                    height: 120%;
+                    opacity: 0;
+                    transition: all .25s;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                    .des{
+                        opacity: 1;top: 0;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+.page-blog-detail{
+    padding-top: 1rem;
+    .title-blog{
+        margin-bottom: 2rem;
+        h1{
+            font-size: rem(48);
+            text-align: left;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+    }
+    .main{
+        margin-bottom: 5rem;
+    }
+    
+}

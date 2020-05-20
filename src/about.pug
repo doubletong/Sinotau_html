@@ -3,23 +3,125 @@ extends includes/layout.pug
 block title
     | About Us
 
+block bkheader
+    link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
+
 block content
     .banner.banner-about(style="background-image:url(../img/temp/banner-about.jpg)")
-        h1 About Us 
+       
         
     .page.page-about
-        section.container
-            .row.justify-content-between
-                .col-lg-5
-                    .title-section-v1
-                        h2 The Research Center for Computer-Aided Drug Discovery (CADD)                
+        section.section.container
+            .title-section
+                h2 ABOUT US
+                h3 关于我们
+
+            .row.align-items-center.no-gutters
+                .col-md-6.col-xl
+                       
                     .intro
-                        p The Research Center for Computer-Aided Drug Discovery (CADD) was founded in June 2019. The member of Swiss Academy of Sciences and National Academy of Inventor (USA), Prof. Horst Vogel, joins full-time as chief scientist. The CADD research center combines computational biology, biochemistry, medicinal chemistry, pharmacology, biotechnology and others subjects together, aiming at building up a complete pipeline to advance modern new drug discovery and drug design in an ultimately efficient way by computational method. The members of CADD research center advanced two "first-in-class" drug molecules into clinical trial in three years via computational design, of which the world-wide patents were granted. Moreover, the members of CADD research center also invented a series of important biotechnology. In the future, the CADD research center will establish an international outstanding team, aiming at making milestone breakthrough in the areas of both drug discovery and biotechnology.
+                        p 深圳市璞森教育有限公司始创于2016年，专注音乐、美术、舞蹈教育培训，从早教到成人，从兴趣爱好到专业教学，包括艺术院校附中、大学本科及考研。业务覆盖全年龄、各科目。打造全方位、立体教学体系，致力于提供更专业、更全面、更优质的艺术教育，建立规模化、标准化、现代化的教育机构。
+
                                 
-                .col-lg-6
-                    figure
+                .col-md-6.col-xl-auto
+                    figure.pic
                         img(src="img/about_01.jpg", alt="")
+        section.section.container
+            .title-section
+                h2 CAMPUS ENVIRONMENT
+                h3 学校环境
+
+            .envlist
+                .swiper-container.envlist-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            a.item(href="about.html")
+                                img(src="img/temp/about_slider_01.jpg", alt="")
+                        .swiper-slide
+                            a.item(href="about.html")
+                                img(src="img/temp/about_slider_01.jpg", alt="")
+                        .swiper-slide
+                            a.item(href="about.html")
+                                img(src="img/temp/about_slider_01.jpg", alt="")
+                        .swiper-slide
+                            a.item(href="about.html")
+                                img(src="img/temp/about_slider_01.jpg", alt="")
+                               
+                    .swiper-pagination   
+
+        section.section.container
+            .title-section
+                h2 Contact Us
+                h3 联系我们
+
+            .row.contacts
+                .col-md-6.col-lg-3
+                    .item
+                        .pic
+                            img(src="img/icon-map.png", alt="地址")
+                        h3 地址
+                        p 深圳市南山区·TCL国际E城G5栋
+                .col-md-6.col-lg-3
+                    .item
+                        .pic
+                            img(src="img/icon-phone.png", alt="联系电话")
+                        h3 联系电话
+                        p 13826510015
+                .col-md-6.col-lg-3
+                    .item
+                        .pic
+                            img(src="img/icon-wechat.png", alt="微信")
+                        h3 微信
+                        p push-edu
+                .col-md-6.col-lg-3
+                    .item
+                        .pic
+                            img(src="img/icon-email.png", alt="邮箱")
+                        h3 邮箱
+                        p pushart@pushart.com
+
+            #baidumap.baidumap
+
+         
+                    
+                    
+
 
         
+
 block bkfooter
+
+    script(src='plugins/swiper/js/swiper.min.js')
+    script(src='http://api.map.baidu.com/api?v=3.0&ak=OBGqtysX9tHecbODIsmZO8UwmbqeFeAG',type="text/javascript")
     
+    script.
+        var map = new BMap.Map("baidumap");          
+        map.addControl(new BMap.NavigationControl());    
+        map.addControl(new BMap.ScaleControl());    
+        map.addControl(new BMap.OverviewMapControl());    
+        map.enableScrollWheelZoom(true);
+        var point = new BMap.Point(113.934382,22.579212);  
+        map.centerAndZoom(point, 16);                
+        var marker = new BMap.Marker(point);        // 创建标注    
+        map.addOverlay(marker);  
+
+        $(function () {
+        
+  
+        
+        });
+        var swiper = new Swiper('.envlist-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+     
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    
+       
+
+     

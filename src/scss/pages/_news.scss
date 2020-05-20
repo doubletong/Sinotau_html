@@ -1,13 +1,11 @@
 .page-news {
     .s1{
-        margin-bottom: 4rem;
+        
         a{
             display: inline-block;
-            padding-right: 2.5rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            &.active{
-                font-size: rem(24);
+            padding: 0 1rem;        
+            border-right: 1px #ddd solid;
+            &.active{              
                 color:$color-primary;
             }
         }
@@ -19,84 +17,56 @@
             @include mq(lg) {
                 margin-bottom: 2rem;
             }
-            @include mq(xl) {
-                margin-bottom: 3rem;
-            }
+        
         }
         .item{
+            overflow: hidden;
+            display: block;
+            margin-bottom: 2rem;
+            position: relative;
+       
             
-            margin-bottom: 3rem;
-            @include mq(md) {
-                margin-bottom: 3rem;
-            }
-            @include mq(lg) {
-                margin-bottom: 6rem;
-            }
-            .pic{
-                overflow: hidden;
+             
+            img{
                 display: block;
-                margin-bottom: 1rem;
-                @include mq(md) {
-                    margin-bottom: 0;
-                }
-                img{
-                    display: block;
-                    width: 100%;
-                    transition: all .2s;
-                }
-            }
-            .txt{
-          
-                display: block;
-                
-                
-            }
+                width: 100%;
+                transition: all .2s;
+            }   
             .title{
-                font-size: rem(18);             
-                text-transform: uppercase;
-                color:#000;
-                @include mq(md) {
-                    font-size: rem(24);  
-                }
-                @include mq(xxl) {
-                    font-size: 2rem; 
-                }
-            }
-            .note{
-                color:#333;
-                margin-bottom:1rem;
-            }
-            .des{
-                color: #999;
-                display: none;
-                @include mq(lg) {
-                    display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 100;
+                background-color: rgba(3,109,60,.9);
+                color:#fff;
+                margin: 0;
+                padding:1rem;
+             
+                h3{
+                    height: 46px;
+                    overflow: hidden;
+                    font-weight: normal;
+                    margin: 0;
                 }
             }
-            time{
-                color: #999;
-               
-            }
+
             &:hover{
-                .pic{
+               
                     img{
                         transform: scale(1.1);
                     }
-                }
-                .btn{
-                    background-color: #000;
-                    color: #fff;
-                }
-            }
+                
            
-        }
+            }
+         }
+            
+           
+         
+           
+        
     }
-    .news-footer {
-        text-align: center;
-        padding-bottom: 3rem;
-        @include mq(md){
-            padding-top: 2rem;
-        }
+    .news-footer {  
         .btn-default-outline{
             border: 1px #221e1f solid;
             padding: .8rem 5rem;
@@ -123,21 +93,22 @@
         padding-top: 96px;
     }
     
-    article{
+    article.container{
+        max-width: 960px;
         header{
-          
+            text-align: center;
             margin-bottom: 2rem;
             @include mq(md) {
                 margin-bottom: 3rem;
             }
             h1{
                 
-                font-size: rem(24);
+                font-size: rem(22);
                 margin-bottom: 1rem;
                 color: #000;
                 text-transform: uppercase;
                 @include mq(md) {
-                    font-size: 2rem;  margin-bottom: 1rem;
+                    font-size: rem(24);  margin-bottom: 1rem;
                 }
             }
             .note{
@@ -149,13 +120,7 @@
             margin-bottom:3rem;
             height: auto !important;
         }
-        .pagenav{
-            text-align: right;
-            padding-top: 2rem;
-            a{
-                margin-left: 1rem;
-            }
-        }
+        
     }
     
   

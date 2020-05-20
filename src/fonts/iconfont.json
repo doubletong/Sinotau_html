@@ -1,65 +1,30 @@
 {
-  "id": "1794658",
-  "name": "中科院",
+  "id": "1827028",
+  "name": "璞森",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "9081691",
-      "name": "htb－Arrow Right",
-      "font_class": "left",
-      "unicode": "e606",
-      "unicode_decimal": 58886
+      "icon_id": "10375019",
+      "name": "home",
+      "font_class": "zhuye",
+      "unicode": "e604",
+      "unicode_decimal": 58884
     },
     {
-      "icon_id": "10379957",
-      "name": "htb－Arrow Right",
-      "font_class": "right",
-      "unicode": "e68e",
-      "unicode_decimal": 59022
-    },
-    {
-      "icon_id": "12552967",
-      "name": "Icon - Keyboard Arrow - Down - Rounded",
+      "icon_id": "13749972",
+      "name": "Arrow, right, next",
       "font_class": "next",
-      "unicode": "e65c",
-      "unicode_decimal": 58972
-    },
-    {
-      "icon_id": "13150739",
-      "name": "Icon - Keyboard Arrow - Down - Rounded",
-      "font_class": "prev",
       "unicode": "e602",
       "unicode_decimal": 58882
     },
     {
-      "icon_id": "108942",
-      "name": "google ",
-      "font_class": "google",
-      "unicode": "e617",
-      "unicode_decimal": 58903
-    },
-    {
-      "icon_id": "171764",
-      "name": "sina",
-      "font_class": "sina",
-      "unicode": "e609",
-      "unicode_decimal": 58889
-    },
-    {
-      "icon_id": "12022124",
-      "name": "twitter",
-      "font_class": "twitter-fill",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "12882636",
-      "name": "ID",
-      "font_class": "ID",
-      "unicode": "e601",
-      "unicode_decimal": 58881
+      "icon_id": "14786694",
+      "name": "Arrow, right, next",
+      "font_class": "prev",
+      "unicode": "e603",
+      "unicode_decimal": 58883
     }
   ]
 }

@@ -1,0 +1,67 @@
+extends includes/layout.pug
+
+block title
+    | 新加坡项目
+
+block content
+       
+    .page.page-project
+        section.s1.container
+            .title-section.wow.fadeInLeft
+                h2 PROJECT PROFILE
+                h3 项目概况
+            .row.align-items-center
+                .col-lg-auto
+                    .intro
+                        ul  
+                            li 新加坡莱佛士音乐学院已授权璞森国际艺术教育在中国境内招收音乐及舞蹈专业的大专，本科预科班的教学项目。
+                            li 璞森国际艺术教育针对这两个教学项目有权在中国境内发展下线合作单位及学校。
+                        p SINGAPORE RAFFLES MUSIC COLLEGE × PUSH ART EDUCATION
+                .col-lg
+                    .pic
+                        img(src="img/projects_02.jpg", alt="")
+
+        section.s2.container
+            .title-section.wow.fadeInLeft
+                h2 WHY CHOOSE SINGAPORE
+                h3 留学新加坡是全球最优选择
+            .schools
+                .row.no-gutters
+                    .col-lg
+                        .item.wow.fadeInUp
+                            img(src="img/projects_04.jpg", alt="")
+                            h3.title 英国知名艺术院校文凭
+                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                    .col-lg
+                        .item.wow.fadeInDown
+                            img(src="img/projects_05.jpg", alt="")
+                            h3.title 中西文化结合的中心地带
+                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                    .col-lg
+                        .item.wow.fadeInUp
+                            img(src="img/projects_06.jpg", alt="")
+                            h3.title 多元化的移民国家
+                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                    .col-lg
+                        .item.wow.fadeInDown
+                            img(src="img/projects_07.jpg", alt="")
+                            h3.title 被誉为“亚洲四小龙”
+                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                    .col-lg
+                        .item.wow.fadeInUp
+                            img(src="img/projects_08.jpg", alt="")
+                            h3.title 世界上最安全的国家之一
+                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+
+            
+block bkfooter
+    script.
+        $('.d1 dt').click(function(e){          
+            $(this).closest('dl').siblings().removeClass('open');
+            $(this).closest('dl').addClass('open');        
+            // $(this).next().slideToggle();
+        })
+        
+
+
+     

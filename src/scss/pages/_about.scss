@@ -1,99 +1,86 @@
 .page-about{
-   
-    .intro{
-        text-align: justify;
-        line-height: 1.8;
-        padding-top: 1rem;
-    }
-    .box{
-        background-repeat: no-repeat;
-        height: 300px;
-        margin-bottom: 30px;
     
-        .txt{
-         
-            height: 100%;
-            @include mq(md){
-                width: 460px;
-               }
-           @include mq(lg){
-            width: 760px;
-           }
-            position: relative;
-            .txtwrap{
-                @include vertical-align();
-                padding: 0 6rem 2rem 1rem; 
-                @include mq(lg){
-                    padding: 0 11rem 2rem 4rem; 
-                   }
-                color: #fff;
-                h3{
-                    font-size: rem(24);
-                    font-weight: bolder;
-                    text-transform: uppercase;
-                    @include mq(lg){
-                        font-size: rem(36);
-                    }
-                }
-            }
-
-            &::after{
-                position: absolute;
-                top: 70px;
-                right:-0.5rem;
-                content: " ";
-                display: block;
-                width: 90px;
-                height: 6px;
-                background-color: #fff;
-                margin-top: 1rem;
-            }
+    .intro{
+        text-align: justify;      
+        padding: 1rem;
+        background-color: #f6f6f6;
+        box-shadow: 0 0 12px rgba(0,0,0,.1);
+   
+        @include mq(md){
+            padding: 2rem;
         }
-
-        &.mission{
-            background-position: right  -220px  center;
-            @include mq(md){
-                background-position: right -180px center;
-            }
-            @include mq(lg){
-                background-position: right center;
-            }
-            background-size: cover;
-            .txt{
-                background: url(../img/bg_07.png) no-repeat right center;
-            }
+        @include mq(lg){
+            padding: 2.5rem;
         }
-        &.vision{
-            background-position: left  -220px  center;
+        @include mq(xl){
+            padding: 3.5rem;
+        }
+    }
+    .pic{
+        margin: 0;
+        img{
+         display: block;
+        }
+    }
+    .contacts{
+        
+        margin-bottom: 5rem;
+        @include mq(md){
+            text-align: center;
+        }
+        .item{
+            margin-bottom: 1.5rem;
+            border-bottom: 1px #eee solid;
             @include mq(md){
-                background-position: left -180px center;
+                border-bottom:none;
             }
-            @include mq(lg){
-                background-position: left center;
-            }
-            @include mq(xl){
-                background-position: left center;
-            }
-            .txt{
-                background: url(../img/bg_08.png) no-repeat left center;
-                margin: 0 0 0 auto;
-                text-align: right;
-
-                .txtwrap{
-                   text-align: right; 
-                   padding: 0 1rem 2rem 6rem; 
-                   @include mq(lg){
-                    padding: 0 4rem 2rem 11rem; 
-                   }
-                }
-
-                &::after{
-                  
-                    left:-0.5rem;
-                    right: auto;
+        @include mq(lg){
+            margin-bottom: 0;
+        }
+            .pic{
+                margin-bottom: 2rem;
+                width: 60px;
+                float: left;
+                margin-right: 1rem;
+                @include mq(md){
+                    width: 60px;
+                    margin: 0 auto 1rem;
+                    float: none;
                    
                 }
+                img{
+                    margin: 0 auto;
+                    display: block;
+                }
             }
+            h3{
+                color: $color-primary;
+                margin-bottom: .5rem;
+                @include mq(md){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .baidumap{
+        height: 460px;
+        img{
+            max-width: none;
+        }
+    }
+
+    .s1{
+        text-align: center;
+        .pic{
+            padding: 3rem;
+            
+            img{
+                margin: 0 auto;
+            }
+        }
+        .note{
+            font-size: rem(24);
+            color: $color-primary;
         }
     }
 }

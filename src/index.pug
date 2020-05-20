@@ -4,7 +4,6 @@ block title
     | Home
 
 block bkheader
-    link(href='js/vendor/rateyo/min/jquery.rateyo.min.css', rel='stylesheet')
     link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
     
 block content
@@ -212,7 +211,7 @@ block content
         
 
 block bkfooter
-    script(src='js/vendor/rateyo/min/jquery.rateyo.min.js')
+
     script(src='plugins/swiper/js/swiper.min.js')
     script.
         //Make sure that the dom is ready
@@ -232,8 +231,8 @@ block bkfooter
         });
 
         $(function () {
-            $('body').addClass('home-body')
-            $(".rateYo").rateYo();
+        
+  
         
         });
         var swiper = new Swiper('.research-container', {

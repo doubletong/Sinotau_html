@@ -1,125 +1,54 @@
 
-.site-contact{
-   
-    background: $color-primary url(../img/bg_002.jpg) no-repeat center top;    
-    background-size: cover;
-    height: 500px;
-    .container{
-        height: 100%;
-        @include mq(md){
-            @include vertical-align();     
-        }  
-        .contact{
-            background: $color-primary url(../img/logo_bg.png) no-repeat left -1rem bottom -2.5rem;    
-            color: #fff;
-            height: 100%;
-            max-width: 500px;
-            padding: 1rem;
-            position: relative;
-            @include mq(md){
-                padding: 2.5rem;
-            }
-            @include mq(lg){
-                padding: 3.6rem;
-            }
-            .row{
-                margin-bottom: 3rem;
-            }
-            .list{
-                @include reset-list();
-                li{
-                    padding-top: .3rem;
-                    padding-bottom: .3rem;
-                    margin-bottom: 1rem;
-                    padding-left: 40px;
-                    &.add{
-                        background: url(../img/icon-marker.png) no-repeat left top;
-                        
-                    }
-                    &.email{
-                        background: url(../img/icon-email.png) no-repeat left top;
-                    
-                    }
-                    &.phone{
-                        background: url(../img/icon-phone.png) no-repeat left top;
-                    
-                    }
-                }
-            }
-            .qrcode{
-                position: absolute;
-                right: 3.6rem;
-                bottom: 5rem;
-                z-index: 100;
-                
-                .pic{
-                    padding: .6rem;
-                    background-color: #fff;
-                    img{
-                        display: block;
-                    }
-                }
-                .txt{
-                    padding: .4rem;
-                    text-align: center;
-                   
-                    background-color: rgba(255, 255, 255,.1);
-                    font-size: rem(14);
-             
-                      
-                }
-            }
-        }
-       
-        
-    }
-}
-
 .site-footer{
-    padding-top: 3rem;
-    padding-bottom: 1rem;  
-   
- 
-    .navsoc{
-        border-bottom: 1px #c4c4c4 solid;
-        padding-bottom: 1rem;
-        .botnav{
-            @include reset-list();
-            li{
-                display: inline-block;
-                margin-right: 2.5rem;
-            }
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;;  
+    background: #f2f2f2;    
+    @include mq(lg){
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;;  
+    }
+    .logo{
+       
+        margin-bottom: 1.5rem;
+        width: 100px;
+        @include mq(md){
+            width: 110px;padding-right:1rem;
+        }
+        @include mq(lg){
+            width: auto; padding-right:3rem;
+        }
+        @include mq(xl){
+            padding-right:6rem;
         }
     }
-  
-    .social{
-        
-        a{
-            display: inline-block;
-            margin-left: rem(10);
-            background-color: #000;
-            color: #fff;
-            width: 40px;
-            line-height: 40px;
-            text-align: center;
-            font-size: rem(20);
-        }
+    .conlist{
+        margin-bottom: 1.5rem;
+    }
+    ul{
+        @include reset-list();
+    }
+    .qrcode   {
        
+        @include mq(lg){
+            width: auto; padding-left:3rem;
+        }
+        @include mq(xl){
+            padding-left: 6rem;
+        }
+    }
+    .qr{
+        text-align: center;
+        @include mq(md){
+            width: 90px;
+        }
+        .name{
+            padding-top: .8rem;
+        }
     }
 
 }
-.bot{
-   
-    padding:.6rem 0 ;
-    color: #c4c4c4;
-    
-    .copyright{
-       
- 
-     
-    }
-    
-}
+
+
 
 .toTop{
     position: fixed;
