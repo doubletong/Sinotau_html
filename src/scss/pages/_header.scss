@@ -1,5 +1,6 @@
 .site-header {
     background-color: #f2f2f2;
+    box-shadow: 0 0 25px rgba(0,0,0,.15);
     position: fixed;
     left: 0;
     top: 0;
@@ -22,11 +23,14 @@
     .row {
         height: 100%;
     }
+    .container{
+        position: relative;
+    }
 
 
     .logo {
-       
-        width: 100px;  
+       display: block;
+        width: 60px;  
         @include mq(md) {
             width: 117;
         }
@@ -104,6 +108,23 @@
                 &.active {
                     position: relative;
                     color: $color-primary;
+                    &::after{
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-left: -3px;
+                        bottom: 1rem;
+                        background-color: $color-primary;
+                        z-index: 200;
+                        @include mq(xl){
+                            width: 8px;
+                            height: 8px;  margin-left: -4px;    bottom: 1.5rem;
+                        }
+                    }
                    
                 }
             }
@@ -159,28 +180,31 @@
 
 
     .menu-over {
-        position: fixed;
-        left: 0;
+        position: absolute;
+        right:  0;
         top: 45px;
         width: 100%;
-        height: calc(100% - 45px);
-        z-index: 1000;
+        height: calc(100vh - 45px);
+      
         background-color: #fff;
         display: none;
-
+        box-shadow: 0 10px 15px rgba(0,0,0,.1);
+        z-index: -10;
+        
         @include mq(md) {
             top: 70px;
-            height: calc(100% - 70px);
+            height: calc(100vh - 70px);
+            width: 450px;
         }
 
         @include mq(lg) {
             top: 90px;
-            height: calc(100% - 90px);
+            height: calc(100vh - 90px);
         }
 
         @include mq(xl) {
-            top: 100px;
-            height: calc(100% - 100px);
+            top: 98px;
+            height: calc(100vh - 98px);
         }
 
         ul.mobilenav {
@@ -188,54 +212,63 @@
             margin: 0;
             padding: 2rem 0 0 0;
             height: 100%;
-            overflow-y: auto;
+            overflow-y: none;
+           
 
             &>li {
                 position: relative;
                 transition: all .2s;
-
+                text-align: center;
                 &>a {
-                    display: block;
+                    display: inline-block;
                     color: #333;
                     position: relative;
-                    padding: .6rem 1rem;
-                    border-bottom: 1px #ddd solid;
+                    padding: 1rem .3rem;
+                  
 
+                    @include mq(xxl){
+                        font-size: 1rem;
+                    }
                     @include hover {
                         color: $color-primary;
                     }
 
-                    &.active {
-                        color: $color-primary;
-                    }
+                    
                 }
-
-                &.down {
-                    position: relative;
-
-                    &::after {
+                &.active {
+                    a{
+                        color: $color-primary;
+                        font-weight: bold;
+                    }
+                    
+                    &::before {
                         content: " ";
                         display: block;
-                        width: 0;
-                        height: 0;
-                        border: 6px solid #999;
-                        border-bottom-color: transparent;
-                        border-left-color: transparent;
-                        border-right-color: transparent;
+                        width: 36px;
+                        height: 5px;
+                        background-color: $color-secondary;
                         position: absolute;
                         top: 21px;
-                        right: 1rem;
-                        z-index: 5000;
+                        left: 0;
+                        z-index: 50;
+                      
+                    }
+                }
+                &.down {
+                    position: relative;                   
+                    &>a{
+                        padding-left: 1.5rem;
+                    }
+                    i.iconfont{
+                        display: inline-block;
+                        color: $color-primary;
+                        transition: all .2s;
                     }
                 }
 
                 &.open {
-                    &::after {
-                        border: 6px solid #999;
-                        border-top-color: transparent;
-                        border-left-color: transparent;
-                        border-right-color: transparent;
-                        top: 14px;
+                    i.iconfont{
+                        transform: rotate(180deg);
                     }
                 }
 
@@ -244,24 +277,34 @@
                     display: none;
 
                     li {
-                        padding-left: 2rem;
+                       
 
                         a {
                             display: block;
-                            padding: .5rem 1rem .5rem 0;
-                            border-bottom: 1px #eee solid;
+                            padding: .7rem 1rem;
+                      
                             color: #666;
                             font-size: rem(14);
                         }
                     }
                 }
             }
+           
         }
-
+        .copyright{
+            position: absolute;
+            left: 0;
+            bottom: 1rem;
+            z-index: 100;
+            width: 100%;
+            text-align: center;
+            font-size: rem(12);
+            color: #999;
+        }
     }
 
     &.fixheader{
-       background-color: #fff;
+     
         
     }
 }

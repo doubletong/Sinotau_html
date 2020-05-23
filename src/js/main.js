@@ -34,10 +34,12 @@ $(document).ready(function() {
         $("#overmenu").slideToggle();
     });
 
-    $(".mobilenav li.hasnav>a").on("click", function(e) {
+    $(".mobilenav li.down>a").on("click", function(e) {
         "use strict";
         e.preventDefault();
+        $(this).closest('li').toggleClass('open');
         $(this).next('.subnav').slideToggle();
+        
 
     });
 
@@ -53,25 +55,9 @@ $(document).ready(function() {
             $(".mainmenu>li:nth-of-type(2)").addClass("nav-open");
             $(".mainmenu>li:nth-of-type(2) .submenu li:nth-of-type(1) a").addClass("active");
             break;
-        case "/table_adv.html":   
-            $(".mainmenu>li:nth-of-type(2)").addClass("nav-open");
-            $(".mainmenu>li:nth-of-type(2) .submenu li:nth-of-type(2) a").addClass("active");
-            break;
-        case "/customers.html":   
-        case "/customer-detail.html":   
-        case "/customer-edit.html":   
-            $(".mainmenu>li.customers a").addClass("active");
-           // $(".mainmenu>li:customers .submenu li:nth-of-type(2) a").addClass("active");
-            break;
+     
         
-        case "/form_adv_pic.html":   
-            $(".mainmenu>li:nth-of-type(3)").addClass("nav-open");
-            $(".mainmenu>li:nth-of-type(3) .submenu li:nth-of-type(3) a").addClass("active");
-            break;
-        case "/join_detail.html":            
-        case "/join.html":
-            $(".mainav li:nth-of-type(6) a").addClass("active");
-            break;
+       
         case "/404.html":
             $(".mainmenu>li.ortherpage").addClass("nav-open");
             $(".mainmenu>li.ortherpage .submenu li:nth-of-type(4) a").addClass("active");

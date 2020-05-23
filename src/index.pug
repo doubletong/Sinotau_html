@@ -1,7 +1,7 @@
 extends includes/layout.pug
 
 block title
-    | Home
+    | 首页
 
 block bkheader
     link(href='plugins/swiper/css/swiper.min.css', rel='stylesheet')
@@ -10,203 +10,160 @@ block content
     section.sliders.swiper-container.wow.fadeInUp
         .swiper-wrapper
             .swiper-slide
-                img(src="img/temp/slider_01.jpg", alt="")
+                img(src="img/temp/banner_04.jpg", alt="")
                     
             .swiper-slide
-                img(src="img/temp/slider_01.jpg", alt="")
+                img(src="img/temp/banner_04.jpg", alt="")
                     
             .swiper-slide
-                img(src="img/temp/slider_01.jpg", alt="")
+                img(src="img/temp/banner_04.jpg", alt="")
 
         .dots
             .container
                 .swiper-pagination
         
-        .swiper-next
+        .swiper-button-next
             i.iconfont.icon-next
-        .swiper-prev
+        .swiper-button-prev
             i.iconfont.icon-prev
+        img.mouse(src="img/mouse.png", alt="鼠标提示")
 
     .page.page-home  
         section.s1.container
             .row
-                .col-lg-5.order-last
-                    .title-section
-                        h2 Latest 
-                            br
-                            | News   
-                            a.more(href="news.html") more
-                .col-lg-7
-                    nav.categores.wow.fadeInLeft
-                        a.active(href="news.html") Industry
-                        a(href="news.html") Scientific research
-                        a(href="news.html") Academic report
-                        a(href="news.html") Achievements transformation
- 	
-            .news-sliders
-                .swiper-container.gallery-top
-                    .swiper-wrapper
-                        .swiper-slide(data-hash="sl01")
-                            .row                  
-                                .col-md-7
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n1.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                                        
-                                .col-md-5
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n2.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                        .swiper-slide(data-hash="sl01")
-                            .row                  
-                                .col-md-7
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n1.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                                        
-                                .col-md-5
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n2.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-
-                        .swiper-slide(data-hash="sl01")
-                            .row                  
-                                .col-md-7
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n1.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                                        
-                                .col-md-5
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n2.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-
-                        .swiper-slide(data-hash="sl01")
-                            .row                  
-                                .col-md-7
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n1.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                                        
-                                .col-md-5
-                                    a.item(href="news_detail.html")
-                                        img(src="img/temp/n2.jpg")
-                                        h3.title Scientists Design Novel Algorithmic...
-                    
-                    .swiper-pagination
-                    .swiper-next2
-                        i.iconfont.icon-right
-                    .swiper-prev2
-                        i.iconfont.icon-left
-
-
-        section.s2            
-            .container
-                .title-section
-                    h2 Research 
+                .col-6.col-lg-3
+                    .icon.wow.fadeInUp
+                        img(src="img/icon-ser.png", alt="权威")
+                    h3.wow.fadeInUp 权威
+                    p.wow.fadeInUp 璞森配备了省内最权威
                         br
-                        | Center
-                       
+                        | 最专业的的师资团队
+
+                .col-6.col-lg-3
+                    .icon.wow.fadeInUp
+                        img(src="img/icon-tag.png", alt="专业")
+                    h3.wow.fadeInUp 专业
+                    p.wow.fadeInUp 与官方机构和世界
+                        br
+                        | 名校的长期合作
                 
-                .researchlist
-                    .swiper-container.research-container
-                        .swiper-wrapper
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_01.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_02.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_03.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_01.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_02.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_03.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_01.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_02.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
-                            .swiper-slide
-                                a.item(href="research_detail.html")
-                                    img(src="img/temp/re_03.jpg", alt="")
-                                    .txt
-                                        div.rateYo(data-rateyo-rating="3.5", data-rateyo-rated-fill="#fff",data-rateyo-normal-fill="#8dbbe1",data-rateyo-star-width="20px")
-                                        h3 Talents Wanted at Hefei Institutes of Physical Science...
-                                        p Biotechnology, also known as biotechnology, refers to the use of living organisms (cells containing animals, plants and microorganisms) to produce useful substances or improve processes, improve biological characteristics, reduce costs and create new species. Depending on the tools and applications, it often overlaps with the fields of bioengineering and biomedical engineering.
-                                        .more MORE
+                .col-6.col-lg-3
+                    .icon.wow.fadeInUp
+                        img(src="img/icon-mao.png", alt="学术")
+                    h3.wow.fadeInUp 学术
+                    p.wow.fadeInUp 独特的教学形式
+                        br
+                        | 满足学生个性需求
 
-                        //- .swiper-pagination                                   
-                        //- .swiper-button-next
-                        //- .swiper-button-prev
-                        .dots
-                            .container
-                                .swiper-pagination
+                .col-6.col-lg-3
+                    .icon.wow.fadeInUp
+                        img(src="img/icon-ser.png", alt="成果")
+                    h3.wow.fadeInUp 成果
+                    p.wow.fadeInUp 培养许多国内外顶尖
+                        br
+                        | 高校优秀青年学子
+                
+ 	
+           
+
+        section.s2.section            
+            .container
+                .row.align-items-center.no-gutters
+                    .col
+                        .title-section.wow.fadeInUp
+                            h2 EDUCATION PROGRAM
+                            h3 学历项目
+
+                    .col-auto
+                        a.more(href="singapore_projects.html") 
+                            i.iconfont.icon-next
                         
-                    .swiper-next1
-                        i.iconfont.icon-right
-                    .swiper-prev1
-                        i.iconfont.icon-left
+                            
+                
+                .courses.row
+                    .col-md
+                        a.item.wow.fadeInUp(href="project1.html")
+                            img(src="img/projects_13.jpg", alt="本科及硕士班")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情
 
 
-        section.s3.container
-            .title-section
-                h2 About 
-                    br
-                    | Center
+                    .col-6.col-md
+                        a.item.wow.fadeInUp(href="project2.html")
+                            img(src="img/projects_14.jpg", alt="Terence Teo")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情
+
+                    .col-6.col-md
+                        a.item.wow.fadeInUp(href="project3.html")
+                            img(src="img/projects_15.jpg", alt="巫启贤")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情                    
+
+
+        section.s3.section
+            .container           
+                h2.title.wow.fadeInUp 录取流程优势 
+                .row
+                    .col-md-auto
+                        .row.align-items-center.r1.wow.fadeInUp
+                            .col-auto
+                                .icon
+                                    .iconfont.icon-time
+                                    h3 简单快捷
+                            .col
+                                dl
+                                    dd -无需高考成绩
+                                    dd -无需雅思、托福成绩
+                    .col-md-auto
+                        .row.align-items-center.wow.fadeInUp
+                            .col-auto
+                                .icon
+                                    .iconfont.icon-jiangbie
+                                    h3 奖学金丰厚
+                            .col
+                                dl
+                                    dd -每年2个全额奖学金名额
+
+        section.s4
+            .container           
+                .title-section
+                    h2 NEWS
+                    h3 动态资讯
+
+                .newslist
+                    .row
+                        .col-md-6.col-lg-3                        
+                            a.item.wow.fadeInUp(href="news_detail.html")
+                                img(src="img/temp/n1.jpg")
+                                div.title 
+                                    h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
+                        .col-md-6.col-lg-3                        
+                            a.item.wow.fadeInUp(href="news_detail.html")
+                                img(src="img/temp/n2.jpg")
+                                div.title 
+                                    h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
+                        .col-md-6.col-lg-3                     
+                            a.item.wow.fadeInUp(href="news_detail.html")
+                                img(src="img/temp/n3.jpg")
+                                div.title 
+                                    h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
+                        .col-md-6.col-lg-3                  
+                            a.item.wow.fadeInUp(href="news_detail.html")
+                                img(src="img/temp/n4.jpg")
+                                div.title 
+                                    h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
                  
-            video(src="img/ZPX_BG.mp4", poster="img/ZPX_BG.jpg"  controls="controls")
+          
 
         
 

@@ -1,166 +1,137 @@
-
-
+.sliders{
+    position: relative;
+    .mouse{
+        position: absolute;
+        left: 50%;
+        bottom: 2.5rem;
+        z-index: 100;
+        display: none;
+        @include mq(lg){
+            display: block;
+        }
+    }
+}
 .page-home {
- 
+    
     .s1{  
-        margin-bottom: 6rem;
-        nav.categores{
-            padding-top: 4rem;
-            a{
-                display: inline-block;
-                margin-right: 2.5rem;  
-                padding-bottom: .3rem;
-                margin-bottom: 1rem;            
-               
-                &.active{
-                    font-size: rem(24);
-                    color:$color-primary;
-                    font-weight: bolder;
-                    border-bottom: 2px $color-primary solid;
-                }
+        margin-bottom: 2rem;
+   
+        text-align: center;
+        @include mq(xl){
+            margin-bottom: 3rem;
+        }
+        @include mq(lg){
+            padding-top: 3rem;
+            margin-bottom: 4rem;
+        }
+        @include mq(xl){
+            margin-bottom: 5rem;
+        }
+        @include mq(xxl){
+            margin-bottom: 6rem;
+        }
+        .icon{
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            border:1px #fbb03b solid;
+            border-radius: 50%;
+            line-height: 78px;
+            @include mq(lg){
+                width: 104px;
+                height: 104px; line-height: 102px;
+            }
+            img{
+                width: 50px;
+                @include mq(lg){
+                    width: auto;
+                }  
             }
         }
-        .news-sliders{
-            *{
-                box-sizing: border-box;
-            }
-            .item{
-                display: block;
-                position: relative;
-                img{
-                    display: block;
-                    width: 100%;
-                    max-width: none;
-                }
-                .title{
-                    margin: 0;
-                    padding: .5rem 1.2rem;
-                    position: absolute;
-                    bottom: 2rem;
-                    border:1px #eee solid;
-                    left: 2rem;
-                    right: 2rem;
-                    z-index: 100;
-                    background-color: rgba(255,255,255,.3);
-                    border-radius: 25px;
-                    color: #fff;
-                    font-weight: 500;
-                    
-                }
-                &:hover{
-                   
-                        .title{
-                            background-color: rgba(255,255,255,1); color: #000;
-                        }
-                }
-            }
-            .col-md-7{
-                .item{
-                    margin-right: 4rem;
-                }
-            }
+        h3{
+            color: #333;
         }
-       
+        p{
+            margin-bottom: 2rem;
+            @include mq(lg){
+                margin-bottom: 0
+            }  
+        }
         
     }
    
     .s2{
        
-        background: #fff url(../img/bg_001.jpg) no-repeat right top 120px;
-        background-size: auto;
-       
-        .researchlist{
-           position: relative;
-            .research-container{
-                padding-bottom: 4rem;
-            }
-            .item{
-                display: block;
-                position: relative;
-                img{
-                    display: block;
-                    width: 100%;
-                }
-                .txt{
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    padding: 1rem; 
-                    width: 100%;
-                    height: 18%;
-                    transition: all .2s;
-                    box-sizing: border-box;
-                    padding-top: 2rem;
-                    .rateYo{
-                        display:none
-                    }
-                    h3{
-                        color: white; 
-                       margin-bottom: 1rem;
-                        margin-top: 1rem;
-                        font-size: rem(18);
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                    }
-                    p{
-                        line-height: 1.5;
-                        color:#fff;
-                        display:none;
-                        margin-bottom:2rem;
-                    }
-                    .more{
-                        display: inline-block;
-                        padding: .3rem 1.3rem;
-                        border:1px #fff solid;
-                        color: #fff;
-                        display:none
-                    }
-                }
-                &:hover{
-                    .txt{
-                        height: 100%;
-                        background-color: rgba(4, 105, 190,.9);
-                        .rateYo{
-                            display:block;
-                        }
-                        h3{
-                       
-                            font-size: rem(24);
-                        }
-                        p{
-                            display:block;
-                        }
-                        .more{
-                            display:inline-block;
-                        }
-                          
-                    }
-                }
+        .more{
+            padding-bottom: 1rem;
+            display:block;
+            .iconfont{
+                font-size: rem(24);
+                @include mq(lg){
+                    font-size: rem(30);
+                }  
             }
         }
-
     }
     .s3{
     
-        padding-top: 1rem;   
-        padding-bottom: 4rem;
-        @include mq(sm) {
-            padding-top: 2rem;   padding-bottom: 2rem;
-        }
-        @include mq(md) {
-            padding-top: 3rem;   padding-bottom: 3rem;
-        }
-        @include mq(lg) {
-            padding-top: 4rem;   padding-bottom: 4rem;
-        }
-        @include mq(xl) {
-            padding-top: 6rem;   padding-bottom: 6rem;
-        }
-        video{
-            width: 100%;
-        }
-          
+       background-color:#fff;
+       background-image: url(../img/home_02.png), url(../img/home_01.jpg);
+       background-position: left top, right top;
+       background-repeat: no-repeat;
+       color: $color-secondary;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       min-height: 300px;
+       @include mq(lg){
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        }  
+       .title{
+           margin-bottom: 1.5rem;
+           @include mq(lg){
+            margin-bottom: 1.5rem;
+            }  
+       }
+       .r1{
+           margin-bottom: 1rem;
+        @include mq(lg){
+            margin-bottom: 0;
+            }  
+       }
+          .icon{
+              text-align: center;
+              @include mq(lg){
+                margin: 0 0 0 3rem;
+                }  
+              .iconfont{
+                  font-size: 2rem;
+                  @include mq(lg){
+                    font-size: 2.875rem;
+                 }  
+              }
+              h3{
+                  color: #fff;
+                  font-size: rem(14);
+                  width: 90px;
+                  @include mq(lg){
+                    font-size: 1rem;   width: auto;
+                 }  
+              }
+          }
+          dl{
+              padding: 1rem 1.5rem;
+              border:1px #fff dashed;
+              margin: 0;
+              min-height:70px;
+              @include mq(lg){
+                padding: 1.5rem 2.5rem;   min-height: 90px;
+             }  
+              dd{
+                  margin: 0;
+                  color: #fff;;
+              }
+          }
     }
    .s4{
        .title-section-v2{

@@ -2,65 +2,270 @@ extends includes/layout.pug
 
 block title
     | 新加坡项目
+block bkheader
+    link(href='/js/vendor/fullpage/fullpage.min.css', rel='stylesheet')
 
 block content
-       
-    .page.page-project
-        section.s1.container
-            .title-section.wow.fadeInLeft
-                h2 PROJECT PROFILE
-                h3 项目概况
-            .row.align-items-center
-                .col-lg-auto
-                    .intro
-                        ul  
-                            li 新加坡莱佛士音乐学院已授权璞森国际艺术教育在中国境内招收音乐及舞蹈专业的大专，本科预科班的教学项目。
-                            li 璞森国际艺术教育针对这两个教学项目有权在中国境内发展下线合作单位及学校。
-                        p SINGAPORE RAFFLES MUSIC COLLEGE × PUSH ART EDUCATION
-                .col-lg
-                    .pic
-                        img(src="img/projects_02.jpg", alt="")
+    ul#senav.senav
+        li(data-menuanchor="introduction" class="active")
+            a(href="#introduction") 01 
+                span 项目概况
+        li(data-menuanchor="choose")
+            a(href="#choose") 02
+                span Why Choose 
+        li(data-menuanchor="advantage")
+            a(href="#advantage") 03
+                span 升学优势
+        li(data-menuanchor="master")
+            a(href="#master") 04
+                span 大师课
+        li(data-menuanchor="courses")
+            a(href="#courses") 05
+                span 课程项目
+     
 
-        section.s2.container
-            .title-section.wow.fadeInLeft
-                h2 WHY CHOOSE SINGAPORE
-                h3 留学新加坡是全球最优选择
-            .schools
-                .row.no-gutters
+    #fullpage.page-project
+        section.section
+            .s1.container
+                .title-section.wow.fadeInLeft
+                    h2 PROJECT PROFILE
+                    h3 项目概况
+                .row.align-items-center
+                    .col-lg-auto
+                        .intro
+                            ul  
+                                li 新加坡莱佛士音乐学院已授权璞森国际艺术教育在中国境内招收音乐及舞蹈专业的大专，本科预科班的教学项目。
+                                li 璞森国际艺术教育针对这两个教学项目有权在中国境内发展下线合作单位及学校。
+                            p SINGAPORE RAFFLES MUSIC COLLEGE × PUSH ART EDUCATION
                     .col-lg
-                        .item.wow.fadeInUp
-                            img(src="img/projects_04.jpg", alt="")
-                            h3.title 英国知名艺术院校文凭
-                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
-                    .col-lg
-                        .item.wow.fadeInDown
-                            img(src="img/projects_05.jpg", alt="")
-                            h3.title 中西文化结合的中心地带
-                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
-                    .col-lg
-                        .item.wow.fadeInUp
-                            img(src="img/projects_06.jpg", alt="")
-                            h3.title 多元化的移民国家
-                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
-                    .col-lg
-                        .item.wow.fadeInDown
-                            img(src="img/projects_07.jpg", alt="")
-                            h3.title 被誉为“亚洲四小龙”
-                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
-                    .col-lg
-                        .item.wow.fadeInUp
-                            img(src="img/projects_08.jpg", alt="")
-                            h3.title 世界上最安全的国家之一
-                            .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                        .pic
+                            img(src="img/projects_02.jpg", alt="")
+
+        section.section
+            .s2.container
+                .title-section.animated(data-animate="fadeInRight")
+                    h2 WHY CHOOSE SINGAPORE
+                    h3 留学新加坡是全球最优选择
+                .schools
+                    .row.no-gutters
+                        .col-6.col-md-4.col-lg
+                            .item
+                                img(src="img/projects_04.jpg", alt="")
+                                h3.title 英国知名艺术院校文凭
+                                .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                        .col-6.col-md-4.col-lg
+                            .item
+                                img(src="img/projects_05.jpg", alt="")
+                                h3.title 中西文化结合的中心地带
+                                .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                        .col-6.col-md-4.col-lg
+                            .item
+                                img(src="img/projects_06.jpg", alt="")
+                                h3.title 多元化的移民国家
+                                .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                        .col-6.col-md-4.col-lg
+                            .item
+                                img(src="img/projects_07.jpg", alt="")
+                                h3.title 被誉为“亚洲四小龙”
+                                .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+                        .col-6.col-md-4.col-lg
+                            .item
+                                img(src="img/projects_08.jpg", alt="")
+                                h3.title 世界上最安全的国家之一
+                                .des 新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。
+
+
+        section.section
+            .s3.container
+                .title-section
+                    h2 ADVANTAGES
+                    h3 升学优势
+                .youshi.row
+                    .col-lg 
+                        .con
+                            .renke
+                                h3.title 国内/新加坡授课 | 英国文凭 | 国际认可
+                                img(src="img/projects_09.jpg", alt="英国文凭")
+                            .rightcol
+                                dl.list
+                                    dt 新加坡莱佛士音乐学院 
+                                        strong 大专班
+                                    dd 专业：舞蹈，音乐表演，音乐录音，音乐管理，作曲
+                                    dd 学习时间：2年
+                                    dd 学习地：中国深圳
+                                    dd 授课教师：国内及国际专业教师授课
+                                    dd 毕业文凭：
+                                        strong 新加坡莱佛士音乐学院专科文凭
+                                dl.list
+                                    dt 新加坡莱佛士音乐学院 
+                                        strong 本科班
+                                    dd 专业：舞蹈，音乐表演，音乐录音，音乐管理，作曲
+                                    dd 学习时间：预科班4个半月+本科3年
+                                    dd 学习地： 预科班中国深圳，本科送往新加坡莱佛士音乐学院
+                                    dd 授课教师：国内及国际专业教师授课
+                                    dd 毕业文凭：
+                                        strong 西伦敦大学音乐学院本科文凭
+
+
+                    .col-lg-auto
+                        .luqu
+                            h2.title 录取流程优势
+                            .row
+                                .col-md.col-lg-12                                
+                                    .box
+                                        .row.no-gutters
+                                            .col-auto
+                                                .icon 
+                                                    img(src="img/icon-time.png", alt="简单快捷")
+                                            .col
+                                                dl
+                                                    dt 简单快捷
+                                                    dd -无需高考成绩
+                                                    dd -无需雅思、托福成绩
+                                .col-md.col-lg-12       
+                                    .box
+                                        .row.no-gutters
+                                            .col-auto
+                                                .icon 
+                                                    img(src="img/icon-jiangbie.png", alt="奖学金丰厚")
+                                            .col
+                                                dl
+                                                    dt 奖学金丰厚
+                                                    dd -每年2个全额奖学金名额
+                            .note *西伦敦大学的本科毕业证书自2019年已获得中国教育部认可。
+        
+        section.section
+            .s4.container
+                .title-section
+                    h2 MASTER CLASS
+                    h3 新加坡莱福士音乐学院大师课
+                .masters
+                    .row.justify-content-between
+                        .col-lg-auto
+                            .item
+                                img(src="img/projects_10.jpg", alt="曹轩宾")
+                                .des 
+                                    h3 曹轩宾
+                                    p 新加坡莱佛士音乐学院客座教授华语流行歌手、音乐制作人梁静茹《可惜不是你》的作曲人
+
+
+                        .col-lg-auto
+                            .item
+                                img(src="img/projects_11.jpg", alt="Terence Teo")
+                                .des 
+                                    h3 Terence Teo
+                                    p 新加坡莱佛士音乐学院客座教授被誉为“华语乐坛经典歌曲编曲大师”代表作有《F.I.R》、《可惜没如果》等
+
+                        .col-lg-auto
+                            .item
+                                img(src="img/projects_12.jpg", alt="巫启贤")
+                                .des 
+                                    h3 巫启贤
+                                    p 华语流行乐男歌手，音乐制作人新加坡莱佛士音乐学院客籍讲师
+
+        section.section
+            .s5.container
+                .title-section
+                    h2 COURSE PROJECT
+                    h3 课程项目
+                .courses.row
+                    .col-md-6.col-lg
+                        a.item(href="project1.html")
+                            img(src="img/projects_13.jpg", alt="本科及硕士班")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情
+
+
+                    .col-md-6.col-lg
+                        a.item(href="project2.html")
+                            img(src="img/projects_14.jpg", alt="Terence Teo")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情
+
+                    .col-md-6.col-lg
+                        a.item(href="project3.html")
+                            img(src="img/projects_15.jpg", alt="巫启贤")
+                            .overly
+                                .des 
+                                    .icon 
+                                        i.iconfont.icon-next
+                                    p 了解详情
+                    
 
             
 block bkfooter
+    script(src='js/vendor/fullpage/vendors/easings.min.js')
+    script(src='js/vendor/fullpage/vendors/scrolloverflow.min.js')
+    script(src='js/vendor/fullpage/fullpage.min.js')
+    script(src='js/vendor/fullpage/fullpage.extensions.min.js')
     script.
-        $('.d1 dt').click(function(e){          
-            $(this).closest('dl').siblings().removeClass('open');
-            $(this).closest('dl').addClass('open');        
-            // $(this).next().slideToggle();
-        })
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                menu: '#senav',
+                //options here
+                anchors: ['introduction', 'choose', 'advantage', 'master', 'courses'],            
+     
+                licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
+                navigationTooltips: ['项目概况', 'WHY CHOOSE', '升学优势', '大师课', '课程项目'],
+           
+                autoScrolling: true,
+                scrollHorizontally: true,
+               // navigation: true,
+                slidesNavigation: true,
+                scrollOverflow: true,
+                afterLoad: function(origin, destination, direction) {
+                    var loadedSection = this;
+                    console.log($('.section')[destination.index]);
+                    //console.log(origin);
+                    //console.log(destination);
+                    //console.log(direction);
+                    //使用 index
+                    var els = $($('.section')[destination.index]).find(".animated");
+                    let list = Array.prototype.slice.call(els);
+                    addAnimate(list)
+
+                    var oels = $($('.section')[origin.index]).find(".animated");
+                    let olist = Array.prototype.slice.call(oels);
+                    removeAnimate(olist);
+
+                    //  alert(destination.index);
+                    //- if (destination.index > 0) {
+                    //-     $("#site-header").addClass("fixheader");
+                    //-     $("#logo").attr("src", "/assets/img/logo_color.png");
+                    //- } else {
+                    //-     $("#site-header").removeClass("fixheader");
+                    //-     $("#logo").attr("src", "/assets/img/logo.png");
+                    //- }
+
+                }
+            });
+
+            //methods
+            $.fn.fullpage.setAllowScrolling(true);
+
+            function addAnimate(list) {
+                list.forEach(function(item, index, arr) {
+                    var ani = $(item).attr("data-animate");
+                    $(item).addClass(ani);
+                });
+            }
+
+            function removeAnimate(list) {
+                list.forEach(function(item, index, arr) {
+                    var ani = $(item).attr("data-animate");
+                    $(item).removeClass(ani);
+                });
+            }
+
+   
+
+        });
         
 
 

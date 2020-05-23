@@ -12,6 +12,7 @@
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
     <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
+    <link href="/js/vendor/fullpage/fullpage.min.css" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
     <script src="js/vendor/wow/dist/wow.min.js"></script>
     <script>
@@ -40,81 +41,234 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="menu-over" id="overmenu">
-        <ul class="mobilenav">
-          <li><a class="active" href="index.html">首页</a></li>
-          <li><a href="singapore_projects.html">新加坡项目</a>
-            <ul class="subnav">
-              <li><a href="">本科及硕士学历</a></li>
-              <li><a href="">大专学历</a></li>
-              <li><a href="">深圳本科预科班</a></li>
-            </ul>
-          </li>
-          <li><a href="high_school_diploma.html">高中学历                       </a></li>
-          <li><a href="news.html">动态资讯                     </a></li>
-          <li><a href="about.html">关于璞森    </a></li>
-        </ul>
+        <div class="menu-over" id="overmenu">
+          <ul class="mobilenav">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li class="down"> <a href="singapore_projects.html">新加坡项目 <i class="iconfont icon-down"></i></a>
+              <ul class="subnav">
+                <li><a href="project3.html">本科及硕士学历</a></li>
+                <li><a href="project2.html">大专学历</a></li>
+                <li><a href="project1.html">深圳本科预科班</a></li>
+              </ul>
+            </li>
+            <li><a href="high_school_diploma.html">高中学历                       </a></li>
+            <li><a href="news.html">动态资讯                     </a></li>
+            <li><a href="about.html">关于璞森    </a></li>
+          </ul>
+          <p class="copyright">版权所有©push art 璞森国际艺术教育</p>
+        </div>
       </div>
     </header>
-    <div class="page page-project">
-      <section class="s1 container">
-        <div class="title-section wow fadeInLeft">
-          <h2>PROJECT PROFILE</h2>
-          <h3>项目概况</h3>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-auto">
-            <div class="intro">
-              <ul> 
-                <li>新加坡莱佛士音乐学院已授权璞森国际艺术教育在中国境内招收音乐及舞蹈专业的大专，本科预科班的教学项目。</li>
-                <li>璞森国际艺术教育针对这两个教学项目有权在中国境内发展下线合作单位及学校。</li>
-              </ul>
-              <p>SINGAPORE RAFFLES MUSIC COLLEGE × PUSH ART EDUCATION</p>
-            </div>
+    <ul class="senav" id="senav">
+      <li class="active" data-menuanchor="introduction"><a href="#introduction">01 <span>项目概况</span></a></li>
+      <li data-menuanchor="choose"><a href="#choose">02<span>Why Choose </span></a></li>
+      <li data-menuanchor="advantage"><a href="#advantage">03<span>升学优势</span></a></li>
+      <li data-menuanchor="master"><a href="#master">04<span>大师课</span></a></li>
+      <li data-menuanchor="courses"><a href="#courses">05<span>课程项目</span></a></li>
+    </ul>
+    <div class="page-project" id="fullpage">
+      <section class="section">
+        <div class="s1 container">
+          <div class="title-section wow fadeInLeft">
+            <h2>PROJECT PROFILE</h2>
+            <h3>项目概况</h3>
           </div>
-          <div class="col-lg">
-            <div class="pic"><img src="img/projects_02.jpg" alt=""></div>
+          <div class="row align-items-center">
+            <div class="col-lg-auto">
+              <div class="intro">
+                <ul> 
+                  <li>新加坡莱佛士音乐学院已授权璞森国际艺术教育在中国境内招收音乐及舞蹈专业的大专，本科预科班的教学项目。</li>
+                  <li>璞森国际艺术教育针对这两个教学项目有权在中国境内发展下线合作单位及学校。</li>
+                </ul>
+                <p>SINGAPORE RAFFLES MUSIC COLLEGE × PUSH ART EDUCATION</p>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="pic"><img src="img/projects_02.jpg" alt=""></div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="s2 container">
-        <div class="title-section wow fadeInLeft">
-          <h2>WHY CHOOSE SINGAPORE</h2>
-          <h3>留学新加坡是全球最优选择</h3>
+      <section class="section">
+        <div class="s2 container">
+          <div class="title-section animated" data-animate="fadeInRight">
+            <h2>WHY CHOOSE SINGAPORE</h2>
+            <h3>留学新加坡是全球最优选择</h3>
+          </div>
+          <div class="schools">
+            <div class="row no-gutters">
+              <div class="col-6 col-md-4 col-lg">
+                <div class="item"><img src="img/projects_04.jpg" alt="">
+                  <h3 class="title">英国知名艺术院校文凭</h3>
+                  <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg">
+                <div class="item"><img src="img/projects_05.jpg" alt="">
+                  <h3 class="title">中西文化结合的中心地带</h3>
+                  <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg">
+                <div class="item"><img src="img/projects_06.jpg" alt="">
+                  <h3 class="title">多元化的移民国家</h3>
+                  <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg">
+                <div class="item"><img src="img/projects_07.jpg" alt="">
+                  <h3 class="title">被誉为“亚洲四小龙”</h3>
+                  <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg">
+                <div class="item"><img src="img/projects_08.jpg" alt="">
+                  <h3 class="title">世界上最安全的国家之一</h3>
+                  <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="schools">
-          <div class="row no-gutters">
-            <div class="col-lg">
-              <div class="item wow fadeInUp"><img src="img/projects_04.jpg" alt="">
-                <h3 class="title">英国知名艺术院校文凭</h3>
-                <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+      </section>
+      <section class="section">
+        <div class="s3 container">
+          <div class="title-section">
+            <h2>ADVANTAGES</h2>
+            <h3>升学优势</h3>
+          </div>
+          <div class="youshi row">
+            <div class="col-lg"> 
+              <div class="con">
+                <div class="renke">
+                  <h3 class="title">国内/新加坡授课 | 英国文凭 | 国际认可</h3><img src="img/projects_09.jpg" alt="英国文凭">
+                </div>
+                <div class="rightcol">
+                  <dl class="list">
+                    <dt>新加坡莱佛士音乐学院 <strong>大专班</strong></dt>
+                    <dd>专业：舞蹈，音乐表演，音乐录音，音乐管理，作曲</dd>
+                    <dd>学习时间：2年</dd>
+                    <dd>学习地：中国深圳</dd>
+                    <dd>授课教师：国内及国际专业教师授课</dd>
+                    <dd>毕业文凭：<strong>新加坡莱佛士音乐学院专科文凭</strong></dd>
+                  </dl>
+                  <dl class="list">
+                    <dt>新加坡莱佛士音乐学院 <strong>本科班</strong></dt>
+                    <dd>专业：舞蹈，音乐表演，音乐录音，音乐管理，作曲</dd>
+                    <dd>学习时间：预科班4个半月+本科3年</dd>
+                    <dd>学习地： 预科班中国深圳，本科送往新加坡莱佛士音乐学院</dd>
+                    <dd>授课教师：国内及国际专业教师授课</dd>
+                    <dd>毕业文凭：<strong>西伦敦大学音乐学院本科文凭</strong></dd>
+                  </dl>
+                </div>
               </div>
             </div>
-            <div class="col-lg">
-              <div class="item wow fadeInDown"><img src="img/projects_05.jpg" alt="">
-                <h3 class="title">中西文化结合的中心地带</h3>
-                <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+            <div class="col-lg-auto">
+              <div class="luqu">
+                <h2 class="title">录取流程优势</h2>
+                <div class="row">
+                  <div class="col-md col-lg-12">                               
+                    <div class="box">
+                      <div class="row no-gutters">
+                        <div class="col-auto">
+                          <div class="icon"> <img src="img/icon-time.png" alt="简单快捷"></div>
+                        </div>
+                        <div class="col">
+                          <dl>
+                            <dt>简单快捷</dt>
+                            <dd>-无需高考成绩</dd>
+                            <dd>-无需雅思、托福成绩</dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md col-lg-12">      
+                    <div class="box">
+                      <div class="row no-gutters">
+                        <div class="col-auto">
+                          <div class="icon"> <img src="img/icon-jiangbie.png" alt="奖学金丰厚"></div>
+                        </div>
+                        <div class="col">
+                          <dl>
+                            <dt>奖学金丰厚</dt>
+                            <dd>-每年2个全额奖学金名额</dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="note">*西伦敦大学的本科毕业证书自2019年已获得中国教育部认可。</div>
               </div>
             </div>
-            <div class="col-lg">
-              <div class="item wow fadeInUp"><img src="img/projects_06.jpg" alt="">
-                <h3 class="title">多元化的移民国家</h3>
-                <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="s4 container">
+          <div class="title-section">
+            <h2>MASTER CLASS</h2>
+            <h3>新加坡莱福士音乐学院大师课</h3>
+          </div>
+          <div class="masters">
+            <div class="row justify-content-between">
+              <div class="col-lg-auto">
+                <div class="item"><img src="img/projects_10.jpg" alt="曹轩宾">
+                  <div class="des"> 
+                    <h3>曹轩宾</h3>
+                    <p>新加坡莱佛士音乐学院客座教授华语流行歌手、音乐制作人梁静茹《可惜不是你》的作曲人</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-auto">
+                <div class="item"><img src="img/projects_11.jpg" alt="Terence Teo">
+                  <div class="des"> 
+                    <h3>Terence Teo</h3>
+                    <p>新加坡莱佛士音乐学院客座教授被誉为“华语乐坛经典歌曲编曲大师”代表作有《F.I.R》、《可惜没如果》等</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-auto">
+                <div class="item"><img src="img/projects_12.jpg" alt="巫启贤">
+                  <div class="des"> 
+                    <h3>巫启贤</h3>
+                    <p>华语流行乐男歌手，音乐制作人新加坡莱佛士音乐学院客籍讲师</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg">
-              <div class="item wow fadeInDown"><img src="img/projects_07.jpg" alt="">
-                <h3 class="title">被誉为“亚洲四小龙”</h3>
-                <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <div class="item wow fadeInUp"><img src="img/projects_08.jpg" alt="">
-                <h3 class="title">世界上最安全的国家之一</h3>
-                <div class="des">新加坡是中西文化结合的中心地带，也是华人居住率最多的国家之一，新加坡具有“花园国家”“艺术建筑国家”之称。</div>
-              </div>
-            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="s5 container">
+          <div class="title-section">
+            <h2>COURSE PROJECT</h2>
+            <h3>课程项目</h3>
+          </div>
+          <div class="courses row">
+            <div class="col-md-6 col-lg"><a class="item" href="project1.html"><img src="img/projects_13.jpg" alt="本科及硕士班">
+                <div class="overly">
+                  <div class="des"> 
+                    <div class="icon"> <i class="iconfont icon-next"></i></div>
+                    <p>了解详情</p>
+                  </div>
+                </div></a></div>
+            <div class="col-md-6 col-lg"><a class="item" href="project2.html"><img src="img/projects_14.jpg" alt="Terence Teo">
+                <div class="overly">
+                  <div class="des"> 
+                    <div class="icon"> <i class="iconfont icon-next"></i></div>
+                    <p>了解详情</p>
+                  </div>
+                </div></a></div>
+            <div class="col-md-6 col-lg"><a class="item" href="project3.html"><img src="img/projects_15.jpg" alt="巫启贤">
+                <div class="overly">
+                  <div class="des"> 
+                    <div class="icon"> <i class="iconfont icon-next"></i></div>
+                    <p>了解详情</p>
+                  </div>
+                </div></a></div>
           </div>
         </div>
       </section>
@@ -122,19 +276,19 @@
     <footer class="site-footer" id="pagefooter">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-auto">
-            <div class="logo"><img src="img/logo_bot.png" alt=""></div>
+          <div class="col-auto">
+            <div class="logo wow fadeInUp"><img src="img/logo_bot.png" alt=""></div>
           </div>
-          <div class="col-md">
+          <div class="col">
             <div class="row conlist">
               <div class="col-lg-auto col-xl">
-                <ul>
+                <ul class="wow fadeInUp">
                   <li> <a href="http://www.beian.miit.gov.cn/">粤ICP123456789号</a></li>
                   <li>版权所有© 璞森国际艺术教育      </li>
                 </ul>
               </div>
               <div class="col-lg">
-                <ul>                          
+                <ul class="wow fadeInUp">                          
                   <li>咨询热线：138 2651 0015</li>
                   <li>地址：深圳市南山区·TCL国际E城G5栋                                        </li>
                 </ul>
@@ -144,13 +298,13 @@
           <div class="col-md-auto"> 
             <div class="qrcode">
               <div class="row">
-                <div class="col-4 col-md">
-                  <div class="qr"><img src="img/qrcode_wechat.png" alt="">
+                <div class="col col-md">
+                  <div class="qr wow fadeInUp"><img src="img/qrcode_wechat.png" alt="">
                     <div class="name">官方微信</div>
                   </div>
                 </div>
-                <div class="col-4 col-md">
-                  <div class="qr"><img src="img/qrcode_gzh.png" alt="">
+                <div class="col col-md">
+                  <div class="qr wow fadeInUp"><img src="img/qrcode_gzh.png" alt="">
                     <div class="name">公众号</div>
                   </div>
                 </div>
@@ -165,12 +319,72 @@
     <script src="js/vendor/jquery.easing.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/vendor/fullpage/vendors/easings.min.js"></script>
+    <script src="js/vendor/fullpage/vendors/scrolloverflow.min.js"></script>
+    <script src="js/vendor/fullpage/fullpage.min.js"></script>
+    <script src="js/vendor/fullpage/fullpage.extensions.min.js"></script>
     <script>
-      $('.d1 dt').click(function(e){          
-          $(this).closest('dl').siblings().removeClass('open');
-          $(this).closest('dl').addClass('open');        
-          // $(this).next().slideToggle();
-      })
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+              menu: '#senav',
+              //options here
+              anchors: ['introduction', 'choose', 'advantage', 'master', 'courses'],            
+      
+              licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
+              navigationTooltips: ['项目概况', 'WHY CHOOSE', '升学优势', '大师课', '课程项目'],
+         
+              autoScrolling: true,
+              scrollHorizontally: true,
+             // navigation: true,
+              slidesNavigation: true,
+              scrollOverflow: true,
+              afterLoad: function(origin, destination, direction) {
+                  var loadedSection = this;
+                  console.log($('.section')[destination.index]);
+                  //console.log(origin);
+                  //console.log(destination);
+                  //console.log(direction);
+                  //使用 index
+                  var els = $($('.section')[destination.index]).find(".animated");
+                  let list = Array.prototype.slice.call(els);
+                  addAnimate(list)
+      
+                  var oels = $($('.section')[origin.index]).find(".animated");
+                  let olist = Array.prototype.slice.call(oels);
+                  removeAnimate(olist);
+      
+                  //  alert(destination.index);
+                  //- if (destination.index > 0) {
+                  //-     $("#site-header").addClass("fixheader");
+                  //-     $("#logo").attr("src", "/assets/img/logo_color.png");
+                  //- } else {
+                  //-     $("#site-header").removeClass("fixheader");
+                  //-     $("#logo").attr("src", "/assets/img/logo.png");
+                  //- }
+      
+              }
+          });
+      
+          //methods
+          $.fn.fullpage.setAllowScrolling(true);
+      
+          function addAnimate(list) {
+              list.forEach(function(item, index, arr) {
+                  var ani = $(item).attr("data-animate");
+                  $(item).addClass(ani);
+              });
+          }
+      
+          function removeAnimate(list) {
+              list.forEach(function(item, index, arr) {
+                  var ani = $(item).attr("data-animate");
+                  $(item).removeClass(ani);
+              });
+          }
+      
+      
+      
+      });
     </script>
   </body>
 </html>

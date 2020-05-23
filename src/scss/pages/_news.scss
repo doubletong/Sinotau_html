@@ -5,6 +5,7 @@
             display: inline-block;
             padding: 0 1rem;        
             border-right: 1px #ddd solid;
+            margin-bottom: 1.5rem;
             &.active{              
                 color:$color-primary;
             }
@@ -12,54 +13,7 @@
     }
     .s2{
      
-        .newslist{
-           
-            @include mq(lg) {
-                margin-bottom: 2rem;
-            }
-        
-        }
-        .item{
-            overflow: hidden;
-            display: block;
-            margin-bottom: 2rem;
-            position: relative;
        
-            
-             
-            img{
-                display: block;
-                width: 100%;
-                transition: all .2s;
-            }   
-            .title{
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                z-index: 100;
-                background-color: rgba(3,109,60,.9);
-                color:#fff;
-                margin: 0;
-                padding:1rem;
-             
-                h3{
-                    height: 46px;
-                    overflow: hidden;
-                    font-weight: normal;
-                    margin: 0;
-                }
-            }
-
-            &:hover{
-               
-                    img{
-                        transform: scale(1.1);
-                    }
-                
-           
-            }
-         }
             
            
          
@@ -80,6 +34,55 @@
         }
     }
 }
+
+.newslist{
+           
+    @include mq(lg) {
+        margin-bottom: 2rem;
+    }
+    .item{
+        overflow: hidden;
+        display: block;
+        margin-bottom: 2rem;
+        position: relative;
+   
+        
+         
+        img{
+            display: block;
+            width: 100%;
+            transition: all .2s;
+        }   
+        .title{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: rgba(3,109,60,.9);
+            color:#fff;
+            margin: 0;
+            padding:1rem;
+         
+            h3{
+                height: 46px;
+                overflow: hidden;
+                font-weight: normal;
+                margin: 0;
+            }
+        }
+
+        &:hover{
+           
+                img{
+                    transform: scale(1.1);
+                }
+            
+       
+        }
+     }
+}
+
 
 .page-news-detail{
     padding-top: 45px;

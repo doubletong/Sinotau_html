@@ -15,3 +15,53 @@
     border-color: $color-primary;
   }
 }
+
+.sliders{
+  position: relative;
+  .swiper-button-prev,.swiper-button-next{
+    background: none;
+    color: #000;
+    text-align: center;
+    width: 3rem;
+    display: none;
+    .iconfont{
+      font-size: 2.5rem;
+    }
+    
+  }
+  &:hover{
+    .swiper-button-prev,.swiper-button-next{
+      display: block;
+    }
+  }
+  .swiper-slide{
+    img{     
+      @include mq(lg){
+        height: calc(100vh-70px); object-fit: cover;
+        object-position: center center;
+        width: 100vw;
+      }
+      @include mq(xl){
+        height: calc(100vh-80px);
+      
+      }
+      @include mq(xxl){
+        height: calc(100vh-98px);
+      
+      }
+    }
+  }
+  .dots{
+    height: 2rem;
+    text-align: center;
+    .swiper-pagination{
+      position: relative;
+      .swiper-pagination-bullet{
+        margin: 0 .2rem;
+      }
+      .swiper-pagination-bullet-active{
+        background-color: $color-primary;
+      }
+    }
+  }
+}

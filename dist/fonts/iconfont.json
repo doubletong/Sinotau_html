@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12907786",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "14873081",
+      "name": "jiangbie",
+      "font_class": "jiangbie",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "14872392",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
       "icon_id": "10375019",
       "name": "home",
       "font_class": "zhuye",

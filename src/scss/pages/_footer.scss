@@ -28,7 +28,7 @@
         @include reset-list();
     }
     .qrcode   {
-       
+       text-align: center;
         @include mq(lg){
             width: auto; padding-left:3rem;
         }
