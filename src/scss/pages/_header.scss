@@ -32,13 +32,13 @@
        display: block;
         width: 60px;  
         @include mq(md) {
-            width: 117;
+            width: 75px;
         }
         @include mq(lg) {
-            width: 117;
+            width: 90px;
         }
         @include mq(xl) {
-            width: 117;
+            width: auto;
             
         }
         img {
@@ -246,6 +246,7 @@
                         display: block;
                         width: 36px;
                         height: 5px;
+                        border-radius: 0 3px 3px 0;
                         background-color: $color-secondary;
                         position: absolute;
                         top: 21px;
@@ -256,14 +257,7 @@
                 }
                 &.down {
                     position: relative;                   
-                    &>a{
-                        padding-left: 1.5rem;
-                    }
-                    i.iconfont{
-                        display: inline-block;
-                        color: $color-primary;
-                        transition: all .2s;
-                    }
+                  
                 }
 
                 &.open {
@@ -273,12 +267,14 @@
                 }
 
                 .subnav {
-                    @include reset-list;
-                    display: none;
-
-                    li {
-                       
-
+                    @include reset-list;    
+                    border-top: #eeee solid 1px ;              
+                    border-bottom: #eeee solid 1px ; 
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;   
+                    margin: 1rem 0;          
+                    li {                       
+                        display: inline-block;
                         a {
                             display: block;
                             padding: .7rem 1rem;

@@ -34,14 +34,14 @@ $(document).ready(function() {
         $("#overmenu").slideToggle();
     });
 
-    $(".mobilenav li.down>a").on("click", function(e) {
-        "use strict";
-        e.preventDefault();
-        $(this).closest('li').toggleClass('open');
-        $(this).next('.subnav').slideToggle();
+    // $(".mobilenav li.down>a").on("click", function(e) {
+    //     "use strict";
+    //     e.preventDefault();
+    //     $(this).closest('li').toggleClass('open');
+    //     $(this).next('.subnav').slideToggle();
         
 
-    });
+    // });
 
 
     var url = location.pathname;

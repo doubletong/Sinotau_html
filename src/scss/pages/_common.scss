@@ -122,13 +122,13 @@ a {
             font-size: rem(22);
         }
         @include mq(lg) {
-            font-size: rem(24);
+            font-size: rem(24);top: 1rem;
         }
         @include mq(xl) {
             font-size: rem(26);
         }
         @include mq(xl) {
-            font-size: rem(28); top: 1.7rem;
+            font-size: rem(28); top: 1.5rem;
         }
         &::before{
             content: " ";

@@ -20,10 +20,11 @@
   position: relative;
   .swiper-button-prev,.swiper-button-next{
     background: none;
-    color: #000;
+    color: #fff;
     text-align: center;
     width: 3rem;
     display: none;
+    opacity: .7;
     .iconfont{
       font-size: 2.5rem;
     }
@@ -51,17 +52,14 @@
       }
     }
   }
-  .dots{
-    height: 2rem;
-    text-align: center;
-    .swiper-pagination{
-      position: relative;
-      .swiper-pagination-bullet{
-        margin: 0 .2rem;
-      }
-      .swiper-pagination-bullet-active{
-        background-color: $color-primary;
-      }
-    }
+
+  .swiper-pagination-bullet-active{
+    background-color: $color-primary;
   }
+
+  .swiper-pagination{
+    bottom: 5rem;
+  }
+
+
 }

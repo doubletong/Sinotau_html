@@ -10,7 +10,7 @@
     .logo{
        
         margin-bottom: 1.5rem;
-        width: 100px;
+        width: 70px;
         @include mq(md){
             width: 110px;padding-right:1rem;
         }
@@ -29,6 +29,11 @@
     }
     .qrcode   {
        text-align: center;
+       padding-left: 6rem;
+       padding-right: 3rem;
+       @include mq(md){
+            padding-left:0;padding-right:0;
+        }
         @include mq(lg){
             width: auto; padding-left:3rem;
         }

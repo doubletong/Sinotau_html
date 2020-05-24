@@ -4117,6 +4117,7 @@ a:hover {
 @media (min-width: 992px) {
   .title-section h3 {
     font-size: 1.5rem;
+    top: 1rem;
   }
 }
 
@@ -4129,7 +4130,7 @@ a:hover {
 @media (min-width: 1201px) {
   .title-section h3 {
     font-size: 1.75rem;
-    top: 1.7rem;
+    top: 1.5rem;
   }
 }
 
@@ -4502,19 +4503,19 @@ img {
 
 @media (min-width: 768px) {
   .site-header .logo {
-    width: 117;
+    width: 75px;
   }
 }
 
 @media (min-width: 992px) {
   .site-header .logo {
-    width: 117;
+    width: 90px;
   }
 }
 
 @media (min-width: 1201px) {
   .site-header .logo {
-    width: 117;
+    width: auto;
   }
 }
 
@@ -4744,6 +4745,7 @@ img {
   display: block;
   width: 36px;
   height: 5px;
+  border-radius: 0 3px 3px 0;
   background-color: #fbb03b;
   position: absolute;
   top: 21px;
@@ -4755,16 +4757,6 @@ img {
   position: relative;
 }
 
-.site-header .menu-over ul.mobilenav > li.down > a {
-  padding-left: 1.5rem;
-}
-
-.site-header .menu-over ul.mobilenav > li.down i.iconfont {
-  display: inline-block;
-  color: #00713e;
-  transition: all .2s;
-}
-
 .site-header .menu-over ul.mobilenav > li.open i.iconfont {
   transform: rotate(180deg);
 }
@@ -4773,7 +4765,15 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
+  border-top: #eeee solid 1px;
+  border-bottom: #eeee solid 1px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: 1rem 0;
+}
+
+.site-header .menu-over ul.mobilenav > li .subnav li {
+  display: inline-block;
 }
 
 .site-header .menu-over ul.mobilenav > li .subnav li a {
@@ -4872,10 +4872,11 @@ img {
 
 .sliders .swiper-button-prev, .sliders .swiper-button-next {
   background: none;
-  color: #000;
+  color: #fff;
   text-align: center;
   width: 3rem;
   display: none;
+  opacity: .7;
 }
 
 .sliders .swiper-button-prev .iconfont, .sliders .swiper-button-next .iconfont {
@@ -4907,39 +4908,16 @@ img {
   }
 }
 
-.sliders .dots {
-  height: 2rem;
-  text-align: center;
-}
-
-.sliders .dots .swiper-pagination {
-  position: relative;
-}
-
-.sliders .dots .swiper-pagination .swiper-pagination-bullet {
-  margin: 0 .2rem;
-}
-
-.sliders .dots .swiper-pagination .swiper-pagination-bullet-active {
+.sliders .swiper-pagination-bullet-active {
   background-color: #00713e;
+}
+
+.sliders .swiper-pagination {
+  bottom: 5rem;
 }
 
 .sliders {
   position: relative;
-}
-
-.sliders .mouse {
-  position: absolute;
-  left: 50%;
-  bottom: 2.5rem;
-  z-index: 100;
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .sliders .mouse {
-    display: block;
-  }
 }
 
 .page-home .s1 {
@@ -5048,11 +5026,65 @@ img {
 
 .page-home .s3 .title {
   margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-size: 1.25rem;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.page-home .s3 .title::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 1rem;
+  border: #fbb03b 2px solid;
+  z-index: 200;
+}
+
+.page-home .s3 .title::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 1rem;
+  border: #fbb03b 2px solid;
+  z-index: 200;
+}
+
+@media (min-width: 768px) {
+  .page-home .s3 .title {
+    font-size: 1.375rem;
+  }
 }
 
 @media (min-width: 992px) {
   .page-home .s3 .title {
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .page-home .s3 .title {
+    font-size: 1.625rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1601px) {
+  .page-home .s3 .title {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -5538,14 +5570,23 @@ img {
   background-color: rgba(3, 109, 60, 0.9);
   color: #fff;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 1rem  .6rem;
 }
 
 .newslist .item .title h3 {
   height: 46px;
   overflow: hidden;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 .5rem;
+}
+
+.newslist .item .title time {
+  font-size: 0.75rem;
+}
+
+.newslist .item .title time .iconfont {
+  font-size: 0.75rem;
+  margin-right: .5rem;
 }
 
 .newslist .item:hover img {
@@ -5670,7 +5711,7 @@ img {
   color: #999;
   position: relative;
   transition: all .2s;
-  display: inline-block;
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -5678,7 +5719,6 @@ img {
     width: auto;
     height: auto;
     border-radius: 0;
-    overflow: auto;
     border: none;
     text-indent: 0;
   }
@@ -5693,11 +5733,13 @@ img {
   width: 140px;
   text-align: right;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .senav li a:hover {
   transform: scale(1.2);
   color: #00713e;
+  overflow: visible;
 }
 
 .senav li a:hover span {
@@ -5787,27 +5829,27 @@ img {
 
 @media (min-width: 768px) {
   .page-project .s1 .intro {
-    padding: 4rem 4rem 2rem;
+    padding: 4rem 4rem 4rem;
   }
 }
 
 @media (min-width: 992px) {
   .page-project .s1 .intro {
     width: 500px;
-    padding: 3rem 3rem 2rem;
+    padding: 3rem 3rem 4rem;
   }
 }
 
 @media (min-width: 1201px) {
   .page-project .s1 .intro {
-    padding: 4rem 5rem 2rem;
+    padding: 4rem 5rem 4rem;
     width: 580px;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1601px) {
   .page-project .s1 .intro {
-    padding: 5rem 6rem 3rem;
+    padding: 5rem 6rem 5rem;
     width: 660px;
   }
 }
@@ -5932,6 +5974,12 @@ img {
   }
 }
 
+@media (orientation: portrait) {
+  .page-project .s2 .schools .col-6:last-child {
+    display: none;
+  }
+}
+
 .page-project .s2 .schools .item {
   position: relative;
   color: #fff;
@@ -5946,7 +5994,7 @@ img {
 @media (min-width: 768px) {
   .page-project .s2 .schools .item img {
     width: 100%;
-    height: 360px;
+    height: 380px;
     object-fit: cover;
     object-position: center center;
   }
@@ -6691,9 +6739,14 @@ img {
   }
 }
 
+.page-project002 .s3 .intro .pic {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
   .page-project002 .s3 .intro .pic {
     display: none;
+    margin-bottom: 0;
   }
 }
 
@@ -7205,7 +7258,7 @@ img {
 
 .site-footer .logo {
   margin-bottom: 1.5rem;
-  width: 100px;
+  width: 70px;
 }
 
 @media (min-width: 768px) {
@@ -7240,6 +7293,15 @@ img {
 
 .site-footer .qrcode {
   text-align: center;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+
+@media (min-width: 768px) {
+  .site-footer .qrcode {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 992px) {

@@ -62,13 +62,20 @@
             background-color: rgba(3,109,60,.9);
             color:#fff;
             margin: 0;
-            padding:1rem;
+            padding:1rem 1rem  .6rem;
          
             h3{
                 height: 46px;
                 overflow: hidden;
                 font-weight: normal;
-                margin: 0;
+                margin: 0 0 .5rem;
+            }
+            time{
+                font-size: rem(12);
+                .iconfont{
+                    font-size: rem(12);
+                    margin-right: .5rem;
+                }
             }
         }
 
