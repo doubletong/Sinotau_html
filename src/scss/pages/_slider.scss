@@ -37,9 +37,17 @@
   }
   .swiper-slide{
     img{     
-      @include mq(lg){
-        height: calc(100vh-70px); object-fit: cover;
+      height: 230px; object-fit: cover;
         object-position: center center;
+        width: 100vw;
+        @include mq(md){
+          height: 450px; 
+    
+          width: 100vw;
+        }
+      @include mq(lg){
+        height: calc(100vh-70px); 
+      
         width: 100vw;
       }
       @include mq(xl){
@@ -58,7 +66,19 @@
   }
 
   .swiper-pagination{
-    bottom: 5rem;
+    bottom: 1rem;
+    @include mq(md){
+      bottom:2rem;
+    }
+    @include mq(lg){
+      bottom: 3rem;
+    }
+    @include mq(xl){
+      bottom: 4rem;
+    }
+    @include mq(xxl){
+      bottom: 5rem;
+    }
   }
 
 

@@ -70,15 +70,15 @@ $(document).ready(function() {
         case "/team_detail.html":
             $(".mainav li:nth-of-type(3) a").addClass("active");
             break;
-        case "/research.html":
+        case "/research_overview.html":
         case "/research_detail.html":
-            $(".mainav li:nth-of-type(4) a").addClass("active");
+            $(".mainav li:nth-of-type(2) a").addClass("active");
             break;
     case "/contact.html":            
         $(".mainav li:nth-of-type(7) a").addClass("active");
         break;
     case "/about.html":            
-        $(".mainav li:nth-of-type(2) a").addClass("active");
+        $(".mainav li:nth-of-type(1) a").addClass("active");
     }
 
 

@@ -76,6 +76,19 @@
   @return $target * $context + 0px;
 }
 
+// 3x 设计稿 换算
+@function rem3x($target, $context: $base-font-size) {
+  @if not unitless($target) {
+    $target: strip-units($target);
+  }
+  @if not unitless($context) {
+    $context: strip-units($context);
+  }
+  @if $target == 0 { @return 0 }
+  @return $target / ($context * 3)  + 0rem;
+}
+
+
 // Map Functions
 //
 // Styleguide 11.2

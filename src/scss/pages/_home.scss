@@ -72,12 +72,15 @@
        background-position: left top, right top;
        background-repeat: no-repeat;
        color: $color-secondary;
-       padding-top: 1rem;
+       padding-top: 2.5rem;
        padding-bottom: 1rem;
        min-height: 300px;
+       @include mq(md){
+        min-height: 230px;
+        }  
        @include mq(lg){
         padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-bottom: 3rem; min-height: 300px;
         }  
        .title{
            margin-bottom: 1.5rem;
@@ -95,9 +98,15 @@
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;      
-                top: 1rem;
+                top: .7rem;
                 border: $color-secondary 2px solid;
                 z-index: 200;
+                @include mq(md){
+                    top: .85rem;
+                    }  
+                @include mq(lg){
+                    top: 1rem;
+                    }  
            }
            &::after{
                 content: " ";
@@ -107,9 +116,15 @@
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;      
-                top: 1rem;
+                top: .7rem;
                 border: $color-secondary 2px solid;
                 z-index: 200;
+                @include mq(md){
+                    top: .85rem;
+                    }  
+                @include mq(lg){
+                    top: 1rem;
+                    }  
         }
            @include mq(md){         
             font-size: rem(22);

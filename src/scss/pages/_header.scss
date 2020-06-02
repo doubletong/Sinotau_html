@@ -1,5 +1,5 @@
 .site-header {
-    background-color: #f2f2f2;
+    background-color: #fff;
     box-shadow: 0 0 25px rgba(0,0,0,.15);
     position: fixed;
     left: 0;
@@ -8,16 +8,16 @@
     width: 100%;
     height: 45px;
     @include mq(md) {
-        height: 60px;        
-    }
-    @include mq(lg) {
         height: 70px;        
     }
+    @include mq(lg) {
+        height: 80px;        
+    }
     @include mq(xl) {
-        height: 80px;       
+        height: 90px;       
     }
     @include mq(xxl) {
-        height: 98px;       
+        height: 102px;       
     }
     .container,
     .row {
@@ -46,6 +46,33 @@
             
         }
     }
+    .topnav{
+        @include reset-list();
+        text-align: right;
+        
+        padding-top: .2rem;
+        @include mq(xl) {
+            padding-right: .1rem;       
+        }
+        @include mq(xxl) {
+            padding-right: .2rem;               
+        }
+        li{
+            display: inline-block;
+            margin-right: 1rem;
+            @include mq(xl) {
+                margin-right: rem(18);                   
+            }
+            @include mq(xxl) {
+                margin-right: rem(18);              
+            }
+            a{
+                @include mq(xxl) {
+                    font-size: rem(14);                     
+                }
+            }
+        }
+    }
 
     .mainav {
         @include reset-list();
@@ -66,7 +93,7 @@
             padding: 0 .6rem;
             position: relative;
             @include mq(lg) {
-                padding: 0 .6rem;
+                padding: 0 1rem;
                  
              }
             @include mq(xl) {
@@ -89,18 +116,20 @@
                 }
             
                 @include mq(lg) {
-                    height: 70px;
-                    line-height: 70px;
+                    height: 48px;
+                    line-height: 44px;
+                    font-size: rem(14);
                 }
             
                 @include mq(xl) {
-                    height: 80px;
-                    line-height: 80px;
+                    height: 54px;
+                    line-height: 50px;
+                    font-size: 1rem;
                 }
                 @include mq(xxl){
-                    font-size: 1rem;
-                    height: 98px;
-                    line-height: 98px;
+                    font-size: rem(18);
+                    height: 68px;
+                    line-height: 64px;
                 }
                &:hover{
                    color: $color-primary;
@@ -112,18 +141,13 @@
                         content: " ";
                         display: block;
                         position: absolute;
-                        left: 50%;
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 50%;
-                        margin-left: -3px;
-                        bottom: 1rem;
+                        left: 0;
+                        width: 100%;
+                        height: 4px;                   
+                        bottom: 0;
                         background-color: $color-primary;
                         z-index: 200;
-                        @include mq(xl){
-                            width: 8px;
-                            height: 8px;  margin-left: -4px;    bottom: 1.5rem;
-                        }
+                       
                     }
                    
                 }
@@ -133,14 +157,31 @@
         }
     }
 
-   
+    .search{
+        a{
+            .iconfont{
+                color: $color-accent;
+                font-size: rem(20);
+            }
+        }        
+    }
+    .lang{
+        a{
+            .iconfont{
+                color: $color-accent;
+                font-size: rem(20);
+            }
+        }        
+    }
   
     
 
 
     .mobilemenu {
-        
-
+      
+        @include mq(lg){
+            display: none;
+        }
         .menu-toggle {
             width: 28px;
             cursor: pointer;
@@ -287,16 +328,7 @@
             }
            
         }
-        .copyright{
-            position: absolute;
-            left: 0;
-            bottom: 1rem;
-            z-index: 100;
-            width: 100%;
-            text-align: center;
-            font-size: rem(12);
-            color: #999;
-        }
+       
     }
 
     &.fixheader{

@@ -1,16 +1,32 @@
 .page-research {
     .s1{
-        margin-bottom: 4rem;
-        a{
-            display: inline-block;
-            padding-right: 2.5rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            &.active{
-                font-size: rem(24);
-                color:$color-primary;
+        background: url(../img/research_02.png) no-repeat left bottom;
+        padding-bottom: 5rem;
+        .item{
+            padding: 0 1.5rem;
+            h3{
+                color: $color-accent;
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                @include mq(md){
+                    font-size: rem(18);
+                }
+                @include mq(lg){
+                    font-size: rem(20);
+                }
+                @include mq(xl){
+                    font-size: rem(22);
+                }
+                @include mq(xxl){
+                    font-size: rem(24);
+                } 
+            }
+            p{
+                text-align: justify;
             }
         }
+       
     }
     .s2{
         .item{
@@ -46,6 +62,204 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.page-projects{
+    padding-bottom: 0;
+    .s1{
+        padding-top: 2rem;
+        .pic{
+            margin-right: 3rem;
+        }
+        .val{
+            color: #2577d4;
+            text-align: center;
+            .num{
+                display: inline-block;
+                font-weight: bold;
+                margin-bottom: 1.5rem;
+               
+                line-height: 1;
+                font-size: rem(36);
+                @include mq(md){
+                    font-size: rem(42);
+                }
+                @include mq(lg){
+                    font-size: rem(48);
+                }
+                @include mq(xl){
+                    font-size: rem(54);
+                }
+                @include mq(xxl){
+                    font-size: rem(60);
+                }
+            }
+            .unit{
+                display: inline-block;
+               
+            }
+        }
+        .t{
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4rem;
+            @include mq(lg){
+                font-size: rem(14);
+            }
+            @include mq(xl){
+                font-size: 1rem;
+            }
+            @include mq(xxl){
+              
+                font-size: rem(18);
+            }
+        }
+       
+    }
+    .s2{
+        background-color: #f6f6f6;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        .projectlist{
+            .item{
+                background-color: #fff;
+                display: block;
+                margin-bottom: rem(30);
+                &:hover{
+                    box-shadow: 0 0 20px rgba(0,0,0,.1);
+                }
+                .title{
+                    padding: 1rem;
+                    h3{
+                        line-height: 1.6;
+                        color: #333;
+                        @include mq(lg){
+                            font-size: rem(14);
+                        }
+                        @include mq(xl){
+                            font-size: 1rem;
+                        }
+                        @include mq(xxl){
+                          
+                            font-size: rem(18);
+                        }
+                    }
+                    time{
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-evolve{
+    .add{
+        display: inline-block;
+        font-size: rem(36);
+        line-height: 1;
+        @include mq(md){
+            font-size: rem(42);
+        }
+        @include mq(lg){
+            font-size: rem(48);
+        }
+        @include mq(xl){
+            font-size: rem(54);
+        }
+        @include mq(xxl){
+            font-size: rem(60);
+        }
+    }
+    .pics{
+        padding-top: 2rem;
+    }
+}
+
+.page-papers{
+    .s1{
+        border-bottom: 1px #ebebeb solid;
+        padding-bottom: rem(20);
+        margin-bottom: 0;
+        .years{
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-align: center;
+                font-size: rem(36);
+                color:#333;
+                font-weight: bold;
+                padding-bottom: 1rem;
+                &:hover{
+                    color: $color-accent;
+                }
+           
+                &.active{
+                    color:$color-accent;     border-bottom: 4px $color-accent solid;
+                }
+            }
+        }
+    }
+    .s2{
+        .item{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px #ebebeb solid;
+        }
+        .txt{
+            margin-left: 1rem;
+            height: 100%;
+            position: relative;
+            p{
+                @include vertical-align(); 
+                padding-bottom: 3rem;
+                @include mq(lg){
+                    font-size: rem(14);
+                }
+                @include mq(xl){
+                    font-size: 1rem;
+                }
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+            }
+        }
+        .actions{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            a{
+                display: inline-block;
+                padding: .3rem 1.5rem;
+                border:1px #ebebeb solid;
+                margin-right: rem(20);
+                color:$color-accent;
+            }
+        }
+    }
+}
+
+.page-awards{
+    .pic{
+        margin-bottom: 3rem;
+    }
+    figcaption{
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: bold;
+        color: #333;
+        @include mq(lg){
+            font-size: rem(14);
+        }
+        @include mq(xl){
+            font-size: 1rem;
+        }
+        @include mq(xxl){
+            font-size: rem(18);
         }
     }
 }

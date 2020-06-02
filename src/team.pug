@@ -1,64 +1,55 @@
 extends includes/layout.pug
 
 block title
-    | Team
+    | 获奖
 
-block content    
-    .banner.banner-contact(style="background-image:url(../img/temp/banner-team.jpg)")
-        h1 Team Introduce
+block bkheader
+   
 
-    .page.page-team        
-        .container           
-            .row
-                .col-md-6.col-lg-4
-                    a.item(href="team_detail.html")
-                        .pic.wow.fadeInLeft
-                            img(src="img/temp/t1.jpg", alt="")
-                        .txt.wow.fadeInLeft
-                            h3 Shuguang Yuan
-                            p Center director -AI drug molecular design, new drug development, artificial intelligence
-                            span.btn.btn-default-outline MORE
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(../img/temp/banner_team.jpg)")
+        .container
+            h1.title-page 人才队伍
+            nav.submenus 
+                a.active(href="team.html") 人才概览
+                a(href="team_academician.html") 院士
+                a(href="team_higher.html") 正高级序列
+                a(href="team_deputy.html") 副高级序列
+                a(href="team_jobs.html") 人才招聘
+       
+        
+    .page.page-team.container
+        .s1.section            
+            .title-section.wow.fadeInUp
+                h2.text-center 汇聚英才，招贤纳士
+            p.p1.text-center 脑院秉承“近者悦，远者来”：引进比自己学术能力强、威望高、影响力大的人才；帮扶年轻人尽快腾飞。各核心研究方向研究队伍进一步壮大、优化。
 
-                .col-md-6.col-lg-4
-                    a.item(href="team_detail.html")
-                        .pic.wow.fadeInLeft
-                            img(src="img/temp/t2.jpg", alt="")
-                        .txt.wow.fadeInLeft
-                            h3 Shuguang Yuan
-                            p Center director -AI drug molecular design, new drug development, artificial intelligence
-                            span.btn.btn-default-outline MORE
+        .s2.row
+            .col-md
+                figure
+                    img(src="img/temp/aw_01.jpg", alt="")
+                    figcaption 广东省自然科学奖 一等奖（2018）
                 
-                .col-md-6.col-lg-4
-                    a.item(href="team_detail.html")
-                        .pic.wow.fadeInLeft
-                            img(src="img/temp/t3.jpg", alt="")
-                        .txt.wow.fadeInLeft
-                            h3 Shuguang Yuan
-                            p Center director -AI drug molecular design, new drug development, artificial intelligence
-                            span.btn.btn-default-outline MORE
+            .col-md
+                figure
+                    img(src="img/temp/aw_02.jpg", alt="")
+                    figcaption 广东省自然科学奖 一等奖（2018）
+            .col-md
+                figure
+                    img(src="img/temp/aw_03.jpg", alt="")
+                    figcaption 广东省自然科学奖 一等奖（2018）
 
-                .col-md-6.col-lg-4
-                    a.item(href="team_detail.html")
-                        .pic.wow.fadeInLeft
-                            img(src="img/temp/t4.jpg", alt="")
-                        .txt.wow.fadeInLeft
-                            h3 Shuguang Yuan
-                            p Center director -AI drug molecular design, new drug development, artificial intelligence
-                            span.btn.btn-default-outline MORE
-
-        
-
-              
-        
-        
 block bkfooter
-    script.
-        $('.d1 dt').click(function(e){  
-            $(this).closest('dl').siblings().removeClass('open');
-            $(this).closest('dl').addClass('open');        
-            //$(this).next().slideDown();
-        })
-        
 
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
 
      

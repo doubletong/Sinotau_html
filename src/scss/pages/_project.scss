@@ -191,7 +191,7 @@
         }
     }
     .s2{
-        margin-top: 70px;
+        margin-top: 20px;
         @include mq(lg){
             margin-top: 60px;
         }
@@ -219,9 +219,11 @@
                 overflow: hidden;
                 img{
                     display: block; transition: all .25s;
+                    width: 100%;height: 250px;
+                    object-fit: cover; object-position: center center;
                     @include mq(md){
                         width: 100%;height: 380px;
-                        object-fit: cover; object-position: center center;
+                     
                     }
                     @include mq(lg){
                         width: auto;height: auto;
@@ -269,13 +271,13 @@
     .s3{
         margin-top:70px;
         @include mq(lg){
-            margin-top: 60px;
+            margin-top: 50px;
         }
         @include mq(xl){
-            margin-top: 70px;
+            margin-top: 60px;
         }
         @include mq(xxl){
-            margin-top:88px;
+            margin-top:78px;
         }
         .con{
            
@@ -303,8 +305,9 @@
                     color: $color-primary;
                     margin-bottom: 1rem;
                     @include mq(lg){
-                        margin-bottom: 0;
+                        margin-bottom: .6rem;
                     }
+                  
                 }
             }
             img{
@@ -313,6 +316,9 @@
                     width: 300px;
                 }
                 @include mq(xl){
+                    width: 370px;
+                }
+                @include mq(xxl){
                     width: auto;
                 }
             }
@@ -329,6 +335,9 @@
                     height: 376px; overflow-y: auto;margin-bottom: 0;
                 }
                 @include mq(xl){
+                    padding: 2rem 2.5rem 2rem 4.5rem;       height: 475px;
+                }
+                @include mq(xxl){
                     padding: 2rem 2.5rem 2rem 6rem;       height: 475px;
                 }
                 dl{
@@ -377,8 +386,11 @@
             .title{
                 color: $color-primary;
                 position: relative;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
                 font-size: rem(18);
+                @include mq(xl){
+                    margin-bottom: 3rem;
+                }
                 &::before{
                     content: " ";
                     width: 11px;
@@ -390,6 +402,9 @@
             }
             .box{
                 margin-bottom: 1.5rem;
+                @include mq(lg){
+                    margin-bottom: 1rem;
+                }
                 @include mq(xl){
                     margin-bottom: 3rem;
                 }
@@ -419,7 +434,7 @@
             margin-top: 0;
         }
         @include mq(xl){
-            margin-top: 10px;
+            margin-top: -20px;
         }
         @include mq(xxl){
             margin-top:28px;
@@ -494,12 +509,12 @@
         }
     }
     .s5{
-        margin-top: 60px;
+        margin-top: 50px;
         @include mq(xl){
-            margin-top: 70px;
+            margin-top: 60px;
         }
         @include mq(xxl){
-            margin-top:88px;
+            margin-top:78px;
         }
             
         
@@ -870,10 +885,11 @@
                 
             }
             .zhuanye{
-                background-color: #eee;padding:3rem 5rem;    border: 1px #eee dashed;
-                height: 379px;
+                background-color: #eee;padding:3rem 2rem;    
+                border: 1px #eee dashed;
+              
                 @include mq(md){
-                    padding:3rem 3rem;
+                    padding:3rem 3rem;  height: 379px;
                  }
                  @include mq(lg){
                     padding:3rem 3rem;

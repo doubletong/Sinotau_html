@@ -4,13 +4,14 @@
 body {
     color: #666;
     background-color: #fff;
-    font-family:  "Helvetica","Helvetica Neue", "Arial", sans-serif;     
+    font-family:  PingFangSC-Regular,"Microsoft YaHei","Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
     max-width: 1920px;
     margin: 0 auto;
     padding-top: 45px;
+    line-height: 2;
     @include mq(md){
-        padding-top: 60px;
+        padding-top: 60px;font-size: 1rem;
     }
     @include mq(lg){
         padding-top: 70px;font-size: rem(12);
@@ -20,7 +21,7 @@ body {
      
     }
     @include mq(xxl){
-        padding-top: 98px;
+        padding-top: 102px;font-size: 1rem;
      
     }
     &.home-body{
@@ -38,7 +39,7 @@ a {
 }
 .container{
     @include mq(xxl) {
-        max-width: 1230px;
+        max-width: 1210px;
     }
 }
 .page {
@@ -87,61 +88,25 @@ a {
         margin-bottom: 3rem; 
     }
     h2 {    
-        overflow: hidden;
-        font-size: rem(30);           
-        text-transform: uppercase; 
-        font-family:'FRUTIBLAITA';
-        white-space: nowrap;
-        font-style: italic;
-        color: #f2f2f2;
-        @include mq(md) {
-            font-size: rem(36);
-        }
-        @include mq(lg) {
-            font-size: rem(42);
-        }
-        @include mq(xl) {
-            font-size: rem(48);
-        }
-        @include mq(xl) {
-            font-size: rem(54);
-        }
-
-    }
-    h3 {    
-       
-        font-size: rem(18);           
-        font-weight: bolder;
-        position: absolute;
-        left: 1rem;
-        top: .75rem;
-        margin: 0;
-        z-index: 100;
-        color: $color-primary;
+      
+        font-size: rem(20);
+        text-transform: uppercase;            
+        color: $color-accent;
         @include mq(md) {
             font-size: rem(22);
         }
         @include mq(lg) {
-            font-size: rem(24);top: 1rem;
+            font-size: rem(24);
         }
         @include mq(xl) {
-            font-size: rem(26);
+            font-size: rem(28);
         }
         @include mq(xl) {
-            font-size: rem(28); top: 1.5rem;
+            font-size: rem(30);           
         }
-        &::before{
-            content: " ";
-            display: inline-block;
-            border: 2px $color-secondary solid;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: .5rem;
-        }
-     
 
     }
+   
     
 }
 .title-section-v1{
@@ -281,55 +246,54 @@ a {
 }
 
 .banner {
-    height: 130px;   
+    height: 200px;   
     background-color: $color-primary;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
     @include mq(md) {
-        height: 250px;       
+        height: 256px;       
     }
     @include mq(lg) {
-        height: 350px;      
+        height: 266px;      
     }
     @include mq(xl) {
-        height:450px;      
+        height:276px;      
     }
     @include mq(xxl) {
-        height: 580px;    
+        height: 286px;    
+    }
+
+    .container{
+        @include vertical-align(); 
+        text-align: right;color: #fff;         
+        
+        h1.title-page{
+       
+            font-size: 3rem;            
+            text-transform: uppercase;          
+            font-weight: lighter;
+            margin-bottom: 2rem;
+        }
+        .submenus{
+            a{
+                display: inline-block;
+                margin-left:3.3rem;
+                color: #fff;
+                font-weight: lighter;
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                &.active{
+                    font-weight: bold;
+                    border-bottom: 2px #fff solid;
+                }
+            }
+        }
     }
     
-    h1{
-        @include vertical-align(); 
-        font-size: 2rem;
-        color: #fff;
-        display: inline-block;
-        text-transform: uppercase;
-        position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            display: block;
-            width: 30px;
-            height: 2px;
-            z-index: 10;
-            background-color: #fff;
-            left: -55px;
-            top: 1.7rem;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            display: block;
-            width: 30px;
-            height: 2px;
-            z-index: 10;
-            background-color: #fff;
-            right: -55px;
-            top: 1.7rem;
-        }
-    }
+    
 
     
 }
