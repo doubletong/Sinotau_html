@@ -1,29 +1,112 @@
 .page-contact {
-    .formMessage{
-        .formline{
-            margin-bottom: 2rem;
-        }
-        label{
-            display: block;
-            width: 80px;
-            text-transform: uppercase;
-            @include mq(xxl){
-                font-size: rem(18);
+    background-color: #f6f6f6;
+    .s1{
+        margin-bottom: 3rem;
+        .baidumap{
+            height: 350px;
+            @include mq(md){
+                height: 450px;
             }
-            &.requre{
-                &::after{
-                    content: '*';
-                    color: red;
+            img{
+                max-width: none;
+            }
+        }
+    }
+    .s2{
+    
+        margin-bottom: 3rem;
+        @include mq(lg){
+            font-size: rem(20);
+        }
+        @include mq(xl){
+            font-size: rem(22);
+        }
+        @include mq(xxl){
+            font-size: rem(24);
+        }
+       
+        ul{
+            @include reset-list();
+            margin-bottom: 2rem;
+            li{
+                color: #333;
+                position: relative;
+                position: relative;
+                padding-left: 2rem;
+                margin-bottom: .6rem;
+         
+                @include mq(lg){
+                    margin-bottom: .5rem;
+                }
+                @include mq(xl){
+                    margin-bottom: 1rem;
+                }
+                @include mq(xxl){
+                    margin-bottom: 1.8rem;
+                }
+                .iconfont{
+                    position: absolute;
+                    left: 0;
+                    top: -0.3rem;
+             
+                    font-size: rem(20);
+                    color: #2577d4;
+                    @include mq(lg){
+                        font-size: rem(22);
+                    }
+                    @include mq(lg){
+                        font-size: rem(24);
+                    }
+                    @include mq(xl){
+                        font-size: rem(28);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(32);
+                    }
                 }
             }
         }
-        input{
-            padding: .8rem 1rem;
-            border:1px #ddd solid;
-            width: 100%;
+        .icon{
+            text-align: center;
+            @include mq(md){
+               width: 120px;
+            }
+            @include mq(md){
+                width: 150px;
+             }
         }
-        .form-grounp{
-            text-align: right;
+        .wechat {
+            text-align: center;
+            font-size: rem(14);
+        }
+    }
+    .s3{
+        .links{
+            background-color: #fff;
+            padding: 1rem;
+            @include mq(xxl){
+                padding: 3rem;
+            }
+            .col-lg{
+                margin-bottom: 1rem;
+            }
+            .txt{
+              
+                @include mq(xxl){
+                    padding-right: 2rem;
+                }
+            }
+            h4{
+                color: #333;
+                line-height: 1.5;
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+            }
+            p{
+                line-height: 1.5;
+                font-size: rem(12);
+            }
         }
     }
 }

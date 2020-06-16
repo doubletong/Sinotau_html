@@ -2,19 +2,23 @@
     .searchbox{
         margin-bottom: 2rem;
         form{
-            padding: .5rem;
+            padding: .2rem;
             border:1px #eee solid;
             border-radius: 6px;
             @include mq(md){
                 width: 70%;
-                margin: 0 auto;
+                margin: 0 auto;  padding: .5rem;
                 
             }
             input{
                 width: 100%;
-                font-size: rem(20);
+                font-size: rem(18);
                 border: none;
                 outline: none;
+                @include mq(md){
+                    font-size: rem(20);
+                    
+                }
             }
             button{
                 border-radius: 3px;

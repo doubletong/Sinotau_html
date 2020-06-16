@@ -3,7 +3,10 @@
         background: url(../img/research_02.png) no-repeat left bottom;
         padding-bottom: 5rem;
         .item{
-            padding: 0 1.5rem;
+         
+            @include mq(xl){
+                padding: 0 1.5rem;
+            }
             h3{
                 color: $color-accent;
                 text-align: center;
@@ -69,9 +72,21 @@
 .page-projects{
     padding-bottom: 0;
     .s1{
-        padding-top: 2rem;
+      
+        @include mq(md){
+            padding-top: 2rem;
+        }
         .pic{
-            margin-right: 3rem;
+            margin-bottom: 1rem;
+            @include mq(md){
+                margin-bottom: 2rem;
+            }
+            @include mq(lg){
+                margin-right: 3rem;
+            }
+            img{
+                width: 100%;               
+            }
         }
         .val{
             color: #2577d4;
@@ -105,9 +120,10 @@
             color: #333;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
             @include mq(lg){
                 font-size: rem(14);
+                margin-bottom: 4rem;
             }
             @include mq(xl){
                 font-size: 1rem;
@@ -121,8 +137,20 @@
     }
     .s2{
         background-color: #f6f6f6;
-        padding-top: 3rem;
-        padding-bottom: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @include mq(lg){
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        @include mq(xl){
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        @include mq(xxl){
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+        }
         .projectlist{
             .item{
                 background-color: #fff;
@@ -182,23 +210,44 @@
 .page-papers{
     .s1{
         border-bottom: 1px #ebebeb solid;
-        padding-bottom: rem(20);
+        padding-bottom: rem(15);
         margin-bottom: 0;
         .years{
-            display: flex;
-            justify-content: space-between;
+          
+       
             a{
                 text-align: center;
-                font-size: rem(36);
+                font-size: rem(20);
                 color:#333;
                 font-weight: bold;
-                padding-bottom: 1rem;
+                padding-bottom: .4rem;
+                display: inline-block;
+                margin-right: 1.5rem;
+                margin-bottom: 1rem;
+                @include mq(md){
+                    font-size: rem(24);   
+                    padding-bottom: 1rem;
+                    margin-right: 2rem;
+                }
+                @include mq(lg){
+                    font-size: rem(24);margin-right: 2.5rem;
+                }
+                @include mq(xl){
+                    font-size: rem(32);margin-right: 3rem;
+                }
+                @include mq(xxl){
+                    font-size: rem(36);margin-right: 3.5rem;
+                }
                 &:hover{
                     color: $color-accent;
                 }
            
                 &.active{
-                    color:$color-accent;     border-bottom: 4px $color-accent solid;
+                    color:$color-accent;     
+                    border-bottom: 2px $color-accent solid;
+                    @include mq(lg){
+                        border-bottom: 4px $color-accent solid;
+                    }
                 }
             }
         }
@@ -208,16 +257,34 @@
             padding-top: 2rem;
             padding-bottom: 2rem;
             border-bottom: 1px #ebebeb solid;
+            .pic{
+                width: 80px;
+                @include mq(md){
+                    width: 120px;
+                }
+                @include mq(lg){
+                    width: 150px;
+                }
+                @include mq(xl){
+                    width: 200px;
+                }
+                @include mq(xxl){
+                    width: auto;
+                }
+            }
         }
         .txt{
-            margin-left: 1rem;
-            height: 100%;
+     
+          
             position: relative;
+            @include mq(lg){
+                margin-left: 1rem;  height: 100%;
+            }
             p{
-                @include vertical-align(); 
-                padding-bottom: 3rem;
+              
+               
                 @include mq(lg){
-                    font-size: rem(14);
+                    font-size: rem(14);  @include vertical-align();  padding-bottom: 3rem;
                 }
                 @include mq(xl){
                     font-size: 1rem;
@@ -228,16 +295,32 @@
             }
         }
         .actions{
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            z-index: 100;
+         
+            @include mq(lg){
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 100;
+            }
             a{
                 display: inline-block;
-                padding: .3rem 1.5rem;
+                padding: .3rem .8rem;
                 border:1px #ebebeb solid;
-                margin-right: rem(20);
+                margin-right: rem(5);
                 color:$color-accent;
+                @include mq(lg){
+                    padding: .3rem 1.2rem;     margin-right: rem(10);
+                }
+                @include mq(xl){
+                    padding: .3rem 1.5rem;     margin-right: rem(20);
+                }
+                span{
+                    display: none;
+                    @include mq(lg){
+                        display: inline;
+                        margin-left: .3rem;
+                    }
+                }
             }
         }
     }
@@ -245,7 +328,28 @@
 
 .page-awards{
     .pic{
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        @include mq(lg){
+            margin-bottom: 2rem;
+          
+        }
+        @include mq(lg){
+            margin-bottom: 3rem;
+          
+        }
+        img{
+            width: 160px;
+
+            @include mq(md){
+                width: 250px;
+
+            }
+            @include mq(lg){
+                width: auto;
+
+            }
+        }
+       
     }
     figcaption{
         text-align: center;

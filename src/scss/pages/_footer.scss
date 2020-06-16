@@ -1,7 +1,6 @@
 
 .site-footer{
-    color: #fff;
-  
+    color: #fff;  
     background: $color_primary;    
     a{
         color: #fff;
@@ -16,8 +15,11 @@
         .contact{
             @include reset-list();
             li{
-                display: inline-block;
-                margin-left: 6rem;
+                margin-bottom: 1rem;
+              
+                @include mq(lg){
+                    margin-left: 6rem;  display: inline-block;  margin-bottom: 0;
+                }
                 .iconfont{
                     display: inline-block;
                     width: 30px;
@@ -29,16 +31,21 @@
                     color: $color-secondary;
                     line-height: 30px;
                 }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
+           
         }
     }
 
-    .logo{
-       
-       
-        width: 70px;
+    .logo{       
+        margin-bottom: 1rem;
+        width: 100px;
+   
         @include mq(md){
-            width: 110px;
+            width: auto;
         }
         @include mq(lg){
             width: auto; 
@@ -48,8 +55,12 @@
         }
     }
     .botnav{
+        display: none;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        @include mq(lg){
+           display: block;
+        }
         @include mq(xxl){
             padding-top: 3rem;
             padding-bottom:3rem;
@@ -74,18 +85,41 @@
         border-top: #034582 1px solid;
         padding: 1rem 0;
         .links{
+            border-bottom: 1px lighten($color: $color_primary, $amount: 20) solid;
+            padding-bottom: .6rem;
+            margin-bottom: .6rem;
+            @include mq(md){
+                text-align: center;
+            }
+            @include mq(lg){
+                text-align: left;
+                border-bottom: none;
+            }
             a{
-                display: inline-block;
+                text-align: center;
+                display: block;
                 padding: 0 1.5rem;
-                border-left: 1px $color-secondary solid;
-                &:first-child{
-                    border: none;
-                    padding-left: 0;
+             
+                @include mq(md){
+                    display: inline-block;   border-left: 1px $color-secondary solid;
+                }
+                &:first-child{                   
+                    @include mq(md){
+                        border: none;
+                      
+                    }
+                    @include mq(lg){
+                        padding-left: 0;
+                    }
                 }
             }
         }
         .copyright{
             color: #1c71d1;
+            text-align: center;
+            @include mq(lg){
+                text-align: left;
+            }
             a{
                 color: #1c71d1;
             }
@@ -93,8 +127,6 @@
     }
 
 }
-
-
 
 .toTop{
     position: fixed;

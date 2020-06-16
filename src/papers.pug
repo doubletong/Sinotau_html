@@ -7,7 +7,7 @@ block bkheader
    
 
 block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(../img/temp/banner_research.jpg)")
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_research.jpg)")
         .container
             h1.title-page 科研概况
             nav.submenus 
@@ -20,9 +20,8 @@ block content
         
     .page.page-papers.container
         .s1.section
-            nav.years
-                a.active(href="pagers.html") 所有
-                a(href="pagers.html") 2019
+            nav.years            
+                a.active(href="pagers.html") 2019
                 a(href="pagers.html") 2018
                 a(href="pagers.html") 2017
                 a(href="pagers.html") 2016
@@ -34,16 +33,22 @@ block content
             .pagerlist
                 .item.wow.fadeInUp
                     .row
-                        .col-md-auto             
+                        .col-auto             
                             .pic
                                 img(src="img/pager_01.png")
-                        .col-md
+                        .col
                             .txt
                                 p Kuikui Zhou, Yingjie Zhu*. The paraventricular thalamic nucleus: A key hub of neural circuits underlying drug addiction. Pharmacological Research. 2019,142:70-76.[PDF]
                                 .actions
-                                    a(href="#") 打开PDF
-                                    a(href="#") 下载PDF
-                                    a(href="#") 跳转网站
+                                    a(href="#")
+                                        i.iconfont.icon-view
+                                        span 打开PDF
+                                    a(href="#")
+                                        i.iconfont.icon-download
+                                        span 下载PDF
+                                    a(href="#") 
+                                        i.iconfont.icon-link
+                                        span 跳转网站
 
                 .item.wow.fadeInUp
                     .row

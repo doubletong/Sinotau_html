@@ -11,7 +11,8 @@
         height: 70px;        
     }
     @include mq(lg) {
-        height: 80px;        
+        height: 80px;   
+
     }
     @include mq(xl) {
         height: 90px;       
@@ -29,16 +30,25 @@
 
 
     .logo {
-       display: block;
+        display: block;
         width: 60px;  
+        background: url(../img/logo.png) no-repeat left center;
+        background-size: contain;
+        height: 45px;
         @include mq(md) {
             width: 75px;
+            height: 59px;
         }
         @include mq(lg) {
             width: 90px;
+
         }
         @include mq(xl) {
-            width: auto;
+            width: 151px;
+            
+        }
+        @include mq(xxl) {
+            width: 191px;
             
         }
         img {
@@ -49,8 +59,12 @@
     .topnav{
         @include reset-list();
         text-align: right;
+        display: none;
         
         padding-top: .2rem;
+        @include mq(lg) {
+            display: block;
+        }
         @include mq(xl) {
             padding-right: .1rem;       
         }
@@ -128,8 +142,8 @@
                 }
                 @include mq(xxl){
                     font-size: rem(18);
-                    height: 68px;
-                    line-height: 64px;
+                    height: 66px;
+                    line-height: 62px;
                 }
                &:hover{
                    color: $color-primary;
@@ -158,6 +172,7 @@
     }
 
     .search{
+    
         a{
             .iconfont{
                 color: $color-accent;
@@ -254,18 +269,20 @@
             padding: 2rem 0 0 0;
             height: 100%;
             overflow-y: none;
-           
+           text-align: center;
 
             &>li {
                 position: relative;
                 transition: all .2s;
                 text-align: center;
+                display: inline-block;
+                width: 48%;
                 &>a {
-                    display: inline-block;
+                    display: block;
                     color: #333;
                     position: relative;
                     padding: 1rem .3rem;
-                  
+                    border-bottom: 1px #eee solid;                  
 
                     @include mq(xxl){
                         font-size: 1rem;
@@ -278,23 +295,10 @@
                 }
                 &.active {
                     a{
-                        color: $color-primary;
-                        font-weight: bold;
-                    }
-                    
-                    &::before {
-                        content: " ";
-                        display: block;
-                        width: 36px;
-                        height: 5px;
-                        border-radius: 0 3px 3px 0;
-                        background-color: $color-secondary;
-                        position: absolute;
-                        top: 21px;
-                        left: 0;
-                        z-index: 50;
-                      
-                    }
+                        color: $color-accent;                    
+                        border-bottom: 1px $color-accent solid;   
+                    }                    
+                   
                 }
                 &.down {
                     position: relative;                   
@@ -340,8 +344,21 @@
 .home-body{
     .site-header{
         background-color: transparent;
+        box-shadow: none;
         .logo {           
-            background-image: url(../img/logo.png);    
+           
+            background: url(../img/logo_white.png) no-repeat left center;
+            background-size: contain; 
+        }
+
+        .topnav{
+           
+            li{
+              
+                a{
+                    color: #fff;
+                }
+            }
         }
         .mainav {         
     
@@ -349,42 +366,57 @@
                 
                 &>a {                  
                     color: #fff;
+                    &:hover{
+                        color: $color-accent;
+                    }
+                     &.active {                      
+                         color: #fff;
+                         &::after{                            
+                             background-color: #fff;                           
+                         }
+                        
+                     }
+                }   
+    
+            }
+        }
+        .search{    
+            a{
+                .iconfont{
+                    color: #fff;
                 }
-    
-    
-            }
+            }        
         }
+        .lang{
+            a{
+                .iconfont{
+                    color: #fff;
+                }
+            }        
+        }
+    
 
-        .lang {
-           
-            color: #030303;
-            @include mq(lg) {
-                border: 1px #030303 solid;       
-            }
-          
-        }
-    
-        .btnBook {
-            color: #fff;
-            background-color: #030303;     
-            border: 1px #030303 solid; 
-            &:hover{
-                background-color: #fff;
-                color: #030303;
-            }         
-        }
         .one,
         .two,
         .three {
           
-            background-color: #030303;
+            background-color: #fff;
            
         }
 
         &.fixheader{
             background-color: #fff;
+            box-shadow: 0 0 25px rgba(0,0,0,.15);
+            
+            .topnav{            
+                li{                
+                    a{
+                        color: #666;
+                    }
+                }
+            }
             .logo {           
-                background-image: url(../img/logo_color.png);    
+                background-image: url(../img/logo.png);    
             }
             .mainav {         
     
@@ -397,6 +429,28 @@
         
                 }
             }
+            .search{    
+                a{
+                    .iconfont{
+                        color: $color-accent;
+                    }
+                }        
+            }
+            .lang{
+                a{
+                    .iconfont{
+                        color: $color-accent;
+                    }
+                }        
+            }
+            .one,
+            .two,
+            .three {
+              
+                background-color: #333;
+               
+            }
+    
          }
     
     }

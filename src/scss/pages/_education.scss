@@ -1,0 +1,436 @@
+.page-education {
+    background-color: #fff;
+    overflow-x: hidden;
+    .s2{
+        position: relative;
+        background: url(../img/e_01.jpg) no-repeat left bottom;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        background-size: auto 450px;
+        @include mq(md){
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        @include mq(lg){
+            background: url(../img/e_01.jpg) no-repeat left center;
+            padding-bottom: 0;
+        }
+        .pic{
+            margin-bottom: 2rem;
+            @include mq(md){
+                margin-left: 0;
+            }
+            @include mq(lg){
+                margin-left: 50px;
+                position: absolute;
+                left: 50%;            
+                top: 0;
+                z-index: 100;
+                overflow: hidden;
+            }
+            @include mq(xl){
+                margin-left: 200px;
+            }
+            @include mq(xxl){
+                margin-left: 330px;
+            }
+            img{
+                max-width: none;
+                width: 100%;
+                object-fit: cover;
+                object-position: center top;
+                height: 200px;
+                @include mq(md){
+                    height: 400px;
+                 }
+                @include mq(lg){
+                   width: auto;
+                   height: auto;
+              
+                }
+            }
+        }
+        .c1{   
+            @include mq(lg){
+                height: 504px;
+            }    
+           
+            .txt{            
+                color: #fff;           
+                @include mq(lg){
+                    width: 520px;     padding-right: 4rem;    @include vertical-align();               
+                
+                }
+                @include mq(xl){
+                    width: 740px;
+                }
+                @include mq(xxl){
+                    width: 905px;
+                }          
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+       
+    }
+
+    .s3 {
+        .item{
+          
+            @include mq(xxl){
+                padding-top: 3rem;
+            }
+        }
+        .val{
+            color: #2577d4;
+            text-align: center;
+            .num{
+                display: inline-block;
+                font-weight: bold;     
+                line-height: 1;
+                font-size: rem(28);
+                @include mq(md){
+                    font-size: rem(34);
+                }
+                @include mq(lg){
+                    font-size: rem(40);   margin-bottom: 1.5rem;
+                }
+                @include mq(xl){
+                    font-size: rem(44);
+                }
+                @include mq(xxl){
+                    font-size: rem(48);
+                }
+            }
+            .unit{
+                display: inline-block;
+               
+            }
+        }
+        .t{
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            @include mq(lg){
+                font-size: rem(14); margin-bottom: 2rem;
+            }
+            @include mq(xl){
+                font-size: 1rem; margin-bottom: 3rem;
+            }
+            @include mq(xxl){
+              
+                font-size: rem(18); margin-bottom: 4rem;
+            }
+        }
+    }
+    
+}
+
+.page-orientation{
+    .s1{
+        margin-bottom: 2rem;
+        @include mq(md){
+            margin-bottom: 2rem;
+        }
+        @include mq(lg){
+            margin-bottom: 3rem;
+        }
+        @include mq(xl){
+            margin-bottom: 4rem;
+        }
+        @include mq(xxl){
+          
+            margin-bottom: 5rem;
+        }
+    }
+    .s2{
+        .box{
+            background-color: #3484df;
+            padding:2rem 1rem;
+            color: #fff;
+            position: relative;
+            @include mq(md){
+                padding: 1rem;
+            }
+            @include mq(lg){
+                padding: 2rem;
+            }
+            @include mq(xl){
+                padding: 3rem;
+            }
+            @include mq(xxl){
+                padding: 4rem;
+            }
+            .num{
+                position: absolute;
+                right: 1rem;
+                bottom: 5%;
+                z-index: 0;
+                color: rgba(255,255,255,.15);               
+                line-height: 1;
+                font-size: rem(100);
+                @include mq(md){
+                    font-size: rem(150);
+                }
+                @include mq(lg){
+                    font-size: rem(200);  top: 50%;
+                }
+                @include mq(xl){
+                    font-size: rem(250); 
+                }
+                @include mq(xxl){
+                    font-size: rem(300); margin-top: -155px;
+                }
+            }
+            .title{
+                text-align: center;
+                font-size: rem(16);
+                @include mq(md){
+                    font-size: rem(18);
+                }
+                @include mq(lg){
+                    font-size: rem(20);
+                }
+                @include mq(xl){
+                    font-size: rem(22);
+                    margin-bottom: 2rem;
+                }
+                @include mq(xxl){
+                    font-size: rem(24);
+                    margin-bottom: 2rem;
+                }
+            }
+            p{
+                text-align: justify;
+            }
+            &:nth-child(2n+1){
+                background-color: #3f96f8;
+            }
+        }
+    }
+}
+
+.page-admissions{
+    .note{
+        font-size: rem(20);
+        font-weight: bold;
+        color: #333;
+        word-break:break-all;
+    }
+    figure{
+        padding: 1rem 0;
+        @include mq(md){
+            padding: 2rem 0;
+        }
+    }
+    .newlist{
+        @include reset-list();
+        border-top: 1px #eee solid;
+        li{
+            border-bottom: 1px #eee solid;
+            padding: 1rem 0;
+            @include mq(md){
+                padding: 2rem 0;
+            }
+            @include mq(lg){
+                font-size: rem(14);
+            }
+            @include mq(xl){
+                font-size: rem(16);
+            }
+            @include mq(xxl){
+                font-size: rem(18);
+            }
+            a{
+                font-weight: bold;
+                color: #333;
+                &:hover{
+                    color: $color-accent;
+                }
+            }
+            time{
+                color: $color-accent;
+            }
+        }
+    }
+}
+
+.page-training{
+    ol{
+        margin-bottom:3rem;  
+        padding-left: 1rem;
+        li{
+            margin-bottom: 1rem;
+        }      
+    }
+    
+}
+
+.page-tutor{
+    padding-bottom: 0;
+    .s1{
+        border-bottom: 1px #ebebeb solid;
+        padding-bottom: rem(22);
+        margin-bottom: 3rem;
+        .categories{
+         
+            justify-content: space-between;
+            display: none;
+            @include mq(lg){
+                display: flex;
+            }
+            a{
+                text-align: center;
+                
+                color:#333;
+                font-weight: bold;
+                padding-bottom: 1rem;
+                @include mq(lg){
+                    font-size: rem(14);
+                }
+                @include mq(xl){
+                    font-size: 1rem;
+                }
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                &:hover{
+                    color: $color-accent;
+                }
+           
+                &.active{
+                    color:$color-accent;     
+                    border-bottom: 4px $color-accent solid;                  
+                    font-size: 1rem;
+                    
+                    @include mq(md){
+                        font-size: rem(18);
+                    }
+                    @include mq(lg){
+                        font-size: rem(20);
+                    }
+                    @include mq(xl){
+                        font-size: rem(22);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(24);
+                    }
+                }
+            }
+        }
+        .slcategories{
+            width: 100%;
+            height: 41px;
+            border:1px #ddd solid;
+            padding-left: .6rem;
+            outline: none;
+            @include mq(md){
+                max-width: 360px;
+                display: block;
+                margin: 0 auto;
+            }
+            @include mq(lg){
+                display: none;
+            }
+        }
+    }
+
+    .s2{
+        padding-bottom: 3rem;
+        .des{
+            background: url('../img/e_05.jpg') no-repeat center center;
+            color: #fff;
+            background-size: cover;
+            .icon{
+                padding: 5rem 1rem  3rem;
+                text-align: center;
+                @include mq(md){
+                    padding: 5rem 7rem;
+                }
+            }
+            .txt{
+                padding: 1rem;
+               
+                @include mq(md){
+                    padding: 0;
+                    padding-right: 2rem;
+                }
+                @include mq(lg){
+                    padding-right: 3rem;
+                }
+                @include mq(xl){
+                    padding-right: 4rem;
+                }
+                @include mq(xxl){
+                    padding-right: 5rem;
+                }
+                h3{
+                    font-size: rem(20);
+                    @include mq(md){
+                        font-size: rem(24);
+                    }
+                    @include mq(lg){
+                        font-size: rem(28);
+                    }
+                    @include mq(xl){
+                        font-size: rem(32);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(36);
+                    }
+                }
+                p{
+                    font-size: rem(18);
+                   
+                }
+            }
+        }
+    }
+    .s3{
+        background-color: #f1f9ff;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        .item{
+            background-color: #fff;
+            padding: 1rem;
+            margin-bottom: rem(20);
+            @include mq(lg){
+                margin-bottom: rem(30);    padding: 1.5rem;
+            }
+            .pic{
+                img{
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    object-position: center center;
+                    border-radius: 50%;
+                    @include mq(md){
+                        width: 126px;
+                        height: 126px;
+                    }
+                }
+            }
+            .name{
+                font-size: rem(22);
+                border-bottom: 1px #eee solid;
+                margin-bottom: .6rem;
+                @include mq(md){
+                    font-size: rem(24);
+                }
+                @include mq(lg){
+                    font-size: rem(26);
+                }
+                @include mq(xl){
+                    font-size: rem(28);
+                }
+                @include mq(xxl){
+                    font-size: rem(30);
+                }
+            }
+        }
+
+    }
+}

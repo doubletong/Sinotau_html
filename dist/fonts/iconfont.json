@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3668888",
+      "name": "view",
+      "font_class": "view",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "6700279",
+      "name": "link",
+      "font_class": "link",
+      "unicode": "e785",
+      "unicode_decimal": 59269
+    },
+    {
+      "icon_id": "9620921",
+      "name": "Cloud, download, storage",
+      "font_class": "download",
+      "unicode": "f98b",
+      "unicode_decimal": 63883
+    },
+    {
+      "icon_id": "2347378",
+      "name": "prev",
+      "font_class": "prev",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "15167299",
+      "name": "prev",
+      "font_class": "next",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "7279605",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "573381",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
       "icon_id": "7533292",
       "name": "中英文",
       "font_class": "zhongyingwen",

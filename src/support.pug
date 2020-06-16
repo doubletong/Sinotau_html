@@ -1,104 +1,65 @@
 extends includes/layout.pug
 
 block title
-    | 常见问题-申请入学
+    | 科研支撑
 
 block bkheader
-    link(href='js/vendor/lightbox2/dist/css/lightbox.min.css', rel='stylesheet')
+   
 
 block content
-    .page_subnav
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_platform.jpg)")
         .container
-            .row.align-items-center
-                .col-md
-                    .title Resource
+            h1.title-page 科研平台
+            nav.submenus 
+                a(href="platform.html") 研究中心             
+                a(href="facilities.html") 脑设施             
+                a(href="lab.html") 重点实验室             
+                a.active(href="support.html") 科研支撑
+         
+        
+    .page.page-support
+        .container
+            .title-section.wow.fadeInUp
+                h2.text-center 科研支撑
 
-                .col-md-auto
-                    nav.subnav
-                        a.active(href="support.html") Technical Specification
-                        a(href="blog.html") Blog
-                        a(href="gallery.html") Gallery
-                        a(href="FAQ.html") FAQs
-     
-    .page.page-downloads
-        section.doclist.container 
-            .row                      
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
-                .col-6.col-md-4.col-lg-3
-                    .item.wow.fadeInUp
-                        .pic 
-                            img(src="img/temp/pdf.png", alt="")
-                            .over                                 
-                        .des 
-                            p Axson PX521HT
-                            a.btn.btn-primary-outline(href="img/temp/p1.jpg", data-lightbox="roadtrip") DOWNLOAD
+            
+            .row
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  科研管理与支撑处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
+                .col-md-6.col-lg-4
+                    a.item(href="support-detail.html")  公共事务与财务资产处
                 
+       
+                   
                         
-        
-block bkfooter
-    script(src='js/vendor/lightbox2/dist/js/lightbox.min.js')
-    script.
-         lightbox.option({
-            'resizeDuration': 200,
-             'wrapAround': true
-        })
-        
 
+
+
+block bkfooter
+
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
 
      

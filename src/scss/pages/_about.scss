@@ -1,5 +1,5 @@
 .page-about{
-    
+    overflow: hidden;
     .intro{
         text-align: justify; 
         margin-bottom: 2rem;
@@ -13,26 +13,71 @@
 
     .intro2{
         position: relative;
-        height: 428px;
+      
         color: #fff;
+       
+        margin: 0 -15px;padding: 0 15px;
+        @include mq(md){          
+            padding: 2rem;           
+        }
+        @include mq(lg){
+            margin: 0;  height: 428px;
+            padding: 0;
+           
+        }
        .pic{
            position: absolute;
            z-index: -1;
-           top: 42px;
-           right: 80px;
+           top:150px;
+           left: -15px;
+           @include mq(md){
+            top:240px;
+        }
+           @include mq(lg){
+               left: auto;
+               right: 80px;  top: 42px;
+           }
            img{
                max-width: none;
            }
        }
        .des{
-           padding-top: 8.5rem;
-           padding-right: 3rem;
+            padding: 1rem 0 0;
+            text-align: justify;
+            @include mq(md){
+                padding: 2rem 0 0;
+            }
+           @include mq(lg){
+            padding-top: 8.5rem;
+            padding-right: 3rem;
+        }
+       
        }
+       .img01{
+           display: block;
+           margin: 0 auto;
+        @include mq(md){
+          
+        }
+     }
     }
     .s1{
         color: #fff;
-        padding-top: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-size: cover;
+        @include mq(md){
+            padding-top: 3rem;
+        padding-bottom: 3rem;
+        }
+        @include mq(lg){
+            padding-top: 4rem;
+        padding-bottom: 4rem;
+        }
+        @include mq(xl){
+            padding-top: 5rem;
         padding-bottom: 5rem;
+        }
         .title-section{
             h2{
                 color: #fff;
@@ -41,6 +86,7 @@
         }
         .p1{
             margin-bottom: 2rem;
+            text-align: justify;
             @include mq(lg){
                 margin-bottom: 2.5rem;
             }
@@ -100,7 +146,10 @@
             }
             p{
                 text-align: justify;
-                padding: 0 1.2rem;
+           
+                @include mq(lg){
+                    padding: 0 1.2rem;
+                }
             }
         }
     }
@@ -152,17 +201,59 @@
 
 .page-leadership{
     .item{
-        padding-top: 5rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        @include mq(md){
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
+        @include mq(lg){
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+        }
+        .pic{
+            margin-bottom: 1rem;
+            text-align: center;
+        }
         .container{
-            .intro{
-                padding-left: 3rem;
+            .intro{             
+                @include mq(md){
+                    padding-left: 1rem;
+                }
+                @include mq(lg){
+                    padding-left: 3rem;
+                }
                 .title{
-                    font-size: 3rem;color:#333;
-                    margin-bottom: 3rem;
+                    font-size: rem(24);color:#333;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    @include mq(md){
+                        margin-bottom: 2rem;font-size: rem(30);
+                        text-align: left;
+                    }
+                    @include mq(lg){
+                        margin-bottom: 3rem;font-size: rem(36);
+                   
+                    }
+                    @include mq(lg){
+                        font-size: 3rem;
+                   
+                    }
                     small{
-                        font-size: rem(20);font-weight: normal;
+                        font-size: rem(12);font-weight: normal;
                         margin-left: 1rem;
+                        @include mq(md){
+                            font-size: rem(14);
+                        }
+                        @include mq(lg){
+                            font-size: rem(16);
+                        }
+                        @include mq(xl){
+                            font-size: rem(18);
+                        }
+                        @include mq(xxl){
+                            font-size: rem(20);
+                        }
                     }
                 }
                 .box{
@@ -185,7 +276,13 @@
     
     .s1{
         background: $color-primary url(../img/about_04.png) no-repeat center top;
-        padding: 3rem;
+        padding: 1rem;
+        @include mq(md){
+            padding: 2rem;
+        }
+        @include mq(lg){
+            padding: 3rem;
+        }
     }
     .title-section{
 

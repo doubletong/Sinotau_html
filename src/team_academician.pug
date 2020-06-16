@@ -1,0 +1,49 @@
+extends includes/layout.pug
+
+block title
+    | 院士
+
+block bkheader
+   
+
+block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_team.jpg)")
+        .container
+            h1.title-page 人才队伍
+            nav.submenus 
+                a(href="team.html") 人才概览
+                a.active(href="team_academician.html") 院士
+                a(href="team_higher.html") 正高级序列
+                a(href="team_deputy.html") 副高级序列
+                a(href="team_jobs.html") 人才招聘
+       
+        
+    .page.page-academician.container
+        .s1.section            
+            .row.align-items-center
+                .col-md-auto
+                    .pic
+                        img(src="img/team_02.png", alt="厄温 · 内尔教授")
+                .col-md
+                    .txt
+                        h3.title 厄温 · 内尔教授
+                        p 深圳内尔神经可塑性诺奖实验室，实验室主任诺贝尔奖获得者
+
+            .bg
+                img(src="img/team_03.png", alt="")
+            
+
+block bkfooter
+
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
+
+     

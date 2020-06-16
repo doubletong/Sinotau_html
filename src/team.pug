@@ -1,13 +1,13 @@
 extends includes/layout.pug
 
 block title
-    | 获奖
+    | 人才概览
 
 block bkheader
    
 
 block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(../img/temp/banner_team.jpg)")
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_team.jpg)")
         .container
             h1.title-page 人才队伍
             nav.submenus 
@@ -24,20 +24,79 @@ block content
                 h2.text-center 汇聚英才，招贤纳士
             p.p1.text-center 脑院秉承“近者悦，远者来”：引进比自己学术能力强、威望高、影响力大的人才；帮扶年轻人尽快腾飞。各核心研究方向研究队伍进一步壮大、优化。
 
-        .s2.row
-            .col-md
-                figure
-                    img(src="img/temp/aw_01.jpg", alt="")
-                    figcaption 广东省自然科学奖 一等奖（2018）
-                
-            .col-md
-                figure
-                    img(src="img/temp/aw_02.jpg", alt="")
-                    figcaption 广东省自然科学奖 一等奖（2018）
-            .col-md
-                figure
-                    img(src="img/temp/aw_03.jpg", alt="")
-                    figcaption 广东省自然科学奖 一等奖（2018）
+            .person
+                .row
+                    .col                        
+                        .val
+                            .num 183
+                            .unit 人
+                        .t 全职员工
+                    .col
+                        .val
+                            .num 92                           
+                            .unit 人
+                        .t 学生
+                    .col
+                        .val
+                            .num 275
+                            .unit 人
+                        .t 总人数
+
+            .personodd
+                .row.no-gutters
+                    .col-6.col-md
+                        .item.itemodd
+                            .val
+                                .num 183
+                                .unit 人
+                            .t 全职员工
+                    .col-6.col-md
+                        .item
+                            .val
+                                .num 92                           
+                                .unit 人
+                            .t 学生
+                    .col-6.col-md
+                        .item.itemodd
+                            .val
+                                .num 275
+                                .unit 人
+                            .t 总人数
+
+                    .col-6.col-md
+                        .item
+                            .val
+                                .num 275
+                                .unit 人
+                            .t 总人数
+
+                .row.no-gutters
+                    .col-6.col-md
+                        .item
+                            .val
+                                .num 183
+                                .unit 人
+                            .t 全职员工
+                    .col-6.col-md
+                        .item.itemodd
+                            .val
+                                .num 92                           
+                                .unit 人
+                            .t 学生
+                    .col-6.col-md
+                        .item
+                            .val
+                                .num 275
+                                .unit 人
+                            .t 总人数
+
+                    .col-6.col-md
+                        .item.itemodd
+                            .val
+                                .num 275
+                                .unit 人
+                            .t 总人数
+        
 
 block bkfooter
 

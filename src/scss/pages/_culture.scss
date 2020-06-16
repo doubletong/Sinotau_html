@@ -1,0 +1,27 @@
+.page-culture{
+    background-color: #f6f6f6;
+    .s1{
+        margin-bottom: 3rem;
+    }
+}
+.page-culture-detail{
+    .title-section{
+        border-bottom: 1px #eee solid;
+        padding-bottom: 2rem;
+    }
+
+    .article{
+        text-align:justify;
+
+        figure{
+            margin-top:3rem;
+            margin-bottom:3rem;
+            text-align: center;
+            figcaption{
+                display: block;
+                text-align: center;
+                padding-top: 2rem;
+            }
+        }
+    }
+}

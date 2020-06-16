@@ -1,80 +1,202 @@
 extends includes/layout.pug
 
 block title
-    | 新闻
+    | 新闻中心
 
 block content
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_news.jpg)")
+        .container
+            h1.title-page 新闻动态
+            nav.submenus 
+                a.active(href="news.html") 新闻中心             
+                a(href="news.html") 会议预告             
+                a(href="news.html") 通知公告
 
-   
+                
     .page.page-news          
-        nav.s1.container 
-            .row.align-items-center
-                .col-md
-                    .title-section
-                        h2.wow.fadeInLeft NEWS
-                        h3.wow.fadeInRight 动态资讯
-                .col-md-auto
-                    .wow.fadeInUp
-                        a.active(href="news.html") 所有
-                        a(href="news.html") 活动
-                        a(href="news.html") 资讯
+        section.s1.container
+            nav.categories.wow.fadeInUp
+                a.active(href="news.html") 头条要闻
+                a(href="news.html") 科研进展
+                a(href="news.html") 学术活动
+                a(href="news.html") 综合新闻
+                a(href="news.html") 媒体聚焦
                 
 
         section.s2.container
             .newslist
                 .row
-                    .col-md-6.col-lg-3                        
-                        a.item.wow.fadeInLeft(href="news_detail.html")
-                            img(src="img/temp/n1.jpg")
-                            div.title 
-                                h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
-                                time 
-                                    i.iconfont.icon-time
-                                    | 2020/1/21
-                    .col-md-6.col-lg-3                        
-                        a.item.wow.fadeInLeft(href="news_detail.html")
-                            img(src="img/temp/n2.jpg")
-                            div.title 
-                                h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
-                                time 
-                                    i.iconfont.icon-time
-                                    | 2020/1/21
-                    .col-md-6.col-lg-3                     
-                        a.item.wow.fadeInLeft(href="news_detail.html")
-                            img(src="img/temp/n3.jpg")
-                            div.title 
-                                h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
-                                time 
-                                    i.iconfont.icon-time
-                                    | 2020/1/21
-                    .col-md-6.col-lg-3                  
-                        a.item.wow.fadeInLeft(href="news_detail.html")
-                            img(src="img/temp/n4.jpg")
-                            div.title 
-                                h3 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多
-                                time 
-                                    i.iconfont.icon-time
-                                    | 2020/1/21
-          
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_01.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_02.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_03.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_01.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_02.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_03.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_01.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_02.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_03.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_01.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_02.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
+                    .col-md-6.col-lg-4                       
+                        .item.wow.fadeInUp
+                            a(href="news_detail.html")
+                                img(src="img/temp/pro_03.jpg")
+                            .txt 
+                                h3 
+                                    a(href="news_detail.html") 诺奖、院士双双助阵 50余顶尖脑科学专家齐聚深圳
+                                .row
+                                    .col
+                                        time 2019-03-24
+                                    .col-auto
+                                        a(href="news.html") 科研进展
+
        
-            footer.news-footer.wow.fadeInUp
-                .row.align-items-center
-                    div.col
-                        ul.pagination                         
-                            li.page-item
-                                a.page-link(href='#') 1
-                            li.page-item.active(aria-current='page')
-                                a.page-link(href='#')
-                                    | 2                          
-                            li.page-item
-                                a.page-link(href='#') 3
-                            li.page-item
-                                a.page-link(href='#') 4
-                    .col-auto
-                        a.page-link.icon(href='#', tabindex='-1', aria-disabled='true') 
-                            i.iconfont.icon-prev
-                        a.page-link.icon(href='#') 
-                            i.iconfont.icon-next
+   
+                footer.news-footer.wow.fadeInUp
+                    ul.pagination.text-center
+                        li.page-item.disabled
+                            a.page-link(href='#', tabindex='-1', aria-disabled='true') 上一页
+                        li.page-item
+                            a.page-link(href='#') 1
+                        li.page-item.active(aria-current='page')
+                            a.page-link(href='#')
+                                | 2                          
+                        li.page-item
+                            a.page-link(href='#') 3
+                        li.page-item
+                            a.page-link(href='#') 下一页
         
 block bkfooter
     script.

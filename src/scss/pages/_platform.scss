@@ -1,0 +1,611 @@
+.page-platform{
+    padding-bottom: 0;
+    .s1{
+
+        padding-bottom: rem(22);
+        @include mq(md){
+            padding-bottom: 2rem;
+                margin-bottom: 2rem;border-bottom: 1px #ebebeb solid;  
+        }
+        @include mq(lg){
+               margin-bottom: 3rem;
+        }
+        .categories{
+         
+            justify-content: space-between;
+            display: none;
+            @include mq(lg){
+                display: flex;
+            }
+            a{
+                text-align: center;
+                
+                color:#333;
+                font-weight: bold;
+                padding-bottom: 1rem;
+                @include mq(lg){
+                    font-size: rem(14);
+                }
+                @include mq(xl){
+                    font-size: 1rem;
+                }
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                &:hover{
+                    color: $color-accent;
+                }
+           
+                &.active{
+                    color:$color-accent;     
+                    border-bottom: 4px $color-accent solid;                  
+                    font-size: 1rem;
+                    
+                    @include mq(md){
+                        font-size: rem(18);
+                    }
+                    @include mq(lg){
+                        font-size: rem(20);
+                    }
+                    @include mq(xl){
+                        font-size: rem(22);
+                    }
+                    @include mq(xxl){
+                        font-size: rem(24);
+                    }
+                }
+            }
+        }
+        .slcategories{
+            width: 100%;
+            height: 41px;
+            border:1px #ddd solid;
+            padding-left: .6rem;
+            outline: none;
+            @include mq(md){
+                max-width: 360px;
+                display: block;
+                margin: 0 auto;
+            }
+            @include mq(lg){
+                display: none;
+            }
+        }
+    }
+    
+    .s2{
+        padding-bottom: 3rem;
+        .pic{
+            margin-bottom: 1rem;
+            @include mq(md){
+                width: 250px;
+            }
+            @include mq(lg){
+                width: 250px;
+            }
+            @include mq(xl){
+                width: 300px;
+            }
+            @include mq(xxl){
+                width: auto;
+            }
+        }
+        .txt{
+            @include mq(lg){
+                padding-left: 1rem;
+            }
+            @include mq(xl){
+                padding-left: 3rem;
+            }
+            @include mq(xxl){
+                padding-left: 5rem;
+            }
+                .title{
+                    color: $color-primary;
+               
+                    font-size: rem(22);                    
+                    @include mq(md){
+                        font-size: rem(26);    
+                    }
+                    @include mq(lg){
+                        font-size: rem(30); margin-bottom: 1.5rem;
+                    }
+                    @include mq(xl){
+                        font-size: rem(34); margin-bottom: 2rem;
+                    }
+                    @include mq(xxl){
+                        font-size: rem(36);
+                    }
+                }
+                p{
+                    color: #333;
+                    text-align: justify;
+                    @include mq(lg){
+                        font-size: rem(14);
+                        margin-bottom: 1.5rem;
+                    }
+                    @include mq(xl){
+                        font-size: 1rem;
+                    }
+                    @include mq(xxl){
+                        font-size: rem(18);
+                    }
+                   
+                }
+
+            
+        }
+    }
+    .s3{
+        background-color: #f1f9ff;
+        padding-top: 3rem;
+        .item{
+            text-align: center;
+            margin-bottom: 6rem;
+            display: block;
+         
+          
+            img{
+                display: block;
+                margin: 0 auto;
+                transition: all .2s;
+                border-radius: 50%;
+            }
+            .avatar{
+                margin-bottom: 1.5rem;
+            }
+            h4{
+                font-size: 1rem;
+                color: #333;
+                @include mq(md){
+                    font-size: rem(18);
+                }
+                @include mq(lg){
+                    font-size: rem(20);
+                }
+                @include mq(xl){
+                    font-size: rem(22);
+                }
+                @include mq(xxl){
+                  
+                    font-size: rem(24);
+                }
+            }
+    
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.page-facilities{
+  
+    .s1{
+        @include mq(lg){
+            font-size: rem(14);
+        }
+        @include mq(xl){
+            font-size: 1rem;
+        }
+        @include mq(xxl){          
+            font-size: rem(18);
+        }
+        figure{
+            margin: 3rem 0;
+        }
+        .pic{
+            position: relative;
+            margin: 3rem 0;
+            .des{
+                background-color: rgba(0, 55, 106,.7);
+                color: #fff;
+                padding: 1rem;
+               
+                @include mq(lg){
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 1000; padding: 1rem;
+                }  
+                 
+                @include mq(xl){
+                  padding: 2rem;
+                }  
+                @include mq(xxl){
+                    padding: 2rem;
+                  }  
+            }
+        }
+
+    }
+}
+
+.page-labs{
+    background-color: #f6f6f6;
+    .item{
+        display: block;
+        background-color: #fff;
+        .pic{
+            overflow: hidden;
+            img{
+                display: block;
+                transition: all .2s;
+            }
+        }
+        h4{
+            padding: 1rem 1rem 1.5rem;
+            color: #333;
+        }
+        &:hover{
+            .pic{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    
+}
+
+.page-lab-detail{
+    padding-bottom: 0;
+    overflow-x: hidden;
+    .p1{
+        margin-bottom: 2rem;
+        text-align: justify;
+        @include mq(md){
+            font-size: rem(16);
+        }
+        @include mq(lg){
+            font-size: rem(16); margin-bottom: 3rem;
+        }
+        @include mq(xl){
+            font-size: rem(18); margin-bottom: 4rem;
+        }
+        @include mq(xxl){
+            font-size: rem(20); margin-bottom: 5rem;
+        }
+    }
+    .box{
+        margin-bottom: 2rem;
+        @include mq(md){
+            margin-bottom: 2.5rem;
+        }
+        @include mq(lg){
+            margin-bottom: 3rem;
+        }
+        @include mq(xl){
+            margin-bottom: 3rem;
+        }
+        @include mq(xxl){
+            margin-bottom: 5rem;
+        }
+        h3{
+            font-size: rem(22);
+            @include mq(md){
+                font-size: rem(24);
+            }
+            @include mq(lg){
+                font-size: rem(26);
+            }
+            @include mq(xl){
+                font-size: rem(28);
+            }
+            @include mq(xxl){
+                font-size: rem(30);
+            }
+        }
+    }
+    .c1{
+        position: relative;
+        color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        @include mq(md){
+            margin-bottom: 2rem;
+            font-size: rem(18);          
+            height: 542px; padding: 2rem 0 2rem 2rem;
+        }
+        @include mq(lg){
+            margin-bottom: 3rem;    font-size: rem(20);      padding: 3rem 0 3rem 5rem; 
+        }
+        @include mq(xl){
+            margin-bottom: 4rem; font-size: rem(22);   padding: 3rem 5rem 0;    
+        }
+        @include mq(xxl){
+            margin-bottom: 5rem; font-size: rem(24);       
+        }
+       
+     
+        .bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            height: 470px;
+        
+            max-width: none;
+            @include mq(md){
+                height: auto;
+            }
+            
+        }
+        
+        ol{
+            padding-left: 1rem;
+        }
+    }
+    .c2{
+        .title{
+            text-align: center;
+            font-size: rem(22);
+            color: #333;
+            @include mq(md){
+                font-size: rem(24);
+            }
+            @include mq(lg){
+                font-size: rem(26);
+            }
+            @include mq(xl){
+                font-size: rem(28);
+            }
+            @include mq(xxl){
+              
+                font-size: rem(30);
+            }
+        }
+        .memberlist{
+            padding-top: 1rem;
+            @include mq(md){
+                padding-top: 2rem;
+            }
+            @include mq(lg){
+                padding-top: 3rem;
+            }
+            @include mq(xl){
+                padding-top: 4rem;
+            }
+            @include mq(xxl){
+              
+                padding-top: 5rem;
+            }
+        }
+
+        
+    }
+    .s1{
+        background: url(../img/platform_08.jpg) no-repeat center bottom;
+        padding-bottom: 2rem;
+        @include mq(md){
+            padding-bottom: 5rem;
+        }
+        figure{
+            text-align: center;
+        }
+    }
+    .c3{
+        background: url(../img/platform_07.jpg);
+        position: relative;
+        color: #fff;
+        padding:2rem 1rem;
+     
+        margin: 0 -15px;
+        margin-bottom: 2rem;
+    
+        @include mq(md){
+            margin: 0 0 2rem;
+            padding:2rem 2rem;     
+        }
+        @include mq(lg){
+            padding: 2rem 5rem 2rem 0;  margin-bottom: 5rem;   height: 350px;
+        }
+        .bg{
+            display: none;
+            position: absolute;
+            left: -15px;
+            top: 0;
+            z-index: 0;
+             max-width: none;
+             @include mq(md){
+                 left: auto;
+                right: 0;
+            }
+            
+        }
+        .box{
+         
+            @include mq(lg){
+                @include vertical-align(); 
+           }
+        }
+     
+    }
+
+    .item{
+        text-align: center;
+        margin-bottom: 2rem;
+        display: block;
+        @include mq(md){
+           margin-bottom: 3rem;
+        }
+        @include mq(lg){
+            font-size: 1rem;   margin-bottom: 4rem;
+        }
+        @include mq(xl){
+            font-size: rem(18);  margin-bottom: 5rem;
+        }
+        @include mq(xxl){
+          
+            font-size: rem(20);  margin-bottom: 6rem;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            transition: all .2s;
+            border-radius: 50%;
+        }
+        .avatar{
+            margin-bottom: 1rem;
+        }
+        h4{
+            font-size: rem(18);
+            color: #333;
+            @include mq(md){
+                font-size: rem(22);
+            }
+            @include mq(lg){
+                font-size: rem(26);
+            }
+            @include mq(xl){
+                font-size: rem(28);
+            }
+            @include mq(xxl){
+              
+                font-size: rem(30);
+            }
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .s2{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        @include mq(xxl){
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+        .zib{
+            background-color: #3484df;
+            color: #fff;
+            padding:1.5rem 1rem 1rem;
+            @include mq(xxl){
+                padding: 2rem 3rem;
+            }
+            height: 100%;
+            &.ood{
+                background-color: #3f96f8;
+            }
+            h3{
+            
+                font-size: rem(20);
+                line-height: 1.6;
+                @include mq(md) {
+                    font-size: rem(22);  margin-bottom: 2rem;
+                }
+                @include mq(lg) {
+                    font-size: rem(24);
+                }
+                @include mq(xl) {
+                    font-size: rem(28);
+                }
+                @include mq(xxl) {
+                    font-size: rem(30);           
+                }
+            }
+            ol{
+                padding-left: 1rem;
+            }
+        }
+    }
+    .s3{
+        padding-top: 2rem;          
+        padding-bottom: 2rem;
+        @include mq(md) {
+            padding-top: 3rem;          
+            padding-bottom: 3rem;
+        }
+        @include mq(lg) {
+            padding-top: 4rem;          
+            padding-bottom: 4rem;
+        }
+        @include mq(xl) {
+            padding-top: 5rem;          
+            padding-bottom: 5rem;
+        }
+   
+        background-image:linear-gradient( -55deg, rgb(37,119,212) 0%, rgb(63,150,248) 50%, rgb(10,72,142) 100%);
+        .title-section{
+         
+            h3{
+                color: #fff;
+            }
+        }
+        .item{
+            color: #fff;
+            h4{
+                color: #fff;
+            }
+        }
+          
+    }
+}
+
+.page-support{
+    background-color: #f6f6f6;
+    .item{
+        background-color: #fff;
+        text-align: center;
+        padding: 0 1rem;
+        display: block;
+        height: 130px;
+        line-height: 130px;
+        margin-bottom: rem(20);
+        @include mq(lg) {
+            font-size: rem(14);
+        }
+        @include mq(xl) {
+            font-size: rem(16);
+        }
+        @include mq(xl) {
+            font-size: rem(18);           
+        }
+        &:hover{
+
+            background-image: url(../img/platform_12.png), linear-gradient( -174deg, rgb(37,119,212) 0%, rgb(63,150,248) 100%);
+            background-repeat: no-repeat,no-repeat;
+            background-position: right 10px bottom 10px,center center;
+
+            box-shadow: 0px 0px 24px 0px rgba(0, 90, 158, 0.1);
+            color: #fff;
+            font-size: rem(16);
+            @include mq(md) {
+                font-size: rem(18);
+            }
+            @include mq(lg) {
+                font-size: rem(20);
+            }
+            @include mq(xl) {
+                font-size: rem(22);
+            }
+            @include mq(xl) {
+                font-size: rem(24);
+            }
+              
+        }
+    }
+}
+
+.page-support-detail{
+    padding-bottom: 0;
+    .s1{
+        padding-bottom: 4rem;
+    }
+    .s2{
+        background-color: #f6f6f6;
+        padding-top: 3rem;padding-bottom: 4rem;
+        .c1{
+            margin-bottom: 2rem;
+            h4{
+                color: #2678d5;
+            }
+        }
+    }
+}

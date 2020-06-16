@@ -1,53 +1,95 @@
 extends includes/layout.pug
 
 block title
-    | About Us
+    | 联系我们
+
+block bkheader
+   
 
 block content
-    .banner.banner-contact(style="background-image:url(../img/temp/banner-contact.jpg)")
-        h1 Contact Us 
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_contact.jpg)")
+        .container
+            h1.title-page(style="padding-bottom:3rem;") 联系我们
+            
         
     .page.page-contact
-        section.container
-            .title-section
-                h2 Online message
-            form.formMessage(action="#")
-                .row.formline
-                    .col-lg-6      
-                        .row.align-items-center
+        section.s1.container
+            #baidumap.baidumap.wow.fadeInUp
+
+        section.s2.container
+            .row
+                .col-md
+                    ul
+                        li
+                            i.iconfont.icon-marker 
+                            | 地址：深圳市南山区西丽深圳大学城学苑大道1068号
+
+                        li 
+                            i.iconfont.icon-youbian 
+                            | 邮编：518055
+                        li 
+                            i.iconfont.icon-email 
+                            | 电子邮件：bcbdihr@gmail.com
+            
+                .col-md-auto
+
+                    .icon
+                        img(src="img/qrcode.png", alt="")
+                    .wechat 
+                        //- i.iconfont.icon-wechat 
+                        | 微信公众号
+                
+
+        section.s3.container
+            .links
+                .title-section
+                    h3.text-center 友情连接
+
+                .row
+                    .col-lg
+                        .row
                             .col-auto
-                                label.requre(for="name") Name          
-                            .col        
-                                input#name(type="text", name="name")    
-                        
-                        
-                    .col-lg-6
-                        .row.align-items-center
+                                .logo
+                                    img(src="img/con_02.png", alt="")
+                            .col 
+                                .txt
+                                    h4 中国科学院深圳先进技术研究院脑认知与脑疾病研究所
+                                    p The Brain Cognition and Brain Disease Institute of Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+                
+                    .col-lg
+                        .row
                             .col-auto
-                                label.requre(for="email") Email
-                            .col        
-                                input#email(type="text", name="email")    
+                                .logo
+                                    img(src="img/con_02.png", alt="")
+                            .col 
+                                .txt
+                                    h4 中国科学院深圳先进技术研究院
+                                    p Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+                
 
 
-                .row.formline
-                    .col-lg-6      
-                        .row.align-items-center
-                            .col-auto
-                                label(for="name") Phone          
-                            .col        
-                                input#phone(type="text", name="phone")    
-                        
-                .row.formline    
-                    .col-lg-12
-                        .row.align-items-center
-                            .col-auto
-                                label.requre(for="problem") Problem
-                            .col        
-                                input#problem(type="text", name="problem")    
-                .form-grounp
-                    button.btn.btn-primary(type="submit") SUBMIT
- 
 
-        
+
 block bkfooter
+
+
+    script(src='http://api.map.baidu.com/api?v=3.0&ak=OBGqtysX9tHecbODIsmZO8UwmbqeFeAG',type="text/javascript")
     
+    script.
+        var map = new BMap.Map("baidumap");          
+        map.addControl(new BMap.NavigationControl());    
+        map.addControl(new BMap.ScaleControl());    
+        map.addControl(new BMap.OverviewMapControl());    
+        map.enableScrollWheelZoom(true);
+        var point = new BMap.Point(113.934382,22.579212);  
+        map.centerAndZoom(point, 16);                
+        var marker = new BMap.Marker(point);        // 创建标注    
+        map.addOverlay(marker);  
+
+        $(function () {
+        
+  
+        
+        });
+
+     

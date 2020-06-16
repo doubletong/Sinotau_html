@@ -51,12 +51,10 @@ $(document).ready(function() {
         case "/index.html":     
             $(".mainav li:nth-of-type(1) a").addClass("active");
         break;
-        case "/table_basic.html":   
-            $(".mainmenu>li:nth-of-type(2)").addClass("nav-open");
-            $(".mainmenu>li:nth-of-type(2) .submenu li:nth-of-type(1) a").addClass("active");
+        case "/platform.html":   
+            $(".mainav li:nth-of-type(4) a").addClass("active");
             break;
-     
-        
+           
        
         case "/404.html":
             $(".mainmenu>li.ortherpage").addClass("nav-open");
@@ -76,6 +74,9 @@ $(document).ready(function() {
             break;
     case "/contact.html":            
         $(".mainav li:nth-of-type(7) a").addClass("active");
+        break;
+    case "/cooperation.html":            
+        $(".mainav li:nth-of-type(6) a").addClass("active");
         break;
     case "/about.html":            
         $(".mainav li:nth-of-type(1) a").addClass("active");

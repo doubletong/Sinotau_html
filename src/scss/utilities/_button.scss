@@ -3,7 +3,10 @@
     display: inline-block;
     border:1px #fff solid;
     color: #fff; 
-    padding: .6rem 2rem;
+    padding: .3rem 1.5rem;
+    @include mq(md){
+        padding: .6rem 2rem;
+    }
       @include mq(lg){
         padding: .9rem 4rem;
     }
