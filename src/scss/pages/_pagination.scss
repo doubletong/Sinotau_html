@@ -9,33 +9,39 @@
                 a {
                         display: block;
                         padding: .2rem .6rem;
-                        color: #999;
-                        border:1px #ebebeb solid;
+                        color: #999;                     
                         background-color: #fff;
-
+                        font-weight: bold;
                         @include mq(md) {
                                 padding: .3rem 1rem;
-                        }
-
-                     
+                        }                    
 
                 }
 
                 &.active {
                         a {
-                                color: #fff;
-                                background-color: $color-primary;
+                                color: #333;
+                               
                               
                         }
                 }
 
                 &:hover {
                         a {
-                                background-color: $color-primary;
-                                color: #fff;
+                                
+                                color: #333;
                         }
                 }
 
+                .prev,.next{
+                        background-color: #333;
+                        color: #fff;
+
+                        &:hover{
+                                color: $color-primary;
+
+                        }
+                }
 
         }
 
@@ -47,6 +53,6 @@
             color: $color-primary;
         }
         .iconfont{
-              font-size: 2rem;
+              font-size: rem(14);
         }
 }

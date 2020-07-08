@@ -1,126 +1,118 @@
 extends includes/layout.pug
 
 block title
-    | 院况简介
+    | 关于我们
 
 block bkheader
+    link(href='js/vendor/swiper/css/swiper.min.css', rel='stylesheet')
 
 
 block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_about.jpg)")
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banner/about.jpg)")
         .container
-            h1.title-page 关于我们
-            nav.submenus 
-                a.active(href="about.html") 院况简介              
-                a(href="leadership.html") 现任领导             
-                a(href="institutions.html") 机构设置
+            .row.justify-content-end
+                .col-6
+                    .intro
+                        h1.title-page 公司简介
+                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
        
         
     .page.page-about
-        section.section.container
+        section.s1.container
             .title-section.wow.fadeInUp             
-                h2.text-center 院况简介
+                h2.text-center 资质证书
 
      
-            .intro.wow.fadeInUp
-                p 深港脑科学创新研究院面对国家推动粤港澳大湾区国际科技产业创新中心建设的战略；需求，充分发挥深圳、香港两地人才、教育、资源优势，结合脑科学与类脑智能领域的国际前沿，以创新驱动发展为指引，以“国际资源汇聚”、“重点领域突破”和“全球科技开放”为建设原则，依托深圳先进技术研究院，与香港科技大学牵头建设，联合南方科技大学、深圳大学、北京大学深圳研究生院等深港脑科学领域的优势研究机构合作共建，开放融合。
-                
-            .intro2.wow.fadeInUp                
-                figure.pic
-                    img(src="img/about_01.png", alt="")
-                .row
-                    .col-lg-auto.order-lg-last
-                        img.img01(src="img/about_02.jpg", alt="")
-                    .col-lg
-                        p.des 深港脑科学创新研究院围绕脑认知及脑疾病的神经机制这一核心问题，在“认知的神经基础”、“重大脑疾病机理”、“重大脑疾病诊疗策略”和“脑科学研究新技术方法”四个重点领域开展研究，为深圳脑科学科技设施、粤港澳脑与类脑智能、生物医药、生命健康与医疗器械研发等领域原始创新和产业升级聚集智力、聚集技术、聚集国际创新资源，并通过探索体制创新，助力构建“基础研究 + 技术攻关 + 成果产业化 + 科技金融” 的全过程创新生态链。
         
-        
-        
-        section.section.container
-            .title-section.wow.fadeInUp             
-                h2.text-center 建设定位
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书2
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书123
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书34
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书2
+                    .swiper-slide
+                        img(src="img/zheng/1.jpg", alt="")
+                        h4 证书1
 
-            .intro.wow.fadeInUp
-                p 面对国家和地方科技发展的重大战略需求，在深圳市的支持下建设成为具有全球影响力、在国内有不可或缺学术地位的脑科学研究基地，成为国家脑科学发展南方布局的重要载体，以及人才培养和产业化基地。
+                .swiper-pagination
+                .swiper-button-next
+                    i.iconfont.icon-right
+                .swiper-button-prev
+                    i.iconfont.icon-left
+            
+             
         
-        
-        
-        section.s1.section(style="background-image:url(img/about_03.jpg)")
+        section.s2
             .container
-                .title-section.wow.fadeInUp
-                    h2.text-center 总体目标
-                p.p1.wow.fadeInUp 以脑科学与脑疾病领域国际前沿科学问题为创新驱动力，通过对国际前沿生物技术的开发和跨物种研究，产生一系列有国际影响力、原创性的科技成果，为深圳脑科学基础设施、深圳实验室建设和国家实验室建设汇集高端人才，支撑脑科学领域原始创新。
+                .row.justify-content-end
+                    .col-md-5
+                        .contact
+                            h3.title  联系方式
 
-                .row
-                    .col-md
-                        .item
-                            .num.wow.fadeInUp 1
-                                small 个
-                            h3.wow.fadeInUp 创新焦点
-                            p.wow.fadeInUp 将深港脑院建设成为：“一个创新焦点”，国际创新资源汇聚的焦点。充分发挥深港在脑科学领域的优势资源，进一步吸引国际高端创新人才和国际前沿技术，使深港脑院成为国际脑科学领域创新资源汇聚的焦点之一。
-                
-                    .col-md
-                        .item
-                            .num.wow.fadeInUp 2
-                                small 个
-                            h3.wow.fadeInUp 创新引擎
-                            p.wow.fadeInUp “两个创新引擎”，国际学术引领的创新引擎、粤港澳科技产业引领的创新引擎。
-                
-
-                    .col-md
-                        .item
-                            .num.wow.fadeInUp 5
-                                small 个
-                            h3.wow.fadeInUp 能力提升
-                            p.wow.fadeInUp 助力深圳实现“五个能力提升”：完善深圳市涵盖脑科学基础和转化研究的科研设施平台建设和团队建设；提升深港脑科学、脑技术、脑疾病研究领域源头创新能力、提升人才培养能力、提升产业推动能力、提升科研支撑能力、提升战略咨询能力，为粤港澳生物医药、人工智能领域创新驱动发展做出实质性贡献。
-
-                
-        section.s2.section
-            .container
-                .title-section.wow.fadeInUp
-                    h2.text-center 研究方向
-                p.p1.wow.fadeInUp 结合脑科学研究的国际前沿，国家推动粤港澳大湾区建设的战略需求，以及国家脑科学重大项目拟定布局方向，通过深圳、香港研究团队的深度融合，深港脑院以认知和脑疾病的为核心，在“认知的神经基础”“重大脑疾病机理”“重大脑疾病诊疗策略”和“脑科学研究新技术方法”四个重点领域开展研究。
+                            .item
+                                .icon
+                                    i.iconfont.icon-tel
+                                h4 联系电话
+                                p 0755-88606948
 
 
-                .row.no-gutters
-                    .col-md-6.col-lg
-                        .item   
-                            .bg 1                 
-                            h3.wow.fadeInUp 认知的神经基础
-                            p.wow.fadeInUp 重点针对本能行为、情绪情感、注意、社会行为、学习记忆等脑功能，以及与脑疾病相关的认知障碍的发生机制。
-
-                    .col-md-6.col-lg
-                        .item.item1  
-                            .bg 2         
-                            h3.wow.fadeInUp 重大脑疾病的机理研究
-                            p.wow.fadeInUp 重点针对阿尔茨海默症、自闭症、情绪障碍、成瘾、脑卒中、睡眠障碍等神经精神疾病，揭示疾病发生发展的病理生理学机制和治疗新靶点等。
-
-                    .col-md-6.col-lg
-                        .item  
-                            .bg 3
-                            h3.wow.fadeInUp 重大脑疾病的诊疗手段
-                            p.wow.fadeInUp 建立脑疾病的生物标志物、认知功能的定量检测指标、功能和结构脑成像的影像指标、脑疾病个性化诊断、评估和治疗等；研发可用于针对脑疾病的有效预防、干预手段。
-
-                    .col-md-6.col-lg
-                        .item.item1       
-                            .bg 4
-                            h3.wow.fadeInUp 脑科学研究新技术和新方法
-                            p.wow.fadeInUp 围绕脑疾病机理和诊疗技术需求，在解析特定脑区的细胞图谱、分子图谱和介观尺度结构与功能图谱等领域布局新技术研发。
-         
-         
+                            .item
+                                .icon
+                                    i.iconfont.icon-address
+                                h4 联系地址
+                                p 深圳市福田区深南大道6009号NEO大厦B座18C
                     
-                    
-
+        
+        
 
         
 
 block bkfooter
 
-    
+    script(src='js/vendor/swiper/js/swiper.min.js')
     script.
-      
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                }
+            }
+        });
         $(function () {
-        
+            
   
         
         });

@@ -1,199 +1,130 @@
+.banner-about{
+   height: auto;
+    .intro{
+       background-color: #000000;
+       height: 580px;
+       padding:11rem 5.5rem 0;
+       background-image: url(../img/c2.png), url(../img/c1.png);
+       background-repeat: no-repeat,no-repeat;
+       background-position: top -100px right  -110px, left 20px bottom -220px;
+
+    }
+    .container{
+        
+        h1.title-page{
+            color: $color-primary;
+            font-size: rem(24);            
+            font-weight: lighter;
+          
+            @include mq(lg){
+                font-size: rem(30);             
+            }
+        }
+        p{
+            color: #fff;
+            text-align: justify;
+        }
+       
+    }
+    
+}
 .page-about{
     overflow: hidden;
-    .intro{
-        text-align: justify; 
-        margin-bottom: 2rem;
-        @include mq(md){
-            margin-bottom: 3rem;
-        }
-        @include mq(lg){
-            margin-bottom: 4rem;
-        }
-    }
+    
 
-    .intro2{
-        position: relative;
+   
+    .s1{
       
-        color: #fff;
-       
-        margin: 0 -15px;padding: 0 15px;
-        @include mq(md){          
-            padding: 2rem;           
-        }
-        @include mq(lg){
-            margin: 0;  height: 428px;
-            padding: 0;
-           
-        }
-       .pic{
-           position: absolute;
-           z-index: -1;
-           top:150px;
-           left: -15px;
-           @include mq(md){
-            top:240px;
-        }
-           @include mq(lg){
-               left: auto;
-               right: 80px;  top: 42px;
-           }
-           img{
-               max-width: none;
-           }
-       }
-       .des{
-            padding: 1rem 0 0;
-            text-align: justify;
-            @include mq(md){
-                padding: 2rem 0 0;
-            }
-           @include mq(lg){
-            padding-top: 8.5rem;
-            padding-right: 3rem;
-        }
-       
-       }
-       .img01{
+       margin-bottom: 5rem;
+       img{
            display: block;
            margin: 0 auto;
-        @include mq(md){
-          
+       }
+       h4{
+        text-align: center;
+        padding-top: 1rem;
         }
-     }
-    }
-    .s1{
-        color: #fff;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background-size: cover;
-        @include mq(md){
-            padding-top: 3rem;
-        padding-bottom: 3rem;
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-        padding-bottom: 4rem;
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-        padding-bottom: 5rem;
-        }
-        .title-section{
-            h2{
-                color: #fff;
-                
-            }
-        }
-        .p1{
-            margin-bottom: 2rem;
-            text-align: justify;
-            @include mq(lg){
-                margin-bottom: 2.5rem;
-            }
-            @include mq(xl){
-                margin-bottom: 3rem;
-            }
-            @include mq(xxl){
-                margin-bottom: 3.5rem;
-            }
-        }
-        .item{
-            text-align: center;
-            .num{
-                font-size: rem(20);
-                @include mq(md){
-                    font-size: rem(30);
-                }
-                @include mq(lg){
-                    font-size: rem(40);
-                }
-                @include mq(xl){
-                    font-size: rem(50);
-                }
-                @include mq(xxl){
-                    font-size: rem(60);
-                }
-                small{
-                    font-size: rem(12);
-                    @include mq(md){
-                        font-size: rem(14);
-                    }
-                    @include mq(lg){
-                        font-size: 1rem;
-                    }
-                    @include mq(xl){
-                        font-size: rem(18);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(20);
-                    }
-                }
-            }
-            h3{
-                font-size: 1rem;
-                @include mq(md){
-                    font-size: rem(18);
-                }
-                @include mq(lg){
-                    font-size: rem(20);
-                }
-                @include mq(xl){
-                    font-size: rem(22);
-                }
-                @include mq(xxl){
-                    font-size: rem(24);
-                } 
-            }
-            p{
-                text-align: justify;
-           
-                @include mq(lg){
-                    padding: 0 1.2rem;
-                }
-            }
-        }
+       .swiper-container{
+           padding-bottom: 5rem;
+       }
+     
+       .swiper-container-horizontal>.swiper-pagination-progressbar{
+        bottom: 40px; top: auto;
+      
+        width: auto;
+        left: 3rem;
+        right: 3rem;
+       }
+
+       .swiper-button-next, .swiper-button-prev{
+           top: auto;
+           bottom: 26px;
+           width: 34px;
+           height: 34px;
+           border-radius: 50%;
+           border:1px #ddd solid;
+           background-size: 35% auto;
+           opacity: 1;
+           background-image: none;
+           color: #ddd;
+           text-align: center;
+           line-height: 32px;
+           left: 0;
+         &:hover{
+             border-color: $color-primary;
+             color: $color-primary;
+         }
+       }
+       .swiper-button-next{
+           right: 0;
+           left: auto;
+       }
+       .swiper-container-horizontal>.swiper-pagination-progressbar{
+           height: 6px;
+           border-radius: 3px;
+           background-color: #f1f0fb;
+       }
+       .swiper-pagination-progressbar-fill{
+        height: 4px;
+        margin-top: 1px;border-radius: 2px;
+        background-color: $color-primary;
+       }
     }
     .s2{
-        .p1{
-            margin-bottom: 2rem;
-            @include mq(lg){
-                margin-bottom: 2.5rem;
-            }
-            @include mq(xl){
-                margin-bottom: 3rem;
-            }
-            @include mq(xxl){
-                margin-bottom: 3.5rem;
+        background: url(../img/about_01.jpg) no-repeat center center;
+        height: 600px;
+        .contact{
+
+            padding:8rem  0 0  8rem;
+            .title{
+                font-size: rem(30);
+                margin-bottom: 2rem;
             }
         }
 
         .item{
-            background-color: #3484df;
-            color: #fff;
-            padding:3rem 2rem 0;
-            height: 370px;
-            position: relative;
-            .bg{
-                position: absolute;
-                right: 0;
-                bottom: -2rem;
-                z-index: 1;
-                font-size: rem(300);
-                line-height: 1;
-                color: rgba(255,255,255,.1);
+
+            margin-bottom: 2rem;
+            @include mq(lg){
+                font-size: 1rem;
             }
-            h3{
-                text-align: center;
-                margin: 0 -1rem 1.5rem;         
-                font-size: rem(20);
+        
+      
+            .icon{
+                line-height: 1.3;
+                .iconfont{
+                    font-size:2rem;
+
+                }
+            }
+            h4{
+                margin: 0;
             }
             p{
-                text-align: justify;
+                margin: 0;
             }
-
-            &.item1{
-                background-color: #3f96f8;
-            }
+         
+          
         }
     }
 

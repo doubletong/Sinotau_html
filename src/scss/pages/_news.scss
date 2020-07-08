@@ -1,18 +1,21 @@
 .page-news {
-    background-color: #f6f6f6;
+  
     .s1{
-        border-bottom: 1px #ebebeb solid;
+      
         padding-bottom: rem(22);
         margin-bottom: 3rem;
         .categories{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             a{
                 text-align: center;
-                
-                color:#333;
-                font-weight: bold;
-                padding-bottom: 1rem;
+                border-right: 1px #ddd solid;
+                color:#999;
+                line-height: 1;              
+                padding:0 2rem;
+                &:last-child{
+                    border-right: none;
+                }
                 @include mq(lg){
                     font-size: rem(14);
                 }
@@ -27,22 +30,9 @@
                 }
            
                 &.active{
-                    color:$color-accent;     
-                    border-bottom: 4px $color-accent solid;                  
-                    font-size: 1rem;
-                    
-                    @include mq(md){
-                        font-size: rem(18);
-                    }
-                    @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(22);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(24);
-                    }
+                    color:#333;     font-weight: bold;
+                                
+                   
                 }
             }
         }
@@ -50,28 +40,62 @@
     .s2{
      
         .newslist{
+            padding: 0 6rem;
             .item{
-                background-color: #fff;
+              
                 display: block;
-                margin-bottom: rem(30);
-                &:hover{
-                    box-shadow: 0 0 20px rgba(0,0,0,.1);
+                margin-bottom: 3rem;
+                .pic{
+                    display: block;
+                    img{
+                        display: block;
+                        transition: all .2s;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
                 }
                 .txt{
-                    padding: 1rem;
+                    padding-left: 2rem;
+                   
+                   .top{
+                       margin-bottom: 1rem;
+                       padding-top: .8rem;
+                       time{
+                           font-weight: bold;
+                       }
+                       .cate{
+                       display: inline-block;
+                            background-color: rgb(248, 217, 94);
+                          line-height: 24px;
+                          border-radius: 12px;
+                            color: #000;
+                            height: 24px;
+                            z-index: 33;
+                            padding: 0 1.2rem;
+                 
+                       }
+                   }
                     h3{
                         line-height: 1.6;
-                        color: #333;
-                        min-height: 90px;
+                        color: #333;                    
+                        font-size: rem(16);
+                  
+
+                        @include mq(md){
+                            font-size: rem(18);
+                        }
                         @include mq(lg){
-                            font-size: rem(14);
+                            font-size: rem(20);
                         }
                         @include mq(xl){
-                            font-size: 1rem;
+                            font-size: rem(22);
                         }
                         @include mq(xxl){
                           
-                            font-size: rem(18);
+                            font-size: rem(24);
                         }
                         a{
                             color: #333;
@@ -80,16 +104,14 @@
                             }
                         }
                     }
-                    time{
-                        color: $color-accent;
+                    .des{
+                        color: #999;
                     }
+                   
                 }
             }
         }
             
-           
-         
-           
         
     }
     
@@ -110,24 +132,14 @@
     
     article.container{
      
-        @include mq(lg){
-            font-size: rem(14);
-        }
-        @include mq(xl){
-            font-size: rem(16);
-        }
-        @include mq(xxl){
-            font-size: rem(18);
-        }
+       
         header{
-            text-align: center;
-            margin-bottom: 1rem;
-            border-bottom: 1px #eee solid;
+            text-align: center;          
             padding-bottom: 2rem;
             @include mq(md) {
                 margin-bottom: 2rem;
             }
-            h1{
+            h1.title-news{
                 
                 font-size: rem(22);
                 margin-bottom: 1rem;
@@ -135,6 +147,15 @@
                 text-transform: uppercase;
                 @include mq(md) {
                     font-size: rem(24);  margin-bottom: 1rem;
+                }
+                @include mq(lg){
+                    font-size: rem(26);
+                }
+                @include mq(xl){
+                    font-size: rem(30);
+                }
+                @include mq(xxl){
+                    font-size: rem(32);
                 }
             }
             .note{
@@ -151,7 +172,18 @@
                 padding-top: 2rem;
             }
         }
-        
+        .content{
+            margin-bottom: 5rem;
+        }
+            .news-nav{
+                display: block;
+                padding: .8rem 4rem;
+                border:1px #e6e6e6 solid;
+                font-size: 1rem;
+            }
+            
+     
+       
     }
     
   

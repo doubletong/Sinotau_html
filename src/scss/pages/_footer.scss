@@ -1,128 +1,61 @@
 
-.site-footer{
-    color: #fff;  
-    background: $color_primary;    
-    a{
-        color: #fff;
-        &:hover{
-            color: yellow;
-        }
-    }
-    .botbar{
-        background-color: $color-secondary;
-        padding-top: rem(22);
-        padding-bottom: rem(22);
-        .contact{
-            @include reset-list();
-            li{
-                margin-bottom: 1rem;
-              
-                @include mq(lg){
-                    margin-left: 6rem;  display: inline-block;  margin-bottom: 0;
-                }
-                .iconfont{
-                    display: inline-block;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    text-align: center;
-                    margin-right: .8rem;
-                    color: $color-secondary;
-                    line-height: 30px;
-                }
-
-                &:last-child{
-                    margin-bottom: 0;
-                }
-            }
-           
-        }
-    }
-
-    .logo{       
-        margin-bottom: 1rem;
-        width: 100px;
-   
-        @include mq(md){
-            width: auto;
-        }
-        @include mq(lg){
-            width: auto; 
-        }
-        img{
-            display: block;
-        }
+.site-footer{   
+    background-color: #fafafa;
+    .bottop{
+        padding-top: rem(40);
+        padding-bottom:rem(40);
     }
     .botnav{
-        display: none;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        @include mq(lg){
-           display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            margin-right: 3rem;      
+              
         }
-        @include mq(xxl){
-            padding-top: 3rem;
-            padding-bottom:3rem;
-        }
-        h4{
+    }
+    .social{
+        a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #060202;
+            margin-left: .5rem;
             text-align: center;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
-        ul{
-            @include reset-list();
-            li{
-                text-align: center;
-                margin-bottom: .6rem;
-                a{
-                    font-size: rem(14);
-                }
+            line-height: 40px;
+            color: #fff;
+            &:hover{
+                background-color: $color-primary;
+                color: #000;
             }
         }
     }
+
+   
     .bot{
-        border-top: #034582 1px solid;
-        padding: 1rem 0;
-        .links{
-            border-bottom: 1px lighten($color: $color_primary, $amount: 20) solid;
-            padding-bottom: .6rem;
-            margin-bottom: .6rem;
-            @include mq(md){
-                text-align: center;
-            }
-            @include mq(lg){
-                text-align: left;
-                border-bottom: none;
-            }
+        font-size: rem(12);
+        border-top: #ededed 1px solid;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .beian{
+           
             a{
-                text-align: center;
-                display: block;
-                padding: 0 1.5rem;
-             
-                @include mq(md){
-                    display: inline-block;   border-left: 1px $color-secondary solid;
-                }
-                &:first-child{                   
-                    @include mq(md){
-                        border: none;
-                      
-                    }
-                    @include mq(lg){
-                        padding-left: 0;
-                    }
-                }
+                color: #999;
             }
         }
+        .add{
+            text-align: center;
+        }
+       
         .copyright{
-            color: #1c71d1;
+            color: #999;
             text-align: center;
             @include mq(lg){
-                text-align: left;
+                text-align: right;
             }
-            a{
-                color: #1c71d1;
-            }
+        
         }
     }
 

@@ -1,0 +1,43 @@
+
+.page-forum{
+   .item{
+       margin-bottom: 5rem;
+       &:nth-child(2n+1){
+           background-color: #fafafa;
+       }
+       .txt{
+           padding: 1rem 1rem 0;
+       }
+       .title{
+           font-size: rem(24);
+       }
+       .des{
+           color: #999;
+
+       }
+       .userinfo{
+            border-bottom: 1px #eee solid;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+        .note{
+            color: #333;
+            font-size: rem(16);
+            .view{
+                font-weight: bold;
+                display: inline-block;
+                color: #999;
+                margin-left: 1rem;
+                .iconfont{
+                    font-weight: normal;
+                    color: #333;
+                    margin-right: .5rem;
+                }
+            }
+            
+        }
+    
+   }
+ 
+    
+}
