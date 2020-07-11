@@ -4,7 +4,7 @@
 body {
     color: #1a1a1a;
     background-color: #fff;
-    font-family:  PingFangSC-Regular,"Microsoft YaHei","Helvetica","Helvetica Neue", "Arial", sans-serif;     
+    font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
     max-width: 1920px;
     margin: 0 auto;
@@ -106,8 +106,7 @@ a {
     h3 {    
       
         font-size: rem(20);
-        text-transform: uppercase;            
-        color: $color-accent;
+        text-transform: uppercase;  
         @include mq(md) {
             font-size: rem(22);
         }

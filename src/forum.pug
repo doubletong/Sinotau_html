@@ -1,7 +1,7 @@
 extends includes/layout.pug
 
 block title
-    | 合作交流
+    | 论坛
 
 block bkheader
    
@@ -10,8 +10,12 @@ block content
     .banner.banner-forum.wow.fadeInUp(style="background-image:url(img/forum_01.jpg)")
       
 
-    .page.page-forum
-        .container
+    .page.page-forum.container
+        a.publish(href="publish.html") 
+            i.iconfont.icon-editor 
+            | 发起主题
+            
+        .post-list
             .item
                 .row
                     .col-md-4
@@ -33,12 +37,17 @@ block content
                                         time 2019/12/02  17:20
                                     .col-auto
                                         .view
+                                            i.iconfont.icon-star
+                                            | 80
+                                        .view
                                             i.iconfont.icon-view
                                             | 2000
                                         .view.comment
                                             i.iconfont.icon-comment
                                             | 80
-                                    
+                                        .view
+                                            i.iconfont.icon-share
+                                            | 转发
 
 
             .item
@@ -62,12 +71,17 @@ block content
                                         time 2019/12/02  17:20
                                     .col-auto
                                         .view
+                                            i.iconfont.icon-star
+                                            | 80
+                                        .view
                                             i.iconfont.icon-view
                                             | 2000
                                         .view.comment
                                             i.iconfont.icon-comment
                                             | 80
-                                    
+                                        .view
+                                            i.iconfont.icon-share
+                                            | 转发
 
             .item
                 .row
@@ -90,11 +104,17 @@ block content
                                         time 2019/12/02  17:20
                                     .col-auto
                                         .view
+                                            i.iconfont.icon-star
+                                            | 80
+                                        .view
                                             i.iconfont.icon-view
                                             | 2000
                                         .view.comment
                                             i.iconfont.icon-comment
                                             | 80
+                                        .view
+                                            i.iconfont.icon-share
+                                            | 转发
                                     
             .item
                 .row
@@ -117,11 +137,17 @@ block content
                                         time 2019/12/02  17:20
                                     .col-auto
                                         .view
+                                            i.iconfont.icon-star
+                                            | 80
+                                        .view
                                             i.iconfont.icon-view
                                             | 2000
                                         .view.comment
                                             i.iconfont.icon-comment
                                             | 80
+                                        .view
+                                            i.iconfont.icon-share
+                                            | 转发
                                     
             .item
                 .row
@@ -144,11 +170,17 @@ block content
                                         time 2019/12/02  17:20
                                     .col-auto
                                         .view
+                                            i.iconfont.icon-star
+                                            | 80
+                                        .view
                                             i.iconfont.icon-view
                                             | 2000
                                         .view.comment
                                             i.iconfont.icon-comment
                                             | 80
+                                        .view
+                                            i.iconfont.icon-share
+                                            | 转发
                                     
 
 

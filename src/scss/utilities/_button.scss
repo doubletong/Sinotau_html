@@ -1,15 +1,17 @@
 .btn {
   
     display: inline-block;
-    border:1px #fff solid;
+    border:none;
     color: #fff; 
-    padding: .3rem 1.5rem;
-    @include mq(md){
-        padding: .6rem 2rem;
-    }
-      @include mq(lg){
-        padding: .9rem 4rem;
-    }
+    padding: .2rem 1.5rem;
+        @include mq(md){
+            padding: .3rem 2rem;
+            font-size: rem(14);
+        }
+        @include mq(lg){
+            padding: .3rem 3rem;
+            font-size: 1rem;
+        }
     &:hover{
         background-color: #fff;
         color: $color-primary;
@@ -28,7 +30,7 @@
         }
     }
     &.btn-primary{
-        background-color: $color-primary;color: #fff;
+        background-color: #000;color: #fff;
         &:hover{
             background-color:darken($color-primary,10%);
         }

@@ -1,10 +1,10 @@
 extends includes/layout.pug
 
 block title
-    | 脑所党支部
+    | 期权小白入门系列（训练营模式）
 
 block bkheader
-   
+   link(href='js/vendor/mediaelement/mediaelementplayer.min.css', rel='stylesheet')
 
 block content
     
@@ -17,29 +17,7 @@ block content
                 .type 直播课程
                   
             section.s2
-                .row.no-gutters
-                    .col-md-auto
-                        .leftcol
-                            p 共7节课程 | 共有 5000 人已学习
-                            .price 
-                                small ￥
-                                strong 468
-                            .status 课程已结束
-
-                    .col-md
-                        .rate
-                            .row.justify-content-md-center
-                                .col-auto
-                                    .title 难度系数
-                                .col-auto
-                                    ul.list
-                                        li 综合难度
-                                        li 理论知识
-                                        li 实战操作
-                    .col-md-auto
-                        .qr
-                            img(src="img/courses_04.jpg", alt="")
-                            p 扫一扫，立即报名期权星球
+                video(src="img/Background02.mp4" poster="img/poster.jpg" controls="controls"  autoplay)
 
 
             section.s3
@@ -165,16 +143,16 @@ block content
                         | 价值千金的经验总结
             
 
-
+    .payqrcode
+        img(src="img/courses_06.png", alt="付款二维码")
+        p 付款二维码
 block bkfooter
-
+    script(src='js/vendor/mediaelement/mediaelement-and-player.min.js')
 
     script.
       
         $(function () {
-        
-  
-        
+            $('video, audio').mediaelementplayer(); 
         });
       
        

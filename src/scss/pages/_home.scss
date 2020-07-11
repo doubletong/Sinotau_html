@@ -4,417 +4,282 @@
 
 }
 .page-home {
-    
-    .s1{  
+    .s1{ 
+        height: 100vh; 
         padding-top: 2rem;
         padding-bottom: 2rem;
-        .ann-title{
-           color: $color-primary;
-           border-right:1px #ddd dashed;
-           text-align: center;
-     
-            @include mq(md){
-                padding-right: 5rem;
-                float: left;
-            }
-            @include mq(lg){
-                padding-right: 4rem;
-               
-            }
-            @include mq(xl){
-                padding-right: 5rem;
-               
-            }
-            img{
-                width: 120px;
-                display: none;
-                margin-bottom: 1rem;
-                @include mq(md){
-                    display: block;
-                }
-                @include mq(lg){
-                    width: 105px;
-                }
-                @include mq(xl){
-                    width: 110px;
-                }
-                @include mq(xxl){
-                    width: 120px;
-                }
-            }
-            h3{
-                font-size: rem(24);
-                line-height: 1;
-              
-                @include mq(lg){
-                    font-size: rem(20);
-                }
-                @include mq(xl){
-                    font-size: rem(22);
-                }
-                @include mq(xxl){
-                    font-size: rem(24);
-                }
-                .iconfont{
-                    display: none;
-                    @include mq(md){
-                        display: inline-block;
+        background: url(../img/home_bg.jpg) no-repeat center top;
+        background-size: cover;
+
+        .container{
+             padding-top: 12rem;
+            .txt{
+                color: #fff;
+                max-width: 500px;
+                h3{
+                    font-size: 3rem;
+                    line-height: 1;
+                    &.title{
+                        font-weight: lighter;
                     }
+                    &.title2{
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                p.des{
+                    margin-bottom: 3rem;
+                }
+
+                .btn-warning{
+                    text-align: center;
+                        background-color: rgb(242, 206, 63);
+                    font-size: 1rem;
+                        width: 180px;
+                        height: 50px;
+                    line-height: 50px;    
+                    display: block;    
+                    border-radius: 25px; 
+                    &:hover{
+                        background-color: #fff;
+                        color: #333;
+                    }         
+                      
                 }
             }
         }
-       
-        .ann-last{
-            padding: 0rem 2rem;
-           position: relative;
         
-           @include mq(md){
-                margin-left: 250px;
-                padding: 0rem 4rem;
-            }
-            @include mq(lg){
-              
-                padding: 0rem 5rem;
-            }
-           .swiper-button-next, .swiper-button-prev{
-            width: 21px;
-            height: 21px;
-            border-radius: 50%;
-            background-image: linear-gradient( -174deg, rgb(37,119,212) 0%, rgb(63,150,248) 100%);
-            color: #fff;
-            line-height: 17px;
-            text-align: center;
-            padding: 0;
-            margin-top: -10px;
-            left: 0;
-            @include mq(lg){
-                line-height:21px;
-            }
-              .iconfont{
-                  font-size: rem(12);
-              }
-              
-           }
-           .swiper-button-next{
-               left: auto;
-               right: 0;
-           }
-        }
-        .ann-sliders{
-            .item{
-                a{
-                    color: #333;
-                    display: block;
-                    @include mq(lg){
-                        font-size: rem(14);
-                    }
-                    @include mq(xl){
-                        font-size: rem(16);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(18);
-                    }
-                }
-            }
-        }
-      
         
     }
 
-    .more{
-           
-        display:block;       
-        background-color:$color-accent;             
-        text-align: center;
-        line-height: 31px;
-        width: 86px;
-        height: 31px;
-        border-radius: 16px;
-        color: #fff;
-        font-size: rem(14);
-        margin-top: 2rem;
-        @include mq(md){
-            line-height: 44px;
-            width: 96px;
-            height: 44px;  border-radius: 22px;
-        }
-    }
+    
    
     .s2{
-        background: url(../img/home_01.png) no-repeat center center;
-        background-size: cover;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        @include mq(md){
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+        background: url(../img/home_01.png) no-repeat center bottom;
+        background-size: cover;      
+        padding: 2rem rem(140) 0;
+        overflow: hidden;
+      
+        @include mq(md){         
+            padding: 3rem rem(140) 0;
         }
-        .title-section{
-            position: relative;
-            h2{
-                color: #fff;
-            }
-            .more{
-                position: absolute;
-                right: 0;
-                top: -1rem;
-                z-index: 100;
-               
-            
-            }
-        }
-
-        .laster{
-            padding-bottom: 5rem;
-            a.item{
-                position: relative;
-                display: block;
-                padding-bottom: 6rem;
-                .pic{
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .des{
-                    background-color: #fff;
-                    position: absolute;
-                    left: 1rem;
-                    bottom: 0;
-                    right: 1rem;
-                    z-index: 100;
-                    padding: 1rem;
-                    box-sizing: border-box;
-                    h3{
-                        color: #333;
-                        line-height: 1.5;
-                        font-weight: normal;
-                        margin-bottom: 2rem;
-                        @include mq(lg){
-                            font-size: rem(14);
-                        }
-                        @include mq(xl){
-                            font-size: rem(16);
-                        }
-                        @include mq(xxl){
-                            font-size: rem(18);
-                        }
-                    }
-                    time{
-                        display: block;
-                        text-align: center;
-                        font-size: rem(14);
-                        color: $color-accent;
-                        position: relative;
-                        &::before{
-                            position: absolute;
-                            content: " ";
-                            display: block;
-                            width: 100px;
-                            height: 1px;
-                            background-color: #dcecff;
-                            z-index: 100;
-                            left: 0;
-                            top: .8rem;
-                        }
-                        &::after{
-                            position: absolute;
-                            content: " ";
-                            display: block;
-                            width: 100px;
-                            height: 1px;
-                            background-color: #dcecff;
-                            z-index: 100;
-                            right: 0;
-                            top: .8rem;
-                        }
-                    }
-                }
-            }
+        .content{
+            padding:3rem;
+            text-align: center;
+            background-color: rgba(255, 255, 255,.8);              
+            box-shadow: 0px 0px 50px 0px rgba(195, 194, 192, 0.3);          
         }
         
     }
     .s3{
-    
-       background-color:#fff;
-       background-image: url(../img/home_02_m.jpg);
-       background-position: top  center;
-       background-repeat: no-repeat;
-       background-size: 100% auto;
-       padding-top: 1rem;
-       padding-bottom:14.5rem;
-       @include mq(md){
-        background-image: url(../img/home_02.jpg);
-        background-size: contain;    padding-bottom:6.5rem;
-        background-position: bottom  center;
-       }
-       @include mq(lg){
-            padding-top: 5rem;
-            padding-bottom:5rem;
-            background-position: center center;
-            background-size: cover;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include mq(md) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
-        @include mq(xl){
+        @include mq(lg) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        @include mq(xl) {
+            padding-top: 6rem;
+            padding-bottom:6rem;
+        }
+        @include mq(xl) {
             padding-top: 7rem;
             padding-bottom: 7rem;
-         
         }
-        @include mq(xxl){
-            padding-top: 10rem;
-            padding-bottom: 10rem;
-         
-        }
-       .content{
-           max-width: 560px;
-           p{
-            
-               margin-bottom: 2rem;
-               @include mq(md){
-                 margin-bottom: 4rem;  
-             
-                }
-               @include mq(lg){
-                font-size: rem(14);  margin-bottom: 4rem;   padding-right: 3rem;
-             
-                }
-                @include mq(xl){
-                    font-size: rem(16);
-                }
-                @include mq(xxl){
-                    font-size: rem(18);
-                }
-           }
-           .val{
-               text-align: center;
-               margin-bottom: 0;
-               @include mq(md){
-                margin-bottom: 2rem;
-            
-               }
-               @include mq(lg){
-                padding-right: 3rem;     margin-bottom: 0;
-                }
-               .num{
-                   font-size: 2rem;
-                   color: #2577d4;
-                   line-height: 1.5;
-                   @include mq(lg){
-                    font-size: 3rem;
-                    }
-               }
-               .title{
-                   font-size: rem(12);
-               }
-           }
 
-  
-          
-       }
-     
+        .txt{
+            p{
+                margin-bottom: 0;
+            }
+            .title{
+                font-size: rem(20);    
+                line-height: 1.6;       
+                @include mq(md) {
+                    font-size: rem(22);
+                }
+                @include mq(lg) {
+                    font-size: rem(24);
+                }
+                @include mq(xl) {
+                    font-size: rem(28);
+                }
+                @include mq(xl) {
+                    font-size: rem(30);           
+                }
         
+            }
+            .note{
+                color: $color-primary;      
+                margin-bottom: 2rem;   
+            }
+            .all{
+                display: block;
+                background-color: $color-primary;               
+                width: 160px;
+                height: 40px;  
+                border-radius: 20px;            
+                text-align: center;
+                margin-right: .5rem;
+                line-height: 40px;
+                &:hover{
+                    background-color: darken($color: $color-primary, $amount:5);
+                    color: #000;
+                }
+            }
+        }
+        .item1{
+            margin-bottom: rem(30);
+        }
     }
-   .s4{
-       .item{
-           background-position: center center;
-           background-size: cover;
-           background-repeat: no-repeat;
-           color: #fff;
-           text-align: center;
-           padding: 3rem 1rem 0;
-           height: 290px;
-           @include mq(md){
-            padding: 4rem 1rem 0;
-            height: 370px;
-         }
-         @include mq(lg){
-            padding: 6rem 1rem 0;
-            height: 480px;
-         }
-         @include mq(xl){
-            padding: 8rem 1rem 0;
-            height: 580px;
-         }
-           @include mq(xxl){
-              height: 600px;
-              padding: 12rem 2rem 0;
-           }
-           img{
-               display: block;
-               width: 90px;
-               margin: 0 auto 1rem;
-               @include mq(md){
-                margin: 0 auto 2rem;
-                width: 120px;
-             }
-             @include mq(lg){
-                margin: 0 auto 3rem;
-                width: auto;
-             }
-           }
-           h4{
-               font-size: rem(12);
-               font-weight: normal;
-               @include mq(md){
-                font-size: rem(18);
-               }
-               @include mq(lg){
-                font-size: rem(20);
-               }
-               @include mq(xl){
-                font-size: rem(22);
-               }
-               @include mq(xxl){
-                font-size: rem(24);
-               }
-               
-           }
-        
 
-       }
-      
-   }
-   .s5{
-       background: url(../img/home_03.jpg) no-repeat center center;
-       background-size: cover;
-       padding-top: 2rem;
-       padding-bottom: 3rem;
-       @include mq(md){
+    .s4{
+        background-color: #f8f8f8;
         padding-top: 3rem;
-        padding-bottom: 4rem;
+        padding-bottom: 3rem;
+        @include mq(md) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
-       @include mq(lg){
-        padding-top: 8rem;
-       padding-bottom: 10rem;
+        @include mq(lg) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
         }
-       .content{
-        
-           margin: 0 0 0 auto;
-           padding-left: 3rem;
-           @include mq(md){
-            padding-left: 0;max-width: 400px;
-            }
-            @include mq(lg){
-                 max-width: 560px;
-                }
-           p{
-              
-            margin-bottom: 3rem;
+        @include mq(xl) {
+            padding-top: 6rem;
+            padding-bottom:6rem;
+        }
+        @include mq(xl) {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+        }
+        .header-section{
+            margin-bottom: 5rem;
+        }
 
-            @include mq(md){
-                font-size: rem(14);
-                padding-right: 3rem;
-                margin-bottom:4rem;   
+        .tab-header{
+            @include reset-list();
+            li{
+                display: inline-block;
+                font-size: rem(20);  
+                margin-right: 1rem;   
+                padding-bottom: 1rem;  
+                cursor: pointer;
+                @include mq(md) {
+                    font-size: rem(22);
                 }
-            @include mq(lg){
-             font-size: rem(14);     margin-bottom: 6rem;   
-             }
-             @include mq(xl){
-                 font-size: rem(16);
-             }
-             @include mq(xxl){
-                 font-size: rem(18);
-             }
+                @include mq(lg) {
+                    font-size: rem(24);
+                }
+                @include mq(xl) {
+                    font-size: rem(28);
+                }
+                @include mq(xl) {
+                    font-size: rem(30);           
+                }
+                &.active{
+                    font-weight: bold;
+                    position: relative;
+
+                    &::after{
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background-color: $color-primary;
+                        width: 30px;
+                        height: 4px;
+                    }
+                }
             }
-       }
+        }
+
+        .more{
+           
+            display:block;       
+            background-color:#000;             
+            text-align: center;
+            line-height: 36px;
+            width: 120px;
+            height: 36px;
+            border-radius: 18px;
+            color: #fff;
+           .iconfont{
+               color: $color-primary;
+               margin-left: .3rem;
+           }
+        }
+        .tab-body{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+        .pic{
+            display: block;
+            margin-right: 2.5rem;
+        }
+        .box{
+            .datetime{
+                width: 80px;
+                height: 80px;
+                border:1px #000 solid;
+                text-align: center;
+              
+                .date{
+                   line-height: 1;
+                    font-size: rem(42);           
+                  text-align: center;
+                }
+            }
+            .item{
+                display: block;
+                margin-left: 2rem;
+                padding-bottom: 3rem;
+                margin-bottom: 3rem;
+                border-bottom: 1px #ddd solid;
+                h3{
+                    font-size: rem(16);
+                    line-height: 1;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    @include mq(lg) {
+                        font-size: rem(18);
+                    }
+                    @include mq(lg) {
+                        font-size: rem(20);
+                    }
+                    @include mq(xl) {
+                        font-size: rem(22);
+                    }
+                    @include mq(xl) {
+                        font-size: rem(24);
+                    }
+                }
+                .des{
+                    color: #999;
+                }
+                &:hover{
+                
+                    color: #333;
+                }
+            }
+            &:hover{
+                .datetime{
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                }
+            }
+        }
+
+    }
+   
+   .s5{
+        img{
+            display: block;
+        }
    }
 }

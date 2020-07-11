@@ -7,6 +7,7 @@
     z-index: 8000;
     width: 100%;
     height: 45px;
+
     @include mq(md) {
         height: 60px;        
     }
@@ -71,56 +72,33 @@
         &>li {
             display: inline-block;         
             position: relative;
-         
+            padding: 0 .4rem;
             &>a {
                 display: block;
                 color: #000;
-                height: 45px;
-                line-height: 45px;
+                height: 35px;
+                line-height: 35px;
                 padding: 0 .6rem;
                 text-transform: uppercase;
-                @include mq(md) {
-                    height: 60px;
-                    line-height: 60px;
-                }
-            
-                @include mq(lg) {
-                    height: 48px;
-                    line-height: 44px;
+                border-radius: 17px;
+                @include mq(lg) {                 
                     font-size: rem(14);
                     padding: 0 1rem;
                 }
             
-                @include mq(xl) {
-                    height: 54px;
-                    line-height: 50px;
+                @include mq(xl) {                 
                     font-size: 1rem;
                     padding: 0 rem(26);
                 }
-                @include mq(xxl){               
-                    height: 66px;
-                    line-height: 62px;
-                    padding: 0 2rem;
+           
+                &:hover{
+                 
+                    background-color:$color-primary;               
                 }
-               &:hover{
-                   color: $color-primary;                   
-               }
                 &.active {
                     position: relative;
-                    color: $color-primary;
-                    &::after{
-                        content: " ";
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        width: 100%;
-                        height: 4px;                   
-                        bottom: 0;
-                        background-color: $color-primary;
-                        z-index: 200;
-                       
-                    }
-                   
+                    color: #fff;
+                    background-color: #333;
                 }
             }
 
@@ -360,13 +338,7 @@
             background-color: #fff;
             box-shadow: 0 0 25px rgba(0,0,0,.15);
             
-            .topnav{            
-                li{                
-                    a{
-                        color: #666;
-                    }
-                }
-            }
+     
             .logo {           
                 background-image: url(../img/logo.png);    
             }
@@ -376,6 +348,10 @@
                     
                     &>a {                  
                         color: #000;
+                        &.active {                      
+                            color: #fff;                  
+                           
+                        }
                     }
         
         

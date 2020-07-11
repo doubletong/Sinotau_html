@@ -107,6 +107,17 @@
                     .des{
                         color: #999;
                     }
+
+                    &.txt1{
+                        padding-left: .5rem;
+                        .des{
+                            color: #999;
+                            margin-bottom: 3rem;
+                        }
+                        .pubdate{
+                            font-weight: bold;
+                        }
+                    }
                    
                 }
             }

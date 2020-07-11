@@ -1,0 +1,174 @@
+extends includes/layout.pug
+
+block title
+    | 贴子详情
+
+block bkheader
+   
+
+block content
+   
+        
+    .page.page-post
+        .container
+            section.s1
+                .row.no-gutters
+                    .col-md-auto
+                        .userinfo
+                            img(src="img/temp/avatar.jpg", alt="")
+                            .name 每周一学
+
+                    .col-md
+                        .post
+                            h2.title-post 期权“策略笔记”第8篇：蓄势上攻，速度战胜时间
+                            .row.note
+                                .col-md
+                                    .pubdate
+                                        | 发布时间：
+                                        time 2020-04-21 08:00
+                                .col-md-auto
+                                    .view
+                                        i.iconfont.icon-star
+                                        | 80
+                                    .view
+                                        i.iconfont.icon-view
+                                        | 2000
+                                    .view.comment
+                                        i.iconfont.icon-comment
+                                        | 80
+                                    .view
+                                        i.iconfont.icon-share
+                                        | 转发
+
+                          
+                            figure
+                                img(src="img/temp/post_detail_01.jpg", alt="")
+
+                            p 碎境塔罗。运用了Art Deco的元素。卡面设计参照了欧式教堂风格的彩绘玻璃，如同破碎的镜像，内容十分丰富而有内涵。采用了进口的布纹黑芯纸材质，镭射银卡牌封边，比普通的烫银封边要耐用和富有彩虹色泽，非常的美丽。碎境塔罗。运用了Art Deco的元素。卡面设计参照了欧式教堂风格的彩绘玻璃，如同破碎的镜像，内容十分丰富而有内涵。采用了进口的布纹黑芯纸材质，镭射银卡牌封边，比普通的烫银封边要耐用和富有彩虹色泽，非常的美丽。碎境塔罗。运用了Art Deco的元素。卡面设计参照了欧式教堂风格的彩绘玻璃，如同破碎的镜像，内容十分丰富而有内涵。采用了进口的布纹黑芯纸材质，镭射银卡牌封边，比普通的烫银封边要耐用和富有彩虹色泽，非常的美丽。碎境塔罗。运用了Art Deco的元素。
+                            p 卡面设计参照了欧式教堂风格的彩绘玻璃，如同破碎的镜像，内容十分丰富而有内涵。采用了进口的布纹黑芯纸材质，镭射银卡牌封边，比普通的烫银封边要耐用和富有彩虹色泽，非常的美丽。
+
+
+            section.s2
+                .title-section-v2
+                    h3 评论（10）
+                
+                .editor
+                    textarea#comment.comment(name="comment", rows="5")
+                    .action
+                        .row.align-items-center
+                            .col-auto
+                                img.avatar(src="img/temp/avatar.jpg", alt="")
+                            .col 
+                                .name 中国包装机械门户网
+
+                            .col-auto
+                                button.btn.btn-primary(type="submit") 发表
+
+                .commentlist
+                    .item
+                        .row
+                            .col-md-auto
+                                .av
+                                    img(src="img/temp/avatar01.png", alt="")
+                            .col-md
+                                .txt 
+                                    .nametime
+                                        span.name 小新
+                                        time 2020-04-20 13:09
+                                    .comment 受益匪浅啊
+                                    .action 
+                                        .icon
+                                            i.iconfont.icon-zan1
+                                            | 20
+                                        .icon
+                                            i.iconfont.icon-comment1
+                                            | 45
+                                .editor.mineditor
+                                    textarea#comment.comment(name="comment", rows="2")
+                                    .action
+                                        .row.align-items-center
+                                            .col-auto
+                                                img.avatar(src="img/temp/avatar.jpg", alt="")
+                                            .col 
+                                                .name 中国包装机械门户网
+
+                                            .col-auto
+                                                button.btn.btn-primary(type="submit") 发表
+
+                    .item
+                        .row
+                            .col-md-auto
+                                .av
+                                    img(src="img/temp/avatar01.png", alt="")
+                            .col-md
+                                .txt 
+                                    .nametime
+                                        span.name 小新 
+                                        time 2020-04-20 13:09
+                                    .comment 受益匪浅啊
+                                    .action 
+                                        .icon
+                                            i.iconfont.icon-zan1
+                                            | 20
+                                        .icon
+                                            i.iconfont.icon-comment1
+                                            | 45
+
+                                .item
+                                    .row
+                                        .col-md-auto
+                                            .av
+                                                img(src="img/temp/avatar01.png", alt="")
+                                        .col-md
+                                            .txt 
+                                                .nametime
+                                                    span.name 李三 
+                                                    | 回复 
+                                                    span.name 小新
+                                                    time 2020-04-20 13:09
+                                                .comment 受益匪浅啊
+                                                .action 
+                                                    .icon
+                                                        i.iconfont.icon-zan1
+                                                        | 20
+                                                    .icon
+                                                        i.iconfont.icon-comment1
+                                                        | 45
+
+                    .item
+                        .row
+                            .col-md-auto
+                                .av
+                                    img(src="img/temp/avatar01.png", alt="")
+                            .col-md
+                                .txt 
+                                    .nametime
+                                        span.name 小新
+                                        time 2020-04-20 13:09
+                                    .comment 受益匪浅啊
+                                    .action 
+                                        .icon
+                                            i.iconfont.icon-zan1
+                                            | 20
+                                        .icon
+                                            i.iconfont.icon-comment1
+                                            | 45
+
+
+
+
+
+block bkfooter
+
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
+
+     

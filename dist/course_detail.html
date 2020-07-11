@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title> 脑所党支部- 期权星球
+    <title> 期权小白入门系列（训练营模式）- 期权星球
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,7 @@
     <meta name="theme-color" content="#fafafa">
     <link href="fonts/iconfont.css" rel="stylesheet">
     <link href="js/vendor/wow/css/libs/animate.css" rel="stylesheet">
+    <link href="js/vendor/mediaelement/mediaelementplayer.min.css" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
     <script src="js/vendor/wow/dist/wow.min.js"></script>
     <script>
@@ -71,36 +72,7 @@
           <div class="type">直播课程</div>
         </section>
         <section class="s2">
-          <div class="row no-gutters">
-            <div class="col-md-auto">
-              <div class="leftcol">
-                <p>共7节课程 | 共有 5000 人已学习</p>
-                <div class="price"> <small>￥</small><strong>468</strong></div>
-                <div class="status">课程已结束</div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="rate">
-                <div class="row justify-content-md-center">
-                  <div class="col-auto">
-                    <div class="title">难度系数</div>
-                  </div>
-                  <div class="col-auto">
-                    <ul class="list">
-                      <li>综合难度</li>
-                      <li>理论知识</li>
-                      <li>实战操作</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-auto">
-              <div class="qr"><img src="img/courses_04.jpg" alt="">
-                <p>扫一扫，立即报名期权星球</p>
-              </div>
-            </div>
-          </div>
+          <video src="img/Background02.mp4" poster="img/poster.jpg" controls="controls" autoplay></video>
         </section>
         <section class="s3">
           <header class="tab-header"><a class="active" href="#">课程介绍</a><a href="#">课程目录</a></header>
@@ -230,6 +202,9 @@
         </section>
       </div>
     </div>
+    <div class="payqrcode"><img src="img/courses_06.png" alt="付款二维码">
+      <p>付款二维码</p>
+    </div>
     <footer class="site-footer" id="pagefooter"> 
       <div class="container bottop">
         <div class="row align-items-center">
@@ -269,11 +244,10 @@
     <script src="js/vendor/jquery.easing.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/vendor/mediaelement/mediaelement-and-player.min.js"></script>
     <script>
       $(function () {
-      
-      
-      
+          $('video, audio').mediaelementplayer(); 
       });
     </script>
   </body>

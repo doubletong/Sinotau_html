@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12950830",
+      "name": "comment",
+      "font_class": "comment1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4866391",
+      "name": "赞",
+      "font_class": "zan",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "10240486",
+      "name": "赞",
+      "font_class": "zan1",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "13221357",
+      "name": "star",
+      "font_class": "star",
+      "unicode": "ec9f",
+      "unicode_decimal": 60575
+    },
+    {
+      "icon_id": "252583",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "9737421",
+      "name": "editor",
+      "font_class": "editor",
+      "unicode": "e7ed",
+      "unicode_decimal": 59373
+    },
+    {
       "icon_id": "1177534",
       "name": "right",
       "font_class": "arrow-right",

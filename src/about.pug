@@ -7,52 +7,85 @@ block bkheader
     link(href='js/vendor/swiper/css/swiper.min.css', rel='stylesheet')
 
 
-block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banner/about.jpg)")
-        .container
-            .row.justify-content-end
-                .col-6
-                    .intro
-                        h1.title-page 公司简介
-                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
-       
+block content  
         
     .page.page-about
-        section.s1.container
-            .title-section.wow.fadeInUp             
-                h2.text-center 资质证书
-
-     
-        
+        section.s1
             .swiper-container
                 .swiper-wrapper
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书2
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书123
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书34
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书2
-                    .swiper-slide
-                        img(src="img/zheng/1.jpg", alt="")
-                        h4 证书1
+                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
+                        .container
+                            .row.justify-content-end
+                                .col-6
+                                    .intro
+                                        h1.title-page 公司简介
+                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
+                    
+                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
+                        .container
+                            .row.justify-content-end
+                                .col-6
+                                    .intro
+                                        h1.title-page 公司简介
+                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
+                    
+                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
+                        .container
+                            .row.justify-content-end
+                                .col-6
+                                    .intro
+                                        h1.title-page 公司简介
+                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
+                    
+
+
 
                 .swiper-pagination
                 .swiper-button-next
                     i.iconfont.icon-right
                 .swiper-button-prev
                     i.iconfont.icon-left
+
+                .num
+                    span#total.total
+                    | / 
+                    span#ai.ai
+
+
+
+        section.s3
+            .title-section.wow.fadeInUp             
+                h2.text-center 公司动态
+
+            .row
+                .col-md
+                    .item 
+                        a.pic(href="#")
+                            img(src="img/temp/news_05.jpg", alt="")
+                        h4 
+                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
+
+                .col-md
+                    .item 
+                        a.pic(href="#")
+                            img(src="img/temp/news_05.jpg", alt="")
+                        h4 
+                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
+                .col-md
+                    .item 
+                        a.pic(href="#")
+                            img(src="img/temp/news_05.jpg", alt="")
+                        h4 
+                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
+                .col-md
+                    .item 
+                        a.pic(href="#")
+                            img(src="img/temp/news_05.jpg", alt="")
+                        h4 
+                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
+
+        
+            a.more.wow.fadeInUp(href="news2.html") 点击查看更多
             
              
         
@@ -85,8 +118,7 @@ block bkfooter
 
     script(src='js/vendor/swiper/js/swiper.min.js')
     script.
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
+        var swiper = new Swiper('.swiper-container', {          
             spaceBetween: 30,
             pagination: {
                 el: '.swiper-pagination',
@@ -95,22 +127,19 @@ block bkfooter
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                }
             }
+            
         });
+
+    
+        $('#total').text(swiper.slides.length);
+        $('#ai').text(swiper.activeIndex + 1);
+
+        swiper.on('slideChange', function () {
+            $('#total').text(swiper.slides.length);
+            $('#ai').text(swiper.activeIndex + 1);
+        });
+
         $(function () {
             
   

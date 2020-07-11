@@ -1,41 +1,49 @@
-.banner-about{
-   height: auto;
-    .intro{
-       background-color: #000000;
-       height: 580px;
-       padding:11rem 5.5rem 0;
-       background-image: url(../img/c2.png), url(../img/c1.png);
-       background-repeat: no-repeat,no-repeat;
-       background-position: top -100px right  -110px, left 20px bottom -220px;
 
-    }
-    .container{
-        
-        h1.title-page{
-            color: $color-primary;
-            font-size: rem(24);            
-            font-weight: lighter;
-          
-            @include mq(lg){
-                font-size: rem(30);             
-            }
-        }
-        p{
-            color: #fff;
-            text-align: justify;
-        }
-       
-    }
-    
-}
-.page-about{
-    overflow: hidden;
-    
-
-   
-    .s1{
-      
+.page-about{  
+    padding-top: 0; 
+    padding-bottom: 0; 
+    .s1{      
        margin-bottom: 5rem;
+    .num{
+        position: absolute;
+        left: 50%;
+        bottom: 3rem;
+        color: #fff;
+        margin-left: 480px;
+        z-index: 10000;
+        .total{
+            font-size: 3rem;
+        }
+    }
+       .swiper-slide{
+        .intro{
+            background-color: #000000;
+            height: 580px;
+            padding:8rem 5.5rem 0;
+            background-image: url(../img/c1.png), url(../img/c1.png);
+            background-repeat: no-repeat,no-repeat;
+            background-position: top -200px left  -70px, right -30px bottom -150px;
+            box-sizing: border-box;
+     
+         }
+         .container{             
+             h1.title-page{
+                 color: $color-primary;
+                 font-size: rem(24);            
+                 font-weight: lighter;
+               
+                 @include mq(lg){
+                     font-size: rem(30);             
+                 }
+             }
+             p{
+                 color: #fff;
+                 text-align: justify;
+             }
+            
+         }
+
+       }
        img{
            display: block;
            margin: 0 auto;
@@ -44,51 +52,94 @@
         text-align: center;
         padding-top: 1rem;
         }
-       .swiper-container{
-           padding-bottom: 5rem;
-       }
+ 
      
        .swiper-container-horizontal>.swiper-pagination-progressbar{
-        bottom: 40px; top: auto;
-      
-        width: auto;
-        left: 3rem;
-        right: 3rem;
+        bottom: 60px; 
+        top: auto;      
+        width:450px;
+        left: 50%;
+        margin-left: 75px;
        }
 
        .swiper-button-next, .swiper-button-prev{
-           top: auto;
-           bottom: 26px;
+        
            width: 34px;
            height: 34px;
-           border-radius: 50%;
-           border:1px #ddd solid;
-           background-size: 35% auto;
+           border-radius: 50%;        
            opacity: 1;
            background-image: none;
+           background-color: #fff;
            color: #ddd;
            text-align: center;
-           line-height: 32px;
-           left: 0;
+           line-height: 34px;
+           left: 4rem;
+           @include mq(xl){
+            width: 60px;
+            height: 60px;
+            margin-top: -30px;  
+            line-height: 60px;  
+            color: #333;
+            .iconfont{
+                font-size: rem(20);
+            }
+           }
          &:hover{
-             border-color: $color-primary;
-             color: $color-primary;
+             background-color: $color-primary;
+             color: #333;
          }
        }
        .swiper-button-next{
-           right: 0;
+           right:4rem;
            left: auto;
        }
        .swiper-container-horizontal>.swiper-pagination-progressbar{
-           height: 6px;
-           border-radius: 3px;
-           background-color: #f1f0fb;
+           height: 2px;
+           border-radius: 1px;
+           background-color: rgba(255,255,255,.3);
        }
        .swiper-pagination-progressbar-fill{
         height: 4px;
-        margin-top: 1px;border-radius: 2px;
-        background-color: $color-primary;
+        margin-top: -1px;
+        border-radius: 2px;
+        background-color: #fff;
        }
+    }
+    .s3{
+        overflow: hidden;
+        .item{
+            text-align: center;
+            margin-bottom: 2rem;
+            .pic{
+                display: block;
+                margin-bottom: .5rem;
+                transition: all .2s;
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+            h4{
+
+            }
+        }
+        .more{
+            display: block;
+            margin: 1rem auto 5rem;
+                background-color: rgb(26, 26, 26);
+               border-radius: 20px;
+                width: 180px;
+                height: 40px;
+             line-height: 40px;
+             text-align: center;
+             color: #fff;
+              &:hover{
+                  background-color: $color-primary;
+                  color: #333;
+              }
+        }
     }
     .s2{
         background: url(../img/about_01.jpg) no-repeat center center;

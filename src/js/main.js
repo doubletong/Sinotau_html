@@ -72,15 +72,15 @@ $(document).ready(function() {
         case "/research_detail.html":
             $(".mainav li:nth-of-type(2) a").addClass("active");
             break;
-    case "/contact.html":            
-        $(".mainav li:nth-of-type(7) a").addClass("active");
-        break;
-    case "/cooperation.html":            
-        $(".mainav li:nth-of-type(6) a").addClass("active");
-        break;
-    case "/about.html":            
-        $(".mainav li:nth-of-type(1) a").addClass("active");
-    }
+        case "/contact.html":            
+            $(".mainav li:nth-of-type(7) a").addClass("active");
+            break;
+        case "/cooperation.html":            
+            $(".mainav li:nth-of-type(6) a").addClass("active");
+            break;
+        case "/about.html":            
+            $(".mainav li:nth-of-type(5) a").addClass("active");
+        }
 
 
    
