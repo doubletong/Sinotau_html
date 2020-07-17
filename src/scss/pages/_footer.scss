@@ -1,9 +1,11 @@
 
 .site-footer{   
-    background-color: #fafafa;
+    background-color: #F1F1F2;
+    padding-top: 2rem;
     .bottop{
-        padding-top: rem(40);
-        padding-bottom:rem(40);
+        padding-top: rem(20);
+        padding-bottom:rem(20);
+        border-bottom: 1px #58595B solid;
     }
     .botnav{
         list-style: none;
@@ -11,55 +13,37 @@
         padding: 0;
         li{
             display: inline-block;
-            margin-right: 3rem;      
-              
-        }
-    }
-    .social{
-        a{
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            border-radius: 3px;
-            background-color: #060202;
-            margin-left: .5rem;
-            text-align: center;
-            line-height: 40px;
-            color: #fff;
-            &:hover{
-                background-color: $color-primary;
-                color: #000;
+            margin-left: 3rem;      
+            @include mq(xxl){
+                font-size: rem(18);
             }
         }
     }
-
+ 
+    .qrcode{
+        text-align: right;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
    
     .bot{
         font-size: rem(12);
-        border-top: #ededed 1px solid;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        .beian{
-           
-            a{
-                color: #999;
-            }
-        }
-        .add{
-            text-align: center;
-        }
-       
-        .copyright{
-            color: #999;
-            text-align: center;
-            @include mq(lg){
-                text-align: right;
-            }
+        height: 42px;
+        line-height: 42px;
+        background: linear-gradient(90deg,#3F8EC1,#24C1DB);
+        color: #fff;
         
+        a{
+            color: #fff;
+            &:hover{
+                text-decoration: underline;;
+            }
         }
+     
     }
 
 }
+
 
 .toTop{
     position: fixed;
@@ -69,11 +53,15 @@
     opacity: .5;
     z-index: 2000;
     display: none;
-    img{
-        width: 32px;
-        @include mq(md){
-            width: auto;
-        }
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #000;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    .iconfont{
+        font-size: rem(24);
     }
     &:hover{
         opacity: 1;

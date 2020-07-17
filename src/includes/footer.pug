@@ -1,49 +1,41 @@
 footer#pagefooter.site-footer  
-    .container.bottop
-        .row.align-items-center
-            .col-lg
-                ul.botnav
-                    li
-                        a(href="index.html") 首页
-                    li
-                        a(href="exponent.html") 指数
-                    li
-                        a(href="courses.html") 课程            
-                    li
-                        a(href="about.html") 资讯
-                    li
-                        a(href="forum.html") 论坛
-                    li
-                        a(href="about.html") 关于我们
-                   
-            .col-lg-auto
-                .social
-                    a(href="#") 
-                        i.iconfont.icon-google
-                    a(href="#") 
-                        i.iconfont.icon-iconweibo
-                    a(href="#") 
-                        i.iconfont.icon-twitter
-                    a(href="#") 
-                        i.iconfont.icon-id
-
-
-            
-           
     .container
-        .bot        
-            .row
-                .col-md-2
-                    .beian
-                        a(href="//beian.miit.gov.cn/")  粤ICP备09184136号-3
-                    
+        .bottop
+            .row.align-items-center
                 .col-md
-                    .add 深圳市奇泉投资有限公司 / 深圳市福田区市花路5号长富金茂大厦1号楼2110 
+                    .logo_bot
+                        img(src="img/logo_bot.png", alt="心通")
+                    
+                .col-md-auto
+                    ul.botnav
+                        li
+                            a(href="about.html") 关于心通
+                        li
+                            a(href="solutions.html") 临床解决方案
+                        li
+                            a(href="care.html") 患者关爱            
+                        li
+                            a(href="news.html") 传媒中心
+                        li
+                            a(href="jobs.html") 招贤纳士
+                        li
+                            a(href="about.html") 投资者关系
+
+        .qrcode
+            img(src="img/qrcode.png", alt="二维码")           
+           
+    
+    .bot 
+        .container       
+            .row                
+                .col-md
+                    .copyright &copy; Copyright 2019, MicroPort CardioFlow Medtech. All rights reserved.
                         
-                .col-md-2
-                    .copyright &copy; 2019-2020
+                .col-md-auto
+                    | 网站备案/许可证号： 
+                    a(href="//beian.miit.gov.cn/")  粤ICP备09184136号-3
 
            
 
 a#toTop.toTop(href="javascript:void(0);")
-    img(src="img/top.png", alt="")
+    i.iconfont.icon-top

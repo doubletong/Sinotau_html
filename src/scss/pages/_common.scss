@@ -1,29 +1,32 @@
 
-@include font-face(FRUTIBLAITA, '../fonts/Roboto-BlackItalic', null, null, ttf);
+@include font-face(YouSheBiaoTiHei, '../fonts/YouSheBiaoTiHei', null, null, ttf);
 
 body {
-    color: #1a1a1a;
+    color: #595757;
     background-color: #fff;
     font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
     max-width: 1920px;
-    margin: 0 auto;
-    padding-top: 45px;
+    margin: 0 auto;  
     line-height: 2;
     @include mq(md){
-        padding-top: 60px;
+        font-size: rem(16);
     }
     @include mq(lg){
-        padding-top: 70px;font-size: rem(12);
+       font-size: rem(14);
     }
     @include mq(xl){
-        padding-top: 80px;font-size: rem(14);
+      font-size: rem(16);
      
     }
 
     &.home-body{
         padding-top: 0;
     }
+}
+h1,h2,h3,h4{
+    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;       
+    font-weight: normal;
 }
 
 a {
@@ -36,7 +39,13 @@ a {
 }
 .container{
     @include mq(xxl) {
-        max-width: 1210px;
+        max-width: 1450px;
+    }
+}
+.container-fluid{
+    @include mq(xxl) {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 .page {
@@ -134,22 +143,94 @@ a {
 }
 
 .banner {
-    height: 200px;   
+    height: 250px;   
     background-color: $color-primary;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
+    color: #fff;
     @include mq(md) {
-        height: 256px;       
+        height: 300px;       
     }
     @include mq(lg) {
-        height: 300px;      
+        height: 350px;      
     }
     @include mq(xl) {
-        height:350px;      
+        height:400px;      
     }
     @include mq(xxl) {
-        height: 400px;    
+        height: 450px;    
+    }
+
+    .container-fluid{
+        height: 100%;
+        position: relative;
+        .txt{
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+            z-index: 100;
+            @include mq(xxl) {
+                left: 5rem;
+                right: 5rem;
+            }
+            h1.title{
+                font-size: rem(20);
+                font-weight: normal;
+                margin-bottom: 1rem;
+                
+                @include mq(md) {
+                    font-size: rem(22);   margin-bottom: 2rem;
+                }
+                @include mq(lg) {
+                    font-size: rem(24);    margin-bottom: 3rem;
+                }
+                @include mq(xl) {
+                    font-size: rem(26);margin-bottom: 4rem;
+                }
+                @include mq(xxl) {
+                    font-size: rem(28);
+                }
+            }
+            ul.nav{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                li{
+                    padding: 0 1.15rem;                  
+                    border-left: 1px #fff solid;
+                }
+                a{
+                    display:block;                  
+                    padding: .3rem 1rem;
+                    font-size: rem(14);
+                    color:#fff;
+
+                    @include mq(lg) {
+                        font-size: rem(14);
+                        padding: .3rem 1.5rem;
+                    }
+                    @include mq(xl) {
+                        font-size: rem(16);
+                        padding: .3rem 2rem;
+                    }
+                    @include mq(xxl) {
+                        font-size: rem(18);
+                        padding: .5rem 3.45rem;
+                    }
+                    &:hover{
+                        border-bottom: 4px #fff solid;
+                    }
+                    &.active{
+                        border-bottom: 4px #2EBADA solid;
+                    }
+                }
+            }
+            
+        }
     }
 }
 .title-page{
@@ -186,4 +267,50 @@ img {
   
 }
 
+.text34{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(28);
+    }
+    @include mq(lg) {
+        font-size: rem(30);
+    }
+    @include mq(xl) {
+        font-size: rem(32);    
+    }
+    @include mq(xxl) {
+        font-size: rem(34);
+    }
+}
 
+.text28{
+    font-size: rem(20);
+    @include mq(md) {
+        font-size: rem(22);
+    }
+    @include mq(lg) {
+        font-size: rem(24);
+    }
+    @include mq(xl) {
+        font-size: rem(26);    
+    }
+    @include mq(xxl) {
+        font-size: rem(28);
+    }
+}
+
+.pt-9{
+    padding-top: 5rem;
+    @include mq(md) {
+        padding-top: 6rem;
+    }
+    @include mq(lg) {
+        padding-top: 7rem;
+    }
+    @include mq(xl) {
+        padding-top: 8rem;
+    }
+    @include mq(xxl) {
+        padding-top: 9rem;
+    }
+}

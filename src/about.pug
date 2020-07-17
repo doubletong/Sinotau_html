@@ -8,106 +8,41 @@ block bkheader
 
 
 block content  
-        
+    .banner.banner-about(style="background-image:url(img/banner/about.jpg)")
+        .container-fluid
+            .txt
+                h1.title 关于心通
+                ul.nav
+                    li
+                        a.active(href="about.html") 关于心通
+                    li
+                        a(href="history.html") 发展历程
+                
+
     .page.page-about
-        section.s1
-            .swiper-container
-                .swiper-wrapper
-                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
-                        .container
-                            .row.justify-content-end
-                                .col-6
-                                    .intro
-                                        h1.title-page 公司简介
-                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
-                    
-                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
-                        .container
-                            .row.justify-content-end
-                                .col-6
-                                    .intro
-                                        h1.title-page 公司简介
-                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
-                    
-                    .swiper-slide(style="background-image:url(img/banner/about.jpg)")
-                        .container
-                            .row.justify-content-end
-                                .col-6
-                                    .intro
-                                        h1.title-page 公司简介
-                                        p 期权星球是深圳市奇泉投资有限公司的品牌，公司致力于成为期权领域的专业交流平台，为期权领域的投资者、从业人员、资产管理机构、系统服务商打造一个互动空间。公司核心团队由金融工程博士、公募基金经理、资深实战派人士组成，专注于期权市场的研究和投教服务，拥有注册商标42个(类)，作品著作权130余件等知识产权。
-                    
+        section.s1(style="background-image:url(img/about_01.jpg)")
+            .container
+                .logo_about
+                    img(src="img/logo_bot.png", alt="logo")
 
-
-
-                .swiper-pagination
-                .swiper-button-next
-                    i.iconfont.icon-right
-                .swiper-button-prev
-                    i.iconfont.icon-left
-
-                .num
-                    span#total.total
-                    | / 
-                    span#ai.ai
-
-
-
-        section.s3
-            .title-section.wow.fadeInUp             
-                h2.text-center 公司动态
-
-            .row
-                .col-md
-                    .item 
-                        a.pic(href="#")
-                            img(src="img/temp/news_05.jpg", alt="")
-                        h4 
-                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
-
-                .col-md
-                    .item 
-                        a.pic(href="#")
-                            img(src="img/temp/news_05.jpg", alt="")
-                        h4 
-                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
-                .col-md
-                    .item 
-                        a.pic(href="#")
-                            img(src="img/temp/news_05.jpg", alt="")
-                        h4 
-                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
-                .col-md
-                    .item 
-                        a.pic(href="#")
-                            img(src="img/temp/news_05.jpg", alt="")
-                        h4 
-                            a(href="news_detail.html") 一个神奇的“期权投资时钟”
-
-        
-            a.more.wow.fadeInUp(href="news2.html") 点击查看更多
+                .intro 上海微创心通医疗科技有限公司（Shanghai	MicroPort	Cardi oFlow Medtech Co., Ltd.）（以下简称“微创®心通”）于2015年成立于上海张江 高科技园区，是上海微创医疗器械（集团）有限公司旗下的控股子公司之一。
+                
+                .intro2 微创®心通拥有由医学、临床、材料等各界专业人才组成的研发运营团队以及国内外知名专家学者顾问。同时，公司亦于2017年8月引入战略投资者：华兴资本、中金资本及华泰证券，有力地促进公司业务发展、提高市场竞争力。
             
-             
-        
         section.s2
             .container
-                .row.justify-content-end
-                    .col-md-5
-                        .contact
-                            h3.title  联系方式
+                .pic
+                    img(src="img/about_02.png", alt="")
+                .des
+                    h3 微创®心通秉承着专注、创新、全球化的理念
+                    p 微创®心通是一家专注于心脏瓣膜领域高端介入医疗器械研发、销售及相关技术咨询服务的高科技医疗器械公司。公司自主研发的VitaFlow®经导管主动脉瓣膜系统已通过国家药品监督管理局的审批获批上市，该产品是由中国科学院院士、著名心脏病学专家葛均波院士组织实施，复旦大学附属中山医院作为组长单位，联合全国十一家医院共同完成的临床试验，2年随访结果与业界同类产品相比，具有很强的竞争力。同时，公司的VitaFlow®第二代可回收经导管主动脉瓣膜系统也已开始开展国内临床试验。
+                    .more 
+                        a(href="") 关于产品	>>
+            
+        section.s3(style="background-image:url(img/about_03.jpg)")
+            .container
+                .txt.text28 微创®心通秉承着专注、创新、全球化的理念，以挽救患者生命和改善患者生存质量为先，为患者提供创新性的瓣膜疾病整体解决方案，同时以全球化的视野统筹运营，为医生和患者提供国际一流品质的产品。
 
-                            .item
-                                .icon
-                                    i.iconfont.icon-tel
-                                h4 联系电话
-                                p 0755-88606948
-
-
-                            .item
-                                .icon
-                                    i.iconfont.icon-address
-                                h4 联系地址
-                                p 深圳市福田区深南大道6009号NEO大厦B座18C
                     
         
         

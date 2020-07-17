@@ -100,6 +100,29 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:0}, '300');
     });
 
-    
-    
+    $(".btn-close").click(function(e){
+        $(this).closest(".overly").fadeOut().removeClass("login-container").removeClass("register-container");
+    });
+
+    $("#btn-login-open").click(function(e){     
+        $("#overly").fadeIn().addClass("login-container");
+    });
+    $("#btn-register-open").click(function(e){     
+        $("#overly").fadeIn().addClass("register-container");
+    });
+
+    $("#btnLoginType").click(function(e){     
+        var id = $(this).attr("data-type");
+
+        $("#"+id).addClass("active");
+
+        if(id === "accountlogin"){
+            $("#mobilelogin").removeClass("active");
+            $(this).attr("data-type","mobilelogin");
+        }else{
+            $("#accountlogin").removeClass("active");
+            $(this).attr("data-type","accountlogin");
+        }
+        
+    });
 })

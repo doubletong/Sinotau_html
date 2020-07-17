@@ -2,7 +2,7 @@
   
     display: inline-block;
     border:none;
-    color: #fff; 
+    color: #333; 
     padding: .2rem 1.5rem;
         @include mq(md){
             padding: .3rem 2rem;
@@ -19,6 +19,14 @@
     .iconfont {
         font-size: 14px;
     }
+    &.btn-default{
+        background-color: #f7f7f7;color: #333; 
+        &:hover{
+            background-color: darken($color: #f7f7f7, $amount: 10);
+        }
+    }
+
+
     &.btn-default-outline{
         padding: .3rem 1.3rem;
         color:#000;
@@ -27,6 +35,13 @@
         &:hover{
             background-color: #000;
             color: #fff;
+        }
+    }
+    &.btn-yellow{
+        background-color: $color-primary;color: #333; 
+        &:hover{
+            background-color: darken($color: $color-primary, $amount: 10);
+            color: #000;
         }
     }
     &.btn-primary{

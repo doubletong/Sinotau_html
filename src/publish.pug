@@ -1,0 +1,70 @@
+extends includes/layout.pug
+
+block title
+    | 发布主题
+
+block bkheader
+    link(rel="stylesheet", href="js/vendor/wangEditor/wangEditor.min.css")
+ 
+ 
+
+block content
+    
+       
+        
+    .page.page-publish
+        section.s1.container 
+            .content 
+                .title-section
+                    h3 发布主题
+                form(action="", method="post")
+                    .row.mb-4
+                        .col-md-auto
+                            label(for="title") 主题
+                        .col-md
+                            .form-group
+                                input.form-control(type="text" name="title")
+                    .row.mb-4
+                        .col-md-auto
+                            label(for="cover") 封面
+                        .col-md-auto
+                            .form-group
+                                .cover
+                                    i.iconfont.icon-add
+                        .col-md 
+                            .note 图片尺寸：图片大小 300KB以下，格式JPG，PNG等
+                    .row.mb-4
+                        .col-md-auto
+                            label(for="message") 内容
+                        .col-md
+                            .form-group
+                                #message.message
+
+                .form-group.text-center
+                    button.btn.btn-yellow 提交
+                    button.btn.btn-default 取消
+
+                
+
+                
+            
+        
+
+block bkfooter
+
+    script(src="js/vendor/wangEditor/wangEditor.min.js")
+    script.
+
+        var E = window.wangEditor
+        var editor2 = new E('#message');
+         editor2.customConfig.uploadImgShowBase64 = true;
+       //  editor2.customConfig.showLinkImg = false; 
+        editor2.create()
+       
+        $(function () {
+           
+        });
+      
+       
+
+     

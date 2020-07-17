@@ -1,0 +1,31 @@
+
+.page-patients{
+    .s1{
+        margin-bottom: 6rem;
+        .top{
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            .qr{
+                width: 650px;
+                text-align: center;
+                img{
+                    margin-bottom: .6rem;
+                }
+                p{
+                    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
+                    margin: 0;
+                }
+            }
+            .txt{
+                padding: 1rem 6rem 2rem;
+            }
+        }
+
+    }
+ 
+    
+}

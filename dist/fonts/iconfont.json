@@ -1,135 +1,16 @@
 {
-  "id": "1924649",
-  "name": "指数星球",
+  "id": "1949429",
+  "name": "心通",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "12950830",
-      "name": "comment",
-      "font_class": "comment1",
-      "unicode": "e602",
-      "unicode_decimal": 58882
-    },
-    {
-      "icon_id": "4866391",
-      "name": "赞",
-      "font_class": "zan",
-      "unicode": "e66d",
-      "unicode_decimal": 58989
-    },
-    {
-      "icon_id": "10240486",
-      "name": "赞",
-      "font_class": "zan1",
-      "unicode": "e661",
-      "unicode_decimal": 58977
-    },
-    {
-      "icon_id": "13221357",
-      "name": "star",
-      "font_class": "star",
-      "unicode": "ec9f",
-      "unicode_decimal": 60575
-    },
-    {
-      "icon_id": "252583",
-      "name": "share",
-      "font_class": "share",
-      "unicode": "e607",
-      "unicode_decimal": 58887
-    },
-    {
-      "icon_id": "9737421",
-      "name": "editor",
-      "font_class": "editor",
-      "unicode": "e7ed",
-      "unicode_decimal": 59373
-    },
-    {
-      "icon_id": "1177534",
-      "name": "right",
-      "font_class": "arrow-right",
-      "unicode": "e612",
-      "unicode_decimal": 58898
-    },
-    {
-      "icon_id": "15797240",
-      "name": "right",
-      "font_class": "arrow-left",
-      "unicode": "e860",
-      "unicode_decimal": 59488
-    },
-    {
-      "icon_id": "565364",
-      "name": "comment",
-      "font_class": "comment",
-      "unicode": "e688",
-      "unicode_decimal": 59016
-    },
-    {
-      "icon_id": "1030125",
-      "name": "view",
-      "font_class": "view",
-      "unicode": "e67e",
-      "unicode_decimal": 59006
-    },
-    {
-      "icon_id": "8057352",
-      "name": "left",
-      "font_class": "left",
-      "unicode": "e616",
-      "unicode_decimal": 58902
-    },
-    {
-      "icon_id": "15735250",
-      "name": "left",
-      "font_class": "right",
-      "unicode": "e85f",
-      "unicode_decimal": 59487
-    },
-    {
-      "icon_id": "59717",
-      "name": "weibo",
-      "font_class": "iconweibo",
-      "unicode": "e603",
-      "unicode_decimal": 58883
-    },
-    {
-      "icon_id": "4274607",
-      "name": "marker",
-      "font_class": "address",
-      "unicode": "e66b",
-      "unicode_decimal": 58987
-    },
-    {
-      "icon_id": "5495319",
-      "name": "id",
-      "font_class": "id",
+      "icon_id": "13363815",
+      "name": "search",
+      "font_class": "search",
       "unicode": "e600",
       "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "5796678",
-      "name": "google",
-      "font_class": "google",
-      "unicode": "e85e",
-      "unicode_decimal": 59486
-    },
-    {
-      "icon_id": "11548319",
-      "name": "tel",
-      "font_class": "tel",
-      "unicode": "e64c",
-      "unicode_decimal": 58956
-    },
-    {
-      "icon_id": "13062891",
-      "name": "twitter",
-      "font_class": "twitter",
-      "unicode": "e601",
-      "unicode_decimal": 58881
     }
   ]
 }

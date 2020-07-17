@@ -1,7 +1,12 @@
-.page-contact {
-    background-color: #f6f6f6;
+.page-contact {   
+    min-height: 900px;
+    padding-top: 19rem;
+    color: #fff;
     .s1{
-        margin-bottom: 3rem;
+        .title-page{
+            text-align: center;
+            margin-bottom: 3rem;
+        }
         .baidumap{
             height: 350px;
             @include mq(md){
@@ -11,103 +16,31 @@
                 max-width: none;
             }
         }
-    }
-    .s2{
-    
-        margin-bottom: 3rem;
-        @include mq(lg){
-            font-size: rem(20);
-        }
-        @include mq(xl){
-            font-size: rem(22);
-        }
-        @include mq(xxl){
-            font-size: rem(24);
-        }
-       
-        ul{
-            @include reset-list();
-            margin-bottom: 2rem;
-            li{
-                color: #333;
-                position: relative;
-                position: relative;
-                padding-left: 2rem;
-                margin-bottom: .6rem;
-         
-                @include mq(lg){
-                    margin-bottom: .5rem;
-                }
-                @include mq(xl){
-                    margin-bottom: 1rem;
-                }
-                @include mq(xxl){
-                    margin-bottom: 1.8rem;
-                }
-                .iconfont{
-                    position: absolute;
-                    left: 0;
-                    top: -0.3rem;
-             
-                    font-size: rem(20);
-                    color: #2577d4;
-                    @include mq(lg){
-                        font-size: rem(22);
-                    }
-                    @include mq(lg){
-                        font-size: rem(24);
-                    }
-                    @include mq(xl){
-                        font-size: rem(28);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(32);
-                    }
+        .col-md{
+           
+                &:last-child{
+                   
+                    .item{
+                        border-right: 1px #fff solid;
                 }
             }
         }
-        .icon{
+        .item{
             text-align: center;
-            @include mq(md){
-               width: 120px;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            border-left: 1px #fff solid;
+            ul{
+                @include reset-list();
+               
             }
-            @include mq(md){
-                width: 150px;
-             }
-        }
-        .wechat {
-            text-align: center;
-            font-size: rem(14);
-        }
-    }
-    .s3{
-        .links{
-            background-color: #fff;
-            padding: 1rem;
-            @include mq(xxl){
-                padding: 3rem;
-            }
-            .col-lg{
-                margin-bottom: 1rem;
-            }
-            .txt{
-              
-                @include mq(xxl){
-                    padding-right: 2rem;
-                }
-            }
-            h4{
-                color: #333;
-                line-height: 1.5;
-                @include mq(xxl){
-                    font-size: rem(18);
-                }
-            }
-            p{
-                line-height: 1.5;
-                font-size: rem(12);
+            address{
+                max-width: 200px;
+            
+                margin: 0 auto;
             }
         }
     }
+   
 }
 

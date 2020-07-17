@@ -1,0 +1,36 @@
+.page-publish{
+    padding-top: 30px;
+    background-color: #f7f7f7;
+     
+    .content {
+        background-color: #fff;
+        padding: 2rem 3rem;
+
+        .form-control{
+            background-color: #f7f7f7;
+            border: none;
+            width: 100%;
+            padding:.8rem 1rem;
+        }
+        .cover{
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            background-color: #f7f7f7;
+            .iconfont{
+                font-size: 2rem;
+            }
+        }
+        label{
+            font-size: rem(18);
+        }
+        .note{
+            color: #999;
+            padding-top:3rem;
+        }
+        .message{
+            min-height: 15rem;
+        }
+    }
+}
