@@ -1,54 +1,63 @@
-.page-search{
+
+.banner-search{
+    position: relative;
+    .search-container{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: -8rem;
+        z-index: 100;
+        .count{
+            color: #666;
+            font-family: sans-serif;
+            padding: 1rem;
+        }
+    }
     .searchbox{
-        margin-bottom: 2rem;
+        max-width: 1430px;
+        margin: 0 auto;
+        background-color: #f1f1f1;
+        padding:3rem 2rem;
         form{
-            padding: .2rem;
-            border:1px #eee solid;
-            border-radius: 6px;
-            @include mq(md){
-                width: 70%;
-                margin: 0 auto;  padding: .5rem;
-                
-            }
-            input{
-                width: 100%;
-                font-size: rem(18);
-                border: none;
-                outline: none;
-                @include mq(md){
-                    font-size: rem(20);
-                    
-                }
-            }
-            button{
-                border-radius: 3px;
-            }
+            max-width: 940px;
+            margin: 0 auto;
+        }
+   
+        input{
+            width: 100%;
+            border:none;     font-family: sans-serif;
+            padding-left: 1rem;
+        }
+        button{
+            border: none;
+            @extend .main-gradient;
+            padding: 0 2rem;
+            font-family: sans-serif;
+            color: #fff;
         }
     }
-    .count{
-        margin-bottom: 3rem;
+}
+
+.page-search{
+    padding-top: 8rem;
+    @include mq(md){
+        padding-top: 9rem;
     }
-    .results{
-        ul{
-            @include reset-list();
-            li{
-                border-bottom: 1px #eee solid;
-                a{
-                    display: block;
-                    padding:1rem .5rem;
-                    font-size: rem(14);
-                    @include mq(md){
-                        font-size: rem(18);                        
-                    }
-                    @include mq(lg){
-                        font-size: rem(20);                        
-                    }
-                    time{
-                        font-size: rem(14);
-                        color: #999;
-                    }
-                }
-            }
+    @include mq(lg){
+        padding-top:10rem;
+    }
+    @include mq(xl){
+        padding-top: 11rem;
+    }
+    @include mq(xxl){
+        padding-top: 12rem;
+    }
+
+    .item{
+        strong{
+            color: #1f7abb;
+            font-weight: normal;
         }
     }
+
 }

@@ -4,80 +4,54 @@ block title
     | 关于我们
 
 block bkheader
-    link(href='js/vendor/swiper/css/swiper.min.css', rel='stylesheet')
+   link(href='js/vendor/mediaelement/mediaelementplayer.min.css', rel='stylesheet')
 
 
 block content  
-    .banner.banner-about(style="background-image:url(img/banner/about.jpg)")
-        .container-fluid
-            .txt
-                h1.title 关于心通
-                ul.nav
+    .banner.banner-about(style="background-image:url(img/banner/about.jpg)")        
+        .txt
+            .nav-container
+                h1.text28.wow.fadeInUp 公司简介
+                ul.nav.wow.fadeInUp
                     li
-                        a.active(href="about.html") 关于心通
+                        a.active(href="about.html") 公司简介
                     li
-                        a(href="history.html") 发展历程
+                        a(href="qualification.html") 企业资质
+                    li
+                        a(href="culture.html") 品牌与文化
                 
 
-    .page.page-about
+    .page-about
         section.s1(style="background-image:url(img/about_01.jpg)")
             .container
-                .logo_about
-                    img(src="img/logo_bot.png", alt="logo")
-
-                .intro 上海微创心通医疗科技有限公司（Shanghai	MicroPort	Cardi oFlow Medtech Co., Ltd.）（以下简称“微创®心通”）于2015年成立于上海张江 高科技园区，是上海微创医疗器械（集团）有限公司旗下的控股子公司之一。
-                
-                .intro2 微创®心通拥有由医学、临床、材料等各界专业人才组成的研发运营团队以及国内外知名专家学者顾问。同时，公司亦于2017年8月引入战略投资者：华兴资本、中金资本及华泰证券，有力地促进公司业务发展、提高市场竞争力。
-            
+                .row
+                    .col-lg
+                        .intro 
+                            .title-section.wow.fadeInRight
+                                h2.text28 关于鼓润生物
+                                h3.text20 ABOUT US
+                            p.wow.fadeInRight 哈尔滨鼓润生物技术有限公司成立于2016年，注册资金1000万元，一期投入资金5000万元，二期计划投入5000万元，是一家集研发、生产、销售、服务于一体的医疗器械创新型企业，且获得了国家级高新技术企业称号。公司拥有四条现代化全自动生产线，自有技术研发中心，拥有48项自主研发的专利，其中，在研高端前沿医疗器械领域产品5项，已上市产品2项，此产品为颠覆性创新产品，已经申请41项国内专利（11项发明专利），同时，向美国、南非、菲律宾、印度、印度尼西亚、越南6个国家申请了PCT，并且通过巴黎公约途径向美国、欧洲、墨西哥、南非、巴西、泰国、马来西亚申请了国际外观专利。经官方检验机构及各医院临床验证，为现阶段全球最有效的解决微粒污染输液的手段，显著优于国际金标准。
+                    .col-lg-auto
+                        .pic.wow.fadeInLeft
+                            img(src="img/about_02.jpg", alt="")
         section.s2
-            .container
-                .pic
-                    img(src="img/about_02.png", alt="")
-                .des
-                    h3 微创®心通秉承着专注、创新、全球化的理念
-                    p 微创®心通是一家专注于心脏瓣膜领域高端介入医疗器械研发、销售及相关技术咨询服务的高科技医疗器械公司。公司自主研发的VitaFlow®经导管主动脉瓣膜系统已通过国家药品监督管理局的审批获批上市，该产品是由中国科学院院士、著名心脏病学专家葛均波院士组织实施，复旦大学附属中山医院作为组长单位，联合全国十一家医院共同完成的临床试验，2年随访结果与业界同类产品相比，具有很强的竞争力。同时，公司的VitaFlow®第二代可回收经导管主动脉瓣膜系统也已开始开展国内临床试验。
-                    .more 
-                        a(href="") 关于产品	>>
-            
-        section.s3(style="background-image:url(img/about_03.jpg)")
-            .container
-                .txt.text28 微创®心通秉承着专注、创新、全球化的理念，以挽救患者生命和改善患者生存质量为先，为患者提供创新性的瓣膜疾病整体解决方案，同时以全球化的视野统筹运营，为医生和患者提供国际一流品质的产品。
+            img.wow.fadeInUp(src="img/about_03.jpg", alt="")
 
-                    
-        
-        
-
-        
+        section.s3
+            .container
+                .video-container
+                    video(src="img/programmer.mp4", poster="img/about_04.jpg"  width="100%" height="100%"  controls="controls")
+     
 
 block bkfooter
 
-    script(src='js/vendor/swiper/js/swiper.min.js')
+    script(src='js/vendor/mediaelement/mediaelement-and-player.min.js')
     script.
-        var swiper = new Swiper('.swiper-container', {          
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'progressbar',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-            
-        });
-
-    
-        $('#total').text(swiper.slides.length);
-        $('#ai').text(swiper.activeIndex + 1);
-
-        swiper.on('slideChange', function () {
-            $('#total').text(swiper.slides.length);
-            $('#ai').text(swiper.activeIndex + 1);
-        });
+        
 
         $(function () {
-            
-  
+             $('video, audio').mediaelementplayer();
+                
         
         });
 

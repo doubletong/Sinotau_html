@@ -4,80 +4,97 @@ block title
     | 搜索
 
 block content
+    .banner.banner-search(style="background-image:url(img/banner/care.jpg)")
+        .search-container
+            h3.text34.text-center 搜索"瓣膜"
+            .searchbox.wow.fadeInUp
+                form(action="search.html", method="get")
+                    .row.align-items-center
+                        .col
+                            input#keywords(type="search", name="keywords",placeholder="请输入您要搜索的内容",required="required")
+                        .col-auto
+                            button.btn.btn-primary(type="submit") 搜索
 
-    .page.page-search.container  
-        .searchbox.wow.fadeInUp
-            form(action="search.html", method="get")
-                .row.align-items-center
-                    .col
-                        input#keywords(type="search", name="keywords",placeholder="请输入您要搜索的内容",required="required")
-                    .col-auto
-                        button.btn.btn-primary(type="submit") 搜索
+
+            p.count.text-center.wow.fadeInUp
+                | 找到 
+                strong 5 
+                | 条相配的记录
+                
 
 
-        p.count.text-center.wow.fadeInUp
-            | 找到 
-            strong 5 
-            | 条相配的记录
 
-        .results
-            ul
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
-                li.wow.fadeInUp
-                    a(href="news_detail.html")
-                        .row
-                            .col-md
-                                | 韩国仁川涂料胶粘膜展 COATING KOREA
-                            .col-md-auto
-                                time
-                                    | 2020-03-12
+    .page.page-media.page-search         
+      
+        section.medialist.diseaselist.container-fluid
+            
+            .item
+                .row
+                    .col-md-auto.order-md-last
+                        a.pic.wow.fadeInUp(href="disease_detail.html")
+                            img(src="img/temp/m1.jpg")     
+                    .col-md
+                        .txt.wow.fadeInUp
+                            
+                            h3.text28
+                                a(href="disease_detail.html") 百亿级经导管介入心脏
+                                    strong 瓣膜
+                                    | 市场（TAVR），国产"C位" 突围记
+                            .note 来自 MedTrend医趋势
+                            p.des 据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>>
+                            .pubdate
+                                .date.text34 15
+                                .month 2019.12
+
+                                
+            .item
+                .row
+                    .col-md-auto.order-md-last
+                        a.pic.wow.fadeInUp(href="disease_detail.html")
+                            img(src="img/temp/m2.jpg")     
+                    .col-md
+                        .txt.wow.fadeInUp
+                            
+                            h3.text28
+                                a(href="disease_detail.html") 【壮丽70年·建功新时代】微创医疗：为解决世界医疗难题提供“中国一体化解决方案”
+                            .note 来自 MedTrend医趋势
+                            p.des 据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>>
+                            .pubdate
+                                .date.text34 15
+                                .month 2019.12
+
+            .item
+                .row
+                    .col-md-auto.order-md-last
+                        a.pic.wow.fadeInUp(href="disease_detail.html")
+                            img(src="img/temp/m3.jpg")     
+                    .col-md
+                        .txt.wow.fadeInUp
+                            
+                            h3.text28
+                                a(href="disease_detail.html") EuroPCR2019丨TAVI在中国：器械和技术创新
+                            .note 来自 MedTrend医趋势
+                            p.des 据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>>
+                            .pubdate
+                                .date.text34 15
+                                .month 2019.12
+
+
+            .item
+                .row
+                    .col-md-auto.order-md-last
+                        a.pic.wow.fadeInUp(href="disease_detail.html")
+                            img(src="img/temp/m4.jpg")     
+                    .col-md
+                        .txt.wow.fadeInUp
+                            
+                            h3.text28
+                                a(href="disease_detail.html") 百亿级经导管介入心脏瓣膜市场（TAVR），国产"C位" 突围记
+                            .note 来自 MedTrend医趋势
+                            p.des 据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>>
+                            .pubdate
+                                .date.text34 15
+                                .month 2019.12
 
 
             

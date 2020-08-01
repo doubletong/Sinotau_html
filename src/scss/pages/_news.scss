@@ -1,55 +1,73 @@
 .page-news {
-    padding-top: 9rem;
+  
     .s1{
-      
-        padding-bottom: rem(22);
-        margin-bottom: 3rem;
-        .categories{
-            display: flex;
-            justify-content: center;
-            a{
-                text-align: center;
-                border-right: 1px #ddd solid;
-                color:#999;
-                line-height: 1;              
-                padding:0 2rem;
-                &:last-child{
-                    border-right: none;
+        margin-bottom: 1rem;
+        @include mq(md){
+            margin-bottom: 2rem;
+        }
+        @include mq(lg){
+            margin-bottom: 3rem;
+        }
+        @include mq(xl){
+            margin-bottom: 4rem;
+        }
+        @include mq(xxl){
+            margin-bottom: 5rem;
+        }
+        .topad{
+            height: 300px;
+            background: url(../img/news-b.jpg) no-repeat center center;
+            @include mq(md){
+                height: 320px;
+            }
+            .txt{
+                max-width: 600px;
+                margin: auto 0 auto  auto;
+                color: #fff;
+                @include vertical-align(); 
+                padding: 0 1rem;
+                @include mq(md){
+                    padding: 0 2rem;
                 }
                 @include mq(lg){
-                    font-size: rem(14);
+                    padding: 0 3rem;
                 }
                 @include mq(xl){
-                    font-size: 1rem;
+                    padding: 0 4rem;
                 }
                 @include mq(xxl){
-                    font-size: rem(18);
+                    padding: 0 5rem;
                 }
-                &:hover{
-                    color: $color-accent;
-                }
-           
-                &.active{
-                    color:#333;     font-weight: bold;
-                                
-                   
+                h3{
+                    line-height: 1.3;
+                    margin-bottom: 2rem;
+                  
                 }
             }
         }
+        
+   
     }
     .s2{
      
         .newslist{
-            padding: 0 6rem;
-            .item{
-              
-                display: block;
-                margin-bottom: 3rem;
+           
+            .item{              
+               
+                margin-bottom: 1rem;
+                @include mq(md){
+                    margin-bottom: 2rem;
+                }
+                @include mq(lg){
+                    margin-bottom: 3rem;
+                }
                 .pic{
                     display: block;
+                    overflow: hidden;
                     img{
                         display: block;
                         transition: all .2s;
+                        width: 100%;
                     }
                     &:hover{
                         img{
@@ -58,44 +76,54 @@
                     }
                 }
                 .txt{
-                    padding-left: 2rem;
-                   
-                   .top{
-                       margin-bottom: 1rem;
-                       padding-top: .8rem;
-                       time{
-                           font-weight: bold;
-                       }
-                       .cate{
-                       display: inline-block;
-                            background-color: rgb(248, 217, 94);
-                          line-height: 24px;
-                          border-radius: 12px;
-                            color: #000;
-                            height: 24px;
-                            z-index: 33;
-                            padding: 0 1.2rem;
-                 
-                       }
-                   }
+                    position: relative;
+                    padding:3rem 1rem 0;
+                    border:1px #ddd solid;
+                    border-top: none;
+                    @include mq(md){
+                        padding: 3rem 1rem .5rem;
+                    }
+                    @include mq(lg){
+                        padding: 3.5rem 1rem 1rem;
+                    }
+                    @include mq(xl){
+                        padding: 4rem 2rem 1rem;
+                    }
+                    .pubdate{
+                        position: absolute;  line-height: 1.3;
+                        top: -36px;
+                        left: 1rem;
+                        z-index: 100;
+                        background: linear-gradient(90deg,#3F8EC1,#24C1DB);
+                        color: #fff;
+                        width: 79px;
+                        text-align: center;
+                        padding: .7rem 0;
+                        height: 72px;
+                     
+                        @include mq(lg){
+                            height: 80px;
+                            top: -40px;
+                            left: 1rem;
+                        }
+                        @include mq(xl){
+                            height: 90px;
+                            top: -45px;
+                            left: 2rem;
+                        }
+                    }
+
+                  
                     h3{
                         line-height: 1.6;
                         color: #333;                    
-                        font-size: rem(16);
-                  
-
-                        @include mq(md){
-                            font-size: rem(18);
-                        }
-                        @include mq(lg){
-                            font-size: rem(20);
-                        }
+                        font-size: rem(18);                        
                         @include mq(xl){
-                            font-size: rem(22);
+                            font-size: rem(20);
                         }
                         @include mq(xxl){
                           
-                            font-size: rem(24);
+                            font-size: rem(22);
                         }
                         a{
                             color: #333;
@@ -104,21 +132,8 @@
                             }
                         }
                     }
-                    .des{
-                        color: #999;
-                    }
-
-                    &.txt1{
-                        padding-left: .5rem;
-                        .des{
-                            color: #999;
-                            margin-bottom: 3rem;
-                        }
-                        .pubdate{
-                            font-weight: bold;
-                        }
-                    }
-                   
+                 
+         
                 }
             }
         }
@@ -132,11 +147,38 @@
     .medialist{
         .item{
             background-color: #F6F9FC;
-            margin-bottom: 45px;
+            margin-bottom: 20px;
+            @include mq(md){
+                margin-bottom: 30px;
+            }
+            @include mq(lg){
+                margin-bottom: 45px;
+            }
             .txt{
-                padding-left: 4rem;
-                padding-top: 4rem;
+                padding-top: 3rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 position: relative;
+                @include mq(md){
+                    padding-left: 2rem;
+                    padding-top: 3.5rem;
+                    padding-right: 2rem;
+                    padding-bottom: 1rem;
+                }
+                @include mq(lg){
+                    padding-left: 2rem;
+                    padding-top: 3.5rem;
+                    padding-right: 0;
+                }
+                @include mq(xl){
+                    padding-left: 3rem;
+                    padding-top: 3rem;
+                }
+                @include mq(xxl){
+                  
+                    padding-left: 4rem;
+                    padding-top: 4rem;
+                }
                 h3{
                     line-height: 1.5;
                     margin: 0;
@@ -144,37 +186,157 @@
                 .note{
                     font-size: rem(14);
                     color: #B4B4B5;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
+                    @include mq(md){
+                        margin-bottom: 2rem;
+                    }
                 }
                 .des{
                     color: #B4B4B5;
+                    text-align: justify;
+                
                 }
                 .pubdate{
                     position: absolute;  line-height: 1.3;
-                    top: -45px;
-                    left: 4rem;
+                    top: -36px;
+                    left: 1rem;
                     z-index: 100;
                     background: linear-gradient(90deg,#3F8EC1,#24C1DB);
                     color: #fff;
                     width: 79px;
                     text-align: center;
                     padding: .7rem 0;
-                    height: 90px;
-                    
+                    height: 72px;
+                    @include mq(md){
+                        top: -38px;
+                        left: 2rem;  height: 76px;
+                    } 
+                    @include mq(lg){
+                        top: -40px;
+                        left: 2rem;  height: 80px;
+                    }
+                    @include mq(xl){
+                        top: -45px;
+                        left: 3rem;  height: 90px;
+                    }
+                    @include mq(xxl){
+                        top: -45px;
+                        left: 4rem;  height: 90px;
+                    }
                 }
             }
         }
         .pic{
             display: block;
-            max-width: 710px;
+            overflow: hidden;
+            @include mq(lg){
+                max-width: 450px;
+            }
+            @include mq(xl){
+                max-width: 580px;
+            }
+            @include mq(xxl){
+                max-width: 710px;
+            }
             img{
                 width: 100%;
                 display: block;
+                @include mq(lg){
+                    width: 450px;
+                    height: 300px;
+                    object-fit: cover;
+                    overflow: hidden;
+                    object-position: center center;
+                }
+                @include mq(xl){
+                    width: 560px;
+                    height: 280px;                  
+                }
+                @include mq(xl){
+                    width: auto;
+                    height: auto;                  
+                }
             }
         }
     }
 }
-
+.page-videos{
+    .videolist{
+        .item{
+            position: relative;
+            margin-bottom: 2rem;
+            .pic{
+                width: 100%;
+                display: block;
+            }
+            .txt{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                background-image: linear-gradient(0deg,#000,rgba(0,0,0,0));
+                opacity: 0;
+                transition: all .2s;
+                h3{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 30;
+                    color: #fff;
+                    z-index: 40;
+                    padding:0 1.5rem  .5rem;
+                    line-height: 1.3;
+                }
+            }
+            .play{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 20;             
+                color: rgba(255,255,255,.9);
+                line-height: 1;
+                display: block;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                line-height: 60px;
+                margin-top: -30px;
+                margin-left:-30px ;
+                transition: all .2s;
+                @include mq(lg){
+                    height: 100px;
+                    width: 100px;
+                    line-height: 100px;
+                    margin-top: -50px;
+                    margin-left:-50px ;
+                }
+                .iconfont{
+                    font-size: 2.4rem;
+                    @include mq(md){
+                        font-size: 3rem;
+                    }
+                    @include mq(lg){
+                        font-size: 4rem;
+                    }
+                    @include mq(xxl){
+                        font-size: 5rem;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &:hover{
+                .txt{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 
 .page-news-detail{
     padding-top: 45px;
@@ -194,11 +356,22 @@
         header{
             text-align: center;          
             padding-bottom: 2rem;
+            position: relative;
+            &::after{
+                content: " ";
+                border-bottom: 1px #ddd solid;
+                display: block;
+                width: 100%;
+                bottom: 3rem;
+                left: 0;
+                position: absolute;
+                z-index: -1;
+            }
             @include mq(md) {
                 margin-bottom: 2rem;
             }
             h1.title-news{
-                
+                line-height: 1.4;
                 font-size: rem(22);
                 margin-bottom: 1rem;
                 color: #000;
@@ -218,6 +391,10 @@
             }
             .note{
               color: #999;
+              display: inline-block;
+              background-color: #fff;
+              padding: 0 3rem;
+              z-index: 30;
             }
         }
         figure{
@@ -231,16 +408,36 @@
             }
         }
         .content{
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
+            @include mq(lg) {
+                margin-bottom: 3rem;
+            }
+            @include mq(xl) {
+                margin-bottom: 4rem;
+            }
+            @include mq(xxl) {
+                margin-bottom: 5rem;
+            }
+
+            .vid{
+                video{
+                    width: 100%;
+                }
+            }
         }
             .news-nav{
                 display: block;
-                padding: .8rem 4rem;
+                padding: .5rem 2rem;
                 border:1px #e6e6e6 solid;
                 font-size: 1rem;
+                @include mq(md) {
+                    padding: .8rem 4rem;
+                }
             }
             
-     
+            .vid{
+                text-align: center;
+            }
        
     }
     

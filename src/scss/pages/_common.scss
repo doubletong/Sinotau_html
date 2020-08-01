@@ -8,7 +8,7 @@ body {
     font-size: rem(14);
     max-width: 1920px;
     margin: 0 auto;  
-    line-height: 2;
+    line-height: 1.8;
     @include mq(md){
         font-size: rem(16);
     }
@@ -24,10 +24,10 @@ body {
         padding-top: 0;
     }
 }
-h1,h2,h3,h4{
-    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;       
-    font-weight: normal;
+.fontyoushe{
+    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
 }
+
 
 a {
     text-decoration: none;
@@ -43,10 +43,7 @@ a {
     }
 }
 .container-fluid{
-    @include mq(xxl) {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
+    max-width: 1450px; 
 }
 .page {
     padding-bottom: 2rem;
@@ -62,6 +59,10 @@ a {
     @include mq(xl) {
         padding-bottom: 5rem;
         padding-top: 5rem;
+    }
+    @include mq(xxl) {
+        padding-bottom: 6rem;
+        padding-top: 6rem;
     }
 }
 .section{
@@ -80,67 +81,42 @@ a {
     }
 }
 .title-section {  
-    margin-bottom: 1.5rem;
-  
+    margin-bottom: 1rem;  
     position: relative;
     @include mq(md) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         
     }
-    @include mq(lg) {
-        margin-bottom: 2.5rem; 
-    }
-    @include mq(xl) {
-        margin-bottom: 3rem; 
-    }
-    h2 {    
-      
-        font-size: rem(20);
+  
+    h2 {          
+       
         text-transform: uppercase;            
-        color: #000;
-        @include mq(md) {
-            font-size: rem(24);
-        }
-        @include mq(lg) {
-            font-size: rem(28);
-        }
-        @include mq(xl) {
-            font-size: rem(32);
-        }
-        @include mq(xl) {
-            font-size: rem(36);           
-        }
-
-    }
-    h3 {    
-      
-        font-size: rem(20);
-        text-transform: uppercase;  
-        @include mq(md) {
-            font-size: rem(22);
-        }
-        @include mq(lg) {
-            font-size: rem(24);
-        }
-        @include mq(xl) {
-            font-size: rem(28);
-        }
-        @include mq(xl) {
-            font-size: rem(30);           
+        color: #333;    
+        line-height: 1;
+        position: relative;
+        padding-bottom: .6rem;
+        &::after{
+            position: absolute;
+            content: " ";
+            display: block;
+            width: 120px;
+            height: 4px;
+            background-color: $color-primary;
+            z-index: 10;
+            left: 0;
+            bottom: 0;
         }
 
     }
-    .note{
-        text-align: center;
-        color: $color-accent;
-    }    
-}
-.title-section-v2{
-    h3{
-        font-size: rem(24);
-        font-weight: normal;
+    h3 {   
+     
+        text-transform: uppercase;    
+        line-height: 1; 
+
     }
+ 
 }
+
 
 .banner {
     height: 250px;   
@@ -148,7 +124,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
+   
     color: #fff;
     @include mq(md) {
         height: 300px;       
@@ -162,11 +138,14 @@ a {
     @include mq(xxl) {
         height: 450px;    
     }
-
-    .container-fluid{
+    .txt{
         height: 100%;
         position: relative;
-        .txt{
+        background-image: linear-gradient(0deg,rgba(0,0,0,.5),rgba(0,0,0,0));
+       
+        
+        .nav-container{
+            text-align: center;
             position: absolute;
             left: 15px;
             right: 15px;
@@ -176,56 +155,94 @@ a {
                 left: 5rem;
                 right: 5rem;
             }
-            h1.title{
-                font-size: rem(20);
+            h1{
+            
                 font-weight: normal;
                 margin-bottom: 1rem;
                 
                 @include mq(md) {
-                    font-size: rem(22);   margin-bottom: 2rem;
+                     margin-bottom: 2rem;
                 }
                 @include mq(lg) {
-                    font-size: rem(24);    margin-bottom: 3rem;
+                    margin-bottom: 3rem;
                 }
                 @include mq(xl) {
-                    font-size: rem(26);margin-bottom: 4rem;
+                   margin-bottom: 4rem;
                 }
                 @include mq(xxl) {
-                    font-size: rem(28);
+                    margin-bottom: 5rem;
                 }
             }
             ul.nav{
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
+               @include  reset-list();      
+           
                 li{
-                    padding: 0 1.15rem;                  
-                    border-left: 1px #fff solid;
+                    display: inline-block;
+                    margin-right: 1px;
+                    @include mq(md) {
+                        padding: 0 1rem;              border-left: 1px #fff solid;
+                    }
+                    @include mq(lg) {
+                        padding: 0 1.15rem;            
+                    }
+                    &:last-child{
+                       
+                        @include mq(md) {
+                            border-right: 1px #fff solid;
+                        }
+                    }
                 }
                 a{
                     display:block;                  
                     padding: .3rem 1rem;
-                    font-size: rem(14);
+                    font-size: rem(18);
                     color:#fff;
-
-                    @include mq(lg) {
-                        font-size: rem(14);
+                
+                    transition: all .2s;
+                    @include mq(lg) {           
                         padding: .3rem 1.5rem;
+           
                     }
-                    @include mq(xl) {
-                        font-size: rem(16);
+                    @include mq(xl) {                
                         padding: .3rem 2rem;
                     }
-                    @include mq(xxl) {
-                        font-size: rem(18);
+                    @include mq(xxl) {                
                         padding: .5rem 3.45rem;
                     }
                     &:hover{
-                        border-bottom: 4px #fff solid;
+                        color: $color-secondary;
                     }
                     &.active{
-                        border-bottom: 4px #2EBADA solid;
+                        position: relative;
+                      &::after{
+                          position: absolute;
+                          content: "";
+                          display: block;
+                            left: 50%;
+                            bottom: 0;
+                            margin-left: -5px;
+                          border:5px solid transparent;
+                          border-bottom-color: #fff;
+                          width: 0;
+                          height: 0;
+                          z-index: 19;
+                          @include mq(md) {           
+                            margin-left: -6px;
+                            border-width:6px;
+                        }
+                          @include mq(lg) {           
+                            margin-left: -7px;
+                            border-width:7px;
+                        }
+                        @include mq(xl) {           
+                            margin-left: -8px;
+                            border-width:8px;
+                        }
+                        @include mq(xxl) {           
+                            margin-left: -11px;
+                            border-width:11px;
+                        }
+                      }
                     }
                 }
             }
@@ -233,23 +250,7 @@ a {
         }
     }
 }
-.title-page{
-    font-weight: normal;
-    font-size: rem(24);
-    @include mq(md) {
-        font-size: rem(28);
-    }
-    @include mq(lg) {
-        font-size: rem(30);
-    }
-    @include mq(xl) {
-        font-size: rem(32);    
-    }
-    @include mq(xxl) {
-        font-size: rem(34);
-    }
-    
-}
+
 
 .text-center {
     text-align: center;
@@ -265,6 +266,67 @@ img {
     padding-top: 1rem;
     padding-bottom: 1rem;
   
+}
+.text100{
+    font-size: rem(30);
+    @include mq(md) {
+        font-size: rem(55);
+    }
+    @include mq(lg) {
+        font-size: rem(70);
+    }
+    @include mq(xl) {
+        font-size: rem(85);    
+    }
+    @include mq(xxl) {
+        font-size: rem(100);
+    }
+}
+.text60{
+    font-size: rem(26);
+    @include mq(md) {
+        font-size: rem(36);
+    }
+    @include mq(lg) {
+        font-size: rem(48);
+    }
+    @include mq(xl) {
+        font-size: rem(54);    
+    }
+    @include mq(xxl) {
+        font-size: rem(60);
+    }
+}
+.text40{
+    font-size: rem(22);
+    @include mq(md) {
+        font-size: rem(28);
+    }
+    @include mq(lg) {
+        font-size: rem(32);
+    }
+    @include mq(xl) {
+        font-size: rem(36);    
+    }
+    @include mq(xxl) {
+        font-size: rem(40);
+    }
+}
+
+.text38{
+    font-size: rem(22);
+    @include mq(md) {
+        font-size: rem(26);
+    }
+    @include mq(lg) {
+        font-size: rem(30);
+    }
+    @include mq(xl) {
+        font-size: rem(34);    
+    }
+    @include mq(xxl) {
+        font-size: rem(38);
+    }
 }
 
 .text34{
@@ -282,7 +344,22 @@ img {
         font-size: rem(34);
     }
 }
+.text30{
 
+    font-size: rem(22);
+    @include mq(md) {
+        font-size: rem(24);
+    }
+    @include mq(lg) {
+        font-size: rem(26);
+    }
+    @include mq(xl) {
+        font-size: rem(28);    
+    }
+    @include mq(xxl) {
+        font-size: rem(30);
+    }
+}
 .text28{
     font-size: rem(20);
     @include mq(md) {
@@ -298,7 +375,78 @@ img {
         font-size: rem(28);
     }
 }
+.text24{
+ 
+    @include mq(lg) {
+        font-size: rem(18);
+    }
+    @include mq(xl) {
+        font-size: rem(22);    
+    }
+    @include mq(xxl) {
+        font-size: rem(24);
+    }
+}
 
+.text22{
+
+    @include mq(lg) {
+        font-size: rem(18);
+    }
+    @include mq(xl) {
+        font-size: rem(20);    
+    }
+    @include mq(xxl) {
+        font-size: rem(22);
+    }
+}
+.text20{
+
+    @include mq(lg) {
+        font-size: rem(16);
+    }
+    @include mq(xl) {
+        font-size: rem(18);    
+    }
+    @include mq(xxl) {
+        font-size: rem(20);
+    }
+}
+.ptb-5{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include mq(md) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    @include mq(xl) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    @include mq(xxl) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+.pt-5{
+    padding-top: 1rem;
+    @include mq(md) {
+        padding-top: 2rem;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+    }
+    @include mq(xl) {
+        padding-top: 4rem;
+    }
+    @include mq(xxl) {
+        padding-top: 5rem;
+    }
+}
 .pt-9{
     padding-top: 5rem;
     @include mq(md) {
@@ -313,4 +461,8 @@ img {
     @include mq(xxl) {
         padding-top: 9rem;
     }
+}
+
+.main-gradient{
+    background: linear-gradient(90deg,#3F8EC1,#24C1DB);
 }

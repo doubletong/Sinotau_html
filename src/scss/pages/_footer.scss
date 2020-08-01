@@ -1,45 +1,109 @@
 
 .site-footer{   
-    background-color: #F1F1F2;
-    padding-top: 2rem;
-    .bottop{
-        padding-top: rem(20);
-        padding-bottom:rem(20);
-        border-bottom: 1px #58595B solid;
+    background: #022E6A url(../img/dot.png) no-repeat left -30px bottom -50px;
+  
+    color: #B5B5B6;
+    padding: 1rem rem(15);
+    @include mq(md){
+        padding: 1.5rem rem(40);
     }
-    .botnav{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li{
-            display: inline-block;
-            margin-left: 3rem;      
-            @include mq(xxl){
-                font-size: rem(18);
+    @include mq(lg){
+        padding: rem(25)  rem(55) 1.5rem;
+    }
+    @include mq(xl){
+        padding: rem(35) rem(70) 1.5rem;
+    }
+    @include mq(xxl){
+        padding: rem(45) rem(85) 1.5rem;
+    }
+    .logo_bot{
+      
+        @include mq(lg){
+            float: left;    
+           
+        }
+        img{
+            @include mq(lg){
+                width: 90px;               
+            }  
+            @include mq(xl){
+                width: auto;
+               
+            }    
+        }  
+    }
+    .bottop{
+     
+        padding-bottom:rem(20);  
+        position: relative;
+        display: none;
+        @include mq(lg){
+            display: block;
+            padding-top: rem(25);
+        }
+        @include mq(xl){
+            padding-top: rem(85);
+        }
+        &::before{
+            content: " ";
+            display: block;
+            position: absolute;
+            height: 1px;  
+            width: 100%;         
+            left: 0;
+        
+            z-index: 100;
+         
+            background-color: #fff;
+            @include mq(lg){
+                top: 4rem;
+            }
+            @include mq(xl){
+                top: 9rem;
             }
         }
-    }
- 
-    .qrcode{
-        text-align: right;
-        padding-top: 25px;
-        padding-bottom: 25px;
+
+        .botnav{
+            list-style: none;
+            margin: 0;
+            padding: 0 1.5rem;
+            text-align: center;
+            @include mq(lg){
+                padding: 0;
+            }
+            @include mq(xl){
+                padding: 0 .5rem;
+            }
+            @include mq(xxl){
+                padding: 0 1.5rem;
+            }
+            dt{
+                text-align: center;
+                font-size: rem(18);
+                font-weight: normal;
+              
+                @include mq(lg){
+                    margin-bottom:  1.5rem;
+                }
+                @include mq(xl){
+                    margin-bottom: 2.75rem; font-size: rem(20);
+                }
+            }
+            dd{
+                text-align: center; 
+                a{
+                    color: #ADADAE;
+                    font-size: rem(14);
+                    @include mq(xl){
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
    
     .bot{
-        font-size: rem(12);
-        height: 42px;
-        line-height: 42px;
-        background: linear-gradient(90deg,#3F8EC1,#24C1DB);
-        color: #fff;
-        
-        a{
-            color: #fff;
-            &:hover{
-                text-decoration: underline;;
-            }
-        }
-     
+        padding-top: 1rem;       
     }
 
 }
@@ -47,8 +111,8 @@
 
 .toTop{
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 1rem;
+    bottom: 1rem;
     display: block;
     opacity: .5;
     z-index: 2000;
@@ -56,15 +120,19 @@
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #000;
+    background-color: #eee;
     line-height: 50px;
     border-radius: 5px;
-    color: #fff;
+    color: $color-primary;
+    @include mq(md){
+        right: 2rem;
+        bottom: 2rem;   
+    }
     .iconfont{
         font-size: rem(24);
     }
     &:hover{
-        opacity: 1;
+        opacity: 1;  color:$color-primary;
     }
 }
 

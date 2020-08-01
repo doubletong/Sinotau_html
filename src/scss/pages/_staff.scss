@@ -1,0 +1,166 @@
+.page-training{
+    .photolist{
+        padding: 0 5px;
+        @include mq(lg){
+           padding: 0;
+        }
+        .item{
+            margin-bottom: rem(20);
+            margin-left: -5px;
+            margin-right: -5px;
+            @include mq(lg){
+                margin-left: 0;
+                margin-right:0;
+                margin-bottom: rem(30);
+            }
+            @include mq(xxl){
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+.page-leisure{
+    
+    .title-section{
+        @include mq(xxl){
+            margin-bottom: 3rem;
+        }
+        h2{
+            &::after{
+                left: 50%;
+                margin-left: -60px;
+            }
+        }
+    }
+    .s1{
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        @include mq(lg){
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+   
+        .artlist{
+            @include mq(md){
+                padding: 0 5px;
+            }
+            @include mq(lg){
+                padding: 0 ;
+            }
+            .item{
+                display: block;
+                border:1px #eee solid;
+                margin-bottom: rem(20);
+                margin-left: -5px;
+                margin-right: -5px;
+                @include mq(lg){
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .pic{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .txt{
+                    text-align:left;
+                    padding: 1rem;
+                    position: relative;
+
+                    @include mq(xxl){
+                        padding:1.5rem 1rem;
+                    }
+
+                    h2{
+                        line-height: 1;
+                    }
+                    p{
+                        margin: 0;line-height: 1;
+                        color: #999;
+                        font-size: rem(14);
+                    }
+                    .time{
+                        position: absolute;
+                        right: 0;
+                        top: -1rem;
+                        z-index: 100;
+                        background: url(../img/time_bg.png) no-repeat center center;
+                        height: 37px; width: 174px;
+                        text-align: right;
+                        color: #fff;
+                        line-height: 37px;
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .s2{
+        text-align: center;
+     
+        padding-bottom: 0;
+
+        @include mq(xl){
+            padding-top: 2rem;
+       
+        }
+        .photolist{
+            padding: 0 5px;
+            @include mq(lg){
+               padding: 0;
+            }
+            .item{
+                margin-bottom: rem(20);
+                margin-left: -5px;
+                margin-right: -5px;
+                @include mq(lg){
+                    margin-left: 0;
+                    margin-right:0;
+                    margin-bottom: rem(30);
+                }
+                @include mq(xxl){
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+.page-leisure-detail{
+    header{
+        text-align: center;     
+        position: relative;
+        margin-bottom: 3rem;
+        .note{
+            display: inline-block;
+            color: #999;
+            background-color: #fff;
+            padding: 0 2rem;
+        }
+        &::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+            z-index: -1;
+            bottom: .8rem;
+            left: 0;
+            position: absolute;
+        }
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .content{
+        text-align: justify;
+        figure{
+            text-align: center;
+            padding: 2rem;
+        }
+    }
+}

@@ -1,47 +1,48 @@
 .pagination {
         @include reset-list();
-        padding-top: 3rem;
-
+        padding-top: 1rem;
+        @include mq(md) {
+                padding-top: 2rem;
+        }    
+        @include mq(lg) {
+                padding-top: 3rem;
+        }  
         li {
                 display: inline-block;
                 margin: 0;
 
                 a {
                         display: block;
-                        padding: .2rem .6rem;
+                        padding: .2rem .5rem;
                         color: #999;                     
                         background-color: #fff;
                         margin: 0 .5rem;
-                    
+                        border-radius: 19px;
                         @include mq(md) {
-                                padding: .3rem 1rem;
-                        }                    
+                                padding: .3rem .85rem;
+                        }  
+                          
 
                 }
 
                 &.active {
-                        a {
-                                color: #fff;
-                               background-color: $color-primary;
-                              
+                        a{
+                           color: #fff;
+                           background-color: rgba(0,80,142,.6);                              
                         }
                 }
 
                 &:hover {
-                        a {
-                                
-                                color: #333;
+                        a{                                
+                          color: #fff;
+                          background-color: rgba(0,80,142,.6);                    
                         }
                 }
-
                 .prev,.next{
-                     
-                        color: $color-primary;
-
-                        &:hover{
-                                background-color: #f1f1f1;
-
-                        }
+                        padding: .2rem .5rem;
+                        @include mq(md) {
+                                padding: .3rem .72rem;
+                        }  
                 }
 
         }

@@ -5,12 +5,15 @@
     color: #333; 
     padding: .2rem 1.5rem;
         @include mq(md){
-            padding: .3rem 2rem;
-            font-size: rem(14);
+            padding: .3rem 2rem;        
         }
         @include mq(lg){
             padding: .3rem 3rem;
             font-size: 1rem;
+        }
+        @include mq(xl){
+            padding: .5rem 3rem;
+            font-size: rem(18);
         }
     &:hover{
         background-color: #fff;
@@ -45,7 +48,8 @@
         }
     }
     &.btn-primary{
-        background-color: #000;color: #fff;
+        background-image: linear-gradient(100deg,#3F764C,#2C7294);
+        color: #fff;
         &:hover{
             background-color:darken($color-primary,10%);
         }
@@ -65,9 +69,22 @@
         background-color: $color-primary;color: #fff;
         padding: .8rem 2rem;
         border-radius: 0;
+        
         &:hover{
             background-color:darken($color-primary,10%);
         }
     }
 }
 
+.btn-radius{
+    border-radius: 16px;
+    @include mq(md){
+        border-radius: 19px;
+    }
+    @include mq(lg){
+        border-radius: 22px;
+    }
+    @include mq(xl){
+        border-radius: 25px;
+    }
+}

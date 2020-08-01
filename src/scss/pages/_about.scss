@@ -1,199 +1,199 @@
-
 .page-about{  
-    padding-top: 0; 
-    padding-bottom: 0; 
+  
     .s1{      
       background-position: center top;
       background-repeat: no-repeat;
-      margin-bottom: 12rem;
-    
-      .logo_about{
-          text-align: center;
-          padding-top: 235px;
-          height: 553px;
-      }
+      background-size: cover;
+      padding-top: rem(25);
+      padding-bottom:rem(25);
+        @include mq(md) {
+            padding-top: rem(30);
+            padding-bottom:rem(30);
+        }
+        @include mq(lg) {
+            padding-top: rem(45);
+            padding-bottom: rem(45);
+        }
+        @include mq(xl) {
+            padding-top: rem(70);
+            padding-bottom: rem(70);
+        }
+       
+        @include mq(xxl){
+            padding-top: rem(95);
+            padding-bottom: rem(95);
+        }
       .intro{
-          text-align: center;
-          max-width: 680px;
-          margin: 110px auto 90px;
-          font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
-          line-height: 1.5;
-          @include mq(xxl){
-              font-size: rem(18);
-          }
-      }
-      .intro2{
+       text-align: justify;
+        @include mq(xxl){
+          padding-right: 15rem;
           
-          @include mq(xxl){
-            padding: 0 8rem;
-            
-          }
+        }
       }
+      .pic{
+          text-align: center;
+      }
+ 
     }
     .s2{
-        background: linear-gradient(90deg,#3F8EC1,#24C1DB);
-        .container{
-            position: relative;
-            .pic{
-                position: absolute;
-                right: 15px;
-                bottom: 0;
-                z-index: 100;
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center center;
+            @include mq(md) {
+                height: 400px;
             }
-
-            .des{
-                max-width: 830px;
-                color: #fff;
-                padding-top: 4rem;
-                padding-bottom: 4rem;
-                h3{
-                    font-size: rem(24);
-                    font-weight: normal;
-                 
-                     @include mq(md){
-                        font-size: rem(26);                        
-                     } 
-                     @include mq(lg){
-                        font-size: rem(28);                        
-                     } 
-                     @include mq(xl){
-                        font-size: rem(30);                        
-                     } 
-                    @include mq(xxl){
-                       font-size: rem(32);                        
-                    } 
-                }
-                .more {
-                    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
-                    @include mq(xxl){
-                        font-size: rem(18);                        
-                     }
-                     a{
-                         color: #fff;
-                         &:hover{
-                             text-decoration: underline;
-                         }
-                     } 
-                }
+            @include mq(lg) {
+                height: 400px;
+            }
+            @include mq(xl) {
+                height: 500px;
             }
         }
     }
-
     .s3{
-        min-height:679px;
-        background-position: center top;
-        background-repeat: no-repeat;
-       
-        .txt{
-            font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;    
-            line-height: 1.4;
-                padding:110px 0 0; 
-                text-align: justify;              
+        padding-top: 1rem;
+        padding-bottom:1rem;
+          @include mq(md) {
+              padding-top: 2rem;
+              padding-bottom:2rem;
+          }
+          @include mq(lg) {
+              padding-top: 3rem;
+              padding-bottom: 3rem;
+          }
+          @include mq(xl) {
+              padding-top: 4rem;
+              padding-bottom: 4rem;
+          }
          
-             @include mq(lg){
-                padding:110px 80px 0;               
-             }
-             @include mq(xl){
-                padding:110px 150px 0;               
-             }
-            @include mq(xxl){
-                padding:110px 220px 0;               
-             }
+        .video-container{
+            text-align: center;
+            margin: 0 auto;
+            max-width: 720px;
+          
+          
         }
     }
+
 
    
 }
 
-.page-leadership{
-    .item{
-        padding-top: 3rem;
-        padding-bottom: 1rem;
-        @include mq(md){
-            padding-top: 4rem;
-            padding-bottom: 2rem;
+.page-qualification{
+    .s1{
+        text-align: center;
+        @include mq(xl) {
+            padding-top: 2rem;
         }
-        @include mq(lg){
-            padding-top: 5rem;
-            padding-bottom: 4rem;
-        }
-        .pic{
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .container{
-            .intro{             
-                @include mq(md){
-                    padding-left: 1rem;
-                }
-                @include mq(lg){
-                    padding-left: 3rem;
-                }
-                .title{
-                    font-size: rem(24);color:#333;
-                    margin-bottom: 1rem;
-                    text-align: center;
-                    @include mq(md){
-                        margin-bottom: 2rem;font-size: rem(30);
-                        text-align: left;
-                    }
-                    @include mq(lg){
-                        margin-bottom: 3rem;font-size: rem(36);
-                   
-                    }
-                    @include mq(lg){
-                        font-size: 3rem;
-                   
-                    }
-                    small{
-                        font-size: rem(12);font-weight: normal;
-                        margin-left: 1rem;
-                        @include mq(md){
-                            font-size: rem(14);
-                        }
-                        @include mq(lg){
-                            font-size: rem(16);
-                        }
-                        @include mq(xl){
-                            font-size: rem(18);
-                        }
-                        @include mq(xxl){
-                            font-size: rem(20);
-                        }
-                    }
-                }
-                .box{
-                    margin-bottom: 2rem;
-                }
-                h4{
-                    color: $color-accent;
-                    @include mq(xxl){
-                        font-size: rem(18);
-                    }
-                }
+      
+        figure{
+        
+            @include mq(xl) {
+                margin-bottom: 2rem;
             }
-        }
-        &:nth-child(2n+1){
-            background-color: #f6f6f6;
+            figcaption{
+                padding: 1rem;
+            }
         }
     }
 }
-.page-institutions{
-    
+.page-culture{
     .s1{
-        background: $color-primary url(../img/about_04.png) no-repeat center top;
-        padding: 1rem;
-        @include mq(md){
-            padding: 2rem;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @include mq(md) {
+            padding-top: 3rem;
+            padding-bottom:3rem;
         }
-        @include mq(lg){
-            padding: 3rem;
+        @include mq(lg) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        @include mq(xl) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        @include mq(xxl) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+     
+            img{
+                width: 50%;
+                @include mq(md) {
+                  width: 50%;
+                }
+                @include mq(lg) {
+                    width: auto;
+                  }
+            }
+        
+    }
+    .s2{
+      
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @include mq(md) {
+            padding-top: 3rem;
+            padding-bottom:3rem;
+        }
+        @include mq(lg) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        @include mq(xl) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        @include mq(xxl) {
+            padding-top: 6rem;
+            padding-bottom: 5.5rem;
+        }
+        .container{
+            height: 100%;
+            .txt{
+             
+                max-width: 500px;
+                .pic{
+                    padding-bottom: .8rem;
+                    img{
+                        width: 80px;
+                        @include mq(md) {
+                            width: 100px;
+                        }
+                        @include mq(lg) {
+                            width: auto;
+                        }
+                    }
+                }
+                h3{
+                    line-height: 1;
+                }
+            }
         }
     }
-    .title-section{
+    .s3{
+       
+        .container{
+            .txt{
+                margin: 0 0 0 auto;
+                text-align: right;
+              
+            }
+        }
 
-        h2{
-            color: #fff;
+    }
+    .s4{
+        @include mq(xxl) {
+            padding-top: 7rem;
+            padding-bottom: 6.5rem;
         }
     }
 }

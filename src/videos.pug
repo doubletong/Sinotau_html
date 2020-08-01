@@ -1,0 +1,95 @@
+extends includes/layout.pug
+
+block title
+    | 视频中心
+
+block content
+    .banner.banner-about(style="background-image:url(img/banner/news.jpg)")
+        .container-fluid
+            .txt
+                h1.title 传媒中心
+                ul.nav
+                    li
+                        a(href="news.html") 新闻动态
+                    li
+                        a(href="media.html") 媒体报道
+                    li
+                        a.active(href="videos.html") 视频中心
+
+    .page.page-videos
+        
+
+        section.s2.container
+            .videolist
+                .row
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v02.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
+
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v01.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 系统性地介绍期权知识和交易技巧定位通俗易懂
+
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v01.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 系统性地介绍期权知识和交易技巧定位通俗易懂
+
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v02.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
+                               
+                    
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v02.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
+
+                    .col-md-6
+                        .item.wow.fadeInUp                            
+                            img.pic(src="img/temp/v02.jpg")    
+                            a.play(href="video_detail.html")
+                                i.iconfont.icon-play
+                            .txt
+                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
+       
+   
+                footer.news-footer.wow.fadeInUp
+                    ul.pagination.text-center
+                        li.page-item
+                            a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 
+                                i.iconfont.icon-arrow-left
+                        li.page-item
+                            a.page-link(href='#') 1
+                        li.page-item.active(aria-current='page')
+                            a.page-link(href='#')
+                                | 2                          
+                        li.page-item
+                            a.page-link(href='#') 3
+                        li.page-item
+                            a.page-link.next(href='#') 
+                                i.iconfont.icon-arrow-right
+        
+block bkfooter
+    script.
+        $(function(){
+        
+        })

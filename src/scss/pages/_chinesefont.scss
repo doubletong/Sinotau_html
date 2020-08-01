@@ -1,0 +1,16 @@
+.font-loaded{
+    .site-footer,.title-section,
+    .site-header,.banner,h1,h2,h3,h4,.page-contact ,
+    .formMessage label,.formMessage button,
+    .page-branches .s1,
+    .page-leisure .time,
+    .page-concept .s1,
+    .page-jobs .filter .row .row,
+    .page-product1 .processes ,
+    .page-product3, .page-home,    
+    .page-product .s2 .txt {
+        @extend .fontyoushe;
+        font-weight: normal;
+    } 
+    
+}

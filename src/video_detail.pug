@@ -1,0 +1,40 @@
+extends includes/layout.pug
+
+block title
+    | Scientists Design Novel Algorithmic Framework for Alzheimer's Disease Prediction.
+
+block content
+    .banner.banner-about(style="background-image:url(img/banner/news.jpg)")
+        .container-fluid
+            .txt
+                h1.title 传媒中心
+                ul.nav
+                    li
+                        a(href="news.html") 新闻动态
+                    li
+                        a(href="media.html") 媒体报道
+                    li
+                        a.active(href="videos.html") 视频中心
+
+    .page.page-news-detail
+        
+        article.container
+            header
+                h1.title-news.wow.fadeInUp 期权“策略笔记”第8篇：蓄势上攻，速度战胜时间仍然存疑20190912
+                .note
+                    time 2020-04-21 08:00
+                    author 来自 MedTrend医趋势
+
+            main.content.wow.fadeInUp
+                .vid
+                    video(autoplay, poster="img/temp/poster.jpg", id="videobg",preload="true", muted, x5-playsinline,playsinline,webkit-playsinline, loop)
+                        source(src="img/blue_waves.mp4", type="video/mp4")
+                        | Your browser does not support the video tag. I suggest you upgrade your browser.
+            
+          
+
+block bkfooter
+    script.
+        $(function(){
+          
+        })

@@ -5,384 +5,389 @@
 }
 .page-home {
     .s1{ 
-        height: 100vh; 
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background: url(../img/home_bg.jpg) no-repeat center top;
-        background-size: cover;
-
-        .container{
-             padding-top: 12rem;
-            .txt{
-                color: #fff;
-                max-width: 500px;
-                h3{
-                    font-size: 3rem;
-                    line-height: 1;
-                    &.title{
-                        font-weight: lighter;
-                    }
-                    &.title2{
-                        margin-bottom: 1.5rem;
-                    }
-                }
-                p.des{
-                    margin-bottom: 3rem;
-                }
-
-                .btn-warning{
-                    text-align: center;
-                        background-color: rgb(242, 206, 63);
-                    font-size: 1rem;
-                        width: 180px;
-                        height: 50px;
-                    line-height: 50px;    
-                    display: block;    
-                    border-radius: 25px; 
-                    &:hover{
-                        background-color: #fff;
-                        color: #333;
-                    }         
-                      
-                }
+        position: relative;
+        color:#fff;
+        .txt{
+            position: absolute;
+            right: 0;
+            top: 30%;
+            z-index: 10;
+            width: 100%;
+            text-align: right;
+            margin: 0 1rem;
+            line-height: 1.2;
+            @include mq(md){
+                margin: 0 6rem;
+            }
+            h2{
+                text-shadow: 0 0 12px rgba(0,0,0,.1);
             }
         }
-        
+    
         
     }
 
     
    
     .s2{
-        background: url(../img/home_01.png) no-repeat center bottom;
-        background-size: cover;      
-        padding: 2rem rem(140) 0;
-        overflow: hidden;
+       
+        padding-top:1rem;
+        padding-bottom: 1rem;
+        @include mq(md) {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        @include mq(lg) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .item{
+            max-width: 340px;
+            margin: 0 auto 2rem;
+            @include mq(md) {
+                margin: 0 auto ;
+            }
+            .pic{
+                text-align: center;
+                margin: 0 auto 1rem;
+                width: 80px;
+              
+                @include mq(lg) {
+                    margin-bottom: 2.5rem;
+                }
+            }
+            p{
+                text-align: justify;
+              
+                @include mq(md) {
+                    font-size: rem(18);
+                }
+            }
+        }
       
-        @include mq(md){         
-            padding: 3rem rem(140) 0;
-        }
-        .content{
-            padding:3rem;
-            text-align: center;
-            background-color: rgba(255, 255, 255,.8);              
-            box-shadow: 0px 0px 50px 0px rgba(195, 194, 192, 0.3);          
-        }
         
     }
     .s3{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         @include mq(md) {
+            padding-top: 3rem;
+            padding-bottom:3rem;
+        }
+        @include mq(lg) {
             padding-top: 4rem;
             padding-bottom: 4rem;
         }
-        @include mq(lg) {
+        @include mq(xl) {
             padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-bottom:5rem;
         }
-        @include mq(xl) {
+        @include mq(xxl) {
             padding-top: 6rem;
-            padding-bottom:6rem;
+            padding-bottom: 6rem;
         }
-        @include mq(xl) {
-            padding-top: 7rem;
-            padding-bottom: 7rem;
-        }
-
+     
         .txt{
+            max-width: 940px;
+            text-align: justify;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            padding: 0 1rem;
             p{
-                margin-bottom: 0;
+                text-align: left;
+                @include mq(xl) {
+                   font-size: rem(18);
+                }
             }
-            .title{
-                font-size: rem(20);    
-                line-height: 1.6;       
-                @include mq(md) {
-                    font-size: rem(22);
-                }
-                @include mq(lg) {
-                    font-size: rem(24);
-                }
-                @include mq(xl) {
-                    font-size: rem(28);
-                }
-                @include mq(xl) {
-                    font-size: rem(30);           
-                }
+        }
         
-            }
-            .note{
-                color: $color-primary;      
-                margin-bottom: 2rem;   
-            }
-            .all{
-                display: block;
-                background-color: $color-primary;               
-                width: 160px;
-                height: 40px;  
-                border-radius: 20px;            
-                text-align: center;
-                margin-right: .5rem;
-                line-height: 40px;
-                &:hover{
-                    background-color: darken($color: $color-primary, $amount:5);
-                    color: #000;
-                }
-            }
-        }
-        .item1{
-            margin-bottom: rem(30);
-        }
     }
 
     .s4{
-        background-color: #f8f8f8;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+       background-position: center center;
+       background-repeat: no-repeat;    
+        background-size: cover;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
         @include mq(md) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+           padding-top: 3rem;
+           padding-bottom: 3rem
         }
         @include mq(lg) {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+        @include mq(xl) {
             padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-bottom: 6rem
         }
-        @include mq(xl) {
+        @include mq(xxl) {
             padding-top: 6rem;
-            padding-bottom:6rem;
-        }
-        @include mq(xl) {
-            padding-top: 7rem;
-            padding-bottom: 7rem;
-        }
-        .header-section{
-            margin-bottom: 5rem;
+            padding-bottom: 7rem
         }
 
-        .tab-header{
-            @include reset-list();
-            li{
-                display: inline-block;
-                font-size: rem(20);  
-                margin-right: 1rem;   
-                padding-bottom: 1rem;  
-                cursor: pointer;
+        h3{
+            margin-bottom: 3rem;
+        }
+    }
+   
+
+
+
+   .s5{
+    
+        .rightcol{
+            background-image: linear-gradient(90deg,#416F41,#2B6A8E);
+            text-align: center;
+            height: 100%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: #fff;
+            @include mq(md) {
+              
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            @include mq(lg) {
+                text-align: left;
+            }
+            img{
+                width: 70%;
+                @include mq(lg) {
+                    width: 400px;
+                }
+                @include mq(xl) {
+                    width: 500px;
+                }
+                @include mq(xxl) {
+                    width: 640px;
+                }
+            }
+            h3{
+                margin-left: 1rem;
+                letter-spacing: .4rem;
                 @include mq(md) {
-                    font-size: rem(22);
+                    margin-left: 2rem;
                 }
                 @include mq(lg) {
-                    font-size: rem(24);
+                    margin-left: 3rem;
                 }
                 @include mq(xl) {
-                    font-size: rem(28);
+                    margin-left: 4rem;
                 }
-                @include mq(xl) {
-                    font-size: rem(30);           
+                @include mq(xxl) {
+                    margin-left: 5rem;
                 }
-                &.active{
-                    font-weight: bold;
-                    position: relative;
-
-                    &::after{
-                        content: " ";
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        background-color: $color-primary;
-                        width: 30px;
-                        height: 4px;
+            }
+            .title{
+                position: relative;
+                padding-bottom: .7rem;
+                &::after{
+                    position: absolute;
+                    content: " ";
+                    display: block;
+                    width: 220px;
+                    height: 4px;
+                    background-color: #fff;
+                    z-index: 10;
+                
+                    bottom: 0;
+               
+                    left: 50%;
+                    margin-left: -110px;
+                    @include mq(lg) {
+                        left: 0; margin-left: 0px;
                     }
+                
                 }
             }
         }
 
-        .more{           
-            display:block;       
-            background-color:#000;             
-            text-align: center;
-            line-height: 36px;
-            width: 120px;
-            height: 36px;
-            border-radius: 18px;
-            color: #fff;
-           .iconfont{
-               color: $color-primary;
-               margin-left: .3rem;
+        .leftcol{
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+      
+            padding: 2rem 1rem;
+            @include mq(md) {
+                padding: 3rem 3rem;
+            }
+            @include mq(lg) {
+                padding: 4rem 3rem;
+            }
+            @include mq(xl) {
+                padding: 5rem 8rem;
+                font-size: rem(18);
+            }
+            @include mq(xxl) {
+                padding: 5rem 13rem 4rem;
+  
+            }
+            .pic{
+                margin-bottom: 1rem;
+                @include mq(md) {
+                    margin-bottom: 2rem;
+                }
+                @include mq(lg) {
+                    margin-bottom: 3rem;
+                }
+            }
+           p{
+               text-align: left;
+               margin-bottom: 1rem;
+               @include mq(md) {
+                margin-bottom: 2rem;
+                }
            }
         }
-        .tab-body{
-            display: none;
-            &.active{
-                display: block;
+      
+
+   }
+   .s6{
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        @include mq(md) {
+           padding-top: 3rem;
+           padding-bottom: 3rem
+        }
+        @include mq(lg) {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+        @include mq(xl) {
+            padding-top: 5rem;
+            padding-bottom: 5rem
+        }
+        @include mq(xxl) {
+            padding-top: 6rem;
+            padding-bottom: 6rem
+        }
+
+        img{
+            box-shadow: 0 0 24px rgba(0,0,0,.1);
+        }
+        .title{
+            margin-bottom: 1rem;
+            @include mq(md) {
+                margin-bottom: 2rem;
+              }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            top: 61%;
+            @include mq(md) {
+                top: 65%;
+              }
+              @include mq(lg) {
+                top: 64%;
+              }
+        }
+   }
+
+
+   .s7{
+       padding-top: 3rem;
+       padding-bottom:2rem;
+       @include mq(lg) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      @include mq(xl) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      @include mq(xxl) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+      .item{
+        display: block;
+        position: relative;
+        margin-bottom: 1rem;
+        @include mq(md){
+            margin-bottom: 0;
+        }
+        .play{
+            top: 50%;
+            left:50%;
+            z-index: 10;
+            position: absolute;
+            margin-left: -20px;
+            margin-top: -20px;
+            width: 40px;
+            height: 40px;
+            @include mq(md){
+                margin-left: -25px;
+                margin-top: -25px;
+                width: 50px;
+                height: 50px;
             }
-        }
-        .pic{
-            display: block;
-            margin-right: 2.5rem;
-        }
-        .box{
-            .datetime{
+            @include mq(lg){
+                margin-left: -30px;
+                margin-top: -30px;
+                width: 60px;
+                height: 60px;
+            }
+
+            @include mq(xl){
+                margin-left: -35px;
+                margin-top: -35px;
+                width: 70px;
+                height: 70px;
+            }
+            @include mq(xxl){
+                margin-left: -40px;
+                margin-top: -40px;
                 width: 80px;
                 height: 80px;
-                border:1px #000 solid;
-                text-align: center;
-              
-                .date{
-                   line-height: 1;
-                    font-size: rem(42);           
-                  text-align: center;
-                }
-            }
-            .item{
-                display: block;
-                margin-left: 2rem;
-                padding-bottom: 3rem;
-                margin-bottom: 3rem;
-                border-bottom: 1px #ddd solid;
-                h3{
-                    font-size: rem(16);
-                    line-height: 1;
-                    margin-top: 0;
-                    margin-bottom: 1rem;
-                    @include mq(lg) {
-                        font-size: rem(18);
-                    }
-                    @include mq(lg) {
-                        font-size: rem(20);
-                    }
-                    @include mq(xl) {
-                        font-size: rem(22);
-                    }
-                    @include mq(xl) {
-                        font-size: rem(24);
-                    }
-                }
-                .des{
-                    color: #999;
-                }
-                &:hover{
-                
-                    color: #333;
-                }
-            }
-            &:hover{
-                .datetime{
-                    background-color: $color-primary;
-                    border-color: $color-primary;
-                }
             }
         }
-
     }
-   
-   .s5{
-        img{
-            display: block;
-        }
+
    }
-   .slideshow{
-        background: url(../img/home_bot_bg.jpg) no-repeat center top;
-      
-        padding-top: 50px;
-        height: 960px;
-   
+   .s8{
+     
+        padding-bottom: 2rem;
+        padding-top: 2rem;
         background-size: cover;
-        box-sizing: border-box;
- 
-    
-
-    
-    .entire-content {
-        margin: auto;
-        width: 190px;
-        perspective: 1000px;
-        position: relative;
-        padding-top:270px;
-    }
-    
-    .content-carrousel {
-        width: 100%;
-        position: absolute;
-        float: right;
-        animation: rotar 15s infinite linear;
-        transform-style: preserve-3d;
-    }
-    
-    .content-carrousel:hover {
-        animation-play-state: paused;
-        cursor: pointer;
-        a{
-            animation-play-state: paused;
+        background-position: center center;
+      
+       
+        @include mq(md) {
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+          }
+          @include mq(lg) {
+            padding-bottom: 4rem;
+            padding-top: 4rem;
+          }
+          @include mq(xl) {
+            padding-bottom: 5rem;
+            padding-top: 5rem;
+          }
+          @include mq(xxl) {
+            padding-bottom: 5.35rem;
+            padding-top: 6rem;
+          }
+       .container{
+         text-align: right;
+        .txt{
+            margin: 0 0 0 auto;
+            max-width: 600px;
+            p{
+                font-size: rem(18);
+            }
         }
-    }
-    
-    .content-carrousel .shadow {
-        width: 100%;
-        height: 180px; 
-        position: absolute;
-        text-align: center;
-        line-height: 180px;
-    
-    }
-    
-    .content-carrousel .shadow:nth-child(1) {
-        transform: rotateY(0deg) translateZ(500px); 
-    
-    } .content-carrousel .shadow:nth-child(2) {
-        transform: rotateY(60deg) translateZ(500px); 
-    } .content-carrousel .shadow:nth-child(3) {
-        transform: rotateY(120deg) translateZ(500px); 
-    } .content-carrousel .shadow:nth-child(4) {
-        transform: rotateY(180deg) translateZ(500px); 
-    } .content-carrousel .shadow:nth-child(5) {
-        transform: rotateY(240deg) translateZ(500px); 
-    } .content-carrousel .shadow:nth-child(6) {
-        transform: rotateY(300deg) translateZ(500px); 
-    }
-    
-    .shadow {
-        position: absolute;
-        box-shadow: 0px 0px 20px 0px #000;  
-        border-radius: 50%;  
-        overflow: hidden;          
-    }
-    
-     .content-carrousel a {
-        image-rendering: auto;
-        transition: all 300ms;
-        width: 100%;
-        height: 100%;
-        display: block;
-        color: #fff;
-        background-image: linear-gradient( 90deg, rgb(18,16,16) 0%, rgb(65,65,65) 100%); 
-    }
-    
-    .content-carrousel a:hover {
-        transform: scale(1.2);
-        transition: all 300ms;
-        color: #333;     
-        background-image: linear-gradient( 90deg, rgb(242,206,63) 1%, rgb(251,222,108) 99%);   
-         
-          
-    }
-    
-    @keyframes rotar {
-        from {
-            transform: rotateY(0deg);
-        } to {
-            transform: rotateY(360deg);
-        }
-    }
-    @keyframes rotar1 {
-        from {
-            transform: rotateY(3600deg);
-        } to {
-            transform: rotateY(0deg);
-        }
-    }
+           
+           
+       }
    }
 
-
-   .weiduduan{width:1200px;margin:50px auto 0}#phoneCarousel{height:390px;margin:0 auto;position:relative;width:800px}#phoneCarousel .arrow{width:44px;height:44px;background:url(../images/arrows.png) no-repeat;position:absolute;top:50%;margin-top:-22px;left:0;cursor:pointer}#phoneCarousel .next{background-position:right top;left:auto;right:0}#phoneCarousel .arrow:hover{background-position:left bottom}#phoneCarousel .next:hover{background-position:right bottom}#stage{left:50%;margin-left:-350px;position:absolute;width:700px;height:100%}#stage img{display:none}#stage .default{display:block;left:50%;margin-left:-135px;position:absolute}#stage .animationReady{display:block;position:absolute;top:0;left:0}
 }
