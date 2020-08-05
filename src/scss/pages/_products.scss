@@ -50,6 +50,7 @@
                     position: absolute;
                     left: 0;
                     bottom: 0;
+                    margin-bottom: 0;
                 }
                 @include mq(lg){
                     width: 400px;
@@ -165,7 +166,7 @@
     }
 
     .s4{
-        background-color: $color-primary;
+        background-color: #022E6A;
         color: #fff;
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -371,7 +372,7 @@
 
     .s3{
         position: relative;
-        background-color: $color-primary;
+        background-color: #022E6A;
         padding-top: 2rem;
         padding-bottom: 2rem;
         color: #fff;
@@ -589,12 +590,36 @@
             height: 560px; 
             margin: 0 auto 2rem;
         }
+        @include mq(lg){
+            width: 380px;
+            height: 380px; 
+            margin: 0 auto 2rem 0;
+        }
+        @include mq(xl){
+            width: 440px;
+            height: 440px; 
+            margin: 0 auto 2rem 0;
+        }
+        @include mq(xxl){
+            width: 560px;
+            height: 560px; 
+            margin: 0 auto 2rem;
+        }
         img{
             position: absolute;
             right: -3rem;
             top: 1.5rem;
             width: 80%;
             @include mq(md){
+                width: auto;    top: 3rem;
+            }
+            @include mq(lg){
+                width: 300px;    top: 2rem;        
+            }
+            @include mq(xl){
+                width: 350px;    top: 2rem;        
+            }
+            @include mq(xxl){
                 width: auto;    top: 3rem;
             }
         }

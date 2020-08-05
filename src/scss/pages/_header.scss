@@ -4,6 +4,7 @@
     top: 0;
     z-index: 8000;
     width: 100%;
+    max-width: 1920px;
     height: 45px;
     transition: all .2s;
     background-color: #fff;
@@ -21,7 +22,10 @@
     @include mq(xxl){
         padding: 0 rem(85) 1.5rem;  height: 107px;       
     }
-
+    @media screen and (min-width:1920px){
+        left: 50%;
+        margin-left: -960px;
+    }
 
     .row {
         height: 45px;
@@ -58,7 +62,7 @@
         @include mq(xxl) {
             width:340px;
             height: 150px;
-            padding-top: 1rem;
+            padding: 1rem 5rem 0;
             
         }
         
@@ -86,7 +90,7 @@
                 display: block;
              
                 padding: 0 .6rem;              
-                text-shadow: 2px 2px 10px rgba(0,0,0,.3);
+         
                 font-size: rem(18);
             
                 @include mq(lg){
@@ -322,6 +326,7 @@
               
                 a{
                     color: #fff;
+                    text-shadow: 2px 2px 10px rgba(0,0,0,.3);
                 }
             }
         }
@@ -381,7 +386,7 @@
                 &>li {
                     
                     &>a {                  
-                        color: #000;
+                        color: #595757;
                         &.active {                      
                             color: $color-primary;       
                            border-bottom-color:$color-primary ;    

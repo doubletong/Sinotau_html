@@ -9,6 +9,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;  
     line-height: 1.8;
+    position: relative;
     @include mq(md){
         font-size: rem(16);
     }
@@ -31,7 +32,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #595757;
     &:hover {
         text-decoration: none;
         color: $color-primary;
@@ -91,7 +92,7 @@ a {
     h2 {          
        
         text-transform: uppercase;            
-        color: #333;    
+        color: #595757;    
         line-height: 1;
         position: relative;
         padding-bottom: .6rem;

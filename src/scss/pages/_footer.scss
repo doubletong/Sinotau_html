@@ -23,11 +23,16 @@
            
         }
         img{
+            width: 90px;
             @include mq(lg){
                 width: 90px;               
             }  
             @include mq(xl){
-                width: auto;
+                width: 180px;
+               
+            }  
+            @include mq(xxl){
+                width: 180px;
                
             }    
         }  
@@ -77,6 +82,16 @@
             @include mq(xxl){
                 padding: 0 1.5rem;
             }
+            a{
+                color: #ADADAE;
+                font-size: rem(14);
+                @include mq(xl){
+                    font-size: 1rem;
+                }
+                &:hover{
+                    color: #fff;
+                }
+            }
             dt{
                 text-align: center;
                 font-size: rem(18);
@@ -91,13 +106,7 @@
             }
             dd{
                 text-align: center; 
-                a{
-                    color: #ADADAE;
-                    font-size: rem(14);
-                    @include mq(xl){
-                        font-size: 1rem;
-                    }
-                }
+               
             }
         }
     }

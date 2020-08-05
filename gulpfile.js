@@ -19,7 +19,10 @@ const uglify = require('gulp-uglify');
 const size = require('gulp-size');
 const notify = require('gulp-notify');
 const babel = require('gulp-babel');
+
+const version = require('gulp-version-number');
 var sourcemaps  = require('gulp-sourcemaps');
+
 var pug = require('gulp-pug');
 var log = require('fancy-log');
 
@@ -114,6 +117,13 @@ function copyFiles(done) {
 function htmls(done) {
     gulp.src([bases.app + '*.html', bases.app + '**/*.html', bases.app + '*.txt',bases.app + '*.xml',bases.app + '*.webmanifest', bases.app + '*.json'])
         .pipe(size({ gzip: true, showFiles: true }))
+        .pipe(version({
+            'value': '%MDS%',
+            'append': {
+                'key': 'v',
+                'to': ['css', 'js'],
+            }
+        }))
         .pipe(gulp.dest(bases.dist))
         .pipe(browserSync.stream());
 
@@ -125,6 +135,13 @@ function pugtohtml(done){
     gulp.src([bases.app + '*.pug'])
         .pipe(pug({
             pretty:true
+        }))
+        .pipe(version({
+            'value': '%MDS%',
+            'append': {
+                'key': 'v',
+                'to': ['css', 'js'],
+            }
         }))
         .pipe(gulp.dest(bases.dist))
         .pipe(browserSync.stream());

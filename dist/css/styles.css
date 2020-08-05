@@ -3995,6 +3995,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   line-height: 1.8;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -4034,7 +4035,7 @@ body.home-body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #595757;
 }
 
 a:hover {
@@ -4124,7 +4125,7 @@ a:hover {
 
 .title-section h2 {
   text-transform: uppercase;
-  color: #333;
+  color: #595757;
   line-height: 1;
   position: relative;
   padding-bottom: .6rem;
@@ -4716,6 +4717,7 @@ img {
   top: 0;
   z-index: 8000;
   width: 100%;
+  max-width: 1920px;
   height: 45px;
   transition: all .2s;
   background-color: #fff;
@@ -4748,6 +4750,13 @@ img {
   .site-header {
     padding: 0 5.3125rem 1.5rem;
     height: 107px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .site-header {
+    left: 50%;
+    margin-left: -960px;
   }
 }
 
@@ -4801,7 +4810,7 @@ img {
   .site-header .logo {
     width: 340px;
     height: 150px;
-    padding-top: 1rem;
+    padding: 1rem 5rem 0;
   }
 }
 
@@ -4837,7 +4846,6 @@ img {
 .site-header .mainav > li > a {
   display: block;
   padding: 0 .6rem;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.125rem;
 }
 
@@ -5063,6 +5071,7 @@ img {
 
 .home-body .site-header .topnav li a {
   color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .home-body .site-header .mainav > li > a {
@@ -5102,7 +5111,7 @@ img {
 }
 
 .home-body .site-header.fixheader .mainav > li > a {
-  color: #000;
+  color: #595757;
 }
 
 .home-body .site-header.fixheader .mainav > li > a.active {
@@ -6484,6 +6493,7 @@ img {
     position: absolute;
     left: 0;
     bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -6660,7 +6670,7 @@ img {
 }
 
 .page-product .s4 {
-  background-color: #004096;
+  background-color: #022E6A;
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -6897,7 +6907,7 @@ img {
 
 .page-product1 .s3 {
   position: relative;
-  background-color: #004096;
+  background-color: #022E6A;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #fff;
@@ -7192,6 +7202,30 @@ img {
   }
 }
 
+@media (min-width: 992px) {
+  .page-product3 .pic {
+    width: 380px;
+    height: 380px;
+    margin: 0 auto 2rem 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .page-product3 .pic {
+    width: 440px;
+    height: 440px;
+    margin: 0 auto 2rem 0;
+  }
+}
+
+@media (min-width: 1601px) {
+  .page-product3 .pic {
+    width: 560px;
+    height: 560px;
+    margin: 0 auto 2rem;
+  }
+}
+
 .page-product3 .pic img {
   position: absolute;
   right: -3rem;
@@ -7200,6 +7234,27 @@ img {
 }
 
 @media (min-width: 768px) {
+  .page-product3 .pic img {
+    width: auto;
+    top: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-product3 .pic img {
+    width: 300px;
+    top: 2rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .page-product3 .pic img {
+    width: 350px;
+    top: 2rem;
+  }
+}
+
+@media (min-width: 1601px) {
   .page-product3 .pic img {
     width: auto;
     top: 3rem;
@@ -7282,7 +7337,7 @@ img {
 .page-concept .s1 {
   padding-top: 6rem;
   padding-bottom: 4rem;
-  color: #000;
+  color: #595757;
   text-align: justify;
 }
 
@@ -8001,6 +8056,10 @@ img {
   }
 }
 
+.site-footer .logo_bot img {
+  width: 90px;
+}
+
 @media (min-width: 992px) {
   .site-footer .logo_bot img {
     width: 90px;
@@ -8009,7 +8068,13 @@ img {
 
 @media (min-width: 1201px) {
   .site-footer .logo_bot img {
-    width: auto;
+    width: 180px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .site-footer .logo_bot img {
+    width: 180px;
   }
 }
 
@@ -8080,6 +8145,21 @@ img {
   }
 }
 
+.site-footer .bottop .botnav a {
+  color: #ADADAE;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 1201px) {
+  .site-footer .bottop .botnav a {
+    font-size: 1rem;
+  }
+}
+
+.site-footer .bottop .botnav a:hover {
+  color: #fff;
+}
+
 .site-footer .bottop .botnav dt {
   text-align: center;
   font-size: 1.125rem;
@@ -8101,17 +8181,6 @@ img {
 
 .site-footer .bottop .botnav dd {
   text-align: center;
-}
-
-.site-footer .bottop .botnav dd a {
-  color: #ADADAE;
-  font-size: 0.875rem;
-}
-
-@media (min-width: 1201px) {
-  .site-footer .bottop .botnav dd a {
-    font-size: 1rem;
-  }
 }
 
 .site-footer .bot {
