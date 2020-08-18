@@ -12,8 +12,12 @@
             font-size: 1rem;
         }
         @include mq(xl){
-            padding: .5rem 3rem;
-            font-size: rem(18);
+            padding: .3rem 3rem;
+            font-size: rem(20);
+        }
+        @include mq(xxl){
+            padding: .28rem 4rem;
+            font-size: rem(24);
         }
     &:hover{
         background-color: #fff;
@@ -48,7 +52,7 @@
         }
     }
     &.btn-primary{
-        background-image: linear-gradient(100deg,#3F764C,#2C7294);
+        background-image: linear-gradient(100deg,#57a356,#14629b);
         color: #fff;
         &:hover{
             background-color:darken($color-primary,10%);
@@ -85,6 +89,9 @@
         border-radius: 22px;
     }
     @include mq(xl){
-        border-radius: 25px;
+        border-radius: 27px;
+    }
+    @include mq(xxl){
+        border-radius: 30px;
     }
 }

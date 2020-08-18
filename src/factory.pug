@@ -1,0 +1,212 @@
+extends includes/layout.pug
+
+block title
+    | 创新样板工厂
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+
+block content  
+    .banner.banner-factory(style="background-image:url(img/banners/core.jpg)")        
+        .container       
+            h1.text36 创新样板工厂
+              
+
+    .wrapper
+        .page.page-factory.pb-media-5
+            .container  
+                .fixednav
+                    h4  核心板块
+                    ul.nav
+                        li
+                            a(href="core.html") 前沿基础研究
+                        li
+                            a(href="platform.html") 公共技术平台和大科学装置                             
+                        li.active
+                            a(href="factory.html") 创新样板工厂
+                        li
+                            a(href="science.html") 粤港澳交叉科学中心
+                
+
+                section.s1.mb-media-3.mt-n-30                   
+                    .row.align-items-center
+                        .col-lg-auto
+                            .pic.wow.fadeInLeft
+                                img(src="img/about_01.png", alt="")
+                        .col-lg
+                            .intro 
+                                h2.text24 创新样板工厂：推动科研成果走出实验室、走向应用、走向市场
+                                p 创新样板工厂是松山湖材料实验室科技成果进行小、中试孵化的物理载体和服务平台，致力于推动实验室的产业技术研究与产业转化，培育一批有发展潜力的新材料搞科技企业，为科技成果转移转化提供强力引擎。截止2019年年底，实验室分两批从国内外知名高校、科研院所以及高新技术企业引进了18个优质项目，目前已在东莞注册成立产业化公司12家。
+                    hr.line
+                    .app
+                        .row.align-items-center
+                            .col-md
+                                h3.text24 面向海内外征集优秀项目中
+                            .col-md-auto
+                                a.apply.text24(href="#") 报名方式
+
+
+                section.s2
+                    .team-header
+                        .swiper-container.gallery-thumbs
+                            .swiper-wrapper
+                                .swiper-slide 
+                                    .thumb 第一批项目团队
+                                .swiper-slide 
+                                    .thumb 第二批项目团队
+                                .swiper-slide 
+                                    .thumb 第三批项目团队（即将进驻）
+                            
+                        .swiper-next 
+                            i.iconfont.icon-next
+                        .swiper-prev
+                            i.iconfont.icon-prev
+
+                    .team-body
+                        .swiper-container.gallery-top
+                            .swiper-wrapper
+                                .swiper-slide 
+                                    .list
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 1、锂离子电池新材料研究和中试线建设
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 2、新材料超快激光极端精细加工技术研发及产业化（光子制造）
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 3、多孔陶瓷及其复合材料
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 4、SiC同质外延厚膜材料制备与应用技术
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 5、新型无机纤维材料制备及应用技术
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 6、柔性锌基电池
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 7、轻元素先进材料与器件
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 8、高效晶硅太阳能电池新工艺与产业技术中试示范
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 9、第三代半导体材料与器件
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 10、高端科研设备产业化
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+
+                                .swiper-slide 
+                                    .list
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 1、锂离子电池新材料研究和中试线建设
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 2、新材料超快激光极端精细加工技术研发及产业化（光子制造）
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 3、多孔陶瓷及其复合材料
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 4、SiC同质外延厚膜材料制备与应用技术
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 5、新型无机纤维材料制备及应用技术
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 6、柔性锌基电池
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 7、轻元素先进材料与器件
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 8、高效晶硅太阳能电池新工艺与产业技术中试示范
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 9、第三代半导体材料与器件
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                        a.item(href="factory_detail.html")
+                                            .row.align-items-center
+                                                .col 10、高端科研设备产业化
+                                                .col-auto
+                                                    i.iconfont.icon-right1
+                                .swiper-slide 
+                                    .list
+                                        p.text-center 即将进驻
+
+                       
+                                      
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+        
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+
+        $(function () {
+            //-  $('video, audio').mediaelementplayer();
+                
+        
+        });
+
+
+     

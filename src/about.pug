@@ -1,47 +1,64 @@
 extends includes/layout.pug
 
 block title
-    | 关于我们
+    | 实验室简介
 
 block bkheader
    link(href='js/vendor/mediaelement/mediaelementplayer.min.css', rel='stylesheet')
 
 
 block content  
-    .banner.banner-about(style="background-image:url(img/banner/about.jpg)")        
-        .txt
-            .nav-container
-                h1.text28.wow.fadeInUp 公司简介
-                ul.nav.wow.fadeInUp
-                    li
-                        a.active(href="about.html") 公司简介
-                    li
-                        a(href="qualification.html") 企业资质
-                    li
-                        a(href="culture.html") 品牌与文化
-                
+    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")        
+        .container       
+            h1.text36 实验室简介
+              
 
-    .page-about
-        section.s1(style="background-image:url(img/about_01.jpg)")
-            .container
-                .row
-                    .col-lg
-                        .intro 
-                            .title-section.wow.fadeInRight
-                                h2.text28 关于鼓润生物
-                                h3.text20 ABOUT US
-                            p.wow.fadeInRight 哈尔滨鼓润生物技术有限公司成立于2016年，注册资金1000万元，一期投入资金5000万元，二期计划投入5000万元，是一家集研发、生产、销售、服务于一体的医疗器械创新型企业，且获得了国家级高新技术企业称号。公司拥有四条现代化全自动生产线，自有技术研发中心，拥有48项自主研发的专利，其中，在研高端前沿医疗器械领域产品5项，已上市产品2项，此产品为颠覆性创新产品，已经申请41项国内专利（11项发明专利），同时，向美国、南非、菲律宾、印度、印度尼西亚、越南6个国家申请了PCT，并且通过巴黎公约途径向美国、欧洲、墨西哥、南非、巴西、泰国、马来西亚申请了国际外观专利。经官方检验机构及各医院临床验证，为现阶段全球最有效的解决微粒污染输液的手段，显著优于国际金标准。
-                    .col-lg-auto
-                        .pic.wow.fadeInLeft
-                            img(src="img/about_02.jpg", alt="")
-        section.s2
-            img.wow.fadeInUp(src="img/about_03.jpg", alt="")
+    .wrapper
+        .page.page-about.pb-media-5
+            .container  
+                .fixednav
+                    h4  实验室概况
+                    ul.nav
+                        li.active
+                            a.active(href="about.html") 实验室简介
+                        li
+                            a(href="structure.html") 组织架构 
+                            i.iconfont.icon-right
+                        li
+                            a(href="team.html") 人才队伍
+                        li
+                            a(href="history.html") 大事记
+                        li
+                            a(href="contact.html") 联系我们
 
-        section.s3
-            .container
-                .video-container
-                    video(src="img/programmer.mp4", poster="img/about_04.jpg",  width="100%", height="100%",  controls="controls")
-     
+                section.s1.mb-media-5.mt-n-30
+                    .row
+                        .col-lg-auto
+                            .pic.wow.fadeInLeft
+                                img(src="img/about_01.png", alt="")
+                        .col-lg
+                            .intro 松山湖材料实验室（以下简称“实验室”）坐落于粤港澳大湾区重要节点城市东莞，于2017年12月22日启动建设，2018年4月完成注册，是广东省第一批省实验室之一，布局有前沿科学研究、公共技术平台和大科学装置、创新样板工厂、粤港澳交叉科学中心四大核心板块，将形成“前沿基础研究→应用基础研究→产业技术研究→产业转化”的全链条创新模式，定位于成为成为有国际影响力的新材料研发南方基地、国家物质科学研究的重要组成部分、粤港澳交叉开放的新窗口。
+                        
+                section.s2
+                    .pic
+                        img.wow.fadeInUp(src="img/about_02.jpg", alt="")
+                    h3.title 过渡办公场所：
+                    p 松山湖大学创新城A1/C1/G2栋，共50000平方米
+
+                section.s3
+                    .pic
+                        img(src="img/about_03.jpg", alt="")
+
+                    h3.title 新址基建规划：
+                    ul
+                        li 总体规划：实验室位于广深科技创新走廊中部，紧邻散裂中子源，占地约1200亩。
+                        li 建设理念：给科学家创造头脑风暴的汇聚点，给企业家提供创新产品的输出源，给公众打造普及科学知识的圣地。
+                        li 工程进展：一期工程于2019年6月动工，计划于2020年底交付。未来，将建成一座占地面积近18万平方米，涵盖材料博物馆、多栋实验楼、会议中心等单体建筑的大型科学园区，并且整体设计将岭南建筑风格与现代理念相结合，为实验室开展各项材料科学研究、进行学术交流合作提供良好载体。
+
+
+        
+
+
 
 block bkfooter
 

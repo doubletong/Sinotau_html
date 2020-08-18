@@ -1,38 +1,38 @@
 
-@include font-face(YouSheBiaoTiHei, '../fonts/YouSheBiaoTiHei', null, null, ttf);
+
 
 body {
-    color: #595757;
-    background-color: #fff;
+    color: #3c3c3c;
+    background-color: #f9f9f9;
     font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
     max-width: 1920px;
     margin: 0 auto;  
     line-height: 1.8;
     position: relative;
+    padding-top: 45px;
     @include mq(md){
         font-size: rem(16);
+        padding-top: 60px; line-height: 2.2;
     }
     @include mq(lg){
        font-size: rem(14);
+       padding-top: 70px;    line-height: 1.8;
     }
     @include mq(xl){
       font-size: rem(16);
-     
+      padding-top: 80px;line-height: 2.2;
     }
-
-    &.home-body{
-        padding-top: 0;
+    @include mq(xl){      
+        padding-top: 100px;
     }
-}
-.fontyoushe{
-    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
+ 
 }
 
 
 a {
     text-decoration: none;
-    color: #595757;
+    color: #3c3c3c;
     &:hover {
         text-decoration: none;
         color: $color-primary;
@@ -40,32 +40,18 @@ a {
 }
 .container{
     @include mq(xxl) {
-        max-width: 1450px;
+        max-width: 1210px;
     }
 }
 .container-fluid{
-    max-width: 1450px; 
+    max-width: 1790px; 
 }
-.page {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    @include mq(md) {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
-    }
-    @include mq(lg) {
-        padding-bottom: 4rem;
-        padding-top: 4rem;
-    }
-    @include mq(xl) {
-        padding-bottom: 5rem;
-        padding-top: 5rem;
-    }
-    @include mq(xxl) {
-        padding-bottom: 6rem;
-        padding-top: 6rem;
-    }
+.wrapper {
+    background: url(../img/en_bg.png) no-repeat center top;
+    background-attachment: fixed;
+    min-height: 650px;
 }
+
 .section{
     margin-bottom: 2rem;
     @include mq(md) {
@@ -88,25 +74,22 @@ a {
         margin-bottom: 1.5rem;
         
     }
-  
-    h2 {          
-       
-        text-transform: uppercase;            
-        color: #595757;    
+    @include mq(lg) {
+        margin-bottom: 2rem;
+        
+    }
+    @include mq(xl) {
+        margin-bottom: 2.5rem;
+        
+    }
+    @include mq(xxl) {
+        margin-bottom: 3rem;
+        
+    }
+    h2 {                
         line-height: 1;
         position: relative;
         padding-bottom: .6rem;
-        &::after{
-            position: absolute;
-            content: " ";
-            display: block;
-            width: 120px;
-            height: 4px;
-            background-color: $color-primary;
-            z-index: 10;
-            left: 0;
-            bottom: 0;
-        }
 
     }
     h3 {   
@@ -120,7 +103,7 @@ a {
 
 
 .banner {
-    height: 250px;   
+    height: 240px;   
     background-color: $color-primary;
     background-size: cover;
     background-position: center center;
@@ -128,126 +111,22 @@ a {
    
     color: #fff;
     @include mq(md) {
-        height: 300px;       
+        height: 260px;       
     }
     @include mq(lg) {
-        height: 350px;      
+        height: 280px;      
     }
     @include mq(xl) {
-        height:400px;      
+        height:300px;      
     }
     @include mq(xxl) {
-        height: 450px;    
+        height: 320px;    
     }
-    .txt{
+    .container  {
+        text-align: right;
         height: 100%;
-        position: relative;
-        background-image: linear-gradient(0deg,rgba(0,0,0,.5),rgba(0,0,0,0));
-       
-        
-        .nav-container{
-            text-align: center;
-            position: absolute;
-            left: 15px;
-            right: 15px;
-            bottom: 0;
-            z-index: 100;
-            @include mq(xxl) {
-                left: 5rem;
-                right: 5rem;
-            }
-            h1{
-            
-                font-weight: normal;
-                margin-bottom: 1rem;
-                
-                @include mq(md) {
-                     margin-bottom: 2rem;
-                }
-                @include mq(lg) {
-                    margin-bottom: 3rem;
-                }
-                @include mq(xl) {
-                   margin-bottom: 4rem;
-                }
-                @include mq(xxl) {
-                    margin-bottom: 5rem;
-                }
-            }
-            ul.nav{
-               @include  reset-list();      
-           
-                li{
-                    display: inline-block;
-                    margin-right: 1px;
-                    @include mq(md) {
-                        padding: 0 1rem;              border-left: 1px #fff solid;
-                    }
-                    @include mq(lg) {
-                        padding: 0 1.15rem;            
-                    }
-                    &:last-child{
-                       
-                        @include mq(md) {
-                            border-right: 1px #fff solid;
-                        }
-                    }
-                }
-                a{
-                    display:block;                  
-                    padding: .3rem 1rem;
-                    font-size: rem(18);
-                    color:#fff;
-                
-                    transition: all .2s;
-                    @include mq(lg) {           
-                        padding: .3rem 1.5rem;
-           
-                    }
-                    @include mq(xl) {                
-                        padding: .3rem 2rem;
-                    }
-                    @include mq(xxl) {                
-                        padding: .5rem 3.45rem;
-                    }
-                    &:hover{
-                        color: $color-secondary;
-                    }
-                    &.active{
-                        position: relative;
-                      &::after{
-                          position: absolute;
-                          content: "";
-                          display: block;
-                            left: 50%;
-                            bottom: 0;
-                            margin-left: -5px;
-                          border:5px solid transparent;
-                          border-bottom-color: #fff;
-                          width: 0;
-                          height: 0;
-                          z-index: 19;
-                          @include mq(md) {           
-                            margin-left: -6px;
-                            border-width:6px;
-                        }
-                          @include mq(lg) {           
-                            margin-left: -7px;
-                            border-width:7px;
-                        }
-                        @include mq(xl) {           
-                            margin-left: -8px;
-                            border-width:8px;
-                        }
-                        @include mq(xxl) {           
-                            margin-left: -11px;
-                            border-width:11px;
-                        }
-                      }
-                    }
-                }
-            }
-            
+        h1{
+            @include vertical-align(); 
         }
     }
 }
@@ -263,10 +142,90 @@ a {
 img {
     max-width: 100%;
 }
-.breadcrumb{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  
+.fixednav{
+    width: 190px;
+    position: sticky;
+    margin-left: -220px;
+    background-color: #fff;
+    float: left;
+    margin-top: 60px;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.03);        
+    top: 100px;
+    @include mq(xl) {
+        top: 80px;
+    }
+    @include mq(xxl) {
+        top: 100px;    
+    }
+    h4{
+        height: 64px;
+        padding: 0 26px;
+        line-height: 64px;
+        font-size: 18px;
+        margin: 0;
+    }
+    ul.nav{
+        @include reset-list();
+        &>li{
+            border-top: 1px #eee dotted;
+            position: relative;
+            &>a{
+                display: block;
+                line-height: 1.5;
+                padding: 1rem 26px;
+                font-weight: bold;
+            }
+           
+            .iconfont{
+                position: absolute;
+                right: .6rem;
+                top: 50%;
+                z-index: 20;
+                color: #999;             
+                display: block;
+                margin-top: -1rem;
+            }
+            .subnav{
+                @include reset-list();
+                display: none;
+                li{
+                    border-top: 1px #eee dotted;
+                    &:first-child{
+                        border-top: none;
+                    }
+                    a{
+                        display: block;
+                        line-height: 57px;
+                        padding: 0 26px 0 45px;
+                        &.active{
+                            background-color: #beddfc;
+                            color: $color-primary;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            &.active{
+                &>a{
+                    background: $color-primary url(../img/link_logo.png) no-repeat right bottom;
+                    color: #fff;
+                }
+                .iconfont{
+                    color: #fff;
+                    transform: rotate(90deg);
+                }
+                .subnav{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.page{
+    .fixednav{
+        margin-top: 90px;
+    }
 }
 .text100{
     font-size: rem(30);
@@ -329,7 +288,21 @@ img {
         font-size: rem(38);
     }
 }
-
+.text36{
+    font-size: rem(28);
+    @include mq(md) {
+        font-size: rem(30);
+    }
+    @include mq(lg) {
+        font-size: rem(32);
+    }
+    @include mq(xl) {
+        font-size: rem(34);    
+    }
+    @include mq(xxl) {
+        font-size: rem(36);
+    }
+}
 .text34{
     font-size: rem(24);
     @include mq(md) {
@@ -376,6 +349,21 @@ img {
         font-size: rem(28);
     }
 }
+.text26{
+    font-size: rem(18);
+    @include mq(md) {
+        font-size: rem(20);
+    }
+    @include mq(lg) {
+        font-size: rem(22);
+    }
+    @include mq(xl) {
+        font-size: rem(24);    
+    }
+    @include mq(xxl) {
+        font-size: rem(26);
+    }
+}
 .text24{
  
     @include mq(lg) {
@@ -413,39 +401,55 @@ img {
         font-size: rem(20);
     }
 }
-.ptb-5{
+
+.pt-media-5{
     padding-top: 1rem;
-    padding-bottom: 1rem;
     @include mq(md) {
         padding-top: 2rem;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+    }
+    @include mq(xl) {
+        padding-top: 4rem;
+    }
+    @include mq(xxl) {
+        padding-top: 5rem;
+    }
+}
+.pt-media-3{
+    padding-top: 1rem;
+    @include mq(md) {
+        padding-top: 2rem;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+    }
+
+}
+.pb-media-3{
+    padding-bottom: 1rem;
+    @include mq(md) {
         padding-bottom: 2rem;
     }
     @include mq(lg) {
-        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+.pb-media-5{
+    padding-bottom: 1rem;
+    @include mq(md) {
+        padding-bottom: 2rem;
+    }
+    @include mq(lg) {
         padding-bottom: 3rem;
     }
     @include mq(xl) {
-        padding-top: 4rem;
         padding-bottom: 4rem;
     }
     @include mq(xxl) {
-        padding-top: 5rem;
         padding-bottom: 5rem;
-    }
-}
-.pt-5{
-    padding-top: 1rem;
-    @include mq(md) {
-        padding-top: 2rem;
-    }
-    @include mq(lg) {
-        padding-top: 3rem;
-    }
-    @include mq(xl) {
-        padding-top: 4rem;
-    }
-    @include mq(xxl) {
-        padding-top: 5rem;
     }
 }
 .pt-9{
@@ -462,6 +466,55 @@ img {
     @include mq(xxl) {
         padding-top: 9rem;
     }
+}
+
+.mb-media-2{
+    margin-bottom: 1rem;
+    @include mq(md) {
+        margin-bottom: 2rem;
+    }
+}
+.mb-media-3{
+    margin-bottom: 1rem;
+    @include mq(md) {
+        margin-bottom: 2rem;
+    }
+    @include mq(lg) {
+        margin-bottom: 3rem;
+    }
+
+}
+.mb-media-4{
+    margin-bottom: 1rem;
+    @include mq(md) {
+        margin-bottom: 2rem;
+    }
+    @include mq(lg) {
+        margin-bottom: 3rem;
+    }
+    @include mq(xl) {
+        margin-bottom: 4rem;
+    }
+}
+.mb-media-5{
+    margin-bottom: 1rem;
+    @include mq(md) {
+        margin-bottom: 2rem;
+    }
+    @include mq(lg) {
+        margin-bottom: 3rem;
+    }
+    @include mq(xl) {
+        margin-bottom: 4rem;
+    }
+    @include mq(xxl) {
+        margin-bottom: 5rem;
+    }
+}
+
+
+.mt-n-30{
+    margin-top: -30px;
 }
 
 .main-gradient{

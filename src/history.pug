@@ -1,73 +1,131 @@
 extends includes/layout.pug
 
 block title
-    | 发展历程
+    | 大事记
 
 block bkheader
    
 
 
 block content  
-    .banner.banner-about(style="background-image:url(img/banner/about.jpg)")
-        .container-fluid
-            .txt
-                h1.title 关于心通
-                ul.nav
-                    li
-                        a.active(href="about.html") 关于心通
-                    li
-                        a(href="history.html") 发展历程
+    .banner.banner-contact(style="background-image:url(img/banners/about.jpg)")        
+        .container       
+            h1.text36 大事记   
                 
+    .pagenav
+        .container
+            ul.list
+                li
+                    a.active(href="history.html") 领导来访
+                li
+                    a(href="history.html") 成立事记
+                    
+    .wrapper
+        .page-history.pb-media-5
+            .container
+                .fixednav
+                    h4  实验室概况
+                    ul#nav.nav
+                        li
+                            a(href="about.html") 实验室简介
+                        li.hasnav
+                            a(href="structure.html") 组织架构 
+                            i.iconfont.icon-right                          
+                        li.hasnav
+                            a(href="team.html") 人才队伍
+                            i.iconfont.icon-right    
+                        li.active
+                            a(href="history.html") 大事记
+                        li
+                            a(href="contact.html") 联系我们
 
-    .page.page-history
-        section.s1.container
-            .history-list                
-                .row
-                    .col-md-6
-                        .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 成立TAVI项目
-                            .year 2010
+                section.s1.mb-media-3
+                    .history-list
+                        .item.odd
+                            .date
+                                .year.text36 2019
+                                .month.text30 07.19
+                            .row.align-items-center.justify-content-between
+                                .col-md-4.order-md-last
+                                    .pic
+                                        img.dot(src="img/his_01.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 中科院高鸿钧副秘书长一行调研实验室
 
-                .row.justify-content-end
-                    .col-md-6
                         .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 长期动物实验
-                            .year 2012
+                            .date
+                                .year.text36 2019
+                                .month.text30 07.19
+                            .row.align-items-center.justify-content-between
+                                .col-md-4
+                                    .pic
+                                        img.dot(src="img/his_02.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 中科院直属机关党委一行调研实验室
 
-                .row
-                    .col-md-6
-                        .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 首次人体植入
-                            .year 2010
-                            .pic
-                                img(src="img/temp/his-1.jpg", alt="")
+                        .item.odd
+                            .date
+                                .year.text36 2019
+                                .month.text30 07.03
+                            .row.align-items-center.justify-content-between
+                                .col-md-4.order-md-last
+                                    .pic
+                                        img.dot(src="img/his_03.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 广东省副省长覃伟中走访调研实验室
 
-                .row.justify-content-end
-                    .col-md-6
                         .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 长期动物实验
-                            .year 2012
+                            .date
+                                .year.text36 2019
+                                .month.text30 04.15
+                            .row.align-items-center.justify-content-between
+                                .col-md-4
+                                    .pic
+                                        img.dot(src="img/his_04.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 科技部党组书记、部长王志刚一行调研实验室
 
-                .row
-                    .col-md-6
-                        .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 成立TAVI项目
-                            .year 2010
+                        .item.odd
+                            .date
+                                .year.text36 2019
+                                .month.text30 03.26
+                            .row.align-items-center.justify-content-between
+                                .col-md-4.order-md-last
+                                    .pic
+                                        img.dot(src="img/his_05.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 东莞市委书记梁维东一行调研实验室
 
-                .row.justify-content-end
-                    .col-md-6
                         .item
-                            img.dot(src="img/dot01.png", alt="")
-                            h3.text34 长期动物实验
-                            .year 2012
-                            .pic
-                                img(src="img/temp/his-2.jpg", alt="")
-        
+                            .date
+                                .year.text36 2019
+                                .month.text30 02.27
+                            .row.align-items-center.justify-content-between
+                                .col-md-4
+                                    .pic
+                                        img.dot(src="img/his_06.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 科技部副部长徐南平一行到实验室调研
+
+                        .item.odd
+                            .date
+                                .year.text36 2018
+                                .month.text30 12.12
+                            .row.align-items-center.justify-content-between
+                                .col-md-4.order-md-last
+                                    .pic
+                                        img.dot(src="img/his_07.jpg", alt="")                                     
+                                        
+                                .col-md-4
+                                    .txt 黄宁生副省长一行调研实验室
+
+
 
         
 

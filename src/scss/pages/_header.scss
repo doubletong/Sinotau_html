@@ -4,51 +4,35 @@
     top: 0;
     z-index: 8000;
     width: 100%;
-    max-width: 1920px;
     height: 45px;
     transition: all .2s;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,.15);
-    padding: 0 rem(15);
+    box-shadow: 0 0 20px rgba(0,0,0,.15);  
     @include mq(md){
-        padding: 0 rem(40);height:60px;
+        height:60px;
     }
     @include mq(lg){
-        padding: 0  rem(55) 1.5rem;height: 70px;   
+         height: 70px;   
     }
     @include mq(xl){
-        padding: 0 rem(70) 1.5rem; height: 90px;     
+        height: 80px;     
     }
     @include mq(xxl){
-        padding: 0 rem(85) 1.5rem;  height: 107px;       
-    }
-    @media screen and (min-width:1920px){
-        left: 50%;
-        margin-left: -960px;
+        height: 100px;       
     }
 
-    .row {
-        height: 45px;
-        @include mq(md) {
-            height: 60px;
-        }
-        @include mq(lg) {
-            height: 70px;
-        }
+    .container-fluid,
+        .row
+    {
+        height: 100%;
     }
  
 
     .logo {
         display: block;
         width:100px;    
-        background-color: $color-primary;        
-        border-radius: 0 0 6px 6px;
-        text-align: center;
-        float: left;
-        padding: .5rem 1.3rem;
         @include mq(md) {
-            width: 140px; 
-            padding: .6rem 1.5rem;
+            width: 140px;     
         }
         @include mq(lg) {
             width: 150px;
@@ -56,13 +40,11 @@
         }
         @include mq(xl) {
             width: 230px;
-            padding: 1rem 3rem;
-            
+       
         }
         @include mq(xxl) {
-            width:340px;
-            height: 150px;
-            padding: 1rem 5rem 0;
+            width:auto;
+            
             
         }
         
@@ -73,7 +55,7 @@
         display: none;
         padding-left: 1rem;
         height: 100%;
-        text-align: right;
+        text-align: center;   
         @include mq(lg) {
             display: block;
         }
@@ -99,47 +81,107 @@
                     padding: 0 .5rem;
                 }
                 @include mq(xl){
-                    height: 90px;   
-                    line-height: 90px;
+                    height: 80px;   
+                    line-height: 80px;
                     padding: 0 1rem;  
                 }
                 @include mq(xxl){
-                    height: 107px;       
-                    line-height: 107px;
+                    height: 100px;       
+                    line-height: 100px;
                 }
             
-
-
-
                 &:hover{
-                    color:$color-secondary;
-                    border-bottom: 2px #fff solid;
-                            
+                    color:$color-primary;                                    
                 }
                 &.active {
-                    position: relative;
-                    border-bottom: 2px #fff solid;
+                    color: $color-primary;
+                    font-weight: bold;
                 }
             }
-
+            .subnav{
+                position: absolute;
+                width: 154px;
+                left: 50%;
+                top: 100px;
+                z-index: 10;
+                background-color: #fff;              
+                @include reset-list();
+                margin-left: -77px;
+                border-top:5px solid #0e62b8;
+                margin-top: 10px;
+                display: none;
+                transition: all .2s;
+              
+                box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+      
+                  
+                &>li{
+                    position: relative;
+                 
+                    a{
+                        display: block;
+                        padding: .8rem 1rem;
+                        line-height: 1.5;
+                     
+                        text-align: center;
+                        &:hover{
+                            background-color: $color-primary;
+                            color: #fff;
+                        }
+                        &.active{
+                            background-color: $color-primary;
+                            color: #fff;
+                        }
+                    }
+                    .lastnav{
+                        @include reset-list();
+                        position: absolute;
+                        width: 150px;
+                        right: -180px;
+                        top:0;
+                        z-index: 10;
+                        background-color: #fff;
+                        opacity: 0;
+                        transition: all .2s;
+                        box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+                    }
+                    &.hasnav{
+                        &:hover{
+                            .lastnav{
+                                opacity: 1;
+                                right: -150px;
+                            }
+                        }
+                    }
+                }
+               
+            }
+            &.hasnav{
+                &:hover{
+                    .subnav{
+                        display: block;
+                        margin-top: -5px;
+                    }
+                }
+               
+            }
 
         }
     }
-.loginbox{
-    background-color: $color-primary;
-    height: 34px;
-    border-radius: 17px;
-    padding: 0 .8rem;
-    line-height: 34px;
-    a{
-        display: inline-block;
-        padding: 0 .3rem;
-        &:hover{
-            color: #000;
-            text-decoration: underline;
-        }
+
+    .search,.emailoa,.lang{
+        a {
+            border-radius: 50%;    
+            background-image: linear-gradient( -45deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);
+            text-align: center;
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            color: #fff;
+          }
+          
     }
-}
 
 
     .mobilemenu {
@@ -285,9 +327,7 @@
 
     &.fixheader{
         background-color: #fff;       
-        a{
-            color: #333;
-        }
+      
         .mainav {
             &>li {        
                 &>a {                   
@@ -314,14 +354,8 @@
 .home-body{
     .site-header{
         background-color: transparent;
-        box-shadow: none;
-        .logo {           
-           
-           background-color: transparent;
-        }
-
-        .topnav{
-           
+        box-shadow: none; 
+        .topnav{           
             li{
               
                 a{
@@ -349,38 +383,15 @@
     
             }
         }
-        .search{    
-            a{
-                .iconfont{
-                    color: #fff;
-                }
-            }        
-        }
-        .lang{
-            a{
-                .iconfont{
-                    color: #fff;
-                }
-            }        
-        }
+       
     
 
-        .one,
-        .two,
-        .three {
-          
-            background-color: #fff;
-           
-        }
 
         &.fixheader{
             background-color: #fff;
             box-shadow: 0 0 25px rgba(0,0,0,.15);
             
-     
-            .logo {           
-                 background-color: $color-primary;
-            }
+    
             .mainav {         
     
                 &>li {

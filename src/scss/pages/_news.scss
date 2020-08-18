@@ -1,59 +1,11 @@
-.page-news {
-  
+.page-news { 
+    
     .s1{
-        margin-bottom: 1rem;
-        @include mq(md){
-            margin-bottom: 2rem;
-        }
-        @include mq(lg){
-            margin-bottom: 3rem;
-        }
-        @include mq(xl){
-            margin-bottom: 4rem;
-        }
-        @include mq(xxl){
-            margin-bottom: 5rem;
-        }
-        .topad{
-            height: 300px;
-            background: url(../img/news-b.jpg) no-repeat center center;
-            @include mq(md){
-                height: 320px;
-            }
-            .txt{
-                max-width: 600px;
-                margin: auto 0 auto  auto;
-                color: #fff;
-                @include vertical-align(); 
-                padding: 0 1rem;
-                @include mq(md){
-                    padding: 0 2rem;
-                }
-                @include mq(lg){
-                    padding: 0 3rem;
-                }
-                @include mq(xl){
-                    padding: 0 4rem;
-                }
-                @include mq(xxl){
-                    padding: 0 5rem;
-                }
-                h3{
-                    line-height: 1.3;
-                    margin-bottom: 2rem;
-                  
-                }
-            }
-        }
-        
-   
-    }
-    .s2{
-     
+        padding-top: rem(60);
         .newslist{
            
             .item{              
-               
+                background-color: #fff;
                 margin-bottom: 1rem;
                 @include mq(md){
                     margin-bottom: 2rem;
@@ -77,53 +29,45 @@
                 }
                 .txt{
                     position: relative;
-                    padding:3rem 1rem 0;
-                    border:1px #ddd solid;
-                    border-top: none;
+                    padding:.6rem 1rem 0;                
+                    min-height: 180px;
                     @include mq(md){
-                        padding: 3rem 1rem .5rem;
+                        padding:1rem 1rem .5rem;
                     }
-                    @include mq(lg){
-                        padding: 3.5rem 1rem 1rem;
-                    }
+               
                     @include mq(xl){
-                        padding: 4rem 2rem 1rem;
+                        padding: 1.2rem 1.5rem 1rem;
                     }
                     .pubdate{
-                        position: absolute;  line-height: 1.3;
-                        top: -36px;
-                        left: 1rem;
-                        z-index: 100;
-                        background: linear-gradient(90deg,#3F8EC1,#24C1DB);
-                        color: #fff;
-                        width: 79px;
-                        text-align: center;
-                        padding: .7rem 0;
-                        height: 72px;
-                     
-                        @include mq(lg){
-                            height: 80px;
-                            top: -40px;
-                            left: 1rem;
-                        }
+                        position: absolute; 
+                        line-height: 1.3;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 100;      
+                        color: $color-primary;     
+                        padding-bottom: 1rem;
+                        padding-left: 1rem;
                         @include mq(xl){
-                            height: 90px;
-                            top: -45px;
-                            left: 2rem;
+                            padding-left: 1.5rem;
+                            padding-bottom: 1.5rem;
+                        }  
+                        .iconfont{
+                            padding-right: .5rem;
                         }
                     }
 
                   
                     h3{
-                        line-height: 1.6;
+                        line-height: 1.8;
                         color: #333;                    
-                        font-size: rem(18);                        
+                        font-size: rem(14);     
+                        text-align: justify;                   
                         @include mq(xl){
-                            font-size: rem(20);
+                            font-size: rem(16);
                         }
                         @include mq(xxl){
                           
-                            font-size: rem(22);
+                            font-size: rem(18);
                         }
                         a{
                             color: #333;
@@ -143,153 +87,162 @@
     
 }
 
-.page-media{
-    .medialist{
-        .item{
-            background-color: #F6F9FC;
-            margin-bottom: 20px;
-            @include mq(md){
-                margin-bottom: 30px;
-            }
-            @include mq(lg){
-                margin-bottom: 45px;
-            }
-            .txt{
-                padding-top: 3rem;
-                padding-left: 1rem;
-                padding-right: 1rem;
-                position: relative;
+.page-research{
+    .s1{
+        padding-top: 60px;
+        .researchlist{
+            .item{
+                background-color: #fff;
+                margin-bottom: 20px;
                 @include mq(md){
-                    padding-left: 2rem;
-                    padding-top: 3.5rem;
-                    padding-right: 2rem;
-                    padding-bottom: 1rem;
+                    margin-bottom: 30px;
                 }
                 @include mq(lg){
-                    padding-left: 2rem;
-                    padding-top: 3.5rem;
-                    padding-right: 0;
+                    margin-bottom: 45px;
                 }
-                @include mq(xl){
-                    padding-left: 3rem;
-                    padding-top: 3rem;
-                }
-                @include mq(xxl){
-                  
-                    padding-left: 4rem;
-                    padding-top: 4rem;
-                }
-                h3{
-                    line-height: 1.5;
-                    margin: 0;
-                }
-                .note{
-                    font-size: rem(14);
-                    color: #B4B4B5;
-                    margin-bottom: 1rem;
-                    @include mq(md){
-                        margin-bottom: 2rem;
+                .txt{
+                    padding-right:3rem;
+                    height: 100%;
+                    position: relative;
+                    padding-left:2rem;
+                    h3{
+                        line-height: 1.8;
+                        margin: 0;
+                        padding-top: 1.5rem;
+                        font-weight: normal;
+                    }
+                 
+                    .note{
+                        position: absolute; 
+                        bottom: 0;
+                        left: 2rem;
+                       
+                        z-index: 100;
+                        border-top: 1px #eee solid;
+                        width: 100%;
+                        padding-top: 1.2rem;
+                        padding-bottom: 1.2rem;
+                        .iconfont{
+                            background: linear-gradient(90deg,#57a456,#13629b);
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            margin-right: .6rem;
+                            color: #999;
+                        }
+                                                  
                     }
                 }
-                .des{
-                    color: #B4B4B5;
-                    text-align: justify;
-                
+            }
+   
+        }
+    }
+    
+}
+
+.page-notice{
+    .s1{
+        padding-top: 60px;
+        .noticelist{
+            .item{
+                background-color: #fff;
+                margin-bottom: 20px;
+                @include mq(md){
+                    margin-bottom: 30px;
+                }
+                @include mq(lg){
+                    margin-bottom: 45px;
                 }
                 .pubdate{
-                    position: absolute;  line-height: 1.3;
-                    top: -36px;
-                    left: 1rem;
-                    z-index: 100;
-                    background: linear-gradient(90deg,#3F8EC1,#24C1DB);
                     color: #fff;
-                    width: 79px;
-                    text-align: center;
-                    padding: .7rem 0;
-                    height: 72px;
-                    @include mq(md){
-                        top: -38px;
-                        left: 2rem;  height: 76px;
-                    } 
-                    @include mq(lg){
-                        top: -40px;
-                        left: 2rem;  height: 80px;
+                    text-align: center;                    
+                    background-image: linear-gradient( 135deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);                    
+                    width: 100px;
+                    height: 128px;
+                    padding:1rem ;
+                    .date{
+                        border-bottom: 1px #fff solid;
                     }
+                      
+                }
+                .txt{
+                    padding-right: 1rem;
                     @include mq(xl){
-                        top: -45px;
-                        left: 3rem;  height: 90px;
+                        padding-left: 2rem;
+                        padding-right: 3rem;
                     }
-                    @include mq(xxl){
-                        top: -45px;
-                        left: 4rem;  height: 90px;
-                    }
+                }
+
+            }
+        }       
+    }  
+}
+
+.page-special{
+    .s1{
+        padding-top: rem(60);
+    }
+    .speciallist{
+        .item{
+            background-color: #fff;
+            margin-bottom: rem(30);
+            @include mq(lg){
+                margin-bottom: rem(40);
+            }
+            @include mq(xl){
+                margin-bottom: rem(50);
+            }
+            @include mq(xxl){
+                margin-bottom: rem(60);
+            }
+            .txt{
+                padding: 1rem;
+                font-weight: bold;
+                text-align: center;
+                @include mq(lg){
+                    font-size: rem(16);
+                }
+                @include mq(xl){
+                    font-size: rem(18);
+                }
+                @include mq(xxl){
+                    font-size: rem(20);
                 }
             }
         }
-        .pic{
-            display: block;
-            overflow: hidden;
-            @include mq(lg){
-                max-width: 450px;
-            }
-            @include mq(xl){
-                max-width: 580px;
-            }
-            @include mq(xxl){
-                max-width: 710px;
-            }
-            img{
-                width: 100%;
-                display: block;
-                @include mq(lg){
-                    width: 450px;
-                    height: 300px;
-                    object-fit: cover;
-                    overflow: hidden;
-                    object-position: center center;
-                }
-                @include mq(xl){
-                    width: 560px;
-                    height: 280px;                  
-                }
-                @include mq(xl){
-                    width: auto;
-                    height: auto;                  
-                }
-            }
+        .pagination{
+            padding-top: 0;
         }
     }
 }
-.page-videos{
+
+.page-video{
+    .s1{
+        padding-top: 60px;
+    }
     .videolist{
         .item{
             position: relative;
-            margin-bottom: 2rem;
+          
+            background-color: #fff;
+            margin-bottom: rem(30);
+            @include mq(lg){
+                margin-bottom: rem(40);
+            }
+            @include mq(xl){
+                margin-bottom: rem(50);
+            }
+            @include mq(xxl){
+                margin-bottom: rem(60);
+            }
             .pic{
                 width: 100%;
                 display: block;
+                position: relative;
             }
             .txt{
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 10;
-                background-image: linear-gradient(0deg,#000,rgba(0,0,0,0));
-                opacity: 0;
-                transition: all .2s;
-                h3{
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    z-index: 30;
-                    color: #fff;
-                    z-index: 40;
-                    padding:0 1.5rem  .5rem;
-                    line-height: 1.3;
-                }
+                padding: 1rem;
+                text-align: center;                
+            
             }
             .play{
                 position: absolute;
@@ -299,74 +252,37 @@
                 color: rgba(255,255,255,.9);
                 line-height: 1;
                 display: block;
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
                 text-align: center;
-                line-height: 60px;
-                margin-top: -30px;
-                margin-left:-30px ;
+          
+                margin-top: -25px;
+                margin-left:-25px ;
                 transition: all .2s;
-                @include mq(lg){
-                    height: 100px;
-                    width: 100px;
-                    line-height: 100px;
-                    margin-top: -50px;
-                    margin-left:-50px ;
-                }
-                .iconfont{
-                    font-size: 2.4rem;
-                    @include mq(md){
-                        font-size: 3rem;
-                    }
-                    @include mq(lg){
-                        font-size: 4rem;
-                    }
-                    @include mq(xxl){
-                        font-size: 5rem;
-                    }
-                }
+               
+              
                 &:hover{
                     transform: scale(1.1);
                 }
             }
-            &:hover{
-                .txt{
-                    opacity: 1;
-                }
-            }
+            
+        }
+        .pagination{
+            padding-top: 0;
         }
     }
 }
 
-.page-news-detail{
-    padding-top: 45px;
-    @include mq(md){
-        padding-top: 70px;
-    }
-    @include mq(lg){
-        padding-top: 80px;
-    }
-    @include mq(xl){
-        padding-top: 96px;
-    }
+
+.page-news-detail{    
     
-    article.container{
-     
-       
+    article.container{     
+        padding-top: rem(60);
         header{
             text-align: center;          
             padding-bottom: 2rem;
             position: relative;
-            &::after{
-                content: " ";
-                border-bottom: 1px #ddd solid;
-                display: block;
-                width: 100%;
-                bottom: 3rem;
-                left: 0;
-                position: absolute;
-                z-index: -1;
-            }
+           
             @include mq(md) {
                 margin-bottom: 2rem;
             }
@@ -377,38 +293,65 @@
                 color: #000;
                 text-transform: uppercase;
                 @include mq(md) {
-                    font-size: rem(24);  margin-bottom: 1rem;
+                    font-size: rem(24);  margin-bottom: 1.5rem;
                 }
                 @include mq(lg){
                     font-size: rem(26);
                 }
                 @include mq(xl){
-                    font-size: rem(30);
+                    font-size: rem(28);
                 }
                 @include mq(xxl){
-                    font-size: rem(32);
+                    font-size: rem(30);
                 }
             }
             .note{
-              color: #999;
-              display: inline-block;
-              background-color: #fff;
-              padding: 0 3rem;
-              z-index: 30;
-            }
-        }
-        figure{
-            margin-top:3rem;
-            margin-bottom:3rem;
-            text-align: center;
-            figcaption{
-                display: block;
+                color: #999;
+                max-width: 800px;
+                margin: 0 auto;
+           
+                text-align: left;
+              .item{
+                  display: inline-block;
+                  .iconfont{
+                      margin-right: .6rem;
+                      background: linear-gradient(90deg,#57a456,#13629b);
+                      background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                  }
+                  &.time{
+                      margin-right: 2rem;
+                  }
+              }
+             
+              a{
+                  display: inline-block;
+                  margin-left: 2rem;
+                  width: 28px;
+                  height: 28px;
+                  border:1px #a4cdf6 solid;
+                  border-radius: 50%;
+                  background-color: #fff;
+                  text-align: center;
+                  line-height: 26px;
+                  font-size: rem(14);
+                  &.active{
+                    background: linear-gradient(90deg,#57a456,#13629b);
+                    border-color: transparent;
+                    color: #fff;
+                  }
+              }
+
+              &.note1{
                 text-align: center;
-                padding-top: 2rem;
+                }
             }
         }
+
+
         .content{
             margin-bottom: 2rem;
+            font-size: rem(18);
             @include mq(lg) {
                 margin-bottom: 3rem;
             }
@@ -418,8 +361,27 @@
             @include mq(xxl) {
                 margin-bottom: 5rem;
             }
-
+            &.font-sm{
+                font-size: rem(16);
+            }
+            &.font-lg{
+                font-size: rem(20);
+            }
+            figure{
+                margin:2rem auto;              
+                text-align: center;
+                figcaption{
+                    display: block;
+                    text-align: center;
+                    padding: .6rem;
+                }
+            }
+            img{
+                height: auto !important;
+            }
             .vid{
+                max-width: 960px;
+                margin:0 auto;
                 video{
                     width: 100%;
                 }
@@ -439,7 +401,6 @@
                 text-align: center;
             }
        
-    }
-    
+    }    
   
 }

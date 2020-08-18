@@ -1,0 +1,92 @@
+extends includes/layout.pug
+
+block title
+    | 专题栏目
+
+block content
+    .banner.banner-special(style="background-image:url(img/banners/news.jpg)")        
+        .container       
+            h1.text36 通知公告
+
+    .wrapper
+        .page-special.pb-media-5
+            .container  
+                .fixednav
+                    h4  专题栏目
+                    ul.nav
+                        li
+                            a(href="news.html") 新闻动态
+                        li
+                            a(href="research.html") 科研进展                             
+                        li
+                            a(href="notice.html") 通知公告
+                        li.active
+                            a(href="special.html") 专题栏目
+                        li
+                            a(href="videos.html") 视频中心
+
+                    
+
+                .s1
+                    .speciallist
+                        .row
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s1.jpg", alt="")                                
+                                    .txt
+                                        a(href="special_list.html") 科研cafe                                    
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s2.jpg", alt="")
+                                    .txt
+                                        a(href="special_list.html") 人才视界
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s3.jpg", alt="")                                
+                                    .txt
+                                        a(href="special_list.html") 科技“抗疫”
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s1.jpg", alt="")                                
+                                    .txt
+                                        a(href="special_list.html") 科研cafe
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s3.jpg", alt="")                                
+                                    .txt
+                                        a(href="special_list.html") 人才视界
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp                         
+                                    a.pic(href="special_list.html")
+                                        img(src="img/temp/s2.jpg", alt="")                                
+                                    .txt
+                                        a(href="special_list.html") 科技“抗疫”
+
+            
+        
+                        footer.news-footer.wow.fadeInUp
+                            ul.pagination.text-center
+                                li.page-item
+                                    a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 上一页
+                                        
+                                li.page-item
+                                    a.page-link(href='#') 1
+                                li.page-item.active(aria-current='page')
+                                    a.page-link(href='#')
+                                        | 2                          
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link.next(href='#') 下一页
+                                       
+        
+block bkfooter
+    script.
+        $(function(){
+        
+        })

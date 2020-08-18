@@ -1,118 +1,132 @@
 
 .site-footer{   
-    background: #022E6A url(../img/dot.png) no-repeat left -30px bottom -50px;
-  
-    color: #B5B5B6;
-    padding: 1rem rem(15);
+    background: #00273d url(../img/footer_bg.png) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding-top: 1rem;
     @include mq(md){
-        padding: 1.5rem rem(40);
+        padding-top: 1.5rem;
     }
     @include mq(lg){
-        padding: rem(25)  rem(55) 1.5rem;
+        padding-top: rem(25);
     }
     @include mq(xl){
-        padding: rem(35) rem(70) 1.5rem;
+        padding-top: rem(35);
     }
     @include mq(xxl){
-        padding: rem(45) rem(85) 1.5rem;
+        padding-top: rem(45) ;
+    }
+    .container-fluid{
+        @include mq(xxl) {
+           padding-left: 110px;
+           padding-right: 110px;
+        }
     }
     .logo_bot{
-      
-        @include mq(lg){
-            float: left;    
-           
-        }
-        img{
-            width: 90px;
-            @include mq(lg){
-                width: 90px;               
-            }  
-            @include mq(xl){
-                width: 180px;
-               
-            }  
-            @include mq(xxl){
-                width: 180px;
-               
-            }    
-        }  
+      margin-bottom: 1rem;
+    
+      @include mq(xxl) {
+        margin-bottom: 1.5rem;
+    
+     }
     }
-    .bottop{
-     
-        padding-bottom:rem(20);  
-        position: relative;
-        display: none;
-        @include mq(lg){
-            display: block;
-            padding-top: rem(25);
-        }
-        @include mq(xl){
-            padding-top: rem(85);
-        }
-        &::before{
-            content: " ";
-            display: block;
-            position: absolute;
-            height: 1px;  
-            width: 100%;         
-            left: 0;
-        
-            z-index: 100;
-         
-            background-color: #fff;
-            @include mq(lg){
-                top: 4rem;
-            }
-            @include mq(xl){
-                top: 9rem;
-            }
-        }
 
+    .bottop{    
+     
         .botnav{
-            list-style: none;
-            margin: 0;
-            padding: 0 1.5rem;
-            text-align: center;
-            @include mq(lg){
-                padding: 0;
-            }
-            @include mq(xl){
-                padding: 0 .5rem;
-            }
+            @include reset-list();
+            margin-bottom: 1rem;
             @include mq(xxl){
-                padding: 0 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            li{
+                display: inline-block;
+                padding: 0 1rem;
+                border-right: 1px #fff solid;
+                line-height: 1;
+                @include mq(xl){
+                    padding: 0 1.5rem;
+                }
+                @include mq(xxl){
+                    padding:0 2rem;
+                }
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child{
+                    border-right: none;
+                }
             }
             a{
-                color: #ADADAE;
-                font-size: rem(14);
-                @include mq(xl){
-                    font-size: 1rem;
-                }
+                color: #fff;            
+                transition: all .2s;     
+                display: block;        
                 &:hover{
-                    color: #fff;
+                    transform: scale(1.1);
                 }
             }
-            dt{
-                text-align: center;
-                font-size: rem(18);
-                font-weight: normal;
-              
-                @include mq(lg){
-                    margin-bottom:  1.5rem;
-                }
-                @include mq(xl){
-                    margin-bottom: 2.75rem; font-size: rem(20);
-                }
+        
+        }
+        .qr{
+            text-align: center;
+            padding-bottom: 1rem ;
+            @include mq(xxl){
+                padding-bottom: 1.5rem;
             }
-            dd{
-                text-align: center; 
-               
+            .name{
+                padding-top: 1rem;
             }
         }
     }
-   
+   .links{
+       background-color: rgba(0,0,0,.2);
+       padding: 26px 0;
+       border-bottom: 1px #012a42 solid;
+      
+       select{
+           border: 1px #2f93f7 solid;
+           outline: none;
+           color:#2f93f7;
+           height: 40px;
+           border-radius: 20px;
+           padding: 0 4rem 0 1rem;
+           -webkit-appearance: none;
+           -moz-appearance: none;
+           appearance: none;
+           background:transparent url("../img/down.png") no-repeat right 1.5rem center;
+           option{
+               padding: 1rem;
+               background-color: #002236;
+               color: #fff;
+               border:1px #002236 solid;
+               border-radius: 10px;
+           }
+       }
+       .link-right{
+           a{
+               margin-left: 2rem;
+               color:#2f93f7;
+               @include mq(xl){
+                margin-left: 3rem;
+                }
+                @include mq(xxl){
+                    margin-left: 4rem;
+                }
+           }
+       }
+   }
     .bot{
-        padding-top: 1rem;       
+        padding-top: .7rem;        background-color: rgba(0,0,0,.2);
+        text-align: center; 
+        color: #003e63;
+        font-size: rem(12);
+        padding-bottom: .7rem;
+        a{
+            color: #003e63;
+            &:hover{
+                color: #fff;
+            }
+        }
     }
 
 }

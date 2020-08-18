@@ -1,80 +1,145 @@
 extends includes/layout.pug
 
 block title
-    | 科普
+    | 粤港澳交叉科学中心
 
 block bkheader
-   
+   link(href='js/vendor/mediaelement/mediaelementplayer.min.css', rel='stylesheet')
 
-block content
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/temp/banner_future.jpg)")
-        .container
-            h1.title-page 脑未来资源
-            nav.submenus 
-                a(href="culture.html") 视频
-                a.active(href="science.html") 科普
-    
+
+block content  
+    .banner.banner-science(style="background-image:url(img/banners/core.jpg)")        
+        .container       
+            h1.text36 粤港澳交叉科学中心
               
-    .page.page-science.container      
-        .articlelist
-            .box
-                .row.align-items-center
-                    .col-md-auto                    
-                        a.item.wow.fadeInUp(href="science_detail.html")                            
-                            img.thumb(src="img/temp/se_01.jpg")
-                    .col-md
-                        a.title(href="science_detail.html")
-                            h3 美味，如何让我们快速获得满足感？
-                            p 作者：李栩琳 杨青宁
-                             
 
-            .box
-                .row.align-items-center
-                    .col-md-auto                    
-                        a.item.wow.fadeInUp(href="science_detail.html")                            
-                            img.thumb(src="img/temp/se_01.jpg")
-                    .col-md
-                        a.title(href="science_detail.html")
-                            h3 美味，如何让我们快速获得满足感？
-                            p 作者：李栩琳 杨青宁
-                             
-            .box
-                .row.align-items-center
-                    .col-md-auto                    
-                        a.item.wow.fadeInUp(href="science_detail.html")                            
-                            img.thumb(src="img/temp/se_01.jpg")
-                    .col-md
-                        a.title(href="science_detail.html")
-                            h3 美味，如何让我们快速获得满足感？
-                            p 作者：李栩琳 杨青宁
-                             
-            .box
-                .row.align-items-center
-                    .col-md-auto                    
-                        a.item.wow.fadeInUp(href="science_detail.html")                            
-                            img.thumb(src="img/temp/se_01.jpg")
-                    .col-md
-                        a.title(href="science_detail.html")
-                            h3 美味，如何让我们快速获得满足感？
-                            p 作者：李栩琳 杨青宁
-                             
-                            
+    .wrapper
+        .page-science.pb-media-5
+            .container  
+                .fixednav
+                    h4  核心板块
+                    ul.nav
+                        li
+                            a.active(href="core.html") 前沿基础研究
+                        li
+                            a(href="platform.html") 公共技术平台和大科学装置                             
+                        li
+                            a(href="factory.html") 创新样板工厂
+                        li.hasnav.active
+                            a(href="science.html") 粤港澳交叉科学中心
+                            ul.subnav
+                                li
+                                    a.active(href="science.html") 中心简介
+                                li
+                                    a(href="science_events.html") 学术活动
+                                li
+                                    a(href="applications.html") 项目申请
+                
+
+                section.s1.mb-media-5
+                    .row
+                        .col-md
+                            .txt                                
+                                h2.text36 中心简介
+                                p 粤港澳交叉科学中心，是松山湖材料实验室下设四大核心板块之一。中心负责整合国际学术资源，通过建立跨学科、跨产业的创新生态，服务于粤港澳湾区产业集群。旨在建成高水平、长期、稳定的学术交流和合作研究的平台；以材料科学为核心，面向生命、能源、先进制造、人工智能等多学科交叉，持续关注国内外相关科学前沿和最新动态，开展交叉合作，提供创新思想和成果源泉；面向社会开放，宣传和普及材料科学及相关学科交叉所形成的各种成果，锻造先进的科学文化基础，促进和培养更多的优秀年轻人才投身于前沿研究；建立与政府、企业、高校和科研院所良好的合作关系；为实验室发展提供战略咨询，并引领中国乃至世界交叉学科的发展。
+                        .col-md-auto
+                            .pic
+                                img(src="img/core_08.jpg", alt="")
+                    
+                  
+
+                section.s2.pb-media-3
+                    .pic
+                        img(src="img/core_09.jpg", alt="")
+                    p 粤港澳交叉科学中心作为跨学科的国际学术交流平台，主要联合国内外各大学、中国科学院、国家自然科学基金委等机构，吸取国际类似研究机构的成功经验，邀请国际一流学者进行中长期或短期访问，以持续深入的科学研讨会为主，打造系列知名国际会议和讲习班。
         
+            section.s3.pt-media-3.pb-media-5
+                .container
+                    h2.text36 组织成员 
+                    .row
+                        .col-md-4.col-lg
+                            .item
+                                .pic
+                                    img(src="img/core_14.jpg", alt="")
+                                h3.text24 汤超
+                                .post 粤港澳交叉科学中心主任 
+                                    br
+                                    | 中科院院士、北京大学教授
+                                .email 邮箱：tangc@pku.edu.cn
 
+                        .col-md-4.col-lg
+                            .item
+                                .pic
+                                    img(src="img/core_13.jpg", alt="")
+                                h3.text24 胡江平
+                                .post 粤港澳交叉科学中心常务副主任
+                                    br
+                                    | 中科院物理所副所长、研究员
+                                .email 邮箱：jphu@iphy.ac.cn
 
+                        .col-md-4.col-lg
+                            .item
+                                .pic
+                                    img(src="img/core_10.jpg", alt="")
+                                h3.text24 戴希
+                                .post 粤港澳交叉科学中心副主任
+                                    br
+                                    | 香港科技大学教授
+                                .email 邮箱：daix@iphy.ac.cn
+
+                        .col-md-4.col-lg
+                            .item
+                                .pic
+                                    img(src="img/core_12.jpg", alt="")
+                                h3.text24 汤雷翰
+                                .post 粤港澳交叉科学中心副主任
+                                    br
+                                    | 香港浸会大学教授
+                                .email 邮箱：lhtang@csrc.ac.cn
+
+                        .col-md-4.col-lg
+                            .item
+                                .pic
+                                    img(src="img/core_11.jpg", alt="")
+                                h3.text24 邱祥冈
+                                .post 粤港澳交叉科学中心主任顾问
+                                    br
+                                    | 中科院物理所研究员
+                                .email 邮箱：xgqiu@aphy.iphy.ac.cn
+
+            section.s4.container.pt-media-3.pb-media-3
+                h2.text36 联系方式
+                .contact
+                    .row
+                        .col-md
+                            ul.list
+                                li 
+                                    i.iconfont.icon-user
+                                    | 钟老师
+                                li 
+                                    i.iconfont.icon-zuoji
+                                    | (+86)-0769-89136772
+                                li 
+                                    i.iconfont.icon-fax
+                                    | (+86)- 0769-89136764
+                                li  
+                                    i.iconfont.icon-youxiang 
+                                    | zhongyuqing@sslab.org.cn
+                        .col-md-auto
+                            .pic
+                                img(src="img/contact_02.png", alt="")
 
 
 block bkfooter
 
-
     script.
-      
-        $(function () {
         
-  
+
+        $(function () {
+            //-  $('video, audio').mediaelementplayer();
+                
         
         });
-      
-       
+
 
      

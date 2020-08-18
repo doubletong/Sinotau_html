@@ -1,35 +1,48 @@
 extends includes/layout.pug
 
 block title
-    | Scientists Design Novel Algorithmic Framework for Alzheimer's Disease Prediction.
+    | 视频播放
 
 block content
-    .banner.banner-about(style="background-image:url(img/banner/news.jpg)")
-        .container-fluid
-            .txt
-                h1.title 传媒中心
-                ul.nav
-                    li
-                        a(href="news.html") 新闻动态
-                    li
-                        a(href="media.html") 媒体报道
-                    li
-                        a.active(href="videos.html") 视频中心
+    .banner.banner-news(style="background-image:url(img/banners/news.jpg)")        
+        .container       
+            h1.text36 新闻动态
 
-    .page.page-news-detail
-        
-        article.container
-            header
-                h1.title-news.wow.fadeInUp 期权“策略笔记”第8篇：蓄势上攻，速度战胜时间仍然存疑20190912
-                .note
-                    time 2020-04-21 08:00
-                    author 来自 MedTrend医趋势
+    .wrapper
+        .page-news-detail.pb-media-5
+            .container  
+                .fixednav
+                    h4  新闻中心
+                    ul.nav
+                        li
+                            a(href="news.html") 新闻动态
+                        li
+                            a(href="research.html") 科研进展                             
+                        li
+                            a(href="notice.html") 通知公告
+                        li
+                            a(href="special.html") 专题栏目
+                        li.active
+                            a(href="videos.html") 视频中心
 
-            main.content.wow.fadeInUp
-                .vid
-                    video(autoplay, poster="img/temp/poster.jpg", id="videobg",preload="true", muted, x5-playsinline,playsinline,webkit-playsinline, loop)
-                        source(src="img/blue_waves.mp4", type="video/mp4")
-                        | Your browser does not support the video tag. I suggest you upgrade your browser.
+
+            article.container
+                header
+                    h1.title-news.wow.fadeInUp 期权“策略笔记”第8篇：蓄势上攻，速度战胜时间仍然存疑20190912
+                    .note.note1.wow.fadeInUp                      
+                        .item.time
+                            i.iconfont.icon-time
+                            | 2020-04-21                            
+                        .item.view 
+                            i.iconfont.icon-view
+                            | 3234
+                           
+
+                main.content.wow.fadeInUp
+                    .vid
+                        video(autoplay, poster="img/temp/journey.jpg", id="videobg",preload="true", muted, x5-playsinline,playsinline,webkit-playsinline, loop)
+                            source(src="img/temp/journey.mp4", type="video/mp4")
+                            | Your browser does not support the video tag. I suggest you upgrade your browser.
             
           
 

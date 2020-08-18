@@ -1,3 +1,8 @@
+@include font-face(YouSheBiaoTiHei, '../fonts/YouSheBiaoTiHei', null, null, ttf);
+.fontyoushe{
+    font-family:  YouSheBiaoTiHei, "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
+}
+
 .font-loaded{
     .site-footer,.title-section,
     .site-header,.banner,h1,h2,h3,h4,.page-contact ,

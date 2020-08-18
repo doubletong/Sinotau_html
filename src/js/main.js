@@ -4,10 +4,10 @@ $(document).ready(function() {
     $(window).scroll(function(){
         if (40 < $(window).scrollTop()) {
             $("#site-header").addClass("fixheader");  
-            $("#logo").attr("src","img/logo_bot.png");
+            // $("#logo").attr("src","img/logo_bot.png");
         } else {
             $("#site-header").removeClass("fixheader");   
-            $("#logo").attr("src","img/logo.png");        
+            // $("#logo").attr("src","img/logo.png");        
         }
     })
    
@@ -17,13 +17,13 @@ $(document).ready(function() {
         $("#searchbox").slideToggle();
     })
 
-    $(".hasnav").hover(function(e){     
-        var i = $(this).attr('data-id');       
-        $("#" + i).fadeIn();
-    },function(){
-        var i = $(this).attr('data-id'); 
-        $("#" + i).fadeOut();
-    })
+    // $(".hasnav").hover(function(e){     
+    //     var i = $(this).attr('data-id');       
+    //     $("#" + i).fadeIn();
+    // },function(){
+    //     var i = $(this).attr('data-id'); 
+    //     $("#" + i).fadeOut();
+    // })
 
     $('.nav-bg').hover(function(e){
         $(this).stop().fadeIn();
@@ -40,9 +40,11 @@ $(document).ready(function() {
     //     "use strict";
     //     e.preventDefault();
     //     $(this).closest('li').toggleClass('open');
-    //     $(this).next('.subnav').slideToggle();
-        
+    //     $(this).next('.subnav').slideToggle();   
+    // });
 
+    // $("#nav li.hasnav").click(function(e){         
+    //     $(this).find('.subnav').slideToggle();
     // });
 
 
@@ -52,24 +54,11 @@ $(document).ready(function() {
         case "/":
         case "/index.html":     
             $(".mainav li:nth-of-type(1) a").addClass("active");
-        break;
-        case "/platform.html":   
-            $(".mainav li:nth-of-type(4) a").addClass("active");
-            break;
-           
-       
+        break; 
         case "/404.html":
             $(".mainmenu>li.ortherpage").addClass("nav-open");
             $(".mainmenu>li.ortherpage .submenu li:nth-of-type(4) a").addClass("active");
-            break;
-        case "/news.html":
-        case "/news_detail.html":
-            $(".mainav li:nth-of-type(5) a").addClass("active");
-            break;
-        case "/team.html":
-        case "/team_detail.html":
-            $(".mainav li:nth-of-type(3) a").addClass("active");
-            break;
+            break;    
         case "/research_overview.html":
         case "/research_detail.html":
             $(".mainav li:nth-of-type(2) a").addClass("active");
@@ -81,7 +70,7 @@ $(document).ready(function() {
             $(".mainav li:nth-of-type(6) a").addClass("active");
             break;
         case "/about.html":            
-            $(".mainav li:nth-of-type(5) a").addClass("active");
+            $(".mainav>li:nth-of-type(2)>a").addClass("active");
         }
 
 
@@ -102,31 +91,6 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:0}, '300');
     });
 
-    $(".btn-close").click(function(e){
-        $(this).closest(".overly").fadeOut().removeClass("login-container").removeClass("register-container");
-    });
-
-    $("#btn-login-open").click(function(e){     
-        $("#overly").fadeIn().addClass("login-container");
-    });
-    $("#btn-register-open").click(function(e){     
-        $("#overly").fadeIn().addClass("register-container");
-    });
-
-    $("#btnLoginType").click(function(e){     
-        var id = $(this).attr("data-type");
-
-        $("#"+id).addClass("active");
-
-        if(id === "accountlogin"){
-            $("#mobilelogin").removeClass("active");
-            $(this).attr("data-type","mobilelogin");
-        }else{
-            $("#accountlogin").removeClass("active");
-            $(this).attr("data-type","accountlogin");
-        }
-        
-    });
 });
 
 // Check if API exists

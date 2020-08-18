@@ -1,79 +1,58 @@
+
 .page-about{  
-  
+    background: url(../img/logo_bg.png) no-repeat center bottom;
+    padding-top: 1px;
+    .container{
+        position: relative;
+    }
+
     .s1{      
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: rem(25);
-      padding-bottom:rem(25);
+      background-color: #fff;
+   
+      
+        padding: 1rem;
+     
         @include mq(md) {
-            padding-top: rem(30);
-            padding-bottom:rem(30);
+            padding: 2rem;
         }
         @include mq(lg) {
-            padding-top: rem(45);
-            padding-bottom: rem(45);
+            padding: 2.5rem 3rem;
         }
         @include mq(xl) {
-            padding-top: rem(70);
-            padding-bottom: rem(70);
+            padding: 3rem 4rem;
         }
        
-        @include mq(xxl){
-            padding-top: rem(95);
-            padding-bottom: rem(95);
-        }
       .intro{
        text-align: justify;
-        @include mq(xxl){
-          padding-right: 15rem;
-          
-        }
+       padding-left: 4rem;
+       line-height: 2.1;
+     
       }
       .pic{
-          text-align: center;
+          text-align: center;       
+      
       }
  
     }
     .s2{
-        img{
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: center center;
-            @include mq(md) {
-                height: 400px;
+        margin-bottom: 2rem;
+        .pic{         
+            margin-bottom: 2rem;   
+            img{
+                width: 100%;                
             }
-            @include mq(lg) {
-                height: 400px;
-            }
-            @include mq(xl) {
-                height: 500px;
-            }
-        }
+        }  
+      
     }
     .s3{
-        padding-top: 1rem;
-        padding-bottom:1rem;
-          @include mq(md) {
-              padding-top: 2rem;
-              padding-bottom:2rem;
-          }
-          @include mq(lg) {
-              padding-top: 3rem;
-              padding-bottom: 3rem;
-          }
-          @include mq(xl) {
-              padding-top: 4rem;
-              padding-bottom: 4rem;
-          }
-         
-        .video-container{
-            text-align: center;
-            margin: 0 auto;
-            max-width: 720px;
-         
-          
+        .pic{         
+            margin-bottom: 2rem;   
+            img{
+                width: 100%;                
+            }
+        }  
+        ul{
+            @include reset-list();
         }
     }
 
@@ -81,119 +60,469 @@
    
 }
 
-.page-qualification{
+.page-council{
     .s1{
-        text-align: center;
-        @include mq(xl) {
-            padding-top: 2rem;
-        }
-      
-        figure{
-        
+        background-color: #fff;
+        .intro{
+            padding: 1rem;
+            background: url(../img/logo_bg1.png) no-repeat right -1rem bottom -3rem;
+            height: 100%;
             @include mq(xl) {
-                margin-bottom: 2rem;
+                padding: 2rem;
             }
-            figcaption{
-                padding: 1rem;
+            .sig{
+                position: absolute;
+                right: 1rem;
+                bottom: 1rem;
+                font-size: rem(18);
+                font-weight: bold;
+                @include mq(xl) {
+                    right: 2rem;
+                    bottom: 2rem;
+                }
+            }
+           
+        }
+        .pic{
+           
+            
+        }
+    }
+    .s2{
+        .item{
+            text-align: center;
+            background-color: #fff;
+            height: 100%;
+            padding: 2rem 2rem 1rem;
+            @include mq(xl) {
+                padding:3rem 3rem 1rem;
+            }
+            .name{
+                font-size: rem(24);
+                font-weight: bold;
+                padding-top: .6rem;
+                padding-bottom: .6rem;
+            }
+            .post{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-top: 1px #eee solid;
+            }
+        }
+        .col-6{
+            margin-bottom: rem(20);
+        }
+    }
+}
+
+.page-leaership{
+    .s1{
+        padding-top: 60px;
+        .item{
+            background-color: #fff;
+            padding: 2rem;
+            .pic{
+                img{
+                    width: 140px;
+                    height: 140px;
+                    object-fit: cover;
+                    object-position: center center;
+                    border-radius: 50%;
+                }
+            }
+            .txt{
+                h3{
+                    font-size: rem(18);
+                    @include mq(lg) {
+                        font-size: rem(20);
+                    }
+                    @include mq(xl) {
+                        font-size: rem(22);
+                    }
+                    @include mq(xxl) {
+                        font-size: rem(24);
+                    }
+                }
+            }
+        }
+        .col-md-6{
+            margin-bottom: rem(20);
+        }
+    }
+   
+}
+
+.page-academic{
+    .s1{
+        padding-top: 60px;
+      
+        .top{
+            background: #fff url(../img/logo_bg1.png) no-repeat right bottom -2rem;
+        }
+        .txt{
+            margin: 0 4rem;
+            max-width: 300px;
+            h3{
+                font-size: rem(30);
+                border-bottom: 1px #eee solid;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+                small{
+                    font-size: rem(16);
+                    font-weight: normal;
+                    margin-left: 2rem;
+                }
+            }
+            .post,.office{
+                font-size: rem(18);
+            }
+        }
+    }
+    .s2{
+        .list{
+            .item{
+                background-color: #fff;
+                padding:.5rem 27px;
+                margin-bottom: rem(30);
+                @include mq(lg) {
+                    margin-bottom: rem(40);
+                }
+                @include mq(xl) {
+                    margin-bottom: rem(50);
+                }
+                @include mq(xxl) {
+                    margin-bottom: rem(60);
+                }
+                h3{
+                    font-size: 30px;
+                    position: relative;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                    small{
+                        font-size: 1rem;
+                        font-weight: normal;
+                        margin-left: 2rem;
+                    }
+                    &::after{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 4px;font-size: 0;
+                   
+                        z-index: 12;
+                   
+                        content: " ";
+                        display: block;
+                        background-image: linear-gradient(90deg,#57a456,#13629b);
+                       
+                    }
+                }
+                p{
+                    font-size: rem(18);
+                }
             }
         }
     }
 }
-.page-culture{
+
+.page-contact{
     .s1{
-        text-align: center;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        @include mq(md) {
-            padding-top: 3rem;
-            padding-bottom:3rem;
-        }
-        @include mq(lg) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-        @include mq(xl) {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-        @include mq(xxl) {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
-        }
-     
-            img{
-                width: 50%;
-                @include mq(md) {
-                  width: 50%;
-                }
-                @include mq(lg) {
-                    width: auto;
-                  }
-            }
-        
-    }
-    .s2{
-      
-        color: #fff;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background: #fff url(../img/contact_01.png) no-repeat center center;
         background-size: cover;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        @include mq(md) {
-            padding-top: 3rem;
-            padding-bottom:3rem;
-        }
-        @include mq(lg) {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
+        padding: 3rem rem(56) 2rem;
         @include mq(xl) {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            font-size: rem(18);
+        }
+        .pic{
+            margin-bottom: 2rem;
+        }
+        ul{
+            @include reset-list();
+            li{
+                padding-left: 3rem;
+                position: relative;
+                font-weight: bold;
+                margin-bottom: .3rem;
+                .iconfont{
+                    position: absolute;
+                    left: 0;
+                    top: -0.7rem;
+                    z-index: 10;
+                    font-size: rem(28);
+                
+                    background: linear-gradient(90deg,#57a456,#13629b);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .qr{
+            text-align: center;
+            .title{
+                font-weight: bold;
+            }
+        }
+    }
+    .baidumap{
+        height: 440px;
+        @include mq(xl) {
+            height: 480px;
         }
         @include mq(xxl) {
-            padding-top: 6rem;
-            padding-bottom: 5.5rem;
+            height: 520px;
         }
-        .container{
-            height: 100%;
-            .txt{
-             
-                max-width: 500px;
-                .pic{
-                    padding-bottom: .8rem;
-                    img{
-                        width: 80px;
-                        @include mq(md) {
-                            width: 100px;
-                        }
-                        @include mq(lg) {
-                            width: auto;
-                        }
+        img{
+            max-width: none;
+        }
+    }
+}
+
+.pagenav{
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,.1);
+
+    .container{
+        .list{
+            @include reset-list();
+            li{
+                display: inline-block;
+                margin-right: 190px;
+            
+                a{
+                    font-weight: bold;
+                    display: block;
+                    height: 80px;
+                    line-height: 80px;
+                    @include mq(lg) {
+                        font-size: rem(16);
+                        height: 90px;
+                        line-height: 90px;
+                    }
+                    @include mq(xl) {
+                        font-size: rem(18);
+                        height: 100px;
+                        line-height: 100px;
+                    }
+                    @include mq(xxl) {
+                        font-size: rem(20);
+                        height: 116px;
+                        line-height: 116px;
+                    }
+                    &.active{
+                        color:$color-primary;
+                        border-bottom: 5px $color-primary solid;
                     }
                 }
-                h3{
-                    line-height: 1;
+            }       
+        }
+    }
+}
+
+.page-history{
+    .history-list{
+        position: relative;
+        padding-top: 50px;
+        &::after{
+            position: absolute;
+            display: block;
+            content: " ";
+            width: 0;
+            height: 100%;
+            left: 50%;
+            margin-left: -2px;
+            top: 0;
+            z-index: 10;
+            border-left: 4px #9ecfff dotted;
+
+        }
+        .item{
+            position: relative;
+            margin-bottom: 50px;
+            .date{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -100px;
+                margin-left: -100px;
+                text-align: center;
+                border:9px solid #c7dec9;
+                background-image: linear-gradient(45deg,#57a356,#12609c);
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                z-index: 40;
+                color: #fff;
+                line-height: 1.5;
+                padding-top: 2.5rem;
+                font-weight: bold;
+            }
+            .txt{
+          
+                    font-size: rem(16);
+                    font-weight: bold;
+                    padding: 0 2.5rem;
+
+                @include mq(md) {
+                    font-size: rem(18);               
+                }
+
+                @include mq(lg) {
+                    font-size: rem(20);               
+                }
+                @include mq(xl) {
+                    font-size: rem(22);
+                 
+                }
+                @include mq(xxl) {
+                    font-size: rem(24);
+    
                 }
             }
         }
     }
-    .s3{
-       
-        .container{
-            .txt{
-                margin: 0 0 0 auto;
-                text-align: right;
-              
+}
+
+.page-team{
+    .s1{
+        background: #fff url(../img/contact_01.png) no-repeat center center;
+        background-size: cover;
+        padding: 2.5rem rem(45) 1.5rem;
+        .pic{
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .s2{
+        text-align: center;
+        h2{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .item{
+            background-color: #1a70c4;
+            color: #fff;
+            padding: 4rem 1rem;
+            .num{
+                font-size: rem(48);
+                line-height: 1;
+                margin-bottom: 1rem;
+                font-weight: bold;
+                small{
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+            }
+            &.odd{
+                background-color: #1f7fde;
             }
         }
-
     }
-    .s4{
-        @include mq(xxl) {
-            padding-top: 7rem;
-            padding-bottom: 6.5rem;
+}
+
+.page-academician{
+    .s1{
+        padding-top: rem(60);
+        .item{
+            background-color: #fff;
+            padding: 1rem;
+            margin-bottom: rem(20);
+            @include mq(md){
+                margin-bottom: rem(30);
+            }
+            @include mq(lg){
+                margin-bottom: rem(40);
+            }
+            @include mq(xl){
+                padding: 2rem;
+                margin-bottom: rem(50);
+            }
+            @include mq(xxl){
+                margin-bottom: rem(60);
+            }
+        }
+        .txt{
+            .post{
+                padding: 0 1.5rem;
+                background-image: linear-gradient(45deg,#57a356,#12609c);
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.page-talent{
+    .s1{
+        padding-top: rem(60);
+        .item{
+            background-color: #fff;
+            height: 100%;
+            .pic{
+                background-color: $color-primary;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+                @include mq(xl){
+                    padding: 2rem;
+                  
+                }
+                img{
+                    width: 162px;
+                    height: 162px;
+                    object-fit: cover;
+                    object-position: center center;
+                    border-radius: 50%;
+                    margin-bottom: 1.3rem;
+                }
+                h3{
+                    margin-bottom: 0;
+                }
+            }
+            .des{
+                padding: 1rem;
+                @include mq(xl){
+                    padding: 1.5rem;
+                  
+                }
+            }
+        }
+    }
+}
+
+
+.page-researcher{
+    .s1{
+        padding-top: rem(60);
+
+        .table{
+            width: 100%;
+            th{
+                background-color: #fff;
+                padding:1rem 1rem;
+                text-align: center;
+                font-weight: normal;
+                @include mq(xl){
+                    font-size:rem(18);  
+                    padding:2rem 1rem;                
+                }
+            }
+            tr{
+                background-color: #edf5fc;
+                &:nth-child(2n+1){
+                    background-color: #daecfe;
+                }
+                td{
+                    text-align: center;
+                    padding:1rem 1rem;
+                    font-weight: bold;
+                    @include mq(xl){
+                        font-size:rem(18);    
+                        padding:2rem 1rem;              
+                    }
+                }
+            }
         }
     }
 }

@@ -1,91 +1,57 @@
 footer#pagefooter.site-footer  
-    .logo_bot.wow.fadeInRight
-        img(src="img/logo_bot.png", alt="心通")
-    .bottop.wow.fadeInUp
-        .row.justify-content-end
+    .container-fluid.bottop
+        .row.align-items-end
+            .col-lg
+                .logo_bot.wow.fadeInUp
+                    img(src="img/logo_bot.png", alt="心通")
+                ul.botnav.wow.fadeInUp
+                    li 
+                        a(href="home.html") 首页
+                    li
+                        a(href="about.html") 实验室概况
+                    li
+                        a(href="core.html") 核心板块
+                    li
+                        a(href="news.html") 新闻中心
+                    li
+                        a(href="culture.html") 党群文化       
+                    li
+                        a(href="job.html") 人才招聘       
+                    li
+                        a(href="contact.html") 联系我们       
+        
             .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="about.html") 公司介绍
-                    dd
-                        a(href="about.html") 公司简介
-                    dd
-                        a(href="solutions.html") 企业资质
-                    dd
-                        a(href="care.html") 品牌与文化            
-                   
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="product.html") 配药安全
-                    dd
-                        a(href="about.html") 输液现状
-                   
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="product.html") 产品中心
-                    dd
-                        a(href="about.html") 静配中心补充
-                    dd
-                        a(href="solutions.html") 微型可移动静配中心
-                    dd
-                        a(href="care.html") 护士安全            
-                    dd
-                        a(href="news.html") 高效配置
-                 
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="datacenter.html") 数据中心
-                    dd
-                        a(href="about.html") 文献
-                    dd
-                        a(href="solutions.html") 全国医院覆盖区域
-                    dd
-                        a(href="care.html") 专家支持
-                  
-
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="jobs.html") 招贤纳士
-                    dd
-                        a(href="about.html") 人才理念
-                    dd
-                        a(href="solutions.html") 职位申请
-
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="jobs.html") 员工专区
-                    dd
-                        a(href="about.html") 培训系统
-                    dd
-                        a(href="solutions.html") 休闲专区
-
-            .col-lg-auto
-                dl.botnav
-                    dt 
-                        a(href="contact.html")  客服中心
-                    dd
-                        a(href="about.html") 留言专区
-                    dd
-                        a(href="contact.html") 联系方式
-  
-           
-    
+                .row
+                    .col    
+                        .qr
+                            img(src="img/qrcode_01.png", alt="官方公众号")
+                            .name 官方公众号
+                    .col
+                        .qr
+                            img(src="img/qrcode_02.png", alt="官方微博")
+                            .name 官方微博
+    .links   
+        .container-fluid
+            .row.align-items-center
+                .col-md
+                    select#selectlinks(name="")
+                        option(value="1") 友情链接： 广东省人民政府
+                        option(value="2") 友情链接： 人民政府
+                        option(value="1") 友情链接： 广东省人民政府
+                        option(value="2") 友情链接： 人民政府
+                        option(value="1") 友情链接： 广东省人民政府
+                        option(value="2") 友情链接： 人民政府
+                        option(value="1") 友情链接： 广东省人民政府
+                        option(value="2") 友情链接： 人民政府
+                        option(value="1") 友情链接： 广东省人民政府
+                        option(value="2") 友情链接： 人民政府
+                .col-md-auto
+                    .link-right
+                        a(href="#") 中国科学院物理研究所          
+                        a(href="#") 材料计算与数据库平台
     .bot   
-        .row
-            .col-md
-                .copyright.wow.fadeInRight &copy; copyright 2020 鼓润生物 版权所有
-            .col-md-auto
-                        
+        .copyright.wow.fadeInDown Copyright &copy; 松山湖材料实验室 All Rights Reserved.    
+            a(href="#") 粤ICP备18107825号 
 
 
 a#toTop.toTop(href="javascript:void(0);")

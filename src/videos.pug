@@ -4,89 +4,164 @@ block title
     | 视频中心
 
 block content
-    .banner.banner-about(style="background-image:url(img/banner/news.jpg)")
-        .container-fluid
-            .txt
-                h1.title 传媒中心
-                ul.nav
-                    li
-                        a(href="news.html") 新闻动态
-                    li
-                        a(href="media.html") 媒体报道
-                    li
-                        a.active(href="videos.html") 视频中心
+    .banner.banner-video(style="background-image:url(img/banners/news.jpg)")        
+        .container       
+            h1.text36 视频中心
 
-    .page.page-videos
-        
+    .wrapper
+        .page-video.pb-media-5
+            .container  
+                .fixednav
+                    h4  新闻中心
+                    ul.nav
+                        li
+                            a(href="news.html") 新闻动态
+                        li
+                            a(href="research.html") 科研进展                             
+                        li
+                            a(href="notice.html") 通知公告
+                        li
+                            a(href="special.html") 专题栏目
+                        li.active
+                            a(href="videos.html") 视频中心
 
-        section.s2.container
-            .videolist
-                .row
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v02.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
-
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v01.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 系统性地介绍期权知识和交易技巧定位通俗易懂
-
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v01.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 系统性地介绍期权知识和交易技巧定位通俗易懂
-
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v02.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
-                               
                     
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v02.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
 
-                    .col-md-6
-                        .item.wow.fadeInUp                            
-                            img.pic(src="img/temp/v02.jpg")    
-                            a.play(href="video_detail.html")
-                                i.iconfont.icon-play
-                            .txt
-                                h3.text28 心之通路 VITA相伴--微创®心通经导管主动脉瓣膜系统上市发布会
-       
-   
-                footer.news-footer.wow.fadeInUp
-                    ul.pagination.text-center
-                        li.page-item
-                            a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 
-                                i.iconfont.icon-arrow-left
-                        li.page-item
-                            a.page-link(href='#') 1
-                        li.page-item.active(aria-current='page')
-                            a.page-link(href='#')
-                                | 2                          
-                        li.page-item
-                            a.page-link(href='#') 3
-                        li.page-item
-                            a.page-link.next(href='#') 
-                                i.iconfont.icon-arrow-right
+                .s1
+                    .videolist
+                        .row
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v1.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+                                       
+                                  
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v2.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v3.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v4.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+                                       
+                                  
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v5.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v1.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v1.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+                                       
+                                  
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v2.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v3.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v4.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+                                       
+                                  
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v5.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+                            .col-md-6.col-lg-4
+                                .item.wow.fadeInUp
+                                    a.pic(href="video_detail.html")
+                                        img(src="img/temp/v1.jpg")  
+                                        img.play(src="img/play.png")                                    
+                                    .txt
+                                        h3 
+                                            a(href="video_detail.html") 松山湖实验室介绍视频
+
+            
+        
+                        footer.news-footer.wow.fadeInUp
+                            ul.pagination.text-center
+                                li.page-item
+                                    a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 上一页
+                                        
+                                li.page-item
+                                    a.page-link(href='#') 1
+                                li.page-item.active(aria-current='page')
+                                    a.page-link(href='#')
+                                        | 2                          
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link.next(href='#') 下一页
+
+  
+                                       
         
 block bkfooter
     script.

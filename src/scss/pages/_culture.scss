@@ -1,27 +1,58 @@
+
 .page-culture{
-    background-color: #f6f6f6;
     .s1{
-        margin-bottom: 3rem;
-    }
-}
-.page-culture-detail{
-    .title-section{
-        border-bottom: 1px #eee solid;
-        padding-bottom: 2rem;
-    }
-
-    .article{
-        text-align:justify;
-
-        figure{
-            margin-top:3rem;
-            margin-bottom:3rem;
-            text-align: center;
-            figcaption{
-                display: block;
-                text-align: center;
-                padding-top: 2rem;
+        padding-top: rem(60);
+        .box{
+            margin-bottom: 3rem;
+            &.box1{
+                padding-right: 40px;
             }
+            .box-header{
+                margin-bottom: 3rem;
+                h2{
+                    line-height: 1;
+                }
+                .more{
+                    display: block;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);
+                    text-align: center;
+                        width: 100px;
+                        height: 46px;
+                    color:$color-primary; 
+                    line-height: 46px;
+                    border-radius: 23px;
+                    @include mq(xl){
+                        font-size: rem(18);
+                    }
+                }
+            }
+            .box-body{
+                .list{
+                    background-color: #fff;
+                    padding-top: 1rem;
+                    .item{
+                        padding: 1rem;
+                        border-bottom:1px #eee solid;
+                        &:last-child{
+                            border-bottom:none;
+                        }
+                        @include mq(xl){
+                            padding: 1rem 2rem;
+                        }
+                        h3{
+                            line-height: 1.6;
+                        }
+                        .note{
+                            color:$color-primary;
+                            .iconfont{
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
