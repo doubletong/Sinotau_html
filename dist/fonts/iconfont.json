@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "979250",
+      "name": "left",
+      "font_class": "prev1",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "16629713",
+      "name": "left",
+      "font_class": "next1",
+      "unicode": "e812",
+      "unicode_decimal": 59410
+    },
+    {
       "icon_id": "7507054",
       "name": "传真 (1)",
       "font_class": "fax",

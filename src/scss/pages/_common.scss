@@ -1,5 +1,14 @@
-
-
+@font-face {
+    font-family: MyHelvetica;
+    src: local("Helvetica Neue Bold"),
+    local("HelveticaNeue-Bold"),
+    url(MgOpenModernaBold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Didot";
+    src: url("../fonts/Didot-Bold.ttf") format("truetype");
+  }
 
 body {
     color: #3c3c3c;

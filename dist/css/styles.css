@@ -3995,6 +3995,17 @@ html {
   }
 }
 
+@font-face {
+  font-family: MyHelvetica;
+  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Didot";
+  src: url("../fonts/Didot-Bold.ttf") format("truetype");
+}
+
 body {
   color: #3c3c3c;
   background-color: #f9f9f9;
@@ -7621,6 +7632,10 @@ img {
   }
 }
 
+.page-culture .s1 .box .box-body {
+  background-color: #fff;
+}
+
 .page-culture .s1 .box .box-body .list {
   background-color: #fff;
   padding-top: 1rem;
@@ -7637,7 +7652,7 @@ img {
 
 @media (min-width: 1201px) {
   .page-culture .s1 .box .box-body .list .item {
-    padding: 1rem 2rem;
+    padding: 1.35rem 2rem;
   }
 }
 
@@ -7651,6 +7666,351 @@ img {
 
 .page-culture .s1 .box .box-body .list .item .note .iconfont {
   margin-right: .5rem;
+}
+
+.page-culture .s1 .box .box-body .swiper-container {
+  max-width: 700px;
+  background-color: #fff;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .swiper-prev, .page-culture .s1 .box .box-body .swiper-container .swiper-next {
+  position: absolute;
+  bottom: -0.2rem;
+  z-index: 10;
+  color: #0e62b7;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .swiper-prev:hover, .page-culture .s1 .box .box-body .swiper-container .swiper-next:hover {
+  color: #9BC615;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .swiper-prev .iconfont, .page-culture .s1 .box .box-body .swiper-container .swiper-next .iconfont {
+  font-size: 1.875rem;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .swiper-prev {
+  right: 4rem;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .swiper-next {
+  right: 2rem;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .txt {
+  border-bottom: 1px #eee solid;
+  padding: 2rem 2rem 2rem 0;
+  min-height: 70px;
+  font-weight: bold;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .note {
+  padding-top: .6rem;
+  color: #0e62b7;
+}
+
+.page-culture .s1 .box .box-body .swiper-container .note .iconfont {
+  margin-right: .4rem;
+}
+
+.page-culture .s1 .box .box-body .pic1 {
+  margin-bottom: 2rem;
+}
+
+.page-culture .s1 .box .box-body .riqian {
+  border: 2px #333 solid;
+  margin: 1.5rem;
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.page-culture .s1 .box .box-body .riqian h3.title {
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+  left: 50%;
+  top: 0px;
+  margin-top: -1.3rem;
+  position: absolute;
+  z-index: 100;
+  margin-left: -85px;
+  background-color: #fff;
+}
+
+.page-culture .s1 .box .box-body .riqian .d2 {
+  font-family: 'Didot';
+  line-height: 1.2;
+}
+
+.page-culture .s1 .box .box-body .riqian .summary {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.page-culture .s1 .box .box-body .riqian .summary .title {
+  margin-bottom: .5rem;
+}
+
+.page-culture .s1 .box .box-body .riqian .summary p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.page-culture .s1 .box .box-body .riqian .summary::before {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 42px;
+  height: 2px;
+  z-index: 10;
+  background-color: #c40c1a;
+  left: 0;
+  top: 0;
+}
+
+.page-culture .s1 .box .box-body .riqian .summary::after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 42px;
+  height: 2px;
+  z-index: 10;
+  background-color: #c40c1a;
+  right: 0;
+  bottom: 0;
+}
+
+.page-culture .s1 .box .box-body .riqian .content {
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.page-culture .s1 .box .box-body .riqian .content p {
+  text-align: justify;
+}
+
+.page-culture .s1 .box .box-body .riqian .content p:first-child {
+  text-indent: 2em;
+}
+
+.page-culture .s1 .box.box2 {
+  max-width: 410px;
+}
+
+.page-culture .s1 .box.box2 .box-body {
+  padding-bottom: 0.1rem;
+}
+
+.page-culture .s2 {
+  background-color: #fff;
+}
+
+.page-culture .s2 .header h2 {
+  line-height: 1;
+}
+
+.page-culture .s2 .header .more {
+  display: block;
+  background-color: white;
+  box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);
+  text-align: center;
+  width: 100px;
+  height: 46px;
+  color: #0e62b7;
+  line-height: 46px;
+  border-radius: 23px;
+}
+
+@media (min-width: 1201px) {
+  .page-culture .s2 .header .more {
+    font-size: 1.125rem;
+  }
+}
+
+.page-culture .s2 .box-wrap {
+  position: relative;
+}
+
+.page-culture .s2 .box-wrap .swiper-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.page-culture .s2 .box-wrap .item {
+  background-color: white;
+  box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);
+}
+
+.page-culture .s2 .box-wrap .item .title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.page-culture .s2 .box-wrap .swiper-prev, .page-culture .s2 .box-wrap .swiper-next {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  color: #0e62b7;
+  margin-top: -2rem;
+}
+
+.page-culture .s2 .box-wrap .swiper-prev:hover, .page-culture .s2 .box-wrap .swiper-next:hover {
+  color: #9BC615;
+}
+
+.page-culture .s2 .box-wrap .swiper-prev .iconfont, .page-culture .s2 .box-wrap .swiper-next .iconfont {
+  font-size: 1.875rem;
+}
+
+.page-culture .s2 .box-wrap .swiper-prev {
+  left: -4rem;
+}
+
+.page-culture .s2 .box-wrap .swiper-next {
+  right: -4rem;
+}
+
+.page-dworklist .s1 {
+  padding-top: 3.75rem;
+}
+
+.page-dworklist .s1 .list .item {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+@media (min-width: 1201px) {
+  .page-dworklist .s1 .list .item {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.page-dworklist .s1 .list .item .note {
+  color: #0e62b7;
+  font-size: 0.875rem;
+}
+
+.page-dworklist .s1 .list .item .note .iconfont {
+  padding-right: .6rem;
+}
+
+.page-gworklist .s1 .researchlist .item .txt .note {
+  color: #0e62b7;
+}
+
+.page-gworklist .s1 .researchlist .item .txt .note .iconfont {
+  color: #0e62b7;
+  background: none;
+  -webkit-text-fill-color: #0e62b7;
+}
+
+.page-riqian .s1 {
+  padding-top: 3.75rem;
+}
+
+.page-riqian .box-body {
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
+.page-riqian .box-body .pic1 {
+  margin-bottom: 2rem;
+}
+
+.page-riqian .box-body .riqian {
+  border: 2px #333 solid;
+  margin: 1.5rem;
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.page-riqian .box-body .riqian h3.title {
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+  left: 50%;
+  top: 0px;
+  margin-top: -1.3rem;
+  position: absolute;
+  z-index: 100;
+  margin-left: -85px;
+  background-color: #fff;
+}
+
+.page-riqian .box-body .riqian .d2 {
+  font-family: 'Didot';
+  line-height: 1.2;
+}
+
+.page-riqian .box-body .riqian .summary {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.page-riqian .box-body .riqian .summary .title {
+  margin-bottom: .5rem;
+}
+
+.page-riqian .box-body .riqian .summary p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.page-riqian .box-body .riqian .summary::before {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 42px;
+  height: 2px;
+  z-index: 10;
+  background-color: #c40c1a;
+  left: 0;
+  top: 0;
+}
+
+.page-riqian .box-body .riqian .summary::after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 42px;
+  height: 2px;
+  z-index: 10;
+  background-color: #c40c1a;
+  right: 0;
+  bottom: 0;
+}
+
+.page-riqian .box-body .riqian .content {
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.page-riqian .box-body .riqian .content p {
+  text-align: justify;
+}
+
+.page-riqian .box-body .riqian .content p:first-child {
+  text-indent: 2em;
+}
+
+.page-mien .s1 {
+  padding-top: 3.75rem;
+}
+
+.page-mien .s1 .list .item {
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);
+}
+
+.page-mien .s1 .list .item .title {
+  text-align: center;
+  padding: 1rem;
 }
 
 .banner-search {

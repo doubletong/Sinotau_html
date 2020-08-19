@@ -4,7 +4,7 @@ block title
     | 党群文化
 
 block bkheader
-   
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 block content
     .banner.banner-culture(style="background-image:url(img/banners/dang.jpg)")        
@@ -19,9 +19,9 @@ block content
                     h4  党群文化
                     ul.nav
                         li
-                            a(href="core.html") 党建工作
+                            a(href="dwork-list.html") 党建工作
                         li
-                            a(href="platform.html") 群团工作                             
+                            a(href="gwork-list.html") 群团工作                             
                 
 
                 section.s1
@@ -33,7 +33,7 @@ block content
                                         .col 
                                             h2.text36 党建工作
                                         .col-auto
-                                            a.more(href="#") 更多
+                                            a.more(href="dwork-list.html") 更多
                                 .box-body
                                     .list
                                         .item
@@ -70,63 +70,187 @@ block content
                                         .col 
                                             h2.text36 党群工作
                                         .col-auto
-                                            a.more(href="#") 更多
+                                            a.more(href="gwork-list.html") 更多
                                 .box-body
-                                    .list
-                                        .item
-                                            h3
-                                                a(href="culture_detail.html") 松山湖材料实验室汽车租赁服务采购项目公开招标公告
-                                            .note
-                                                i.iconfont.icon-time
-                                                | 2020-05-19
+                                    .work-container.swiper-container
+                                        .swiper-wrapper
+                                            .swiper-slide 
+                                                .row
+                                                    .col-md-auto
+                                                        a.pic(href="culture_detail.html")
+                                                            img(src="img/temp/n001.jpg", alt="")
+                                                    .col-md
+                                                        .txt
+                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
+                                                    
+                                                        .note
+                                                            i.iconfont.icon-time
+                                                            | 2020-05-19
 
-                                        
+                                            .swiper-slide 
+                                                .row
+                                                    .col-md-auto
+                                                        a.pic(href="culture_detail.html")
+                                                            img(src="img/temp/n001.jpg", alt="")
+                                                    .col-md
+                                                        .txt
+                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
+                                                    
+                                                        .note
+                                                            i.iconfont.icon-time
+                                                            | 2020-05-19
+
+                                            .swiper-slide 
+                                                .row
+                                                    .col-md-auto
+                                                        a.pic(href="culture_detail.html")
+                                                            img(src="img/temp/n001.jpg", alt="")
+                                                    .col-md
+                                                        .txt
+                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
+                                                    
+                                                        .note
+                                                            i.iconfont.icon-time
+                                                            | 2020-05-19
+                                     
+                                        .swiper-next
+                                            i.iconfont.icon-next1
+                                        .swiper-prev
+                                            i.iconfont.icon-prev1
+                                       
 
 
 
                         .col-md-auto
-                            .box
+                            .box.box2
                                 .box-header
                                     .row.align-items-center
                                         .col 
                                             h2.text36 党建日签
                                         .col-auto
-                                            a.more(href="#") 更多
+                                            a.more(href="riqian.html") 更多
 
                                 .box-body
-                                    .pic
+                                    .pic1
                                         img(src="img/cul_01.jpg", alt="")
-    
-                   
-                main.content.wow.fadeInUp(data-wow-delay="1s")
-                    
-                    p 岗位职责：
-                    p 1、协助代理商拜访医院科室，展示公司产品，讲解产品知识；
-                    p 2、向护士演示产品、让护士熟练掌握产品操作技巧；
-                    p 3、对医院信息进行统计汇总；
-                    p 4、建立及维护客户关系，对客户市场专员进行相关技能培训；
-                    p 5、建立及维护公司的专业形象；
-                    p 6、培训全国各地区代理商专员，产品相关知识、机器使用方法及如何和代理商及院领导进行沟通。
-                    p 晋升空间：初级市场专员（100000+）→高级市场专员（150000+）→主管（200000+）→经理（300000+）
-                    p 任职要求：
-                    p 1、年龄：30岁以下，统招大专以上学历，专业不限；
-                    p 2、限女性，相貌品行端正；
-                    p 3、拥有与公司共同的价值观，诚实、担责、学习；
-                    p 4、勇于接受挑战，动手操作能力强；
-                    p 5、语言表达能力强，学习分析能力强；
-                    p 6、初级市场专员有无工作经验均可。
 
-                    p.email 简历请投递至（邮件主题请注明应聘职位+姓名）： gurunshengwu@126.com
-                
-                .action
-                    a.gomail(href="mailto:twotong@gmail.com") 投递简历
+                                    .riqian
+                                        h3.title / 党建日签 / 
+                                        .d1 ——  闰四月廿六  ——
+                                        .d2.text40 06-17
+                                        .d3 ——  June  周三  ——
+                                        
+                                        .summary
+                                            .title
+                                                img(src="img/yulu.png", alt="")
+                                            p 青年一代有理想、有本领、有担当，国家就有前途，民族就有希望。
 
+                                        main.content
+                                            p 落实科技人员创新创业各项政策，将科技人员服务企业情况作为职称评审、岗位竞聘等重要内容，对与成效突出的优先推荐申报国家科技人才计划。抓紧落实赋予科研人员职务科技成果所有权或长期权试点。
+                                            p ———《关于科技创新支撑复工复产和经济平稳运行的若干措施》
+                                            .icon.text-right
+                                                img(src="img/cul_02.png", alt="")
+
+            section.s2.pt-media-3.pb-media-3
+                .container
+                    .header
+                        .row.align-items-center
+                            .col 
+                                h2.text36 组织风采
+                            .col-auto
+                                a.more(href="mien.html") 更多
+
+                    .box-wrap
+                        .box-swiper.swiper-container
+                            .swiper-wrapper
+                                .swiper-slide 
+                                    .item
+                                        a.pic(href="culture_detail.html")
+                                            img(src="img/temp/zz01.jpg", alt="")
+                                        .title
+                                            a(href="culture_detail.html") 党总支成立
+
+                                .swiper-slide 
+                                    .item
+                                        a.pic(href="culture_detail.html")
+                                            img(src="img/temp/zz02.jpg", alt="")
+                                        .title
+                                            a(href="culture_detail.html") 东莞战疫展示
+
+                                .swiper-slide 
+                                    .item
+                                        a.pic(href="culture_detail.html")
+                                            img(src="img/temp/zz03.jpg", alt="")
+                                        .title
+                                            a(href="culture_detail.html") 科学面对面
+                                .swiper-slide 
+                                    .item
+                                        a.pic(href="culture_detail.html")
+                                            img(src="img/temp/zz04.jpg", alt="")
+                                        .title
+                                            a(href="culture_detail.html") 一支部党员学习交流会
+                                .swiper-slide 
+                                    .item
+                                        a.pic(href="culture_detail.html")
+                                            img(src="img/temp/zz01.jpg", alt="")
+                                        .title
+                                            a(href="culture_detail.html") 东莞战疫展示
+
+
+                        .swiper-next
+                            i.iconfont.icon-next1
+                        .swiper-prev
+                            i.iconfont.icon-prev1
+
+            section.s3.container.pt-media-3
+                h2.text36.mb-media-3 学习链接
+
+                .links
+                    .row
+                        .col-6.col-md-4.col-lg-3
+                            a.item(href="#")
+                                img(src="img/temp/link01.png", alt="")
+                        .col-6.col-md-4.col-lg-3
+                            a.item(href="#")
+                                img(src="img/temp/link02.png", alt="")
+                        .col-6.col-md-4.col-lg-3
+                            a.item(href="#")
+                                img(src="img/temp/link03.png", alt="")
+                        .col-6.col-md-4.col-lg-3
+                            a.item(href="#")
+                                img(src="img/temp/link04.png", alt="")
+
+                           
+
+  
 
 block bkfooter
 
-
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
-      
+        var swiper = new Swiper('.work-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+         
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
+        var swiper1 = new Swiper('.box-swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            
+        });
         $(function () {
         
   
