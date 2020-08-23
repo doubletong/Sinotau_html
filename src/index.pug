@@ -7,146 +7,338 @@ block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
     
 block content
-    .page-home  
-        section.s1
-            img(src="img/banner/home.jpg", alt="")           
-            .txt
+    .wrapper
+        .page-home  
+            .swiper-container.homeslider
+                .swiper-wrapper
+                    .swiper-slide 
+                        img(src="img/banners/slider01.jpg", alt="")
+                    .swiper-slide 
+                        img(src="img/banners/slider01.jpg", alt="")
+                    .swiper-slide 
+                        img(src="img/banners/slider01.jpg", alt="")
+                    .swiper-slide 
+                        img(src="img/banners/slider01.jpg", alt="")
+              
+
+                .swiper-pagination
+    
+            .container-fluid.pt-media-5
+                section.s1
+                    .row
+                        .col-lg-4
+                            .box
+                                .box-header.mb-media-3
+                                    .row.align-items-center
+                                        .col
+                                            h3.text36 科研进展
+                                        .col-auto
+                                            a.more(href="research.html") 更多
+                                .box-body
+                                    .list
+                                        .item
+                                            .row.align-items-center
+                                                .col-auto
+                                                    .pubdate
+                                                        .day 7
+                                                        .month MAY
+                                                .col
+                                                    a(href="news_detail.html") 强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议
+                                        .item
+                                            .row.align-items-center
+                                                .col-auto
+                                                    .pubdate
+                                                        .day 7
+                                                        .month MAY
+                                                .col
+                                                    a(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与符合材料技术产业化项目获东莞首个重大科技成果转化立项
+                                        .item
+                                            .row.align-items-center
+                                                .col-auto
+                                                    .pubdate
+                                                        .day 7
+                                                        .month MAY
+                                                .col
+                                                    a(href="news_detail.html") 强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议
+                                        .item
+                                            .row.align-items-center
+                                                .col-auto
+                                                    .pubdate
+                                                        .day 7
+                                                        .month MAY
+                                                .col
+                                                    a(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与符合材料技术产业化项目获东莞首个重大科技成果转化立项
+
+                        .col-lg-4
+                            .box.box2
+                                .box-header.mb-media-3
+                                    .row.align-items-center
+                                        .col
+                                            h3.text36 新闻动态
+                                        .col-auto
+                                            a.more(href="research.html") 更多
+                                .box-body
+                                    .swiper-container.newsSlider
+                                        .swiper-wrapper
+                                            .swiper-slide 
+                                                .item-slider
+                                                    a.pic(href="news_detail.html")
+                                                        img(src="img/temp/n01.jpg", alt="")
+                                                    
+                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
+                                                    .date
+                                                        i.iconfont.icon-time 
+                                                        | 2020-05-19
+
+                                            .swiper-slide 
+                                                .item-slider
+                                                    a.pic(href="news_detail.html")
+                                                        img(src="img/temp/n01.jpg", alt="")
+                                                    
+                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
+                                                    .date
+                                                        i.iconfont.icon-time 
+                                                        | 2020-05-19
+
+                                            .swiper-slide 
+                                                .item-slider
+                                                    a.pic(href="news_detail.html")
+                                                        img(src="img/temp/n01.jpg", alt="")
+                                                    
+                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
+                                                    .date
+                                                        i.iconfont.icon-time 
+                                                        | 2020-05-19
+                                                                    
+                                        .swiper-next
+                                            i.iconfont.icon-next1
+                                        .swiper-prev
+                                            i.iconfont.icon-prev1
+
+                                    
+                        .col-lg-4
+                            .box.box3
+                                .box-header.mb-media-3
+                                    .row.align-items-center
+                                        .col
+                                            h3.text36 通知公告
+                                        .col-auto
+                                            a.more(href="research.html") 更多
+                                .box-body
+                                    .list2
+                                        .item
+                                            h3 
+                                                a(href="news_detail.html") 松山湖材料实验室汽车租赁服务采购项目公开招标公告
+                                            .date
+                                                i.iconfont.icon-time 
+                                                | 2020-05-19
+                                                    
+                                        .item
+                                            h3 
+                                                a(href="news_detail.html") 诚邀您参与丨深度势能-材料模拟应用交流讨论会
+                                            .date
+                                                i.iconfont.icon-time 
+                                                | 2020-05-19
+
+                                        .item
+                                            h3 
+                                                a(href="news_detail.html") 松山湖材料实验室综合事务管理部关于采购数字智能档案室建设（50-100万）的征求意见公示
+                                            .date
+                                                i.iconfont.icon-time 
+                                                | 2020-05-19
+
+                                        .item
+                                            h3 
+                                                a(href="news_detail.html") 松山湖材料实验室第一届公共技术讲习班暨第二届材料计算暑期学校
+                                            .date
+                                                i.iconfont.icon-time 
+                                                | 2020-05-19
+
                
-                h2.text100.wow.fadeInLeft 让每一位输液患者
-                    br
-                    | 更安全               
-                   
-        section.s2.container
-            .row
-                .col-md
-                    .item
-                        .pic.wow.fadeInUp
-                            img(src="img/home_01.png", alt="")
-                        p.wow.fadeInUp 诚实是鼓润的核心价值观之一，意味着鼓润人内心与言行一致，不虚假；准确地说明事情的原委，还原事实。我们始终如一关注着患者输液安全，关爱医护人员的健康。
+             
+            section.s2
+                .container-fluid
+                    .row
+                        .col-lg-8
+                            .swiper-container.adSlider
+                                .swiper-wrapper
+                                    .swiper-slide                                       
+                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home01.jpg);") 协同创新 
+                                    .swiper-slide 
+                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home02.jpg);") 科学抗议
+                                    .swiper-slide 
+                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home03.jpg);") 人才招聘
+                                                            
+                                .swiper-next
+                                    i.iconfont.icon-next1
+                                .swiper-prev
+                                    i.iconfont.icon-prev1
+                            
+                        .col-lg-4
+                            .links
+                                .row.no-gutters
+                                    .col
+                                        a(href="#", style="background-image:url(img/home04.jpg);")
+                                            span.title.text24 粤港澳交叉科学中心活动报名
+                                            i.iconfont.icon-right1
+                                            
+                                    .col
+                                        a(href="#", style="background-image:url(img/home05.jpg);")
+                                            span.title.text24 公共技术平台预约
+                                            i.iconfont.icon-right1
+                            
+                      
+            section.s3(style="background-image:url(img/home_04.jpg);")
+                .row.no-gutters
+                    .col-md-6
+                        .item
+                            img(src="img/home06.jpg", alt="")
+                            .over-txt
+                                a.txt(href="core.html")
+                                    h3.text36.wow.fadeInUp 前沿科学研究
+                                    p.wow.fadeInUp 强化核心技术攻关
+                                    i.wow.fadeInUp.iconfont.icon-right1
 
-                .col-md
-                    .item
-                        .pic.wow.fadeInUp
-                            img(src="img/home_02.png", alt="")
-                        p.wow.fadeInUp 传承创新、科技制胜是鼓润的宗旨。我们明确责任；勇于面对；客观总结；敢于分析；积极解决；不断发展。致力于为患者和医护工作者谋求更安全的输液环境。
+                    .col-md-6
+                        .item
+                            img(src="img/home07.jpg", alt="")
+                            .over-txt
+                                a.txt(href="platform.html")
+                                    h3.text36.wow.fadeInUp 公共技术平台
+                                    p.wow.fadeInUp 系统的、国际一流的、综合性用户开放平台
+                                    i.wow.fadeInUp.iconfont.icon-right1
 
-                .col-md
-                    .item
-                        .pic.wow.fadeInUp
-                            img(src="img/home_03.png", alt="")
-                        p.wow.fadeInUp 不断学习，永远充满求知欲是鼓润人终身信念。通过阅读、听讲、观察、研究、实践等途径而获得知识并转化为技能；总结、分析、自省、自律以提升能力。
+                    .col-md-6
+                        .item
+                            img(src="img/home08.jpg", alt="")
+                            .over-txt
+                                a.txt(href="factory.html")
+                                    h3.text36.wow.fadeInUp 创新样板工厂
+                                    p.wow.fadeInUp 推动科研成果走出实验室、走向应用、走向市场
+                                    i.wow.fadeInUp.iconfont.icon-right1
 
-        section.s3(style="background-image:url(img/home_04.jpg);")
-            .txt
-                h3.text38.wow.fadeInUp 雷动沁润万物生——关于鼓润
-                p.wow.fadeInUp 鼓润生物技术有限公司是一家专注于关爱患者输液安全的新型创新公司，公司名称源自《易经》：“是故刚柔相摩，八卦相荡，鼓之以雷霆，润之以风雨。日月运行,一寒一暑。”公司现有一批高学历、高素质的专业技术人才及精英化的管理模式，培养和造就了一支训练有素的职工队伍，组织机构健全，生产设备先进，工艺精良，技术力量雄厚，检测手段齐全，质保体系完善，严格按《医疗器械生产质量管理规范》组织生产。建立了从市场调查、研制、制造、销售及售后服务一条龙管理体系，企业各项管理已纳入了正规化、现代化管理轨道。
+                    .col-md-6
+                        .item
+                            img(src="img/home09.jpg", alt="")
+                            .over-txt
+                                a.txt(href="science.html")
+                                    h3.text36.wow.fadeInUp 粤港澳交叉科学中心
+                                    p.wow.fadeInUp 高水平、长期、稳定的学术交流和合作研究平台
+                                    i.wow.fadeInUp.iconfont.icon-right1
+                            
 
-        section.s4(style="background-image:url(img/home_05.jpg);")
-            .container
-                h3.text38.wow.fadeInUp 关于配药安全，了解有多少？
-                img.wow.fadeInUp(src="img/home_06.png", alt="")
-
-        section.s5
-            .row.no-gutters
-                .col-lg
-                    .leftcol(style="background-image:url(img/home_08.png);")
-                        .pic.wow.fadeInUp
-                            img(src="img/home_09.png", alt="")
-                        p.wow.fadeInUp 伊姿超净配药器已获得37项专利，其中8项发明专利；同时向美国、南非、菲律宾、印度、印度尼西亚、越南6个国家申请了PCT，并且通过巴黎公约途径向美国、欧洲、墨西哥、南非、巴西、泰国、马来西亚申请了国际外观专利），创建密闭局部百级环境，靶向保护溶药器内壁，解决空气污染；无芯杆设计从根源杜绝手污染，有效降低药液污染风险，超越国际金标准（pivas）
-                        .row.wow.fadeInUp
-                            .col-auto 无菌配药
-                            .col-auto 护士安全
-                            .col-auto 职业防护
-                            .col-auto 高效配置
-                            .col-auto 实验验证
-                    .row.no-gutters
-                        .col-md
-                            .pic.wow.fadeInUp
-                                img(src="img/home_10.jpg", alt="")
-                        .col-md
-                            .pic.wow.fadeInUp
-                                img(src="img/home_11.jpg", alt="")
-
-                .col-lg-auto
-                    .rightcol
-                        img.wow.fadeInUp(src="img/home_07.png", alt="")
-                        h3.title.text28.wow.fadeInUp 创建微型可移动静配中心
-                        h3.text28.wow.fadeInUp 开辟安全配药新模式
-
-        section.s6(style="background-image:url(img/home_12.jpg);")
-            .container
-                h3.title.text38.wow.fadeInUp 合作医院
+            section.s4
+                .container-fluid.pt-media-5.pb-media-8
+                    .box
+                        .box-header.mb-media-3
+                            .row.align-items-center
+                                .col
+                                    h3.text36 视频中心
+                                .col-auto
+                                    a.more(href="research.html") 更多
+                        .box-body
+                            .videolist
+                                .row
+                                    .col-md-8
+                                        a.item.item1.wow.fadeInUp(href="video_detail.html")
+                                            img.thumb(src="img/temp/hv1.jpg", alt="")
+                                            .play
+                                                img(src="img/play.png", alt="")
+                                    .col-md-4
+                                        a.item.wow.fadeInUp(href="video_detail.html")
+                                            img.thumb(src="img/temp/hv2.jpg", alt="")
+                                            .play
+                                                img(src="img/play.png", alt="")
+                                 
+                                        a.item.wow.fadeInUp(href="video_detail.html")
+                                            img.thumb(src="img/temp/hv3.jpg", alt="")
+                                            .play
+                                                img(src="img/play.png", alt="")
 
 
-                .logo-container.swiper-container
-                    .swiper-wrapper
-                        .swiper-slide
-                            img(src="img/logo/ho_l_1.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_2.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_3.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_4.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_1.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_2.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_3.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_4.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_1.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_2.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_3.jpg", alt="")
-                        .swiper-slide
-                            img(src="img/logo/ho_l_4.jpg", alt="")
-                 
-                .swiper-button-prev
-                .swiper-button-next
-  
+            section.s5(style="background-image:url(img/home10.jpg);")
+                .container-fluid.pt-media-12.pb-media-8
+                    h3.text36.mb-media-8 实验室大数据
+                    .lab-container
+                        .swiper-container.labSlider
+                            .swiper-wrapper
+                                .swiper-slide                                       
+                                    .txt
+                                        .text48 635
+                                            small 人
+                                        p 总人数
 
-        section.s7
-            .container               
-                .row
-                    .col-md-4
-                        a.item.wow.fadeInUp(href="javascript:void(0);")
-                            img(src="img/temp/vid01.jpg", alt="")
-                            .play
-                                img(src="img/play.png", alt="")
-                    .col-md-4
-                        a.item.wow.fadeInUp(href="javascript:void(0);")
-                            img(src="img/temp/vid02.jpg", alt="")
-                            .play
-                                img(src="img/play.png", alt="")
-                    .col-md-4
-                        a.item.wow.fadeInUp(href="javascript:void(0);")
-                            img(src="img/temp/vid03.jpg", alt="")
-                            .play
-                                img(src="img/play.png", alt="")
+                                .swiper-slide 
+                                    .txt
+                                        .text48 10
+                                            small 人 
+                                        p 两院院士
+                                .swiper-slide 
+                                    .txt
+                                        .text48 98
+                                            small 项
+                                        p 专利申请
+                                .swiper-slide 
+                                    .txt
+                                        .text48 234
+                                            small 篇 
+                                        p 发表文章
+                                .swiper-slide 
+                                    .txt
+                                        .text48 10
+                                            small 家 
+                                        p 产业化公司
+                                .swiper-slide 
+                                    .txt
+                                        .text48 29
+                                            small 项
+                                        p 重大科研项目
+                                                        
+                        .swiper-next
+                            i.iconfont.icon-next1
+                        .swiper-prev
+                            i.iconfont.icon-prev1
 
-        section.s8(style="background-image:url(img/home_13.jpg);")
-            .container
-                .txt
-                    h3.text38.wow.fadeInUp 加入我们
-                    p.wow.fadeInUp 公司以技术创新为重要依托，奠定了公司的研发高度和行业引领地位，现有包括博士、硕士学历、高级职称在内的200余人的高素质员工队伍。公司 “以人为本”，注重员工的自我提升与职业成长。如果你是有志之士，我们一定是你最好的选择，欢迎与公司有共同价值观(诚实、学习、担责)的你加入。
-                    a.btn.btn-primary.btn-radius(href="jobs.html") 查看详情
-
+            
 
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
+        var swiper = new Swiper('.homeslider', {         
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+       
+        });
+        var swiper = new Swiper('.newsSlider', {         
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+           
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+       
+        });
+        
         //Make sure that the dom is ready
-        var swiper = new Swiper('.logo-container', {
+        var swiper = new Swiper('.adSlider', {
             slidesPerView: 1,
             spaceBetween: 20,
+            loop: true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
             },
     
             autoplay: {
@@ -154,16 +346,46 @@ block bkfooter
                 disableOnInteraction: false,
             },
             breakpoints: {
-            640: {
-                slidesPerView: 2,spaceBetween: 10,
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        //Make sure that the dom is ready
+        var swiper = new Swiper('.labSlider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
             },
-            768: {
-                slidesPerView: 3,spaceBetween: 10,
+    
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
-            1024: {
-                slidesPerView: 4,spaceBetween: 20,
-            },
-        }
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                992: {
+                    slidesPerView: 5,
+                },
+                1201: {
+                    slidesPerView: 6,
+                },
+            }
         });
 
         $(function () {        
