@@ -32,7 +32,7 @@ body {
       font-size: rem(16);
       padding-top: 80px;line-height: 2.2;
     }
-    @include mq(xl){      
+    @include mq(xxl){      
         padding-top: 100px;
     }
  
@@ -266,6 +266,21 @@ img {
         font-size: rem(60);
     }
 }
+.text48{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(30);
+    }
+    @include mq(lg) {
+        font-size: rem(36);
+    }
+    @include mq(xl) {
+        font-size: rem(42);    
+    }
+    @include mq(xxl) {
+        font-size: rem(48);
+    }
+}
 .text40{
     font-size: rem(22);
     @include mq(md) {
@@ -410,7 +425,36 @@ img {
         font-size: rem(20);
     }
 }
-
+.pt-media-12{
+    padding-top: 8rem;
+    @include mq(md) {
+        padding-top: 9rem;
+    }
+    @include mq(lg) {
+        padding-top: 10rem;
+    }
+    @include mq(xl) {
+        padding-top: 11rem;
+    }
+    @include mq(xxl) {
+        padding-top: 12rem;
+    }
+}
+.pt-media-9{
+    padding-top: 5rem;
+    @include mq(md) {
+        padding-top: 6rem;
+    }
+    @include mq(lg) {
+        padding-top: 7rem;
+    }
+    @include mq(xl) {
+        padding-top: 8rem;
+    }
+    @include mq(xxl) {
+        padding-top: 9rem;
+    }
+}
 .pt-media-5{
     padding-top: 1rem;
     @include mq(md) {
@@ -459,6 +503,36 @@ img {
     }
     @include mq(xxl) {
         padding-bottom: 5rem;
+    }
+}
+.pb-media-6{
+    padding-bottom: 2rem;
+    @include mq(md) {
+        padding-bottom: 3rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 4rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 5rem;
+    }
+    @include mq(xxl) {
+        padding-bottom: 6rem;
+    }
+}
+.pb-media-8{
+    padding-bottom: 4rem;
+    @include mq(md) {
+        padding-bottom: 5rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 6rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 7rem;
+    }
+    @include mq(xxl) {
+        padding-bottom: 8rem;
     }
 }
 .pt-9{
@@ -518,6 +592,21 @@ img {
     }
     @include mq(xxl) {
         margin-bottom: 5rem;
+    }
+}
+.mb-media-8{
+    margin-bottom: 4rem;
+    @include mq(md) {
+        margin-bottom: 5rem;
+    }
+    @include mq(lg) {
+        margin-bottom: 6rem;
+    }
+    @include mq(xl) {
+        margin-bottom: 7rem;
+    }
+    @include mq(xxl) {
+        margin-bottom: 8rem;
     }
 }
 
