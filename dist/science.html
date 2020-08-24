@@ -10,11 +10,11 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=22447f388eab0074c2d621746067e06a" rel="stylesheet">
-    <link href="js/vendor/wow/css/libs/animate.css?v=22447f388eab0074c2d621746067e06a" rel="stylesheet">
-    <link href="js/vendor/mediaelement/mediaelementplayer.min.css?v=22447f388eab0074c2d621746067e06a" rel="stylesheet">
-    <link href="css/styles.min.css?v=22447f388eab0074c2d621746067e06a" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=22447f388eab0074c2d621746067e06a"></script>
+    <link href="fonts/iconfont.css?v=3c645b65a885adc8bde97d3ad25dab4d" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css?v=3c645b65a885adc8bde97d3ad25dab4d" rel="stylesheet">
+    <link href="js/vendor/mediaelement/mediaelementplayer.min.css?v=3c645b65a885adc8bde97d3ad25dab4d" rel="stylesheet">
+    <link href="css/styles.min.css?v=3c645b65a885adc8bde97d3ad25dab4d" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
     <script>
       new WOW().init();
       
@@ -78,9 +78,11 @@
               <li><a href="contact.html">联系我们       </a></li>
             </ul>
           </div>
-          <div class="col-auto search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
-          <div class="col-auto emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a href="#"> <i class="iconfont icon-oa"></i></a></div>
-          <div class="col-auto lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          <div class="col-auto">
+            <div class="ql search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
+            <div class="ql emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
+            <div class="ql lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          </div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
               <div class="one"></div>
@@ -92,14 +94,56 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li class="active"><a href="about.html">公司介绍               </a></li>
-          <li><a href="safety.html">配药安全</a></li>
-          <li><a href="product.html">产品中心     </a></li>
-          <li><a href="documents.html">数据中心</a></li>
-          <li><a href="concept.html">招贤纳士</a></li>
-          <li><a href="training.html">员工专区</a></li>
-          <li><a href="contact.html">客服中心</a></li>
+          <li class="active"><a href="index.html">首页</a></li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="about.html">实验室概况                </a>
+            <ul class="subnav">
+              <li><a href="about.html">实验室简介</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="structure.html">组织架构</a>
+                <ul class="subnav">
+                  <li><a href="council.html">理事会</a></li>
+                  <li><a href="leadership.html">实验室领导</a></li>
+                  <li><a href="academic.html">学术委员会</a></li>
+                </ul>
+              </li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="team.html">人才队伍</a>
+                <ul class="subnav">
+                  <li><a href="academician.html">院士专家</a></li>
+                  <li><a href="talent.html">核心人才</a></li>
+                  <li><a href="researcher.html">研究员</a></li>
+                </ul>
+              </li>
+              <li><a href="history.html">大事记</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="core.html">核心板块</a>
+            <ul class="subnav">
+              <li class="active"><a class="active" href="core.html">前沿基础研究</a></li>
+              <li><a href="platform.html">公共技术平台和大科学装置                            </a></li>
+              <li><a href="factory.html">创新样板工厂</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="science.html">粤港澳交叉科学中心</a>
+                <ul class="subnav">
+                  <li><a href="science.html">中心简介</a></li>
+                  <li><a href="science_events.html">学术活动</a></li>
+                  <li><a href="applications.html">项目申请</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="news.html">新闻中心</a>
+            <ul class="subnav">
+              <li><a class="active" href="core.html">新闻动态</a></li>
+              <li><a href="research.html">科研进展                             </a></li>
+              <li><a href="notice.html">通知公告</a></li>
+              <li><a href="special.html">专题栏目</a></li>
+              <li><a href="videos.html">视频中心</a></li>
+            </ul>
+          </li>
+          <li><a href="culture.html">党群文化       </a></li>
+          <li><a href="job.html">人才招聘       </a></li>
+          <li><a href="contact.html">联系我们</a></li>
         </ul>
+        <div class="minemailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
       </div>
     </header>
     <div class="banner banner-science" style="background-image:url(img/banners/core.jpg)">       
@@ -127,13 +171,13 @@
           </div>
           <section class="s1 mb-media-5">
             <div class="row">
-              <div class="col-md">
+              <div class="col-lg">
                 <div class="txt">                               
                   <h2 class="text36">中心简介</h2>
                   <p>粤港澳交叉科学中心，是松山湖材料实验室下设四大核心板块之一。中心负责整合国际学术资源，通过建立跨学科、跨产业的创新生态，服务于粤港澳湾区产业集群。旨在建成高水平、长期、稳定的学术交流和合作研究的平台；以材料科学为核心，面向生命、能源、先进制造、人工智能等多学科交叉，持续关注国内外相关科学前沿和最新动态，开展交叉合作，提供创新思想和成果源泉；面向社会开放，宣传和普及材料科学及相关学科交叉所形成的各种成果，锻造先进的科学文化基础，促进和培养更多的优秀年轻人才投身于前沿研究；建立与政府、企业、高校和科研院所良好的合作关系；为实验室发展提供战略咨询，并引领中国乃至世界交叉学科的发展。</p>
                 </div>
               </div>
-              <div class="col-md-auto">
+              <div class="col-lg-auto">
                 <div class="pic"><img src="img/core_08.jpg" alt=""></div>
               </div>
             </div>
@@ -143,11 +187,11 @@
             <p>粤港澳交叉科学中心作为跨学科的国际学术交流平台，主要联合国内外各大学、中国科学院、国家自然科学基金委等机构，吸取国际类似研究机构的成功经验，邀请国际一流学者进行中长期或短期访问，以持续深入的科学研讨会为主，打造系列知名国际会议和讲习班。</p>
           </section>
         </div>
-        <section class="s3 pt-media-3 pb-media-5">
+        <section class="s3 pt-media-3 pb-media-3">
           <div class="container">
             <h2 class="text36">组织成员 </h2>
             <div class="row">
-              <div class="col-md-4 col-lg">
+              <div class="col-md-4 col-lg-3 col-xl">
                 <div class="item">
                   <div class="pic"><img src="img/core_14.jpg" alt=""></div>
                   <h3 class="text24">汤超</h3>
@@ -155,7 +199,7 @@
                   <div class="email">邮箱：tangc@pku.edu.cn</div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg">
+              <div class="col-md-4 col-lg-3 col-xl">
                 <div class="item">
                   <div class="pic"><img src="img/core_13.jpg" alt=""></div>
                   <h3 class="text24">胡江平</h3>
@@ -163,7 +207,7 @@
                   <div class="email">邮箱：jphu@iphy.ac.cn</div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg">
+              <div class="col-md-4 col-lg-3 col-xl">
                 <div class="item">
                   <div class="pic"><img src="img/core_10.jpg" alt=""></div>
                   <h3 class="text24">戴希</h3>
@@ -171,7 +215,7 @@
                   <div class="email">邮箱：daix@iphy.ac.cn</div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg">
+              <div class="col-md-4 col-lg-3 col-xl">
                 <div class="item">
                   <div class="pic"><img src="img/core_12.jpg" alt=""></div>
                   <h3 class="text24">汤雷翰</h3>
@@ -179,7 +223,7 @@
                   <div class="email">邮箱：lhtang@csrc.ac.cn</div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg">
+              <div class="col-md-4 col-lg-3 col-xl">
                 <div class="item">
                   <div class="pic"><img src="img/core_11.jpg" alt=""></div>
                   <h3 class="text24">邱祥冈</h3>
@@ -194,6 +238,9 @@
           <h2 class="text36">联系方式</h2>
           <div class="contact">
             <div class="row">
+              <div class="col-md-auto order-md-last">
+                <div class="pic"><img src="img/contact_02.png" alt=""></div>
+              </div>
               <div class="col-md">
                 <ul class="list">
                   <li> <i class="iconfont icon-user"></i>钟老师</li>
@@ -201,9 +248,6 @@
                   <li> <i class="iconfont icon-fax"></i>(+86)- 0769-89136764</li>
                   <li> <i class="iconfont icon-youxiang"> </i>zhongyuqing@sslab.org.cn</li>
                 </ul>
-              </div>
-              <div class="col-md-auto">
-                <div class="pic"><img src="img/contact_02.png" alt=""></div>
               </div>
             </div>
           </div>
@@ -268,11 +312,11 @@
         <div class="copyright wow fadeInDown">Copyright &copy; 松山湖材料实验室 All Rights Reserved.    <a href="#">粤ICP备18107825号 </a></div>
       </div>
     </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=22447f388eab0074c2d621746067e06a"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=22447f388eab0074c2d621746067e06a"></script>
-    <script src="js/vendor/jquery.easing.min.js?v=22447f388eab0074c2d621746067e06a"></script>
-    <script src="js/bootstrap/bootstrap.min.js?v=22447f388eab0074c2d621746067e06a"></script>
-    <script src="js/app.js?v=22447f388eab0074c2d621746067e06a"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
+    <script src="js/vendor/jquery.easing.min.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
+    <script src="js/bootstrap/bootstrap.min.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
+    <script src="js/app.js?v=3c645b65a885adc8bde97d3ad25dab4d"></script>
     <script>
       $(function () {
           //-  $('video, audio').mediaelementplayer();

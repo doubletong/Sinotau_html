@@ -32,10 +32,10 @@
         display: block;
         width:100px;    
         @include mq(md) {
-            width: 140px;     
+            width: 120px;     
         }
         @include mq(lg) {
-            width: 150px;
+            width: 130px;
 
         }
         @include mq(xl) {
@@ -69,25 +69,25 @@
             position: relative;
             padding: 0 .4rem;
             &>a {
-                display: block;
-             
-                padding: 0 .6rem;              
-         
-                font-size: rem(18);
+                display: block;             
+                padding: 0 .6rem;   
             
                 @include mq(lg){
                     height: 70px;   
                     line-height: 70px;
                     padding: 0 .5rem;
+                    font-size: rem(14);
                 }
                 @include mq(xl){
                     height: 80px;   
                     line-height: 80px;
                     padding: 0 1rem;  
+                    font-size: rem(14);
                 }
                 @include mq(xxl){
                     height: 100px;       
                     line-height: 100px;
+                    font-size: rem(18);
                 }
             
                 &:hover{
@@ -172,6 +172,38 @@
 
         }
     }
+    .ql{
+      
+        display: inline-block;
+        padding-left: 1rem;
+      
+        line-height: 1;
+        @include mq(lg){
+            padding-left: .3rem;
+        }
+        @include mq(xl){
+            border-right: 1px #dcdcdc dashed;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            &:last-child{
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+        @include mq(xxl){
+            padding-left: rem(24);
+            padding-right: rem(24);
+        }
+        .oa{
+          
+            @include mq(lg){
+                margin-left: .3rem;
+            }
+            @include mq(xl){
+                margin-left: .8rem;
+            }
+        }
+    }
 
     .search,.emailoa,.lang{
         a {
@@ -186,7 +218,12 @@
           }
           
     }
-
+    .emailoa{
+        display: none;
+        @include mq(lg){
+            display: inline-block;
+        }
+    }
 
     .mobilemenu {
       
@@ -262,21 +299,20 @@
             list-style: none;
             margin: 0;
             padding: 2rem 0 0 0;
-            height: 100%;
-            overflow-y: none;
-           text-align: center;
-
+            height: 83vh;
+            overflow-y: auto;
+         
             &>li {
                 position: relative;
-                transition: all .2s;
-                text-align: center;
-            
+                transition: all .2s;            
+                border-bottom: 1px #eee solid;  
+                
                 &>a {
                     display: block;
                     color: #333;
                     position: relative;
-                    padding: 1rem .3rem;
-                    border-bottom: 1px #eee solid;                  
+                    padding: 1rem 1rem;
+                                
 
                     @include mq(xxl){
                         font-size: 1rem;
@@ -289,42 +325,67 @@
                 }
                 &.active {
                     a{
-                        color: $color-accent;                    
-                        border-bottom: 1px $color-accent solid;   
+                        color: $color-primary;                    
                     }                    
                    
                 }
-                &.down {
-                    position: relative;                   
-                  
-                }
-
-                &.open {
-                    i.iconfont{
-                        transform: rotate(180deg);
-                    }
-                }
+                
 
                 .subnav {
-                    @include reset-list;    
-                    border-top: #eeee solid 1px ;              
-                    border-bottom: #eeee solid 1px ; 
-                    padding-top: .5rem;
-                    padding-bottom: .5rem;   
-                    margin: 1rem 0;          
+                    @include reset-list;                  
+                    padding-left: 1rem;
+                    display: none;
                     li {                       
-                        display: inline-block;
+                        border-top: #eeee solid 1px ; 
+                        position: relative;
                         a {
                             display: block;
-                            padding: .7rem 1rem;
+                            padding: 1rem 1rem;
                       
                             color: #666;
                             font-size: rem(14);
                         }
+
                     }
                 }
             }
+            .hasnav {
+                position: relative;                   
+                i.iconfont{
+                    display: block;
+                    position: absolute;
+                    right: 1rem;
+                    top:.9rem;
+                    z-index: 10;
+                    color:#999;
+                    transition: all .2s;
+                }
+            }
+
+            .open {
+                &>i.iconfont{
+                    transform: rotate(90deg);
+                }
+            }
            
+        }
+
+        .minemailoa{
+            text-align: center;
+            margin-top: 1rem;
+            a {
+                border-radius: 50%;    
+                background-image: linear-gradient( -45deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);
+                text-align: center;
+                display: inline-block;
+                width: 26px;
+                height: 26px;
+                line-height: 26px;
+                color: #fff;
+                &.oa{
+                    margin-left: .8rem;
+                }
+              }
         }
        
     }

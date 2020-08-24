@@ -26,7 +26,7 @@ block content
 
                 section.s1
                     .row
-                        .col-md
+                        .col-lg
                             .box.box1
                                 .box-header
                                     .row.align-items-center
@@ -121,7 +121,7 @@ block content
 
 
 
-                        .col-md-auto
+                        .col-lg-auto
                             .box.box2
                                 .box-header
                                     .row.align-items-center
@@ -242,14 +242,27 @@ block bkfooter
             },
         });
         var swiper1 = new Swiper('.box-swiper', {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
-            
+             breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        }
         });
         $(function () {
         
