@@ -1,7 +1,10 @@
 .page-news { 
     
     .s1{
-        padding-top: rem(60);
+        padding-top: rem(30);
+        @include mq(md){
+            padding-top: rem(60);
+        }
         .newslist{
            
             .item{              
@@ -11,6 +14,9 @@
                     margin-bottom: 2rem;
                 }
                 @include mq(lg){
+                    margin-bottom: 2.5rem;
+                }
+                @include mq(xl){
                     margin-bottom: 3rem;
                 }
                 .pic{
@@ -29,14 +35,19 @@
                 }
                 .txt{
                     position: relative;
-                    padding:.6rem 1rem 0;                
-                    min-height: 180px;
+                    padding:.6rem 1rem 3rem;                
+                  
                     @include mq(md){
                         padding:1rem 1rem .5rem;
+                        min-height: 140px;
                     }
-               
+                    @include mq(lg){
+                    
+                        min-height: 150px;
+                    }
                     @include mq(xl){
                         padding: 1.2rem 1.5rem 1rem;
+                        min-height: 180px;
                     }
                     .pubdate{
                         position: absolute; 
@@ -81,7 +92,9 @@
                 }
             }
         }
-            
+        .pagination {
+            padding-top: 0;
+        }
         
     }
     
@@ -89,7 +102,11 @@
 
 .page-research{
     .s1{
-        padding-top: 60px;
+        padding-bottom: 2rem;
+        padding-top: 30px;
+        @include mq(md){
+            padding-top: 60px;
+        }
         .researchlist{
             .item{
                 background-color: #fff;
@@ -100,11 +117,32 @@
                 @include mq(lg){
                     margin-bottom: 45px;
                 }
+                a.pic{
+                    display: block;
+                    @include mq(md){
+                        width: 300px;
+                    }
+                    @include mq(lg){
+                        width: 360px;
+                    }
+                    @include mq(xl){
+                        width: auto;
+                    }
+                }
                 .txt{
-                    padding-right:3rem;
+                    padding-right:1rem;
                     height: 100%;
                     position: relative;
-                    padding-left:2rem;
+                    padding-left:1rem;
+                    padding-bottom: 5rem;
+                    @include mq(md){
+                        padding-left:0;
+                        padding-right:1rem;
+                    }
+                    @include mq(lg){
+                        padding-left:2rem;
+                        padding-right:3rem;
+                    }
                     h3{
                         line-height: 1.8;
                         margin: 0;
@@ -115,13 +153,20 @@
                     .note{
                         position: absolute; 
                         bottom: 0;
-                        left: 2rem;
+                        left: 0;
                        
                         z-index: 100;
                         border-top: 1px #eee solid;
                         width: 100%;
                         padding-top: 1.2rem;
                         padding-bottom: 1.2rem;
+                        padding-left: 1rem;
+                        @include mq(md){
+                            left: 0;    padding-left:0;
+                        }
+                        @include mq(lg){
+                            left: 2rem;width: 90%;
+                        }
                         .iconfont{
                             background: linear-gradient(90deg,#57a456,#13629b);
                             background-clip: text;
@@ -141,7 +186,11 @@
 
 .page-notice{
     .s1{
-        padding-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 2rem;
+        @include mq(md){
+            padding-top: 60px;
+        }
         .noticelist{
             .item{
                 background-color: #fff;
@@ -156,19 +205,39 @@
                     color: #fff;
                     text-align: center;                    
                     background-image: linear-gradient( 135deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);                    
-                    width: 100px;
-                    height: 128px;
-                    padding:1rem ;
+                    width: 80px;
+                    height: 115px;
+                    padding:1rem 0;
+                    @include mq(md){
+                        padding:1rem ;    width: 100px;
+                        height: 128px;
+                    }
                     .date{
                         border-bottom: 1px #fff solid;
+                        font-size: rem(24);
+
                     }
                       
                 }
                 .txt{
                     padding-right: 1rem;
+                    padding-left: 1rem;
                     @include mq(xl){
                         padding-left: 2rem;
                         padding-right: 3rem;
+                    }
+                    h3{
+                        font-size: rem(14);
+                        margin: 0;
+                        @include mq(md){
+                            font-size: rem(16);
+                        }
+                        @include mq(lg){
+                            font-size: rem(18);
+                        }
+                        @include mq(xl){
+                            font-size: rem(20);
+                        }
                     }
                 }
 
@@ -179,7 +248,11 @@
 
 .page-special{
     .s1{
-        padding-top: rem(60);
+        padding-top: 30px;
+        padding-bottom: 2rem;
+        @include mq(md){
+            padding-top: 60px;
+        }
     }
     .speciallist{
         .item{
@@ -217,7 +290,11 @@
 
 .page-video{
     .s1{
-        padding-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 2rem;
+        @include mq(md){
+            padding-top: 60px;
+        }
     }
     .videolist{
         .item{
@@ -310,7 +387,10 @@
                 max-width: 800px;
                 margin: 0 auto;
            
-                text-align: left;
+                text-align: center;
+                @include mq(md){
+                    text-align: left;
+                }
               .item{
                   display: inline-block;
                   .iconfont{

@@ -10,10 +10,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <link href="js/vendor/wow/css/libs/animate.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <link href="css/styles.min.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
+    <link href="fonts/iconfont.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <link href="css/styles.min.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
     <script>
       new WOW().init();
       
@@ -77,9 +77,11 @@
               <li><a href="contact.html">联系我们       </a></li>
             </ul>
           </div>
-          <div class="col-auto search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
-          <div class="col-auto emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a href="#"> <i class="iconfont icon-oa"></i></a></div>
-          <div class="col-auto lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          <div class="col-auto">
+            <div class="ql search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
+            <div class="ql emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
+            <div class="ql lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          </div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
               <div class="one"></div>
@@ -91,19 +93,61 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li class="active"><a href="about.html">公司介绍               </a></li>
-          <li><a href="safety.html">配药安全</a></li>
-          <li><a href="product.html">产品中心     </a></li>
-          <li><a href="documents.html">数据中心</a></li>
-          <li><a href="concept.html">招贤纳士</a></li>
-          <li><a href="training.html">员工专区</a></li>
-          <li><a href="contact.html">客服中心</a></li>
+          <li class="active"><a href="index.html">首页</a></li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="about.html">实验室概况                </a>
+            <ul class="subnav">
+              <li><a href="about.html">实验室简介</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="structure.html">组织架构</a>
+                <ul class="subnav">
+                  <li><a href="council.html">理事会</a></li>
+                  <li><a href="leadership.html">实验室领导</a></li>
+                  <li><a href="academic.html">学术委员会</a></li>
+                </ul>
+              </li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="team.html">人才队伍</a>
+                <ul class="subnav">
+                  <li><a href="academician.html">院士专家</a></li>
+                  <li><a href="talent.html">核心人才</a></li>
+                  <li><a href="researcher.html">研究员</a></li>
+                </ul>
+              </li>
+              <li><a href="history.html">大事记</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="core.html">核心板块</a>
+            <ul class="subnav">
+              <li class="active"><a class="active" href="core.html">前沿基础研究</a></li>
+              <li><a href="platform.html">公共技术平台和大科学装置                            </a></li>
+              <li><a href="factory.html">创新样板工厂</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="science.html">粤港澳交叉科学中心</a>
+                <ul class="subnav">
+                  <li><a href="science.html">中心简介</a></li>
+                  <li><a href="science_events.html">学术活动</a></li>
+                  <li><a href="applications.html">项目申请</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="news.html">新闻中心</a>
+            <ul class="subnav">
+              <li><a class="active" href="core.html">新闻动态</a></li>
+              <li><a href="research.html">科研进展                             </a></li>
+              <li><a href="notice.html">通知公告</a></li>
+              <li><a href="special.html">专题栏目</a></li>
+              <li><a href="videos.html">视频中心</a></li>
+            </ul>
+          </li>
+          <li><a href="culture.html">党群文化       </a></li>
+          <li><a href="job.html">人才招聘       </a></li>
+          <li><a href="contact.html">联系我们</a></li>
         </ul>
+        <div class="minemailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
       </div>
     </header>
     <div class="banner banner-news" style="background-image:url(img/banners/news.jpg)">       
       <div class="container">      
-        <h1 class="text36">新闻动态</h1>
+        <h1 class="text36">视频中心</h1>
       </div>
     </div>
     <div class="wrapper">
@@ -196,11 +240,11 @@
         <div class="copyright wow fadeInDown">Copyright &copy; 松山湖材料实验室 All Rights Reserved.    <a href="#">粤ICP备18107825号 </a></div>
       </div>
     </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/vendor/jquery.easing.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/bootstrap/bootstrap.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/app.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/vendor/jquery.easing.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/bootstrap/bootstrap.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/app.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
     <script>
       $(function(){
         

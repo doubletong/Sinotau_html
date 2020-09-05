@@ -73,12 +73,15 @@ block bkfooter
     script.
         $(function(){
           $("#btnSM").click(function(e){
+              $(this).addClass("active").siblings().removeClass('active');
               $("#artContent").removeClass('font-lg').addClass("font-sm");
           });
            $("#btnMe").click(function(e){
+              $(this).addClass("active").siblings().removeClass('active');
               $("#artContent").removeClass('font-lg').removeClass("font-sm");
           });
           $("#btnLG").click(function(e){
+              $(this).addClass("active").siblings().removeClass('active');
               $("#artContent").removeClass('font-sm').addClass("font-lg");
           });
         })

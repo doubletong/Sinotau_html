@@ -20,16 +20,21 @@
             bottom: 3rem;
         }
     }
-    .homeslider{
-       
+    .homeslider{       
         .swiper-pagination-bullet{
-            width: 50px;
-            height: 6px;
-            border-radius: 3px;
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
             background-color: #fff;
+            @include mq(md){
+                width: 50px;
+                height: 6px;
+                border-radius: 3px;
+            }
         }
     }
     .box{
+        margin-bottom: rem(30);
         .box-header{
             h3{
                 font-weight: normal;
@@ -38,15 +43,19 @@
             .more {
                 background-color: rgb(255, 255, 255);
                 box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);              
-                width: 100px;
-                height: 46px;    
+                width: 70px;
+                height: 36px;    
                 display: block;       
-                border-radius: 23px;
+                border-radius: 18px;
                 text-align: center;
-                line-height: 46px;
+                line-height: 36px;
                 color:$color-primary;
                 @include mq(xl){
                     font-size: rem(18);
+                    width: 100px;
+                    height: 46px;    
+                    border-radius: 23px;
+                    line-height: 46px;
                 }
                 &:hover{
                     background-color: $color-primary;
@@ -78,6 +87,13 @@
                             text-transform: uppercase;
                         }
                     }
+                   a{
+                        display: block;
+                        padding: 0 1rem;
+                        @include mq(xl){
+                            padding: 0 rem(30);
+                        }
+                    }
                 }
             }
             .list2{
@@ -87,9 +103,12 @@
                     border-bottom: 1px #eee solid;
                     h3{
                         font-size: rem(16);
-                        height: 46px;
+                     
                         line-height: 1.6;
                         font-weight: normal;
+                        @include mq(xl){
+                            height: 46px;
+                        }
                     }
                     @include mq(xl){
                         padding: 1.041rem 2rem;
@@ -155,11 +174,14 @@
                 }
                 a.title{
                     padding: 0 4rem;
-                    height: 68px;
+                  
                     margin-bottom: 2.4rem;
                     overflow: hidden;
                     display: block;
                     text-align: justify;
+                    @include mq(lg){
+                        height: 68px;
+                    }
                     @include mq(xl){
                         font-size: rem(18);
                     }
@@ -194,16 +216,26 @@
       
         .adSlider{
             position: relative;
+            @include mq(md) {
+               margin-bottom: rem(20);
+            }
+            @include mq(lg) {
+                margin-bottom: 0;
+             }
             .pic{
                 display: block;
-                height: 210px;
+              
                 text-align: center;
                 color:#fff;
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
                 font-weight: bold;
-                line-height: 210px;
+                line-height: 150px;
+                height: 150px;
+                @include mq(xl) {
+                    line-height: 210px;   height: 210px;
+                 }
                 &:hover{
                     color:$color-primary;
                 }
@@ -213,32 +245,47 @@
                 z-index: 100;
                 top: 50%;
                 color:$color-primary;
-                margin-top: -1rem;
+                margin-top: -0.9rem;
                 line-height: 1;
                 color:#fff;
                 cursor: pointer;
+                @include mq(xl) {
+                    margin-top: -1.2rem;
+                 }
                 .iconfont{
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    @include mq(xl) {
+                        font-size: 2.5rem;
+                     }
                 }
             }
             .swiper-prev{
-                left: 1rem;
+                left: .3rem;
+                @include mq(xl) {
+                    left: 1rem;
+                 }
             }
             .swiper-next{
-                right: 1rem;
+                right: .3rem;
+                @include mq(xl) {
+                    right: 1rem;
+                 }
             }
         }
         
         .links{
             a{
-                display: block;height: 210px;
+                display: block;height: 150px;
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
                 color:#fff;
                 text-align: center;
-                padding: 2rem 1rem;
+                padding: 1rem 1rem;
                 transition: all .2s;
+                @include mq(xl) {
+                    height: 210px;    padding: 2rem 1rem;
+                 }
                 &:hover{
                     color: yellow;
                 }
@@ -248,7 +295,10 @@
                     line-height: 1.5;
                 }
                 .iconfont{
-                    font-size: 2.4rem;;
+                    font-size: 1.6rem;;
+                    @include mq(xl) {
+                        font-size: 2.4rem;;
+                     }
                 }
             }
         }
@@ -256,6 +306,7 @@
     }
     .s3{
         background-color: #fff;
+        margin-bottom: 2rem;
         .item{
             width:100%;
            overflow: hidden;
@@ -288,16 +339,26 @@
                 &:hover{
                     text-decoration: none;
                 }
-              
+               h3{
+                   line-height: 1;
+               }
                 p{
-                    margin-bottom: 3rem;
+                  
+                
+                     @include mq(lg) {
+                        margin-bottom: 3rem;
+                     }
                     @include mq(xl) {
                        font-size: rem(18);
                     }
                 }
                 .iconfont{
-                    font-size: 2.4rem;
+                    font-size: 1.8rem;
                     display: inline-block;
+                    @include mq(md) {
+                        font-size: 2.4rem;
+                        line-height: 1;
+                     }
                 }
             }
         }
@@ -307,18 +368,32 @@
 
     .s4{       
     
-       
-
-
+        .box{
+            margin-bottom: 0;
+        }
         .videolist{
             .item{
                 display: block;
                 position: relative;
-                margin-bottom: rem(30);
+                margin-bottom: rem(12);
                 overflow: hidden;
-           
+                @include mq(md) {
+                    margin-bottom: rem(30);
+                 }
+                 @include mq(lg) {
+                    margin-bottom: rem(35);
+                 }
+                 @include mq(xl) {
+                    margin-bottom: rem(30);
+                 }
                 &.item1{
-                    margin-right:2.5%;
+                
+                    @include mq(xl) {
+                        margin-right:2%;
+                     }
+                     @include mq(xxl) {
+                        margin-right:2.5%;
+                     }
                 }
                 .thumb{
                     width: 100%;     transition: all .2s;
@@ -346,6 +421,9 @@
 
    .s5{
         color:#fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
         h3{
             text-align: center;
         }
@@ -377,7 +455,11 @@
             text-align: center;
             position: relative;
             .txt{
-                border-left:1px rgba(255,255,255,.3) solid;
+               
+                
+                @include mq(md){
+                    border-left:1px rgba(255,255,255,.3) solid;
+                }
                 .text48{
                     font-weight: bold;
                 }

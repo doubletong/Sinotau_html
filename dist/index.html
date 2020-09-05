@@ -10,11 +10,11 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <link href="js/vendor/wow/css/libs/animate.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <link href="js/vendor/swiper/css/swiper-bundle.min.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <link href="css/styles.min.css?v=1c35eeab912e56ef78d67f7c94087eb8" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
+    <link href="fonts/iconfont.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <link href="js/vendor/swiper/css/swiper-bundle.min.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <link href="css/styles.min.css?v=ea50c580f6193313e107692b3b4bdc0a" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
     <script>
       new WOW().init();
       
@@ -78,9 +78,11 @@
               <li><a href="contact.html">联系我们       </a></li>
             </ul>
           </div>
-          <div class="col-auto search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
-          <div class="col-auto emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a href="#"> <i class="iconfont icon-oa"></i></a></div>
-          <div class="col-auto lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          <div class="col-auto">
+            <div class="ql search"><a href="search.html"> <i class="iconfont icon-search-b"></i></a></div>
+            <div class="ql emailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
+            <div class="ql lang"><a href="#"> <i class="iconfont icon-en"></i></a></div>
+          </div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
               <div class="one"></div>
@@ -92,14 +94,56 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li class="active"><a href="about.html">公司介绍               </a></li>
-          <li><a href="safety.html">配药安全</a></li>
-          <li><a href="product.html">产品中心     </a></li>
-          <li><a href="documents.html">数据中心</a></li>
-          <li><a href="concept.html">招贤纳士</a></li>
-          <li><a href="training.html">员工专区</a></li>
-          <li><a href="contact.html">客服中心</a></li>
+          <li class="active"><a href="index.html">首页</a></li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="about.html">实验室概况                </a>
+            <ul class="subnav">
+              <li><a href="about.html">实验室简介</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="structure.html">组织架构</a>
+                <ul class="subnav">
+                  <li><a href="council.html">理事会</a></li>
+                  <li><a href="leadership.html">实验室领导</a></li>
+                  <li><a href="academic.html">学术委员会</a></li>
+                </ul>
+              </li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="team.html">人才队伍</a>
+                <ul class="subnav">
+                  <li><a href="academician.html">院士专家</a></li>
+                  <li><a href="talent.html">核心人才</a></li>
+                  <li><a href="researcher.html">研究员</a></li>
+                </ul>
+              </li>
+              <li><a href="history.html">大事记</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="core.html">核心板块</a>
+            <ul class="subnav">
+              <li class="active"><a class="active" href="core.html">前沿基础研究</a></li>
+              <li><a href="platform.html">公共技术平台和大科学装置                            </a></li>
+              <li><a href="factory.html">创新样板工厂</a></li>
+              <li class="hasnav"><i class="iconfont icon-right"></i><a href="science.html">粤港澳交叉科学中心</a>
+                <ul class="subnav">
+                  <li><a href="science.html">中心简介</a></li>
+                  <li><a href="science_events.html">学术活动</a></li>
+                  <li><a href="applications.html">项目申请</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="hasnav"><i class="iconfont icon-right"></i><a href="news.html">新闻中心</a>
+            <ul class="subnav">
+              <li><a class="active" href="core.html">新闻动态</a></li>
+              <li><a href="research.html">科研进展                             </a></li>
+              <li><a href="notice.html">通知公告</a></li>
+              <li><a href="special.html">专题栏目</a></li>
+              <li><a href="videos.html">视频中心</a></li>
+            </ul>
+          </li>
+          <li><a href="culture.html">党群文化       </a></li>
+          <li><a href="job.html">人才招聘       </a></li>
+          <li><a href="contact.html">联系我们</a></li>
         </ul>
+        <div class="minemailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
       </div>
     </header>
     <div class="wrapper">
@@ -118,7 +162,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="box">
-                  <div class="box-header mb-media-3">
+                  <div class="box-header mb-media-3 wow fadeInUp">
                     <div class="row align-items-center">
                       <div class="col">
                         <h3 class="text36">科研进展</h3>
@@ -128,8 +172,8 @@
                   </div>
                   <div class="box-body">
                     <div class="list">
-                      <div class="item">
-                        <div class="row align-items-center">
+                      <div class="item wow fadeInUp">
+                        <div class="row align-items-center no-gutters">
                           <div class="col-auto">
                             <div class="pubdate">
                               <div class="day">7</div>
@@ -139,8 +183,8 @@
                           <div class="col"><a href="news_detail.html">强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议</a></div>
                         </div>
                       </div>
-                      <div class="item">
-                        <div class="row align-items-center">
+                      <div class="item wow fadeInUp">
+                        <div class="row align-items-center no-gutters">
                           <div class="col-auto">
                             <div class="pubdate">
                               <div class="day">7</div>
@@ -150,8 +194,8 @@
                           <div class="col"><a href="news_detail.html">祝贺！松山湖材料实验室先进陶瓷与符合材料技术产业化项目获东莞首个重大科技成果转化立项</a></div>
                         </div>
                       </div>
-                      <div class="item">
-                        <div class="row align-items-center">
+                      <div class="item wow fadeInUp">
+                        <div class="row align-items-center no-gutters">
                           <div class="col-auto">
                             <div class="pubdate">
                               <div class="day">7</div>
@@ -161,8 +205,8 @@
                           <div class="col"><a href="news_detail.html">强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议</a></div>
                         </div>
                       </div>
-                      <div class="item">
-                        <div class="row align-items-center">
+                      <div class="item wow fadeInUp">
+                        <div class="row align-items-center no-gutters">
                           <div class="col-auto">
                             <div class="pubdate">
                               <div class="day">7</div>
@@ -178,7 +222,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="box box2">
-                  <div class="box-header mb-media-3">
+                  <div class="box-header mb-media-3 wow fadeInUp">
                     <div class="row align-items-center">
                       <div class="col">
                         <h3 class="text36">新闻动态</h3>
@@ -223,19 +267,19 @@
                   </div>
                   <div class="box-body">
                     <div class="list2">
-                      <div class="item">
+                      <div class="item wow fadeInUp">
                         <h3> <a href="news_detail.html">松山湖材料实验室汽车租赁服务采购项目公开招标公告</a></h3>
                         <div class="date"><i class="iconfont icon-time"> </i>2020-05-19</div>
                       </div>
-                      <div class="item">
+                      <div class="item wow fadeInUp">
                         <h3> <a href="news_detail.html">诚邀您参与丨深度势能-材料模拟应用交流讨论会</a></h3>
                         <div class="date"><i class="iconfont icon-time"> </i>2020-05-19</div>
                       </div>
-                      <div class="item">
+                      <div class="item wow fadeInUp">
                         <h3> <a href="news_detail.html">松山湖材料实验室综合事务管理部关于采购数字智能档案室建设（50-100万）的征求意见公示</a></h3>
                         <div class="date"><i class="iconfont icon-time"> </i>2020-05-19</div>
                       </div>
-                      <div class="item">
+                      <div class="item wow fadeInUp">
                         <h3> <a href="news_detail.html">松山湖材料实验室第一届公共技术讲习班暨第二届材料计算暑期学校</a></h3>
                         <div class="date"><i class="iconfont icon-time"> </i>2020-05-19</div>
                       </div>
@@ -250,7 +294,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-8">
-                <div class="swiper-container adSlider">
+                <div class="swiper-container adSlider wow fadeInUp">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">                                      <a class="pic text36" href="news_detail.html" style="background-image:url(img/home01.jpg);">协同创新 </a></div>
                     <div class="swiper-slide"> <a class="pic text36" href="news_detail.html" style="background-image:url(img/home02.jpg);">科学抗议</a></div>
@@ -261,7 +305,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="links">
+                <div class="links wow fadeInUp">
                   <div class="row no-gutters">
                     <div class="col"><a href="#" style="background-image:url(img/home04.jpg);"><span class="title text24">粤港澳交叉科学中心活动报名</span><i class="iconfont icon-right1"></i></a></div>
                     <div class="col"><a href="#" style="background-image:url(img/home05.jpg);"><span class="title text24">公共技术平台预约</span><i class="iconfont icon-right1"></i></a></div>
@@ -274,28 +318,28 @@
         <section class="s3" style="background-image:url(img/home_04.jpg);">
           <div class="row no-gutters">
             <div class="col-md-6">
-              <div class="item"><img src="img/home06.jpg" alt="">
+              <div class="item wow fadeInUp"><img src="img/home06.jpg" alt="">
                 <div class="over-txt"><a class="txt" href="core.html">
                     <h3 class="text36 wow fadeInUp">前沿科学研究</h3>
                     <p class="wow fadeInUp">强化核心技术攻关</p><i class="wow fadeInUp iconfont icon-right1"></i></a></div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="item"><img src="img/home07.jpg" alt="">
+              <div class="item wow fadeInUp"><img src="img/home07.jpg" alt="">
                 <div class="over-txt"><a class="txt" href="platform.html">
                     <h3 class="text36 wow fadeInUp">公共技术平台</h3>
                     <p class="wow fadeInUp">系统的、国际一流的、综合性用户开放平台</p><i class="wow fadeInUp iconfont icon-right1"></i></a></div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="item"><img src="img/home08.jpg" alt="">
+              <div class="item wow fadeInUp"><img src="img/home08.jpg" alt="">
                 <div class="over-txt"><a class="txt" href="factory.html">
                     <h3 class="text36 wow fadeInUp">创新样板工厂</h3>
                     <p class="wow fadeInUp">推动科研成果走出实验室、走向应用、走向市场</p><i class="wow fadeInUp iconfont icon-right1"></i></a></div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="item"><img src="img/home09.jpg" alt="">
+              <div class="item wow fadeInUp"><img src="img/home09.jpg" alt="">
                 <div class="over-txt"><a class="txt" href="science.html">
                     <h3 class="text36 wow fadeInUp">粤港澳交叉科学中心</h3>
                     <p class="wow fadeInUp">高水平、长期、稳定的学术交流和合作研究平台</p><i class="wow fadeInUp iconfont icon-right1"></i></a></div>
@@ -437,12 +481,12 @@
         <div class="copyright wow fadeInDown">Copyright &copy; 松山湖材料实验室 All Rights Reserved.    <a href="#">粤ICP备18107825号 </a></div>
       </div>
     </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/vendor/jquery.easing.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/bootstrap/bootstrap.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/app.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
-    <script src="js/vendor/swiper/js/swiper-bundle.min.js?v=1c35eeab912e56ef78d67f7c94087eb8"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/vendor/jquery.easing.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/bootstrap/bootstrap.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/app.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
+    <script src="js/vendor/swiper/js/swiper-bundle.min.js?v=ea50c580f6193313e107692b3b4bdc0a"></script>
     <script>
       var swiper = new Swiper('.homeslider', {         
           centeredSlides: true,
@@ -489,7 +533,7 @@
                   slidesPerView: 2,
               },
               768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
               },
               992: {
                   slidesPerView: 3,
