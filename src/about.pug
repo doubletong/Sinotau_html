@@ -1,16 +1,21 @@
 extends includes/layout.pug
 
 block title
-    | 实验室简介
+    | 企业介绍
 
 block bkheader
    link(href='js/vendor/mediaelement/mediaelementplayer.min.css', rel='stylesheet')
 
 
 block content  
-    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")        
+    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")
+        .c
+            img(src="img/banners/banner_c.png", alt="")
+
+        .title
+            img(src="img/title_about.png", alt="")
         .container       
-            h1.text36 实验室简介
+            h1.text36 企业介绍
               
 
     .wrapper
