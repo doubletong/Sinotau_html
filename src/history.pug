@@ -1,139 +1,96 @@
 extends includes/layout.pug
 
 block title
-    | 大事记
+    | 发展历程
 
 block bkheader
-   
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 
 block content  
-    .banner.banner-contact(style="background-image:url(img/banners/about.jpg)")        
-        .container       
-            h1.text36 大事记   
-                
-    .pagenav
-        .container
-            ul.list
-                li
-                    a.active(href="history.html") 领导来访
-                li
-                    a(href="history.html") 成立事记
-                    
-    .wrapper
-        .page-history.pb-media-5
-            .container
-                .fixednav
-                    h4  实验室概况
-                    ul#nav.nav
-                        li
-                            a(href="about.html") 实验室简介
-                        li.hasnav
-                            a(href="structure.html") 组织架构 
-                            i.iconfont.icon-right                          
-                        li.hasnav
-                            a(href="team.html") 人才队伍
-                            i.iconfont.icon-right    
-                        li.active
-                            a(href="history.html") 大事记
-                        li
-                            a(href="contact.html") 联系我们
-
-                section.s1.mb-media-3
-                    .history-list
-                        .item.odd
-                            .date
-                                .year.text36 2019
-                                .month.text30 07.19
-                            .row.align-items-center.justify-content-between
-                                .col-md-4.order-md-last
-                                    .pic
-                                        img.dot(src="img/his_01.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 中科院高鸿钧副秘书长一行调研实验室
-
-                        .item
-                            .date
-                                .year.text36 2019
-                                .month.text30 07.19
-                            .row.align-items-center.justify-content-between
-                                .col-md-4
-                                    .pic
-                                        img.dot(src="img/his_02.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 中科院直属机关党委一行调研实验室
-
-                        .item.odd
-                            .date
-                                .year.text36 2019
-                                .month.text30 07.03
-                            .row.align-items-center.justify-content-between
-                                .col-md-4.order-md-last
-                                    .pic
-                                        img.dot(src="img/his_03.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 广东省副省长覃伟中走访调研实验室
-
-                        .item
-                            .date
-                                .year.text36 2019
-                                .month.text30 04.15
-                            .row.align-items-center.justify-content-between
-                                .col-md-4
-                                    .pic
-                                        img.dot(src="img/his_04.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 科技部党组书记、部长王志刚一行调研实验室
-
-                        .item.odd
-                            .date
-                                .year.text36 2019
-                                .month.text30 03.26
-                            .row.align-items-center.justify-content-between
-                                .col-md-4.order-md-last
-                                    .pic
-                                        img.dot(src="img/his_05.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 东莞市委书记梁维东一行调研实验室
-
-                        .item
-                            .date
-                                .year.text36 2019
-                                .month.text30 02.27
-                            .row.align-items-center.justify-content-between
-                                .col-md-4
-                                    .pic
-                                        img.dot(src="img/his_06.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 科技部副部长徐南平一行到实验室调研
-
-                        .item.odd
-                            .date
-                                .year.text36 2018
-                                .month.text30 12.12
-                            .row.align-items-center.justify-content-between
-                                .col-md-4.order-md-last
-                                    .pic
-                                        img.dot(src="img/his_07.jpg", alt="")                                     
-                                        
-                                .col-md-4
-                                    .txt 黄宁生副省长一行调研实验室
-
-
+    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")
+        #aniels
+            .c(data-depth="0.2")
+                img(src="img/banners/banner_c.png", alt="")
+            .title_cn(data-depth="0.4")
+                img(src="img/title_about_cn.png", alt="")
+            .title(data-depth="0.6")
+                img(src="img/title_about.png", alt="")
+            .des(data-depth="0.8") 
+                p 深圳市蓝源实业发展有限公司成立于2003年，公司一直致力于专业代理高端显示产品及存储类产品，已被授权为JDI显示产品中国区唯一代理，松下Panasonic	IPS显示产品代理，美光Micron存储产品中国区代理。	产品广泛应用于手机、电视、平板电脑、医疗、工控等产品系列。我们希望与客户共同成长，我们的目标是用我们的技术与产品服务客户，并伴随客户一起发展壮大、迎接未来。
 
         
+        nav.nav-container
+            menu.wow.fadeInDown
+                a(href="about.html") 企业介绍
+                a(href="culture.html") 企业文化
+                a.active(href="history.html") 发展历程
+                a(href="honor.html") 荣誉资质  
+                
+
+                    
+
+    .page.page-history  
+        section.s1
+            .container.pt-media-5.pb-media-5
+                .history-list
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+                            .swiper-slide
+                                .item.row.align-items-center
+                                    .col
+                                        .opendate 2003.9
+                                    .col 
+                                        .txt.text28 深圳市蓝源实业发展有限公司成立，注册资本300万。
+ 
+
 
 block bkfooter
 
-    
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
-        
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            mousewheel: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            //- pagination: {
+            //-     el: '.swiper-pagination',
+            //-     clickable: true,
+            //- },
+        });
 
         $(function () {
             

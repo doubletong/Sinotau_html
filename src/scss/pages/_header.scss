@@ -14,12 +14,15 @@
          height: 70px;   
     }
     @include mq(xl){
-        height: 80px;     
+        height: 80px;   
+        padding-left: 4rem;
+        padding-right: 4rem;  
     }
     @include mq(xxl){
         height: 100px;       
     }
-
+ 
+ 
     .container-fluid,
         .row
     {
@@ -75,27 +78,27 @@
                     height: 70px;   
                     line-height: 70px;
                     padding: 0 .5rem;
-                    font-size: rem(14);
+         
                 }
                 @include mq(xl){
                     height: 80px;   
                     line-height: 80px;
                     padding: 0 1rem;  
-                    font-size: rem(14);
+            
                 }
                 @include mq(xxl){
-                    height: 100px;       
-                    line-height: 100px;
-                    font-size: rem(18);
+                    height: 90px;       
+                    line-height: 90px;
+              
                 }
             
                 &:hover{
-                    color:$color-primary;                                    
+                    color:yellow;                                    
                 }
                 &.active {
-                    color: $color-primary;
-                    font-weight: bold;
-                    border-bottom:4px $color-primary solid;
+                    color: #fff;
+                    font-weight: normal;
+                    border-bottom:4px #fff solid;
                 }
             }
             .subnav{

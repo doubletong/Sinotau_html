@@ -12,10 +12,9 @@
 
 body {
     color: #3c3c3c;
-    background-color: #f9f9f9;
+    background-color: #fff;
     font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
-    max-width: 1920px;
     margin: 0 auto;  
     line-height: 1.8;
     position: relative;
@@ -125,23 +124,112 @@ a {
     background-repeat: no-repeat;   
     color: #fff;
     position: relative;
-    .c{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        z-index: 10;
-        width: 749px;
-        height: 749px;
-        margin-left: -375px;
-        margin-top: -375px;
-    }
-    .container  {
-        text-align: right;
+    #aniels{
+        width: 100%;
         height: 100%;
-        h1{
-            @include vertical-align(); 
+        position: absolute;
+        overflow: hidden;
+    }
+    .c,.title_cn,.title,.des{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        img,p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 11;
+            transform: translate3d(-50%,-50%,0)
         }
     }
+    .c{
+        img{
+            width: 749px;
+            height: 749px;
+          
+        }
+    }
+    .title_cn{
+        img{
+            width: 408px;           
+            margin-top: -130px;
+        }
+    
+       
+    }
+    .title{
+        img{
+            width: 896px;
+   
+            margin-top:-20px;
+        }
+       
+    }
+    .des{       
+        z-index: 20;
+        p {
+   
+            margin-top:150px; 
+            text-align: center;
+            width: 1110px;
+            line-height: 1.6;  
+            @include mq(xl){
+                font-size: rem(18);
+    
+            }
+        }
+       
+    }
+
+    .nav-container{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(0deg,rgba(0,0,0,.5),rgba(0,0,0,0));
+        z-index: 500;
+        menu{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+            margin: 0;
+            a{
+                display: inline-block;
+                border-left: 1px rgba(255,255,255,.5) solid;
+                font-weight: lighter;
+                padding: .4rem 4rem .5rem;
+                position: relative;
+                color:#fff;
+                &:hover{
+                    color: yellow;
+                }
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                &:last-child{
+                    border-right:  1px rgba(255,255,255,.5) solid;
+                }
+                &.active{
+                    &::after{
+                        content: " ";
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                        width: 80%;
+                        height: 4px;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+   
 }
 
 
@@ -489,22 +577,36 @@ img {
         padding-bottom: 8rem;
     }
 }
-.pt-9{
-    padding-top: 5rem;
+.pb-media-9{
+    padding-bottom: 5rem;
     @include mq(md) {
-        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
     @include mq(lg) {
-        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
     @include mq(xl) {
-        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
     @include mq(xxl) {
-        padding-top: 9rem;
+        padding-bottom: 9rem;
     }
 }
-
+.pb-media-11{
+    padding-bottom: 7rem;
+    @include mq(md) {
+        padding-bottom: 8rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 9rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 10rem;
+    }
+    @include mq(xxl) {
+        padding-bottom: 11rem;
+    }
+}
 .mb-media-2{
     margin-bottom: 1rem;
     @include mq(md) {
@@ -546,6 +648,21 @@ img {
     }
     @include mq(xxl) {
         margin-bottom: 5rem;
+    }
+}
+.mb-media-7{
+    margin-bottom: 3rem;
+    @include mq(md) {
+        margin-bottom: 4rem;
+    }
+    @include mq(lg) {
+        margin-bottom:5rem;
+    }
+    @include mq(xl) {
+        margin-bottom: 6rem;
+    }
+    @include mq(xxl) {
+        margin-bottom: 7rem;
     }
 }
 .mb-media-8{
