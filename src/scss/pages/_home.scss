@@ -4,474 +4,154 @@
 
 }
 
-.page-home {
-    .swiper-container-horizontal>.swiper-pagination-bullets{
-        bottom: 1rem;
-        @include mq(md){
-            bottom: 1.5rem;
-        }
-        @include mq(lg){
-            bottom: 2rem;
-        }
-        @include mq(xl){
-            bottom: 2.5rem;
-        }
-        @include mq(xxl){
-            bottom: 3rem;
-        }
+.page-home {    
+    .animated{
+        opacity: 0;
     }
-    .homeslider{       
-        .swiper-pagination-bullet{
-            width: 30px;
-            height: 4px;
-            border-radius: 2px;
-            background-color: #fff;
-            @include mq(md){
-                width: 50px;
-                height: 6px;
-                border-radius: 3px;
-            }
+    .s1{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        .cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index: 100;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
         }
-    }
-    .box{
-        margin-bottom: rem(30);
-        .box-header{
-            h3{
-                font-weight: normal;
-                margin: 0;
-            }
-            .more {
-                background-color: rgb(255, 255, 255);
-                box-shadow: 0px 0px 21px 0px rgba(0, 90, 158, 0.15);              
-                width: 70px;
-                height: 36px;    
-                display: block;       
-                border-radius: 18px;
-                text-align: center;
-                line-height: 36px;
-                color:$color-primary;
-                @include mq(xl){
+        .aniels{
+            z-index: 190;
+        }
+        .vid{
+            position: absolute;            
+            width: 100vw;
+            height: 100vh;
+            object-position: center center;
+            object-fit: cover;
+            top: 50%;
+            transform: translateY(-50%);
+      
+        }
+        .lc,.rc{
+            position: absolute;        
+            width: 100%;
+            height:100%;
+            p{
+                position: absolute;        
+                top:48%;
+                transform: translateY(-50%);
+                z-index: 100;
+                @include mq(xxl){
                     font-size: rem(18);
-                    width: 100px;
-                    height: 46px;    
-                    border-radius: 23px;
-                    line-height: 46px;
+                    font-weight: lighter;
                 }
-                &:hover{
-                    background-color: $color-primary;
-                    color: #fff;
-                }
-              }
-              
+            }
         }
-        .box-body{
-            .list{
-                .item{
-                    background-color: #fff;
-                    margin-bottom: rem(20);
-                    .pubdate{                   
-                         
-                            background-image: linear-gradient( 135deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);   
-                            width: 64px;
-                            height: 109px;     
-                            text-align: center;    
-                            color:#fff;   
-                            padding-top: 2rem;    
-                       
-                        .day{
-                            font-size: rem(22);
-                            line-height: 1;
-                        }
-                        .month{
-                            font-size: rem(12);
-                            text-transform: uppercase;
-                        }
-                    }
-                   a{
-                        display: block;
-                        padding: 0 1rem;
-                        @include mq(xl){
-                            padding: 0 rem(30);
-                        }
-                    }
-                }
+        .lc{
+            p{
+                left: 5rem;
             }
-            .list2{
-                .item{
-                    padding: 1rem;
-                    background-color: #fff;
-                    border-bottom: 1px #eee solid;
-                    h3{
-                        font-size: rem(16);
-                     
-                        line-height: 1.6;
-                        font-weight: normal;
-                        @include mq(xl){
-                            height: 46px;
-                        }
-                    }
-                    @include mq(xl){
-                        padding: 1.041rem 2rem;
-                    }
-                    &:last-child{
-                        border-bottom: none;
-                    }
-                    .date{
-                        color:$color-primary;
-                    }
-                }
+        }
+        .rc{
+            p{
+                right: 5rem;
             }
-            .newsSlider{
-                position: relative;
-                .swiper-prev,.swiper-next{
-                    position: absolute;
-                    z-index: 100;
-                    bottom: 4.4rem;
-                    color:$color-primary;
-                    cursor: pointer;
-                    .iconfont{
-                        font-size: 2.5rem;
-                    }
-                }
-                .swiper-prev{
-                    left: 1rem;
-                }
-                .swiper-next{
-                    right: 1rem;
-                }
-            }
-            .item-slider{
-                text-align: center;
-                background-color: #fff;
-                padding-bottom: 3.2rem;
-                position: relative;
-                &::after{
-                    content:" ";
-                    display: block;
-                    height: 1px;
-                    background-color: #eee;
-                    z-index: 1;
-                    bottom: 2rem;
-                    left: 1rem;
-                    right:1rem;
-                    position: absolute;
-                }
-                a.pic{
-                    display: block;
-                    margin-bottom: 2.5rem;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                        height: 300px;
-                        object-fit: cover;
-                        transition: all .2s;
-                    }
-                    &:hover{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-                a.title{
-                    padding: 0 4rem;
-                  
-                    margin-bottom: 2.4rem;
-                    overflow: hidden;
-                    display: block;
-                    text-align: justify;
-                    @include mq(lg){
-                        height: 68px;
-                    }
-                    @include mq(xl){
-                        font-size: rem(18);
-                    }
-                }
-
-                .date{
-                    width: 130px;
-                    margin: 0 auto;
-                    background-color: #fff;
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -65px;
-                    bottom: 1rem;
-                    z-index: 100;
-                    color:$color-primary;
-                }
-            }
-
         }
     }
- 
-    
    
     .s2{
-        background-color: #fff;
-        padding-top:1rem;
-        padding-bottom: 2rem;
-        @include mq(md) {
-            padding-top: 2rem;
-            padding-bottom: 3rem;
-        }
-      
-        .adSlider{
+       height: 100vh;
+       background-color: $color-primary;
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;   
+       box-sizing: border-box;
+       
+        .content{
+         
             position: relative;
-            @include mq(md) {
-               margin-bottom: rem(20);
+            text-align: center;
+            .c{
+                width: 714px;
+                height: 714px;
+                margin: 0 auto;             
             }
-            @include mq(lg) {
-                margin-bottom: 0;
-             }
-            .pic{
-                display: block;
-              
-                text-align: center;
-                color:#fff;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                font-weight: bold;
-                line-height: 150px;
-                height: 150px;
-                @include mq(xl) {
-                    line-height: 210px;   height: 210px;
-                 }
-                &:hover{
-                    color:$color-primary;
-                }
-            }
-            .swiper-prev,.swiper-next{
+            .txt-container{
                 position: absolute;
+                left: 0;
+                top: 0;
                 z-index: 100;
-                top: 50%;
-                color:$color-primary;
-                margin-top: -0.9rem;
-                line-height: 1;
-                color:#fff;
-                cursor: pointer;
-                @include mq(xl) {
-                    margin-top: -1.2rem;
-                 }
-                .iconfont{
-                    font-size: 2rem;
-                    @include mq(xl) {
-                        font-size: 2.5rem;
-                     }
-                }
-            }
-            .swiper-prev{
-                left: .3rem;
-                @include mq(xl) {
-                    left: 1rem;
-                 }
-            }
-            .swiper-next{
-                right: .3rem;
-                @include mq(xl) {
-                    right: 1rem;
-                 }
-            }
-        }
-        
-        .links{
-            a{
-                display: block;height: 150px;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                color:#fff;
                 text-align: center;
-                padding: 1rem 1rem;
-                transition: all .2s;
-                @include mq(xl) {
-                    height: 210px;    padding: 2rem 1rem;
-                 }
-                &:hover{
-                    color: yellow;
+                width: 100%;
+                color:#fff;
+                height: 100%;
+                .title_cn{
+                    margin-bottom: 1rem;
                 }
-                .title{
-                    display: block;
-                    height: 80px;
-                    line-height: 1.5;
+                .go{
+                    a{
+                        display: inline-block;
+                        transition: all .2s;
+                        img{
+                            width: 34px;
+                        }
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                   
                 }
-                .iconfont{
-                    font-size: 1.6rem;;
-                    @include mq(xl) {
-                        font-size: 2.4rem;;
-                     }
+
+                .tc-box{
+                    @include vertical-align();
+                    .des{
+                        max-width: 420px;
+                        margin: 0 auto;
+                        a{
+                            color:#fff;
+                            &:hover{
+                                color:yellow;
+                            }
+                        }
+                        @include mq(xxl){
+                            font-size: rem(18);
+                        }
+                    }
                 }
+               
             }
-        }
-        
-    }
-    .s3{
-        background-color: #fff;
-        margin-bottom: 2rem;
-        .item{
-            width:100%;
-           overflow: hidden;
-           img{
-               transition: all .2s;
-           }
-         &:hover{
-             img{
-                 transform: scale(1.1);
-             }
-         }
             
         }
        
         
-        .over-txt{
-            position: absolute;
-            left: 0;
-            top:0;
-            width: 100%;
-            z-index: 10;
-            height: 100%;
-            .txt{            
-                @include vertical-align(); 
+    }
+
+
+    .s3{
+        
+       
+    }
+
+    .s4{          
+        
+    }
+
+    .s5{
+
+        .des{
+            p{
                 text-align: center;
-                padding: 1rem;
-                display: block;
-                color:#fff;
-                text-decoration: none;
-                &:hover{
-                    text-decoration: none;
-                }
-               h3{
-                   line-height: 1;
-               }
-                p{
-                  
-                
-                     @include mq(lg) {
-                        margin-bottom: 3rem;
-                     }
-                    @include mq(xl) {
-                       font-size: rem(18);
-                    }
-                }
-                .iconfont{
-                    font-size: 1.8rem;
-                    display: inline-block;
-                    @include mq(md) {
-                        font-size: 2.4rem;
-                        line-height: 1;
-                     }
+                line-height: 1.6;
+                strong{
+                    display: block;
                 }
             }
+     
         }
-        
-        
     }
-
-    .s4{       
-    
-        .box{
-            margin-bottom: 0;
-        }
-        .videolist{
-            .item{
-                display: block;
-                position: relative;
-                margin-bottom: rem(12);
-                overflow: hidden;
-                @include mq(md) {
-                    margin-bottom: rem(30);
-                 }
-                 @include mq(lg) {
-                    margin-bottom: rem(35);
-                 }
-                 @include mq(xl) {
-                    margin-bottom: rem(30);
-                 }
-                &.item1{
-                
-                    @include mq(xl) {
-                        margin-right:2%;
-                     }
-                     @include mq(xxl) {
-                        margin-right:2.5%;
-                     }
-                }
-                .thumb{
-                    width: 100%;     transition: all .2s;
-                }
-                &:hover{
-                    .thumb{
-                        transform: scale(1.1);
-                    }
-                }
-                .play{
-                    position: absolute;
-                    left:50%;
-                    top:50%;
-                    margin-left: -25px;
-                    margin-top: -25px;
-                }
-            }
-        }
-
-
-    }
-   
-
-
-
-   .s5{
-        color:#fff;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        h3{
-            text-align: center;
-        }
-        .lab-container{
-            position: relative;
-            padding-left: 5rem;
-            padding-right: 5rem;
-            .swiper-prev,.swiper-next{
-                position: absolute;
-                z-index: 100;
-                top: 50%;
-                color:$color-primary;
-                margin-top: -1.5rem;
-                line-height: 1;
-                color:#fff;
-                cursor: pointer;
-                .iconfont{
-                    font-size: 2.5rem;
-                }
-            }
-            .swiper-prev{
-                left: 0;
-            }
-            .swiper-next{
-                right: 0;
-            }
-        }
-        .labSlider{
-            text-align: center;
-            position: relative;
-            .txt{
-               
-                
-                @include mq(md){
-                    border-left:1px rgba(255,255,255,.3) solid;
-                }
-                .text48{
-                    font-weight: bold;
-                }
-                small{
-                    font-size: 1rem;
-                    margin-left: .6rem;
-                }
-            }
-            
-        }
-   }
-   
-   
 
 }

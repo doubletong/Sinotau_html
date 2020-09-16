@@ -1,224 +1,58 @@
 extends includes/layout.pug
 
 block title
-    | 党群文化
+    | 企业文化
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 block content
-    .banner.banner-culture(style="background-image:url(img/banners/dang.jpg)")        
-        .container       
-            h1.text36 党群文化
+    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")
+        #aniels
+            .c(data-depth="0.2")
+                img(src="img/banners/banner_c.png", alt="")
+            .title_cn(data-depth="0.4")
+                img(src="img/title_about_cn.png", alt="")
+            .title(data-depth="0.6")
+                img(src="img/title_about.png", alt="")
+            .des(data-depth="0.8") 
+                p 深圳市蓝源实业发展有限公司成立于2003年，公司一直致力于专业代理高端显示产品及存储类产品，已被授权为JDI显示产品中国区唯一代理，松下Panasonic	IPS显示产品代理，美光Micron存储产品中国区代理。	产品广泛应用于手机、电视、平板电脑、医疗、工控等产品系列。我们希望与客户共同成长，我们的目标是用我们的技术与产品服务客户，并伴随客户一起发展壮大、迎接未来。
 
         
-    .wrapper
-        .page-culture.pb-media-5
-            .container  
-                .fixednav
-                    h4  党群文化
-                    ul.nav
-                        li
-                            a(href="dwork-list.html") 党建工作
-                        li
-                            a(href="gwork-list.html") 群团工作                             
+        nav.nav-container
+            menu.wow.fadeInDown
+                a(href="about.html") 企业介绍
+                a.active(href="culture.html") 企业文化
+                a(href="history.html") 发展历程
+                a(href="honor.html") 荣誉资质
+
+        
+
+    .page.page-culture.pt-media-12
+        
+
+        section.s1.container.pb-media-11
+            h2.text28 我们的使命
+                br
+                | 为大众谋福利
+
+            p 取得合作伙伴的信任和尊重是我们的理念
+                br
+                | 安全是靠实力和远虑来实现的
                 
-
-                section.s1
-                    .row
-                        .col-lg
-                            .box.box1
-                                .box-header
-                                    .row.align-items-center
-                                        .col 
-                                            h2.text36 党建工作
-                                        .col-auto
-                                            a.more(href="dwork-list.html") 更多
-                                .box-body
-                                    .list
-                                        .item
-                                            h3
-                                                a(href="culture_detail.html") 松山湖材料实验室汽车租赁服务采购项目公开招标公告
-                                            .note
-                                                i.iconfont.icon-time
-                                                | 2020-05-19
-
-                                        .item
-                                            h3
-                                                a(href="culture_detail.html") 诚邀您参与丨深度势能-材料模拟应用交流讨论会
-                                            .note
-                                                i.iconfont.icon-time
-                                                | 2020-05-19
-
-                                        .item
-                                            h3
-                                                a(href="culture_detail.html") 松山湖材料实验室综合事务管理部关于采购数字智能档案室建设（50-100万）的征求意见公示
-                                            .note
-                                                i.iconfont.icon-time
-                                                | 2020-05-19
-
-                                        .item
-                                            h3
-                                                a(href="culture_detail.html") 松山湖材料实验室综合事务管理部关于采购数字智能档案室建设（50-100万）的征求意见公示
-                                            .note
-                                                i.iconfont.icon-time
-                                                | 2020-05-19
-
-                            .box.box1
-                                .box-header
-                                    .row.align-items-center
-                                        .col 
-                                            h2.text36 党群工作
-                                        .col-auto
-                                            a.more(href="gwork-list.html") 更多
-                                .box-body
-                                    .work-container.swiper-container
-                                        .swiper-wrapper
-                                            .swiper-slide 
-                                                .row
-                                                    .col-md-auto
-                                                        a.pic(href="culture_detail.html")
-                                                            img(src="img/temp/n001.jpg", alt="")
-                                                    .col-md
-                                                        .txt
-                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
-                                                    
-                                                        .note
-                                                            i.iconfont.icon-time
-                                                            | 2020-05-19
-
-                                            .swiper-slide 
-                                                .row
-                                                    .col-md-auto
-                                                        a.pic(href="culture_detail.html")
-                                                            img(src="img/temp/n001.jpg", alt="")
-                                                    .col-md
-                                                        .txt
-                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
-                                                    
-                                                        .note
-                                                            i.iconfont.icon-time
-                                                            | 2020-05-19
-
-                                            .swiper-slide 
-                                                .row
-                                                    .col-md-auto
-                                                        a.pic(href="culture_detail.html")
-                                                            img(src="img/temp/n001.jpg", alt="")
-                                                    .col-md
-                                                        .txt
-                                                            a(href="culture_detail.html") 员工培训——“创新科研成果转化成败关键：欧美及台湾地区经验”刘江彬教授作主题演讲
-                                                    
-                                                        .note
-                                                            i.iconfont.icon-time
-                                                            | 2020-05-19
-                                     
-                                        .swiper-next
-                                            i.iconfont.icon-next1
-                                        .swiper-prev
-                                            i.iconfont.icon-prev1
-                                       
-
-
-
-                        .col-lg-auto
-                            .box.box2
-                                .box-header
-                                    .row.align-items-center
-                                        .col 
-                                            h2.text36 党建日签
-                                        .col-auto
-                                            a.more(href="riqian.html") 更多
-
-                                .box-body
-                                    .pic1
-                                        img(src="img/cul_01.jpg", alt="")
-
-                                    .riqian
-                                        h3.title / 党建日签 / 
-                                        .d1 ——  闰四月廿六  ——
-                                        .d2.text40 06-17
-                                        .d3 ——  June  周三  ——
-                                        
-                                        .summary
-                                            .title
-                                                img(src="img/yulu.png", alt="")
-                                            p 青年一代有理想、有本领、有担当，国家就有前途，民族就有希望。
-
-                                        main.content
-                                            p 落实科技人员创新创业各项政策，将科技人员服务企业情况作为职称评审、岗位竞聘等重要内容，对与成效突出的优先推荐申报国家科技人才计划。抓紧落实赋予科研人员职务科技成果所有权或长期权试点。
-                                            p ———《关于科技创新支撑复工复产和经济平稳运行的若干措施》
-                                            .icon.text-right
-                                                img(src="img/cul_02.png", alt="")
-
-            section.s2.pt-media-3.pb-media-3
-                .container
-                    .header
-                        .row.align-items-center
-                            .col 
-                                h2.text36 组织风采
-                            .col-auto
-                                a.more(href="mien.html") 更多
-
-                    .box-wrap
-                        .box-swiper.swiper-container
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    .item
-                                        a.pic(href="culture_detail.html")
-                                            img(src="img/temp/zz01.jpg", alt="")
-                                        .title
-                                            a(href="culture_detail.html") 党总支成立
-
-                                .swiper-slide 
-                                    .item
-                                        a.pic(href="culture_detail.html")
-                                            img(src="img/temp/zz02.jpg", alt="")
-                                        .title
-                                            a(href="culture_detail.html") 东莞战疫展示
-
-                                .swiper-slide 
-                                    .item
-                                        a.pic(href="culture_detail.html")
-                                            img(src="img/temp/zz03.jpg", alt="")
-                                        .title
-                                            a(href="culture_detail.html") 科学面对面
-                                .swiper-slide 
-                                    .item
-                                        a.pic(href="culture_detail.html")
-                                            img(src="img/temp/zz04.jpg", alt="")
-                                        .title
-                                            a(href="culture_detail.html") 一支部党员学习交流会
-                                .swiper-slide 
-                                    .item
-                                        a.pic(href="culture_detail.html")
-                                            img(src="img/temp/zz01.jpg", alt="")
-                                        .title
-                                            a(href="culture_detail.html") 东莞战疫展示
-
-
-                        .swiper-next
-                            i.iconfont.icon-next1
-                        .swiper-prev
-                            i.iconfont.icon-prev1
-
-            section.s3.container.pt-media-3
-                h2.text36.mb-media-3 学习链接
-
-                .links
-                    .row
-                        .col-6.col-md-4.col-lg-3
-                            a.item(href="#")
-                                img(src="img/temp/link01.png", alt="")
-                        .col-6.col-md-4.col-lg-3
-                            a.item(href="#")
-                                img(src="img/temp/link02.png", alt="")
-                        .col-6.col-md-4.col-lg-3
-                            a.item(href="#")
-                                img(src="img/temp/link03.png", alt="")
-                        .col-6.col-md-4.col-lg-3
-                            a.item(href="#")
-                                img(src="img/temp/link04.png", alt="")
+        section.s2.wow.fadeInUp
+            img(src="img/culture_02.jpg", alt="")
+            .txt-container
+                .txt
+                    h3.text28 我们的工作理念
+                    p 取得合作伙伴的信任和尊重是我们的理念
+                        br
+                        | 安全是靠实力和远虑来实现的结果导向，使命必达,不抱怨、不等待、想办法
+                        br
+                        | 勇于担当，敢于竞争,敢于质疑，善于提问
+                        br
+                        | 工作高效，反应快速
+                    
 
                              
 

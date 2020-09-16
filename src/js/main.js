@@ -1,6 +1,12 @@
 
 
 $(document).ready(function() {
+    var scene = document.getElementById('aniels');
+    if(scene){
+        var parallaxInstance = new Parallax(scene);
+    }
+    
+
     // $(window).scroll(function(){
     //     if (40 < $(window).scrollTop()) {
     //         $("#site-header").addClass("fixheader");  

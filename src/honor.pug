@@ -1,0 +1,150 @@
+extends includes/layout.pug
+
+block title
+    | 荣誉资质
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")
+        #aniels
+            .c(data-depth="0.2")
+                img(src="img/banners/banner_c.png", alt="")
+            .title_cn(data-depth="0.4")
+                img(src="img/title_about_cn.png", alt="")
+            .title(data-depth="0.6")
+                img(src="img/title_about.png", alt="")
+            .des(data-depth="0.8") 
+                p 深圳市蓝源实业发展有限公司成立于2003年，公司一直致力于专业代理高端显示产品及存储类产品，已被授权为JDI显示产品中国区唯一代理，松下Panasonic	IPS显示产品代理，美光Micron存储产品中国区代理。	产品广泛应用于手机、电视、平板电脑、医疗、工控等产品系列。我们希望与客户共同成长，我们的目标是用我们的技术与产品服务客户，并伴随客户一起发展壮大、迎接未来。
+
+        
+        nav.nav-container
+            menu.wow.fadeInDown
+                a(href="about.html") 企业介绍
+                a(href="culture.html") 企业文化
+                a(href="history.html") 发展历程
+                a.active(href="honor.html") 荣誉资质
+
+        
+
+    .page.page-honor.pt-media-7.pb-media-7
+        
+
+        section.s1
+            .container                
+                .swiper-container.gallery-top
+                    .swiper-wrapper
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title MICRON
+                                        .pubdate.text20 2016年
+
+
+     
+                .thumbs-container
+                    .row.justify-content-end
+                        .col-lg-7
+                            .gallery-topnav                                
+                                .swiper-prev 
+                                    img(src="img/icon-prev.svg", alt="")
+                                .swiper-next 
+                                    img(src="img/icon-next.svg", alt="")
+
+                            .swiper-container.gallery-thumbs
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        img(src="img/honor/th01.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th02.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th03.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th04.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th05.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th06.jpg", alt="")
+                        
+
+                             
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 5,
+            centeredSlides: true,
+            loop: true,
+            freeMode: true,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 5, //looped slides should be the same
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+        });
+        $(function () {
+        
+  
+        
+        });
+      
+       
+
+     

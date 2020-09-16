@@ -1,486 +1,81 @@
-.page-news { 
-    
-    .s1{
-        padding-top: rem(30);
-        @include mq(md){
-            padding-top: rem(60);
-        }
-        .newslist{
-           
-            .item{              
-                background-color: #fff;
-                margin-bottom: 1rem;
-                @include mq(md){
-                    margin-bottom: 2rem;
-                }
-                @include mq(lg){
-                    margin-bottom: 2.5rem;
-                }
-                @include mq(xl){
-                    margin-bottom: 3rem;
-                }
-                .pic{
-                    display: block;
-                    overflow: hidden;
-                    img{
-                        display: block;
-                        transition: all .2s;
-                        width: 100%;
-                    }
-                    &:hover{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-                .txt{
-                    position: relative;
-                    padding:.6rem 1rem 3rem;                
-                  
-                    @include mq(md){
-                        padding:1rem 1rem .5rem;
-                        min-height: 140px;
-                    }
-                    @include mq(lg){
-                    
-                        min-height: 150px;
-                    }
-                    @include mq(xl){
-                        padding: 1.2rem 1.5rem 1rem;
-                        min-height: 180px;
-                    }
-                    .pubdate{
-                        position: absolute; 
-                        line-height: 1.3;
-                        bottom: 0;
-                        left: 0;
-                        z-index: 100;      
-                        color: $color-primary;     
-                        padding-bottom: 1rem;
-                        padding-left: 1rem;
-                        @include mq(xl){
-                            padding-left: 1.5rem;
-                            padding-bottom: 1.5rem;
-                        }  
-                        .iconfont{
-                            padding-right: .5rem;
-                        }
-                    }
-
-                  
-                    h3{
-                        line-height: 1.8;
-                        color: #333;                    
-                        font-size: rem(14);     
-                        text-align: justify;                   
-                        @include mq(xl){
-                            font-size: rem(16);
-                        }
-                        @include mq(xxl){
-                          
-                            font-size: rem(18);
-                        }
-                        a{
-                            color: #333;
-                            &:hover{
-                                color: $color-accent;
-                            }
-                        }
-                    }
-                 
-         
-                }
-            }
-        }
-        .pagination {
-            padding-top: 0;
-        }
-        
-    }
-    
-}
-
-.page-research{
-    .s1{
-        padding-bottom: 2rem;
-        padding-top: 30px;
-        @include mq(md){
-            padding-top: 60px;
-        }
-        .researchlist{
-            .item{
-                background-color: #fff;
-                margin-bottom: 20px;
-                @include mq(md){
-                    margin-bottom: 30px;
-                }
-                @include mq(lg){
-                    margin-bottom: 45px;
-                }
-                a.pic{
-                    display: block;
-                    @include mq(md){
-                        width: 300px;
-                    }
-                    @include mq(lg){
-                        width: 360px;
-                    }
-                    @include mq(xl){
-                        width: auto;
-                    }
-                }
-                .txt{
-                    padding-right:1rem;
-                    height: 100%;
-                    position: relative;
-                    padding-left:1rem;
-                    padding-bottom: 5rem;
-                    @include mq(md){
-                        padding-left:0;
-                        padding-right:1rem;
-                    }
-                    @include mq(lg){
-                        padding-left:2rem;
-                        padding-right:3rem;
-                    }
-                    h3{
-                        line-height: 1.8;
-                        margin: 0;
-                        padding-top: 1.5rem;
-                        font-weight: normal;
-                    }
-                 
-                    .note{
-                        position: absolute; 
-                        bottom: 0;
-                        left: 0;
-                       
-                        z-index: 100;
-                        border-top: 1px #eee solid;
-                        width: 100%;
-                        padding-top: 1.2rem;
-                        padding-bottom: 1.2rem;
-                        padding-left: 1rem;
-                        @include mq(md){
-                            left: 0;    padding-left:0;
-                        }
-                        @include mq(lg){
-                            left: 2rem;width: 90%;
-                        }
-                        .iconfont{
-                            background: linear-gradient(90deg,#57a456,#13629b);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            margin-right: .6rem;
-                            color: #999;
-                        }
-                                                  
-                    }
-                }
-            }
-   
-        }
-    }
-    
-}
-
-.page-notice{
-    .s1{
-        padding-top: 30px;
-        padding-bottom: 2rem;
-        @include mq(md){
-            padding-top: 60px;
-        }
-        .noticelist{
-            .item{
-                background-color: #fff;
-                margin-bottom: 20px;
-                @include mq(md){
-                    margin-bottom: 30px;
-                }
-                @include mq(lg){
-                    margin-bottom: 45px;
-                }
-                .pubdate{
-                    color: #fff;
-                    text-align: center;                    
-                    background-image: linear-gradient( 135deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);                    
-                    width: 80px;
-                    height: 115px;
-                    padding:1rem 0;
-                    @include mq(md){
-                        padding:1rem ;    width: 100px;
-                        height: 128px;
-                    }
-                    .date{
-                        border-bottom: 1px #fff solid;
-                        font-size: rem(24);
-
-                    }
-                      
-                }
-                .txt{
-                    padding-right: 1rem;
-                    padding-left: 1rem;
-                    @include mq(xl){
-                        padding-left: 2rem;
-                        padding-right: 3rem;
-                    }
-                    h3{
-                        font-size: rem(14);
-                        margin: 0;
-                        @include mq(md){
-                            font-size: rem(16);
-                        }
-                        @include mq(lg){
-                            font-size: rem(18);
-                        }
-                        @include mq(xl){
-                            font-size: rem(20);
-                        }
-                    }
-                }
-
-            }
-        }       
-    }  
-}
-
-.page-special{
-    .s1{
-        padding-top: 30px;
-        padding-bottom: 2rem;
-        @include mq(md){
-            padding-top: 60px;
-        }
-    }
-    .speciallist{
-        .item{
-            background-color: #fff;
-            margin-bottom: rem(30);
-            @include mq(lg){
-                margin-bottom: rem(40);
-            }
-            @include mq(xl){
-                margin-bottom: rem(50);
-            }
-            @include mq(xxl){
-                margin-bottom: rem(60);
-            }
-            .txt{
-                padding: 1rem;
-                font-weight: bold;
-                text-align: center;
-                @include mq(lg){
-                    font-size: rem(16);
-                }
-                @include mq(xl){
-                    font-size: rem(18);
-                }
-                @include mq(xxl){
-                    font-size: rem(20);
-                }
-            }
-        }
-        .pagination{
-            padding-top: 0;
-        }
-    }
-}
-
-.page-video{
-    .s1{
-        padding-top: 30px;
-        padding-bottom: 2rem;
-        @include mq(md){
-            padding-top: 60px;
-        }
-    }
-    .videolist{
-        .item{
-            position: relative;
-          
-            background-color: #fff;
-            margin-bottom: rem(30);
-            @include mq(lg){
-                margin-bottom: rem(40);
-            }
-            @include mq(xl){
-                margin-bottom: rem(50);
-            }
-            @include mq(xxl){
-                margin-bottom: rem(60);
-            }
-            .pic{
-                width: 100%;
-                display: block;
-                position: relative;
-            }
-            .txt{
-                padding: 1rem;
-                text-align: center;                
-            
-            }
-            .play{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                z-index: 20;             
-                color: rgba(255,255,255,.9);
-                line-height: 1;
-                display: block;
-                height: 50px;
-                width: 50px;
-                text-align: center;
-          
-                margin-top: -25px;
-                margin-left:-25px ;
+.page-news {   
+        .newslist{     
+            overflow: hidden;      
+            .item{    
+                height: 300px;
+                background-image:url('../img/news_bg1.png');
+                background-repeat:  no-repeat;
+                background-position: center top 2rem;
                 transition: all .2s;
-               
-              
-                &:hover{
-                    transform: scale(1.1);
+                a{
+                    display: block;          
+                    max-width: 960px;
+                    padding:0  15px;
+                    height: 100%;
+                    margin: 0 auto;
+                    .txt{
+                        @include vertical-align(); 
+                        text-align: center;
+                    }
                 }
+       
+               &.item1{
+                background-image:url('../img/news_bg2.png'), linear-gradient(90deg,#213166, #0F627F);
+                background-repeat: no-repeat,  no-repeat;
+                background-position: center center, center center;
+                a{
+                    color:#fff;
+                }
+               }
+               &.item2{
+                background-image:url('../img/news_bg3.png'), linear-gradient(90deg,#A8A5CE, #92E3EE);
+                background-repeat: no-repeat,  no-repeat;
+                background-position: center center, center center;
+                a{
+                    color:#fff;
+                }
+               }
+
+               &:hover{
+                   transform: scale(1.1);
+               }
+              
             }
-            
         }
-        .pagination{
-            padding-top: 0;
-        }
-    }
+    
 }
 
-
-.page-news-detail{    
-    
-    article.container{     
-        padding-top: rem(60);
-        header{
-            text-align: center;          
-            padding-bottom: 2rem;
-            position: relative;
-           
-            @include mq(md) {
-                margin-bottom: 2rem;
-            }
-            h1.title-news{
-                line-height: 1.4;
-                font-size: rem(22);
-                margin-bottom: 1rem;
-                color: #000;
-                text-transform: uppercase;
-                @include mq(md) {
-                    font-size: rem(24);  margin-bottom: 1.5rem;
-                }
-                @include mq(lg){
-                    font-size: rem(26);
-                }
-                @include mq(xl){
-                    font-size: rem(28);
-                }
-                @include mq(xxl){
-                    font-size: rem(30);
-                }
-            }
+.page-news-detail{
+    .art-container{
+        max-width: 960px;
+        padding: 0 15px;
+        margin: 0 auto;
+        .art-header{
+            text-align: center;
             .note{
-                color: #999;
-                max-width: 800px;
-                margin: 0 auto;
-           
-                text-align: center;
-                @include mq(md){
-                    text-align: left;
+                position: relative;
+                time{
+                    padding: .5rem 2rem;
+                    background-color: #fff;
+                    display: inline-block;
+                    font-weight: lighter;
                 }
-              .item{
-                  display: inline-block;
-                  .iconfont{
-                      margin-right: .6rem;
-                      background: linear-gradient(90deg,#57a456,#13629b);
-                      background-clip: text;
-                      -webkit-text-fill-color: transparent;
-                  }
-                  &.time{
-                      margin-right: 2rem;
-                  }
-              }
-             
-              a{
-                  display: inline-block;
-                  margin-left: 2rem;
-                  width: 28px;
-                  height: 28px;
-                  border:1px #a4cdf6 solid;
-                  border-radius: 50%;
-                  background-color: #fff;
-                  text-align: center;
-                  line-height: 26px;
-                  font-size: rem(14);
-                  &.active{
-                    background: linear-gradient(90deg,#57a456,#13629b);
-                    border-color: transparent;
-                    color: #fff;
-                  }
-              }
 
-              &.note1{
-                text-align: center;
-                }
-            }
-        }
-
-
-        .content{
-            margin-bottom: 2rem;
-            font-size: rem(18);
-            @include mq(lg) {
-                margin-bottom: 3rem;
-            }
-            @include mq(xl) {
-                margin-bottom: 4rem;
-            }
-            @include mq(xxl) {
-                margin-bottom: 5rem;
-            }
-            &.font-sm{
-                font-size: rem(16);
-            }
-            &.font-lg{
-                font-size: rem(20);
-            }
-            figure{
-                margin:2rem auto;              
-                text-align: center;
-                figcaption{
-                    display: block;
-                    text-align: center;
-                    padding: .6rem;
-                }
-            }
-            img{
-                height: auto !important;
-            }
-            .vid{
-                max-width: 960px;
-                margin:0 auto;
-                video{
+                &::after{
+                    position: absolute;
+                    left: 0;
+                    top: 1.5rem;
+                    content: " ";
                     width: 100%;
+                    height: 1px;
+                    background-color: #ddd;
+                    z-index: -1;
+                   
                 }
             }
         }
-            .news-nav{
-                display: block;
-                padding: .5rem 2rem;
-                border:1px #e6e6e6 solid;
-                font-size: 1rem;
-                @include mq(md) {
-                    padding: .8rem 4rem;
-                }
-            }
-            
-            .vid{
-                text-align: center;
-            }
-       
-    }    
-  
+        p{
+            text-align: justify;
+        }
+    }
 }

@@ -1,664 +1,97 @@
 
 
 .page-product{
-
-    .s1{
-        text-align: right;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-      img{
-          width: 30%;
-          @include mq(md){
-            width: 20%;
-        }
-        @include mq(lg){
-            width: auto;
-        }
-      }    
-    }
-
-    .s2{
-        background-image: linear-gradient(90deg,#35684E,#23658E);
-       
-        .container{
-            position: relative;
-        
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            @include mq(md){
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-            @include mq(lg){
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-            @include mq(xl){
-                padding-top: 4rem;
-                padding-bottom: 4rem;
-            }
-            @include mq(xxl){
-                padding-top: 5rem;
-                padding-bottom: 5rem;
-            }
-            .pic{
-                width: 160px;
-                margin-top: -6rem;
-                margin-bottom: 1rem;
-                @include mq(md){
-                    width: 220px;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    margin-bottom: 0;
-                }
-                @include mq(lg){
-                    width: 400px;
-                    
-                }
-                @include mq(xl){
-                    width: auto;
-                    
-                }
-               
-            }
-            .txt{
-                color: #fff;
-                text-align: justify;
-                @include mq(md){
-                    margin-left:240px;
-                }
-                @include mq(lg){
-                    margin-left: 420px;
-                }
-                @include mq(xl){
-                    margin-left: 550px;
-                }
-                @include mq(xxl){
-                    margin-left: 650px;
-                }
-            }
-        }
-    }
-
-    
-    .s3{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        @include mq(md){
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-        @include mq(lg){
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-        @include mq(xl){
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-        @include mq(xxl){
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-        .box{
-            margin-bottom: 1rem;
-            @include mq(md){
-                margin-bottom: 2rem;
-            }
-            @include mq(lg){
-                padding-right: 1rem;
-            }
-            @include mq(xl){
-                padding-right: 3rem;
-            }
-            @include mq(xxl){
-                padding-right: 5rem;
-            }
-            h3.title{
-                margin-bottom: 1rem;
-                @include mq(md){
-                    margin-bottom: 2rem;
-                }
-                @include mq(lg){
-                    margin-bottom: 3rem;
-                }
-            }
-            .txt{                
-                margin-bottom: 1rem;
-               
-                .item{
-                    text-align: center;
-                   
-                    padding-right: 2rem;
-                    padding-left: 2rem;
-                    @include mq(md){
-                        border-right: 1px #eee solid;
-                    }
-                    &.first{
-                        border-right: 1px #eee solid;
-                    }
-                    &.last{
-                        border-right: none;
-                    }
-                    h4{
-                        margin: 0;
-                    }
-                }
-            }
-        }
-        .pic{
-            text-align: center;
-            img{
-                width: 50%;
-                @include mq(lg){
-                    width: 300px;
-                }
-                @include mq(xl){
-                    width: 400px;
-                }
-                @include mq(xxl){
-                    width: auto;
-                }
-            }
-        }
-    
-    }
-
-    .s4{
-        background-color: #022E6A;
-        color: #fff;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        @include mq(md){
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-        @include mq(lg){        
-            padding-bottom: 4rem;
-        }
-        @include mq(xl){        
-            padding-bottom: 5rem;
-        }
-        .txt{
-            @include mq(lg){
-               width: 80%;
-            }
-            p{
-              
-                @include mq(md){
-                    padding-bottom:1rem;
-                }
-                @include mq(lg){
-                    padding-bottom: 2rem;
-                }
-            }
-          
-        }
-    }
-
-    .s5{
-
-        padding-top: 2rem;
-  
-        @include mq(md){
-            padding-top: 3rem;
-    
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-
-        } 
-        @include mq(xxl){
-            padding-top: 6rem;
-
-        }
-
-        .title-section{
-            text-align: center;
-            margin-bottom: 1rem;
-            @include mq(md){
-                margin-bottom:2rem;
-        
-            }
-            @include mq(lg){
-                margin-bottom: 3rem;
-    
-            }
-            @include mq(xl){
-                margin-bottom: 4rem;
-    
-            } 
-           
-         
-            h2{
-                &::after{
-                    left: 50%;
-                    margin-left: -60px;
-                }
-            }
-        }
-        .vid {
-            max-width: 640px;
-            margin: 0 auto;
-        
-        }
-    }
+    .brandList{
+        .item{
    
+            a.pic{
+           
+                display: block;
+                text-align: center;
+            }
+            a.title{
+                display: block;
+                text-align: center;
+                font-weight: lighter;
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+            }
+        }
+    }
     
 }
 
-
-
-.page-product1{
-    .s1{       
-
-        .title-section{
-            text-align: center;
-            margin-bottom: 1rem;
-            @include mq(md){
-                margin-bottom: 2rem;
-            }
-            @include mq(lg){
-                margin-bottom: 3rem;
-            }
-            @include mq(xl){
-                margin-bottom: 4rem;
-            }
-           
-         
-            h2{
-                &::after{
-                    left: 50%;
-                    margin-left: -60px;
-                }
+.page-brand-products{
+    .s1{
+        h3{
+            color:#333;
+            span{
+                font-weight: lighter;
             }
         }
         .txt{
-            text-align: justify;
-           
-            @include mq(lg){
-                padding-right: 3rem;
-            }
+            padding-left: 2rem;
         }
-        .pic{
-            text-align: center;
-        }
-
-
     }
-
     .s2{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        margin-bottom: 1rem;
-        @include mq(md){
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-            padding-bottom:4rem;
-        
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            margin-bottom: 7rem;
-        }
-        @include mq(xxl){
-      
-            padding-bottom: 6rem;
-            margin-bottom: 8rem;
-        }
-        .title-section{
+        ul.categories{
+            @include reset-list();
             text-align: center;
-            margin-bottom: 4rem;           
-         
-            h2{
-                &::after{
-                    left: 50%;
-                    margin-left: -60px;
+            li{
+                display: inline-block;
+                padding: 0 2rem;
+                border-right: 1px #ddd solid;
+                line-height: 1;
+                &:last-child{
+                    border-right: none;
                 }
-            }
-        }
-
-        .processes{
-            text-align: center;
-            .title{
-               
-                img{
-                    width: 70%;
-                    @include mq(md){
-                        width: auto;
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                a{
+                    color:#999;
+                    &.active{
+                        color:#333;
                     }
                 }
             }
+        }
+
+        .productList{
             .item{
-                position: relative;
-                padding-top: 6rem;
-                max-width: 380px;
-                margin: 0 auto;
-                height: 200px;
-                @include mq(md){
-                    height: 230px;
+                .pic{
+                    display: block;
+                    text-align: center;
+                    height: 320px;
+                    img{
+                        @include vertical-align(); 
+                    }
+                }
+                .brand{
+                    text-align: center;
+                    @include mq(xxl){
+                        font-size: rem(18);
+                    }
+                }
+                .title{
+                    text-align: center;
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 1rem;
+                    color:#333;
+                    @include mq(xxl){
+                        font-size: rem(18);
+                    }
                 }
                 p{
-                    line-height: 1.3;
-                }
-                .num{
-                    position: absolute;
-                    left: 0;
-                    z-index: 10;
-                    top: 0;
-                    font-size: rem(200);
-                    width: 100%;
-                    text-align: center;
-                    line-height: 1;
-                    color: rgba(0,0,0,.1);
+                    font-weight: lighter;
+                    line-height: 1.6;
+                    @include mq(xxl){
+                        font-size: rem(18);
+                    }
                 }
             }
         }
-    }
-
-
-
-
-
-    .s3{
-        position: relative;
-        background-color: #022E6A;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        color: #fff;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      
-        @include mq(md){
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-            margin-left: 0;
-            margin-right:0;
-            padding-left: 2rem;
-            padding-right: 2rem;
-          
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-            padding-bottom: 4rem;
-        }
-        @include mq(xxl){
-            padding-top: 6rem;
-            padding-bottom: 6rem;
-        }
-        .pic{
-            text-align: center;
-            @include mq(lg){
-                position: absolute;
-                left: 2rem;
-                bottom: 0;
-                z-index: 100;
-            }
-            img{
-                width: 60%;
-                @include mq(lg){
-                   width: 340px;
-                }
-                @include mq(xl){
-                    width: auto;
-                 }
-            }
-        }
-        .txt{        
-          
-            text-align: justify;
-            @include mq(lg){
-                margin-left:25rem;
-                padding-right:2rem;
-            }
-            @include mq(xl){
-                margin-left: 37rem;
-                padding-right: 3rem;
-            }
-            @include mq(xxl){
-                margin-left: 40rem;
-                padding-right: 5rem;
-            }
-        }
-    }
-    .s4{
-        padding-top: 2rem; 
-        @include mq(md){
-            padding-top: 3rem;
-
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-   
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-     
-        }
-        @include mq(xxl){
-            padding-top: 6rem;
-     
-        }
-        .title-section{
-            text-align: center;
-            margin-bottom: 1rem;           
-            @include mq(md){
-                margin-bottom:2rem;    
-            }
-            @include mq(lg){
-                margin-bottom: 3rem;            
-            }
-            @include mq(xl){
-                margin-bottom: 4rem;         
-            }
-         
-            h2{
-                &::after{
-                    left: 50%;
-                    margin-left: -60px;
-                }
-            }
-        }
-
-        .txt{
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-    }
-}
-
-.page-product2{
-    .s1{
-        padding-top: 2rem; 
-        @include mq(md){
-            padding-top: 3rem;
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-   
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-     
-        }
-        @include mq(xxl){
-            padding-top: 6rem;
-     
-        }
-
-        .title-section{
-            text-align: center;
-            margin-bottom:1rem;           
-            @include mq(md){
-                margin-bottom: 2rem;           
-            }
-            @include mq(lg){
-                margin-bottom: 3rem;           
-            }
-            @include mq(xl){
-                margin-bottom: 4rem;           
-            }
-            h2{
-                &::after{
-                    left: 50%;
-                    margin-left: -60px;
-                }
-            }
-        }
-        p{
-            text-align: justify;
-        }
-        .p2{
-           
-            @include mq(md){
-                padding-right: 5rem;
-            }
-        }
-
-     
-    }
-
-    .s2{
-        padding-top: 2rem; 
-        @include mq(md){
-            padding-top: 3rem;
-        }
-        @include mq(lg){
-            padding-top: 4rem;
-   
-        }
-        @include mq(xl){
-            padding-top: 5rem;
-     
-        }
-        @include mq(xxl){
-            padding-top: 6rem;
-     
-        }
-        .txt{
-            .txt{
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-        }
-    }
-}
-
-.page-product3{
-    .title-section{
-        text-align: center;
-        margin-bottom: 2rem;           
-        @include mq(md){
-            margin-bottom:5rem;       
-        }
-        @include mq(lg){
-            margin-bottom:6rem;       
-        }
-        h2{
-            &::after{
-                left: 50%;
-                margin-left: -60px;
-            }
-        }
-    }
-    .pic{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background-color: #EFEFEF;
-        position: relative;
-        margin-bottom: 2rem;
-        @include mq(md){
-            width: 560px;
-            height: 560px; 
-            margin: 0 auto 2rem;
-        }
-        @include mq(lg){
-            width: 380px;
-            height: 380px; 
-            margin: 0 auto 2rem 0;
-        }
-        @include mq(xl){
-            width: 440px;
-            height: 440px; 
-            margin: 0 auto 2rem 0;
-        }
-        @include mq(xxl){
-            width: 560px;
-            height: 560px; 
-            margin: 0 auto 2rem;
-        }
-        img{
-            position: absolute;
-            right: -3rem;
-            top: 1.5rem;
-            width: 80%;
-            @include mq(md){
-                width: auto;    top: 3rem;
-            }
-            @include mq(lg){
-                width: 300px;    top: 2rem;        
-            }
-            @include mq(xl){
-                width: 350px;    top: 2rem;        
-            }
-            @include mq(xxl){
-                width: auto;    top: 3rem;
-            }
-        }
-    }
-    .content{
-        .box{
-          
-            @include mq(md){
-                margin-bottom: 3rem;
-            }
-            .txt{
-                margin-bottom: 2rem;
-                @include mq(md){
-                    margin-bottom: 0;
-                }
-            }
-            .title{
-                position: relative;
-                &::after{
-                    position: absolute;
-                    content: " ";
-                    display: block;
-                    width: 53px;
-                    height: 4px;
-                    background-color: $color-primary;
-                    z-index: 10;
-                    left: 0;
-                    bottom: 0;
-                }
-            }
-            p{
-                font-size: rem(18);
-             
-                @include mq(md){
-                    margin-bottom: 2rem;
-                }
-            }
-            
-        }
-       
     }
 }
