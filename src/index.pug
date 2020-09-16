@@ -1,394 +1,247 @@
-extends includes/layout.pug
+extends includes/layoutForHome.pug
 
 block title
     | 首页
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
-    
-block content
-    .wrapper
-        .page-home  
-            .swiper-container.homeslider
-                .swiper-wrapper
-                    .swiper-slide 
-                        img(src="img/banners/slider01.jpg", alt="")
-                    .swiper-slide 
-                        img(src="img/banners/slider01.jpg", alt="")
-                    .swiper-slide 
-                        img(src="img/banners/slider01.jpg", alt="")
-                    .swiper-slide 
-                        img(src="img/banners/slider01.jpg", alt="")
-              
+    link(href='js/vendor/fullPage/fullpage.min.css', rel='stylesheet')
+block content  
+    #fullpage.page-home  
+        section.section.s1.banner.banner-news
+           
+            #aniels.aniels
+                .c(data-depth="0.2")
+                    img(src="img/banners/product_c.png", alt="")
+            
+                .title(data-depth="0.4")                    
+                    img(src="img/title_innovation.png", alt="")
 
-                .swiper-pagination
-    
-            .container-fluid.pt-media-5
-                section.s1
-                    .row
-                        .col-lg-4
-                            .box
-                                .box-header.mb-media-3.wow.fadeInUp
-                                    .row.align-items-center
-                                        .col
-                                            h3.text36 科研进展
-                                        .col-auto
-                                            a.more(href="research.html") 更多
-                                .box-body
-                                    .list
-                                        .item.wow.fadeInUp
-                                            .row.align-items-center.no-gutters
-                                                .col-auto
-                                                    .pubdate
-                                                        .day 7
-                                                        .month MAY
-                                                .col
-                                                    a(href="news_detail.html") 强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议
-                                        .item.wow.fadeInUp
-                                            .row.align-items-center.no-gutters
-                                                .col-auto
-                                                    .pubdate
-                                                        .day 7
-                                                        .month MAY
-                                                .col
-                                                    a(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与符合材料技术产业化项目获东莞首个重大科技成果转化立项
-                                        .item.wow.fadeInUp
-                                            .row.align-items-center.no-gutters
-                                                .col-auto
-                                                    .pubdate
-                                                        .day 7
-                                                        .month MAY
-                                                .col
-                                                    a(href="news_detail.html") 强强联手！松山湖材料实验室与韶关3家企业签订战略合作协议
-                                        .item.wow.fadeInUp
-                                            .row.align-items-center.no-gutters
-                                                .col-auto
-                                                    .pubdate
-                                                        .day 7
-                                                        .month MAY
-                                                .col
-                                                    a(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与符合材料技术产业化项目获东莞首个重大科技成果转化立项
+                .lc(data-depth="0.6") 
+                    p COOPERATION 合作
+                .rc(data-depth="0.6") 
+                    p PARTICIPATE 分享
+          
+            video#myVideo.vid(playsinline, autoplay, muted, loop, poster="img/banners/home.jpg")
+                source(src="img/home.mp4", type="video/mp4")
 
-                        .col-lg-4
-                            .box.box2
-                                .box-header.mb-media-3.wow.fadeInUp
-                                    .row.align-items-center
-                                        .col
-                                            h3.text36 新闻动态
-                                        .col-auto
-                                            a.more(href="research.html") 更多
-                                .box-body
-                                    .swiper-container.newsSlider
-                                        .swiper-wrapper
-                                            .swiper-slide 
-                                                .item-slider
-                                                    a.pic(href="news_detail.html")
-                                                        img(src="img/temp/n01.jpg", alt="")
-                                                    
-                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
-                                                    .date
-                                                        i.iconfont.icon-time 
-                                                        | 2020-05-19
-
-                                            .swiper-slide 
-                                                .item-slider
-                                                    a.pic(href="news_detail.html")
-                                                        img(src="img/temp/n01.jpg", alt="")
-                                                    
-                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
-                                                    .date
-                                                        i.iconfont.icon-time 
-                                                        | 2020-05-19
-
-                                            .swiper-slide 
-                                                .item-slider
-                                                    a.pic(href="news_detail.html")
-                                                        img(src="img/temp/n01.jpg", alt="")
-                                                    
-                                                    a.title(href="news_detail.html") 祝贺！松山湖材料实验室先进陶瓷与复合材料技术产业化项目获批东莞首个重大科技成果转化立项
-                                                    .date
-                                                        i.iconfont.icon-time 
-                                                        | 2020-05-19
-                                                                    
-                                        .swiper-next
-                                            i.iconfont.icon-next1
-                                        .swiper-prev
-                                            i.iconfont.icon-prev1
-
-                                    
-                        .col-lg-4
-                            .box.box3
-                                .box-header.mb-media-3
-                                    .row.align-items-center
-                                        .col
-                                            h3.text36 通知公告
-                                        .col-auto
-                                            a.more(href="research.html") 更多
-                                .box-body
-                                    .list2
-                                        .item.wow.fadeInUp
-                                            h3 
-                                                a(href="news_detail.html") 松山湖材料实验室汽车租赁服务采购项目公开招标公告
-                                            .date
-                                                i.iconfont.icon-time 
-                                                | 2020-05-19
-                                                    
-                                        .item.wow.fadeInUp
-                                            h3 
-                                                a(href="news_detail.html") 诚邀您参与丨深度势能-材料模拟应用交流讨论会
-                                            .date
-                                                i.iconfont.icon-time 
-                                                | 2020-05-19
-
-                                        .item.wow.fadeInUp
-                                            h3 
-                                                a(href="news_detail.html") 松山湖材料实验室综合事务管理部关于采购数字智能档案室建设（50-100万）的征求意见公示
-                                            .date
-                                                i.iconfont.icon-time 
-                                                | 2020-05-19
-
-                                        .item.wow.fadeInUp
-                                            h3 
-                                                a(href="news_detail.html") 松山湖材料实验室第一届公共技术讲习班暨第二届材料计算暑期学校
-                                            .date
-                                                i.iconfont.icon-time 
-                                                | 2020-05-19
-
-               
-             
-            section.s2
-                .container-fluid
-                    .row
-                        .col-lg-8
-                            .swiper-container.adSlider.wow.fadeInUp
-                                .swiper-wrapper
-                                    .swiper-slide                                       
-                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home01.jpg);") 协同创新 
-                                    .swiper-slide 
-                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home02.jpg);") 科学抗议
-                                    .swiper-slide 
-                                        a.pic.text36(href="news_detail.html", style="background-image:url(img/home03.jpg);") 人才招聘
-                                                            
-                                .swiper-next
-                                    i.iconfont.icon-next1
-                                .swiper-prev
-                                    i.iconfont.icon-prev1
-                            
-                        .col-lg-4
-                            .links.wow.fadeInUp
-                                .row.no-gutters
-                                    .col
-                                        a(href="#", style="background-image:url(img/home04.jpg);")
-                                            span.title.text24 粤港澳交叉科学中心活动报名
-                                            i.iconfont.icon-right1
-                                            
-                                    .col
-                                        a(href="#", style="background-image:url(img/home05.jpg);")
-                                            span.title.text24 公共技术平台预约
-                                            i.iconfont.icon-right1
-                            
-                      
-            section.s3(style="background-image:url(img/home_04.jpg);")
-                .row.no-gutters
-                    .col-md-6
-                        .item.wow.fadeInUp
-                            img(src="img/home06.jpg", alt="")
-                            .over-txt
-                                a.txt(href="core.html")
-                                    h3.text36.wow.fadeInUp 前沿科学研究
-                                    p.wow.fadeInUp 强化核心技术攻关
-                                    i.wow.fadeInUp.iconfont.icon-right1
-
-                    .col-md-6
-                        .item.wow.fadeInUp
-                            img(src="img/home07.jpg", alt="")
-                            .over-txt
-                                a.txt(href="platform.html")
-                                    h3.text36.wow.fadeInUp 公共技术平台
-                                    p.wow.fadeInUp 系统的、国际一流的、综合性用户开放平台
-                                    i.wow.fadeInUp.iconfont.icon-right1
-
-                    .col-md-6
-                        .item.wow.fadeInUp
-                            img(src="img/home08.jpg", alt="")
-                            .over-txt
-                                a.txt(href="factory.html")
-                                    h3.text36.wow.fadeInUp 创新样板工厂
-                                    p.wow.fadeInUp 推动科研成果走出实验室、走向应用、走向市场
-                                    i.wow.fadeInUp.iconfont.icon-right1
-
-                    .col-md-6
-                        .item.wow.fadeInUp
-                            img(src="img/home09.jpg", alt="")
-                            .over-txt
-                                a.txt(href="science.html")
-                                    h3.text36.wow.fadeInUp 粤港澳交叉科学中心
-                                    p.wow.fadeInUp 高水平、长期、稳定的学术交流和合作研究平台
-                                    i.wow.fadeInUp.iconfont.icon-right1
-                            
-
-            section.s4
-                .container-fluid.pt-media-5.pb-media-8
-                    .box
-                        .box-header.mb-media-3
-                            .row.align-items-center
-                                .col
-                                    h3.text36 视频中心
-                                .col-auto
-                                    a.more(href="research.html") 更多
-                        .box-body
-                            .videolist
-                                .row
-                                    .col-md-8
-                                        a.item.item1.wow.fadeInUp(href="video_detail.html")
-                                            img.thumb(src="img/temp/hv1.jpg", alt="")
-                                            .play
-                                                img(src="img/play.png", alt="")
-                                    .col-md-4
-                                        a.item.wow.fadeInUp(href="video_detail.html")
-                                            img.thumb(src="img/temp/hv2.jpg", alt="")
-                                            .play
-                                                img(src="img/play.png", alt="")
-                                 
-                                        a.item.wow.fadeInUp(href="video_detail.html")
-                                            img.thumb(src="img/temp/hv3.jpg", alt="")
-                                            .play
-                                                img(src="img/play.png", alt="")
+            .cover(style="background-image:url('img/banners/home_cover.png');")
+            
 
 
-            section.s5(style="background-image:url(img/home10.jpg);")
-                .container-fluid.pt-media-12.pb-media-8
-                    h3.text36.mb-media-8 实验室大数据
-                    .lab-container
-                        .swiper-container.labSlider
-                            .swiper-wrapper
-                                .swiper-slide                                       
-                                    .txt
-                                        .text48 635
-                                            small 人
-                                        p 总人数
+        section.section.s2(style="background-image:url(img/banners/about_home.jpg)")
+            .content
+                .c
+                    img(src="img/banners/about_home_c.png", alt="")
+                .txt-container
+                    .tc-box.pt-media-5
+                        .title_cn.animated(data-animate="fadeInLeft")
+                            img(src="img/title_about_cn.png", alt="")
+                        .title.mb-media-5.animated(data-animate="fadeInRight")
+                            img(src="img/title_about.png", alt="")
+                        .des.animated(data-animate="fadeInLeft")
+                            p 我们是先进的科技产品服务商，是连接
+                                br
+                                | 上游供应商和客户的桥梁
 
-                                .swiper-slide 
-                                    .txt
-                                        .text48 10
-                                            small 人 
-                                        p 两院院士
-                                .swiper-slide 
-                                    .txt
-                                        .text48 98
-                                            small 项
-                                        p 专利申请
-                                .swiper-slide 
-                                    .txt
-                                        .text48 234
-                                            small 篇 
-                                        p 发表文章
-                                .swiper-slide 
-                                    .txt
-                                        .text48 10
-                                            small 家 
-                                        p 产业化公司
-                                .swiper-slide 
-                                    .txt
-                                        .text48 29
-                                            small 项
-                                        p 重大科研项目
-                                                        
-                        .swiper-next
-                            i.iconfont.icon-next1
-                        .swiper-prev
-                            i.iconfont.icon-prev1
+                        .go.animated(data-animate="fadeInRight")
+                            a(href="about.html")
+                                img(src="img/go.svg", alt="")
+
+
+        section.section.s2.s3(style="background-image:url(img/banners/product_home.jpg)")
+            .content
+                .c
+                    img(src="img/banners/product_home_c.png", alt="")
+                .txt-container
+                    .tc-box.pt-media-5
+                        .title_cn.animated(data-animate="fadeInLeft")
+                            img(src="img/title_product_cn.png", alt="")
+                        .title.mb-media-5.animated(data-animate="fadeInRight")
+                            img(src="img/title_product.png", alt="")
+                        .des.animated(data-animate="fadeInLeft")
+                            p 数码
+                                br
+                                | DIGITAL
+
+                        .go.animated(data-animate="fadeInRight")
+                            a(href="categories.html")
+                                img(src="img/go.svg", alt="")
+
+                        
+        section.section.s2.s4(style="background-image:url(img/banners/news_home.jpg)")
+            .content
+                .c
+                    img(src="img/banners/news_home_c.png", alt="")
+                .txt-container
+                    .tc-box.pt-media-5
+                        .title_cn.animated(data-animate="fadeInLeft")
+                            img(src="img/title_news_cn.png", alt="")
+                        .title.mb-media-5.animated(data-animate="fadeInRight")
+                            img(src="img/title_news.png", alt="")
+                        .des.animated(data-animate="fadeInLeft")
+                            p.newstitle
+                                a(href="news_detail.html") 美光科技推出业界首款基于领先的 64 层 3D NAND技术构建的企业级 SATA 固态硬盘
+
+                        .go.animated(data-animate="fadeInRight")
+                            a(href="news_detail.html")
+                                img(src="img/go.svg", alt="")
+
+
+        section.section.s2.s5(style="background-image:url(img/banners/agent_home.jpg)")
+            .content
+                .c
+                    img(src="img/banners/agent_home_c.png", alt="")
+                .txt-container
+                    .tc-box.pt-media-5
+                        .title_cn.animated(data-animate="fadeInLeft")
+                            img(src="img/title_agent_cn.png", alt="")
+                        .title.mb-media-5.animated(data-animate="fadeInRight")
+                            img(src="img/title_agent.png", alt="")
+                        .des.animated(data-animate="fadeInLeft")
+                            p.newstitle
+                                a(href="products.html") 
+                                    strong.text24 Panasonic
+                                    | 世界制造业500强全球性电子厂商
+
+                        .go.animated(data-animate="fadeInRight")
+                            a(href="products.html")
+                                img(src="img/go.svg", alt="")
+
+
+           
+
+
+        section.section.s2.s6(style="background-image:url(img/banners/join_home.jpg)")
+            .content
+                .c
+                    img(src="img/banners/join_home_c.png", alt="")
+                .txt-container
+                    .tc-box.pt-media-5
+                        .title_cn.animated(data-animate="fadeInLeft")
+                            img(src="img/title_join_cn.png", alt="")
+                        .title.mb-media-5.animated(data-animate="fadeInRight")
+                            img(src="img/title_join.png", alt="")
+                        .des.animated(data-animate="fadeInLeft")
+                            p 我们是先进的科技产品服务商，是连接
+                                br
+                                | 上游供应商和客户的桥梁
+
+                        .go.animated(data-animate="fadeInRight")
+                            a(href="join.html")
+                                img(src="img/go.svg", alt="")
+
+        section.section.fp-auto-height
+            include includes/footerForHome.pug
 
             
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script(src='js/vendor/fullPage/fullpage.min.js')
     script.
-        var swiper = new Swiper('.homeslider', {         
-            centeredSlides: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
        
-        });
-        var swiper = new Swiper('.newsSlider', {         
-            centeredSlides: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-           
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-       
-        });
-        
-        //Make sure that the dom is ready
-        var swiper = new Swiper('.adSlider', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-    
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-
-        //Make sure that the dom is ready
-        var swiper = new Swiper('.labSlider', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-    
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 4,
-                },
-                992: {
-                    slidesPerView: 5,
-                },
-                1201: {
-                    slidesPerView: 6,
-                },
-            }
-        });
 
         $(function () {        
-           // $('body').addClass('home-body');     
+            $('body').addClass('home-body');     
+            //- var scene1 = document.getElementById('aniels1');
+            //- if(scene1){
+            //-     var parallaxInstance = new Parallax(scene1);
+            //- }
+            //- var scene2 = document.getElementById('aniels2');
+            //- if(scene2){
+            //-     var parallaxInstance = new Parallax(scene2);
+            //- }
+
+            //- var scene3 = document.getElementById('aniels3');
+            //- if(scene3){
+            //-     var parallaxInstance = new Parallax(scene3);
+            //- }
+
+            //- var scene4 = document.getElementById('aniels4');
+            //- if(scene4){
+            //-     var parallaxInstance = new Parallax(scene4);
+            //- }
+
+            //- var scene5 = document.getElementById('aniels5');
+            //- if(scene5){
+            //-     var parallaxInstance = new Parallax(scene5);
+            //- }
+
+            $('#fullpage').fullpage({
+                 //options here
+                licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
+            //    sectionsColor: ['#000', '#000', '#000', '#000', '#000'],
+            //    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            //    menu: '#myMenu',
+            //    fadingEffect: true,
+            //    fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo=',
+
+                afterLoad: function (origin, destination, direction) {
+                     // var loadedSection = this;
+                     // console.log(loadedSection);
+                     // console.log(destination.item);
+                    var orEls = $(origin.item).find(".animated");               
+                    orEls.each(function () {
+
+                        var orEffect = $(this).attr("data-animate");
+                        var orDelay = "delay-" + $(this).attr("data-delay");
+
+                        $(this).removeClass(orEffect);
+                        if (orDelay) {
+                            $(this).removeClass(orDelay);
+                        }
+
+                    });
+
+                    var els = $(destination.item).find(".animated");
+                    els.each(function () {
+                        var effect = $(this).attr("data-animate");
+                        var delay = "delay-" + $(this).attr("data-delay");
+
+                        $(this).addClass(effect);
+                        if (delay) {
+                            $(this).addClass(delay);
+                        }
+
+                    });
+
+            //        $("#pass").removeClass('m' + origin.index).addClass("m" + destination.index);
+            //        $("#senum").text(destination.index + 1);
+            //        //  alert(destination.index);
+            //        //  alert(origin.index);
+                    if (destination.index == 0) {
+                        var x = document.getElementById("myVideo");
+                         x.play();
+                        function playVid() {
+                            x.play();
+                        }
+
+                        function pauseVid() {
+                            x.pause();
+                        }
+
+                    } 
+
+
+            //        setTimeout(function () {
+            //            //   $("#s" + (origin.index + 1)).addClass('second').css({ 'transition': 'all 1s' })
+            //            $("#s" + (destination.index + 1)).css({ 'transition': 'none' });
+            //            $(document).mousemove(function (event) {
+            //                var maxdeg = 7;
+            //                // $("span").text(event.pageX + ", " + event.pageY);
+            //                var x = (event.pageX - w / 2) / (w / 2) * maxdeg;
+            //                var y = (event.pageY - h / 2) / (h / 2) * maxdeg;
+
+            //                document.getElementById("s" + (destination.index + 1)).style.transform = "rotateX(" + -y + "deg) rotateY(" + x + "deg)  scale(1.4)  translateZ(-15vw)";
+
+            //                // console.log("rotateX("+ x +"deg) rotateY("+ y +"deg)");
+            //            });
+            //        }, 1000);
+
+
+               }
+            });
             
         });
 

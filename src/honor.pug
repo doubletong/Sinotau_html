@@ -28,31 +28,88 @@ block content
 
         
 
-    .page.page-culture.pt-media-12
+    .page.page-honor.pt-media-7.pb-media-7
         
 
-        section.s1.container.pb-media-11
-            h2.text28 我们的使命
-                br
-                | 为大众谋福利
+        section.s1
+            .container                
+                .swiper-container.gallery-top
+                    .swiper-wrapper
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title.text28 MICRON
+                                        .pubdate.text20 2016年
+                        .swiper-slide
+                            .row
+                                .col-lg-5
+                                    img(src="img/honor/g01.jpg", alt="")
+                                .col-lg-7
+                                    .txt
+                                        h2.title MICRON
+                                        .pubdate.text20 2016年
 
-            p 取得合作伙伴的信任和尊重是我们的理念
-                br
-                | 安全是靠实力和远虑来实现的
-                
-        section.s2.wow.fadeInUp
-            img(src="img/culture_02.jpg", alt="")
-            .txt-container
-                .txt
-                    h3.text28 我们的工作理念
-                    p 取得合作伙伴的信任和尊重是我们的理念
-                        br
-                        | 安全是靠实力和远虑来实现的结果导向，使命必达,不抱怨、不等待、想办法
-                        br
-                        | 勇于担当，敢于竞争,敢于质疑，善于提问
-                        br
-                        | 工作高效，反应快速
-                    
+
+     
+                .thumbs-container
+                    .row.justify-content-end
+                        .col-lg-7
+                            .gallery-topnav                                
+                                .swiper-prev 
+                                    img(src="img/icon-prev.svg", alt="")
+                                .swiper-next 
+                                    img(src="img/icon-next.svg", alt="")
+
+                            .swiper-container.gallery-thumbs
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        img(src="img/honor/th01.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th02.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th03.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th04.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th05.jpg", alt="")
+                                    .swiper-slide
+                                        img(src="img/honor/th06.jpg", alt="")
+                        
 
                              
 
@@ -60,41 +117,27 @@ block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
-        var swiper = new Swiper('.work-container', {
-            spaceBetween: 30,
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 5,
             centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-         
-            navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-        });
-        var swiper1 = new Swiper('.box-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
             loop: true,
+            freeMode: true,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 5, //looped slides should be the same
             navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
-             breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+            thumbs: {
+                swiper: galleryThumbs,
             },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 50,
-            },
-        }
         });
         $(function () {
         

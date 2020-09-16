@@ -11,7 +11,7 @@
   }
 
 body {
-    color: #3c3c3c;
+    color: #666;
     background-color: #fff;
     font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
@@ -51,7 +51,7 @@ a {
 }
 .container{
     @include mq(xxl) {
-        max-width: 1210px;
+        max-width:1454px;
     }
 }
 .container-fluid{
@@ -66,21 +66,7 @@ a {
     }
 }
 
-.section{
-    margin-bottom: 2rem;
-    @include mq(md) {
-        margin-bottom:4rem;
-    }
-    @include mq(lg) {
-        margin-bottom: 5rem;
-    }
-    @include mq(xl) {
-        margin-bottom: 6rem;
-    }
-    &:last-child{
-        margin-bottom: 0;
-    }
-}
+
 .title-section {  
     margin-bottom: 1rem;  
     position: relative;
@@ -124,17 +110,19 @@ a {
     background-repeat: no-repeat;   
     color: #fff;
     position: relative;
-    #aniels{
+    #aniels,.aniels{
         width: 100%;
         height: 100%;
         position: absolute;
         overflow: hidden;
+        left: 0;
+        top: 0;
     }
-    .c,.title_cn,.title,.des{
+    .c,.title_cn,.title,.des,.search-container,.go{
         position: absolute;
         width: 100%;
         height:100%;
-        img,p{
+        img,p,.searchbox{
             position: absolute;
             left: 50%;
             top: 50%;
@@ -149,21 +137,40 @@ a {
           
         }
     }
-    .title_cn{
-        img{
-            width: 408px;           
+    .title_cn{      
+        img{         
             margin-top: -130px;
-        }
-    
+        }  
        
     }
     .title{
-        img{
-            width: 896px;
-   
+        img{   
             margin-top:-20px;
         }
        
+    }
+    .search-container{
+        margin-top: 120px;
+        z-index: 80000;
+        .searchbox{
+            text-align: center;
+            input{
+                width: 320px;
+                height: 36px;
+                border-radius: 18px;
+                border:none;
+                padding: 0 .8rem;
+                display: block;
+                margin-bottom: 1rem;
+                outline: none;
+            }
+            .btn-search{
+                border:none;
+                background-color: transparent;
+                outline: none;
+                color:#fff;
+            }
+        }
     }
     .des{       
         z-index: 20;
@@ -176,6 +183,11 @@ a {
             @include mq(xl){
                 font-size: rem(18);
     
+            }
+        }
+        &.des1{
+            p{
+                margin-top:230px; 
             }
         }
        
@@ -227,6 +239,12 @@ a {
                     }
                 }
             }
+        }
+    }
+    .go{
+        img{
+            width: 34px;
+            margin-top: 14rem;
         }
     }
    
@@ -560,6 +578,21 @@ img {
     }
     @include mq(xxl) {
         padding-bottom: 6rem;
+    }
+}
+.pb-media-7{
+    padding-bottom: 3rem;
+    @include mq(md) {
+        padding-bottom: 4rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 5rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 6rem;
+    }
+    @include mq(xxl) {
+        padding-bottom: 7rem;
     }
 }
 .pb-media-8{

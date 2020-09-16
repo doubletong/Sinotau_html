@@ -1,63 +1,31 @@
 
-.banner-search{
-    position: relative;
-    .search-container{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: -8rem;
-        z-index: 100;
-        .count{
-            color: #666;
-            font-family: sans-serif;
-            padding: 1rem;
-        }
-    }
-    .searchbox{
-        max-width: 1430px;
-        margin: 0 auto;
-        background-color: #f1f1f1;
-        padding:3rem 2rem;
-        form{
-            max-width: 940px;
-            margin: 0 auto;
-        }
-   
-        input{
-            width: 100%;
-            border:none;     font-family: sans-serif;
-            padding-left: 1rem;
-        }
-        button{
-            border: none;
-            @extend .main-gradient;
-            padding: 0 2rem;
-            font-family: sans-serif;
-            color: #fff;
-        }
-    }
-}
 
 .page-search{
-    padding-top: 8rem;
-    @include mq(md){
-        padding-top: 9rem;
-    }
-    @include mq(lg){
-        padding-top:10rem;
-    }
-    @include mq(xl){
-        padding-top: 11rem;
-    }
-    @include mq(xxl){
-        padding-top: 12rem;
-    }
-
-    .item{
-        strong{
-            color: #1f7abb;
-            font-weight: normal;
+    .newslist{
+        .item{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            @include mq(md){
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            border-bottom: 1px #ddd solid;
+            a{
+                font-weight: normal;
+                @include mq(xxl){
+                    font-size: rem(18);
+                }
+                strong{
+                    color:#24C6DC;
+                }
+            }
+            .pubdate{
+                color:#ccc;
+            }
         }
     }
+
+
+    
 
 }

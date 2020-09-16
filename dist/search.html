@@ -10,10 +10,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=1ea6bf55255fa8139dc2a175b1ea7de2" rel="stylesheet">
-    <link href="js/vendor/wow/css/libs/animate.css?v=1ea6bf55255fa8139dc2a175b1ea7de2" rel="stylesheet">
-    <link href="css/styles.min.css?v=1ea6bf55255fa8139dc2a175b1ea7de2" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
+    <link href="fonts/iconfont.css?v=798271c0cf210fe9b5d952883d8152f6" rel="stylesheet">
+    <link href="js/vendor/wow/css/libs/animate.css?v=798271c0cf210fe9b5d952883d8152f6" rel="stylesheet">
+    <link href="css/styles.min.css?v=798271c0cf210fe9b5d952883d8152f6" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
     <script>
       new WOW().init();
       
@@ -28,12 +28,12 @@
           <div class="col">              
             <ul class="mainav"> 
               <li><a href="index.html">首页</a></li>
-              <li> <a href="home.html">关于我们</a></li>
-              <li><a href="about.html">代理品牌</a></li>
-              <li><a href="core.html">产品中心</a></li>
-              <li><a href="news.html">合作客户</a></li>
-              <li><a href="culture.html">新闻中心               </a></li>
-              <li><a href="contact.html">联系我们              </a></li>
+              <li> <a href="about.html">关于我们</a></li>
+              <li><a href="brands.html">代理品牌</a></li>
+              <li><a href="products.html">产品中心</a></li>
+              <li><a href="partners.html">合作客户</a></li>
+              <li><a href="news.html">新闻中心               </a></li>
+              <li><a href="contact.html">联系我们          </a></li>
             </ul>
           </div>
           <div class="col-auto">
@@ -52,112 +52,98 @@
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
           <li class="active"><a href="index.html">首页</a></li>
-          <li> <a href="home.html">关于我们</a></li>
-          <li><a href="about.html">代理品牌</a></li>
-          <li><a href="core.html">产品中心</a></li>
-          <li><a href="news.html">合作客户</a></li>
-          <li><a href="culture.html">新闻中心               </a></li>
-          <li><a href="contact.html">联系我们       </a></li>
+          <li> <a href="about.html">关于我们</a></li>
+          <li><a href="brands.html">代理品牌</a></li>
+          <li><a href="products.html">产品中心</a></li>
+          <li><a href="partners.html">合作客户</a></li>
+          <li><a href="news.html">新闻中心               </a></li>
+          <li><a href="contact.html">联系我们        </a></li>
         </ul>
         <div class="minemailoa">登录：<a href="#"> <i class="iconfont icon-youxiang"></i></a><a class="oa" href="#"> <i class="iconfont icon-oa"></i></a></div>
       </div>
     </header>
-    <div class="banner banner-search" style="background-image:url(img/banner/care.jpg)">
-      <div class="search-container">
-        <h3 class="text34 text-center">搜索"瓣膜"</h3>
-        <div class="searchbox wow fadeInUp">
-          <form action="search.html" method="get">
-            <div class="row align-items-center">
-              <div class="col">
-                <input id="keywords" type="search" name="keywords" placeholder="请输入您要搜索的内容" required="required">
-              </div>
-              <div class="col-auto">
-                <button class="btn btn-primary" type="submit">搜索</button>
-              </div>
-            </div>
+    <div class="banner banner-news" style="background-image:url(img/banners/search.jpg)">
+      <div id="aniels">
+        <div class="c" data-depth="0.2"><img src="img/banners/search_c.png" alt=""></div>
+        <div class="title_cn" data-depth="0.4"><img src="img/title_search_cn.png" alt=""></div>
+        <div class="title" data-depth="0.6"><img src="img/title_search.png" alt=""></div>
+        <div class="des des1" data-depth="0.8">
+          <p>找到 <strong>5 </strong>条相配的记录</p>
+        </div>
+      </div>
+      <div class="search-container" data-depth="0.7">
+        <div class="searchbox">
+          <form action="search.html" method="get">                       
+            <input id="keywords" type="search" name="keywords" placeholder="请输入您要搜索的内容" required="required">
+            <button class="btn-search" type="submit">GO</button>
           </form>
         </div>
-        <p class="count text-center wow fadeInUp">找到 <strong>5 </strong>条相配的记录</p>
       </div>
     </div>
-    <div class="page page-media page-search">        
-      <section class="medialist diseaselist container-fluid">
+    <div class="page page-search pt-media-7 pb-media-7">
+      <div class="container newslist">
         <div class="item">
           <div class="row">
-            <div class="col-md-auto order-md-last"><a class="pic wow fadeInUp" href="disease_detail.html"><img src="img/temp/m1.jpg"></a></div>
             <div class="col-md">
-              <div class="txt wow fadeInUp">
-                <h3 class="text28"><a href="disease_detail.html">百亿级经导管介入心脏<strong>瓣膜</strong>市场（TAVR），国产"C位" 突围记</a></h3>
-                <div class="note">来自 MedTrend医趋势</div>
-                <p class="des">据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>></p>
-                <div class="pubdate">
-                  <div class="date text34">15</div>
-                  <div class="month">2019.12</div>
-                </div>
-              </div>
+              <h3 class="title"><a href="disease_detail.html"> <strong>美光</strong>开始批量生产GDDR6高性能存储器</a></h3>
+            </div>
+            <div class="col-md-auto">
+              <div class="pubdate">2019.12.12</div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="row">
-            <div class="col-md-auto order-md-last"><a class="pic wow fadeInUp" href="disease_detail.html"><img src="img/temp/m2.jpg"></a></div>
             <div class="col-md">
-              <div class="txt wow fadeInUp">
-                <h3 class="text28"><a href="disease_detail.html">【壮丽70年·建功新时代】微创医疗：为解决世界医疗难题提供“中国一体化解决方案”</a></h3>
-                <div class="note">来自 MedTrend医趋势</div>
-                <p class="des">据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>></p>
-                <div class="pubdate">
-                  <div class="date text34">15</div>
-                  <div class="month">2019.12</div>
-                </div>
-              </div>
+              <h3 class="title"><a href="disease_detail.html"> <strong>美光</strong>科技宣布推出适用于旗舰级智能手机的 尖端移动 3D NAND 解决方案</a></h3>
+            </div>
+            <div class="col-md-auto">
+              <div class="pubdate">2019.12.12</div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="row">
-            <div class="col-md-auto order-md-last"><a class="pic wow fadeInUp" href="disease_detail.html"><img src="img/temp/m3.jpg"></a></div>
             <div class="col-md">
-              <div class="txt wow fadeInUp">
-                <h3 class="text28"><a href="disease_detail.html">EuroPCR2019丨TAVI在中国：器械和技术创新</a></h3>
-                <div class="note">来自 MedTrend医趋势</div>
-                <p class="des">据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>></p>
-                <div class="pubdate">
-                  <div class="date text34">15</div>
-                  <div class="month">2019.12</div>
-                </div>
-              </div>
+              <h3 class="title"><a href="disease_detail.html"> <strong>美光</strong>科技和英特尔发布 NAND 存储联合开发计划的最新动态</a></h3>
+            </div>
+            <div class="col-md-auto">
+              <div class="pubdate">2019.12.12</div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="row">
-            <div class="col-md-auto order-md-last"><a class="pic wow fadeInUp" href="disease_detail.html"><img src="img/temp/m4.jpg"></a></div>
             <div class="col-md">
-              <div class="txt wow fadeInUp">
-                <h3 class="text28"><a href="disease_detail.html">百亿级经导管介入心脏瓣膜市场（TAVR），国产"C位" 突围记</a></h3>
-                <div class="note">来自 MedTrend医趋势</div>
-                <p class="des">据TCT（美国经导管心血管治疗会议）预测，2025年，主动脉瓣膜的经济价值将超越冠脉支架。瓣膜，已经成为心血管高值耗材领域，继冠脉支架之后新的“英雄地”	>></p>
-                <div class="pubdate">
-                  <div class="date text34">15</div>
-                  <div class="month">2019.12</div>
-                </div>
-              </div>
+              <h3 class="title"><a href="disease_detail.html"> <strong>美光</strong>科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA 固态硬盘</a></h3>
+            </div>
+            <div class="col-md-auto">
+              <div class="pubdate">2019.12.12</div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="item">
+          <div class="row">
+            <div class="col-md">
+              <h3 class="title"><a href="disease_detail.html"> <strong>美光</strong>开始批量生产GDDR6高性能存储器</a></h3>
+            </div>
+            <div class="col-md-auto">
+              <div class="pubdate">2019.12.12</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="site-footer" id="pagefooter"> 
       <div class="container-fluid pt-media-6">
         <div class="bottop mb-media-4">
           <div class="logo_bot wow fadeInUp mb-media-3"><img src="img/logo.svg" alt="蓝源"></div>
           <ul class="botnav wow fadeInUp">
-            <li> <a href="home.html">关于我们</a></li>
-            <li><a href="about.html">代理品牌</a></li>
-            <li><a href="core.html">产品中心</a></li>
-            <li><a href="news.html">合作客户</a></li>
-            <li><a href="culture.html">新闻中心               </a></li>
+            <li> <a href="about.html">关于我们</a></li>
+            <li><a href="brands.html">代理品牌</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="partners.html">合作客户</a></li>
+            <li><a href="news.html">新闻中心               </a></li>
             <li><a href="contact.html">联系我们       </a></li>
           </ul>
         </div>
@@ -169,7 +155,7 @@
             <div class="col-lg-auto">
               <ul class="quicklinks wow fadeInUp">
                 <li><a href="#">-关注我们-</a></li>
-                <li> <a href="#">-友情链接-</a></li>
+                <li> <a href="links.html">-友情链接-</a></li>
                 <li><a href="#">-网站地图-</a></li>
                 <li> <a href="#">-法律声明-</a></li>
               </ul>
@@ -178,11 +164,11 @@
         </div>
       </div>
     </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
-    <script src="js/vendor/jquery.easing.min.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
-    <script src="js/bootstrap/bootstrap.min.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
-    <script src="js/libs/parallax.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
-    <script src="js/app.js?v=1ea6bf55255fa8139dc2a175b1ea7de2"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
+    <script src="js/vendor/jquery.easing.min.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
+    <script src="js/bootstrap/bootstrap.min.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
+    <script src="js/libs/parallax.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
+    <script src="js/app.js?v=798271c0cf210fe9b5d952883d8152f6"></script>
   </body>
 </html>

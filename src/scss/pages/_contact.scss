@@ -1,0 +1,188 @@
+.page-contact{
+    .item{
+        text-align: center;
+        margin-bottom: 3rem;
+        .pic{
+            position: relative;
+            margin-bottom: 2rem;
+            .contact{
+                position: absolute;
+                left: 0;
+                top:0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.6);
+                color:#fff;
+                opacity: 0;
+                transition: all .2s;
+
+                dl{
+                    @include vertical-align(); 
+                    text-align: center;
+                    margin: 0;
+                    padding: 15px;
+                    dt{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    dd{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+           
+        }
+        .city{
+          
+            line-height: 1.5;
+        }
+        .en{
+            font-weight: lighter;
+            text-transform: uppercase;
+        }
+
+        &:hover{
+            .pic{
+                .contact{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.page-join{
+    .joblist{
+        .col-md-6{
+            margin-bottom: 1rem;
+            @include mq(md){
+                margin-bottom: 2rem;
+            }
+        }
+        .item{
+            border:1px #ccc solid;
+            padding: .8rem 1rem;
+            color: #999;
+            height: 100%;
+            @include mq(md){
+                padding: 1rem 1.5rem;
+            }
+            @include mq(xl){
+                padding: 1.5rem 3rem;
+            }
+            h3{
+                line-height: 1.3;
+                margin-bottom: .6rem;
+                @include mq(md){
+                    margin-bottom: 1rem;
+                }
+            }
+            .note {
+                margin-bottom: 2rem;
+                span{
+                    margin-right: 1rem;
+                    @include mq(md){
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.page-job-detail{
+    padding-top: 45px;
+    padding-bottom: 3rem;
+    @include mq(md){
+        padding-top: 70px;
+        padding-bottom: 4rem;
+    }
+    @include mq(lg){
+        padding-top: 80px;
+        padding-bottom: 5rem;
+    }
+    @include mq(xl){
+        padding-top: 96px;
+        padding-bottom: 6rem;
+    }
+    
+    article.container{     
+       
+        header{
+            text-align: center;          
+            padding-bottom: 2rem;
+            position: relative;
+            &::after{
+                content: " ";
+                border-bottom: 1px #ddd solid;
+                display: block;
+                width: 100%;
+                bottom: 3rem;
+                left: 0;
+                position: absolute;
+                z-index: -1;
+            }
+            @include mq(md) {
+                margin-bottom: 2rem;
+            }
+            h1.title-news{
+                
+                font-size: rem(22);
+                margin-bottom: 1rem;
+                color: #000;
+                text-transform: uppercase;
+                @include mq(md) {
+                    font-size: rem(24);  margin-bottom: 1rem;
+                }
+                @include mq(lg){
+                    font-size: rem(26);
+                }
+                @include mq(xl){
+                    font-size: rem(30);
+                }
+                @include mq(xxl){
+                    font-size: rem(32);
+                }
+            }
+            .note{
+              color: #999;
+              display: inline-block;
+              background-color: #fff;
+              padding: 0 3rem;
+              z-index: 30;
+            }
+        }
+      
+        .content{
+            text-align: center;         
+            line-height: 1.8;
+       
+            p.email{
+                padding: 3rem 0;
+            }
+            .add{
+                color:#999;
+                
+            }
+        }
+        .action{
+            text-align: center;
+            .gomail{
+                display: inline-block;
+                padding: .3rem 3rem;
+                background-color: #1E2E3F;
+                color: #fff;
+                transition: all .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+       
+    }
+    
+  
+}

@@ -24,7 +24,7 @@
  
  
     .container-fluid,
-        .row
+    .row
     {
         height: 100%;
     }
@@ -176,10 +176,11 @@
     }
     .ql{
       
-        display: inline-block;
-        padding-left: 1rem;
-      
+        display: inline-block;      
         line-height: 1;
+        @include mq(md){
+            padding-left: 1rem;
+        }
         @include mq(lg){
             padding-left: .3rem;
         }
@@ -200,10 +201,10 @@
     }
 
     .search,.lang{
-        a {     
+        a{     
             display: inline-block;    
             margin: 0 .5rem;
-          }
+        }
           
     }
     .emailoa{
@@ -252,8 +253,6 @@
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
     }
-
-    
 
 
     .menu-over {
@@ -406,6 +405,7 @@
 
 .home-body{
     .site-header{
+        position: fixed;
         background-color: transparent;
         box-shadow: none; 
         .topnav{           
