@@ -9,7 +9,7 @@
 - 2014.08.07  更新了登录页
 
 ### 第三方组件引用
-
+- [wow.js](https://wowjs.uk/) 【做交互效果】
 - [ckeditor](https://ckeditor.com/ckeditor-4/download/) 【web在线编辑器】
 - [holder.js](http://holderjs.com/)  【客户端图片替代】
 - [bootstrap](https://getbootstrap.com/)                           
