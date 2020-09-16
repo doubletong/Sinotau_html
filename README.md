@@ -1,4 +1,4 @@
-### 青鸟后台控制模板
+### 企业站前端模板
 
 使用：Pug, bootstrap, scss, jquery
 
