@@ -3,20 +3,22 @@
     display: inline-block;
     border:none;
     color: #333; 
-    padding: .2rem 1.5rem;
+    padding: .2rem 1.5rem 0;
+    border:1px #ddd solid;
+    transition: all .3s;
         @include mq(md){
-            padding: .3rem 2rem;        
+            padding: .3rem 2rem 0;        
         }
         @include mq(lg){
-            padding: .3rem 3rem;
+            padding: .3rem 3rem 0;
             font-size: 1rem;
         }
         @include mq(xl){
-            padding: .3rem 3rem;
+            padding: .3rem 3rem 0;
             font-size: rem(20);
         }
         @include mq(xxl){
-            padding: .28rem 4rem;
+            padding: .3rem 4rem 0;
             font-size: rem(24);
         }
     &:hover{
@@ -35,7 +37,7 @@
 
 
     &.btn-default-outline{
-        padding: .3rem 1.3rem;
+       
         color:#000;
         border:#000 1px solid;
       
@@ -51,11 +53,11 @@
             color: #000;
         }
     }
-    &.btn-primary{
-        background-image: linear-gradient(100deg,#57a356,#14629b);
-        color: #fff;
+    &.btn-primary{       
+        color:#999;
         &:hover{
-            background-color:darken($color-primary,10%);
+            color: $color-secondary;
+            background-color:$color-primary;
         }
     }
     &.btn-primary-outline{

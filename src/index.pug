@@ -1,248 +1,223 @@
-extends includes/layoutForHome.pug
+extends includes/layout.pug
 
 block title
     | 首页
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
-    link(href='js/vendor/fullPage/fullpage.min.css', rel='stylesheet')
 block content  
-    #fullpage.page-home  
-        section.section.s1.banner.banner-news
+
+    .page-home  
+        section.s1
+            .swiper-container.home-sliders
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src="img/banners/slider01.jpg", alt="")
+                    .swiper-slide
+                        img(src="img/banners/slider01.jpg", alt="")
+                    .swiper-slide
+                        img(src="img/banners/slider01.jpg", alt="")
+                .swiper-pagination
+
            
-            #aniels.aniels
-                .c(data-depth="0.2")
-                    img(src="img/banners/product_c.png", alt="")
-            
-                .title(data-depth="0.4")                    
-                    img(src="img/title_innovation.png", alt="")
+        section.s2
+            .container
+                .row.align-items-center.mb-media-5
+                    .col
+                        .title-section.pt-media-5
+                            h2.text70.wow.fadeInUp PROFI 
+                                br 
+                                | DESIGN
+                                span .
+                            h3.text28.wow.fadeInUp 璞斐设计
+                    .col-auto
+                        a.more.wow.fadeInUp(href="about.html")
+                            i.iconfont.icon-next
 
-                .lc(data-depth="0.6") 
-                    p COOPERATION 合作
-                .rc(data-depth="0.6") 
-                    p PARTICIPATE 分享
-          
-            video#myVideo.vid(playsinline, autoplay, muted, loop, poster="img/banners/home.jpg")
-                source(src="img/home.mp4", type="video/mp4")
-
-            .cover(style="background-image:url('img/banners/home_cover.png');")
-            
-
-
-        section.section.s2(style="background-image:url(img/banners/about_home.jpg)")
-            .content
-                .c
-                    img(src="img/banners/about_home_c.png", alt="")
-                .txt-container
-                    .tc-box.pt-media-5
-                        .title_cn.animated(data-animate="fadeInLeft")
-                            img(src="img/title_about_cn.png", alt="")
-                        .title.mb-media-5.animated(data-animate="fadeInRight")
-                            img(src="img/title_about.png", alt="")
-                        .des.animated(data-animate="fadeInLeft")
-                            p 我们是先进的科技产品服务商，是连接
-                                br
-                                | 上游供应商和客户的桥梁
-
-                        .go.animated(data-animate="fadeInRight")
-                            a(href="about.html")
-                                img(src="img/go.svg", alt="")
+                .txt
+                    p.wow.fadeInUp 璞斐专注于视觉整合设计，始终追求以创意为核心，以设计的专业度为根本，以感悟、科学、超越为精神向导，立足前海自贸区，以成为国际一流的专业设计机构为终极目标。
+                    p.wow.fadeInUp 璞斐设计经过科学定位，专注视觉及空间设计，包括企业形象设计、品牌策划设计、品牌空间设计、展览展示空间设计、包装设计、商业设计、广告创意设计、商业摄影、影视拍摄、产品形象推广、产品发布会及品牌活动策划等。我们针对品牌形象塑造和推广项目，成立专门的项目小组,为客户提供专业策化、创意设计服务，有助于品牌形象传播的及时性、延续性；以高品质服务，帮助客户建立独树一帜的市场形象，创造出良好的价值和绩效。
+                    
+                
+        section.s3.pt-media-7.mb-media-5
+            .container
+                .row.align-items-end
+                    .col-lg
+                        .title-section
+                            h2.text70.wow.fadeInUp PROJECT
+                                br 
+                                | CASE
+                                span .
+                            h3.text28.wow.fadeInUp 璞斐案例
+              
+                    .col-lg-auto
+                        ul.categories.wow.fadeInUp
+                            li
+                                a.active(href="#") ALL
+                            li
+                                a(href="#") 品牌设计
+                            li
+                                a(href="#") 品牌展示空间
+                            li
+                                a(href="#") 活动策划
+                            li
+                                a(href="#") 其他
 
 
-        section.section.s2.s3(style="background-image:url(img/banners/product_home.jpg)")
-            .content
-                .c
-                    img(src="img/banners/product_home_c.png", alt="")
-                .txt-container
-                    .tc-box.pt-media-5
-                        .title_cn.animated(data-animate="fadeInLeft")
-                            img(src="img/title_product_cn.png", alt="")
-                        .title.mb-media-5.animated(data-animate="fadeInRight")
-                            img(src="img/title_product.png", alt="")
-                        .des.animated(data-animate="fadeInLeft")
-                            p 数码
-                                br
-                                | DIGITAL
+        section.s4.mb-media-5
+            .case-list
+                .row.no-gutters
+                    .col-lg-6
+                        a.item.first.wow.fadeInUp(href="case_detail.html") 
+                            img(src="img/cases/001.jpg", alt="")
+                            .overly
+                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+                    .col-lg-6
+                        .row.no-gutters
+                            .col-md-6
+                                a.item.wow.fadeInUp(href="case_detail.html") 
+                                    img(src="img/cases/002.jpg", alt="")
+                                    .overly
+                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
 
-                        .go.animated(data-animate="fadeInRight")
-                            a(href="categories.html")
-                                img(src="img/go.svg", alt="")
+                            .col-md-6
+                                a.item.wow.fadeInUp(href="case_detail.html") 
+                                    img(src="img/cases/003.jpg", alt="")
+                                    .overly
+                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
+
+                            .col-md-6
+                                a.item.wow.fadeInUp(href="case_detail.html") 
+                                    img(src="img/cases/004.jpg", alt="")
+                                    .overly
+                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
+
+                            .col-md-6
+                                a.item.wow.fadeInUp(href="case_detail.html") 
+                                    img(src="img/cases/005.jpg", alt="")
+                                    .overly
+                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
+                            
+
+                .row.no-gutters                    
+                    .col-md-4.col-lg-3
+                        a.item.wow.fadeInUp(href="case_detail.html") 
+                            img(src="img/cases/006.jpg", alt="")
+                            .overly
+                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+
+                    .col-md-4.col-lg-3
+                        a.item.wow.fadeInUp(href="case_detail.html") 
+                            img(src="img/cases/007.jpg", alt="")
+                            .overly
+                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+
+                    .col-md-4.col-lg-3
+                        a.item.wow.fadeInUp(href="case_detail.html") 
+                            img(src="img/cases/008.jpg", alt="")
+                            .overly
+                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+                                
+                    .col-md-4.col-lg-3
+                        a.item.wow.fadeInUp(href="case_detail.html") 
+                            img(src="img/cases/009.jpg", alt="")
+                            .overly
+                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+                    
+                  
 
                         
-        section.section.s2.s4(style="background-image:url(img/banners/news_home.jpg)")
-            .content
-                .c
-                    img(src="img/banners/news_home_c.png", alt="")
-                .txt-container
-                    .tc-box.pt-media-5
-                        .title_cn.animated(data-animate="fadeInLeft")
-                            img(src="img/title_news_cn.png", alt="")
-                        .title.mb-media-5.animated(data-animate="fadeInRight")
-                            img(src="img/title_news.png", alt="")
-                        .des.animated(data-animate="fadeInLeft")
-                            p.newstitle
-                                a(href="news_detail.html") 美光科技推出业界首款基于领先的 64 层 3D NAND技术构建的企业级 SATA 固态硬盘
+        section.s5.mb-media-5
+            .container
+                .row.align-items-center.mb-media-5
+                    .col
+                        .title-section.pt-media-5
+                            h2.text70.wow.fadeInUp PROFI 
+                                br 
+                                | PARTNER
+                                span .
+                            h3.text28.wow.fadeInUp 璞斐客户
+                    .col-auto
+                        a.more(href="clients.html")
+                            i.iconfont.icon-next
+                .clientlist
+                    .row
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/qh.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/hqc.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/hlha.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/sj.png", alt="前海")
 
-                        .go.animated(data-animate="fadeInRight")
-                            a(href="news_detail.html")
-                                img(src="img/go.svg", alt="")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/slx.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/baal.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/sgd.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/TCL.png", alt="前海")
+
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/swax.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/hs.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/ylj.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/fsn.png", alt="前海")
+
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/push.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/ha.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/rj.png", alt="前海")
+                        .col-6.col-md-4.col-lg-3
+                            .item.wow.fadeInUp
+                                img(src="img/clients/yps.png", alt="前海")
 
 
-        section.section.s2.s5(style="background-image:url(img/banners/agent_home.jpg)")
-            .content
-                .c
-                    img(src="img/banners/agent_home_c.png", alt="")
-                .txt-container
-                    .tc-box.pt-media-5
-                        .title_cn.animated(data-animate="fadeInLeft")
-                            img(src="img/title_agent_cn.png", alt="")
-                        .title.mb-media-5.animated(data-animate="fadeInRight")
-                            img(src="img/title_agent.png", alt="")
-                        .des.animated(data-animate="fadeInLeft")
-                            p.newstitle
-                                a(href="products.html") 
-                                    strong.text24 Panasonic
-                                    | 世界制造业500强全球性电子厂商
+        
 
-                        .go.animated(data-animate="fadeInRight")
-                            a(href="products.html")
-                                img(src="img/go.svg", alt="")
-
-
-           
-
-
-        section.section.s2.s6(style="background-image:url(img/banners/join_home.jpg)")
-            .content
-                .c
-                    img(src="img/banners/join_home_c.png", alt="")
-                .txt-container
-                    .tc-box.pt-media-5
-                        .title_cn.animated(data-animate="fadeInLeft")
-                            img(src="img/title_join_cn.png", alt="")
-                        .title.mb-media-5.animated(data-animate="fadeInRight")
-                            img(src="img/title_join.png", alt="")
-                        .des.animated(data-animate="fadeInLeft")
-                            p 我们是先进的科技产品服务商，是连接
-                                br
-                                | 上游供应商和客户的桥梁
-
-                        .go.animated(data-animate="fadeInRight")
-                            a(href="join.html")
-                                img(src="img/go.svg", alt="")
-
-        section.section.fp-auto-height
-            include includes/footerForHome.pug
-
+       
+       
             
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
-    script(src='js/vendor/fullPage/fullpage.min.js')
     script.
        
+        var swiper = new Swiper('.home-sliders', {
+            loop:true,
+             autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
 
         $(function () {        
-            $('body').addClass('home-body');     
-            //- var scene1 = document.getElementById('aniels1');
-            //- if(scene1){
-            //-     var parallaxInstance = new Parallax(scene1);
-            //- }
-            //- var scene2 = document.getElementById('aniels2');
-            //- if(scene2){
-            //-     var parallaxInstance = new Parallax(scene2);
-            //- }
-
-            //- var scene3 = document.getElementById('aniels3');
-            //- if(scene3){
-            //-     var parallaxInstance = new Parallax(scene3);
-            //- }
-
-            //- var scene4 = document.getElementById('aniels4');
-            //- if(scene4){
-            //-     var parallaxInstance = new Parallax(scene4);
-            //- }
-
-            //- var scene5 = document.getElementById('aniels5');
-            //- if(scene5){
-            //-     var parallaxInstance = new Parallax(scene5);
-            //- }
-
-            $('#fullpage').fullpage({
-                 //options here
-                licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
-            //    sectionsColor: ['#000', '#000', '#000', '#000', '#000'],
-            //    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-            //    menu: '#myMenu',
-            //    fadingEffect: true,
-            //    fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo=',
-
-                afterLoad: function (origin, destination, direction) {
-                     // var loadedSection = this;
-                     // console.log(loadedSection);
-                     // console.log(destination.item);
-                    var orEls = $(origin.item).find(".animated");               
-                    orEls.each(function () {
-
-                        var orEffect = $(this).attr("data-animate");
-                        var orDelay = "delay-" + $(this).attr("data-delay");
-
-                        $(this).removeClass(orEffect);
-                        if (orDelay) {
-                            $(this).removeClass(orDelay);
-                        }
-
-                    });
-
-                    var els = $(destination.item).find(".animated");
-                    els.each(function () {
-                        var effect = $(this).attr("data-animate");
-                        var delay = "delay-" + $(this).attr("data-delay");
-
-                        $(this).addClass(effect);
-                        if (delay) {
-                            $(this).addClass(delay);
-                        }
-
-                    });
-
-            //        $("#pass").removeClass('m' + origin.index).addClass("m" + destination.index);
-            //        $("#senum").text(destination.index + 1);
-            //        //  alert(destination.index);
-            //        //  alert(origin.index);
-                    if (destination.index == 0) {
-                        var x = document.getElementById("myVideo");
-                         x.play();
-                        function playVid() {
-                            x.play();
-                        }
-
-                        function pauseVid() {
-                            x.pause();
-                        }
-
-                    } 
-
-
-            //        setTimeout(function () {
-            //            //   $("#s" + (origin.index + 1)).addClass('second').css({ 'transition': 'all 1s' })
-            //            $("#s" + (destination.index + 1)).css({ 'transition': 'none' });
-            //            $(document).mousemove(function (event) {
-            //                var maxdeg = 7;
-            //                // $("span").text(event.pageX + ", " + event.pageY);
-            //                var x = (event.pageX - w / 2) / (w / 2) * maxdeg;
-            //                var y = (event.pageY - h / 2) / (h / 2) * maxdeg;
-
-            //                document.getElementById("s" + (destination.index + 1)).style.transform = "rotateX(" + -y + "deg) rotateY(" + x + "deg)  scale(1.4)  translateZ(-15vw)";
-
-            //                // console.log("rotateX("+ x +"deg) rotateY("+ y +"deg)");
-            //            });
-            //        }, 1000);
-
-
-               }
-            });
-            
+            $('body').addClass('home-body');            
         });
 
   
