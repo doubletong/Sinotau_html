@@ -1,0 +1,19 @@
+
+.page-innovate {
+    .txt{
+        
+        @include mq(lg){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+        }
+        .contact{
+            
+            a{
+                color: $color-primary;
+            }
+        }
+    }
+    
+    
+}

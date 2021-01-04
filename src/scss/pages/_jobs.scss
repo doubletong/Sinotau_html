@@ -1,269 +1,252 @@
 
-.page-concept{
-    background-image: url(../img/job_01.jpg); 
-    background-repeat: no-repeat;
-    background-position: left center; 
-    background-size: auto 100%;  
-    @include mq(md){
-      
-        background-position: left 250px center; 
-    }
-    @include mq(lg){
-      
-        background-position: right -200px center; 
-    }
-    @include mq(xl){
-      
-        background-position: right -100px center; 
-    }
-    @include mq(xxl){
-      
-        background-position: right center; 
-    }
-    .s1{
-       
-        padding-top: 6rem;
-        padding-bottom: 4rem;
-        color: #595757;
-        text-align: justify;
-        @include mq(md){
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            max-width: 300px;
-        }
-        @include mq(lg){
-            padding-top: 6rem;
-            padding-bottom: 6rem;max-width: 380px;
-        }
-        @include mq(xl){
-            padding-top: 7rem;
-            padding-bottom: 7rem;max-width: 480px;
-        }
-        @include mq(xxl){
-            padding-top: 8rem;max-width: 680px;
-            padding-bottom: 8rem;
-        }
-    }
-}
-
 .page-jobs{
-    .s1{
-       
-        margin-bottom:1rem;
-        @include mq(md){
-            margin-bottom:2rem;
-        }
-        @include mq(xxl){
-            margin-bottom:3rem;
-        }
-        .filter{
-       
-         
-            padding-bottom: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            font-size: rem(14);           
-
-            @include mq(md){
-                font-size: rem(16);  padding-bottom: 1.5rem;
-              
-            }
-            @include mq(lg){
-                font-size: rem(18);
-                padding-bottom: 3rem;
-            }
-            @include mq(xl){
-                font-size: rem(20);
-            }
-            @include mq(xxl){
-                font-size: rem(22);
-            }
-            .formsearch{
-                max-width: 900px;
-                margin: 0 auto;
-            }
-            a{
-                color: #999;
-                margin: .2rem .6rem;
-                display: inline-block;
-                @include mq(md){
-                    margin: .4rem 1rem;
-                }
-                @include mq(lg){
-                    margin: .4rem 1.5rem;
-                }
-                &.active{
-                    color: #398AC3;
-                }
-            }
-            .bs{
-                margin-top: 1rem;
-                @include mq(md){
-                    margin-top: 2rem;
-                }
-                @include mq(xxl){
-                    margin-top: 3rem;
-                }
-                input{
-                    width: 100%;
-                    border:1px #ddd solid;     
-                    font-family: sans-serif;
-                    outline: none;
-                    padding: 3px .5rem;
-                    @include mq(md){
-                        padding: 5px 6px;
-                    }
-
-                }
-                button{
-                    border: none;
-                    background-color: $color-primary;
-                    padding: 3px 1rem 2px;
-                    font-family: sans-serif;
-                    color: #fff;
-                    font-size: 1rem;
-                    outline: none;
-                    @include mq(md){
-                        padding: 8px 2rem;
-                    }
-                }
-            }
-        }
-    }
     .joblist{
-        .col-md-6{
-            margin-bottom: 1rem;
-            @include mq(md){
-                margin-bottom: 2rem;
-            }
-        }
         .item{
-            border:1px #ccc solid;
-            padding: .8rem 1rem;
-            color: #999;
-            height: 100%;
-            @include mq(md){
-                padding: 1rem 1.5rem;
-            }
-            @include mq(xl){
-                padding: 1.5rem 3rem;
-            }
-            h3{
-                line-height: 1.3;
-                margin-bottom: .6rem;
-                @include mq(md){
-                    margin-bottom: 1rem;
-                }
-            }
-            .note {
-                span{
-                    margin-right: 1rem;
-                    @include mq(md){
-                        margin-right: 2rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.page-job-detail{
-    padding-top: 45px;
-    padding-bottom: 3rem;
-    @include mq(md){
-        padding-top: 70px;
-        padding-bottom: 4rem;
-    }
-    @include mq(lg){
-        padding-top: 80px;
-        padding-bottom: 5rem;
-    }
-    @include mq(xl){
-        padding-top: 96px;
-        padding-bottom: 6rem;
-    }
-    
-    article.container{     
-       
-        header{
-            text-align: center;          
-            padding-bottom: 2rem;
-            position: relative;
-            &::after{
-                content: " ";
-                border-bottom: 1px #ddd solid;
-                display: block;
-                width: 100%;
-                bottom: 3rem;
-                left: 0;
-                position: absolute;
-                z-index: -1;
-            }
-            @include mq(md) {
-                margin-bottom: 2rem;
-            }
-            h1.title-news{
-                
-                font-size: rem(22);
-                margin-bottom: 1rem;
-                color: #000;
-                text-transform: uppercase;
-                @include mq(md) {
-                    font-size: rem(24);  margin-bottom: 1rem;
-                }
+            border-top: 2px #e8e9ec solid;
+            .job-header{
+                cursor: pointer;
+                padding: 1rem 1rem;
                 @include mq(lg){
-                    font-size: rem(26);
+                    padding: 2rem 1rem;
+                }
+                .title{
+                    font-weight: bold;
+                }
+
+            }
+
+            
+            .iconfont{
+                font-size: rem(22);
+                display: block;
+                transition: all .3s;
+                @include mq(lg){
+                    font-size: rem(28);
+                }
+            }
+            .address{
+           
+                @include mq(lg){
+                    margin-right: 1rem;
                 }
                 @include mq(xl){
-                    font-size: rem(30);
+                    margin-right: 2rem;
                 }
                 @include mq(xxl){
-                    font-size: rem(32);
+                    margin-right: 3rem;
                 }
             }
-            .note{
-              color: #999;
-              display: inline-block;
-              background-color: #fff;
-              padding: 0 3rem;
-              z-index: 30;
+            .job-body{
+                background-color: #eef1f9;
+                padding: 2rem 1rem;
+                display: none;
+                margin-bottom:1.5rem;
+                @include mq(xl){
+                    margin-bottom:2.5rem;
+                }
+                ol{
+                    padding-left: 1.3rem;
+                
+                }
             }
-        }
-      
-        .content{
-            text-align: center;
-            padding-bottom: 3rem;
-            @include mq(md){
-             
-                padding-bottom: 4rem;
-            }
-            @include mq(lg){
-          
-                padding-bottom: 5rem;
-            }
-            @include mq(xl){
-          
-                padding-bottom: 6rem;
-            }
-            p.email{
-                padding: 3rem 0;
-            }
-        }
-        .action{
-            text-align: center;
-            .gomail{
-                display: inline-block;
-                padding: .5rem 3rem;
-                background-color: $color-primary;
-                color: #fff;
-                transition: all .2s;
-                &:hover{
-                    transform: scale(1.1);
+            &.active{
+                border-top: 2px $color-primary solid;
+                .iconfont{
+                    transform: rotate(45deg);
+                }
+                .job-body{
+                    display: block;
                 }
             }
         }
-       
     }
+}
+
+
+.page-overseas{
+
+    .leftcol{      
+        margin-bottom: 2rem;
+        @include mq(lg){
+            padding-right: 3rem;
+            margin-bottom: 0;
+        }
+        @include mq(xl){
+            padding-right: 5rem;
+        }
+        @include mq(xxl){
+            padding-right: 7rem;
+        }
+
+        .text24{
+            @include mq(lg){
+                font-weight: lighter;
+            }
+            &.t1{
+                font-weight: normal;
+                color: $color-primary;
+            }
+        }
+
+        .footer{
+            padding-top: 1rem;
+            @include mq(lg){
+                padding-top: 2rem;
+            }
+            .btn-primary{
+                margin-bottom: 1.5rem;
+                .iconfont{
+                    margin-right: .5rem;
+                }
+                font-weight: lighter;
+                @include mq(lg){
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    .rightcol {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 56.4px 3.6px rgba(36, 84, 191, 0.1);
+        padding: 2rem 1rem 1rem;
+        margin-bottom: 2rem;
+        @include mq(md){
+            padding: 2rem 2rem;
+           
+        }
+        @include mq(lg){
+            padding: 2rem 2rem;
+            margin-bottom: 0;
+        }
+        @include mq(xl){
+            padding: 2rem 3rem;
+        }
+        @include mq(xxl){
+            padding: 2rem 5rem;
+        }
+        .title {
+            font-weight: lighter;
+        }
+        ul{
+            @include reset-list();
+            li{
+                position: relative;
+                padding-left: 3rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px #f1f3f4 solid;
+                &:last-child{
+                    border-bottom: none;
+                }
+                .iconfont{
+                    position: absolute;
+                    left: 0;
+                    top:1rem;
+                    z-index: 100;
+                    color:#079be9;
+                }
+            }
+        }
+
+      }     
+    
+  
+}
+
+
+.page-campus{
+
+    .leftcol{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 56.4px 3.6px rgba(36, 84, 191, 0.1);
+        padding: 2rem 1rem 1rem;
+        margin-bottom: 2rem;
+        @include mq(md){
+            padding: 2rem 2rem;
+           
+        }
+        @include mq(lg){
+            padding: 2rem 2rem;
+            margin-bottom: 0;
+        }
+        @include mq(xl){
+            padding: 2rem 3rem;
+        }
+        @include mq(xxl){
+            padding: 2rem 5rem;
+        }
+        .title {
+            font-weight: lighter;
+        }
+        ul{
+            @include reset-list();
+            li{
+                position: relative;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px #f1f3f4 solid;
+                @include mq(md){
+                    padding-left: 3rem;
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+                .iconfont{
+                    position: absolute;
+                    left: 0;
+                    top:1rem;
+                    z-index: 100;
+                    color:#079be9;
+                }
+            }
+        }
+
+    }
+
+    .rightcol {
+        
+        @include mq(lg){
+            padding-left: 3rem;
+        }
+        @include mq(xl){
+            padding-left: 5rem;
+        }
+        @include mq(xxl){
+            padding-left: 7rem;
+        }
+        .text24{
+           
+            @include mq(lg){
+                font-weight: lighter;
+            }
+           
+        }
+
+        .footer{
+            padding-top: 1rem;
+            @include mq(lg){
+                padding-top: 2rem;
+            }
+            .btn-primary{
+                margin-bottom: 1.5rem;
+                .iconfont{
+                    margin-right: .5rem;
+                }
+                font-weight: lighter;
+                @include mq(lg){
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+
+        
+
+      }     
     
   
 }

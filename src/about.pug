@@ -1,102 +1,84 @@
 extends includes/layout.pug
 
 block title
-    | 关于璞斐
+    | 关于迈博
 
 block bkheader
 
 
 
 block content  
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banners/bg.jpg)")
-        .container
-            .title-section
-                h2.text90.wow.fadeInUp PROFI 
-                    br 
-                    | DESIGN.
-                
-                h3.text36.wow.fadeInUp 关于璞斐
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banners/about.jpg)")
+        .container-fluid
+            .title-section     
+                h1.text36.wow.fadeInUp 博迈是谁？
 
-    .about_bg
-        
+    
     .page.page-about            
-        section.s1
-            .container.pt-media-5.pb-media-5
-                .row
-                    .col-lg-3
-                        .pic1.wow.fadeInUp
-                            img(src="img/about_01.png", alt="璞斐设计")
-                        
+        section.s1.container-fluid.pt-media-9.pb-media-8
+            .row
+                .col-lg-3
+                    .item
+                        .row.align-items-center
+                            .col-auto
+                                .icon
+                                    img(src="img/icon-time.png", alt="")
+                            .col
+                                .txt
+                                    label 成立于
+                                    .des 2012年
+
                     
-                    .col-lg-9
-                        .txt
-                            p.wow.fadeInUp 深圳璞斐设计有限公司注册于深圳前海自贸区，注册资本500万，是近年在深圳设计界中极具口碑的一家创意设计公司。
-                                span 璞斐专注于视觉整合设计，始终追求以创意为核心，以设计的专业度为根本，以感悟、科学、超越为精神向导
-                                | ，立足前海自贸区，以成为国际一流的专业设计机构为终极目标。中文之中“璞”的本意是未琢之玉，“斐”是斐然，发光发亮之意，寓意着通过我们所提供的专业的设计服务，将客户的需求进行打磨直至发光发亮。“Profi Design”是公司创始人引用德文“专业设计”之意所起的名字，代表我们是一个有着德国基因的设计机构，更体现了璞斐的企业文化中对专业追求的执着态度。
-                            p.wow.fadeInUp 经过多年在设计和艺术领域的探索研究，为品牌建立和传播提供了精准的表达语言，并积极推动本土品牌的建立和成长。依据企业所处的行业特色、竞争者分析、市场环境、目标客户群、企业的核心优势、产品服务生命周期等因素，从而规划企业的发展战略，显著增强品牌塑造、市场推广的科学性、合理性；
-                                span 璞斐设计汇集多位充满创意、激情、敬业和团队精神的专业艺术高等院校设计精英
-                                | ，坚持从市场角度和客户的实际需求出发；结合
-                                span “以感悟、超越的精神，为客户提炼独特有效的设计”
-                                | 设计理念，致力于解决企业的品牌实际问题，为企业提供兼具实效与创新的品牌整体解决方案。
-                            p.wow.fadeInUp 璞斐设计经过科学定位，专注视觉及空间设计，包括企业形象设计、品牌策划设计、品牌空间设计、展览展示空间设计、包装设计、商业设计、广告创意设计、商业摄影、影视拍摄、产品形象推广、产品发布会及品牌活动策划等。我们针对品牌形象塑造和推广项目，成立专门的项目小组，为客户提供专业策划、创意设计服务，有助于品牌形象传播的及时性、延续性；以高品质服务，帮助客户建立独树一帜的市场形象，创造出良好的价值和绩效。
+                .col-lg-4
+                    .item
+                        .row.align-items-center
+                            .col-auto
+                                .icon
+                                    img(src="img/icon-biulding.png", alt="")
+                            .col
+                                .txt
+                                    label 设立
+                                    .des 10+ 分子公司
+                .col-lg-5
+                    .item.last
+                        .row.align-items-center
+                            .col-auto
+                                .icon
+                                    img(src="img/icon-jian.png", alt="")
+                            .col
+                                .txt
+                                    label 专注于
+                                    .des 血管介入类高植耗材的研发创新
+
                         
-        section.s2.wow.fadeInUp.pt-media-5
+        section.s2.wow.fadeInUp         
+            .row.no-gutters.align-items-center
+                .col-lg-6
+                    .pic
+                        img(src="img/temp/about_01.jpg", alt="")
+
+                .col-lg-6
+                    .txt
+                        label.wow.fadeInUp 我们的使命
+                        h3.text32.wow.fadeInUp 科技拥抱生命                        
+                        p.wow.fadeInUp 博迈医疗集合全球的学者精英，在血管介入治疗领域不断的探索与开发，努力为全球患者提供更好的解决方案，与医生和社会一起合作，积极挽救患者生命和改善患者的生活质量，满足人们对美好生活的向往。
+                
+            .row.no-gutters.align-items-center
+                .col-lg-6.order-lg-last
+                    .pic
+                        img(src="img/temp/about_02.jpg", alt="")
+
+                .col-lg-6
+                    .txt
+                        label.wow.fadeInUp 我们的原景
+                        h3.text32.wow.fadeInUp 做中国血管介入高值耗材行业的领军者、创国际知名的平台型医疗器械跨国集团              
+                        p.wow.fadeInUp 博迈医疗集合全球的学者精英，在血管介入治疗领域不断的探索与开发，努力为全球患者提供更好的解决方案，与医生和社会一起合作，积极挽救患者生命和改善患者的生活质量，满足人们对美好生活的向往。
+                
+        section.s3.pb-media-3.pt-media-4
             .container
-                .row
-                    .col-lg-3
-                        .title-section.pt-media-5
-                            h2.text70.wow.fadeInUp PROFI 
-                                br 
-                                | DESIGN
-                                span .
-                            h3.text28.wow.fadeInUp 主创团队
-
-                    .col-lg-9
-                        .team
-                            .person.pt-media-5.pb-media-5
-                                .row
-                                    .col-md-auto
-                                        .photo.wow.fadeInUp
-                                            img(src="img/about_03.jpg", alt="陈颀")
-                                    .col-md
-                                        .txt
-                                            h3.text32.wow.fadeInUp PROFI DESIGN | CEO
-                                            p.wow.fadeInUp 陈颀，设计学博士，师从清华大学马泉教授，留学德国多年，获建筑学和创意团队管理双硕士学位，十年以上海内外设计创意行业工作经验。现任中国会展经济研究院展览展示专业委员会办公室主任、深圳流行音乐协会监事、艺术科技与影视专业委员会主任、广州美术学院视觉艺术设计学院专业委员会委员、创新创业导师、艺术与科技专业教师，曾任澳门科技大学室内设计专业讲师、香港理工大学客座讲师、深圳富通地产建筑与规划中心总监。
-                                
-                            .person.pt-media-5.pb-media-5
-                                .row
-                                    .col-md-auto.order-md-last
-                                        .photo.wow.fadeInUp
-                                            img(src="img/about_04.jpg", alt="盛南")
-                                    .col-md
-                                        .txt1
-                                            h3.text32.wow.fadeInUp PROFI DESIGN | 创意总监
-                                            p.wow.fadeInUp 盛南，广州美术学院视觉艺术学院教师，日本女子美术大学、广州美术学院硕士，曾获第三届全国广告大赛中国赛区银奖、第三届全国广告大赛广东省赛区三项一等奖、第十六届亚洲运动会及第十届亚洲残疾人运动会整体视觉设计系列项目优秀奖、第十六届亚洲运动会广东奥林匹克体育中心形象景观设计优秀奖并采用、第五届全国视觉设计教育论坛整体形象设计、2017年度广东之星优秀教师奖，入选第四届全国青年设计艺术双年展，多次参加香港国际设计周、广州国际设计周、太古汇方所艺术设计展览。
-                                
-                            .person.pt-media-5.pb-media-5
-                                .row
-                                    .col-md-auto
-                                        .photo.wow.fadeInUp
-                                            img(src="img/about_05.jpg", alt="黄剑波")
-                                    .col-md
-                                        .txt
-                                            h3.text32.wow.fadeInUp PROFI DESIGN | 影视总监
-                                            p.wow.fadeInUp 黄剑波，毕业于广州美术学院，香港 TVB 与南方台合办编剧培训班，制作众多地方政府宣传片、品牌广告、微电影及企业专题形象片，获得多方高度认可赞誉。2006 年开始主要从事政府形象片、商业广告、专题片与微电影的拍摄，期间服务过的部分客户有：广州市经贸局、广州市荔湾区个协、广州市黄埔区、广州开发区、广州地税、广州城管、佛山市政府、贵州从江政府、南方电网、中国节能、中国移动、全球通、E 路航、四川移动、美的、五菱宏光、宝洁、招商信诺、香港城、五月花、创维、小洋人、UMPC 掌上电脑、御花园假日广场、恒福中心、四海一家、慕思床垫等。其中执导的黄埔区广州开发区形象片登陆纽约时代广场，并由新华社报道。
-                                
-
-
-                            .person.pt-media-5.pb-media-5
-                                .row
-                                    .col-md-auto.order-md-last
-                                        .photo.wow.fadeInUp
-                                            img(src="img/about_06.jpg", alt="张宝怡")
-                                    .col-md
-                                        .txt1
-                                            h3.text32.wow.fadeInUp PROFI DESIGN | 设计总监
-                                            p.wow.fadeInUp 张宝怡，毕业于广州美术学院，中国新锐设计师，深圳平面设计师协会理事、深圳流行音乐协会理事、艺术科技与影视专业委员会委员，多年设计行业工作经验，曾获中国之星品牌设计、广东之星创意设计、白金创意国际大赛等多个设计奖项，曾多次作为深圳设计师的代表参加过多个国际设计周的展览，为深圳的政府及很多企业设计过视觉形象，并获得政府领导及知名企业家的一致认可与好评。
-                    
-
-
+                p 作为广东省血管介入治疗及医疗器械工程技术中心，博迈医疗已拥有全球领先的球囊及介入导管类技术和多款全球独家，产品产品畅销包括中国、美国、日本、欧洲、中东、拉美在内的50多个国家和地区，以独特的创新技术、优异的性能和卓越的质量，倍受全球客户的好评和喜爱
+                .pic
+                    img(src="img/about_03.png", alt="map")    
 
 block bkfooter
 

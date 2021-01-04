@@ -1,30 +1,44 @@
 {
-  "id": "1978495",
-  "name": "鼓润",
+  "id": "2294493",
+  "name": "威高",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "8320736",
-      "name": "arrow-right",
-      "font_class": "arrow-right",
-      "unicode": "e60a",
-      "unicode_decimal": 58890
+      "icon_id": "171393",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e616",
+      "unicode_decimal": 58902
     },
     {
-      "icon_id": "16260692",
-      "name": "arrow-right",
-      "font_class": "arrow-left",
-      "unicode": "e618",
-      "unicode_decimal": 58904
+      "icon_id": "7554686",
+      "name": "prev",
+      "font_class": "prev",
+      "unicode": "e623",
+      "unicode_decimal": 58915
     },
     {
-      "icon_id": "6279145",
+      "icon_id": "19055815",
+      "name": "prev",
+      "font_class": "next",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "1018303",
       "name": "top",
       "font_class": "top",
-      "unicode": "e617",
-      "unicode_decimal": 58903
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "13738735",
+      "name": "PlaybackOutline",
+      "font_class": "play",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
     }
   ]
 }

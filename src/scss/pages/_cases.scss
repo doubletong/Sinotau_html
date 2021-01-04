@@ -1,53 +1,6 @@
-ul.categories{
-          
-    @include reset-list();
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    @include mq(md){
-        text-align: left;
-    }
-    li{
-        display: inline-block;
-   
-        @include mq(md){
-            border-left: 1px #eee solid;
-        }
-        &:first-child{
-            border-left: none;
-        }
-        a{
-            color: #999;
-            display: block;
-            padding: 0 .6rem;
-            font-size: rem(12);
-            @include mq(md){
-                padding: 0 1.5rem;
-                font-size: rem(14);
-            }
-            @include mq(lg){
-            
-                font-size: rem(16);
-            }
-            @include mq(xl){
-                font-size: rem(18);
-            }
-            @include mq(xxl){
-              font-size: rem(20);
-            }
-              &.active{
-                  font-weight: bold;
-                  color:#333;
-              }
-          
-          &:hover{
-              color: #333;
-          }
-        }
-    }
-}
+
 .page-cases {    
-  
+    padding-top: 10rem;
  
     .s2 {     
 
@@ -73,15 +26,19 @@ ul.categories{
                     padding: 2rem 3rem;
                     transition: all .25s;
                     opacity: 0;
-                    h3{
+                    .txt{
                         color: #fff;
                         text-align: center;
                         @include vertical-align(); 
                         font-weight: lighter;
+                    }
+                    h3{
+                        font-weight: lighter;
+                        margin: 0;
                         @include mq(xxl){
                             font-size: rem(18);
                         }
-                    }                 
+                    }        
                 }
 
                 &:hover{
@@ -125,8 +82,11 @@ ul.categories{
         }
         .title-case{
             font-size: rem(16);
-            font-weight: normal;
-            text-align: right;
+            font-weight: normal;           
+          
+            @include mq(lg){
+                text-align: right;
+            }
         }
         p{
             text-align: justify;

@@ -1,15 +1,15 @@
 @import "common";
 
-@import "header";
-@import "home";
+@import "_header.scss";
+@import "_home.scss";
 @import "about";
-@import "clients";
+@import "_clinical.scss";
 @import "contact";
-@import "cases";
+@import "_innovate.scss";
 // @import "search";
-// @import "brands";
-// @import "products";
-// @import "education";
+@import "_jobs.scss";
+@import "products";
+@import "_news.scss";
 // @import "cooperation";
 
 // @import "future";

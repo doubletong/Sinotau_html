@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "ElliotSans";
-    src: url("../fonts/ElliotSans-Regular.ttf") format("truetype");
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
 
 }
 @font-face {
@@ -10,33 +10,26 @@
 }
 
 body {
-    color: #333;
+    color: #61574e;
     background-color: #fff;
-    font-family:  "Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
+    font-family:  "Poppins","Microsoft YaHei",PingFangSC-Regular,"Helvetica","Helvetica Neue", "Arial", sans-serif;     
     font-size: rem(14);
     margin: 0 auto;  
     line-height: 1.8;
-    position: relative;
-    padding-top: 45px;
+    position: relative;  
+    padding-top: 45px; 
     @include mq(md){
-        font-size: rem(16);
+        font-size: rem(16);  
         padding-top: 60px;
-
     }
     @include mq(lg){
-       font-size: rem(14);
-       padding-top: 80px;   
-      
+       font-size: rem(14);   
+       padding-top: 0;
     }
     @include mq(xl){
-      font-size: rem(16);
-      padding-top: 80px;
-
+      font-size: rem(16);  
     }
-    @include mq(xxl){      
-        padding-top: 120px;
-    }
- 
+  
 }
 
 
@@ -50,28 +43,24 @@ a {
 }
 .container{
     @include mq(xxl) {
-        max-width:1520px;
+        max-width:1220px;
+    }
+}
+.container-fluid{
+    @include mq(xxl){
+        max-width:1550px;
     }
 }
 
 
-
 .title-section {  
+
     h2{
-        color:$color-primary;
-        line-height: 1;
-        font-family: "ElliotSans";
-        font-weight: bold;
-        span{
-            color:$color-secondary;
-        }
+        color: #333;
+        font-weight: bold; 
+        
     }
-    h3{
-        font-weight: lighter;
-        line-height: 1.5;
-        color:#808080;
-    }
- 
+
 }
 
 
@@ -83,27 +72,38 @@ a {
     background-repeat: no-repeat;   
     color: #fff;
     position: relative;
-    height: 180px;
+    height: 150px;
     @include mq(md) {
-        height: 300px;
+        height: 250px;
     }
     @include mq(lg) {
-        height: 390px;
+        height: 300px;
     }
     @include mq(xl) {
-        height: 480px;
+        height: 350px;
     }
     @include mq(xxl) {
-        height: 645px;
+        height: 400px;
     }
     
-    .container{
-        @include vertical-align(); 
-        h2{
-            color: $color-secondary
+    .container-fluid{        
+        margin-left: 50%;
+        height: 100%;
+        width: auto;
+        background: linear-gradient(90deg,rgba(37,86,193,1),rgba(37,86,193,0));
+        @include mq(md) {
+            margin-left: 66%;
         }
-        h3{
-            color: $color-secondary
+        .title-section{
+            @include vertical-align(); 
+            border:none;
+        }
+        h1{
+            font-weight: lighter;
+            padding-left: 1rem;
+            @include mq(md) {
+                padding-left: 2rem;
+            }
         }
     }
 }
@@ -118,6 +118,9 @@ a {
 
 img {
     max-width: 100%;
+}
+.page{
+    background-color: #f6f7fa;
 }
 
 
@@ -182,7 +185,7 @@ img {
         font-size: rem(60);
     }
 }
-.text48{
+.text50{
     font-size: rem(24);
     @include mq(md) {
         font-size: rem(30);
@@ -194,7 +197,7 @@ img {
         font-size: rem(42);    
     }
     @include mq(xxl) {
-        font-size: rem(48);
+        font-size: rem(50);
     }
 }
 .text40{
@@ -293,9 +296,9 @@ img {
     }
 }
 .text28{
-    font-size: rem(20);
+    font-size: rem(16);
     @include mq(md) {
-        font-size: rem(22);
+        font-size: rem(20);
     }
     @include mq(lg) {
         font-size: rem(24);
@@ -359,19 +362,19 @@ img {
         font-size: rem(20);
     }
 }
-.pt-media-12{
-    padding-top: 8rem;
+.pt-media-15{
+    padding-top: 3rem;
     @include mq(md) {
-        padding-top: 9rem;
+        padding-top: 3rem;
     }
     @include mq(lg) {
-        padding-top: 10rem;
+        padding-top: 9rem;
     }
     @include mq(xl) {
-        padding-top: 11rem;
+        padding-top: 13rem;
     }
     @include mq(xxl) {
-        padding-top: 12rem;
+        padding-top: 15rem;
     }
 }
 .pt-media-9{
@@ -435,6 +438,18 @@ img {
         padding-top: 5rem;
     }
 }
+.pt-media-4{
+    padding-top: 1rem; 
+    @include mq(lg) {
+        padding-top: 2rem;
+    }
+    @include mq(xl) {
+        padding-top: 3rem;
+    }
+    @include mq(xxl) {
+        padding-top: 4rem;
+    }
+}
 .pt-media-3{
     padding-top: 1rem;
     @include mq(md) {
@@ -454,6 +469,19 @@ img {
         padding-bottom: 3rem;
     }
 
+}
+.pb-media-4{
+    padding-bottom: 1rem;
+    @include mq(md) {
+        padding-bottom: 2rem;
+    }
+    @include mq(lg) {
+        padding-bottom: 3rem;
+    }
+    @include mq(xl) {
+        padding-bottom: 4rem;
+    }
+ 
 }
 .pb-media-5{
     padding-bottom: 1rem;

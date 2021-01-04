@@ -1,65 +1,101 @@
-
-.site-footer{ 
-    background-color: #fff; 
-    padding-bottom: 2rem;
-    text-align: center;
-    @include mq(lg){  
-        text-align: left;
-    }
-    @include mq(xl){  
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-    hr{
-        margin-top: 0;
-        border:none;
-        border-top: 1px solid #999;   
-        margin-bottom: rem(28);   
-        @include mq(lg){  
-            border-top: 2px solid #999;   
+.site-footer {
+    background-color: $color-primary;   
+    z-index: 100;
+    color:#fff;
+    .botnav{
+        background-color: $color-secondary;
+        padding-top: 1rem;
+        @include mq(md){
+            padding-top: 2rem;
+        }
+        @include mq(lg){
+            padding-top: 0;
+        }
+        .mainav  {
+            display: none;
+            @include reset-list();  
+            @include mq(lg){
+                display: flex;
+            }
+            &>li{
+                padding-right: 2rem;
+                &>a{                 
+                    font-size: rem(26);
+                    line-height: 24px;               
+                    color: #fff;
+                    opacity: 0.9;                  
+                }
+                .subnav{
+                    @include reset-list();
+                    li{
+                        a{                          
+                            font-size: rem(14);                            
+                            color: #fff;
+                            opacity: 0.7;                            
+                        }
+                    }
+                   
+                }
+            }
         }
     }
-    .pic{
-        margin-bottom: 2rem;
-    }
-
     .qr{
-        position: relative;
-        cursor: pointer;
-        margin-bottom: 1rem;
-        .show{
-            position: absolute;   
-            padding: 3px;
-            border-radius: 6px;         
-            width: 130px;
-            height: 130px;
-            left: 50%;
-            margin-left: -65px;
-            margin-top: -170px;
-            box-shadow: 0 0 12px rgba(0,0,0,.15);
-            background-color: #fff;
-            transition: all .3s;
-            opacity: 0;
-            &::after{
-                content: " ";
-                display: block;
-                width: 0;
-                height: 0;
-                border:5px solid transparent;
-                border-top-color: #fff;
-                position: absolute;
-                bottom: -10px;
-                left: 50%;
-                margin-left: -5px;
+        text-align: center;
+        .pic{
+            display: block;
+            height: 120px;
+            width: 120px;
+            margin: 0 auto .2rem;      
+            background: #fff;
+            opacity: 0.3;
+
+        }
+        .title{
+            font-size: rem(14);
+            text-align: center;
+        }
+    }
+  
+    .contact{
+        padding-top: 2rem;
+        @include mq(lg){
+            padding-top: 3rem;
+        }
+        @include mq(xl){
+            padding-top: 4rem;
+        }
+        .row{
+            margin-bottom: 1rem;
+            @include mq(xl){
+                margin-bottom: 1.2rem;
             }
         }
-        &:hover{
-            .show{
-                opacity: 1;
+        .txt{
+            padding-left: .6rem;
+        }
+    }
+    
+    .bot{
+       
+        border-top:2px rgba(255,255,255,.3) solid;
+        padding-top: 1rem;
+        padding-bottom: 1rem;       
+        @include mq(xl){
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        p{
+            margin-bottom: 0;            
+        }
+        a{
+            color: #ccc;
+            &:hover{
+                color: $color-primary;
             }
         }
     }
-}
+ }
+
 
 
 .toTop{
@@ -76,7 +112,7 @@
     background-color: #eee;
     line-height: 50px;
     border-radius: 5px;
-    color: $color-primary;
+    color: #000;
     @include mq(md){
         right: 2rem;
         bottom: 2rem;   
@@ -85,7 +121,7 @@
         font-size: rem(24);
     }
     &:hover{
-        opacity: 1;  color:$color-primary;
+        opacity: 1;          
     }
 }
 

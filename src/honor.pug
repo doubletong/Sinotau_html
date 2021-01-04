@@ -1,150 +1,177 @@
 extends includes/layout.pug
 
 block title
-    | 荣誉资质
+    | 企业荣誉
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 block content
-    .banner.banner-about(style="background-image:url(img/banners/about.jpg)")
-        #aniels
-            .c(data-depth="0.2")
-                img(src="img/banners/banner_c.png", alt="")
-            .title_cn(data-depth="0.4")
-                img(src="img/title_about_cn.png", alt="")
-            .title(data-depth="0.6")
-                img(src="img/title_about.png", alt="")
-            .des(data-depth="0.8") 
-                p 深圳市蓝源实业发展有限公司成立于2003年，公司一直致力于专业代理高端显示产品及存储类产品，已被授权为JDI显示产品中国区唯一代理，松下Panasonic	IPS显示产品代理，美光Micron存储产品中国区代理。	产品广泛应用于手机、电视、平板电脑、医疗、工控等产品系列。我们希望与客户共同成长，我们的目标是用我们的技术与产品服务客户，并伴随客户一起发展壮大、迎接未来。
-
-        
-        nav.nav-container
-            menu.wow.fadeInDown
-                a(href="about.html") 企业介绍
-                a(href="culture.html") 企业文化
-                a(href="history.html") 发展历程
-                a.active(href="honor.html") 荣誉资质
-
+    .banner.banner-honor(style="background-image:url(img/banners/honor.jpg)")   
+        .container-fluid
+            .title-section     
+                h1.text36.wow.fadeInUp 企业荣誉
         
 
-    .page.page-honor.pt-media-7.pb-media-7
-        
-
-        section.s1
-            .container                
-                .swiper-container.gallery-top
+    .page.page-honor.pt-media-5.pb-media-5    
+        section.s1.container
+            .years
+                .swiper-container.gallery-thumbs
                     .swiper-wrapper
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title.text28 MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2020
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title.text28 MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2019
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title.text28 MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2018
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title.text28 MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2017
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title.text28 MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2016
                         .swiper-slide
-                            .row
-                                .col-lg-5
-                                    img(src="img/honor/g01.jpg", alt="")
-                                .col-lg-7
-                                    .txt
-                                        h2.title MICRON
-                                        .pubdate.text20 2016年
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2015
+                        .swiper-slide
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2014
+                        .swiper-slide
+                            .year 
+                                .txt(style="background-image:url(img/banners/honor.jpg)") 2013          
+        
+                   
+                .swiper-next
+                    i.iconfont.icon-next
+                .swiper-prev
+                    i.iconfont.icon-previous
 
+            .swiper-container.gallery-top.chronicle
+                .swiper-wrapper
+                    .swiper-slide                      
+                        ul.list
+                            li 2019年度园区先进倍增企业
+                            li 2019年度中国医疗及健康服务产业十大最佳医疗器械领域投资案例（投中产业榜）
+                            li 东莞市第十三批上市后备企业
+                            li 2019粤港澳大湾区生物科技创新企业50强
+                            li 广东省高新技术产品
+                    .swiper-slide                
+                        ul.list
+                            li
+                      
+                                | 获批国家级绿色工厂
+                            li
+                              
+                                | 全资收购深圳市和光同诚科技有限公司
 
-     
-                .thumbs-container
-                    .row.justify-content-end
-                        .col-lg-7
-                            .gallery-topnav                                
-                                .swiper-prev 
-                                    img(src="img/icon-prev.svg", alt="")
-                                .swiper-next 
-                                    img(src="img/icon-next.svg", alt="")
+                    .swiper-slide                     
+                        ul.list
+                            li
+                         
+                                | 获批国家级绿色工厂
+                            li
+                    
+                                | 全资收购深圳市和光同诚科技有限公司
+                    .swiper-slide                    
+                        ul.list
+                            li
+                       
+                                | 获批国家级绿色工厂
+                            li
+                      
+                                | 全资收购深圳市和光同诚科技有限公司
+                    .swiper-slide     
+                        ul.list
+                            li
+                   
+                                | 获批国家级绿色工厂
+                            li
+                     
+                                | 全资收购深圳市和光同诚科技有限公司
+                    .swiper-slide                
+                        ul.list
+                            li
+                         
+                                | 获批国家级绿色工厂
+                            li
+                      
+                                | 全资收购深圳市和光同诚科技有限公司
 
-                            .swiper-container.gallery-thumbs
-                                .swiper-wrapper
-                                    .swiper-slide
-                                        img(src="img/honor/th01.jpg", alt="")
-                                    .swiper-slide
-                                        img(src="img/honor/th02.jpg", alt="")
-                                    .swiper-slide
-                                        img(src="img/honor/th03.jpg", alt="")
-                                    .swiper-slide
-                                        img(src="img/honor/th04.jpg", alt="")
-                                    .swiper-slide
-                                        img(src="img/honor/th05.jpg", alt="")
-                                    .swiper-slide
-                                        img(src="img/honor/th06.jpg", alt="")
+                    .swiper-slide                                                            
+                    
+                        ul.list
+                            li
+                      
+                                | 获批国家级绿色工厂
+                            li
+                     
+                                | 全资收购深圳市和光同诚科技有限公司
+                    .swiper-slide                                                            
+                 
+                        ul.list
+                            li
+                     
+                                | 获批国家级绿色工厂
+                            li
+                         
+                                | 全资收购深圳市和光同诚科技有限公司
                         
 
                              
 
 block bkfooter
-
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
-            slidesPerView: 5,
+            slidesPerView: 2,
             centeredSlides: true,
-            loop: true,
             freeMode: true,
-            loopedSlides: 5, //looped slides should be the same
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
-        });
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 5, //looped slides should be the same
             navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
-            thumbs: {
-                swiper: galleryThumbs,
-            },
+            breakpoints: {
+                640: {
+                slidesPerView: 3,
+            
+                },
+                768: {
+                slidesPerView: 4,
+            
+                },
+                992: {
+                slidesPerView: 4,
+            
+                },
+                1200: {
+                slidesPerView: 4,
+            
+                },
+                1600: {
+                slidesPerView: 5,
+            
+                },
+            }
         });
-        $(function () {
-        
-  
-        
-        });
-      
-       
 
-     
+       
+        
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 0,     
+            // loop:true,
+            //loopedSlides: 5, //looped slides should be the same            
+        
+        });
+       // galleryThumbs.slideTo($('.year').length,1000,false);
+       // galleryTop.slideTo($('.year').length,1000,false);
+
+        galleryThumbs.on('slideChange', function () {
+            galleryTop.slideTo(galleryThumbs.activeIndex);
+        });
+    

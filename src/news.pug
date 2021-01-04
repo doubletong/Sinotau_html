@@ -1,86 +1,106 @@
 extends includes/layout.pug
 
 block title
-    | 新闻动态
-
+    | 企业资讯
 block content
-    .banner.banner-news(style="background-image:url(img/banners/news.jpg)")
-        #aniels
-            .c(data-depth="0.2")
-                img(src="img/banners/news_c.png", alt="")
-            .title_cn(data-depth="0.4")
-                img(src="img/title_news_cn.png", alt="")
-            .title(data-depth="0.6")
-                img(src="img/title_news.png", alt="")
-            .des(data-depth="0.8") 
-                p 了解蓝源最新动态
+    .banner.banner-medical(style="background-image:url(img/banners/news.jpg)")
+        .container-fluid
+            .title-section     
+                h1.text36.wow.fadeInUp 企业资讯
 
+    .page.page-news.pt-media-6.pb-media-6
+        .container  
+            .years.mb-media-3.wow.fadeInUp
+                .current_year 2020
+                ul.yearlist
+                    li
+                        a(href="news.html") 2020
+                    li
+                        a(href="news.html") 2019
+                    li
+                        a(href="news.html") 2018
+                    li
+                        a(href="news.html") 2017
+                    li
+                        a(href="news.html") 2016
+            
+        .newslist.mb-media-3
+            a.item.wow.fadeInUp(href="news_detail.html")
+                .container
+                    .row
+                        .col-md-4
+                            img(src="img/temp/n1.jpg", alt="")
+                        .col-md-8
+                            .txt
+                                .date 2020-10-26
+                                h3.text32 热烈祝贺博迈医疗Minerva™外周外周外周外
+                                p 热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书...
+                        
+            a.item.wow.fadeInUp(href="news_detail.html")
+                .container
+                    .row
+                        .col-md-4
+                            img(src="img/temp/n2.jpg", alt="")
+                        .col-md-8
+                            .txt
+                                .date 2020-10-26
+                                h3.text32 博迈医疗：厚积薄发、一日三捷，引领国际球囊导管技术新方向
+                                p 博迈医疗05月27日公告： 10个血管介入器械配件产品于近日取得了CE证书和ISO证书，这是公司今年继Alveo冠脉高压小球囊，Wedge NC冠脉导丝刻痕高压球囊扩张导管和Tri-Wedge（特威致）三金属丝球囊扩张导管后获得的第四张CE证书，为公司打开欧盟市场奠定了坚实的基础，提高了公司产品的综合优势...
+                        
+                        
+            a.item.wow.fadeInUp(href="news_detail.html")
+                .container
+                    .row
+                        .col-md-4
+                            img(src="img/temp/n3.jpg", alt="")
+                        .col-md-8
+                            .txt
+                                .date 2020-10-26
+                                h3.text32 美国 Cardinal Health 集团亚太区总裁 Roy Noda 先生一行参访博迈医疗
+                                p 热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书...
+                        
 
-    .page-news
-        
-        .newslist
-            .item
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item.item1
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item.item2
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item.item1
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            .item.item2
-                a(href="news_detail.html")
-                    .txt
-                        h3.text20 美光科技推出业界首款基于领先的 64 层 3D NAND 技术构建的企业级 SATA	固态硬盘
-                        p 美光 5200 SATA 企业级固态硬盘能够为业务关键型虚拟化工作负载和云架构提供快速、一致的服务质量,遥遥领先于同类产品的企业级SATA 固态硬盘：拥有出类拔萃的容量、性能、一致...
-                            
-            //- footer.news-footer.wow.fadeInUp
-            //-     ul.pagination.text-center
-            //-         li.page-item
-            //-             a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 上一页
-                            
-            //-         li.page-item
-            //-             a.page-link(href='#') 1
-            //-         li.page-item.active(aria-current='page')
-            //-             a.page-link(href='#')
-            //-                 | 2                          
-            //-         li.page-item
-            //-             a.page-link(href='#') 3
-            //-         li.page-item
-            //-             a.page-link.next(href='#') 下一页
+            a.item.wow.fadeInUp(href="news_detail.html")
+                .container
+                    .row
+                        .col-md-4
+                            img(src="img/temp/n4.jpg", alt="")
+                        .col-md-8
+                            .txt
+                                .date 2020-10-26
+                                h3.text32 博迈医疗：厚积薄发、一日三捷，引领国际球囊导管技术新方向
+                                p 博迈医疗05月27日公告： 10个血管介入器械配件产品于近日取得了CE证书和ISO证书，这是公司今年继Alveo冠脉高压小球囊，Wedge NC冠脉导丝刻痕高压球囊扩张导管和Tri-Wedge（特威致）三金属丝球囊扩张导管后获得的第四张CE证书，为公司打开欧盟市场奠定了坚实的基础，提高了公司产品的综合优势...
+                        
+                        
+            a.item.wow.fadeInUp(href="news_detail.html")
+                .container
+                    .row
+                        .col-md-4
+                            img(src="img/temp/n5.jpg", alt="")
+                        .col-md-8
+                            .txt
+                                .date 2020-10-26
+                                h3.text32 美国 Cardinal Health 集团亚太区总裁 Roy Noda 先生一行参访博迈医疗
+                                p 热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书热烈祝贺博迈医疗Minerva™外周球囊导管获得欧盟颁发的CE证书...
+                        
+                                           
+                      
+        footer.quality-footer.wow.fadeInUp
+            ul.pagination.text-center
+                li.page-item
+                    a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 
+                        i.iconfont.icon-previous
+                        
+                li.page-item
+                    a.page-link(href='#') 1
+                li.page-item.active(aria-current='page')
+                    a.page-link(href='#')
+                        | 2                          
+                li.page-item
+                    a.page-link(href='#') 3
+                li.page-item
+                    a.page-link.next(href='#') 
+                        i.iconfont.icon-next
                                        
         
 block bkfooter

@@ -1,0 +1,59 @@
+extends includes/layout.pug
+
+block title
+    | 在线留言
+    
+block bkheader
+   
+
+block content
+    .banner.banner-comment(style="background-image:url(img/banners/comment.jpg)")
+        .container-fluid
+            .title-section     
+                h1.text36.wow.fadeInUp 在线留言
+
+    .page.page-comment.pt-media-7.pb-media-7
+        .container
+            form(action="")
+                .row.mb-media-3
+                    .col-lg-6
+                        .leftcol
+                            .form-group
+                                .form-label 姓名
+                                input.form-control(type="text",name="name",placeholder="请输入您的姓名")
+                            .form-group
+                                .form-label 电话
+                                input.form-control(type="text",name="phone",placeholder="请输入您的电话")
+                            .form-group
+                                .form-label 组织
+                                input.form-control(type="text",name="organization",placeholder="请输入您的所属组织")
+                            .form-group
+                                .form-label 职位
+                                input.form-control(type="text",name="post",placeholder="请输入您的职位")
+                        
+
+                    .col-lg-6
+                        .form-group
+                            .form-label 信息
+                            textarea.form-control-area(name="name",rows="10",placeholder="请输入您的留言内容")
+
+                .action
+                    button.btn.btn-primary(type="submit") 提交
+                        
+
+
+
+block bkfooter
+
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
+
+     

@@ -1,39 +1,109 @@
 header#site-header.site-header    
     .container
         .row.align-items-center   
-            .col
+            .col-auto 
                 a.logo(href="index.html")                   
-                    img#logo(src="img/logo.png", alt="璞斐设计")
-                
+                    img#logo(src="img/logo.png", alt="WeGo")
+            .col               
+                ul.mainav  
+                    li
+                        a(href="index.html") Home
+                    li.hasnav
+                        a(href="about.html") About us
+                        ul.subnav                            
+                            li
+                                a(href="about.html") WEGO Group
+                            li
+                                a(href="quality.html") Our History
+                            li
+                                a(href="honor.html") Global Market
+                    
+                    li.hasnav
+                        a(href="clinical.html") Solutions
+                        ul.subnav                           
+                            li
+                                a(href="clinical.html") Cardiovascular
+                            li
+                                a(href="medical.html") Neurovascular
+                            li
+                                a(href="medical.html") Peripheral vascular  
+                    
+                    li.hasnav
+                        a(href="products.html") News &amp; Events
+                        ul.subnav
+                            
+                            li
+                                a(href="products.html") Company News
+                            li
+                                a(href="products.html") Marketing Events
+                            li
+                                a(href="products.html") 
+                    
+                    li.hasnav
+                        a(href="contact.html") Contact
+                        ul.subnav                        
+                            li
+                                a(href="contact.html") WEGO Shenzhen   
                     
                 
-            .col-auto                
+            .col-auto
+                //- .ql.search
+                //-     a(href="search.html") 
+                //-         i.iconfont.icon-search-b
+             
                 .ql.lang
-                    a(href="#") 中
-                    | |
-                    a(href="#") EN
+                    a.active(href="#") CN             
+                    a(href="#") En
+                   
                         
-        .mobilemenu
-            .menu-toggle
-                .one
-                .two
-              
+            .col-auto.mobilemenu
+                .menu-toggle
+                    .one
+                    .two
+                    .three
 
 
     div#overmenu.menu-over
         ul.mobilenav
-            li.active
-                a(href="index.html") 主页 HOME
-            li 
-                a(href="cases.html") 璞斐案例 CASE
             li
-                a(href="about.html") 关于璞斐 ABOUT
-            li
-                a(href="clients.html") 璞斐客户 PARTNER                   
-            li
-                a(href="contact.html") 联系我们 CONTACT      
+                a(href="index.html") Home
+            li.hasnav
+                a(href="about.html") About us
+                ul.subnav                            
+                    li
+                        a(href="about.html") WEGO Group
+                    li
+                        a(href="quality.html") Our History
+                    li
+                        a(href="honor.html") Global Market
+            
+            li.hasnav
+                a(href="clinical.html") Solutions
+                ul.subnav                           
+                    li
+                        a(href="clinical.html") Cardiovascular
+                    li
+                        a(href="medical.html") Neurovascular
+                    li
+                        a(href="medical.html") Peripheral vascular  
+            
+            li.hasnav
+                a(href="products.html") News &amp; Events
+                ul.subnav
+                    
+                    li
+                        a(href="products.html") Company News
+                    li
+                        a(href="products.html") Marketing Events
+                 
+            
+            li.hasnav
+                a(href="contact.html") Contact
+                ul.subnav                        
+                    li
+                        a(href="contact.html") WEGO Shenzhen   
+            
 
-     
-        p.copyright Copyright &copy; 2020 深圳璞斐设计有限公司 All rights reserved.
+       
           
     

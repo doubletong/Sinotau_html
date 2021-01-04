@@ -1,55 +1,49 @@
 extends includes/layout.pug
 
 block title
-    | 联系我们
+    | 联系方式
 
 block bkheader
    
 
 block content               
+    .banner.banner-clinical(style="background-image:url(img/banners/contact.jpg)")
+        .container-fluid
+            .title-section     
+                h1.text36.wow.fadeInUp 联系方式
 
-    .page.page-contact.pt-media-7.pb-media-5
-        .container         
-            .row
-                .col-md
-                    .title-section.mb-media-7
-                        h2.text70.wow.fadeInUp CONTACT
-                            br 
-                            | US
-                            span .
-                        h3.text28.wow.fadeInUp 联系璞斐
-                    .contact
+    .page.page-contact
+        section.s1            
+            img(src="img/contact_01.jpg", alt="")
+            .txt-container
+                .container    
+                    .txt
+                        h3.text32.company 广东博迈医疗器械有限公司     
+                    
                         ul.wow.fadeInUp              
-                            li 地址：广东省深圳市南山区·TCL国际E城
-                            li 微信号：profidesign
-                            li E-mail：profidesign@profidesign.net
+                            li 地址：东莞松山湖高新技术产业开发区工业北路中小科技企业创业园第15栋
+                            li 电话：+ 86（769）2289 2018
+                            li 邮箱：sales@brosmed.com
+                            li 邮编：523808
+                            li 传真：+ 86（769）2289 2016
 
-             
-            
-                .col-md-auto                    
-                    .logo.wow.fadeInUp.mb-media-8
-                        img(src="img/about_01.png", alt="璞斐设计")
+        section.s2
+            img(src="img/contact_02.jpg", alt="")
+            .txt-container
+                .container    
+                    .txt
+                        h3.text32.company BrosMed Medical B.V.（荷兰分公司）
+                    
+                        ul.wow.fadeInUp              
+                            li 地址：Mgr. Buckxstraat 8,6134 AP Sittard The Netherlands
+                            li 电话：+ 31 850 140 901
+                            li 邮箱：cs@brosmed.com
 
-                    .row.qr.no-gutters.wow.fadeInUp
-                        .col
-                            .pic.wow.fadeInUp
-                                img(src="img/qrcode.png", alt="公众号")
-                            p 公众号
-                        .col
-                            .pic.wow.fadeInUp
-                                img(src="img/qrcode1.png", alt="官方微信")
-                            p 官方微信
-                           
-
+                    
 block bkfooter
 
-
    
-    
     script.
-       
-
-
         $(function () {
         
   

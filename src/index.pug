@@ -5,206 +5,238 @@ block title
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+   
 block content  
 
-    .page-home  
+    .page-home   
         section.s1
             .swiper-container.home-sliders
                 .swiper-wrapper
                     .swiper-slide
-                        img(src="img/banners/slider01.jpg", alt="")
+                        picture
+                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            img(src="img/banners/slider_01.jpg", alt="")                   
+                        
                     .swiper-slide
-                        img(src="img/banners/slider01.jpg", alt="")
+                        picture
+                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            img(src="img/banners/slider_01.jpg", alt="")    
                     .swiper-slide
-                        img(src="img/banners/slider01.jpg", alt="")
-                .swiper-pagination
+                        picture
+                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            img(src="img/banners/slider_01.jpg", alt="")    
 
-           
-        section.s2
-            .container
-                .row.align-items-center.mb-media-5
-                    .col
-                        .title-section.pt-media-5
-                            h2.text70.wow.fadeInUp PROFI 
-                                br 
-                                | DESIGN
-                                span .
-                            h3.text28.wow.fadeInUp 璞斐设计
-                    .col-auto
-                        a.more.wow.fadeInUp(href="about.html")
-                            i.iconfont.icon-next
+                .swiper-pagination              
+                .swiper-next
+                    i.iconfont.icon-next
+                .swiper-prev
+                    i.iconfont.icon-prev
 
-                .txt
-                    p.wow.fadeInUp 璞斐专注于视觉整合设计，始终追求以创意为核心，以设计的专业度为根本，以感悟、科学、超越为精神向导，立足前海自贸区，以成为国际一流的专业设计机构为终极目标。
-                    p.wow.fadeInUp 璞斐设计经过科学定位，专注视觉及空间设计，包括企业形象设计、品牌策划设计、品牌空间设计、展览展示空间设计、包装设计、商业设计、广告创意设计、商业摄影、影视拍摄、产品形象推广、产品发布会及品牌活动策划等。我们针对品牌形象塑造和推广项目，成立专门的项目小组,为客户提供专业策化、创意设计服务，有助于品牌形象传播的及时性、延续性；以高品质服务，帮助客户建立独树一帜的市场形象，创造出良好的价值和绩效。
-                    
+
+            //- a.scrolldown(href="#s2")
+            //-     span                
+      
                 
-        section.s3.pt-media-7.mb-media-5
-            .container
-                .row.align-items-end
-                    .col-lg
-                        .title-section
-                            h2.text70.wow.fadeInUp PROJECT
-                                br 
-                                | CASE
-                                span .
-                            h3.text28.wow.fadeInUp 璞斐案例
-              
-                    .col-lg-auto
-                        ul.categories.wow.fadeInUp
-                            li
-                                a.active(href="#") ALL
-                            li
-                                a(href="#") 品牌设计
-                            li
-                                a(href="#") 品牌展示空间
-                            li
-                                a(href="#") 活动策划
-                            li
-                                a(href="#") 其他
-
-
-        section.s4.mb-media-5
-            .case-list
-                .row.no-gutters
-                    .col-lg-6
-                        a.item.first.wow.fadeInUp(href="case_detail.html") 
-                            img(src="img/cases/001.jpg", alt="")
-                            .overly
-                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
-                    .col-lg-6
-                        .row.no-gutters
-                            .col-md-6
-                                a.item.wow.fadeInUp(href="case_detail.html") 
-                                    img(src="img/cases/002.jpg", alt="")
-                                    .overly
-                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
-
-                            .col-md-6
-                                a.item.wow.fadeInUp(href="case_detail.html") 
-                                    img(src="img/cases/003.jpg", alt="")
-                                    .overly
-                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
-
-                            .col-md-6
-                                a.item.wow.fadeInUp(href="case_detail.html") 
-                                    img(src="img/cases/004.jpg", alt="")
-                                    .overly
-                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
-
-                            .col-md-6
-                                a.item.wow.fadeInUp(href="case_detail.html") 
-                                    img(src="img/cases/005.jpg", alt="")
-                                    .overly
-                                        h3 前海十周年原创音乐征歌活动整体视觉形象设计
-                            
-
-                .row.no-gutters                    
-                    .col-md-4.col-lg-3
-                        a.item.wow.fadeInUp(href="case_detail.html") 
-                            img(src="img/cases/006.jpg", alt="")
-                            .overly
-                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
-
-                    .col-md-4.col-lg-3
-                        a.item.wow.fadeInUp(href="case_detail.html") 
-                            img(src="img/cases/007.jpg", alt="")
-                            .overly
-                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
-
-                    .col-md-4.col-lg-3
-                        a.item.wow.fadeInUp(href="case_detail.html") 
-                            img(src="img/cases/008.jpg", alt="")
-                            .overly
-                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
-                                
-                    .col-md-4.col-lg-3
-                        a.item.wow.fadeInUp(href="case_detail.html") 
-                            img(src="img/cases/009.jpg", alt="")
-                            .overly
-                                h3 前海十周年原创音乐征歌活动整体视觉形象设计
+        section.s2.mb-media-5
+            img.pic(src="img/home_01.jpg", alt="")
+            .btn-play
+                i.iconfont.icon-play
+            .txt-container
+                .container
                     
-                  
+                    .row.justify-content-end
+                        .col-lg-6.col-xl-5
+                            .title-section
+                                h2.text50.wow.fadeInUp About WEGO
+                            p.wow.fadeInUp Founded in 1988, WEGO Group has become one of the leading medical solution suppliers in China with 32 years of development, WEGO owns 10 industrial groups with more than 90 subsidiaries, 2 listed companies and employees exceed 30,000 people. We have entered into 11 fields out of 15 segmented medical markets with more than 1000 varieties of products available.
+            
+            
+
+
+        section.s3.pt-media-5.mb-media-5
+            .container.mb-media-5
+                .title-section
+                    h2.text50.text-center.wow.fadeInUp Create a healthy future, Trustworthy  
+                p.text-center.wow.fadeInUp As one of the most safe and reliable suppliers of medical system solutions in the world , we have been listed as one of the top 500 enterprises of China in 2020 and we are the only medical enterprise selected in this list.
+            .container-fluid.txt-container.mb-media-5
+                .row.justify-content-center
+                    .col-md-4.col-lg   
+                        .item
+                            .pic.wow.fadeInUp
+                                img(src="img/icon-profile.png", alt="profile")
+                            .txt.wow.fadeInUp
+                                .title.text50 
+                                    span.counter 30000
+                                    sup + 
+                                p Global Employee of WEGO Group
+                    .col-md-4.col-lg   
+                        .item
+                            .pic.wow.fadeInUp
+                                img(src="img/icon-money.png", alt="money")
+                            .txt.wow.fadeInUp
+                                .title.text50 
+                                    span.counter 6.9 
+                                    small Billion USD
+                                p 2019 sales revenue of WEGO Group
+                    .col-md-4.col-lg   
+                        .item
+                            .pic.wow.fadeInUp
+                                img(src="img/icon-biulding.png", alt="biulding")
+                            .txt.wow.fadeInUp
+                                .title.text50 
+                                    span.counter 10                         
+                                p Businesses Groups under WEGO
+                    .col-md-4.col-lg   
+                        .item
+                            .pic.wow.fadeInUp
+                                img(src="img/icon-group.png", alt="group")
+                            .txt.wow.fadeInUp
+                                .title.text50 
+                                    span.counter 2,000,000                               
+                                p  medical professionals and nurses working closely with WEGO everyday
+                    .col-md-4.col-lg   
+                        .item
+                            .pic.wow.fadeInUp
+                                img(src="img/icon-love.png", alt="love")
+                            .txt.wow.fadeInUp
+                                .title.text50 
+                                    span.counter 20,000,000                          
+                                p patients in the world benefit from using WEGO products everyday
+                    
+        
+        section.s4.mb-media-5
+            .container.pt-media-5.mb-media-5
+                .title-section
+                    h2.text50.text-center.wow.fadeInUp Product center  
+                p.text-center.wow.fadeInUp   Main product directions of WEGO Intracardiac Consumables Group include:  Neurointervention,Cardiovascular intervention and peripheral intervention consumables.Interventional therapy is characterized by small trauma, simple, safe, effective, fewer complications and significantly shorter hospital stay.
+
+            .products
+                .item
+                    img(src="img/home_02.jpg", alt="Minimize the risk Maximize the outcome")
+                    .txt
+                        .container
+                            .c
+                                h3.text50.wow.fadeInUp Minimize the risk Maximize the outcome
+                                p.mb-media-3.text26.wow.fadeInUp Neurointervention
+
+                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
+                
+                .item
+                    img(src="img/home_03.jpg", alt="Guide your cardiac health with innovations")
+                    .txt
+                        .container
+                            .c.odd
+                                h3.text50.wow.fadeInUp Guide your cardiac health with innovations
+                                p.mb-media-3.text26.wow.fadeInUp Cardiovascular Interventions
+
+                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
+
+                .item
+                    img(src="img/home_04.jpg", alt="Minimize the risk Maximize the outcome")
+                    .txt
+                        .container
+                            .c
+                                h3.text50.wow.fadeInUp Restore your blood flow and health
+                                p.mb-media-3.text26.wow.fadeInUp Peripheral Interventions
+
+                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
+
+        section.s5.mb-media-5
+            .container.pt-media-5.mb-media-5
+                .title-section
+                    h2.text50.text-center.wow.fadeInUp News center
+                p.text-center.wow.fadeInUp   Taking cardiovascular intervention, neurointervention and peripheral intervention consumables as the development direction, expanding in the international market with footholding in domestic market, to become an influential company in the world and the first-class in this industry.
+
+            .swiper-container.news-sliders
+                .swiper-wrapper
+                    .swiper-slide
+                        a.item(href="news_detail.html")
+                            img(src="img/home_05.jpg", alt="news title")
+                            .txt
+                                .con
+                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
+                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
 
                         
-        section.s5.mb-media-5
-            .container
-                .row.align-items-center.mb-media-5
-                    .col
-                        .title-section.pt-media-5
-                            h2.text70.wow.fadeInUp PROFI 
-                                br 
-                                | PARTNER
-                                span .
-                            h3.text28.wow.fadeInUp 璞斐客户
-                    .col-auto
-                        a.more(href="clients.html")
-                            i.iconfont.icon-next
-                .clientlist
-                    .row
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/qh.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/hqc.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/hlha.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/sj.png", alt="前海")
+                    .swiper-slide
+                        a.item(href="news_detail.html")
+                            img(src="img/home_05.jpg", alt="news title")
+                            .txt
+                                .con
+                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
+                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
+ 
+                    .swiper-slide
+                        a.item(href="news_detail.html")
+                            img(src="img/home_05.jpg", alt="news title")
+                            .txt
+                                .con
+                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
+                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
 
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/slx.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/baal.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/sgd.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/TCL.png", alt="前海")
+                        
+                    
 
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/swax.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/hs.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/ylj.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/fsn.png", alt="前海")
-
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/push.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/ha.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/rj.png", alt="前海")
-                        .col-6.col-md-4.col-lg-3
-                            .item.wow.fadeInUp
-                                img(src="img/clients/yps.png", alt="前海")
-
+                //- .swiper-pagination    
+                .swiper-prev
+                    i.iconfont.icon-prev          
+                .swiper-next
+                    i.iconfont.icon-next
+                
 
         
+        
+        section.s6.pb-media-6
+            .container.pt-media-5.mb-media-5
+                .title-section
+                    h2.text50.text-center.wow.fadeInUp Events center
+                p.text-center.wow.fadeInUp   Taking cardiovascular intervention, neurointervention and peripheral intervention consumables as the development direction, expanding in the international market with footholding in domestic market, to become an influential company in the world and the first-class in this industry.
 
-       
+            .content.pt-media-15
+                .container-fluid
+                    .item
+                        .row.no-gutters
+                            .col-md-6.col-lg-7.col-xl-8
+                                a.pic(href="event_detail.html")
+                                    img.wow.fadeInUp(src="img/home_07.jpg",alt="")
+                            .col-md-6.col-lg-5.col-xl-4
+                                .txt-container
+                                    a.txt(href="event_detail.html")
+                                        h3.text26.wow.fadeInUp "Light of Love" spreads all over Weihai through...
+                                        p.wow.fadeInUp Light, you take for granted when you have it, and consider it nothing at all;But for those who live in a dark world, it is a luxury."Tomorrow, My eyes will see clearly...
+
+                    .item.ood
+                        .row.no-gutters
+                            .col-md-6.col-lg-7.col-xl-8.order-md-last
+                                a.pic(href="event_detail.html")
+                                    img.wow.fadeInUp(src="img/home_07.jpg",alt="")
+                            .col-md-6.col-lg-5.col-xl-4
+                                .txt-container
+                                    a.txt(href="event_detail.html")
+                                        h3.text26.wow.fadeInUp "Light of Love" spreads all over Weihai through...
+                                        p.wow.fadeInUp Light, you take for granted when you have it, and consider it nothing at all;But for those who live in a dark world, it is a luxury."Tomorrow, My eyes will see clearly...
+
+            
+    #overly.overly
+        .video-container
+            .video-header
+                #video-title.video-title 视频播放
+                a#btnClose.btnClose(href="javascript:void(0);") 
+                    i.iconfont.icon-close
+     
+            #youkuplayer.video_wrap
+                video#vid(src="", poster="", autoplay, controls)
        
             
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script(src='js/vendor/waypoints/lib/jquery.waypoints.min.js')
+    script(src='js/vendor/jquery.counterup/jquery.counterup.min.js')
+
     script.
-       
+        $('.counter').counterUp({time: 2000,});
+
         var swiper = new Swiper('.home-sliders', {
             loop:true,
              autoplay: {
@@ -213,11 +245,72 @@ block bkfooter
             },
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {              
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
             },
         });
 
-        $(function () {        
-            $('body').addClass('home-body');            
+         var swiper = new Swiper('.news-sliders', {
+            loop:true,
+            //-  autoplay: {
+            //-     delay: 4000,
+            //-     disableOnInteraction: false,
+            //- },
+            spaceBetween: 30,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            //- pagination: {
+            //-     el: '.swiper-pagination',
+            //-     clickable: true,
+            //- },
+            navigation: {              
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
         });
+
+       
+        $(function () {        
+            $('body').addClass('home-body');  
+
+            $("#btnClose").click(function(e){
+                $("#overly").fadeOut();
+            });
+            $('.btn-play').click(function(){
+                //- var videoSrc=$(this).attr('data-url');
+                //- var poster=$(this).attr('data-poster');
+                $('#overly').fadeIn(200);
+                //- $('.video_wrap video').attr('poster',poster);
+                //- $('.video_wrap video').attr('src',videoSrc);
+                $('.video_wrap video')[0].play();
+                //$("#videoshow").text(title);   
+
+            });   
+
+            //- var wh = $(window).height();
+            //- var headerH = $(".site-header").height();
+            //- var scrollTo = wh-headerH;
+
+            //- $(".scrolldown").on('click', function(e) {
+            //-     e.preventDefault();
+            //-     //- $('html, body').scrollTop(wh,800'swing');
+            //-     $('html, body').stop().animate({scrollTop:scrollTo}, 500, 'swing', function() { 
+            //-        // alert("Finished animating");
+            //-     });
+            //- });          
+        });
+
 
   

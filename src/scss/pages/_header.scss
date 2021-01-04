@@ -7,30 +7,26 @@
     height: 45px;
     transition: all .2s;   
     background-color: #fff;
-    box-shadow: 0 0 24px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     @include mq(md){
         height:60px;
     }
     @include mq(lg){
-        height: 80px;   
+        height: 70px;   
     }
     @include mq(xl){
-        height: 100px;   
+        height: 80px;   
         padding-left: 4rem;
         padding-right: 4rem;  
     }
     @include mq(xxl){
-        height: 120px;       
+        height: 100px;       
     }
-    &.scroll-header{
-        position: fixed;
-        margin-top: -120px;
-    }
-    .container{
-        position: relative;
-    }
+ 
+ 
     .container,
     .row
+
     {
         height: 100%;
     }
@@ -38,12 +34,12 @@
 
     .logo {
         display: block;
-        width:100px;    
+        width:80px;    
         @include mq(md) {
-            width: 120px;     
+            width: 100px;     
         }
         @include mq(lg) {
-            width: 130px;
+            width: 110px;
 
         }
         @include mq(xl) {
@@ -56,253 +52,369 @@
         
     }
     
-    
-    .lang{
-        margin-right: 2.5rem;
-        @include mq(md) {
-            margin-right: 3rem;
-        }
+    .mainav {
+        @include reset-list();
+        display: none;
+        padding-left: 1rem;
+       
+        text-align: center;   
         @include mq(lg) {
-            margin-right: 3.5rem;
+            display: block; 
         }
+
         @include mq(xl) {
-            margin-right: 4rem;
+            padding-left: 0; padding-left: 2rem;
         }
-        a{     
-            display: inline-block;    
-            margin: 0 .5rem;
+
+        &>li {
+            display: inline-block;         
+            position: relative;
+            padding: 0 .4rem;
+            height: 100%;
+            &>a {
+                display: block;             
+                padding: 0 .6rem;   
+                height: 100%;
+                position: relative;
+             
+                @include mq(lg){                  
+                    padding: 0 .5rem;
+                    font-size: rem(14);
+                    height: 70px;    
+                    line-height: 70px;
+
+                }
+                @include mq(xl){            
+                    padding: 0 1rem; 
+                    height: 80px;    
+                    line-height: 80px;
+                    font-size: rem(16);
+                }
+                @include mq(xxl){
+                    height: 100px;    
+                    line-height: 100px;
+                    font-size: rem(20);
+                }
+            
+                &:hover{
+                    color:$color-primary;                                    
+                }
+                &.active {
+                    color:$color-secondary;
+                    font-weight: bold;
+              
+                    &::after{
+                        content: "";
+                        background-color: $color-secondary;
+                        width: 14px;
+                        height: 2px;
+                        left: 50%;
+                        top: 2.5rem;
+                        margin-left: -7px;
+                        z-index: 10;
+                        position: absolute;
+                    }
+                }
+            }
+            .subnav{
+                position: absolute;
+                width: 154px;
+                left: 50%;
+                top: 80px;
+                z-index: 10;
+                background-color: #fff;              
+                @include reset-list();
+                margin-left: -77px;
+                border-top:5px solid #0e62b8;
+                margin-top: 10px;
+                display: none;
+                transition: all .2s;              
+                box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+      
+               
+                @include mq(xxl){
+                    top: 100px;
+                }
+                &>li{
+                    position: relative;
+                 
+                    a{
+                        display: block;
+                        padding: .8rem 1rem;
+                        line-height: 1.5;
+                
+                        text-align: center;
+                        &:hover{
+                            background-color: $color-primary;
+                            color: #fff;
+                        }
+                        &.active{
+                            background-color: $color-primary;
+                            color: #fff;
+                        }
+                    }
+                    .lastnav{
+                        @include reset-list();
+                        position: absolute;
+                        width: 150px;
+                        right: -180px;
+                        top:0;
+                        z-index: 10;
+                        background-color: #fff;
+                        opacity: 0;
+                        transition: all .2s;
+                        box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+                    }
+                    &.hasnav{
+                        &:hover{
+                            .lastnav{
+                                opacity: 1;
+                                right: -150px;
+                            }
+                        }
+                    }
+                }
+               
+            }
+            &.hasnav{
+                &:hover{
+                    .subnav{
+                        display: block;
+                        margin-top: -5px;
+                    }
+                }
+               
+            }
+
         }
-          
     }
-   
+    .ql{     
+      
+        font-size: rem(14);    
+        a{
+            width: 43px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid $color-primary;
+            line-height: 28px;  
+            text-align: center;
+            display: inline-block;
+            color:$color-primary;
+            @include mq(lg){
+                border: 1px solid #fff;
+                color:#fff;
+            }
+            &.active{
+                background-color: $color-primary;
+                color:#fff;
+                @include mq(lg){
+                    background-color: #fff;
+                    color:$color-primary;
+                }
+            }   
+
+           
+        }
+       
+    }
 
     .mobilemenu {
-        position: absolute;
-        right: 0;
-        top:50%;
-        transform: translateY(-50%);
-        z-index: 20000;
-        
+      
+        @include mq(lg){
+            display: none;
+        }
         .menu-toggle {
-            width: 57px;
+            width: 28px;
             cursor: pointer;
-            transition-duration: 0.3s;
+
             &.on {
-                transform: rotate(90deg);
                 .one {
-                    
-                    background-color: $color-secondary;
+                    transform: rotate(45deg) translate(3px, 5px);
                 }
 
                 .two {
-                 
-                    background-color: $color-secondary;
+                    opacity: 0;
                 }
 
-             
+                .three {
+                    transform: rotate(-45deg) translate(6px, -8px);
+                }
             }
         }
 
     }
 
     .one,
-    .two {
-        width: 30px;
-        height: 5px;
+    .two,
+    .three {
+        width: 100%;
+        height: 2px;
         background-color: $color-primary;
         margin: 6px auto;
-        backface-visibility: hidden;     
+        backface-visibility: hidden;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
-        @include mq(md) {
-            width: 36px;
-            height: 6px;  
-            margin: 7px auto;
-        }
-        @include mq(lg) {
-            width: 40px;
-            height: 6px; 
-        }
-        @include mq(xl) {
-            width: 50px;
-            height: 8px; 
-            margin: 8px auto;
-       
-        }
-        @include mq(xxl) {
-            width: 57px;
-            height: 10px; 
-            margin: 10px auto;
-        }
     }
 
 
     .menu-over {
         position: fixed;
-        right:  -300px;
-        top: 0;
-        width: 300px;
-        height: 100vh;      
-        background-color: $color-primary ;            
-        z-index: 1000;
-        padding-left: rem(30);
-        padding-right: rem(30);
-        color:#fff;
-        transition: all .6s;
-
+        right:  -100vw;
+        top: 45px;
+        width: 100%;
+        height: calc(110vh - 45px);      
+        background-color: #fff;
+        opacity: 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,.1);
+        z-index: -10;
+        transition:all .5s;
+        
         @include mq(md) {
-            right:  -400px;
-            width: 400px;
-            padding-left: rem(60);
-            padding-right: rem(60);
+            top: 60px;
+            height: calc(110vh - 60px);
          
         }
 
-        @include mq(lg) {
-            right:  -450px;
-            width: 450px;
-            padding-left: rem(90);
-            padding-right: rem(90);
-            
+    
+        &.showMenu{
+            right:  0;
+            opacity:1;
         }
-
-        @include mq(xl) {
-            right:  -600px;
-            width: 600px;
-           padding-left: rem(120);
-           padding-right: rem(120);
-           
-        }
-        @include mq(xxl) {
-            padding-left: rem(150);
-            padding-right: rem(150);
-            right:  -700px;
-            width: 700px;
-           
-         }
-         &.showMenu{
-             right: 0;
-         }
-
         ul.mobilenav {
-            @include reset-list();
-            @include vertical-align(); 
-            z-index: 200;
+            list-style: none;
+            margin: 0;
+            padding: 2rem 0 0 0;
+            height: 83vh;
+            overflow-y: auto;
+         
             &>li {
                 position: relative;
                 transition: all .2s;            
-            
+                border-bottom: 1px #eee solid;  
                 
                 &>a {
-                    display: inline-block;
-                    color: #fff;
+                    display: block;
+                    color: #333;
                     position: relative;
-                    font-weight: lighter;
                     padding: 1rem 1rem;
-                    @include mq(lg){
-                        font-size: rem(16);
-                    }         
-                    @include mq(xl){
-                        font-size: rem(18);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(20);
-                    }
-
+                         
                     @include hover {
-                        color: $color-secondary;
+                        color: $color-primary;
                     }
-                    &::after{
-                        content: " ";
-                        display: inline-block;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        background-color: $color-secondary;
-                        transition: all .6s;
-                        position: absolute;
-                        right: -20px;
-                        top: 1.4rem;
-                        z-index: 70;
-                        opacity: 0;
-                        @include mq(md){
-                            top: 1.6rem;
-                        }
-                        @include mq(lg){
-                            top: 1.6rem;
-                        }
-                        @include mq(xl){
-                            top: 1.7rem;
-                        }
-                        @include mq(xxl){
-                            top: 1.8rem;
-                        }
-                    }  
-                    &.clickme{
-                        &::after{
-                            transform: scale(400);
-                            opacity: 1;
-                        }
-                    }       
+                   
+
                     
                 }
                 &.active {
                     a{
-                        color: $color-secondary;  
-                        &::after{
-                            opacity: 1;
-                        }                
-                    }  
-                             
+                        color: $color-primary;                    
+                    }                    
+                   
                 }
-               
                 
 
-               
+                .subnav {
+                    @include reset-list;                  
+                    padding-left: 1rem;
+                    display: none;
+                    li {                       
+                        border-top: #eeee solid 1px ; 
+                        position: relative;
+                        a {
+                            display: block;
+                            padding: 1rem 1rem;
+                      
+                            color: #666;
+                            font-size: rem(14);
+                        }
+
+                    }
+                }
             }
             .hasnav {
                 position: relative;                   
-                i.iconfont{
-                    display: block;
+               &>a{
+                &::after{
+                    content: "";
                     position: absolute;
                     right: 1rem;
-                    top:.9rem;
-                    z-index: 10;
-                    color:#999;
-                    transition: all .2s ease-out;
+                    top: 1.7rem;
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    border:5px transparent solid;
+                    border-top-color:$color-primary;
+                    transition: all .3s;
                 }
+               }
             }
 
             .open {
-                &>i.iconfont{
-                    transform: rotate(90deg);
-                }
-            }
+                &>a{
+                    &::after{
+                        transform: rotate(180deg);
+                        top:1.2rem;
+                    }
+                   }
+              
 
-            
+            }
+           
         }
-        .copyright{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width:100%;
+
+        .minemailoa{
             text-align: center;
-            z-index: 0;
-            font-weight: lighter;
-            font-size: rem(12);
-            padding: 0 1rem;
-            @include mq(lg){
-                font-size: rem(14);  bottom: 2rem;
-            }   
+            margin-top: 1rem;
+            a {
+                border-radius: 50%;    
+                background-image: linear-gradient( -45deg, rgb(98,174,75) 0%, rgb(8,87,166) 100%);
+                text-align: center;
+                display: inline-block;
+                width: 26px;
+                height: 26px;
+                line-height: 26px;
+                color: #fff;
+                &.oa{
+                    margin-left: .8rem;
+                }
+              }
         }
-        
        
     }
 
     &.fixheader{
-        background-color: #fff;   
-        position: fixed;
-        margin-top: 0;
+        background-color: #fff;       
       
+        .mainav {
+            &>li {        
+                &>a {                   
+                    text-shadow: none;     
+                    &:hover{
+                        color:$color-primary;
+                                
+                    }               
+                }   
+    
+            }
+        }
+
+         .ql{     
+      
+       
+            a{
+            
+                border: 1px solid $color-primary;              
+                color:$color-primary;
+                &.active{
+                    background-color: $color-primary;
+                    color:#fff;
+                }   
+            }
+        
+        }
+
         .one,
         .two,
         .three {
@@ -315,17 +427,69 @@
 
 .home-body{
     .site-header{
-   
+        position: fixed;
         background-color: transparent;
         box-shadow: none; 
-   
-      
+        .topnav{           
+            li{
+              
+                a{
+                    color: #fff;
+                    text-shadow: 2px 2px 10px rgba(0,0,0,.3);
+                }
+            }
+        }
+        .mainav {         
+    
+            &>li {
+                
+                &>a {                  
+                    color: #fff;
+                    &:hover{
+                        color: $color-secondary;
+                        border-bottom-color:  $color-secondary;
+                    }
+                     &.active {                      
+                         color: #fff;
+                   
+                        
+                     }
+                }   
+    
+            }
+        }
+       
+    
+
+
         &.fixheader{
             background-color: #fff;
             box-shadow: 0 0 25px rgba(0,0,0,.15);
             
     
-            
+            .mainav {         
+    
+                &>li {
+                    
+                    &>a {                  
+                        color: #595757;
+                        &.active {                      
+                            color: $color-primary;       
+                           border-bottom-color:$color-primary ;    
+                           
+                        }
+                    }
+        
+        
+                }
+            }
+            .search{    
+                a{
+                    .iconfont{
+                        color: $color-accent;
+                    }
+                }        
+            }
             .lang{
                 a{
                     .iconfont{

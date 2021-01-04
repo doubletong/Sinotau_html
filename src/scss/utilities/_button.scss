@@ -3,28 +3,30 @@
     display: inline-block;
     border:none;
     color: #333; 
-    padding: .2rem 1.5rem 0;
-    border:1px #ddd solid;
+    padding: .2rem 1.5rem ;
+
     transition: all .3s;
         @include mq(md){
-            padding: .3rem 2rem 0;        
+            padding: .4rem 2rem ;        
         }
         @include mq(lg){
-            padding: .3rem 3rem 0;
+            padding: .6rem 3rem ;
             font-size: 1rem;
         }
         @include mq(xl){
-            padding: .3rem 3rem 0;
-            font-size: rem(20);
+            padding: .6rem 3.5rem ;
+        
         }
         @include mq(xxl){
-            padding: .3rem 4rem 0;
-            font-size: rem(24);
+            padding: .7rem 4rem ;
+          
         }
+
     &:hover{
         background-color: #fff;
         color: $color-primary;
-    }  
+    }
+
     .iconfont {
         font-size: 14px;
     }
@@ -54,10 +56,11 @@
         }
     }
     &.btn-primary{       
-        color:#999;
+        color:#fff;
+        background-color:$color-secondary;
         &:hover{
-            color: $color-secondary;
-            background-color:$color-primary;
+            color: #fff;
+            background-color: darken($color-secondary,10%);
         }
     }
     &.btn-primary-outline{
