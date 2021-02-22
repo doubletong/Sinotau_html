@@ -113,7 +113,10 @@
         position: relative;
         background-color: $color-primary;
         .pic{
-            width: 100%;
+            img{
+                width: 100%;
+            }
+            
         }
         .btn-play{
             width: 50px;
@@ -122,17 +125,18 @@
             background: #e3be93;
             color: #fff;
             position: absolute;
-            left: 67%;
-            top:1.6rem;
-           z-index: 300;
+            left: 50%;
+            top:15rem;
+            z-index: 300;
             border-radius: 50%;
             text-align: center;
+            margin-left:-25px;
             
             padding-left: .3rem;
             transition:all .25s;
             @include mq(md){
-                left: 71%;
-                top:4.8rem;
+                left: 50%;
+                top:22rem;
             }
             @include mq(lg){
                 line-height: 80px;
@@ -154,19 +158,21 @@
                 transform: scale(0.9);
             }
         }
-        .txt-container{
-           
-            @include mq(lg){
+        .txt-container{           
+         
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 z-index: 100;
                 left: 0;
                 top: 0;
-            }
+          
             .container{
                 padding-top: 1rem;
                 padding-bottom: 1rem;
+                 @include mq(md){
+                     padding-top: 3rem;
+                }
                 @include mq(lg){
                     @include vertical-align();
                 }
@@ -177,13 +183,25 @@
              
                 h2{
                     color: #fff;
+                    text-align:center;
+                    @include mq(lg){
+                      text-align:left;
+                    }
                 }
             }
             p {
-
+                font-size:12px;
                 color: #fff;
                 opacity: 0.7;
-
+                  @include mq(md){
+                    font-size:16px;
+                }
+                @include mq(lg){
+                    font-size:14px;
+                }
+                   @include mq(xl){
+                    font-size:16px;
+                }
             }
             
         }
@@ -301,7 +319,7 @@
                     transition: all .25s;
                     text-align: left;
                     &:hover{
-                        transform: scale(0.95);
+                       // transform: scale(0.95);
                     }
                     img{
                        

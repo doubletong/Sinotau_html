@@ -1,92 +1,57 @@
 .site-footer {
-    background-color: $color-primary;   
-    z-index: 100;
-    color:#fff;
-    .botnav{
-        background-color: $color-secondary;
-        padding-top: 1rem;
-        @include mq(md){
-            padding-top: 2rem;
-        }
-        @include mq(lg){
-            padding-top: 0;
-        }
-        .mainav  {
-            display: none;
-            @include reset-list();  
-            @include mq(lg){
-                display: flex;
-            }
-            &>li{
-                padding-right: 2rem;
-                &>a{                 
-                    font-size: rem(26);
-                    line-height: 24px;               
-                    color: #fff;
-                    opacity: 0.9;                  
-                }
-                .subnav{
-                    @include reset-list();
-                    li{
-                        a{                          
-                            font-size: rem(14);                            
-                            color: #fff;
-                            opacity: 0.7;                            
-                        }
-                    }
-                   
-                }
-            }
-        }
+    background-color: #222;       
+    color:#ccc;
+   
+    .item{
+        border-right: 1px #393939 solid;
+        height: 100%;
+        padding-bottom: 1.5rem;
     }
-    .qr{
-        text-align: center;
-        .pic{
-            display: block;
-            height: 120px;
-            width: 120px;
-            margin: 0 auto .2rem;      
-            background: #fff;
-            opacity: 0.3;
-
-        }
-        .title{
-            font-size: rem(14);
-            text-align: center;
-        }
-    }
-  
     .contact{
-        padding-top: 2rem;
-        @include mq(lg){
-            padding-top: 3rem;
+        padding-right: 1rem;
+        .company{
+            color: #fff;
+            font-weight: normal
         }
-        @include mq(xl){
-            padding-top: 4rem;
+    }
+    ul{
+        @include reset-list();
+        li{
+            line-height: 2.4;
         }
-        .row{
-            margin-bottom: 1rem;
-            @include mq(xl){
-                margin-bottom: 1.2rem;
+    }
+
+    .bot_nav{
+        
+        text-align: center;
+        ul  {
+            display: inline-block;
+            &>li{
+                text-align: left;
+                &>a{                 
+                   
+                    color: rgba(255,255,255,.6);
+                    &:hover{
+                        color: #fff;
+                    }           
+                }
+                
             }
-        }
-        .txt{
-            padding-left: .6rem;
         }
     }
     
     .bot{
        
-        border-top:2px rgba(255,255,255,.3) solid;
+        border-top:1px#393939 solid;
         padding-top: 1rem;
-        padding-bottom: 1rem;       
+        padding-bottom: 1rem;   
+        text-align: center;    
+        font-size: rem(12);
         @include mq(xl){
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
-        p{
-            margin-bottom: 0;            
-        }
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            font-size: rem(14);
+        }   
         a{
             color: #ccc;
             &:hover{

@@ -14,16 +14,16 @@ block content
                 .swiper-wrapper
                     .swiper-slide
                         picture
-                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            source(srcset="img/banners/banner_m@2x.jpg", media="(orientation: portrait)")
                             img(src="img/banners/slider_01.jpg", alt="")                   
                         
                     .swiper-slide
                         picture
-                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            source(srcset="img/banners/banner_m@2x.jpg", media="(orientation: portrait)")
                             img(src="img/banners/slider_01.jpg", alt="")    
                     .swiper-slide
                         picture
-                            source(srcset="img/banners/slider_01.jpg", media="(orientation: portrait)")
+                            source(srcset="img/banners/banner_m@2x.jpg", media="(orientation: portrait)")
                             img(src="img/banners/slider_01.jpg", alt="")    
 
                 .swiper-pagination              
@@ -38,7 +38,10 @@ block content
       
                 
         section.s2.mb-media-5
-            img.pic(src="img/home_01.jpg", alt="")
+            //- img.pic(src="img/home_01.jpg", alt="")
+            picture.pic
+                source(srcset="img/about_bg@2x.jpg", media="(orientation: portrait)")
+                img(src="img/home_01.jpg", alt="about")  
             .btn-play
                 i.iconfont.icon-play
             .txt-container
@@ -56,7 +59,7 @@ block content
         section.s3.pt-media-5.mb-media-5
             .container.mb-media-5
                 .title-section
-                    h2.text50.text-center.wow.fadeInUp Create a healthy future, Trustworthy  
+                    h2.text50.text-center.wow.fadeInUp Create a healthy future, trustworthy  
                 p.text-center.wow.fadeInUp As one of the most safe and reliable suppliers of medical system solutions in the world , we have been listed as one of the top 500 enterprises of China in 2020 and we are the only medical enterprise selected in this list.
             .container-fluid.txt-container.mb-media-5
                 .row.justify-content-center
@@ -93,7 +96,7 @@ block content
                             .txt.wow.fadeInUp
                                 .title.text50 
                                     span.counter 2,000,000                               
-                                p  medical professionals and nurses working closely with WEGO everyday
+                                p  Medical professionals and nurses working closely with WEGO everyday
                     .col-md-4.col-lg   
                         .item
                             .pic.wow.fadeInUp
@@ -101,14 +104,14 @@ block content
                             .txt.wow.fadeInUp
                                 .title.text50 
                                     span.counter 20,000,000                          
-                                p patients in the world benefit from using WEGO products everyday
+                                p Patients in the world benefit from using WEGO products everyday
                     
         
         section.s4.mb-media-5
             .container.pt-media-5.mb-media-5
                 .title-section
                     h2.text50.text-center.wow.fadeInUp Product center  
-                p.text-center.wow.fadeInUp   Main product directions of WEGO Intracardiac Consumables Group include:  Neurointervention,Cardiovascular intervention and peripheral intervention consumables.Interventional therapy is characterized by small trauma, simple, safe, effective, fewer complications and significantly shorter hospital stay.
+                p.text-center.wow.fadeInUp   Discover our professional products providing in multiple fields
 
             .products
                 .item
@@ -116,8 +119,8 @@ block content
                     .txt
                         .container
                             .c
-                                h3.text50.wow.fadeInUp Minimize the risk Maximize the outcome
-                                p.mb-media-3.text26.wow.fadeInUp Neurointervention
+                                h3.text50.wow.fadeInUp Neurointervention
+                                p.mb-media-3.text26.wow.fadeInUp Minimize the risk Maximize the outcome
 
                                 a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
                 
@@ -126,8 +129,8 @@ block content
                     .txt
                         .container
                             .c.odd
-                                h3.text50.wow.fadeInUp Guide your cardiac health with innovations
-                                p.mb-media-3.text26.wow.fadeInUp Cardiovascular Interventions
+                                h3.text50.wow.fadeInUp Cardiovascular Interventions
+                                p.mb-media-3.text26.wow.fadeInUp Guide your cardiac health with innovations
 
                                 a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
 
@@ -136,8 +139,8 @@ block content
                     .txt
                         .container
                             .c
-                                h3.text50.wow.fadeInUp Restore your blood flow and health
-                                p.mb-media-3.text26.wow.fadeInUp Peripheral Interventions
+                                h3.text50.wow.fadeInUp Peripheral Interventions
+                                p.mb-media-3.text26.wow.fadeInUp Restore your blood flow and health
 
                                 a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
 
@@ -145,7 +148,7 @@ block content
             .container.pt-media-5.mb-media-5
                 .title-section
                     h2.text50.text-center.wow.fadeInUp News center
-                p.text-center.wow.fadeInUp   Taking cardiovascular intervention, neurointervention and peripheral intervention consumables as the development direction, expanding in the international market with footholding in domestic market, to become an influential company in the world and the first-class in this industry.
+                p.text-center.wow.fadeInUp   Explore our news and announcements.
 
             .swiper-container.news-sliders
                 .swiper-wrapper
@@ -190,7 +193,7 @@ block content
             .container.pt-media-5.mb-media-5
                 .title-section
                     h2.text50.text-center.wow.fadeInUp Events center
-                p.text-center.wow.fadeInUp   Taking cardiovascular intervention, neurointervention and peripheral intervention consumables as the development direction, expanding in the international market with footholding in domestic market, to become an influential company in the world and the first-class in this industry.
+                p.text-center.wow.fadeInUp   Stay informed with our latest and upcoming activities
 
             .content.pt-media-15
                 .container-fluid
@@ -260,7 +263,7 @@ block bkfooter
             //-     disableOnInteraction: false,
             //- },
             spaceBetween: 30,
-            effect: 'coverflow',
+            // effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
