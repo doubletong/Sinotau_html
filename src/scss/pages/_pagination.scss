@@ -1,66 +1,65 @@
 .pagination {
-        @include reset-list();
-        padding-top: 1rem;
-        @include mq(md) {
-                padding-top: 2rem;
-        }    
-      
-        li {
-                display: inline-block;
-                margin: 0;
-
-                a {
-                        display: block;
-                        line-height: 1;
-                        padding: .2rem .5rem;
-                        color: #999;                     
-                        margin: 0 .5rem;
-                        border-radius: 19px;
-                     
-                        @include mq(md) {
-                                padding: .5rem .72rem;
-                        }  
-                          
-
-                }
-
-                &.active {
-                        a{
-                           color: $color-primary;                        
-                           
-                        }
-                }
-
-                &:hover {
-                        a{                                
-                          color: $color-primary;
-                          
-                        }
-                }
-                .prev,.next{
-                        padding: 0;
-                        width: 34px;
-                        height: 34px;
-                        border-radius: 50%;
-                        text-align: center;
-                        line-height: 32px;
-                        border:1px #c6c6c8 solid;
-                        
-                        &:hover{
-                                border:1px $color-primary solid;
-                        }
-                }
-
+    @include reset-list();
+    padding-top: 1rem;
+    @include mq(md) {
+        padding-top: 2rem;
+    }
+    li {
+        display: inline-block;
+        margin: 0;
+        a {
+            display: block;
+            line-height: 1;
+            padding: .2rem .5rem;
+            color: #999;
+            margin: 0 .5rem;
+            @include mq(md) {
+                padding: .5rem .72rem;
+            }
         }
-
+        &.active {
+            a {
+                color: $color-primary;
+            }
+        }
+        &:hover {
+            a {
+                color: $color-primary;
+            }
+        }
+        .prev,
+        .next {
+            padding: 0;
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            line-height: 32px;
+            border: 1px #c6c6c8 solid;
+            color: $color-primary;
+            border-radius: 3px;
+            .iconfont {
+                font-size: rem(20);
+            }
+            @include mq(xxl) {
+                width: 45px;
+                height: 45px;
+                line-height: 43px;
+            }
+            &:hover {
+                border: 1px $color-primary solid;
+                background-color: $color-primary;
+                color: #fff;
+            }
+        }
+    }
 }
 
-.page-link{
-        color: #999;
-        &:hover{
-            color: $color-primary;
-        }
-        .iconfont{
-              font-size: rem(14);
-        }
+.page-link {
+    color: #999;
+    &:hover {
+        color: $color-primary;
+    }
+    .iconfont {
+        font-size: rem(14);
+    }
 }

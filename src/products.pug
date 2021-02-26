@@ -1,20 +1,56 @@
 extends includes/layout.pug
 
 block title
-    | 心血管介入
+    | 产品中心
 
 block bkheader
     
 
 block content
-    .banner.banner-product.wow.fadeInUp(style="background-image:url(img/banners/product.jpg)")
-        .container-fluid
-            .title-section     
-                h1.text36.wow.fadeInUp 心血管介入
-
+    .banner.banner-about.wow.fadeInDown(style="background-image:url(img/banners/product.jpg)")
+        .container
+            .title
+                h1.wow.fadeInUp 产品中心
+                p.wow.fadeInUp 致力于为医疗专业人士提供最优化的临床方案。
        
 
-    .page.page-product
+    .page.page-products.pt-media-5.pt-media-5
+        section.s1.container 
+            h2.title.text30 主要产品
+            .brand_list 
+                .row 
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathicord.png", alt="")                            
+                            p 经外周中心静脉导管
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathisoft.png", alt="")                            
+                            p 神经外科引流产品
+
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/pupunch.png", alt="")                            
+                            p 外科引流系列
+
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathicord.png", alt="")                            
+                            p 抗菌超滑导尿管
+
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathicord.png", alt="")                            
+                            p 泪道导管
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathicord.png", alt="")                            
+                            p 经皮气管旋切组套
+                    .col-md-6.col-lg-4 
+                        a.item(href="product_1.html")
+                            img(src="img/brands/cathicord.png", alt="")                            
+                            p 一次性使用肛肠套扎器
+
         a.item(href="product_detail.html")
             .pic
                 img.wow.fadeInRight(src="img/temp/p1.png", alt="")            

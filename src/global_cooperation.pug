@@ -1,0 +1,126 @@
+extends includes/layout.pug
+
+block title
+    | 全球合作
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-about.wow.fadeInDown(style="background-image:url(img/banners/global.jpg)")
+        .container
+            .title
+                h1.wow.fadeInUp 全球合作
+                p.wow.fadeInUp 建立合作伙伴关系，改善数百万人的生活健康水平。
+              
+        
+    .page.page-global.pt-media-6
+        
+        section.s1.mb-media-7
+            
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide   
+                        .item                             
+                            img(src="img/global_1.jpg", alt="北京航空航天大学")
+                            .des 
+                                .num 01 
+                                    .count /13  
+                                | 北京航空航天大学 · 合作大学
+                    .swiper-slide   
+                        .item                             
+                            img(src="img/global_1.jpg", alt="北京航空航天大学")
+                            .des 
+                                .num 01 
+                                    .count /13  
+                                | 北京航空航天大学 · 合作大学
+                    
+                    .swiper-slide   
+                        .item                             
+                            img(src="img/global_1.jpg", alt="北京航空航天大学")
+                            .des 
+                                .num 01 
+                                    .count /13  
+                                | 北京航空航天大学 · 合作大学
+
+                    .swiper-slide   
+                        .item                             
+                            img(src="img/global_1.jpg", alt="北京航空航天大学")
+                            .des 
+                                .num 01 
+                                    .count /13  
+                                | 北京航空航天大学 · 合作大学
+
+                    .swiper-slide   
+                        .item                             
+                            img(src="img/global_1.jpg", alt="北京航空航天大学")
+                            .des 
+                                .num 01 
+                                    .count /13  
+                                | 北京航空航天大学 · 合作大学
+
+        section.s2 
+            .container.text-center.mb-media-3
+                    h3.text30.wow.fadeInUp 百多安在全球
+                    p.wow.fadeInUp 百多安已在百多安生物医学科技园建立全球研发创新总部，在北京，上海，山东济南，山东德州，美国纽约，巴西利亚，德国等各地均建立研发生及产市场基地。同时在美国亚特兰大，丹麦，意大利罗马，英国剑桥，多地设立联合培训项目中心， 形成全球化的科研创新, 营销维护及服务培训网络。
+                
+            .map 
+                img(src="img/map.png", alt="地图")
+                .dot(style="left:28.4%;top:45.5%;") 
+                    .city New York
+                .dot(style="left:51%;top:36.5%;") 
+                    .city Germany
+
+                .dot(style="left:36%;top:74%;") 
+                    .city Brazilia
+                .dot(style="left:73%;top:40.5%;") 
+                    .city 北京
+
+                .dot(style="left:73.5%;top:44%;") 
+                    .city 济南
+                .dot(style="left:72.5%;top:46%;") 
+                    .city 德州
+                .dot(style="left:74.6%;top:50%;") 
+                    .city 上海
+                            
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            centeredSlides: true,
+            loop:true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+                },
+             
+            }
+        });
+
+
+     
+
+      
+       
+
+     

@@ -4,58 +4,87 @@ header#site-header.site-header
             .col-auto 
                 a.logo(href="index.html")                   
                     img#logo(src="img/logo.png", alt="WeGo")
-            .col               
-                ul.mainav  
-                    li
-                        a(href="index.html") Home
-                    li.hasnav
-                        a(href="about.html") About us
-                        ul.subnav                            
+            .col
+                .topcol 
+                    .row 
+                        .col-lg
+                            ul.quicklink 
+                                li 
+                                    a(href="#") 自动办公
+                                li 
+                                    a(href="#") 订货系统
+                                li 
+                                    a(href="jobs.html") 社会招聘
+                                li 
+                                    a(href="campus.html") 校园招聘
+                                li 
+                                    a(href="investor.html") 投资者关系
+                        .col-lg-auto 
+                            select#lang(name="lang") 
+                                option(value="zh") 中文
+                                option(value="en") English
+
+                .row.align-items-center
+                    .col-lg
+
+                        ul.mainav  
+                            li.hasnav
+                                a(href="projects.html") 科技创新
+                                ul.sub-menu 
+                                    li
+                                        a(href="team.html") 领军人才
+                                    li
+                                        a(href="global_cooperation.html") 全球合作
+                                    li
+                                        a(href="cooperation.html") 战略合作
+                                    li
+                                        a(href="projects.html") 科研项目                 
+
+                            li.hasnav
+                                a(href="products.html") 产品中心
+                                ul.sub-menu 
+                                    li
+                                        a(href="news.html") 呼吸道护理                                      
+                                    li
+                                        a(href="quality_approval.html") 泪道引流系列 
+                                    li
+                                        a(href="supports.html") 泌尿系统疾病管理
+
+                            li.hasnav
+                                a(href="solution.html") 临床解决方案
+                                ul.sub-menu 
+                                    li
+                                        a(href="patient_care.html") 患者关爱                                 
+                                    li
+                                        a(href="college.html") 百多安学院 
+                                 
+
+                            li.hasnav
+                                a(href="about.html") 关于百多安
+                                ul.sub-menu 
+                                    li
+                                        a(href="about.html") 公司简介                                      
+                                    li
+                                        a(href="milestone.html") 里程碑 
+                                    li
+                                        a(href="honor.html") 荣誉资质
+                                    li
+                                        a(href="responsibility.html") 社会责任
+
+                                        
                             li
-                                a(href="about.html") WEGO Group
-                            li
-                                a(href="quality.html") Our History
-                            li
-                                a(href="honor.html") Global Market
-                    
-                    li.hasnav
-                        a(href="clinical.html") Solutions
-                        ul.subnav                           
-                            li
-                                a(href="clinical.html") Cardiovascular
-                            li
-                                a(href="medical.html") Neurovascular
-                            li
-                                a(href="medical.html") Peripheral vascular  
-                    
-                    li.hasnav
-                        a(href="products.html") News &amp; Events
-                        ul.subnav
+                                a(href="news.html") 媒体中心
                             
-                            li
-                                a(href="products.html") Company News
-                            li
-                                a(href="products.html") Marketing Events
-                            li
-                                a(href="products.html") 
-                    
-                    li.hasnav
-                        a(href="contact.html") Contact
-                        ul.subnav                        
-                            li
-                                a(href="contact.html") WEGO Shenzhen   
-                    
-                
-            .col-auto
-                //- .ql.search
-                //-     a(href="search.html") 
-                //-         i.iconfont.icon-search-b
-             
-                .ql.lang
-                    a.active(href="#") CN             
-                    a(href="#") En
-                   
+                             
+
+                    .col-lg-auto 
+                        a.search(href="search.html") 
+                            i.iconfont.icon-search
+                        a.contact(href="contact.html") 
+                            i.iconfont.icon-phone
                         
+                    
+          
             .col-auto.mobilemenu
                 .menu-toggle
                     .one

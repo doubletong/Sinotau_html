@@ -1,0 +1,148 @@
+.page-investor {
+    .nav {
+        padding: 1rem;
+        border: 1px #eee solid;
+        display: inline-block;
+        @include mq(xl) {
+            padding: 1.5rem;
+        }
+        .list {
+            @include reset-list();
+            li {
+                margin-bottom: 1rem;
+                @include mq(xl) {
+                    margin-bottom: 1.5rem;
+                }
+                a {
+                    font-size: rem(16);
+                    @include mq(md) {
+                        font-size: rem(18);
+                    }
+                    @include mq(lg) {
+                        font-size: rem(20);
+                    }
+                    @include mq(xl) {
+                        font-size: rem(22);
+                    }
+                    @include mq(xxl) {
+                        font-size: rem(24);
+                    }
+                }
+                &.active {
+                    border-bottom: 1px $color-primary solid;
+                    a {
+                        color: $color-primary;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .investor_list {
+        margin-bottom: 2rem;
+        .item {
+            border-bottom: 1px #ddd solid;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            &:first-child {
+                border-top: 1px #ddd solid;
+            }
+            h3 {
+                font-weight: normal;
+                margin: 0;
+                a {
+                    display: inline-block;
+                    position: relative;
+                    transition: all .2s;
+                    &::before {
+                        position: absolute;
+                        content: " ";
+                        left: 0;
+                        top: 50%;
+                        z-index: 10;
+                        transform: translateY(-50%);
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background-color: $color-primary;
+                        transition: all .2s;
+                    }
+                    .sum {
+                        display: inline-block;
+                        width: 30px;
+                    }
+                    &:hover {
+                        padding-left: 3rem;
+                        &::before {
+                            width: 22px;
+                        }
+                    }
+                }
+            }
+            .date {
+                color: #999;
+                @include mq(xxl) {
+                    font-size: rem(16);
+                }
+            }
+        }
+    }
+}
+
+.page-investor-detail {
+    .one_article {
+        @include mq(lg) {
+            padding-right: 2rem;
+        }
+        @include mq(xl) {
+            padding-right: 3rem;
+        }
+        @include mq(xxl) {
+            padding-right: 4rem;
+        }
+        .title {
+            text-align: center;
+            border-bottom: 2px #eee solid;
+            padding-bottom: 1rem;
+            color: $color-primary;
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+        .down {
+            .iconfont {
+                color: $color-primary;
+            }
+        }
+    }
+    .pagenav {
+        a {
+            max-width: 280px;
+            display: inline-block;
+            height: 36px;
+            border-radius: 18px;
+            padding: 0 1.5rem;
+            line-height: 36px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            border: $color-primary 1px solid;
+            margin: 0 .5rem 1rem;
+            @include mq(lg) {
+                margin: 0 1rem 1rem 0;
+            }
+            @include mq(xxl) {
+                height: 60px;
+                border-radius: 30px;
+                padding: 0 3rem;
+                line-height: 60px;
+                font-size: 1rem;
+            }
+            &:hover {
+                background-color: $color-primary;
+                color: #fff;
+            }
+        }
+    }
+}

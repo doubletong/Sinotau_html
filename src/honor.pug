@@ -1,53 +1,58 @@
 extends includes/layout.pug
 
 block title
-    | 企业荣誉
+    | 荣誉资质
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
-block content
-    .banner.banner-honor(style="background-image:url(img/banners/honor.jpg)")   
-        .container-fluid
-            .title-section     
-                h1.text36.wow.fadeInUp 企业荣誉
+
+block content  
+    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banners/honor.jpg)")
+        .container
+            .title
+                h1.wow.fadeInUp 荣誉资质
+              
         
 
     .page.page-honor.pt-media-5.pb-media-5    
         section.s1.container
-            .years
-                .swiper-container.gallery-thumbs
-                    .swiper-wrapper
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2020
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2019
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2018
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2017
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2016
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2015
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2014
-                        .swiper-slide
-                            .year 
-                                .txt(style="background-image:url(img/banners/honor.jpg)") 2013          
-        
-                   
-                .swiper-next
-                    i.iconfont.icon-next
-                .swiper-prev
-                    i.iconfont.icon-previous
+            .row.mb-media-3
+                .col-md-9
+                    .years
+                        .swiper-container.gallery-thumbs
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .year 
+                                        .txt 2013
+                                .swiper-slide
+                                    .year 
+                                        .txt 2014
+                                .swiper-slide
+                                    .year 
+                                        .txt 2015
+                                .swiper-slide
+                                    .year 
+                                        .txt 2016
+                                .swiper-slide
+                                    .year 
+                                        .txt 2017
+                                .swiper-slide
+                                    .year 
+                                        .txt 2018
+                                .swiper-slide
+                                    .year 
+                                        .txt 2019
+                                .swiper-slide
+                                    .year 
+                                        .txt 2020        
+                
+                .col-md-3.text-right
+                    .swiper-prev
+                        i.iconfont.icon-prev
+                    .swiper-next
+                        i.iconfont.icon-next
+                    
 
             .swiper-container.gallery-top.chronicle
                 .swiper-wrapper
@@ -128,7 +133,7 @@ block bkfooter
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
             slidesPerView: 2,
-            centeredSlides: true,
+            // centeredSlides: true,
             freeMode: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
@@ -146,15 +151,15 @@ block bkfooter
             
                 },
                 992: {
-                slidesPerView: 4,
+                slidesPerView: 5,
             
                 },
                 1200: {
-                slidesPerView: 4,
+                slidesPerView: 6,
             
                 },
                 1600: {
-                slidesPerView: 5,
+                slidesPerView: 6,
             
                 },
             }

@@ -1,43 +1,33 @@
 extends includes/layout.pug
 
 block title
-    | 联系方式
+    | 联系我们
 
 block bkheader
    
 
 block content               
-    .banner.banner-clinical(style="background-image:url(img/banners/contact.jpg)")
-        .container-fluid
-            .title-section     
-                h1.text36.wow.fadeInUp 联系方式
+    .banner1.wow.fadeInDown(style="background-image:url(img/banners/contact.jpg)")
+        .container
+            .title
+                h1.wow.fadeInUp 联系我们
 
-    .page.page-contact
-        section.s1            
-            img(src="img/contact_01.jpg", alt="")
-            .txt-container
-                .container    
+    .page.page-contact.pt-media-5.pb-media-5
+        .container
+            .row.align-items-center
+                .col-lg-6
+                    .pic
+                        img(src="img/map_1.png", alt="")
+                .col-lg-6              
                     .txt
-                        h3.text32.company 广东博迈医疗器械有限公司     
-                    
-                        ul.wow.fadeInUp              
-                            li 地址：东莞松山湖高新技术产业开发区工业北路中小科技企业创业园第15栋
-                            li 电话：+ 86（769）2289 2018
-                            li 邮箱：sales@brosmed.com
-                            li 邮编：523808
-                            li 传真：+ 86（769）2289 2016
-
-        section.s2
-            img(src="img/contact_02.jpg", alt="")
-            .txt-container
-                .container    
-                    .txt
-                        h3.text32.company BrosMed Medical B.V.（荷兰分公司）
-                    
-                        ul.wow.fadeInUp              
-                            li 地址：Mgr. Buckxstraat 8,6134 AP Sittard The Netherlands
-                            li 电话：+ 31 850 140 901
-                            li 邮箱：cs@brosmed.com
+                        address.text20.wow.fadeInUp
+                            i.iconfont.icon-map 
+                            | 德州市齐河县齐鲁高新技术开发区百多安生物科技园内    
+                        ul.clist.wow.fadeInUp
+                            li 邮箱：yancy@brandentech.com
+                            li 电话：400-888-8888                       
+                            li 联系方式（科研合作）：400-888-8888
+                            li 联系方式（市场销售）：400-888-8888        
 
                     
 block bkfooter

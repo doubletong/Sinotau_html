@@ -1,218 +1,124 @@
-.page-news {  
-    .years{   
-        position: relative; 
-        font-size: rem(18);  
-        height: 45px;
-
-        @include mq(md){
-            width: 280px;
-            height: 60px;
-            font-size: rem(24);  
-        }
-        .current_year{
-            background-color: rgb(255, 255, 255);        
-            width: 100%;
-            height: 45px;
-            border-radius: 23px;   
-            line-height: 45px;    
-            padding-left: 2rem;   
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 200;
-            @include mq(md){
-                width: 280px;
-                height: 60px;    line-height: 60px;    
-                border-radius: 30px;   
+.page-news {
+    .newslist {
+        margin-bottom: 2rem;
+        .item {
+            position: relative;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            @include mq(md) {
+                padding-top: 2rem;
+                padding-bottom: 3rem;
             }
-            &::after{
-                position: absolute;
-                right: 2rem;
-                top: 20px;
-                border:7px solid transparent;
-                border-top-color: $color-primary;
-                content:" ";
-                width: 0;
-                height: 0;
-                z-index: 300;
-                @include mq(md){
-                    top: 27px;
+            @include mq(lg) {
+                padding-top: 3rem;
+                padding-bottom: 4rem;
+            }
+            &:hover {
+                background-color: #fff;
+                box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+            }
+            h3 {
+                font-weight: normal;
+                a {
+                    color: $color-primary;
+                    &:hover {
+                        color: $color-secondary;
+                    }
                 }
             }
-        }   
-        .yearlist{
-            @include reset-list();
-            position: absolute;
-            left: 50%;
-            top: 45px;
-            z-index: 100;
-            background-color: #fff;
-            border-radius: 0 0 30px 30px;
-            overflow: hidden;
-            width: 200px;
-            margin-left: -100px;
-            box-shadow: 0 0 12px rgba(0,0,0,.05);
-            display: none;
-            @include mq(md){
-                top: 60px;
-            }
-            li{
-                border-bottom: 1px #eee solid;
-                &:last-child{
-                    border-bottom: none;
-                }
-                a{
-                    display: block;             
-                    height: 60px;
-                    text-align: center;
-                    line-height: 60px;
+            .date {
+                position: relative;
+                padding-left: rem(30);
+                &::before {
+                    position: absolute;
+                    content: " ";
+                    display: block;
+                    width: 20px;
+                    height: 1px;
+                    left: 0;
+                    top: 50%;
+                    z-index: 10;
+                    background-color: $color-primary;
                 }
             }
-        }
-        &:hover{
-            .yearlist{
-                display: block;
+            p.des {
+                color: #999;
+                @include mq(xxl) {
+                    font-size: rem(16);
+                }
+            }
+            &.odd {
+                background-color: #fff;
             }
         }
     }
-
-        .newslist{     
-         
-            .item{              
-                display: block;         
-                position: relative;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-                border-bottom: 1px #eee solid;
-               @include mq(md){
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-               }
-               @include mq(lg){
-                padding-top: 4rem;
-                padding-bottom: 4rem;
-               }
-                img{
-                    display: block;                 
-                    width: 100%;
-                    margin-bottom: 1rem;
-                    @include mq(md){
-                        margin-bottom:0 ;
-                       }
-                }
-                .txt{
-                 
-                    @include mq(lg){
-                        padding-left: 1rem;
-                    }
-                    
-                    @include mq(xl){
-                        padding-left: 2rem;
-                    }
-                    
-                    @include mq(xxl){
-                        padding-left: 3rem;
-                    }
-                    h3{
-                       color: $color-secondary
-                    }
-                    .date{
-                       color: $color-secondary;
-                        
-                    }
-                    p{
-                        color:#999;
-                        height: 52px;
-                        overflow: hidden;
-                        @include mq(md){
-                           display: none;
-                        }
-                        @include mq(lg){
-                            display: block;
-                            height: auto;
-                        }
-                    }
-
-                    .addressdate{
-                        @include reset-list();
-                        li{
-                            color: #999;
-                        }
-                    }
-                }                
-       
-               &:hover{   
-                   background-color: #fff;             
-                 .txt{
-                     h3{
-                         color:$color-primary;
-                     }
-                 }
-               }
-              
-            }
-        }
-    
 }
 
-.page-news-detail{
-    .container{
-    
-        .art-header{
-            h1{
-                margin-bottom: 1rem;
-                @include mq(xl){
-                    margin-bottom: 2rem;
-                }
-            }
-            .note{
-                position: relative;
-                color: #999;
-                .author{
-                    display: inline-block;
-                }
-                .val{
-                    display:inline-block;
-                    margin-right: 1rem;
-                    color:$color-primary;
-                    
-                }
-                time{  
-                    display: inline-block;                 
-                }
+.banner {
+    .news-header {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        background-image: linear-gradient(90deg, rgba(17, 21, 77, .6), transparent);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h1 {
+            font-weight: normal;
+        }
+        .note {
+            font-weight: lighter;
+        }
+    }
+}
 
-             
-            }
-        }
-        p{
-            text-align: justify;
-        }
-        .content{
+.page-news-detail {
+    .container {
+        .content {
             color: #8a9095;
             margin-bottom: 2rem;
-            @include mq(xl){
+            @include mq(xl) {
                 margin-bottom: 3rem;
             }
-            .pic{
+            p {
+                text-align: justify;
+                @include mq(xl) {
+                    font-size: 1rem;
+                }
+            }
+            .pic {
                 text-align: center;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
             }
         }
-        .pagenav{
-            text-align: center;
-            @include mq(lg){
-                text-align: right;
-            }
-            a{
+        .pagenav {
+            a {
+                max-width: 280px;
                 display: inline-block;
-                padding: .8rem 2rem;
-                background-color: #fff;
+                height: 36px;
+                border-radius: 18px;
+                padding: 0 1.5rem;
+                line-height: 36px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border: $color-primary 1px solid;
                 margin: 0 .5rem;
-                @include mq(lg){
-                    margin: 0 0 0 1rem;
+                @include mq(lg) {
+                    margin: 0 1rem 0 0;
                 }
-                &:hover{
+                @include mq(xxl) {
+                    height: 60px;
+                    border-radius: 30px;
+                    padding: 0 3rem;
+                    line-height: 60px;
+                    font-size: 1rem;
+                }
+                &:hover {
                     background-color: $color-primary;
-                    color:#fff;
+                    color: #fff;
                 }
             }
         }

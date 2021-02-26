@@ -1,44 +1,79 @@
 {
-  "id": "2294493",
-  "name": "威高",
+  "id": "2383712",
+  "name": "百多安",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "171393",
-      "name": "close",
-      "font_class": "close",
-      "unicode": "e616",
-      "unicode_decimal": 58902
+      "icon_id": "7631391",
+      "name": "map",
+      "font_class": "map",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
     },
     {
-      "icon_id": "7554686",
+      "icon_id": "6966190",
+      "name": "Add to download",
+      "font_class": "download",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "12428709",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "18479540",
       "name": "prev",
       "font_class": "prev",
-      "unicode": "e623",
-      "unicode_decimal": 58915
+      "unicode": "e601",
+      "unicode_decimal": 58881
     },
     {
-      "icon_id": "19055815",
+      "icon_id": "20035883",
       "name": "prev",
       "font_class": "next",
-      "unicode": "e6a5",
-      "unicode_decimal": 59045
+      "unicode": "e9bc",
+      "unicode_decimal": 59836
     },
     {
-      "icon_id": "1018303",
+      "icon_id": "6745783",
+      "name": "we-chat",
+      "font_class": "we-chat",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "8607013",
+      "name": "linkedin",
+      "font_class": "linkedin",
+      "unicode": "e9bb",
+      "unicode_decimal": 59835
+    },
+    {
+      "icon_id": "13183992",
+      "name": "phone-call-lined",
+      "font_class": "phone",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "13692335",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "16085809",
       "name": "top",
       "font_class": "top",
-      "unicode": "e648",
-      "unicode_decimal": 58952
-    },
-    {
-      "icon_id": "13738735",
-      "name": "PlaybackOutline",
-      "font_class": "play",
-      "unicode": "e6a4",
-      "unicode_decimal": 59044
+      "unicode": "e64a",
+      "unicode_decimal": 58954
     }
   ]
 }

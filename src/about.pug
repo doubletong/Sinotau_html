@@ -1,98 +1,173 @@
 extends includes/layout.pug
 
 block title
-    | 关于迈博
+    | 公司介绍
 
 block bkheader
-
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 
 block content  
     .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banners/about.jpg)")
-        .container-fluid
-            .title-section     
-                h1.text36.wow.fadeInUp 博迈是谁？
-
+        .container
+            .title
+                h1.wow.fadeInUp 公司介绍
+                p “向远而生，向心而栖。”创新医疗是我们持之以恒的动力。
     
-    .page.page-about            
-        section.s1.container-fluid.pt-media-9.pb-media-8
+    .page.page-about.pt-media-6.pb-media-6
+        section.s1.container.mb-media-5
+            .row.align-items-center
+                .col-md-6
+                    .pic.wow.fadeInleft   
+                        img(src="img/about_01.jpg", alt="科技创新 关爱健康")                    
+                .col-md-6
+                    .txt
+                        h3.text30.wow.fadeInRight 科技创新 关爱健康
+                        p.wow.fadeInRight 山东百多安医疗器械股份有限公司于2003年成立，总部坐落于山东齐鲁高新技术开发区百多安生物医学科技园，在德国Dusseldorf 建立海外欧洲基地。现有1000余名员工。建有国家地方联合工程实验室、中科院院士工作站，医用材料改性工程技术研究中心、博士后创新基地等国家和省级研发平台6个。在北京，上海，山东德州，山东济南，德国杜塞尔多夫，美国，巴西均设有研发，市场，培训中心。
+                
+                           
+        section.s2.container.mb-media-5
+            .row.align-items-center
+                .col-md-6.order-md-last
+                    .pic.wow.fadeInRight 
+                        img(src="img/about_02.jpg", alt="医疗创新 以人为本")                    
+                .col-md-6
+                    .txt
+                        h3.text30.wow.fadeInLeft 医疗创新 以人为本
+                        p.wow.fadeInLeft 百多安致力于在心血管，神经外科和肿瘤等重点领域的转化研究，已申报国际和国内发明专利130余项，发表SCI等国际学术期刊70多篇，起草国家行业标准8项， 获得国家科学技术进步奖，教育部一等奖等国家省部级奖励20余次。
+                        p.wow.fadeInLeft 公司主持十三五国家重点研发计划1项，十二五国家科技支撑计划项目1项，十一五国家科技支撑计划项目1项，国家工业强基工程1项，其他国家级项目7项。
+            
+        section.s3.mb-media-5
+            .txt
+                .container
+                    h3.text30 百多安在全球
+                    p 百多安已在百多安生物医学科技园建立全球研发创新总部，在北京，上海，山东济南，山东德州，美国纽约，巴西利亚，德国等各地均建立研发生及产市场基地。同时在美国亚特兰大，丹麦，意大利罗马，英国剑桥，多地设立联合培训项目中心， 形成全球化的科研创新, 营销维护及服务培训网络。
+                
+            .map 
+                img(src="img/map.png", alt="地图")
+                .dot(style="left:28.4%;top:45.5%;") 
+                    .city New York
+                .dot(style="left:51%;top:36.5%;") 
+                    .city Germany
+
+                .dot(style="left:36%;top:74%;") 
+                    .city Brazilia
+                .dot(style="left:73%;top:40.5%;") 
+                    .city 北京
+
+                .dot(style="left:73.5%;top:44%;") 
+                    .city 济南
+                .dot(style="left:72.5%;top:46%;") 
+                    .city 德州
+                .dot(style="left:74.6%;top:50%;") 
+                    .city 上海
+
+        section.s4.container.mb-media-5 
             .row
-                .col-lg-3
-                    .item
-                        .row.align-items-center
-                            .col-auto
-                                .icon
-                                    img(src="img/icon-time.png", alt="")
-                            .col
-                                .txt
-                                    label 成立于
-                                    .des 2012年
+                .col-lg-3 
+                    h3.title.text30 全球科研力量
 
-                    
-                .col-lg-4
-                    .item
-                        .row.align-items-center
-                            .col-auto
-                                .icon
-                                    img(src="img/icon-biulding.png", alt="")
-                            .col
-                                .txt
-                                    label 设立
-                                    .des 10+ 分子公司
-                .col-lg-5
-                    .item.last
-                        .row.align-items-center
-                            .col-auto
-                                .icon
-                                    img(src="img/icon-jian.png", alt="")
-                            .col
-                                .txt
-                                    label 专注于
-                                    .des 血管介入类高植耗材的研发创新
+                .col-lg-9 
+                    .c 
+                        p 公司国内研发团队现有中科院院士1人，国家“千人计划”领军人才1人，国家“万人计划”领军人才1人、国家级领军人才1人、泰山产业领军人才2人、国家杰出基金获得者2人，享受国务院特殊津贴1人，博士及硕士以上学历主要研发人员形成行业高层次领衔。
+                        p 百多安已和复旦大学, 西安交通大学, 北京航空航天大学，意大利罗马Catherine大学, 美国Emory 大学医学院, 美国哥伦比亚大学工程院，英国剑桥大学工程学院等多个国内外重点科研机构设置多个重点合作项目。目前在意大利罗马、美国亚特兰大等地设有临床护理培训项目，每年通过医学基金会资助我国临床护理专业人员赴欧美培训近10批。组织国际学术交流20余次。
 
+                        figure.pic 
+                            img(src="img/about_03.jpg", alt="全球科研力量") 
+        section.s5 
+            .container.mb-media-4 
+                .row
+                    .col-lg-3                 
+                        h3.title.text30 七大重点业务
+
+                    .col-lg-9 
+                        .row.t 
+                            .col-md 
+                                .txt
+                                    p 公司致力于在心血管、介入诊治、神经外科、医用高分子、麻醉耗材、眼科、外科手术耗材等七大重点领域的医疗技术开发及推广。
+                                    .note 其中40多个产品已进入全国3000家医院，出口40多个国家和地区。
+                            .col-md-auto 
+                                .swiper-prev 
+                                    .iconfont.icon-prev
+                                .swiper-next
+                                    .iconfont.icon-next
                         
-        section.s2.wow.fadeInUp         
-            .row.no-gutters.align-items-center
-                .col-lg-6
-                    .pic
-                        img(src="img/temp/about_01.jpg", alt="")
-
-                .col-lg-6
-                    .txt
-                        label.wow.fadeInUp 我们的使命
-                        h3.text32.wow.fadeInUp 科技拥抱生命                        
-                        p.wow.fadeInUp 博迈医疗集合全球的学者精英，在血管介入治疗领域不断的探索与开发，努力为全球患者提供更好的解决方案，与医生和社会一起合作，积极挽救患者生命和改善患者的生活质量，满足人们对美好生活的向往。
-                
-            .row.no-gutters.align-items-center
-                .col-lg-6.order-lg-last
-                    .pic
-                        img(src="img/temp/about_02.jpg", alt="")
-
-                .col-lg-6
-                    .txt
-                        label.wow.fadeInUp 我们的原景
-                        h3.text32.wow.fadeInUp 做中国血管介入高值耗材行业的领军者、创国际知名的平台型医疗器械跨国集团              
-                        p.wow.fadeInUp 博迈医疗集合全球的学者精英，在血管介入治疗领域不断的探索与开发，努力为全球患者提供更好的解决方案，与医生和社会一起合作，积极挽救患者生命和改善患者的生活质量，满足人们对美好生活的向往。
-                
-        section.s3.pb-media-3.pt-media-4
-            .container
-                p 作为广东省血管介入治疗及医疗器械工程技术中心，博迈医疗已拥有全球领先的球囊及介入导管类技术和多款全球独家，产品产品畅销包括中国、美国、日本、欧洲、中东、拉美在内的50多个国家和地区，以独特的创新技术、优异的性能和卓越的质量，倍受全球客户的好评和喜爱
-                .pic
-                    img(src="img/about_03.png", alt="map")    
+                          
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_04.png", alt="心血管")
+                                figcaption 心血管
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_05.png", alt="介入诊治")
+                                figcaption 介入诊治
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_06.png", alt="神经外科")
+                                figcaption 神经外科
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_07.png", alt="医用高分子")
+                                figcaption 医用高分子
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_08.png", alt="麻醉耗材")
+                                figcaption 麻醉耗材
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_09.png", alt="眼科")
+                                figcaption 眼科
+                    .swiper-slide   
+                        .item 
+                            figure 
+                                img(src="img/about_10.png", alt="外科手术耗材")
+                                figcaption 外科手术耗材
+                            
+          
 
 block bkfooter
 
-
-    script.       
-
-        $(function () {
-            $(window).scroll(function(){
-                if (40 < $(window).scrollTop()) {
-                    $(".about_bg").css({"opacity":"1"});  
-                       
-                }
-            })
-        
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+           
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                },
+                992: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                },
+                1200: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+                },
+            }
         });
 
 

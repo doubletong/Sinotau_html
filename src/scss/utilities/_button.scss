@@ -1,102 +1,93 @@
 .btn {
-  
     display: inline-block;
-    border:none;
-    color: #333; 
-    padding: .2rem 1.5rem ;
-
+    border: none;
+    color: #333;
+    padding: .2rem 1.5rem;
     transition: all .3s;
-        @include mq(md){
-            padding: .4rem 2rem ;        
-        }
-        @include mq(lg){
-            padding: .6rem 3rem ;
-            font-size: 1rem;
-        }
-        @include mq(xl){
-            padding: .6rem 3.5rem ;
-        
-        }
-        @include mq(xxl){
-            padding: .7rem 4rem ;
-          
-        }
-
-    &:hover{
+    @include mq(md) {
+        padding: .4rem 2rem;
+    }
+    @include mq(lg) {
+        padding: .6rem 3rem;
+    }
+    @include mq(xl) {
+        padding: .6rem 3.5rem;
+    }
+    @include mq(xxl) {
+        padding: .7rem 4rem;
+    }
+    &:hover {
         background-color: #fff;
         color: $color-primary;
     }
-
     .iconfont {
         font-size: 14px;
     }
-    &.btn-default{
-        background-color: #f7f7f7;color: #333; 
-        &:hover{
+    &.btn-default {
+        background-color: #f7f7f7;
+        color: #333;
+        &:hover {
             background-color: darken($color: #f7f7f7, $amount: 10);
         }
     }
-
-
-    &.btn-default-outline{
-       
-        color:#000;
-        border:#000 1px solid;
-      
-        &:hover{
+    &.btn-default-outline {
+        color: #000;
+        border: #000 1px solid;
+        &:hover {
             background-color: #000;
             color: #fff;
         }
     }
-    &.btn-yellow{
-        background-color: $color-primary;color: #333; 
-        &:hover{
+    &.btn-yellow {
+        background-color: $color-primary;
+        color: #333;
+        &:hover {
             background-color: darken($color: $color-primary, $amount: 10);
             color: #000;
         }
     }
-    &.btn-primary{       
-        color:#fff;
-        background-color:$color-secondary;
-        &:hover{
+    &.btn-primary {
+        color: #fff;
+        background-color: $color-secondary;
+        &:hover {
             color: #fff;
-            background-color: darken($color-secondary,10%);
+            background-color: darken($color-secondary, 10%);
         }
     }
-    &.btn-primary-outline{
-        border:$color-primary 1px solid;
-        color:$color-primary;
-        @include mq(lg){
-            border:$color-primary 2px solid;
+    &.btn-primary-outline {
+        border: $color-primary 1px solid;
+        color: $color-primary;
+        @include mq(lg) {
+            border: $color-primary 2px solid;
         }
-        &:hover{
+        &:hover {
             background-color: $color-primary;
             color: #fff;
         }
     }
-    &.btn-send{
-        background-color: $color-primary;color: #fff;
+    &.btn-send {
+        background-color: $color-primary;
+        color: #fff;
         padding: .8rem 2rem;
         border-radius: 0;
-        
-        &:hover{
-            background-color:darken($color-primary,10%);
+        &:hover {
+            background-color: darken($color-primary, 10%);
         }
     }
 }
 
-.btn-radius{
+.btn-radius {
     border-radius: 16px;
-    @include mq(md){
+    @include mq(md) {
         border-radius: 19px;
     }
-    @include mq(lg){
+    @include mq(lg) {
         border-radius: 22px;
     }
-    @include mq(xl){
+    @include mq(xl) {
         border-radius: 27px;
     }
-    @include mq(xxl){
+    @include mq(xxl) {
         border-radius: 30px;
     }
 }

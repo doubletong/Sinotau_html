@@ -1,4 +1,4 @@
-.about_bg{
+.about_bg {
     height: 100vh;
     background-image: url(../img/about_02.jpg);
     background-position: center center;
@@ -6,316 +6,400 @@
     background-size: cover;
     position: fixed;
     left: 0;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     z-index: -1;
     opacity: 0;
     transition: all .3s;
 }
 
-.page-about{  
-    .s1{     
-        background: #fff url(../img/logo_bg.png) no-repeat right -4rem  top 2rem;
-        background-size: auto 70%;
-        @include mq(md){
-            margin-bottom: 0;
-            background-size: auto auto;
-            background-position: right  top 2rem;
-        }
-        .item{
-            border-right: 1px #eee solid;        
-            margin-bottom: 1rem;
-            @include mq(md){
-                padding-left: 2rem;
-                margin-bottom: 1.5rem;
+.page-about {
+    .s1 {
+        .txt {
+            @include mq(xl) {
+                padding-left: 1rem;
             }
-            @include mq(lg){
-                padding-left: 0;
-            }
-            @include mq(xxl){
+            @include mq(xxl) {
                 padding-left: 2rem;
             }
-            .icon{
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: #eaedf7;
-                text-align: center;
-                padding-top: 10px;
-                @include mq(lg){
-                    width: 76px;
-                    height: 76px;
-                    padding-top: 21px;
-                }
-            }
-            .txt{
-                line-height: 1;
-                label{
-                    @include mq(xxl){
-                        font-size: rem(18);
-                    }
-                }
-                .des{
-                    font-size: rem(18);
-                  
-                    @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(28);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(36);
-                    }
-                }
-            }
-            &.last{
-                border-right: none;
-            }
-        } 
-    }
-
-
-    .s2{
-        
-        background-color: #f0f1f1;
-       .pic{
-           img{
-               width: 100%;
-           }
-        }
-        .txt{
-          
-            padding-top: 1rem;
-            margin-left: 15px;
-            margin-right: 15px;
-            padding-bottom: 1rem;
-            @include mq(md){
-                padding-bottom: 1rem;
-                margin-left: 2.5rem;
-                margin-right: 2.5rem;
-            }
-            @include mq(lg){
-                margin-left: 2rem;
-                margin-right: 2rem;
-            }
-            @include mq(xl){
-                border-top: 1px #b2c2e2 solid;
-            }
-            @include mq(xxl){
-                margin-left: 15%;
-                margin-right: 15%;
-            }
-            label{
-                color: $color-primary;
-            }
-            h3{
-                color: $color-primary;
-              
-                @include mq(lg){
-                    font-weight: lighter;
-                    margin-bottom: 3rem;
-                }
-                @include mq(xxl){
-                    margin-bottom: 3rem;
+            h3 {
+                margin-bottom: 1rem;
+                @include mq(xxl) {
+                    margin-bottom: 2rem;
                 }
             }
         }
-      
     }
-
-    .s3{
-     
-        background: linear-gradient(-45deg, #1152c4,#0a2a6f);
-        color:#fff;
-        .pic{
+    .s2 {
+        .txt {
+            @include mq(xl) {
+                padding-right: 1rem;
+            }
+            @include mq(xxl) {
+                padding-right: 2rem;
+            }
+            h3 {
+                margin-bottom: 1rem;
+                @include mq(xxl) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .s3 {
+        background-color: #3F4F98;
+        color: #fff;
+        position: relative;
+        h3 {
+            color: #fff;
+        }
+        .pic {
             text-align: center;
         }
-    }
-
-   
-}
-
-.page-quality{
-    background-color: #f6f7fa;
-    .s2{
-        .item{
-            display: block;
-            margin-bottom: 2rem;
-            img{
+        .txt {
+            @include mq(lg) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 100;
                 width: 100%;
             }
-            &:hover{
-                box-shadow: 0 0 24px rgba(0,0,0,.15);
+            .container {
+                padding-top: 2rem;
+                @include mq(xxl) {
+                    padding-top: 3rem;
+                }
+                p {
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    .s4 {
+        .c {
+            padding-top: .7rem;
+        }
+        .pic {
+            margin-top: 3rem;
+        }
+    }
+    .s5 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        @include mq(lg) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .t {
+            padding-top: .7rem;
+        }
+        .txt {
+            max-width: 600px;
+            .note {
+                background-color: rgba(255, 183, 25, .15);
+                padding: .6rem 1rem;
+            }
+        }
+        .swiper-prev,
+        .swiper-next {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 58px;
+            border: 1px #ddd solid;
+            .iconfont {
+                font-size: rem(20);
+            }
+            &:hover {
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+            }
+        }
+    }
+    .item {
+        text-align: center;
+        img {
+            margin-bottom: 1rem;
+        }
+        figcaption {
+            @include mq(xl) {
+                font-size: rem(16);
             }
         }
     }
 }
 
-
-.page-honor{
-    background-color: #f6f7fa;
-    .s1{
-        &.container{
-            max-width: 1210px !important;           
+.page-milestone {
+    background-color: $venus;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    background-image: url(../img/bird_1.png), url(../img/mo_01.png);
+    background-position: left -2rem center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto, auto 100%;
+    position: relative;
+    &::after {
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        content: " ";
+        display: block;
+        position: absolute;
+        background-color: $color-secondary;
+    }
+    .swiper-wrapper {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .item {
+        width: 9px;
+        height: 9px;
+        background-color: $color-secondary;
+        position: relative;
+        .txt {
+            position: absolute;
+            box-sizing: border-box;
+            width: 280px;
+            height: 182px;
+            border-left: 2px #2D48C4 solid;
+            background-color: #1F2D6B;
+            padding: 1rem;
+            bottom: 3rem;
+            left: 0;
+            @include mq(xl) {
+                padding: 1.5rem;
+            }
+            h3 {
+                color: #fff;
+                line-height: 1;
+                margin-bottom: .5rem;
+            }
+            p {
+                color: rgba(255, 255, 255, .4)
+            }
         }
-    
+        &.ood {
+            .txt {
+                bottom: auto;
+                top: 3rem;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        .swiper-prev,
+        .swiper-next {
+            position: absolute;
+            left: -6rem;
+            top: 50%;
+            z-index: 100;
+            width: 30px;
+            height: 30px;
+            border: 1px $color-secondary solid;
+            text-align: center;
+            line-height: 28px;
+            transform: translateY(-50%);
+            color: $color-secondary;
+            background-color: $venus;
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-primary;
+            }
+        }
+        .swiper-next {
+            left: auto;
+            right: -6rem;
+        }
+    }
+    .swiper-pagination {
+        position: absolute;
+        width: auto;
+        bottom: auto;
+        left: auto;
+        right: -7rem;
+        top: 30%;
+        z-index: 100;
+        line-height: 1;
+        color: #fff;
+        font-size: rem(24);
+        .swiper-pagination-current {
+            font-size: rem(72);
+        }
+    }
+}
+
+.page-honor {
+    .swiper-prev,
+    .swiper-next {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 58px;
+        border: 1px #ddd solid;
+        outline: none;
+        .iconfont {
+            font-size: rem(20);
+        }
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: #fff;
+        }
+    }
+    .s1 {
         .years {
             position: relative;
-            padding: 0 4rem;        
-            margin-bottom: 1.5rem;         
-            @include mq(md){
-                padding: 0 5rem;
-                margin-bottom: 3rem;
-            }
-            @include mq(lg){
-                padding: 0 7rem;
-                margin-bottom: 3rem;
-            }
-            @include mq(xl){
-                padding: 0 9rem;
-                margin-bottom: 3rem;
-            }
-            &::before {
+            &::after {
                 content: " ";
                 display: block;
-                height: 56px;
-                position: absolute;
-                left: 0;
-                top:3rem;
-                z-index: 0;
-                background-color: #fff;
+                height: 1px;
                 width: 100%;
-                border-radius: 28px;               
-            }
-         
-            .year {
-                padding:3rem 1rem;
-                .txt{
-                    text-align: center;                
-                    line-height: 56px;             
-                    color: #999;
-                    cursor: pointer;
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50%;                   
-                    box-sizing: border-box;
-                    transition: all .25s;                
-                    margin: 0 auto;
-                    background-size: 0 0;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    // @include mq(md){
-                    //     width: 56px;
-                    //     height: 56px; line-height: 56px;         
-                    //     font-size: 14px;    
-                    // }
-                }
-                
-            
-            }
-            .swiper-prev,
-            .swiper-next {
-                margin-top: -28px;
-                top: 50%;
-                background-color: #fff;
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
                 position: absolute;
-                color: $color-primary;
-                text-align: center;
-                line-height: 56px;
-              box-shadow: 0 0 24px rgba(0,0,0,.15);       
-              &:hover{
-                  background-color: $color-primary;
-                  color:#fff;
-              }         
-            }
-            .swiper-prev {
                 left: 0;
+                top: 59px;
+                z-index: 10;
+                background-color: #ddd;
             }
-            .swiper-next {
-                right: 0;
+            .swiper-wrapper {
+                padding-bottom: 10px;
             }
-            .swiper-button-disabled{
-                opacity: 1;
+            .year {
+                height: 60px;
+                line-height: 59px;
+                text-align: center;
+                color: #999;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: all .25s;
+                @include mq(xl) {
+                    font-size: rem(16);
+                }
+                @include mq(xxl) {
+                    font-size: rem(18);
+                }
             }
         }
         .swiper-slide-active {
-       
             position: relative;
             .year {
-                .txt{
-                    color: #fff;
-                    background-color: $color-primary;
-                    transform: scale(2);
-                    background-size: cover;
-                    font-size: 12px;
-                    position: relative;
-                    z-index: 10;
-                    &::after {
-                        content: " ";
-                        display: block;
-                        height: 0;
-                        width: 0;
-                        position: absolute;
-                        left: 50%;
-                        top:99%;
-                        z-index: -10;                                  
-                        border: 3px solid transparent;    
-                        margin-left: -3px;
-                        border-top-color: $color-primary;           
-                    }
+                color: $color-primary;
+                position: relative;
+                font-size: rem(20);
+                @include mq(sm) {
+                    font-size: rem(22);
                 }
-               
+                @include mq(md) {
+                    font-size: rem(24);
+                }
+                @include mq(lg) {
+                    font-size: rem(26);
+                }
+                @include mq(xl) {
+                    font-size: rem(28);
+                }
+                @include mq(xxl) {
+                    font-size: rem(30);
+                }
+                &::after {
+                    content: " ";
+                    display: block;
+                    height: 4px;
+                    width: 60px;
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    background-color: $color-primary;
+                }
             }
         }
         .chronicle {
-            .title{
-                color: $color-primary;
-                font-size: rem(20);
-                @include mq(md){
-                    font-size: rem(22);
-                }
-                @include mq(lg){
-                    font-size: rem(26); 
-                }
-                @include mq(xl){
-                    font-size: rem(30);
-                }
-                @include mq(xxl){
-                    font-size: rem(34);
-                  
-                }
-            }
             ul {
-            
                 @include reset-list();
-              
-             
-                li{
-                    background: url(../img/icon-bie.png) no-repeat left center;
-                    padding-left: 3rem;
+                li {
+                    background: url(../img/bird_2.png) no-repeat left 1rem center;
+                    padding: 1rem 1rem;
+                    font-weight: lighter;
+                    padding-left: 4rem;
                     margin-bottom: 1rem;
-                    @include mq(lg){
+                    @include mq(lg) {
+                        font-size: rem(16);
+                    }
+                    @include mq(xl) {
+                        font-size: rem(18);
+                    }
+                    @include mq(xxl) {
                         font-size: rem(20);
-                        margin-bottom: 1.5rem;
                     }
-                    @include mq(xl){
-                        font-size: rem(22);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(24);
-                    }
-                    &:hover{
+                    &:hover {
+                        background: #fff url(../img/bird_3.png) no-repeat left 1rem center;
                         color: $color-primary;
-                        background: url(../img/icon-bie-active.png) no-repeat left center;
                     }
-                
                 }
             }
         }
-        
+    }
+}
+
+.page-responsibility {
+    .s1 {
+        .pic {
+            position: relative;
+            z-index: 12;
+            &::after {
+                width: 320px;
+                height: 460px;
+                background-color: $color-primary;
+                content: " ";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                left: -2.5rem;
+                bottom: -2.5rem;
+            }
+        }
+        .txt {
+            @include mq(lg) {
+                padding-left: 1rem;
+            }
+            @include mq(xl) {
+                padding-left: 3rem;
+            }
+            @include mq(xxl) {
+                padding-left: 5rem;
+            }
+        }
+    }
+    .s2 {
+        .t {
+            padding-top: .7rem;
+        }
+        .txt {
+            max-width: 600px;
+            .note {
+                background-color: rgba(255, 183, 25, .15);
+                padding: .6rem 1rem;
+            }
+        }
+        .swiper-prev,
+        .swiper-next {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 58px;
+            border: 1px #ddd solid;
+            .iconfont {
+                font-size: rem(20);
+            }
+            &:hover {
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+            }
+        }
     }
 }

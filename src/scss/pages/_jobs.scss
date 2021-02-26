@@ -1,252 +1,136 @@
-
-.page-jobs{
-    .joblist{
-        .item{
-            border-top: 2px #e8e9ec solid;
-            .job-header{
+.page-jobs {
+    .s1 {
+        .thead {
+            border: 1px #ddd solid;
+            padding: .7rem 1rem;
+            background-color: #eee;
+            @include mq(lg) {
+                padding: .9rem 2rem;
+            }
+            h3 {
+                font-weight: normal;
+                margin: 0;
+                font-size: rem(14);
+                @include mq(xl) {
+                    font-size: rem(16);
+                }
+            }
+            .c3 {
+                text-align: right;
+            }
+        }
+        .item {
+            border: 1px #ddd solid;
+            border-top: none;
+            .job-header {
                 cursor: pointer;
                 padding: 1rem 1rem;
-                @include mq(lg){
+                opacity: .7;
+                font-size: rem(14);
+                @include mq(lg) {
+                    padding: 1.6rem 2rem;
+                }
+                @include mq(xl) {
+                    font-size: rem(16);
+                }
+                .c3 {
+                    text-align: right;
+                }
+            }
+            .job-body {
+                background-color: #fbfbfb;
+                padding: 1rem 1rem;
+                display: none;
+                @include mq(md) {
                     padding: 2rem 1rem;
                 }
-                .title{
-                    font-weight: bold;
+                article {
+                    opacity: .7;
                 }
-
-            }
-
-            
-            .iconfont{
-                font-size: rem(22);
-                display: block;
-                transition: all .3s;
-                @include mq(lg){
-                    font-size: rem(28);
+                @include mq(xl) {
+                    padding: 2rem 3rem;
                 }
-            }
-            .address{
-           
-                @include mq(lg){
-                    margin-right: 1rem;
-                }
-                @include mq(xl){
-                    margin-right: 2rem;
-                }
-                @include mq(xxl){
-                    margin-right: 3rem;
-                }
-            }
-            .job-body{
-                background-color: #eef1f9;
-                padding: 2rem 1rem;
-                display: none;
-                margin-bottom:1.5rem;
-                @include mq(xl){
-                    margin-bottom:2.5rem;
-                }
-                ol{
+                ol {
                     padding-left: 1.3rem;
-                
                 }
             }
-            &.active{
-                border-top: 2px $color-primary solid;
-                .iconfont{
-                    transform: rotate(45deg);
+            &.active {
+                .job-header {
+                    background-color: #f2f2f3;
+                    color: #333;
+                    opacity: 1;
+                    .c3 {
+                        color: $color-primary;
+                    }
                 }
-                .job-body{
+                .job-body {
                     display: block;
                 }
             }
         }
-    }
-}
-
-
-.page-overseas{
-
-    .leftcol{      
-        margin-bottom: 2rem;
-        @include mq(lg){
-            padding-right: 3rem;
-            margin-bottom: 0;
-        }
-        @include mq(xl){
-            padding-right: 5rem;
-        }
-        @include mq(xxl){
-            padding-right: 7rem;
-        }
-
-        .text24{
-            @include mq(lg){
-                font-weight: lighter;
-            }
-            &.t1{
-                font-weight: normal;
-                color: $color-primary;
+        .c2 {
+            display: none;
+            @include mq(md) {
+                display: block;
             }
         }
-
-        .footer{
-            padding-top: 1rem;
-            @include mq(lg){
-                padding-top: 2rem;
-            }
-            .btn-primary{
-                margin-bottom: 1.5rem;
-                .iconfont{
-                    margin-right: .5rem;
-                }
-                font-weight: lighter;
-                @include mq(lg){
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                }
-            }
-        }
-
-    }
-
-    .rightcol {
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 0px 56.4px 3.6px rgba(36, 84, 191, 0.1);
-        padding: 2rem 1rem 1rem;
-        margin-bottom: 2rem;
-        @include mq(md){
-            padding: 2rem 2rem;
-           
-        }
-        @include mq(lg){
-            padding: 2rem 2rem;
-            margin-bottom: 0;
-        }
-        @include mq(xl){
-            padding: 2rem 3rem;
-        }
-        @include mq(xxl){
-            padding: 2rem 5rem;
-        }
-        .title {
-            font-weight: lighter;
-        }
-        ul{
-            @include reset-list();
-            li{
-                position: relative;
-                padding-left: 3rem;
+        .job-content {
+            .item1 {
+                border-bottom: 1px #eee solid;
+                background: url(../img/zhiyin.png) no-repeat left top 1.2rem;
+                background-size: 16px auto;
+                padding-left: 1.6rem;
                 padding-top: 1rem;
                 padding-bottom: 1rem;
-                border-bottom: 1px #f1f3f4 solid;
-                &:last-child{
-                    border-bottom: none;
+                @include mq(xl) {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    background: url(../img/zhiyin.png) no-repeat left top 2.6rem;
+                    background-size: auto auto;
+                    padding-left: 2.5rem;
                 }
-                .iconfont{
-                    position: absolute;
-                    left: 0;
-                    top:1rem;
-                    z-index: 100;
-                    color:#079be9;
+                h4 {
+                    margin: 0;
+                    font-weight: normal;
+                }
+                p {
+                    margin: 0;
+                    opacity: .7;
+                }
+            }
+            .last {
+                padding: 1.6rem;
+                @include mq(xl) {
+                    padding: 2.5rem;
+                }
+                dd {
+                    margin-bottom: 1rem;
+                    a {
+                        color: $color-primary;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
-
-      }     
-    
-  
-}
-
-
-.page-campus{
-
-    .leftcol{
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 0px 56.4px 3.6px rgba(36, 84, 191, 0.1);
-        padding: 2rem 1rem 1rem;
-        margin-bottom: 2rem;
-        @include mq(md){
-            padding: 2rem 2rem;
-           
-        }
-        @include mq(lg){
-            padding: 2rem 2rem;
-            margin-bottom: 0;
-        }
-        @include mq(xl){
-            padding: 2rem 3rem;
-        }
-        @include mq(xxl){
-            padding: 2rem 5rem;
-        }
-        .title {
-            font-weight: lighter;
-        }
-        ul{
-            @include reset-list();
-            li{
-                position: relative;
-                padding-left: 2rem;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-                border-bottom: 1px #f1f3f4 solid;
-                @include mq(md){
-                    padding-left: 3rem;
-                }
-                &:last-child{
-                    border-bottom: none;
-                }
-                .iconfont{
-                    position: absolute;
-                    left: 0;
-                    top:1rem;
-                    z-index: 100;
-                    color:#079be9;
-                }
-            }
-        }
-
     }
-
-    .rightcol {
-        
-        @include mq(lg){
-            padding-left: 3rem;
-        }
-        @include mq(xl){
-            padding-left: 5rem;
-        }
-        @include mq(xxl){
-            padding-left: 7rem;
-        }
-        .text24{
-           
-            @include mq(lg){
-                font-weight: lighter;
+    .s2 {
+        .contact {
+            address {
+                color: #333;
             }
-           
-        }
-
-        .footer{
-            padding-top: 1rem;
-            @include mq(lg){
-                padding-top: 2rem;
-            }
-            .btn-primary{
-                margin-bottom: 1.5rem;
-                .iconfont{
-                    margin-right: .5rem;
-                }
-                font-weight: lighter;
-                @include mq(lg){
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                }
+            i.iconfont {
+                font-size: rem(20);
+                margin-right: .5rem;
+                color: $color-accent;
             }
         }
-
-        
-
-      }     
-    
-  
+        .con {
+            @include reset-list();
+            @include mq(xxl) {
+                font-size: 1rem;
+            }
+        }
+    }
 }
