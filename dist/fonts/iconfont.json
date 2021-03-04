@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1205454",
+      "name": "minus",
+      "font_class": "minus",
+      "unicode": "ef17",
+      "unicode_decimal": 61207
+    },
+    {
+      "icon_id": "9133149",
+      "name": "Plus",
+      "font_class": "plus",
+      "unicode": "e7f6",
+      "unicode_decimal": 59382
+    },
+    {
       "icon_id": "7631391",
       "name": "map",
       "font_class": "map",

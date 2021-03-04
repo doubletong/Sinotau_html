@@ -1,0 +1,143 @@
+extends includes/layout.pug
+
+block title
+    | Apollo™ 阿波罗
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .page.page-product-detail.pb-media-7
+        .s1.wow.fadeInUp
+            .container
+                .site_path 产品中心  /  神经外科(康舒)  /  持续腰椎引流系统
+                
+                .txt                              
+                    h1.text36.wow.fadeInUp 抗菌超滑导尿管
+                    p.des.text24.wow.fadeInUp 开创导尿新纪元
+
+        .s2
+            .tab-header
+                .container
+                    a.active(href="#", data-id="#tab01") 产品特点 
+                    a(href="#", data-id="#tab02") 产品介绍
+
+
+            #tab01.tab-body.active
+                .container    
+                    
+                    .row.mb-media-4
+                        .col-lg-6
+                            .swiper-container.product-sliders
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        img(src="img/temp/p_1.jpg", alt="")                                        
+                                    .swiper-slide
+                                        img(src="img/temp/p_1.jpg", alt="")         
+                                    .swiper-slide
+                                        img(src="img/temp/p_1.jpg", alt="")          
+
+                                .note 
+                                    .row
+                                        .col-md 
+                                            .text24 当前产品名称
+                                        .col-md-auto
+                                            .swiper-pagination              
+                                
+
+                        .col-lg-6
+                            .txt 
+                                .bx.mb-media-3
+                                    .title-section 
+                                        h3.text24 主要特点
+
+                                    ul.lis 
+                                        li 高档材料管体，性能稳定
+                                        li 超滑涂层处理，减轻黏膜刺激与患者痛苦
+                                        li 特有活性抗菌涂层，有效降低感染发生率
+                                        li 水溶性润滑涂层，减少尿盐沉淀，保护球囊稳定
+
+                                .bx
+                                    .title-section 
+                                        h3.text24 主要特点
+
+                                    .row 
+                                        .col-6 
+                                            ul.lis
+                                                li 蛛网膜下腔出血
+                                                li 交通性脑积水
+                                        .col-6 
+                                            ul.lis
+                                                li 脑脊液漏
+                                                li 颅内感染
+                    
+                    .intro.pt-media-3.pb-media-3
+                        p.text-center “康路”抗菌超滑导管为新一代专利导尿管，是临床留置导尿的更新换代产品，具体使用请参阅产品说明
+            
+            #tab02.tab-body
+                .container    
+                    h2.text30.text-center 超滑抗菌  
+                    .b1    
+                        .row.align-items-center.no-gutters
+                            .col-lg-5
+                                .t1
+                                    h3.title.text30 “康路”抗菌超滑导尿管
+                                    .text24 在导尿管的外层，由内至外依次包裹有独特的抗菌层与超滑层
+                                    p 专利号ZL2005 2 0011144.3
+                            .col-lg-7         
+                                figure.pic 
+                                    img(src="img/temp/p_2.jpg", alt="") 
+                    .b2.mb-media-3     
+                        img(src="img/temp/p_5.jpg", alt="")
+
+                    h2.text30.text-center 抗菌层-活性抗菌涂层强效持久抗菌
+                    .b3.mb-media-3
+                        figure
+                            img(src="img/temp/p_3.jpg", alt="")
+                            figcaption 在7天时，“康路”组的尿蛋白阳性和尿培养阳性远低于对照组
+
+                    h2.text30.text-center 超滑层-亲水性高聚物持久润滑
+                    .b3    
+                        figure
+                            img(src="img/temp/p_4.jpg", alt="")
+                            figcaption “康路”摩擦系数为普通导尿管的1%，且能保持尿好的持久性润滑，在37℃ 水中恒温浸泡12天摩擦系数无变化，润滑层脱落量仅为附着量的1.5%
+                    
+                
+        
+        
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.product-sliders', {
+            loop:true,
+             autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            //- navigation: {              
+            //-     nextEl: '.swiper-next',
+            //-     prevEl: '.swiper-prev',
+            //- },
+        });
+
+       
+        $(function () {
+            $('.tab-header a').click(function(e){
+                e.preventDefault();
+                var tid = $(this).attr('data-id');
+                $(this).addClass('active').siblings().removeClass('active');
+                $(tid).addClass('active').siblings().removeClass('active');
+            })
+  
+        
+        });
+      
+       
+
+     

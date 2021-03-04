@@ -13,18 +13,47 @@ block content
             .swiper-container.home-sliders
                 .swiper-wrapper
                     .swiper-slide
-                        picture
-                            source(srcset="img/banners/slider01.jpg", media="(orientation: portrait)")
-                            img(src="img/banners/slider01.jpg", alt="")                   
+                        .item
+                            picture
+                                source(srcset="img/banners/slider01.jpg", media="(orientation: portrait)")
+                                img(src="img/banners/slider01.jpg", alt="")    
+                            .txt-container 
+                                .container 
+                                    .txt
+                                        .content(style="max-width:660px;")
+                                            h2.title.text60 同心抗议 向远而生
+                                            p 为抗击新冠疫情，百多安响应国家号召，紧急转型生产医用防护用品，保障防疫物资供应。现已累计为火神山等国内外一线医疗机构捐赠百万余价值的医疗设备。目前所有防疫产品均已获得美国FDA，欧洲CE及国家出口白名单资质，继续为全球抗击疫情的医疗工作者提供全面保护。
+                                        a.view-more(href="#") 查看更多
                         
                     .swiper-slide
-                        picture
-                            source(srcset="img/banners/slider02.jpg", media="(orientation: portrait)")
-                            img(src="img/banners/slider02.jpg", alt="")    
+                        .item
+                            picture
+                                source(srcset="img/banners/slider02.jpg", media="(orientation: portrait)")
+                                img(src="img/banners/slider02.jpg", alt="")    
+                            .txt-container 
+                                .container 
+                                    .txt
+                                        .content(style="max-width:500px;")
+                                            p(style="letter-spacing: .6rem;") 心电导联多普勒彩色超声一体机
+                                            h2.title1.text60 联合引导 精准定位
+                                        
+                                        a.view-more(href="#") 查看更多
+
                     .swiper-slide
-                        picture
-                            source(srcset="img/banners/slider03.jpg", media="(orientation: portrait)")
-                            img(src="img/banners/slider03.jpg", alt="")    
+                        .item
+                            picture
+                                source(srcset="img/banners/slider03.jpg", media="(orientation: portrait)")
+                                img(src="img/banners/slider03.jpg", alt="")   
+                            .txt-container 
+                                .container 
+                                    .txt
+                                        .content(style="max-width:500px;")
+                                            p(style="letter-spacing: .6rem;") 
+                                                strong.text24 康新&reg; 
+                                                | 经外周中心静脉导管
+                                            h2.title1.text60 健康治疗  温馨陪伴
+                                            p.des 导管瓣膜导电专利搭配国家科学进步奖数字诊疗 技术，辅助医疗专业人员操作得心应手，为患者健康 保驾护航
+                                        a.view-more(href="#") 查看更多
 
                 .swiper-pagination              
                 .swiper-next
@@ -33,204 +62,154 @@ block content
                     i.iconfont.icon-prev
 
 
-            //- a.scrolldown(href="#s2")
-            //-     span                
+                  
       
                 
-        section.s2.mb-media-5
-            //- img.pic(src="img/home_01.jpg", alt="")
-            picture.pic
-                source(srcset="img/about_bg@2x.jpg", media="(orientation: portrait)")
-                img(src="img/home_01.jpg", alt="about")  
-            .btn-play
-                i.iconfont.icon-play
-            .txt-container
-                .container
-                    
-                    .row.justify-content-end
-                        .col-lg-6.col-xl-5
-                            .title-section
-                                h2.text50.wow.fadeInUp About WEGO
-                            p.wow.fadeInUp Founded in 1988, WEGO Group has become one of the leading medical solution suppliers in China with 32 years of development, WEGO owns 10 industrial groups with more than 90 subsidiaries, 2 listed companies and employees exceed 30,000 people. We have entered into 11 fields out of 15 segmented medical markets with more than 1000 varieties of products available.
+        section.s2.pt-media-7.pb-media-5(style="background-image:url(img/bird_4.png)")
+            .container 
+                .title-section-v1.text-center.mb-media-3
+                    h2.text30.wow.fadeInUp 科技创新，关爱健康
             
-            
+                .nums 
+                    .row 
+                        .col-6.col-md-3
+                            .item.wow.fadeInUp 
+                                .sum 7
+                                    small 大
+                                .des 重点领域
+                        .col-6.col-md-3
+                            .item.wow.fadeInUp 
+                                .sum 100
+                                    small +
+                                .des 产品
+                        .col-6.col-md-3
+                            .item.wow.fadeInUp 
+                                .sum 1000
+                                    small +
+                                .des 员工
+                        .col-6.col-md-3
+                            .item.wow.fadeInUp 
+                                .sum 4000
+                                    small 家
+                                .des 覆盖全国的医院
+                .note.wow.fadeInUp 涵盖7大领域：血管通路，介入诊治，神经外科 ，医用高分子，麻醉耗材，眼科，外科手术耗材
+                .intro
+                    p.wow.fadeInUp 山东百多安医疗器械股份有限公司于2003年成立，总部坐落于山东齐鲁高新技术开发区百多安生物医学科技园，主要从事生物和医疗器械产品研发、生产及销售。作为国家级高新技术企业和国
+                    p.wow.fadeInUp 家高技术产业化基地，在北京，上海，山东德州，山东济南，德国Siegen，美国，巴西均设有生产研发，市场中心，在意大利罗马、美国亚特兰大设有临床护理培训项目。作为国内医用耗材领跑者，百多安覆盖心血管领域，介入诊治，神经外科 ，医用高分子，麻醉耗材，眼科，外科手术耗材等七大业务集群，进入国内32个省市自治区4000多家医院, 出口海外40多个国家和地区。
+                    p.wow.fadeInUp 在生物医用材料改性、药物球囊控释、非对称药物涂层、可降解合金材料、干细胞定位等领域申报国家和国际专利130余项，获得授权37项；参与制订行业标准7项（其中6项已经发布实施），产业化研究处于领跑地位。公司生产的“医用硅橡胶系列导管”荣获山东省名牌产品，“百多安”商标被评为山东省著名商标。
 
 
-        section.s3.pt-media-5.mb-media-5
-            .container.mb-media-5
-                .title-section
-                    h2.text50.text-center.wow.fadeInUp Create a healthy future, trustworthy  
-                p.text-center.wow.fadeInUp As one of the most safe and reliable suppliers of medical system solutions in the world , we have been listed as one of the top 500 enterprises of China in 2020 and we are the only medical enterprise selected in this list.
-            .container-fluid.txt-container.mb-media-5
-                .row.justify-content-center
-                    .col-md-4.col-lg   
-                        .item
-                            .pic.wow.fadeInUp
-                                img(src="img/icon-profile.png", alt="profile")
-                            .txt.wow.fadeInUp
-                                .title.text50 
-                                    span.counter 30000
-                                    sup + 
-                                p Global Employee of WEGO Group
-                    .col-md-4.col-lg   
-                        .item
-                            .pic.wow.fadeInUp
-                                img(src="img/icon-money.png", alt="money")
-                            .txt.wow.fadeInUp
-                                .title.text50 
-                                    span.counter 6.9 
-                                    small Billion USD
-                                p 2019 sales revenue of WEGO Group
-                    .col-md-4.col-lg   
-                        .item
-                            .pic.wow.fadeInUp
-                                img(src="img/icon-biulding.png", alt="biulding")
-                            .txt.wow.fadeInUp
-                                .title.text50 
-                                    span.counter 10                         
-                                p Businesses Groups under WEGO
-                    .col-md-4.col-lg   
-                        .item
-                            .pic.wow.fadeInUp
-                                img(src="img/icon-group.png", alt="group")
-                            .txt.wow.fadeInUp
-                                .title.text50 
-                                    span.counter 2,000,000                               
-                                p  Medical professionals and nurses working closely with WEGO everyday
-                    .col-md-4.col-lg   
-                        .item
-                            .pic.wow.fadeInUp
-                                img(src="img/icon-love.png", alt="love")
-                            .txt.wow.fadeInUp
-                                .title.text50 
-                                    span.counter 20,000,000                          
-                                p Patients in the world benefit from using WEGO products everyday
+        section.s3(style="background-image:url(img/home_1.jpg)")
+            .container 
+                .txt-container
+                    h2.text30.text-center.wow.fadeInUp.mb-media-3 创新医疗的领导者
+                    p.wow.fadeInUp 百多安致力于在心脑血管、肿瘤、神经外科及微创治疗等领域的转化研究。已在总部百多安生物科技园投入使用超过1万平米国家级实验室及3万平米的研发中心，并于国内外50多个研究中心和重点高校建立创新战略联盟，通过产学研医结合进行高新技术产业化研究。
+                    p.wow.fadeInUp 作为国家级高新技术企业， 国家高技术产业化基地，百多安承担省部级以上重大项目30项 其中十一五，十二五，十三五重点研发计划、国家科技支撑计划、国自然重点项目、高技术产业化项目、工业强基项目等国家重大项目10项。 拥有1个国家级工程实验室和5个省级以上创新平台，形成以中国科学院院士牵头，国家千人计划、万人计划、泰山学者特聘专家领衔的创新团队。 
+                    p.wow.fadeInUp 选用：2011年上市国产第一个PICC导管，打破进口垄断填补国产空白。目前在硅胶PICC的抗断裂，瓣膜导电等性能已经处于国际领跑地位，公司和意大利罗马Catherine大学和美国Emory 大学等多个国内外大学合作，在国内率先推广第三代血管通路EDUG技术和第四代隧道PICC技术，方便了临床操作，降低了导管相关并发症。
+                    .text-center
+                        a.view-more(href="#") 查看更多
+               
                     
         
         section.s4.mb-media-5
-            .container.pt-media-5.mb-media-5
-                .title-section
-                    h2.text50.text-center.wow.fadeInUp Product center  
-                p.text-center.wow.fadeInUp   Discover our professional products providing in multiple fields
+            .container
+                .swiper-container.milestone-slider
+                    .swiper-wrapper
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year.text30 2003
+                                    p 公司注册在山东奇河经济开发区，同年3月开工建设。
 
-            .products
-                .item
-                    img(src="img/home_02.jpg", alt="Minimize the risk Maximize the outcome")
-                    .txt
-                        .container
-                            .c
-                                h3.text50.wow.fadeInUp Neurointervention
-                                p.mb-media-3.text26.wow.fadeInUp Minimize the risk Maximize the outcome
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year.text30 2004
+                                    p 公司获得第一产品注册证，产品正式投产。
 
-                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year.text30 2005
+                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year.text30 2006
+                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year.text30 2007
+                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year.text30 2008
+                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year.text30 2009
+                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year.text30 2010
+                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year.text30 2011
+                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year.text30 2012
+                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
+
+                .swiper-pagination
                 
-                .item
-                    img(src="img/home_03.jpg", alt="Guide your cardiac health with innovations")
-                    .txt
-                        .container
-                            .c.odd
-                                h3.text50.wow.fadeInUp Cardiovascular Interventions
-                                p.mb-media-3.text26.wow.fadeInUp Guide your cardiac health with innovations
-
-                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
-
-                .item
-                    img(src="img/home_04.jpg", alt="Minimize the risk Maximize the outcome")
-                    .txt
-                        .container
-                            .c
-                                h3.text50.wow.fadeInUp Peripheral Interventions
-                                p.mb-media-3.text26.wow.fadeInUp Restore your blood flow and health
-
-                                a.btn.btn-primary.btn-radius.wow.fadeInUp(href="#") More &gt;
-
-        section.s5.mb-media-5
-            .container.pt-media-5.mb-media-5
-                .title-section
-                    h2.text50.text-center.wow.fadeInUp News center
-                p.text-center.wow.fadeInUp   Explore our news and announcements.
-
-            .swiper-container.news-sliders
-                .swiper-wrapper
-                    .swiper-slide
-                        a.item(href="news_detail.html")
-                            img(src="img/home_05.jpg", alt="news title")
-                            .txt
-                                .con
-                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
-                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
-
-                        
-                    .swiper-slide
-                        a.item(href="news_detail.html")
-                            img(src="img/home_05.jpg", alt="news title")
-                            .txt
-                                .con
-                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
-                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
- 
-                    .swiper-slide
-                        a.item(href="news_detail.html")
-                            img(src="img/home_05.jpg", alt="news title")
-                            .txt
-                                .con
-                                    h3.text26 Weigao Group was awarded the title of "the sixth National Civilized Unit"
-                                    p On November 20, the National spiritual civilization construction commendation conference was held in Beijing, the conference commended the sixth national civilized city, civilized town, civilized unit, etc., Weigao Group won the "national civilized Unit" title...
-
-                        
-                    
-
-                //- .swiper-pagination    
-                .swiper-prev
-                    i.iconfont.icon-prev          
+                .swiper-prev 
+                    .iconfont.icon-prev
                 .swiper-next
-                    i.iconfont.icon-next
-                
+                    .iconfont.icon-next
+            
 
+        section.s5
+            .txt.pb-media-3
+                .container.text-center
+                    h3.text30 百多安在全球
+                    h4.text24 The Best Science Doesn’t Happen in Isolation
+                    p 百多安已在百多安生物医学科技园建立全球研发创新总部，在北京，上海，山东济南，山东德州，美国纽约，巴西利亚，德国等各地均建立研发生及产市场基地。同时在美国亚特兰大，丹麦，意大利罗马，英国剑桥，多地设立联合培训项目中心，形成全球化的科研创新, 营销维护及服务培训网络。
+
+            .map 
+                img(src="img/map.png", alt="地图")
+                .dot(style="left:28.4%;top:45.5%;") 
+                    .city New York
+                .dot(style="left:51%;top:36.5%;") 
+                    .city Germany
+
+                .dot(style="left:36%;top:74%;") 
+                    .city Brazilia
+                .dot(style="left:73%;top:40.5%;") 
+                    .city 北京
+
+                .dot(style="left:73.5%;top:44%;") 
+                    .city 济南
+                .dot(style="left:72.5%;top:46%;") 
+                    .city 德州
+                .dot(style="left:74.6%;top:50%;") 
+                    .city 上海
         
         
-        section.s6.pb-media-6
-            .container.pt-media-5.mb-media-5
-                .title-section
-                    h2.text50.text-center.wow.fadeInUp Events center
-                p.text-center.wow.fadeInUp   Stay informed with our latest and upcoming activities
-
-            .content.pt-media-15
-                .container-fluid
-                    .item
-                        .row.no-gutters
-                            .col-md-6.col-lg-7.col-xl-8
-                                a.pic(href="event_detail.html")
-                                    img.wow.fadeInUp(src="img/home_07.jpg",alt="")
-                            .col-md-6.col-lg-5.col-xl-4
-                                .txt-container
-                                    a.txt(href="event_detail.html")
-                                        h3.text26.wow.fadeInUp "Light of Love" spreads all over Weihai through...
-                                        p.wow.fadeInUp Light, you take for granted when you have it, and consider it nothing at all;But for those who live in a dark world, it is a luxury."Tomorrow, My eyes will see clearly...
-
-                    .item.ood
-                        .row.no-gutters
-                            .col-md-6.col-lg-7.col-xl-8.order-md-last
-                                a.pic(href="event_detail.html")
-                                    img.wow.fadeInUp(src="img/home_07.jpg",alt="")
-                            .col-md-6.col-lg-5.col-xl-4
-                                .txt-container
-                                    a.txt(href="event_detail.html")
-                                        h3.text26.wow.fadeInUp "Light of Love" spreads all over Weihai through...
-                                        p.wow.fadeInUp Light, you take for granted when you have it, and consider it nothing at all;But for those who live in a dark world, it is a luxury."Tomorrow, My eyes will see clearly...
-
-            
-    #overly.overly
-        .video-container
-            .video-header
-                #video-title.video-title 视频播放
-                a#btnClose.btnClose(href="javascript:void(0);") 
-                    i.iconfont.icon-close
-     
-            #youkuplayer.video_wrap
-                video#vid(src="", poster="", autoplay, controls)
-       
-            
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
@@ -256,32 +235,40 @@ block bkfooter
             },
         });
 
-         var swiper = new Swiper('.news-sliders', {
-            loop:true,
-            //-  autoplay: {
-            //-     delay: 4000,
-            //-     disableOnInteraction: false,
-            //- },
-            spaceBetween: 30,
-            // effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
+         var swiper = new Swiper('.milestone-slider', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
             },
-            //- pagination: {
-            //-     el: '.swiper-pagination',
-            //-     clickable: true,
-            //- },
-            navigation: {              
+             navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                },
+                992: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                },
+                1200: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+                },
+            }
         });
 
        
