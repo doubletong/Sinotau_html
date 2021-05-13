@@ -250,19 +250,19 @@ img {
     }
 }
 
-.text90 {
-    font-size: rem(32);
+.text80 {
+    font-size: rem(40);
     @include mq(md) {
-        font-size: rem(60);
+        font-size: rem(50);
     }
     @include mq(lg) {
-        font-size: rem(70);
+        font-size: rem(60);
     }
     @include mq(xl) {
-        font-size: rem(80);
+        font-size: rem(70);
     }
     @include mq(xxl) {
-        font-size: rem(90);
+        font-size: rem(80);
     }
 }
 

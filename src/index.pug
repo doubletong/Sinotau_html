@@ -1,306 +1,346 @@
-extends includes/layout.pug
+extends includes/layoutForHome.pug
 
 block title
     | 首页
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
-   
+    link(href='js/vendor/fullPage/fullpage.min.css', rel='stylesheet')
 block content  
-
-    .page-home   
-        section.s1
-            .swiper-container.home-sliders
-                .swiper-wrapper
-                    .swiper-slide
-                        .item
-                            picture
-                                source(srcset="img/banners/slider01.jpg", media="(orientation: portrait)")
-                                img(src="img/banners/slider01.jpg", alt="")    
-                            .txt-container 
-                                .container 
-                                    .txt
-                                        .content(style="max-width:660px;")
-                                            h2.title.text60 同心抗议 向远而生
-                                            p 为抗击新冠疫情，百多安响应国家号召，紧急转型生产医用防护用品，保障防疫物资供应。现已累计为火神山等国内外一线医疗机构捐赠百万余价值的医疗设备。目前所有防疫产品均已获得美国FDA，欧洲CE及国家出口白名单资质，继续为全球抗击疫情的医疗工作者提供全面保护。
-                                        a.view-more(href="#") 查看更多
-                        
-                    .swiper-slide
-                        .item
-                            picture
-                                source(srcset="img/banners/slider02.jpg", media="(orientation: portrait)")
-                                img(src="img/banners/slider02.jpg", alt="")    
-                            .txt-container 
-                                .container 
-                                    .txt
-                                        .content(style="max-width:500px;")
-                                            p(style="letter-spacing: .6rem;") 心电导联多普勒彩色超声一体机
-                                            h2.title1.text60 联合引导 精准定位
-                                        
-                                        a.view-more(href="#") 查看更多
-
-                    .swiper-slide
-                        .item
-                            picture
-                                source(srcset="img/banners/slider03.jpg", media="(orientation: portrait)")
-                                img(src="img/banners/slider03.jpg", alt="")   
-                            .txt-container 
-                                .container 
-                                    .txt
-                                        .content(style="max-width:500px;")
-                                            p(style="letter-spacing: .6rem;") 
-                                                strong.text24 康新&reg; 
-                                                | 经外周中心静脉导管
-                                            h2.title1.text60 健康治疗  温馨陪伴
-                                            p.des 导管瓣膜导电专利搭配国家科学进步奖数字诊疗 技术，辅助医疗专业人员操作得心应手，为患者健康 保驾护航
-                                        a.view-more(href="#") 查看更多
-
-                .swiper-pagination              
-                .swiper-next
-                    i.iconfont.icon-next
-                .swiper-prev
-                    i.iconfont.icon-prev
-
-
-                  
-      
+    #fullpage.page-home  
+        section.section.s1
+            .logo-x.willanimate(data-animate="animate__fadeIn animate__delay-4s")
+                img(src="img/logo-x-2.svg", alt="x")
+            <svg xmlns="http://www.w3.org/2000/svg"  class="xpath01 willanimate" data-animate="pathZoom animate__delay-2s") height="66vh" viewBox="0 0 769.35 728.904"><path class="path__1 willanimate" data-animate="path-animate" d="M346.262-453.256,648.734-835,501.418-1181.16h162.75L757.02-966.246,927.652-1181.16h185.887L823.109-816.949,979.484-453.256H812.953L714.945-683.437,531.5-453.256Z" transform="translate(-345.228 1181.66)"/></svg>
+            .txt-container
+                .txt
+                    .container
+                        h2.text80.willanimate(data-animate="animate__fadeInUp animate__delay-3s") 从现在起 <br/>开始数据存储革命
+                        p.text20.willanimate(data-animate="animate__fadeInUp animate__delay-4s") 拥抱IPFS&amp;Filecoin，面向全球，专注为用户提供一站式分布式数据存储服务
                 
-        section.s2.pt-media-7.pb-media-5(style="background-image:url(img/bird_4.png)")
-            .container 
-                .title-section-v1.text-center.mb-media-3
-                    h2.text30.wow.fadeInUp 科技创新，关爱健康
-            
-                .nums 
-                    .row 
-                        .col-6.col-md-3
-                            .item.wow.fadeInUp 
-                                .sum 7
-                                    small 大
-                                .des 重点领域
-                        .col-6.col-md-3
-                            .item.wow.fadeInUp 
-                                .sum 100
-                                    small +
-                                .des 产品
-                        .col-6.col-md-3
-                            .item.wow.fadeInUp 
-                                .sum 1000
-                                    small +
-                                .des 员工
-                        .col-6.col-md-3
-                            .item.wow.fadeInUp 
-                                .sum 4000
-                                    small 家
-                                .des 覆盖全国的医院
-                .note.wow.fadeInUp 涵盖7大领域：血管通路，介入诊治，神经外科 ，医用高分子，麻醉耗材，眼科，外科手术耗材
-                .intro
-                    p.wow.fadeInUp 山东百多安医疗器械股份有限公司于2003年成立，总部坐落于山东齐鲁高新技术开发区百多安生物医学科技园，主要从事生物和医疗器械产品研发、生产及销售。作为国家级高新技术企业和国
-                    p.wow.fadeInUp 家高技术产业化基地，在北京，上海，山东德州，山东济南，德国Siegen，美国，巴西均设有生产研发，市场中心，在意大利罗马、美国亚特兰大设有临床护理培训项目。作为国内医用耗材领跑者，百多安覆盖心血管领域，介入诊治，神经外科 ，医用高分子，麻醉耗材，眼科，外科手术耗材等七大业务集群，进入国内32个省市自治区4000多家医院, 出口海外40多个国家和地区。
-                    p.wow.fadeInUp 在生物医用材料改性、药物球囊控释、非对称药物涂层、可降解合金材料、干细胞定位等领域申报国家和国际专利130余项，获得授权37项；参与制订行业标准7项（其中6项已经发布实施），产业化研究处于领跑地位。公司生产的“医用硅橡胶系列导管”荣获山东省名牌产品，“百多安”商标被评为山东省著名商标。
-
-
-        section.s3(style="background-image:url(img/home_1.jpg)")
-            .container 
-                .txt-container
-                    h2.text30.text-center.wow.fadeInUp.mb-media-3 创新医疗的领导者
-                    p.wow.fadeInUp 百多安致力于在心脑血管、肿瘤、神经外科及微创治疗等领域的转化研究。已在总部百多安生物科技园投入使用超过1万平米国家级实验室及3万平米的研发中心，并于国内外50多个研究中心和重点高校建立创新战略联盟，通过产学研医结合进行高新技术产业化研究。
-                    p.wow.fadeInUp 作为国家级高新技术企业， 国家高技术产业化基地，百多安承担省部级以上重大项目30项 其中十一五，十二五，十三五重点研发计划、国家科技支撑计划、国自然重点项目、高技术产业化项目、工业强基项目等国家重大项目10项。 拥有1个国家级工程实验室和5个省级以上创新平台，形成以中国科学院院士牵头，国家千人计划、万人计划、泰山学者特聘专家领衔的创新团队。 
-                    p.wow.fadeInUp 选用：2011年上市国产第一个PICC导管，打破进口垄断填补国产空白。目前在硅胶PICC的抗断裂，瓣膜导电等性能已经处于国际领跑地位，公司和意大利罗马Catherine大学和美国Emory 大学等多个国内外大学合作，在国内率先推广第三代血管通路EDUG技术和第四代隧道PICC技术，方便了临床操作，降低了导管相关并发症。
-                    .text-center
-                        a.view-more(href="#") 查看更多
-               
+        
+        section.section.s2
+            .section-container-2.willanimate(data-animate="animate__fadeIn")
+                .mask.willanimate(data-animate="maskSlideOut animate__slow animate__delay-1s", style="-webkit-mask-image: url(img/IPFS.svg);")
                     
+            .txt-container
+                .txt
+                    .container
+                        h2.text70.willanimate(data-animate="animate__fadeInUp animate__delay-3s") 基于IPFS协议的<br/>分布式存储
+                        p.text20.willanimate(data-animate="animate__fadeInUp animate__delay-4s") 协议实验室于2014年发布分布式存储协议IPFS，主网已于2020年10月上线。现如今，在Web3.0和区块链技术的巨大浪潮中，IPFS将以破竹之势席卷整个数据存储业务。我们依托于Filecoin挖矿业务，致力探索和开拓数据存储市场。
         
-        section.s4.mb-media-5
-            .container
-                .swiper-container.milestone-slider
-                    .swiper-wrapper
-                        .swiper-slide   
-                            .item 
-                                .txt 
-                                    h3.year.text30 2003
-                                    p 公司注册在山东奇河经济开发区，同年3月开工建设。
+        section.section.s3
+            .section-container-2.willanimate(data-animate="animate__fadeIn")
+                .mask.willanimate(data-animate="maskSlideOut2 animate__slow animate__delay-1s", style="-webkit-mask-image: url(img/FILECOIN.svg);")
+                    
+            .txt-container
+                .txt
+                    .container
+                        h2.text70.willanimate(data-animate="animate__fadeInUp animate__delay-3s") 专业的Filecoin<br/>矿机集群解决方案
+                        p.text20.willanimate(data-animate="animate__fadeInUp animate__delay-4s") 协议实验室于2014年发布分布式存储协议IPFS，主网已于2020年10月上线。现如今，在Web3.0和区块链技术的巨大浪潮中，IPFS将以破竹之势席卷整个数据存储业务。我们依托于Filecoin挖矿业务，致力探索和开拓数据存储市场。
+                    
+   
+        section.section.s4
+            .section-container-2.willanimate(data-animate="animate__fadeIn")
+                .mask.willanimate(data-animate="maskSlideOut3 animate__slow animate__delay-1s", style="-webkit-mask-image: url(img/GLOBAL.svg);")
+                    
+            .txt-container
+                .txt
+                    .container
+                        h2.text70.willanimate(data-animate="animate__fadeInUp animate__delay-3s") 我们的服务覆盖全球
+                        p.text20.willanimate(data-animate="animate__fadeInUp animate__delay-4s") 我们世界一流的IDC服务商合作，让您享受到更优质更可靠的矿机托管业务。
 
-                        .swiper-slide   
-                            .item.ood 
-                                .txt 
-                                    h3.year.text30 2004
-                                    p 公司获得第一产品注册证，产品正式投产。
-
-                        .swiper-slide   
-                            .item 
-                                .txt 
-                                    h3.year.text30 2005
-                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
-
-                        .swiper-slide   
-                            .item.ood 
-                                .txt 
-                                    h3.year.text30 2006
-                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
-
-                        .swiper-slide   
-                            .item 
-                                .txt 
-                                    h3.year.text30 2007
-                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
-
-                        .swiper-slide   
-                            .item.ood 
-                                .txt 
-                                    h3.year.text30 2008
-                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
-
-                        .swiper-slide   
-                            .item 
-                                .txt 
-                                    h3.year.text30 2009
-                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
-
-                        .swiper-slide   
-                            .item.ood 
-                                .txt 
-                                    h3.year.text30 2010
-                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
-
-                        .swiper-slide   
-                            .item 
-                                .txt 
-                                    h3.year.text30 2011
-                                    p 通过自主创新立项新一代涂层可降解心脏药物支架系统和经外周中心静脉导管项目，标志企业开始进军医学高技术产品研发和产品化领域。
-
-                        .swiper-slide   
-                            .item.ood 
-                                .txt 
-                                    h3.year.text30 2012
-                                    p 通过美国FDA和日本厚生省质量体质认证，同时拥有欧盟、美国和日本三大产品体系认证。
-
-                .swiper-pagination
-                
-                .swiper-prev 
-                    .iconfont.icon-prev
-                .swiper-next
-                    .iconfont.icon-next
             
+  
+        section.section.s5
+            .section-container-2.willanimate(data-animate="animate__fadeIn")
+                .mask.willanimate(data-animate="maskSlideOut2 animate__slow animate__delay-1s", style="-webkit-mask-image: url(img/LASTING.svg);")
+                    
+            .txt-container
+                .txt
+                    .container
+                        h2.text70.willanimate(data-animate="animate__fadeInUp animate__delay-3s") 全心全意拥抱<br class="br01">Filecoin社区<br>并积极参与<br class="br01">IPFS生态建设
+                        p.text20.willanimate(data-animate="animate__fadeInUp animate__delay-4s") 我们不仅旨在于提供专业的Filecoin挖矿服务，而且会为建设更好的IPFS生态系统添砖加瓦。<br>我们将积极的加入到社区的项目中，为其提供数据存储服务，并参与孵化和加速其中具有前景的项目。
+                            
 
-        section.s5
-            .txt.pb-media-3
-                .container.text-center
-                    h3.text30 百多安在全球
-                    h4.text24 The Best Science Doesn’t Happen in Isolation
-                    p 百多安已在百多安生物医学科技园建立全球研发创新总部，在北京，上海，山东济南，山东德州，美国纽约，巴西利亚，德国等各地均建立研发生及产市场基地。同时在美国亚特兰大，丹麦，意大利罗马，英国剑桥，多地设立联合培训项目中心，形成全球化的科研创新, 营销维护及服务培训网络。
+              
+        section.section.s6(style="background-image:url(img/banners/news_home.jpg)")
+            img.bg.willanimate(data-animate="animate__fadeIn", src="img/bg_05.jpg", alt="")
+            .txt-container2 
+                .txt
+                    
+                    h2.text70.willanimate(data-animate="animate__fadeInUp") 了解我们
+                    p.text20.willanimate(data-animate="animate__fadeInUp") 拥抱IPFS&amp;Filecoin，面向全球，专注为用户提供一站式分布式数据存储服务。FileX有着完善的行业解决方案和不凡的数据中心运维经验，并致力于成为世界一流的分布式存储提供商。
+                    p.text20.willanimate(data-animate="animate__fadeInUp") FileX技术有限公司，是一家基于北美的，面向全球的数据托管公司。公司业务涉及数据存储、矿机托管等业务。团队成员拥有国际化背景，已为多家全球500强企业提供了专业有效的IT架构解决方案。
+                    .action.willanimate(data-animate="animate__fadeInUp")
+                        a.btn-zixun(href="#") 立即咨询
+                
+                p.copyright.text20.willanimate(data-animate="animate__fadeInUp") ©2021 FileX 版权所有
+            //- include includes/footerForHome.pug
 
-            .map 
-                img(src="img/map.png", alt="地图")
-                .dot(style="left:28.4%;top:45.5%;") 
-                    .city New York
-                .dot(style="left:51%;top:36.5%;") 
-                    .city Germany
-
-                .dot(style="left:36%;top:74%;") 
-                    .city Brazilia
-                .dot(style="left:73%;top:40.5%;") 
-                    .city 北京
-
-                .dot(style="left:73.5%;top:44%;") 
-                    .city 济南
-                .dot(style="left:72.5%;top:46%;") 
-                    .city 德州
-                .dot(style="left:74.6%;top:50%;") 
-                    .city 上海
-        
-        
+            
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
-    script(src='js/vendor/waypoints/lib/jquery.waypoints.min.js')
-    script(src='js/vendor/jquery.counterup/jquery.counterup.min.js')
-
+    script(src='js/vendor/fullPage/fullpage.min.js')
     script.
-        $('.counter').counterUp({time: 2000,});
+       
 
-        var swiper = new Swiper('.home-sliders', {
+        $(function () {        
+            $('body').addClass('home-body');     
+           
+
+            $('#fullpage').fullpage({
+                 //options here
+                licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
+                sectionsColor: ['#007CF8', '#000', '#000', '#000', '#000', '#000'],
+            //    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            //    menu: '#myMenu',
+                //- fadingEffect: true,
+                //- fadingEffectKey: 'YWx2YXJvdHJpZ28uY29tXzAzN1ptRmthVzVuUldabVpXTjBiNXo=',
+                scrollingSpeed: 1000,
+                afterLoad: function (origin, destination, direction) {
+                     // var loadedSection = this;
+                     // console.log(loadedSection);
+                     // console.log(destination.item);
+                    var orEls = $(origin.item).find(".willanimate");               
+                    orEls.each(function () {
+
+                        var orEffect = $(this).attr("data-animate");
+                        //var orDelay = "delay-" + $(this).attr("data-delay");
+
+                        $(this).removeClass('animate__animated').removeClass(orEffect);
+                        //- if (orDelay) {
+                        //-     $(this).removeClass(orDelay);
+                        //- }
+
+                    });
+
+                    var els = $(destination.item).find(".willanimate");
+                    els.each(function () {
+                        var effect = $(this).attr("data-animate");
+                        //var delay = "delay-" + $(this).attr("data-delay");
+
+                        $(this).addClass('animate__animated').addClass(effect);
+                        //- if (delay) {
+                        //-     $(this).addClass(delay);
+                        //- }
+
+                    });
+
+            //        $("#pass").removeClass('m' + origin.index).addClass("m" + destination.index);
+            //        $("#senum").text(destination.index + 1);
+            //        alert(destination.index);
+            //        alert(origin.index);
+                    var navnum = destination.index + 1;
+                    $(".mainav li a.active").removeClass("active");
+                    $(".mainav li:nth-of-type("+navnum+") a").addClass("active");
+
+                    //- if (destination.index == 0) {
+                    //-     var x = document.getElementById("myVideo");
+                    //-      x.play();
+                    //-     function playVid() {
+                    //-         x.play();
+                    //-     }
+
+                    //-     function pauseVid() {
+                    //-         x.pause();
+                    //-     }
+                    //- } 
+                    //- if (destination.index == 2) {
+                    //-     var x = document.getElementById("provideo");
+                    //-      x.play();
+                    //-     function playVid() {
+                    //-         x.play();
+                    //-     }
+
+                    //-     function pauseVid() {
+                    //-         x.pause();
+                    //-     }
+
+                    //- } 
+
+
+
+
+            //        setTimeout(function () {
+            //            //   $("#s" + (origin.index + 1)).addClass('second').css({ 'transition': 'all 1s' })
+            //            $("#s" + (destination.index + 1)).css({ 'transition': 'none' });
+            //            $(document).mousemove(function (event) {
+            //                var maxdeg = 7;
+            //                // $("span").text(event.pageX + ", " + event.pageY);
+            //                var x = (event.pageX - w / 2) / (w / 2) * maxdeg;
+            //                var y = (event.pageY - h / 2) / (h / 2) * maxdeg;
+
+            //                document.getElementById("s" + (destination.index + 1)).style.transform = "rotateX(" + -y + "deg) rotateY(" + x + "deg)  scale(1.4)  translateZ(-15vw)";
+
+            //                // console.log("rotateX("+ x +"deg) rotateY("+ y +"deg)");
+            //            });
+            //        }, 1000);
+
+
+               }
+            });
+            
+        });
+
+        var swiper = new Swiper('.ban-container', {
+            direction: 'vertical',
+            //effect: 'fade',
+            //effect: 'flip',
+            speed: 1000,
+            mousewheel: true,
             loop:true,
-             autoplay: {
-                delay: 4000,
+            loopedSlides: 5,
+            autoplay: {
+                delay: 3000,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
             },
-            navigation: {              
+
+            //- pagination: {
+            //-     el: '.swiper-pagination',
+            //-     clickable: true,
+            //- },
+        });
+
+        var swiper1 = new Swiper('.nav-container', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop:true,
+            //- autoplay: {
+            //-     delay: 3000,
+            //-     disableOnInteraction: false,
+            //- },
+            breakpoints: {
+                640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                },
+            },
+            navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
         });
 
-         var swiper = new Swiper('.milestone-slider', {
+
+        var swiper1 = new Swiper('.brand-container', {
             slidesPerView: 1,
-            spaceBetween: 10,
-            // init: false,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop:true,
+            //- autoplay: {
+            //-     delay: 3000,
+            //-     disableOnInteraction: false,
+            //- },
+            breakpoints: {
+                640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                },
             },
+               navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
+
+        var swiper1 = new Swiper('.newslist-container', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop:true,
+            //- autoplay: {
+            //-     delay: 3000,
+            //-     disableOnInteraction: false,
+            //- },
              navigation: {
                 nextEl: '.swiper-next',
                 prevEl: '.swiper-prev',
             },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
+
             breakpoints: {
                 640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
                 },
                 768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                },
-                992: {
-                slidesPerView: 5,
+                slidesPerView: 2,
                 spaceBetween: 40,
                 },
+                992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                },
                 1200: {
-                slidesPerView: 6,
+                slidesPerView: 3,
                 spaceBetween: 50,
                 },
             }
+
+            //- pagination: {
+            //-     el: '.swiper-pagination',
+            //-     clickable: true,
+            //- },
         });
 
-       
-        $(function () {        
-            $('body').addClass('home-body');  
+        var swiper3 = new Swiper('.nav1-container', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop:true,
+            //- autoplay: {
+            //-     delay: 3000,
+            //-     disableOnInteraction: false,
+            //- },
+            breakpoints: {
+                640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                },
+                992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                },
+                1200: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
 
-            $("#btnClose").click(function(e){
-                $("#overly").fadeOut();
-            });
-            $('.btn-play').click(function(){
-                //- var videoSrc=$(this).attr('data-url');
-                //- var poster=$(this).attr('data-poster');
-                $('#overly').fadeIn(200);
-                //- $('.video_wrap video').attr('poster',poster);
-                //- $('.video_wrap video').attr('src',videoSrc);
-                $('.video_wrap video')[0].play();
-                //$("#videoshow").text(title);   
-
-            });   
-
-            //- var wh = $(window).height();
-            //- var headerH = $(".site-header").height();
-            //- var scrollTo = wh-headerH;
-
-            //- $(".scrolldown").on('click', function(e) {
-            //-     e.preventDefault();
-            //-     //- $('html, body').scrollTop(wh,800'swing');
-            //-     $('html, body').stop().animate({scrollTop:scrollTo}, 500, 'swing', function() { 
-            //-        // alert("Finished animating");
-            //-     });
-            //- });          
+            //- pagination: {
+            //-     el: '.swiper-pagination',
+            //-     clickable: true,
+            //- },
         });
-
 
   
