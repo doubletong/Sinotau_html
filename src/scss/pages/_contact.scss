@@ -1,27 +1,194 @@
 .page-contact {
-    .pic {
-        img {
-            width: 100%;
-        }
+    position: relative;
+
+    @include mq(xl){
+        padding-top: 5.6rem;
     }
-    .txt {
-        padding: 1rem;
-        address {
-            color: #333;
-        }
-        .iconfont {
-            color: $color-primary;
-            font-size: rem(20)
-        }
-        .clist {
-            @include reset-list();
-            color: #333;
-            li {
-                margin-bottom: .6rem;
-                @include mq(xl) {
-                    font-size: rem(16);
-                }
+    .banner-contact {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+            height: 500px;
+            @include mq(md){
+                height: 700px;
+            }
+            @include mq(lg){
+                margin-bottom: 4rem;
+                height: auto;
             }
         }
     }
+    .txt{
+        position: relative;
+        z-index: 10;
+        color:#fff;
+        padding-top: 1.5rem;
+        margin-bottom: 2rem;
+        @include mq(md){
+            padding-top: 2.5rem;
+        }
+        @include mq(lg){
+            margin-bottom: 4rem;
+        }
+        &::before{
+            content: " ";
+            display: block;
+            left: 50%;
+            width: 100%;
+            top: 0;
+            transform: translate(-50%,0);          
+            opacity: 0.47;
+            background: #000000;
+            height: 500px;
+            position: absolute;
+            z-index: -1;
+            @include mq(md){
+                width: 768px;
+                height: 700px;
+            }
+            @include mq(lg){
+                width: 1024px;
+                height: 382px;
+            }
+            @include mq(xl){
+                width: 110%;
+                height: 180%;
+                transform: translate(-50%,-1rem);   
+            }
+            @include mq(xxl){
+             
+                height: 230%;
+               
+            }
+        }
+        h1{
+            color:#fff;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            line-height: 1.6;
+        }
+    }
+
+    .form-container{
+        .contact{
+            @include reset-list();
+            li{
+                color:#939393;
+                .iconfont{
+                    color:$color-primary;
+                    margin-right: .8rem;
+                }
+            }
+        }
+        .info{
+            color:$color-primary;
+        }
+    }
+    .form-contact {
+        background-color: #fff;
+        padding: 2rem;
+        position: relative;
+        z-index: 50;
+     
+        box-shadow: 0 2px 30px 0 rgba(0,0,0,0.17);
+        .form-group {
+            margin-bottom: 1rem;
+        
+            @include mq(lg){
+                padding-left: 1rem;
+            }
+            .form-control{
+                width: 100%;
+                border: none;
+                border-bottom: 1px #DEDEDE solid;
+                height: 41px;
+                outline-style: none;
+                color:#818181;
+                @include mq(lg){
+                    font-size: rem(16);
+                }
+                @include mq(xl){
+                    font-size: rem(18);
+                }
+                @include mq(xxl){
+                    font-size: rem(20);
+                }
+            }
+            .form-label{
+                color:#0E0E0E;
+                position: relative;
+                @include mq(lg){
+                    font-size: rem(16);
+                }
+                @include mq(xl){
+                    font-size: rem(18);
+                }
+                @include mq(xxl){
+                    font-size: rem(20);
+                }
+                &::before{
+                    content: "*";
+                    position: absolute;
+                    left: -1rem;
+                    top: .25rem;
+                    z-index: 10;
+                    color:rgb(187, 0, 0);
+                   
+                }
+            }
+
+            
+        }
+        .form-group2{
+        
+            position: relative;
+            @include mq(lg){
+                padding-left: 1rem;
+            }
+            @include mq(lg){
+                font-size: rem(16);
+            }
+            @include mq(xl){
+                font-size: rem(18);
+            }
+            @include mq(xxl){
+                font-size: rem(20);
+            }
+            &::before{
+                content: "*";
+                position: absolute;
+                left: -1rem;
+                top: .25rem;
+                z-index: 10;
+                color:rgb(187, 0, 0); 
+                @include mq(lg){
+                    left: 0;
+                }                  
+            }
+            .form-control-textarea{
+                background-color: #F0F0F0;
+                width: 100%;
+                border: none;
+                padding:.5rem 1rem ;
+                outline: none;
+                height: 15.7rem;
+                position: relative;
+               
+            }
+        }
+        .action{
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+   
 }

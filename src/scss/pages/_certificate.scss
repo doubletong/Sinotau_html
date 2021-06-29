@@ -1,0 +1,108 @@
+.page-certificate{
+    padding-top: 21.7vw;
+    .s1{
+        margin-bottom: 2rem;
+        .intro{
+            background-color: rgba(0,90,174,.66);
+            color:#fff;
+            .des{
+                @include mq(xl){
+                    font-size: 1rem;
+                }
+            }
+        }
+        .title{       
+            background-color: transparent;
+            width: 350px;
+        }
+        
+    }
+    .s2{
+        background-color: #fff;
+        margin-bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @include mq(lg){
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+        @include mq(xl){
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .r1{
+            figure{
+                text-align: center;
+            } 
+        }
+        .r2 {
+            
+            figure{
+                padding-left: 5px;
+                padding-right: 5px;
+                img{
+                    margin-bottom: .5rem;
+                    
+                    
+                    object-fit: cover;
+                    object-position: center center;
+                    @include mq(xl){
+                        width: 100%;
+                        height: 230px;
+                    }
+                }
+                text-align: center;
+            }
+        }
+        
+    }
+
+    .s3{
+        position: relative;
+        padding: 0;
+        background-color: #fff;
+
+        img{
+            width: 100%;
+            @include mq(lg){
+                width: 50%;
+            }
+        }
+        .txt-container{
+            
+            background-color: $color-primary;
+            z-index: 100;
+            color: #fff;
+            padding: 1rem;
+         
+            @include mq(lg){
+                transform: translateY(-50%);
+                padding: 2rem 3rem;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 59.6%;
+            }
+            @include mq(xxl){
+                padding: 3rem;
+            }
+            .txt   {
+                max-width: 700px;
+            }
+            .title{
+                color:#fff;
+                border-left: 9px solid $color-secondary;
+                padding-left: 2.6rem;
+                margin-left: -3rem;
+            }
+        }
+    }
+    .s4{
+        padding-top: 2rem;
+        @include mq(lg){
+            padding-top: 5rem;
+        
+        }
+    }
+   
+}

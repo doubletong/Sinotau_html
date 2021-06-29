@@ -12,9 +12,11 @@
     }
     @include mq(xl) {
         padding: .6rem 3.5rem;
+        font-size: rem(16);
     }
     @include mq(xxl) {
         padding: .7rem 4rem;
+        font-size: rem(18);
     }
     &:hover {
         background-color: #fff;
@@ -39,11 +41,11 @@
         }
     }
     &.btn-yellow {
-        background-color: $color-primary;
-        color: #333;
+        background-color: $color-secondary;
+        color: #fff;
         &:hover {
-            background-color: darken($color: $color-primary, $amount: 10);
-            color: #000;
+            background-color: darken($color: $color-secondary, $amount: 10);
+            color: #fff;
         }
     }
     &.btn-primary {

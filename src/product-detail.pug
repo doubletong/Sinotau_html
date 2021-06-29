@@ -1,0 +1,148 @@
+extends includes/layout.pug
+
+block title
+    | C20
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-about.wow.fadeInDown
+        .container
+            .title
+                h1.text80.wow.fadeInUp Products
+
+    
+
+    .page.page-product-detail
+        .site-path 
+            .container
+                a(href="index.html") Home 
+                | &gt; 
+                a(href="products.html") Products 
+                | &gt; 
+                a(href="products.html")  Metallized Polypropylene Film Capacitors 
+                | &gt; 
+                span.current C20
+
+        section.s1
+            .container
+                .row
+                    .col-lg-5 
+                        .swiper-container.product-sliders
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                            .swiper-button-next
+                            .swiper-button-prev
+
+                        .swiper-container.thumb-sliders
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/products/pro-detail-1.jpg", alt="")
+                    .col-lg-7 
+                        .intro 
+                            ul.pro 
+                                li 
+                                    label Name: 
+                                    | C21 
+                                li 
+                                    label Materials:
+                                    | Polypropylene Film
+                                li 
+                                    label Temperature:
+                                    | -40~105℃（+85℃to +105℃:decreasing factor 1.25% per ℃ for VR(DC)）
+                                li 
+                                    label Voltage:
+                                    | 250V、400V、450V、630V、1000V
+                                li 
+                                    label Capacitance Range:
+                                    | 0.01μF～10μF
+
+                            p High frequency and low dissipation factor, Low temperature rise inside;Widely used in high frequency DC, AC and pulse circuit, Filtering circuit after rectified.
+                            .actions 
+                                a(href="#")
+                                    img(src="img/icon-download.svg", alt="download") 
+                                    | Download
+
+                                a(href="#") Get a Free Quote Now
+
+
+        section.s2            
+            .container                    
+                .row
+                    .col-lg-8
+                        .c1.mb-media-3
+                            h2.title.text30 
+                                img(src="img/icon-search.svg", alt="search")
+                                | Product details
+                            ol 
+                                li High frequency and low dissipation factor.
+                                li Low temperature rise inside.
+                                li Excellent flame retardant and moisture proof.
+                        .c1 
+                            h2.title.text30 
+                                img(src="img/icon-light-2.svg", alt="light")
+                                | Feature &amp; Application                        
+                            p Widely used in high frequency DC, AC and pulse circuit, Filtering circuit after rectified.
+
+                    .col-lg-4
+                        .vid 
+                            .pic 
+                                img(src="img/pro_1.jpg", alt="")
+                            
+                            .txt 
+                                img(src="img/icon-video.svg", alt="") 
+                                a(href="#") Click here to learn more about our factory
+                    
+        section.s3            
+            .container    
+                h2.title.text30 Outline drawing
+                figure 
+                    img(src="img/temp/pro_1.png", alt="")
+            
+        
+        
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper(".thumb-sliders", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".product-sliders", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+            swiper: swiper,
+            },
+        });
+
+       
+        $(function () {
+            
+  
+        
+        });
+      
+       
+
+     

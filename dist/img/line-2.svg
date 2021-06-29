@@ -1,0 +1,47 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.77 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #1cb7de;
+      }
+
+      .cls-3 {
+        opacity: 0.4;
+        fill: url(#未命名的渐变_2);
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: url(#未命名的渐变_2-2);
+      }
+
+      .cls-6 {
+        font-size: 20px;
+        fill: #fff;
+        font-family: SourceHanSansCN-Medium-GBpc-EUC-H, Source Han Sans CN;
+        letter-spacing: 0.1em;
+      }
+    </style>
+    <linearGradient id="未命名的渐变_2" data-name="未命名的渐变 2" x1="-1.99" y1="1080.09" x2="-1.43" y2="1079.39" gradientTransform="matrix(177, 0, 0, -177, 779.94, 191794.25)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0080cb"/>
+      <stop offset="1" stop-color="#80cce3"/>
+    </linearGradient>
+    <linearGradient id="未命名的渐变_2-2" x1="-3.47" y1="1079.73" x2="-2.91" y2="1079.03" gradientTransform="matrix(121, 0, 0, -121, 864.94, 131287.25)" xlink:href="#未命名的渐变_2"/>
+  </defs>
+  <rect class="cls-1" x="0.77" width="1920" height="1080"/>
+  <path id="路径_33" data-name="路径 33" class="cls-2" d="M-.55,373c137.18,65.18,287.64,162.09,456.61,295.42,97.58,77,689.82,392.94,1463.52-167.43" transform="translate(0.77)"/>
+  <g>
+    <circle id="椭圆_5" data-name="椭圆 5" class="cls-3" cx="479.68" cy="683.33" r="88.5"/>
+    <circle id="椭圆_6" data-name="椭圆 6" class="cls-4" cx="480.68" cy="684.33" r="60.5"/>
+    <g id="MORE" class="cls-5">
+      <text class="cls-6" transform="translate(448.18 691.83)">MORE</text>
+    </g>
+  </g>
+</svg>

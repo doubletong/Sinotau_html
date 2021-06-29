@@ -1,0 +1,67 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.52 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #1cb7de;
+      }
+
+      .cls-3, .cls-5 {
+        opacity: 0.4;
+      }
+
+      .cls-3, .cls-5, .cls-7, .cls-8 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: url(#未命名的渐变_4);
+      }
+
+      .cls-4 {
+        fill: url(#未命名的渐变_4-2);
+      }
+
+      .cls-5 {
+        fill: url(#未命名的渐变_4-3);
+      }
+
+      .cls-6 {
+        fill: url(#未命名的渐变_4-4);
+      }
+
+      .cls-8 {
+        font-size: 20px;
+        fill: #fff;
+        font-family: SourceHanSansCN-Medium-GBpc-EUC-H, Source Han Sans CN;
+        letter-spacing: 0.1em;
+      }
+    </style>
+    <linearGradient id="未命名的渐变_4" data-name="未命名的渐变 4" x1="-10.33" y1="1085.67" x2="-9.78" y2="1084.96" gradientTransform="matrix(49, 0, 0, -49, 586.93, 53996)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0080cb"/>
+      <stop offset="1" stop-color="#80cce3"/>
+    </linearGradient>
+    <linearGradient id="未命名的渐变_4-2" x1="-15.93" y1="1087.99" x2="-15.37" y2="1087.29" gradientTransform="matrix(33, 0, 0, -33, 610.93, 36708)" xlink:href="#未命名的渐变_4"/>
+    <linearGradient id="未命名的渐变_4-3" x1="-1.99" y1="1082.2" x2="-1.43" y2="1081.49" gradientTransform="matrix(177, 0, 0, -177, 1547.93, 192045)" xlink:href="#未命名的渐变_4"/>
+    <linearGradient id="未命名的渐变_4-4" x1="-3.46" y1="1082.81" x2="-2.91" y2="1082.11" gradientTransform="matrix(121, 0, 0, -121, 1632.93, 131538)" xlink:href="#未命名的渐变_4"/>
+  </defs>
+  <g id="矩形_9" data-name="矩形 9">
+    <rect class="cls-1" x="0.47" width="1920" height="1080"/>
+    <rect class="cls-1" x="0.97" y="0.5" width="1919" height="1079"/>
+  </g>
+  <path id="路径_32" data-name="路径 32" class="cls-2" d="M-.15,755.32c128,105.12,510.22,303.73,1243.78-192,209.07-141.26,419.52-198,676.3-129.69" transform="translate(0.47)"/>
+  <g id="组_11" data-name="组 11">
+    <circle id="椭圆_5" data-name="椭圆 5" class="cls-3" cx="94.97" cy="816.5" r="24.5"/>
+    <circle id="椭圆_6" data-name="椭圆 6" class="cls-4" cx="94.97" cy="816.5" r="16.5"/>
+  </g>
+  <g id="组_26" data-name="组 26">
+    <circle id="椭圆_5-2" data-name="椭圆 5-2" class="cls-5" cx="1247.97" cy="561.5" r="88.5"/>
+    <circle id="椭圆_6-2" data-name="椭圆 6-2" class="cls-6" cx="1248.97" cy="562.5" r="60.5"/>
+    <g id="MORE" class="cls-7">
+      <text class="cls-8" transform="translate(1216.47 570)">MORE</text>
+    </g>
+  </g>
+</svg>

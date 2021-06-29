@@ -1,93 +1,16 @@
 {
-  "id": "2383712",
-  "name": "百多安",
+  "id": "2630748",
+  "name": "哈纳斯",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "1205454",
-      "name": "minus",
-      "font_class": "minus",
-      "unicode": "ef17",
-      "unicode_decimal": 61207
-    },
-    {
-      "icon_id": "9133149",
-      "name": "Plus",
-      "font_class": "plus",
-      "unicode": "e7f6",
-      "unicode_decimal": 59382
-    },
-    {
-      "icon_id": "7631391",
-      "name": "map",
-      "font_class": "map",
-      "unicode": "e6bb",
-      "unicode_decimal": 59067
-    },
-    {
-      "icon_id": "6966190",
-      "name": "Add to download",
-      "font_class": "download",
-      "unicode": "e603",
-      "unicode_decimal": 58883
-    },
-    {
-      "icon_id": "12428709",
-      "name": "箭头",
-      "font_class": "jiantou",
-      "unicode": "e602",
-      "unicode_decimal": 58882
-    },
-    {
-      "icon_id": "18479540",
-      "name": "prev",
-      "font_class": "prev",
-      "unicode": "e601",
-      "unicode_decimal": 58881
-    },
-    {
-      "icon_id": "20035883",
-      "name": "prev",
-      "font_class": "next",
-      "unicode": "e9bc",
-      "unicode_decimal": 59836
-    },
-    {
-      "icon_id": "6745783",
-      "name": "we-chat",
-      "font_class": "we-chat",
-      "unicode": "e6dc",
-      "unicode_decimal": 59100
-    },
-    {
-      "icon_id": "8607013",
-      "name": "linkedin",
-      "font_class": "linkedin",
-      "unicode": "e9bb",
-      "unicode_decimal": 59835
-    },
-    {
-      "icon_id": "13183992",
-      "name": "phone-call-lined",
-      "font_class": "phone",
-      "unicode": "e607",
-      "unicode_decimal": 58887
-    },
-    {
-      "icon_id": "13692335",
-      "name": "search",
-      "font_class": "search",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "16085809",
-      "name": "top",
-      "font_class": "top",
-      "unicode": "e64a",
-      "unicode_decimal": 58954
+      "icon_id": "5354487",
+      "name": "48-Right-Arrow",
+      "font_class": "right",
+      "unicode": "e643",
+      "unicode_decimal": 58947
     }
   ]
 }

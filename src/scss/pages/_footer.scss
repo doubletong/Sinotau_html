@@ -1,76 +1,52 @@
 .site-footer {
-    background-color: #FBFBFD;
-    .contact {
-        max-width: 230px;
+    background-color: #333435;
+    color:#ACADAD;
+    .bot-nav{
+        display: none;
+        @include mq(lg){
+            display: block;
+        }
     }
-    .logo {
-        margin-bottom: 1.5rem;
-    }
+    
     .social {
-        margin-bottom: 1.5rem;
+        a{
+            display: inline-block;
+            margin-left: .6rem;
+        }
+
         .iconfont {
             font-size: rem(26);
-            margin-right: .4rem;
-            &.icon-linkedin {
-                color: #1182C6;
-            }
-            &.icon-we-chat {
-                color: #51B474;
-            }
+          
+     
         }
     }
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-    .bot_nav {
-        @include reset-list();
-        display: flex;
-        &>li {
-            text-align: left;
-            width: 100%;
-            &>a {
-                display: block;
-                margin-bottom: 1.2rem;
-                &:hover {
-                    color: $color-primary;
+
+    .item {
+       dl{
+           max-width: 200px;
+           dt{
+               color:$color-secondary;            
+                font-size: 16px;   
+                margin-bottom: rem(15);    
+                font-weight: normal;    
+           }
+           dd{
+               line-height: 1.6;
+               a{
+                color:#ACADAD;
+                &:hover{
+                    color:#fff;
                 }
-            }
-            .sub-menu {
-                @include reset-list();
-                li {
-                    font-weight: lighter;
-                    margin-bottom: 1rem;
-                    a {
-                        color: #888;
-                        &:hover {
-                            color: $color-primary;
-                        }
-                    }
-                }
-            }
-        }
+               }
+           }
+       }
+        
     }
     .bot {
-        padding: 1rem;
-        text-align: center;
-        background-color: $color-primary;
+        padding: 1rem 0;      
+        background-color: #000;
         color: #fff;
-        font-size: rem(12);
-        font-weight: lighter;
-        .quicklink {
-            @include reset-list();
-            margin-bottom: .5rem;
-            li {
-                display: inline-block;
-                padding: 0 .5rem;
-                border-right: 1px #999 solid;
-                line-height: 1;
-                &:last-child {
-                    border-right: none;
-                }
-            }
-        }
+  
         a {
             color: #fff;
             &:hover {

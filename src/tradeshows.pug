@@ -1,0 +1,169 @@
+extends includes/layout.pug
+
+block title
+    | tradeshows
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+
+block content  
+    .site-path 
+        .container
+            a(href="index.html") Home 123
+            | &gt; 
+            a(href="products.html") Company 
+            | &gt; 
+            span.current Tradeshows
+                      
+
+    .page.page-tradeshows.pb-media-5    
+        .banner-tradeshows
+            img(src="img/banners/tradeshows.jpg", alt="tradeshows")
+
+        section.s1.container
+            .title-section 
+                h2.text30 Our Tradeshows 1221213434
+            .tradeshows
+                .row
+                    .col-lg-6
+                        .item
+                            .row.no-gutters.align-items-center     
+                                .col-4
+                                    figure.pic
+                                        img.wow.fadeInUp(src="img/tradeshows/logo1.png", alt="Global Industrie")
+                                .col-8 
+                                    dl.txt
+                                        dt Global Industrie
+                                        dd Location: Lyon, France
+                                        dd Date: September 6 - 9, 2021 (Mon. - Thu.) 
+                    
+                    .col-lg-6
+                        .item
+                            .row.no-gutters.align-items-center
+                                .col-4
+                                    figure.pic
+                                        img.wow.fadeInUp(src="img/tradeshows/logo2.png", alt="The Battery Show Europe")
+                                .col-8 
+                                    dl.txt
+                                        dt The Battery Show Europe
+                                        dd Location: Stuttgart, Germany
+                                        dd Date: November 30 - December 2, 2021 (Tue. - Thu.)
+
+                    .col-lg-6
+                        .item
+                                    .row.no-gutters.align-items-center
+                                        .col-4
+                                            figure.pic
+                                                img.wow.fadeInUp(src="img/tradeshows/logo3.png", alt="Electronica China")
+                                        .col-8 
+                                            dl.txt
+                                                dt Electronica China
+                                                dd Location: Shanghai, China
+                                                dd Date:  April 2022
+                    
+                    .col-lg-6
+                        .item
+                            .row.no-gutters.align-items-center
+                                .col-4
+                                    figure.pic
+                                        img.wow.fadeInUp(src="img/tradeshows/logo4.png", alt="SENSOR + TEST")
+                                .col-8 
+                                    dl.txt
+                                        dt SENSOR + TEST
+                                        dd Location: Nuremberg, Germany
+                                        dd Date: May 10 - 12, 2022 (Tue. - Thu.)
+
+                    .col-lg-6
+                        .item
+                            .row.no-gutters.align-items-center
+                                .col-4
+                                    figure.pic
+                                        img.wow.fadeInUp(src="img/tradeshows/logo5.png", alt="PCIM Europe")
+                                .col-8 
+                                    dl.txt
+                                        dt PCIM Europe
+                                        dd Location: Nuremberg, Germany
+                                        dd Date: May 10 - 12, 2022 (Tue. - Thu.)
+                    
+                    .col-lg-6
+                        .item
+                            .row.no-gutters.align-items-center
+                                .col-4
+                                    figure.pic
+                                        img.wow.fadeInUp(src="img/tradeshows/logo3.png", alt="Electronica")
+                                .col-8 
+                                    dl.txt
+                                        dt Electronica
+                                        dd Location: Munich, Germany
+                                        dd Date: November 15 - 18, 2022 (Tue. - Fri.)
+
+
+
+        section.s2
+            .container
+                .item
+                    .row.no-gutters.align-items-center
+                        .col-md-6                 
+                            .pic 
+                                img(src="img/trade_1.jpg", alt="")
+
+                        .col-md-6                        
+                            .txt
+                                .title-section 
+                                    h2.text30 Conferences
+                                p We would be happy to share our expertise at congresses and forums. Benefit from the expertise of our engineers and stay up-to-date!
+                    
+                .item          
+                    .row.no-gutters.align-items-center
+                        .col-md-6.order-md-last                 
+                            .pic 
+                                img(src="img/trade_2.jpg", alt="")
+
+                        .col-md-6                        
+                            .txt
+                                .title-section 
+                                    h2.text30 Recruiting Fairs 
+                                p We would be happy to share our expertise at congresses and forums. Benefit from the expertise of our engineers and stay up-to-date!
+                            
+                            
+
+block bkfooter
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+             grabCursor: true,
+             centeredSlides: true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                },
+                992: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                },
+                1200: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+                },
+            }
+        });
+
+
+     

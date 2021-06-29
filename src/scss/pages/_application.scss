@@ -1,0 +1,54 @@
+
+.page-application{
+    background-color: #fff;
+    .pic{
+        padding-right: 2rem;
+        @include mq(md){
+            padding-right: 4rem;
+        }
+        @include mq(lg){
+            padding-right: 0;
+        }
+    }
+    .intro{
+        padding: 1rem;
+        text-align: justify;
+        @include mq(md){
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @include mq(lg){
+            padding: 0 0 0 2rem;
+            max-width: 540px;
+            margin: 0;
+        }
+        @include mq(xl){
+            padding: 0 0 0 4rem;
+            max-width: 670px;
+        }
+        @include mq(xxl){
+            padding: 0 0 0 5rem;
+            max-width: 740px;
+        }
+        .note{
+            
+            @include mq(lg){
+                padding: 1rem;
+            }
+            dl{
+                dt{
+                    color:$color-primary;
+                }
+                dd{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        ol{
+            margin: 0;
+            padding: 0 0 0 1rem;
+        }
+    }
+    
+    
+}

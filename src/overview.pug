@@ -1,0 +1,184 @@
+extends includes/layout.pug
+
+block title
+    | Overview
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content    
+    .site-path 
+        .container
+            a(href="index.html") Home 
+            | &gt; 
+            a(href="products.html") Company 
+            | &gt; 
+            span.current Overview
+            
+    .page.page-overview.pb-media-7
+        .banner
+            img(src="img/banners/overview.jpg", alt="overview")
+                  
+        section.s1.container.mb-media-3
+            .intro 
+                h3.title.text30 Overview
+                .des
+                    p Founded in June 2001, a National high-tech production-oriented enterprise. Chuang Shi Ding has advanced production and testing equipment, with independent product reliability laboratory, on the basis of IEC, GB and other relevant standards to do related regular life test, our R&D team conducts tireless research and experiment on new materials and new technology, Strive to be in sync with international advanced level technically, and can interact well with customers to quickly design and produce cost-effective products. Main products include X2 safety capacitor, energy storage capacitor, IGBT absorption capacitor, high voltage resonance, coupling capacitor, and ac filter capacitor. High-quality products widely used in the electric power grid, smart metering industry, wireless charging, wind power inverter, photovoltaic inverter industry, new energy auto industry, charging pile industry, induction heating equipment, intelligent household industry, etc.
+
+        section.s2
+
+            .container
+                .title-section
+                    h2.text30 Our History
+
+            .milestone
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year 1998
+                                    p Passed ISO9001:2001 RHOS、REACH certification
+                                    
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year 2001
+                                    p set up Chuangsuoda - Committed to the development and manufacture of film capacitors
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year 2005
+                                    p Passed ISO9001:2001 RHOS、REACH certification
+
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year 2006
+                                    p Passed the UL, VDE, CQC, ENEC certification
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year 2013
+                                    p Chuangshiding was established ,power electronic capacitor production line put into use
+
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year 2016
+                                    p Gain National high-tech and Shenzhen high-tech enterprises
+
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year 2017
+                                    p Broke through the high precision, Ultra high temperature resistant , Large current withstanding ,high energy pulse capacitor production process.
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year 2020
+                                    p Gain National high-tech and Shenzhen high-tech enterprises
+
+                        .swiper-slide   
+                            .item 
+                                .txt 
+                                    h3.year 2024
+                                    p Broke through the high precision, Ultra high temperature resistant , Large current withstanding ,high energy pulse capacitor production process.
+
+                        .swiper-slide   
+                            .item.ood 
+                                .txt 
+                                    h3.year 2024
+                                    p Broke through the high precision, Ultra high temperature resistant , Large current withstanding ,high energy pulse capacitor production process.
+
+               
+                
+                    .swiper-prev 
+                        .iconfont.icon-prev
+                    .swiper-next
+                        .iconfont.icon-next
+                    
+
+        section.s3
+            .container
+                .row.align-items-center
+                    .col-lg-6 
+                        .contact 
+                            .title-section
+                                h2.text30 Contact Us
+                            form(action="#") 
+                                .form-group 
+                                    .form-label NAME 
+                                    input.form-control(type="text", required, name="name" placeholder="your name")
+                                .form-group 
+                                    .form-label E-MAIL 
+                                    input.form-control(type="email",required, name="email" placeholder="inten@123.com")
+                                .form-group 
+                                    .form-label MESSAGE 
+                                    textarea.form-control-textarea(name="message", placeholder="Leave what you want to say…", required)
+                                .action
+                                    button.btn.btn-yellow.btn-radius(type="submit") SEND MESSAGE
+
+                    .col-lg-6 
+                        #map-gaode.map-gaode 
+
+    
+
+block bkfooter
+    
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script(src='https://webapi.amap.com/maps?v=2.0&key=862b651cdb46fa458fdadbff5444e824',type="text/javascript")
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            // init: false,
+            loop:true,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                },
+                992: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                },
+                1200: {
+                slidesPerView: 8,
+                spaceBetween: 50,
+                },
+            }
+        });
+
+        var map = new AMap.Map('map-gaode', {
+            zoom:12,//级别
+            center: [86.08683,44.415465],//中心点坐标
+            viewMode:'3D'//使用3D视图
+        });
+
+        var marker = new AMap.Marker({
+            position: new AMap.LngLat(86.08683,44.415465),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            title: '新疆大全'
+        });
+
+        // 将创建的点标记添加到已有的地图实例：
+        map.add(marker);
+     

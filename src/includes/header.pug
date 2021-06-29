@@ -1,72 +1,41 @@
 header#site-header.site-header    
-    .container
-        .row.align-items-center   
-            .col-auto 
+    .container-fluid
+        .row.align-items-top   
+            .col
                 a.logo(href="index.html")                   
-                    img#logo(src="img/logo.svg", alt="file X")
-            .col                
-                
-                ul.mainav  
-                    li
-                        a(href="index.html") 首页
-                    li
-                        a(href="about.html") 关于我们
-                    li
-                        a(href="team.html") 团队介绍
-                    li
-                        a(href="about.html") 联系我们
-                       
-
-            .col-auto
-                a.lang(href="#")  EN                        
-                        
+                    img#logo(src="img/logo.png", alt="ChuangShiDing")
+           
           
-            .col-auto.mobilemenu
-                .menu-toggle
-                    .one
-                    .two
-                    .three
+            .col-auto
+                a.lang(href="#") EN
+                        
+            .col-auto
+                a.mobile_nav(href="#") MENUS
+
+            //- .col-auto.mobilemenu
+            //-     .menu-toggle
+            //-         .one
+            //-         .two
+            //-         .three
 
 
     div#overmenu.menu-over
         ul.mobilenav
             li
                 a(href="index.html") Home
-            li.hasnav
-                a(href="about.html") About us
-                ul.subnav                            
-                    li
-                        a(href="about.html") WEGO Group
-                    li
-                        a(href="quality.html") Our History
-                    li
-                        a(href="honor.html") Global Market
-            
-            li.hasnav
-                a(href="clinical.html") Solutions
-                ul.subnav                           
-                    li
-                        a(href="clinical.html") Cardiovascular
-                    li
-                        a(href="medical.html") Neurovascular
-                    li
-                        a(href="medical.html") Peripheral vascular  
-            
-            li.hasnav
-                a(href="products.html") News &amp; Events
-                ul.subnav
-                    
-                    li
-                        a(href="products.html") Company News
-                    li
-                        a(href="products.html") Marketing Events
-                 
-            
-            li.hasnav
-                a(href="contact.html") Contact
-                ul.subnav                        
-                    li
-                        a(href="contact.html") WEGO Shenzhen   
+            li
+                a(href="products.html") Products
+            li
+                a(href="application.html") Application
+            li
+                a(href="about.html") Company
+            li
+                a(href="contact.html") Contact Us
+                
+                
+                //- ul.subnav                        
+                //-     li
+                //-         a(href="contact.html") WEGO Shenzhen   
             
 
        

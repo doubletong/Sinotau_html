@@ -1,19 +1,7 @@
-.about_bg {
-    height: 100vh;
-    background-image: url(../img/about_02.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-    transition: all .3s;
-}
 
 .page-about {
+    color:#293844;
+    margin-bottom: 5rem;
     .s1 {
         .txt {
             @include mq(xl) {

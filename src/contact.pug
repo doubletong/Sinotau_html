@@ -7,28 +7,60 @@ block bkheader
    
 
 block content               
-    .banner1.wow.fadeInDown(style="background-image:url(img/banners/contact.jpg)")
-        .container
-            .title
-                h1.wow.fadeInUp 联系我们
+    .page.page-contact.pb-media-5
+        .banner-contact 
+            picture
+                source(srcset="img/contact_1@2x.jpg", media="(min-width: 1921px)")
+                img(src="img/contact_1.jpg", alt="Contact Us")
 
-    .page.page-contact.pt-media-5.pb-media-5
-        .container
-            .row.align-items-center
-                .col-lg-6
-                    .pic
-                        img(src="img/map_1.png", alt="")
-                .col-lg-6              
-                    .txt
-                        address.text20.wow.fadeInUp
-                            i.iconfont.icon-map 
-                            | 德州市齐河县齐鲁高新技术开发区百多安生物科技园内    
-                        ul.clist.wow.fadeInUp
-                            li 邮箱：yancy@brandentech.com
-                            li 电话：400-888-8888                       
-                            li 联系方式（科研合作）：400-888-8888
-                            li 联系方式（市场销售）：400-888-8888        
+        .container.txt
+            h1.text80 Contact Us
+            p Founded in June 2001, a National high-tech production-oriented enterprise, Din has advanced production and testing equipment, with independent product reliability laboratory, on the basis of IEC, GB and other relevant standards to do related regular life test, our R&D team conducts tireless research and experiment on new materials and new technology, Strive to be in sync with international advanced level technically, and can interact well with customers to quickly design and produce cost-effective products. 
+    
+    
+        .container.form-container
+            .form-contact 
+                .title-section 
+                    h2.text30 ONLINE MESSAGE
+                form(action="#", method="post") 
+                    .row 
+                        .col-lg-6 
+                            .form-group 
+                                .form-label.req NAME
+                                input.form-control(type="text", required, name="name" placeholder="your name")
+                            .form-group 
+                                .form-label.req E-MAIL
+                                input.form-control(type="email", required, name="email" placeholder="inten@123.com")
+                            .form-group 
+                                .form-label.req SUBJECT
+                                input.form-control(type="text", required, name="subject" placeholder="hey there")
+                        
+                        .col-lg-6 
+                            .form-group2
+                                textarea.form-control-textarea(name="message", placeholder="Leave what you want to say…", required)
 
+                    .action
+                        button.btn.btn-yellow.btn-radius(type="submit") SEND MESSAGE
+
+                .row.align-items-end
+                    .col-lg 
+                        ul.contact 
+                            li 
+                                i.iconfont.icon-marker
+                                | Bld No C2, Mingzhuoxing Industrial Park, Guangming District, Shenzhen, China.
+                            li 
+                                i.iconfont.icon-phone
+                                | 86-755-29948886/86-755-81727962/86-755-29948916                 
+                            li 
+                                i.iconfont.icon-email
+                                | sales@ csdcapacitor.com
+
+                
+
+                    .col-lg-auto 
+                        .info CONTACT US TO GET MORE INFOS
+
+                          
                     
 block bkfooter
 

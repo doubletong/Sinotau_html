@@ -4,25 +4,30 @@
     top: 0;
     z-index: 8000;
     width: 100%;
+    background-color: transparent;
     height: 45px;
     transition: all .2s;
     @include mq(md) {
         height: 60px;
     }
     @include mq(lg) {
-        height: 70px;
+        height: auto;
+        padding-top: 20px;
     }
-    @include mq(xl) {
-        height: 80px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-    @include mq(xxl) {
-        height: 100px;
-    }
-    .container,
+  
+    .container-fluid,
     .row {
         height: 100%;
+    }
+    .container-fluid{
+        @include mq(xl) {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        // @include mq(xxl) {
+        //     padding-left: 70px;
+        //     padding-right: 70px;
+        // }
     }
     .logo {
         display: block;
@@ -40,26 +45,7 @@
             width: 158px;
         }
     }
-    .topcol {
-        padding-top: .5rem;
-        font-weight: lighter;
-        .quicklink {
-            @include reset-list();
-            text-align: right;
-            li {
-                display: inline-block;
-                margin-left: 1.5rem;
-                a {
-                    color: #fff;
-                }
-            }
-        }
-        select {
-            background-color: transparent;
-            border: 1px #fff solid;
-            color: #fff;
-        }
-    }
+    
     .mainav {
         @include reset-list();
         display: none;
@@ -84,7 +70,7 @@
                 padding: 0 .6rem;
                 height: 100%;
                 position: relative;
-                color: #fff;
+                color: #9B9B9B;
                 @include mq(lg) {
                     padding: 0 .5rem;
                     font-size: rem(16);
@@ -191,16 +177,8 @@
     .lang
     {
         display: inline-block;     
-        color: #fff;
-        @include mq(lg) {        
-            font-size: rem(16);         
-        }
-        @include mq(xl) {           
-            font-size: rem(18);
-        }
-        @include mq(xxl) {          
-            font-size: rem(20);
-        }
+      
+  
     }
  
     .mobilemenu {
