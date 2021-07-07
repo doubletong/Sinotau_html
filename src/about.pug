@@ -1,174 +1,264 @@
 extends includes/layout.pug
 
 block title
-    | 公司介绍
+    | About
 
 block bkheader
     link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
 
 
 block content  
-    .banner.banner-about.wow.fadeInUp(style="background-image:url(img/banners/about.jpg)")
-        .container
-            .title
-                h1.wow.fadeInUp 公司介绍
-                p “向远而生，向心而栖。”创新医疗是我们持之以恒的动力。
-    
-    .page.page-about.pt-media-6.pb-media-6
-        section.s1.container.mb-media-5
+    .banner.banner-about.wow.fadeInUp
+        img(src="img/banners/about.jpg", alt="About")
+    .two-nav.wow.fadeInUp
+        ul.sub-nav
+            li 
+                a(href="#") about eall
+            li 
+                a(href="#") ability
+            li 
+                a(href="#") process
+            li 
+                a(href="#") FAQ
+
+    .page.page-about
+        section.s1.container.pt-media-6.pb-media-6
             .row.align-items-center
-                .col-md-6
-                    .pic.wow.fadeInleft   
-                        img(src="img/about_01.jpg", alt="科技创新 关爱健康")                    
-                .col-md-6
+                .col-lg-6
+                    .txt-container
+                        .title-section 
+                            h2.wow.fadeInUp Our Strength
+                            p.wow.fadeInUp Taking innovation as the core,Specializing in high quality
+
+                        .pic.wow.fadeInUp 
+                            img(src="img/about_01.jpg", alt="Our Strength")
+
+                .col-lg-6
                     .txt
-                        h3.text30.wow.fadeInRight 科技创新 关爱健康
-                        p.wow.fadeInRight 山东百多安医疗器械股份有限公司于2003年成立，总部坐落于山东齐鲁高新技术开发区百多安生物医学科技园，在德国Dusseldorf 建立海外欧洲基地。现有1000余名员工。建有国家地方联合工程实验室、中科院院士工作站，医用材料改性工程技术研究中心、博士后创新基地等国家和省级研发平台6个。在北京，上海，山东德州，山东济南，德国杜塞尔多夫，美国，巴西均设有研发，市场，培训中心。
-                
+                        h3.text22.wow.fadeInUp Shenzhen Eall Tech Co., Ltd.
+                        p.wow.fadeInUp Established in April 2003, Eall is a network integration, planning, and interactive visual communication company. With innovation as our core, we provide our customers with high quality interactive design services through our professional flow and innovative visuals.
+                        p.wow.fadeInUp Specialized in high quality multimedia interactive and all-round web design, Eall also has a strong R & D design team and top-quality design professionals. For years our team has been active in the Shenzhen high-end website design, enterprise brand website, product display website. We have worked with businesses related to network interactive and creative industry, and several other fields such as network branding, network public relations, Internet reputation building, network unified brand promotion, plane ads, flash animation, interactive games, digital interactive, multimedia applications and internet technology research and development.
+                        p.wow.fadeInUp We are Committed to build more and better Internet brands, provide professional Internet brand proposal and use high standards of design, create the brand route with a true sense of direction, unremitting our efforts to create the greatest value for our customers internet brand in the interactive marketing field. We have over seven years of efforts & experience, and with nearly a thousand of case experiences, Eall has already become a famous network marketing interactive and brand design and planning company in domestic China, with very high reputation and public praise.
+
+
                            
-        section.s2.container.mb-media-5
-            .row.align-items-center
-                .col-md-6.order-md-last
-                    .pic.wow.fadeInRight 
-                        img(src="img/about_02.jpg", alt="医疗创新 以人为本")                    
-                .col-md-6
-                    .txt
-                        h3.text30.wow.fadeInLeft 医疗创新 以人为本
-                        p.wow.fadeInLeft 百多安致力于在心血管，神经外科和肿瘤等重点领域的转化研究，已申报国际和国内发明专利130余项，发表SCI等国际学术期刊70多篇，起草国家行业标准8项， 获得国家科学技术进步奖，教育部一等奖等国家省部级奖励20余次。
-                        p.wow.fadeInLeft 公司主持十三五国家重点研发计划1项，十二五国家科技支撑计划项目1项，十一五国家科技支撑计划项目1项，国家工业强基工程1项，其他国家级项目7项。
-            
-        section.s3.mb-media-5
-            .txt
-                .container
-                    h3.text30 百多安在全球
-                    p 百多安已在百多安生物医学科技园建立全球研发创新总部，在北京，上海，山东济南，山东德州，美国纽约，巴西利亚，德国等各地均建立研发生及产市场基地。同时在美国亚特兰大，丹麦，意大利罗马，英国剑桥，多地设立联合培训项目中心， 形成全球化的科研创新, 营销维护及服务培训网络。
-                
-            .map 
-                img(src="img/map.png", alt="地图")
-                .dot(style="left:28.4%;top:45.5%;") 
-                    .city New York
-                .dot(style="left:51%;top:36.5%;") 
-                    .city Germany
-
-                .dot(style="left:36%;top:74%;") 
-                    .city Brazilia
-                .dot(style="left:73%;top:40.5%;") 
-                    .city 北京
-
-                .dot(style="left:73.5%;top:44%;") 
-                    .city 济南
-                .dot(style="left:72.5%;top:46%;") 
-                    .city 德州
-                .dot(style="left:74.6%;top:50%;") 
-                    .city 上海
-
-        section.s4.container.mb-media-5 
+        section.s2.container.pt-media-6.pb-media-6
             .row
-                .col-lg-3 
-                    h3.title.text30 全球科研力量
+                .col-lg-6
+                    .txt-container
+                        .title-section 
+                            h2.wow.fadeInUp Our orientation
+                            p.wow.fadeInUp Best Creativity Internet Marketing
 
-                .col-lg-9 
-                    .c 
-                        p 公司国内研发团队现有中科院院士1人，国家“千人计划”领军人才1人，国家“万人计划”领军人才1人、国家级领军人才1人、泰山产业领军人才2人、国家杰出基金获得者2人，享受国务院特殊津贴1人，博士及硕士以上学历主要研发人员形成行业高层次领衔。
-                        p 百多安已和复旦大学, 西安交通大学, 北京航空航天大学，意大利罗马Catherine大学, 美国Emory 大学医学院, 美国哥伦比亚大学工程院，英国剑桥大学工程学院等多个国内外重点科研机构设置多个重点合作项目。目前在意大利罗马、美国亚特兰大等地设有临床护理培训项目，每年通过医学基金会资助我国临床护理专业人员赴欧美培训近10批。组织国际学术交流20余次。
+                    .txt 
+                        h3.text22.wow.fadeInUp Eall website design
+                        p.wow.fadeInUp Specializes in high-quality natural website design, independent in technology development and application, user experience and interactive planning, large interactive website project operation, the development of complex custom demands. We have a focused, high-quality professional team, with internationalized vision : from good web application development engineers, senior web designers, to IT professionals. We have finished hundreds of web projects, and are experienced in website design, custom communication and project management.
 
-                        figure.pic 
-                            img(src="img/about_03.jpg", alt="全球科研力量") 
-        section.s5 
-            .container.mb-media-4 
+
+                .col-lg-6
+                    .pic.wow.fadeInRight 
+                        img(src="img/about_02.jpg", alt="医疗创新 以人为本")   
+
+
+        section.s3.pt-media-6.pb-media-6
+            .container
+                .orientation
+                    .txt-container
+                        .title-section 
+                            h2.wow.fadeInUp Our orientation
+                    
+                    p We would like to show you to our warm and pleasant work atmosphere, invite you to understand our modern refined thinking, our spirit of creation, individuality, and the strong belief that out of knowledge comes our strength.
+                    p Good at group of wisdom, we hope that our team spirit is forever young. Truly, the Internet world is huge, but our thoughts always hold the basic idea: We refuse to be mediocre. So you can let your fantasies, inspiration, & imagination go unrestrained. Be free to change the way you dress, to change your hairstyle, to change the way you see yourself...Eall, with a strong atmosphere and unique creations, we will tailor for you an individual character and style, and make you look brand-new.
+                    p In Eall, we believe knowledge is power. The knowledge of our staff is the Eall’s favorite quality and our backbone, and the learning and knowledge of our management has become the most distinct difference of our company. You don’t need to worry about your accidental mistakes; the Eall team understands “failure is the mother of success”, and we will amplify your advantage, give you courage and more support, so as to help you learn from your failures, fix them, and pursue new success.
+                    p You must cultivate strong ambition. You should succeed, because you have self-confidence; you will be successful, because you have come to Eall. Work is no longer exhausting and tiring. Eall’s comfortable working environment is waiting for you: A friendly, warm team that will bring a little sunshine into your heart; So while we work, you can have a nice coffee; a stroll in the garden, a swim, do some exercise, or just let yourself feel relaxed and happy......
+                    
+            
+
+
+        section.s4.pt-media-6.pb-media-6
+            .container
                 .row
-                    .col-lg-3                 
-                        h3.title.text30 七大重点业务
+                    .col-lg-6 
+                        figure.pic 
+                                img(src="img/about_04.jpg", alt="Corporate Social Responsibility") 
 
-                    .col-lg-9 
-                        .row.t 
-                            .col-md 
-                                .txt
-                                    p 公司致力于在心血管、介入诊治、神经外科、医用高分子、麻醉耗材、眼科、外科手术耗材等七大重点领域的医疗技术开发及推广。
-                                    .note 其中40多个产品已进入全国3000家医院，出口40多个国家和地区。
-                            .col-md-auto 
-                                .swiper-prev 
-                                    .iconfont.icon-prev
-                                .swiper-next
-                                    .iconfont.icon-next
-                        
-                          
-            .swiper-container
-                .swiper-wrapper
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_04.png", alt="心血管")
-                                figcaption 心血管
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_05.png", alt="介入诊治")
-                                figcaption 介入诊治
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_06.png", alt="神经外科")
-                                figcaption 神经外科
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_07.png", alt="医用高分子")
-                                figcaption 医用高分子
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_08.png", alt="麻醉耗材")
-                                figcaption 麻醉耗材
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_09.png", alt="眼科")
-                                figcaption 眼科
-                    .swiper-slide   
-                        .item 
-                            figure 
-                                img(src="img/about_10.png", alt="外科手术耗材")
-                                figcaption 外科手术耗材
+                    .col-lg-6
+                        .txt
+                            .txt-container
+                                .title-section 
+                                    h2.wow.fadeInUp Corporate Social Responsibility
+
+                            p Our mission is to maintain a safe, healthy, and sustainable environment for all employees, creating awareness amongst the management and all members of staff of their rights and responsibilities.
+                            p We believe that the foundation of that environment exists at its heart, and includes awareness of employee rights, clean and safe facilities, and a management structure committed to both upholding those standards and also striving to find ways to improve them.
+                            p We subscribe to a high level of social awareness activity by engaging with organisations, such as local NGOs, that exist to enable us to maintain this target.
+
                             
+        section.s5.pt-media-6.pb-media-6
+            .container
+                .title-section.text-center 
+                    h2.text46 ability
+
+                .tab 
+                    .tab-header 
+                        .row.no-gutters 
+                            .col-md-6.col-lg-3
+                                h3.active Combining network marketing strategy
+                            .col-md-6.col-lg-3
+                                h3 China high-end web design
+                            .col-md-6.col-lg-3
+                                h3 Why choose us
+                            .col-md-6.col-lg-3
+                                h3 High price returns
+                    .tab-body
+                        .content.active 
+                            p.wow.fadeInUp Integrated Internet marketing is no longer about running a simple website. Even US President Obama employed an Integrated Internet strategy in his 2008 Presidential campaign so maybe your company should also do the same.
+                            p.wow.fadeInUp Instead of a marketing strategy that based on only websites, we believe that your company needs an integrated Internet marketing strategy. Eall can help you develop an integrated Internet marketing strategy making use of a variety of marketing techniques available on the Internet. We are experts of integrated Internet marketing and together, we can make your brand name known all over the world via integrated Internet marketing.
+                            p.wow.fadeInUp Today, companies are spending millions on building their websites and promoting their websites. However only very few companies can be able to their money’s worth from this kind of marketing strategy.
+                            p.wow.fadeInUp For most companies, their internet marketing services including domain name registration, virtual hosting, website construction and website promotion are provided by ISP’s as their packaged services. These packaged services have generated a lot of business for ISP’s and other internet marketing companies, however they have not provided much value added for the companies that they are supposed to serve. The reason is simple, these ISP’s and internet marketing companies don’t understand the marketing needs of small and medium-sized enterprises and their packaged services do not add value to their customers.
+                            p.wow.fadeInUp For example, in the current market, network advertising, competitive ranking, network name, internet keyword are hot topics for internet marketing. However these tools would not likely add much value to your marketing effort if they were not specifically designed and catered to your company’s particular needs. For many internet marketing companies and ISP’s, they would provide these services as a package without customizing to the needs of their individual clients. As a result, it is unlikely that their clients would get any real benefits from their services.
+                            p.wow.fadeInUp A truly cost- and- benefit effective internet marketing strategy must integrates the marketing techniques available on the internet with the marketing needs of the customers.
+
+        section.s6.pt-media-6.pb-media-6
+            .container
+                .title-section.text-center 
+                    h2.text46 process
+
+                figure.pic1.mb-media-8
+                    img(src="img/about_08.png", alt="")
+
+                figure.pic2
+                    img(src="img/about_09.png", alt="")
+
+        section.s7.pt-media-6.pb-media-6
+            .container
+                .title-section.text-center 
+                    h2.text46 FAQ
+                .questions 
+                    .item.active.wow.fadeInUp 
+                        h3.title 
+                            span 1
+                            | Can you perform your services for overseas clients?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                            p We will follow the same business practice that we use for our local clients
+                            ol 
+                                li Enquiry
+                                li Our proposal
+                                li Your approval
+                                li 60% down payment
+                                li The first cut (draft design/project)
+                                li Your feedback followed by your approval
+                                li Rework according to your specifications, development &amp; testing
+
+                            p We are as effective and responsive as your local team; we would like to say - even better ;)
+                    
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 2
+                            | Where can I view your portfolio?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 3
+                            | How much and how do you charge?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+             
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 4
+                            | What is the typical development time of a website?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+             
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 5
+                            | What technologies do you work with?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+             
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 6
+                            | What is Eall.com.cn and what services you offer?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 7
+                            | Do you optimize websites for search engines (SEO)?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 8
+                            | Do you provide hosting too? Can I use my preferred web host but have the site built by you?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 9
+                            | What if I only want to upgrade an existing website? 
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 10
+                            | I don’t know exactly what I need. Can you help me?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    .item.wow.fadeInUp 
+                        h3.title 
+                            span 11
+                            | How about the legal side - non-disclosure agreements, contracts, etc.?
+                            i.iconfont.icon-right
+                        .des 
+                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
+                   
+                    
+                    
+             
+            
           
 
 block bkfooter
 
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
     script.
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-           
-            // init: false,
-             navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                },
-                768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                },
-                992: {
-                slidesPerView: 5,
-                spaceBetween: 40,
-                },
-                1200: {
-                slidesPerView: 6,
-                spaceBetween: 50,
-                },
-            }
-        });
+        $(function(){
+            $('.item .title').click(function(e){
+                e.preventDefault();
+                //- $(this).closest('.item').siblings('.active').removeClass('active');
+                $that = $(this);
+                $(this).next('.des').slideToggle(300,function(){
+                    //alert("slideToggle() 方法已完成!");
+                    $that.closest('.item').toggleClass('active');
+                });
+                
+               
+            });
+        })
 
 
      

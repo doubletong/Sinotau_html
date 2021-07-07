@@ -1,73 +1,66 @@
 
 
-.page-contact {
+.page-service {
     .s1{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        color:#fff;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 15px;
-        padding-right: 15px;
-        @include mq(xl){
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-        @include mq(xxl){
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+        p{
+            @include mq(xxl){
+                font-size: 1rem;
+            }
         }
     }
-    
-}
-.page-faq{
-    .box{
-        border-bottom:1px #ddd solid;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        @include mq(md){
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+    .s2{
+        margin-bottom: 1.5rem;
+        @include mq(xl){
+            margin-bottom: 2.5rem;
         }
-        @include mq(lg){
-            padding-top: 4rem;
-            padding-bottom: 3rem;
+        @include mq(xxl){
+            margin-bottom: 3.5rem;
+        }
+        .zhongdian{
+            background: $color-primary url(../img/service_01.jpg) no-repeat center center;
+            background-size: cover;
+            color:#fff;
+            .item{
+                padding: 0 2rem;
+                border-right: 1px #fff solid;
+                @include mq(xxl){
+                    font-size: rem(16);
+                }
+            }
+        }
+       
+    }
+    .s3{
+        .note{
+            background-color: $color-primary;
+            color: #fff;
+            padding:.6rem 1rem;
+            margin-bottom: 1.5rem;
+            @include mq(xl){
+                margin-bottom: 2.5rem;
+            }
+            @include mq(xxl){
+                font-size: 1rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+        .item{
+            border-bottom: 1px #eee solid;
+            h3{
+                color:#333;
+            }
+            h4{
+                color: $color-primary;
+                margin-bottom: 3rem;
+                line-height: 1.5;
+            }
+            ol{
+                padding-left: 1.2rem;
+                li{
+                    margin-bottom: .3rem;
+                }
+            }
         }
     }
 }
 
-.page-comments{
-    .formMessage {
-        max-width: 760px;
-        margin: 0 auto;
-        font-size: rem(18);
-        padding: 0 15px;
-        .form-control{
-            width: 100%;
-            border:1px #ddd solid;
-            outline: none;
-            padding: .2rem .5rem;
-        }
-        .form-group{
-            margin-bottom: 1.5rem;
-            @include mq(lg){
-                margin-bottom: 2rem;
-            }
-            label{
-                display: block;
-                text-align: left;
-                @include mq(lg){
-                    text-align: right;
-                }
-            }
-        }
-        .form-action{
-            text-align: center;
-            .btn{
-                font-size: rem(18);
-            }
-        }
-    }
-}

@@ -1,4 +1,4 @@
-extends includes/layoutForHome.pug
+extends includes/layout.pug
 
 block title
     | 首页
@@ -11,233 +11,277 @@ block content
             .swiper-container.home-sliders
                 .swiper-wrapper
                     .swiper-slide
-                        .item.silder_01
-                            //- img.logo-hd(src="img/logo-hd.svg", alt="logo")
-                            video#vid.vid(webkit-playsinline playsinline autoplay x5-video-player-type='h5-page' x-webkit-airplay='allow')
-                                source(src='img/logo-hd.mp4' type='video/mp4')
-
-                            .txt-container
-                                .logo-text.animated(data-animate='fadeInDown')
-                                    img(src="img/logo_text.png", srcset="img/logo_text@2x.png 2x", alt="hanas")
-                                h2.title.text80.animated(data-animate='fadeInUp') HIGH Quality Natural Gas
-                                    a#btn-next.arrow(href="#") 
-                                        i.iconfont.icon-right
-                                p.des.animated(data-animate='fadeInUp') 致力于<strong>可持续&清洁能源</strong>的开发与利用
-                            
-                            
-
+                        .item.silder_01                 
+                            img(src="img/banners/home.jpg", alt="")  
                     .swiper-slide
                         .item.silder_02
+                            img(src="img/banners/home.jpg", alt="")
                             
-                            //- a.more(href="#") more
-                            //- .dot
-                            //- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.52 480.83">                                
-                            //-     <path id="path_slider02" data-name="路径 32" class="cls-2" d="M.32,351c128,105.11,510.22,303.72,1243.78-191.95,209.07-141.27,419.52-198,676.29-129.69"/>
-                            //- </svg>
-                           
-                            <svg class="line1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.52 1080">
-                                <defs>
-                                    <linearGradient id="lg_4" data-name="lg 4" x1="-10.33" y1="1085.67" x2="-9.78" y2="1084.96" gradientTransform="matrix(49, 0, 0, -49, 586.93, 53996)" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#0080cb"/>
-                                    <stop offset="1" stop-color="#80cce3"/>
-                                    </linearGradient>
-                                    <linearGradient id="lg_4-2" x1="-15.93" y1="1087.99" x2="-15.37" y2="1087.29" gradientTransform="matrix(33, 0, 0, -33, 610.93, 36708)" xlink:href="#lg_4"/>
-                                    <linearGradient id="lg_4-3" x1="-1.99" y1="1082.2" x2="-1.43" y2="1081.49" gradientTransform="matrix(177, 0, 0, -177, 1547.93, 192045)" xlink:href="#lg_4"/>
-                                    <linearGradient id="lg_4-4" x1="-3.46" y1="1082.81" x2="-2.91" y2="1082.11" gradientTransform="matrix(121, 0, 0, -121, 1632.93, 131538)" xlink:href="#lg_4"/>
-                                </defs>
-                               
-                                <path id="path_slider02" data-name="路径 32" class="cls-2" d="M-.15,755.32c128,105.12,510.22,303.73,1243.78-192,209.07-141.26,419.52-198,676.3-129.69" transform="translate(0.47)"/>
-                                <g id="btn_26" class="btn_26" data-name="组 26">
-                                    <circle id="椭圆_5-2" data-name="椭圆 5-2" class="cls-5" cx="1247.97" cy="561.5" r="88.5"/>
-                                    <circle id="椭圆_6-2" data-name="椭圆 6-2" class="cls-6" cx="1248.97" cy="562.5" r="60.5"/>
-                                    <g id="MORE" class="cls-7">
-                                    <text class="cls-8" transform="translate(1216.47 570)">MORE</text>
-                                    </g>
-                                </g>                                
-                            </svg>
-
-                            .txt-container
-                                h2.t1.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") TRANSFORM
-                                h4.t2.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 助力中国能源转型
-                                p.des.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 绿色能源践行者 &amp; 能源方案提供者<br/>立志成为清洁能源与可再生能源领域全球领军企业
-
-                            video#vid1.vid(webkit-playsinline playsinline autoplay loop x5-video-player-type='h5-page' x-webkit-airplay='allow' poster='img/plasma-poster.jpg')
-                                source(src='img/plasma.mp4' type='video/mp4')
-
-                            // img.c1(src="img/c1.svg", alt="")
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="c1" viewBox="0 0 1502 1502">
-                                <g id="椭圆_8" data-name="椭圆 8" fill="none" stroke="#00b7de" stroke-width="2">                              
-                                    <circle id="c1-path" class="c1-path" cx="751" cy="751" r="750" fill="none"/>
-                                </g>
-                            </svg>
-
                     .swiper-slide
                         .item.silder_03
 
-                            img#slider-bg-3.slider-bg-3(src="img/slider-bg-3.jpg", alt="")
-                            //- img.c2(src="img/c2.svg", alt="")
-                            <svg xmlns="http://www.w3.org/2000/svg" class="c2" viewBox="0 0 1121 1121">                              
-                                <g id="椭圆_10" data-name="椭圆 10" fill="none" stroke="#00b7de" stroke-width="2">                                 
-                                    <circle id="c2-path" class="c2-path" cx="560.5" cy="560.5" r="559.5" fill="none"/>
-                                </g>
-                            </svg>
-
-                            //- img.line2(src="img/line-2.svg", alt="path 1")
-                            <svg id="line2" class="line2" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.77 1080">
-                                <defs>
-                                  
-                                    <linearGradient id="lg_2" data-name="lg 2" x1="-1.99" y1="1080.09" x2="-1.43" y2="1079.39" gradientTransform="matrix(177, 0, 0, -177, 779.94, 191794.25)" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#0080cb"/>
-                                    <stop offset="1" stop-color="#80cce3"/>
-                                    </linearGradient>
-                                    <linearGradient id="lg_2-2" x1="-3.47" y1="1079.73" x2="-2.91" y2="1079.03" gradientTransform="matrix(121, 0, 0, -121, 864.94, 131287.25)" xlink:href="#lg_2"/>
-                                </defs>
-                             
-                                <path id="path_slider03" data-name="路径 33" class="cls-1" d="M-.55,373c137.18,65.18,287.64,162.09,456.61,295.42,97.58,77,689.82,392.94,1463.52-167.43" transform="translate(0.77)"/>
-                                <g id="btn_project" class="btn_project">
-                                    <circle id="椭圆_5" data-name="椭圆 5" class="cls-3" cx="479.68" cy="683.33" r="88.5"/>
-                                    <circle id="椭圆_6" data-name="椭圆 6" class="cls-4" cx="480.68" cy="684.33" r="60.5"/>
-                                    <g id="MORE" class="cls-5">
-                                    <text class="cls-6" transform="translate(448.18 691.83)">MORE</text>
-                                    </g>
-                                </g>
-                            </svg>
-
-                            //- a.more(href="#") more
-                            .txt-container
-                                h2.t1.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") LNG PROJECT
-                                h4.t2.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 地球上最干净的能源
-                                ul.list.animated.wow(data-animate='fadeInUp',data-wow-delay="1s")
-                                    li 国家“十三五”规划项目
-                                    li 闽宁对口扶贫协作重大标志工程
-                                    li 宁夏天然气产供储销体系重大储气设施
-                                    li 哈纳斯打造天然气全球产业链关键重大项目
+                            img(src="img/banners/home.jpg", alt="")
 
                     .swiper-slide
                         .item.silder_04
 
-                            img#slider-bg-4.slider-bg-4(src="img/slider-bg-4.jpg", alt="")
-                            //- img.c3(src="img/c3.svg", alt="")
-
-                            <svg class="c3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1121 1121">                                
-                                <g id="椭圆_12" data-name="椭圆 12" fill="none" stroke="#00b7de" stroke-width="2">
-                                    <circle id="c3-path" class="c3-path" cx="560.5" cy="560.5" r="560.5"/>                                  
-                                </g>
-                            </svg>
-
-
-                            //- img.line3(src="img/line-3.svg", alt="path 3")
-
-                            <svg id="line3" class="line3" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921.98 1080">
-                                <defs>                                  
-                                    <linearGradient id="lg_04_2" data-name="lg 2" x1="-1.99" y1="1080.66" x2="-1.44" y2="1079.95" gradientTransform="matrix(177, 0, 0, -177, 1305.01, 191951.03)" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#0080cb"/>
-                                    <stop offset="1" stop-color="#80cce3"/>
-                                    </linearGradient>
-                                    <linearGradient id="lg_04_2-2" x1="-3.47" y1="1080.56" x2="-2.92" y2="1079.86" gradientTransform="matrix(121, 0, 0, -121, 1390.01, 131444.03)" xlink:href="#lg_04_2"/>
-                                </defs>
-                           
-                                <path id="path_slider04" data-name="路径 34" class="cls-2" d="M-1.11,387.16c161.7-142.46,415.46-262.77,1006.42,365,210.5,210.5,579.06,222.39,914.85-194" transform="translate(1.44)"/>
-                                 <g id="btn_sust" class="btn_sust">
-                                    <circle id="椭圆_5" data-name="椭圆 5" class="cls-3" cx="1004.07" cy="740.2" r="88.5"/>
-                                    <circle id="椭圆_6" data-name="椭圆 6" class="cls-4" cx="1005.07" cy="741.2" r="60.5"/>
-                                    <g id="MORE" class="cls-5">
-                                    <text class="cls-6" transform="translate(972.57 748.7)">MORE</text>
-                                    </g>
-                                </g>
-                            </svg>
-
-                            //- a.more(href="#") more
-
-                            .txt-container
-                                h2.t1.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") SUSTAINABLE
-                                h4.t2.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 可持续发展
-                                ul.list.animated.wow(data-animate='fadeInUp',data-wow-delay="1s")
-                                    li 促进可再生清洁能源的有效利用
-                                    li 实现能源生产、储备和供应的多样化
-                                    li 改善利用效率，进而促进中国的能源转型
-                                    li 实现环境的持续改善
+                            img(src="img/banners/home.jpg", alt="")
 
                     .swiper-slide
                         .item.silder_05
-                            //- img.line4(src="img/line-4.svg", alt="path 4")
-                            <svg id="line4" class="line4" data-name="line 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921.79 1080">
-                                <defs>
-                                   
-                                    <linearGradient id="lg_05" data-name="lg 8" x1="-13.31" y1="1079.96" x2="-12.76" y2="1079.25" gradientTransform="matrix(39, 0, 0, -39, 872.69, 42790)" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#0080cb"/>
-                                    <stop offset="1" stop-color="#80cce3"/>
-                                    </linearGradient>
-                                    <linearGradient id="lg_05-2" x1="-19.77" y1="1079.55" x2="-19.21" y2="1078.85" gradientTransform="matrix(27, 0, 0, -27, 890.69, 29824)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-3" x1="-13.31" y1="1079.96" x2="-12.76" y2="1079.25" gradientTransform="matrix(39, 0, 0, -39, 1327.69, 42873)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-4" x1="-19.77" y1="1079.55" x2="-19.21" y2="1078.85" gradientTransform="matrix(27, 0, 0, -27, 1345.69, 29907)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-5" x1="-13.31" y1="1079.96" x2="-12.76" y2="1079.25" gradientTransform="matrix(39, 0, 0, -39, 1785.69, 42638)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-6" x1="-19.77" y1="1079.55" x2="-19.21" y2="1078.85" gradientTransform="matrix(27, 0, 0, -27, 1803.69, 29672)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-7" x1="-1.99" y1="1080.67" x2="-1.44" y2="1079.97" gradientTransform="matrix(177, 0, 0, -177, 2063.69, 191572)" xlink:href="#lg_05"/>
-                                    <linearGradient id="lg_05-8" x1="-3.47" y1="1080.58" x2="-2.92" y2="1079.87" gradientTransform="matrix(121, 0, 0, -121, 2148.69, 131065)" xlink:href="#lg_05"/>
-                                </defs>
-                               
-                                <path id="path_slider05" data-name="路径 31" class="cls-2" d="M-1,472.62C92.87,394,188.27,461.74,363.86,686,496.63,855.49,782.08,866.3,1255.15,546.64c261.81-176.91,486.7-198.47,665.29-200" transform="translate(1.34)"/>
-                                <g id="btn_01" class="btn_01" data-name="组 7">
-                                    <circle id="椭圆_5" data-name="椭圆 5" class="cls-3" cx="364.85" cy="686.14" r="19.5"/>
-                                    <circle id="椭圆_6" data-name="椭圆 6" class="cls-4" cx="364.85" cy="686.14" r="13.5"/>
-                                </g>
-                                <g id="btn_02" class="btn_02" data-name="组 15">
-                                    <circle id="椭圆_5-2" data-name="椭圆 5-2" class="cls-5" cx="819.85" cy="769.14" r="19.5"/>
-                                    <circle id="椭圆_6-2" data-name="椭圆 6-2" class="cls-6" cx="819.85" cy="769.14" r="13.5"/>
-                                </g>
-                                <g id="btn_03" class="btn_03" data-name="组 16">
-                                    <circle id="椭圆_5-3" data-name="椭圆 5-3" class="cls-7" cx="1277.85" cy="534.14" r="19.5"/>
-                                    <circle id="椭圆_6-3" data-name="椭圆 6-3" class="cls-8" cx="1277.85" cy="534.14" r="13.5"/>
-                                </g>
-                                <g id="btn_04" class="btn_04">
-                                    <circle id="椭圆_5-4" data-name="椭圆 5-4" class="cls-9" cx="1762.85" cy="359.14" r="88.5"/>
-                                    <circle id="椭圆_6-4" data-name="椭圆 6-4" class="cls-10" cx="1763.85" cy="360.14" r="60.5"/>
-                                    <g id="MORE" class="cls-11">
-                                    <text class="cls-12" transform="translate(1731.35 367.64)">MORE</text>
-                                    </g>
-                                </g>
-                            </svg>
-
-                            //- a.more(href="#") more
-                            .event.event01
-                                .date.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") 2014.08
-                                p.ev.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") 莆田哈纳斯液化天然气有限公司成立 
-                            .event.event02
-                                .date.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 2016.12
-                                p.ev.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 哈纳斯莆田LNG接收站项目列入国家《天然气发展“十三五”规划》
-                            .event.event03
-                                .date.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 2017.09
-                                p.ev.animated.wow(data-animate='fadeInUp',data-wow-delay="1s") 哈纳斯莆田LNG接收站项目建设指挥部竣工
-
-                            .txt-container
-                                h2.t1.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") DEVELOPMENT
-                                h4.t2.animated.wow(data-animate='fadeInDown',data-wow-delay="1s") 大记事
+                            img(src="img/banners/home.jpg", alt="")
 
 
-                //- .swiper-pagination              
+                .swiper-pagination              
                 //- .swiper-next
                 //-     i.iconfont.icon-next
                 //- .swiper-prev
                 //-     i.iconfont.icon-prev
 
 
-            //- a.scrolldown(href="#s2")
-            //-     span  
-        
+        section.s2.pt-media-6.pb-media-9
+            .container 
+                .title-section 
+                    h2.text36.text-center Our services
+                
+                .row 
+                    .col-md-6.col-lg-3 
+                        .item 
+                            dl.list 
+                                dt.text24 Website building
+                                dd Corporate website
+                                dd Listed company website
+                                dd Foreign trade website
+                                dd Brand website
+                                dd Marketing website
+
+                    .col-md-6.col-lg-3 
+                        .item 
+                            dl.list 
+                                dt.text24 E-commerce
+                                dd E-commerce website
+                                dd Product E-commerce
+                                dd Mobile e-commerce
+                                dd P2P Finance
+                                dd Website system platform
+
+                    .col-md-6.col-lg-3 
+                        .item 
+                            dl.list 
+                                dt.text24 WeChat Mini Program
+                                dd WeChat Mini Program
+                                dd H5 event webpage
+                                dd WeChat Mall
+                                dd Micro official website
+                                dd WeChat marketing promotion
+
+                    .col-md-6.col-lg-3 
+                        .item 
+                            dl.list 
+                                dt.text24 Operation
+                                dd SEO optimization
+                                dd Brand Promotion
+                                dd Website agent operation
+                                dd WeChat Weibo Douyin operation
+                                dd Advertising media delivery
+
+        section.s3.pt-media-6.pb-media-3
+            .container 
+                .title-section.text-center.mb-media-5
+                    h2.text36 eall tech website design
+                    p Independent research and development of application technology, user experience and interactive planning
+
+                .swiper-container.work-slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            .item
+                                img(src="img/home_04_1.png", alt="")                                
+                        .swiper-slide
+                            .item
+                                img(src="img/home_04_1.png", alt="")
+                                
+                        .swiper-slide
+                            .item
+                                img(src="img/home_04_1.png", alt="")
+
+
+                    //- .swiper-pagination              
+                    .swiper-next
+                        i.iconfont.icon-next
+                    .swiper-prev
+                        i.iconfont.icon-prev
+
+        section.s4.pt-media-6.pb-media-6 
+            .container
+                .title-section.text-center.mb-media-5
+                    h2.text36 Customer case
+                    p Professionally empowers the growth of Internet sales of brands in various industries, and uses works to speak for strength
+            .work-list 
+                .swiper-container.case-sliders
+                    .swiper-wrapper
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#27262a;") 
+                                    img(src="img/works/w01.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#e40312;") 
+                                    img(src="img/works/w02.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title                     
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#85c43c;") 
+                                    img(src="img/works/w03.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#f3f3f3;") 
+                                    img(src="img/works/w04.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#139891;") 
+                                    img(src="img/works/w05.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#d4d7da;") 
+                                    img(src="img/works/w06.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title                         
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#41a4f1;") 
+                                    img(src="img/works/w07.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title                           
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title     
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title     
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title     
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title     
+                        .swiper-slide
+                            .item 
+                                a.pic(href="work_detail.html", style="background-color:#804542;") 
+                                    img(src="img/works/w08.png", alt="w01")
+                                h3
+                                    a(href="work_detail.html") Website case title     
+                .nav
+
+                    .swiper-prev2
+                        i.iconfont.icon-prev
+                    a(href="works.html") 
+                        i.iconfont.icon-category-fill
+                    .swiper-next2
+                        i.iconfont.icon-next
 
             
+                           
 
+        section.s5             
+            .row.no-gutters 
+                .col-lg-6
+                    .text-container 
+                        .txt
+                            h2.title.text60.wow.fadeInUp Eall Tech
+                            h3.title2.text24.wow.fadeInUp The most creative online digital marketing solution
+                            p.des.wow.fadeInUp We are Committed to build more and better Internet brands, provide professional Internet brand proposal and use high standards of design, create the brand route with a true sense of direction, unremitting our efforts to create the greatest value for our customers internet brand in the interactive marketing field. We have over seven years of efforts & experience, and with nearly a thousand of case experiences, Eall has already become a famous network marketing interactive and brand design and planning company in domestic China, with very high reputation and public praise.
+                            a.more.text26.wow.fadeInUp(href="#") Read more
+                .col-lg-6
+                    img.pic(src="img/home_05.jpg", alt="")
+
+        section.s6.container.pt-media-5.pb-media-6
+            .title-section 
+                h3.title.text32 The common choice of <strong>1000+</strong> brand customers
+            
+            .partners
+                .swiper-container.partner-sliders
+                    .swiper-wrapper
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner7.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner8.jpg", alt="")                              
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner9.jpg", alt="") 
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner10.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner11.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner12.jpg", alt="")                            
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner13.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner14.jpg", alt="")                              
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner15.jpg", alt="") 
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner16.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner17.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner18.jpg", alt="")  
+                        .swiper-slide
+                            .item         
+                                img(src="img/partners/partner19.jpg", alt="")  
+
+                .swiper-next1
+                    i.iconfont.icon-next
+                .swiper-prev1
+                    i.iconfont.icon-prev
+              
             
 block bkfooter
     script(src='js/vendor/swiper/js/swiper-bundle.min.js')
-    script(src='js/libs/gsap.min.js')
-    script(src='js/libs/MotionPathPlugin.min.js')
+    //- script(src='js/libs/gsap.min.js')
+    //- script(src='js/libs/MotionPathPlugin.min.js')
     //- script(src='js/libs/MotionPathHelper.min.js')
    
-    //script(src='js/vendor/waypoints/lib/jquery.waypoints.min.js')
-    //script(src='js/vendor/jquery.counterup/jquery.counterup.min.js')
+    //- //script(src='js/vendor/waypoints/lib/jquery.waypoints.min.js')
+    //- //script(src='js/vendor/jquery.counterup/jquery.counterup.min.js')
     script.
        
      
@@ -246,271 +290,87 @@ block bkfooter
             // $('.num').counterUp({time: 2000,});
 
             var swiper1 = new Swiper('.home-sliders', {
-                
+               
                 //- speed: 1000,
-                mousewheel: true,
-                //- pagination: {
-                //-     el: '.swiper-pagination',
-                //-     clickable: true,
-                //- },
+                //- mousewheel: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 //- navigation: {              
                 //-     nextEl: '.swiper-next',
                 //-     prevEl: '.swiper-prev',
                 //- },
             });
 
-
-            document.getElementById('vid').addEventListener('ended',myHandler,false);
-            function myHandler(e) {
-              
-                var els = $('.silder_01').find(".animated");
-                els.each(function () {
-                    var effect = $(this).attr("data-animate");       
-                    $(this).addClass('wow').addClass(effect);
-                });
-                new WOW().init();
-            }
-
-            $('#btn-next').click(function(e){
-                e.preventDefault();
-                swiper1.slideNext()
+            var swiper1 = new Swiper('.work-slider', {
+               
+                //- speed: 1000,
+                //- mousewheel: true,
+                //- pagination: {
+                //-     el: '.swiper-pagination',
+                //-     clickable: true,
+                //- },
+                navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
             });
 
-            swiper1.on('slideChange', function () {
-
-                //register the plugin
-                gsap.registerPlugin(MotionPathPlugin);
-
-                if(swiper1.activeIndex==0){
-                    // alert("0")
-                    //- var els = $('.silder_01').find(".go_play");
-                    //- els.each(function () {
-                    //-     var effect = $(this).attr("data-animate");       
-                    //-     $(this).addClass('wow').addClass(effect);
-                    //- });
-                }
-
-                if(swiper1.activeIndex==1){
-                    $("#path_slider02").addClass('animatePath');
-                    $("#c1-path").addClass('animatePath');
-                    $("#vid1").addClass('vid-play');
-
-                    var els = $('.silder_02').find(".animated");
-                    els.each(function () {
-                        var effect = $(this).attr("data-animate");       
-                        $(this).addClass('wow').addClass(effect);
-                    });
-
-                    // set the element to rotate from it's center
-                    gsap.set(".btn_26", {
-                        xPercent: -50,
-                        yPercent: -50,
-                        transformOrigin: "50% 50%",
-                        autoAlpha: 0,
-                        scale: 0.4
-                    });
-
-                    gsap.to(".btn_26", {
-                        motionPath: {
-                            path: "#path_slider02",
-                            align: "#path_slider02",                        
-                            end: 0.65
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-                        scale: 1
-                    });
-                   
-                }else{
-                    $("#path_slider02").removeClass('animatePath');   
-                    $("#c1-path").removeClass('animatePath');   
-                    $("#vid1").removeClass('vid-play');
-                }
-
-                if(swiper1.activeIndex==2){
-                    $("#path_slider03").addClass('animatePath');
-                    $("#c2-path").addClass('animatePath');
-                    $("#slider-bg-3").addClass('vid-play');
-                    // set the element to rotate from it's center
-
-                    var els = $('.silder_03').find(".animated");
-                    els.each(function () {
-                        var effect = $(this).attr("data-animate");       
-                        $(this).addClass('wow').addClass(effect);
-                    });
-
-                    gsap.set(".btn_project", {
-                        xPercent: -50,
-                        yPercent: -50,
-                        transformOrigin: "50% 50%",
-                        autoAlpha: 0,
-                        scale: 0.4
-                    });
-
-                    gsap.to(".btn_project", {
-                        motionPath: {
-                            path: "#path_slider03",
-                            align: "#path_slider03",                        
-                            end: 0.30
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-                        scale: 1
-                    });
-
-                }else{
-                    $("#path_slider03").removeClass('animatePath');   
-                    $("#c2-path").removeClass('animatePath');   
-                    $("#slider-bg-3").removeClass('vid-play');
-                }
-
-                if(swiper1.activeIndex==3){
-                    $("#path_slider04").addClass('animatePath');
-                    $("#c3-path").addClass('animatePath');
-                    $("#slider-bg-4").addClass('vid-play');
-
-                    var els = $('.silder_04').find(".animated");
-                    els.each(function () {
-                        var effect = $(this).attr("data-animate");       
-                        $(this).addClass('wow').addClass(effect);
-                    });
-
-                    // set the element to rotate from it's center
-                    gsap.set(".btn_sust", {
-                        xPercent: -50,
-                        yPercent: -50,
-                        transformOrigin: "50% 50%",
-                        autoAlpha: 0,
-                        scale: 0.4
-                    });
-
-                    gsap.to(".btn_sust", {
-                        motionPath: {
-                            path: "#path_slider04",
-                            align: "#path_slider04",                        
-                            end: 0.55
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-                        scale: 1
-                    });
-                   
-                }else{
-                    $("#path_slider04").removeClass('animatePath');   
-                    $("#c3-path").removeClass('animatePath');   
-                    $("#slider-bg-4").removeClass('vid-play');
-                }
-
-                if(swiper1.activeIndex==4){
-                    $("#path_slider05").addClass('animatePath');
-                    //- $("#c3-path").addClass('animatePath');
-                    //- $("#slider-bg-4").addClass('vid-play');
-
-                    var els = $('.silder_05').find(".animated");
-                    els.each(function () {
-                        var effect = $(this).attr("data-animate");       
-                        $(this).addClass('wow').addClass(effect);
-                    });
-
-
-                    // set the element to rotate from it's center
-                    gsap.set(".btn_01,.btn_02,.btn_03", {
-                        xPercent: -50,
-                        yPercent: -50,
-                        transformOrigin: "50% 50%",
-                        autoAlpha: 0,                    
-                    });
-
-                    gsap.set(".btn_04", {
-                        xPercent: -50,
-                        yPercent: -50,
-                        transformOrigin: "50% 50%",
-                        autoAlpha: 0,
-                        scale: 0.4
-                    });
-
-                    gsap.to(".btn_01", {
-                        motionPath: {
-                            path: "#path_slider05",
-                            align: "#path_slider05",                        
-                            end: 0.22
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-             
-                    });
-                    gsap.to(".btn_02", {
-                        motionPath: {
-                            path: "#path_slider05",
-                            align: "#path_slider05",                        
-                            end: 0.45
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-                  
-                    });
-                    gsap.to(".btn_03", {
-                        motionPath: {
-                            path: "#path_slider05",
-                            align: "#path_slider05",                        
-                            end: 0.69
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,               
-                    });
-
-                    gsap.to(".btn_04", {
-                        motionPath: {
-                            path: "#path_slider05",
-                            align: "#path_slider05",                        
-                            end: 0.92
-                        },
-                        duration: 2,
-                        autoAlpha: 1,
-                        delay: 0.6,
-                        ease: "power1.inOut",
-                        immediateRender: true,
-                        scale: 1
-                    });
-                   
-                }else{
-                    $("#path_slider05").removeClass('animatePath');   
-                    //- $("#c3-path").removeClass('animatePath');   
-                    //- $("#slider-bg-4").removeClass('vid-play');
-                }
-
-                new WOW().init();
+            var swiper = new Swiper(".case-sliders", {
+                slidesPerView: 1,
+                slidesPerColumn: 2,
+                spaceBetween: 20,
+                navigation: {              
+                    nextEl: '.swiper-next2',
+                    prevEl: '.swiper-prev2',
+                },
+                 breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+            
+                },
             });
-            //- var svg = new Walkway({
-            //-     selector: '#path_slider02',
-            //-     duration: '2000',
-            //-     // can pass in a function or a string like 'easeOutQuint'
-            //-     easing: function (t) {
-            //-         return t * t;
-            //-     }
-            //-     });
 
-            //- svg.draw(function() {
-            //-     console.log('Animation finished');
-            //- });
+            var swiper = new Swiper(".partner-sliders", {
+                slidesPerView: 2,
+                slidesPerColumn: 2,
+                spaceBetween: 20,
+                navigation: {              
+                    nextEl: '.swiper-next1',
+                    prevEl: '.swiper-prev1',
+                },
+                 breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                    1201: {
+                        slidesPerView: 6,
+                        spaceBetween: 20,
+                    },
+                },
+            });
+
+      
                 
         });
 

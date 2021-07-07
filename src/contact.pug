@@ -6,66 +6,114 @@ block title
 block bkheader
    
 
-block content               
-    .page.page-contact.pb-media-5
-        .banner-contact 
-            picture
-                source(srcset="img/contact_1@2x.jpg", media="(min-width: 1921px)")
-                img(src="img/contact_1.jpg", alt="Contact Us")
+block content    
+    .banner.banner-about.wow.fadeInUp
+        img(src="img/banners/contact.jpg", alt="Contact Us")
+    .page.page-contact.container
+        
+        section.s1.pt-media-6.pb-media-6
+            .row 
+                .col-lg-6
+                    .add-list 
+                        .item 
+                            h3.title.text32 Hongkong Office
+                            dl.contact 
+                                dt.phone Phone: 
+                                dd 00852-6387-2336    Mr.Stanley
+                            dl.contact 
+                                dt.email Email:
+                                dd eallinfo@gmail.com
+                            dl.contact 
+                                dt.address Address:
+                                dd 300 Nathan Road, 9p New Lucky House, Kowloon, Hong Kong
 
-        .container.txt
-            h1.text80 Contact Us
-            p Founded in June 2001, a National high-tech production-oriented enterprise, Din has advanced production and testing equipment, with independent product reliability laboratory, on the basis of IEC, GB and other relevant standards to do related regular life test, our R&D team conducts tireless research and experiment on new materials and new technology, Strive to be in sync with international advanced level technically, and can interact well with customers to quickly design and produce cost-effective products. 
+                        .item 
+                            h3.title.text32 Shenzhen Office (Headquarters)
+                            dl.contact 
+                                dt.phone Phone: 
+                                dd 86-755-8528 1158    86-755-8175 0066
+                            dl.contact 
+                                dt.email Email:
+                                dd eallsales@gmail.com    eallinfo@gmail.com
+                            dl.contact 
+                                dt.address Address:
+                                dd No. 29, Gaoxin Nanhuan Road, High-tech Zone Community, Yuehai Street, Nanshan District, Shenzhen, Phase I, Overseas Student Venture Building, 2002
+
+                        .item 
+                            h3.title.text32 USA Office (Los Angeles)
+                            dl.contact 
+                                dt.phone Phone: 
+                                dd +1 323 712 7188    Mr.Sergio
+                            dl.contact 
+                                dt.email Email:
+                                dd sergio@ealltech.com
+                            dl.contact 
+                                dt.address Address:
+                                dd 1012 W. Beverly Blvd. #862 Montebello, CA 90640 U.S.A.
+
+
+                .col-lg-6 
+                    #map-gaode.map-gaode 
+
+        section.s2.pt-media-6.pb-media-6
+            .row 
+                .col-md-6.col-lg-3
+                    .item 
+                        h3.text32 Beijing Office
+                        dl.contact 
+                            dt.phone Phone: 
+                            dd 86-010-63798823    Mr. Du
+                        dl.contact 
+                            dt.email Email:
+                            dd bj@eall.com.cn
+                .col-md-6.col-lg-3
+                    .item 
+                        h3.text32 Shanghai Office
+                        dl.contact 
+                            dt.phone Phone: 
+                            dd (0)15000030325    Mr. Tian
+                        dl.contact 
+                            dt.email Email:
+                            dd william@eall.com.cn
+                .col-md-6.col-lg-3
+                    .item 
+                        h3.text32 Wuhan Office
+                        dl.contact 
+                            dt.phone Phone: 
+                            dd (0)13886177058    Mr. Liang
+                        dl.contact 
+                            dt.email Email:
+                            dd wh@eall.com.cn
+                .col-md-6.col-lg-3
+                    .item 
+                        h3.text32 Wuhan Office
+                        dl.contact 
+                            dt.phone Phone: 
+                            dd (0)13926430883    Mr. Du
+                        dl.contact 
+                            dt.email Email:
+                            dd duyusheng@eall.com.cn
     
-    
-        .container.form-container
-            .form-contact 
-                .title-section 
-                    h2.text30 ONLINE MESSAGE
-                form(action="#", method="post") 
-                    .row 
-                        .col-lg-6 
-                            .form-group 
-                                .form-label.req NAME
-                                input.form-control(type="text", required, name="name" placeholder="your name")
-                            .form-group 
-                                .form-label.req E-MAIL
-                                input.form-control(type="email", required, name="email" placeholder="inten@123.com")
-                            .form-group 
-                                .form-label.req SUBJECT
-                                input.form-control(type="text", required, name="subject" placeholder="hey there")
-                        
-                        .col-lg-6 
-                            .form-group2
-                                textarea.form-control-textarea(name="message", placeholder="Leave what you want to say…", required)
-
-                    .action
-                        button.btn.btn-yellow.btn-radius(type="submit") SEND MESSAGE
-
-                .row.align-items-end
-                    .col-lg 
-                        ul.contact 
-                            li 
-                                i.iconfont.icon-marker
-                                | Bld No C2, Mingzhuoxing Industrial Park, Guangming District, Shenzhen, China.
-                            li 
-                                i.iconfont.icon-phone
-                                | 86-755-29948886/86-755-81727962/86-755-29948916                 
-                            li 
-                                i.iconfont.icon-email
-                                | sales@ csdcapacitor.com
-
-                
-
-                    .col-lg-auto 
-                        .info CONTACT US TO GET MORE INFOS
-
+        
                           
                     
 block bkfooter
-
+    script(src='https://webapi.amap.com/maps?v=2.0&key=1cacf315d4678f9f550379b274a06d7a',type="text/javascript")
    
     script.
+        var map = new AMap.Map('map-gaode', {
+            zoom:12,//级别
+            center: [86.08683,44.415465],//中心点坐标
+            viewMode:'3D'//使用3D视图
+        });
+
+        var marker = new AMap.Marker({
+            position: new AMap.LngLat(86.08683,44.415465),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            title: 'ealltech'
+        });
+
+        // 将创建的点标记添加到已有的地图实例：
+        map.add(marker);
         $(function () {
         
   

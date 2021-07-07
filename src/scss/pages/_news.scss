@@ -1,91 +1,138 @@
 .page-news {
-    .newslist {
+    .news-list {
         margin-bottom: 2rem;
+        @include mq(xl){
+            padding-right: 3rem;
+        }
+        @include mq(xxl){
+            margin-bottom: 3rem;
+            padding-right: 5rem;
+        }
         .item {
             position: relative;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-            @include mq(md) {
-                padding-top: 2rem;
-                padding-bottom: 3rem;
+            margin-bottom: 2rem;
+            @include mq(xxl){
+                margin-bottom: 3rem;
             }
-            @include mq(lg) {
-                padding-top: 3rem;
-                padding-bottom: 4rem;
+            .txt{
+                border-bottom: 1px #eee solid;
+                padding-bottom: 2rem;
+                @include mq(xxl){
+                    padding-bottom: 3rem;
+                }
+                p.des{
+                    margin-bottom: 2rem;
+                    color: #999;
+                    text-align: justify;
+                 
+                }
             }
-            &:hover {
-                background-color: #fff;
-                box-shadow: 0 0 30px rgba(0, 0, 0, .05);
-            }
+           
             h3 {
-                font-weight: normal;
+                @include mq(xxl){
+                    margin-bottom: 1.5rem;
+                }
                 a {
-                    color: $color-primary;
+                    color: #333;
                     &:hover {
-                        color: $color-secondary;
+                        color: $color-primary;
                     }
                 }
             }
             .date {
-                position: relative;
-                padding-left: rem(30);
-                &::before {
-                    position: absolute;
-                    content: " ";
-                    display: block;
-                    width: 20px;
-                    height: 1px;
-                    left: 0;
-                    top: 50%;
-                    z-index: 10;
-                    background-color: $color-primary;
-                }
+                text-align: right;
+                color:#999;
             }
-            p.des {
-                color: #999;
-                @include mq(xxl) {
-                    font-size: rem(16);
+         
+         
+        }
+    }
+    .right-col{
+        padding: 1rem 2rem;
+        background-color: #f8f8f8;
+        .title{
+            color:$color-primary;
+        }
+
+        .list {
+            @include reset-list();
+            li{
+                margin-bottom: 1.5rem;
+                .pic{
+                    overflow: hidden;
+                    a{
+                        display: block;
+                        margin-bottom: .4rem;
+                        img{
+                            display: block;
+                            transition: all .3s;
+                        }
+                        &:hover{
+                            img{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                   
                 }
-            }
-            &.odd {
-                background-color: #fff;
+                h3{
+                    font-weight: normal;
+                }
+                &.txt{
+                    border-bottom: 1px #c6c6c6 dashed;
+                    margin: 0;
+                    a{
+                        display: block;
+                        padding: .6rem 0;
+                        color:#666;
+                        &:hover{
+                            color:$color-primary;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-.banner {
-    .news-header {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 100;
-        background-image: linear-gradient(90deg, rgba(17, 21, 77, .6), transparent);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        h1 {
-            font-weight: normal;
-        }
-        .note {
-            font-weight: lighter;
-        }
-    }
-}
 
 .page-news-detail {
+    .news-header{
+        text-align: center;
+        border-bottom: 1px #eee solid;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        @include mq(xl){
+            margin-bottom: 3rem;
+        }
+        @include mq(xxl){
+            margin-bottom: 4rem;
+        }
+        h1{
+            color:#333;
+        }
+        .date{
+            text-align: center;
+            color:#999;
+        }
+    }
     .container {
+       
+        @include mq(xxl){
+            max-width: 1266px;
+        }
         .content {
+            border-bottom: 1px #ccc solid;
             color: #8a9095;
+            padding-bottom: 2rem;
             margin-bottom: 2rem;
             @include mq(xl) {
+                padding-bottom: 3rem;
                 margin-bottom: 3rem;
             }
             p {
                 text-align: justify;
-                @include mq(xl) {
-                    font-size: 1rem;
-                }
+           
             }
             .pic {
                 text-align: center;
@@ -95,30 +142,26 @@
         }
         .pagenav {
             a {
-                max-width: 280px;
+             
                 display: inline-block;
-                height: 36px;
-                border-radius: 18px;
-                padding: 0 1.5rem;
+                height: 36px; 
                 line-height: 36px;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap;
-                border: $color-primary 1px solid;
-                margin: 0 .5rem;
-                @include mq(lg) {
-                    margin: 0 1rem 0 0;
+                white-space: nowrap;            
+        
+                &:hover {               
+                    color:$color-primary;
                 }
-                @include mq(xxl) {
-                    height: 60px;
-                    border-radius: 30px;
-                    padding: 0 3rem;
-                    line-height: 60px;
-                    font-size: 1rem;
+                &.prev{
+                    .iconfont{
+                        margin-right: 1rem;
+                    }
                 }
-                &:hover {
-                    background-color: $color-primary;
-                    color: #fff;
+                &.next{
+                    .iconfont{
+                        margin-left: 1rem;
+                    }
                 }
             }
         }

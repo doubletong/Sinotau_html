@@ -1,22 +1,65 @@
 header#site-header.site-header    
-    .container-fluid
-        .row.align-items-top   
-            .col
+    .container
+        .row.align-items-center   
+            .col-auto
                 a.logo(href="index.html")                   
-                    img#logo(src="img/logo.png", alt="ChuangShiDing")
+                    img#logo(src="img/logo.svg", alt="logo")
            
-          
-            .col-auto
-                a.lang(href="#") EN
-                        
-            .col-auto
-                a.mobile_nav(href="#") MENUS
+            .col                
+                
+                ul.mainav  
+                    li
+                        a(href="index.html") Home
+                    li
+                        a(href="about.html") About us
+                    li
+                        a(href="services.html") Services
+                        //- ul.sub-menu                     
+                        //-     li 
+                        //-         a(href="#") Instruments &amp; Meters
+                        //-     li 
+                        //-         a(href="#") Smart Household
+                        //-     li 
+                        //-         a(href="#") Inverter
+                        //-     li 
+                        //-         a(href="#") Power Elec tronics
+                        //-     li 
+                        //-         a(href="#") Medical power supply
+                        //-     li 
+                        //-         a(href="#") Power distribution
+                    li  
+                        a(href="works.html") Works
+                        //- ul.sub-menu                        
+                        //-     li
+                        //-         a(href="overview.html") Overview
+                        //-     li
+                        //-         a(href="certificates.html") Certificates
+                        //-     li
+                        //-         a(href="tradeshows.html") Tradeshows
+                    li
+                        a(href="news.html") News
+                    li
+                        a(href="support.html") Support
+                    li
+                        a(href="testimonials.html") Testimonials
+                    li
+                        a(href="contact.html") Contact us
 
-            //- .col-auto.mobilemenu
-            //-     .menu-toggle
-            //-         .one
-            //-         .two
-            //-         .three
+            .col-auto
+                a.search(href="#") 
+                    i.iconfont.icon-search
+                    
+
+            .col-auto
+                a.lang(href="#") 
+                    i.iconfont.icon-fill-earth 
+                    | CN                    
+
+            .col-auto.mobilemenu
+                .menu-toggle
+                    .one
+                    .two
+                    .three
 
 
     div#overmenu.menu-over

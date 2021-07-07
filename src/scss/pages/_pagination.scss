@@ -10,11 +10,12 @@
         a {
             display: block;
             line-height: 1;
-            padding: .2rem .5rem;
+            padding: .5rem .72rem;
             color: #999;
-            margin: 0 .5rem;
-            @include mq(md) {
-                padding: .5rem .72rem;
+            margin: 0 .1rem;
+            background-color: #f3f3f3;
+            @include mq(md) {               
+                padding: .7rem 1rem;
             }
         }
         &.active {
@@ -28,28 +29,9 @@
             }
         }
         .prev,
-        .next {
-            padding: 0;
-            width: 34px;
-            height: 34px;
-            text-align: center;
-            line-height: 32px;
-            border: 1px #c6c6c8 solid;
-            color: $color-primary;
-            border-radius: 3px;
-            .iconfont {
-                font-size: rem(20);
-            }
-            @include mq(xxl) {
-                width: 45px;
-                height: 45px;
-                line-height: 43px;
-            }
-            &:hover {
-                border: 1px $color-primary solid;
-                background-color: $color-primary;
-                color: #fff;
-            }
+        .next {       
+            text-align: center;          
+            background-color: transparent;
         }
     }
 }

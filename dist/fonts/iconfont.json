@@ -1,16 +1,58 @@
 {
-  "id": "2630748",
-  "name": "哈纳斯",
+  "id": "2642410",
+  "name": "ealltech",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "5354487",
-      "name": "48-Right-Arrow",
+      "icon_id": "19989634",
+      "name": "category-fill",
+      "font_class": "category-fill",
+      "unicode": "ea51",
+      "unicode_decimal": 59985
+    },
+    {
+      "icon_id": "22633960",
+      "name": "right",
+      "font_class": "next",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "22633975",
+      "name": "right",
+      "font_class": "prev",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "20981726",
+      "name": "right",
       "font_class": "right",
-      "unicode": "e643",
-      "unicode_decimal": 58947
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "16970852",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13519572",
+      "name": "top",
+      "font_class": "top",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "14093231",
+      "name": "fill-earth",
+      "font_class": "fill-earth",
+      "unicode": "e660",
+      "unicode_decimal": 58976
     }
   ]
 }

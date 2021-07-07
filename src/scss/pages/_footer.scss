@@ -1,59 +1,93 @@
-.site-footer {
-    background-color: #333435;
+.site-footer {    
+    background-image:  url(../img/foot.jpg);
+    background-position: center bottom;
+    background-size: cover;
     color:#ACADAD;
-    .bot-nav{
-        display: none;
-        @include mq(lg){
-            display: block;
+    .intro{
+        padding-bottom: 3rem;
+        padding-right: 2rem;
+        .logo{
+            max-width: 211px;
+        }
+        .name{
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+            font-size: rem(18);     
+            @include mq(xl){
+                font-size: rem(20); 
+            }  
+            @include mq(xxl){
+                font-size: rem(22);           
+            }  
         }
     }
     
-    .social {
-        a{
-            display: inline-block;
-            margin-left: .6rem;
-        }
-
-        .iconfont {
-            font-size: rem(26);
-          
-     
-        }
-    }
-
-    .item {
-       dl{
-           max-width: 200px;
-           dt{
-               color:$color-secondary;            
-                font-size: 16px;   
-                margin-bottom: rem(15);    
-                font-weight: normal;    
-           }
-           dd{
-               line-height: 1.6;
-               a{
-                color:#ACADAD;
-                &:hover{
-                    color:#fff;
-                }
-               }
-           }
-       }
-        
-    }
-    .bot {
-        padding: 1rem 0;      
-        background-color: #000;
-        color: #fff;
-  
-        a {
-            color: #fff;
-            &:hover {
-                color: $color-secondary;
-                border-bottom: 1px $color-secondary solid;
+    .contact_right{
+        padding-left: 2rem;
+        .qr{
+            text-align: center;
+            font-size: rem(14);
+            img{
+                margin-bottom: .5rem;
             }
         }
+        h2, h3{
+            color:#fff;
+        }
+        .t1{
+            font-size: rem(16);
+            @include mq(xxl){
+                font-size: rem(18);           
+            } 
+        }
+        .num{
+            font-size: rem(20);
+            @include mq(xl){
+                font-size: rem(22); 
+            }  
+            @include mq(xxl){
+                font-size: rem(24);           
+            } 
+        }
+        .contact{
+            @include reset-list();
+            margin-bottom: 1rem;
+        }
+        .sejiao {
+            img{
+                max-width: 20px;
+            }
+        }
+    }
+    
+
+    .links {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-top: 1px solid;
+        a{
+            display: inline-block;            
+            padding: 0 1rem;
+            border-right: 1px solid;
+            @include mq(xxl){
+                font-size: rem(14);           
+            }  
+        }
+    }
+    .bot {
+        padding: 1rem 0;  
+        font-size: rem(12);
+        @include mq(md){
+            padding: 1.5rem 0;  
+            font-size: rem(14);            
+        }  
+        @include mq(xl){
+            padding: 1.5rem 0;              
+        }  
+        @include mq(xxl){
+            padding: 2rem 0;  
+        }  
+       
     }
 }
 

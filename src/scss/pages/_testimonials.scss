@@ -1,0 +1,60 @@
+.page-testimonials{
+    .s1{
+        text-align: center;
+        padding-bottom: 3rem;
+        @include mq(md){
+            padding-bottom: 4rem;
+        }
+        @include mq(lg){
+            padding-bottom: 5rem;
+        }
+        h2{
+            max-width: 1340px;
+        }
+        
+    }
+    .s2{
+        .comments{
+            border:1px #eee solid;
+            padding: 2rem;
+            @include mq(lg){
+                padding: 3rem;
+            }
+            @include mq(xl){
+                padding: 4rem;
+            }
+            @include mq(xxl){
+                padding: 5rem;
+            }
+            .item{
+                border-bottom: 1px #eee solid;
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+                @include mq(xxl){
+                    padding-bottom: 3rem;
+                    margin-bottom: 3rem;
+                }
+                .author{
+                    background: url(../img/avatar.png) no-repeat left center;
+                    padding-left: 60px;
+                    margin-bottom: 2rem;
+                }
+                .logo{
+                    margin-bottom: 2rem;
+                }
+                .pic{
+                    text-align: right;
+                }
+                .text-container   {
+                    @include mq(xl){
+                        padding-right: 2rem;
+                    }
+                    @include mq(xxl){
+                        padding-right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

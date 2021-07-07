@@ -1,0 +1,74 @@
+extends includes/layout.pug
+
+block title
+    | 组织架构
+    
+block bkheader
+   
+
+block content      
+    .page.page-support.pt-media-7.pb-media-7
+
+        section.s1.container              
+            .form-contact 
+                p.wow.fadeInUp.mb-media-4 We look forward to hearing from you. Whether you seek web design, online consulting or simply have a development question, we will be more than happy to discuss the possibilities. We respond to contact forms within the same working day：
+                form.form-message(action="#", method="post") 
+                    .row 
+                        .col-lg-6 
+                            .form-group 
+                            
+                                input.form-control(type="text", required, name="name" placeholder="Subject:")
+                        .col-lg-6 
+                            .form-group 
+                             
+                                input.form-control(type="email", required, name="email" placeholder="Name:")
+                        .col-lg-6 
+                            .form-group 
+                          
+                                input.form-control(type="text", required, name="subject" placeholder="Company:")
+                        .col-lg-6 
+                            .form-group 
+                              
+                                input.form-control(type="text", required, name="subject" placeholder="E-mail:")
+                        .col-lg-6 
+                            .form-group 
+                         
+                                input.form-control(type="text", required, name="subject" placeholder="Tel:")
+                        .col-lg-6 
+                            .form-group 
+                        
+                                input.form-control(type="text", required, name="subject" placeholder="Fax:")
+                        
+                        .col-lg-12
+                            .form-group
+                                textarea.form-control-textarea(name="message", placeholder="Comment:", required)
+                    .row 
+                        .col-lg-6 
+                            .row 
+                                .col-7
+                                    .form-group                         
+                                        input.form-control(type="text", required, name="subject" placeholder="Auth code :")
+                                .col-5 
+                                    img(src="img/code.jpg", alt="")
+                        .col-lg-6 
+                            .action
+                                button.btn.btn-primary.btn-block(type="submit") SEND MESSAGE
+
+                
+
+
+
+block bkfooter
+
+
+    script.
+      
+        $(function () {
+        
+  
+        
+        });
+      
+       
+
+     

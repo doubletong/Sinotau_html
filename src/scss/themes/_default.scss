@@ -1,0 +1,41 @@
+.site-header{
+    background-color: $color-primary;
+    .mainav{
+        &>li{
+            &>a{
+                color: #fff;
+            }
+        }
+    }
+    .lang
+    {
+       color:#fff;
+    }
+    .search{
+        color:#fff;
+    }
+}
+
+.site-footer{
+    background-color: #333;
+    color:#fff;
+    a{
+        color:#fff;
+    }
+    .links {
+        border-top-color: rgba(255,255,255,.1);
+        color:rgba(255,255,255,.4);
+        line-height: 1;
+        a{
+            color:rgba(255,255,255,.4);
+            border-right-color: rgba(255,255,255,.4);
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+    .bot{
+        background-color: rgba(0,0,0,.06);
+        color:rgba(255,255,255,.6);
+    }
+}
