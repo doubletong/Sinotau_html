@@ -1,30 +1,81 @@
 .site-header {
-    position: absolute;
+    position:relative;
     left: 0;
     top: 0;
     z-index: 8000;
     width: 100%;
-    background-color: transparent;
+    background-color: #fff;
     height: 45px;
     transition: all .2s;   
+    border-bottom: 5px $color-primary solid;
     @include mq(md) {      
-        height: 60px;       
+            
     }
     @include mq(lg) {     
-        height: 70px;       
+        height: auto;
     }
     @include mq(xl) {       
-        height: 80px;      
+ 
     }
     @include mq(xxl) {       
-        height: 100px;       
+
     }
+    .top-col{
+        height: 50px;
+        background-color: #F3F7FA;
+        @include mq(xxl) {       
+            height: 60px;
+        }
+        a{
+            color: #C6CDD3;
+            &:hover{
+                color: $color-primary;
+            }
+            &.down{
+                position: relative;
+                display: block;
+                padding-right: 1rem;
+                &::after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: .8rem;
+                    z-index: 50;
+                    width: 0;
+                    height: 0;
+                    border:4px transparent solid;
+                    border-top-color: #C6CDD3;
+                }
+            }
+            &.contact{
+                display: inline-block;
+                border-radius: 3px;
+                background: #fff;
+                border: 1px solid $color-primary;
+                padding: .05rem .6rem;
+                color:$color-primary;
+            }
+            &.app{
+                display: inline-block;
+                border-radius: 3px;
+                background: $color-primary;
+                border: 1px solid $color-primary;
+                padding: .1rem .6rem;
+                color: #fff;
+            }
+        }
+       
+    }
+
     .container,
     .row {
         height: 100%;
     }
 
     .logo {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
         display: block;
         width: 80px;
         @include mq(md) {
@@ -37,14 +88,14 @@
             width: 140px;
         }
         @include mq(xxl) {
-            width: 158px;
+            width: 164px;
         }
     }
     
     .mainav {
         @include reset-list();
         display: none;
-        text-align: center; 
+        text-align: right; 
         @include mq(lg) {
             display: block;
         }
@@ -53,30 +104,28 @@
             display: inline-block;
             position: relative;          
             height: 100%;
-          
+            margin-left: 2rem;
+            @include mq(xl){
+                margin-left: 3rem;
+            }
+            @include mq(xxl){
+                margin-left: 4rem;
+            }
             &>a {
-                display: block;
-             
+                display: block;             
                 height: 100%;
-                position: relative;
-               
-                @include mq(lg) {
-                    padding: 0 .7rem;
-                    font-size: rem(14);
+                position: relative;               
+                @include mq(lg) {  
                     height: 50px;
                     line-height: 50px;
                 }
-                @include mq(xl) {
-                    padding: 0 1rem;
+                @include mq(xl) {              
                     height: 60px;
-                    line-height: 60px;
-                    font-size: rem(16);
+                    line-height: 60px;    
                 }
-                @include mq(xxl) {
-                    padding: 0 1.5rem;
+                @include mq(xxl) {              
                     height: 70px;
-                    line-height: 70px;
-                    font-size: rem(20);
+                    line-height: 70px;       
                 }
                 &:hover {
                     color: $color-secondary;
@@ -164,20 +213,7 @@
             }
         }
     }
-    .search{
-        .iconfont{
-            @include mq(lg) {
-                font-size: rem(16);
-            }
-            @include mq(xl) {
-                font-size: rem(18);
-            }
-            @include mq(xxl) {
-                font-size: rem(20);
-            }
-        }
-        
-    }
+    
 
  
     .mobilemenu {

@@ -12,25 +12,27 @@
 body {
     color: $regent-grey;
     background-color: #fff;
-    font-family:  "PingFang SC", "Microsoft YaHei", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+    // font-family:  "PingFang SC", "Microsoft YaHei", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: rem(14);
     margin: 0 auto;
     line-height: 1.8;
     position: relative;
-    padding-top: 45px;
+
     @include mq(md) {
         font-size: rem(16);       
-        padding-top: 60px;
+
     }
     @include mq(lg) {
         font-size: rem(14);     
-        padding-top: 70px;
+
     }
     @include mq(xl) {      
-        padding-top: 80px;
+
     }
     @include mq(xxl) {         
-        padding-top: 100px;
+
+        font-size: 1rem;     
     }
 }
 
@@ -45,7 +47,7 @@ a {
 
 .container {
     @include mq(xxl) {
-        max-width: 1506px;
+        max-width: 1210px;
     }
 }
 
@@ -53,50 +55,90 @@ a {
    
     margin-bottom: 1rem;
     h2 {
-        color: $color-primary;    
+        color: $color-secondary;    
         text-transform: uppercase;  
     }
 }
 
 h2,
 h3 {
-    color: $iron;      
+    color: $color-secondary;      
 }
 
 .banner {
-    background-color: $color-primary;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('../img/bg_title.jpg');
-    color: #fff;
     position: relative;
- 
-}
-.two-nav{
-    height: 58px;    
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5.785px 6.894px 27px 0px rgba(0, 0, 0, 0.1);
-       
-    
-   
-      
-    .sub-nav{
-        @include reset-list();
-        text-align: center;
-        li{
-            display: inline-block;
-            line-height: 58px;
-            position: relative;
-            a{
-                display: block;
-                padding: 0 2rem;
-                @include mq(xxl){
-                    font-size: rem(18);
+    .bg{
+        width: 100%;
+    }
+    .breadcrumb{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color:#fff;
+        @include mq(xxl){
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .map-path{
+            @include reset-list();
+            li{
+                display: inline-block;
+               
+                &::after{
+                    content: "/";
+                    transform: translateX(100%);
+                }
+                a{
+                    color:rgba(255, 255, 255, .6);
+                    &:hover{
+                        color:#fff;
+                    }
+                }
+                &.current{
+                    &::after{
+                        display: none;
+                    }
                 }
             }
+        }
+
+
+    }
+    .txt-container {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        color: #fff;
+        text-align: center;
+        h1{
+            line-height: 1;
+        };
+        p{
+            max-width: 480px;
+            margin: 0 auto;
+        }
+   
+    }
+ 
+}
+.two-level-nav{  
+    background-color: #F3F7FA;    
+      
+    .sub-nav{       
+        a{
+            display: inline-block;
+            padding: 1rem 2rem;
+            @include mq(xxl){
+                padding: 1.5rem 2rem;
+            }
             &.active{
-    
+                position: relative;
                 &::after{
                     position: absolute;
                     content: " ";
@@ -111,6 +153,8 @@ h3 {
                 }
             }
         }
+        
+        
     }
 }
 .site-path {
@@ -138,6 +182,43 @@ img {
 .line-1 {
     border: none;
     border-top: 1px #ddd solid;
+}
+
+.section-common{
+    background-color: $color-secondary;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    .txt{
+        text-align: center;
+        h2{
+            color:#fff;
+            @include mq(xxl){
+                margin-bottom: 2rem;
+            }
+        }
+ 
+        a{
+            display: inline-block;
+            padding: .3rem 1.3rem;
+            background-color: $color-primary;
+            color:#fff;
+            border-radius: 3px;
+            &:hover{
+                background-color: $color-secondary;
+            }
+            span{
+                border-radius: 50%;
+                display: inline-block;
+                background-color: #fff;
+                color:$color-primary;
+                height: 25px;
+                width: 25px;
+                line-height: 25px;
+            }
+        }
+    }
 }
 
 .text100 {

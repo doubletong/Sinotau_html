@@ -8,101 +8,99 @@ block bkheader
 block content  
     .page.page-home  
         section.s1
-            .swiper-container.home-sliders
-                .swiper-wrapper
-                    .swiper-slide
-                        .item.silder_01                 
-                            img(src="img/banners/home.jpg", alt="")  
-                    .swiper-slide
-                        .item.silder_02
-                            img(src="img/banners/home.jpg", alt="")
-                            
-                    .swiper-slide
-                        .item.silder_03
-
-                            img(src="img/banners/home.jpg", alt="")
-
-                    .swiper-slide
-                        .item.silder_04
-
-                            img(src="img/banners/home.jpg", alt="")
-
-                    .swiper-slide
-                        .item.silder_05
-                            img(src="img/banners/home.jpg", alt="")
+            img.bg(src="img/banners/home.jpg", srcset="img/banners/home@2x.jpg 2x" alt="智能时代门店提升消费者黏性和转化的数字运营手段")
+            .txt-container 
+                .container
+                    h1.text60.mb-media-2 智能时代门店提升消费者黏性和转化的数字运营手段
+                    p.text20.mb-media-4 用传感器和物联网重构人、货、场，用智能化算法将购物和运营流程自动化，用数字化手段将商品和消费者全方位互通互联
+                    .btns 
+                        a.a1(href="#") 了解如何构建和运营数字化触点
+                        a.a2(href="#") 试用触点运营工具
 
 
-                .swiper-pagination              
-                //- .swiper-next
-                //-     i.iconfont.icon-next
-                //- .swiper-prev
-                //-     i.iconfont.icon-prev
+        section.s2
+            .top 
+                .container 
+                    .row.align-items-center 
+                        .col-md-auto 
+                            img(src="img/home-1.svg", alt="艾瑞咨询")
+                        .col-md
+                            .des.text20 艾瑞咨询在《中国人工智能产业研究报告Ⅲ》中将云拿科技列为人工智能标杆企业
+                        .col-md-auto 
+                            a.more.text20(href="#") 阅读报告
 
 
-        section.s2.pt-media-6.pb-media-9
-            .container 
-                .title-section 
-                    h2.text36.text-center Our services
-                
+            .fea.container.pt-media-6.pb-media-6                
                 .row 
-                    .col-md-6.col-lg-3 
+                    .col-md-6.col-lg-4
                         .item 
-                            dl.list 
-                                dt.text24 Website building
-                                dd Corporate website
-                                dd Listed company website
-                                dd Foreign trade website
-                                dd Brand website
-                                dd Marketing website
+                            .icon 
+                                img(src="img/home-2.svg", alt="数字运营化")
+                            .txt
+                                h3.text24 数字运营化
+                                p 用传感器和物联网实现物体、设备、仪器的数字化升级，通过应用软件的互联互通，彻底改变传统运营方式
 
-                    .col-md-6.col-lg-3 
+                    .col-md-6.col-lg-4
                         .item 
-                            dl.list 
-                                dt.text24 E-commerce
-                                dd E-commerce website
-                                dd Product E-commerce
-                                dd Mobile e-commerce
-                                dd P2P Finance
-                                dd Website system platform
+                            .icon 
+                                img(src="img/home-3.svg", alt="流程自动化")
+                            .txt
+                                h3.text24 流程自动化
+                                p 用人工智能技术代替简单、机械、重复的流程，提高效率，降低成本
 
-                    .col-md-6.col-lg-3 
+                    .col-md-6.col-lg-4
                         .item 
-                            dl.list 
-                                dt.text24 WeChat Mini Program
-                                dd WeChat Mini Program
-                                dd H5 event webpage
-                                dd WeChat Mall
-                                dd Micro official website
-                                dd WeChat marketing promotion
+                            .icon 
+                                img(src="img/home-4.svg", alt="")
+                            .txt
+                                h3.text24 服务智能化
+                                p 利用数据和算法打造智能化服务与体验，提升顾客黏性，进而达到高转化的经营目的
 
-                    .col-md-6.col-lg-3 
-                        .item 
-                            dl.list 
-                                dt.text24 Operation
-                                dd SEO optimization
-                                dd Brand Promotion
-                                dd Website agent operation
-                                dd WeChat Weibo Douyin operation
-                                dd Advertising media delivery
-
-        section.s3.pt-media-6.pb-media-3
+        section.s3.pt-media-6.pb-media-6
             .container 
-                .title-section.text-center.mb-media-5
-                    h2.text36 eall tech website design
-                    p Independent research and development of application technology, user experience and interactive planning
+                .title-section.text-center.mb-media-3
+                    h2.text36 云拿数智化方案应用场景
+                    p 以独有的计算机视觉、机器学习和多传感融合技术，构建前所未有的“人、货、场”四维空间数据集，在此基础上利用算法获得全方位、多维度的洞察，创造更多颠覆人们工作、生活方式的人工智能应用与产品
+                    p 云拿能够为您提供高效提升ROI的技术以及解决方案
 
-                .swiper-container.work-slider
-                    .swiper-wrapper
-                        .swiper-slide
-                            .item
-                                img(src="img/home_04_1.png", alt="")                                
-                        .swiper-slide
-                            .item
-                                img(src="img/home_04_1.png", alt="")
-                                
-                        .swiper-slide
-                            .item
-                                img(src="img/home_04_1.png", alt="")
+                .apps
+                    .swiper-container.case-sliders
+                        .swiper-wrapper
+                            .swiper-slide
+                                .item
+                                    .pic
+                                        img(src="img/home-5.jpg", alt="") 
+                                    .txt 
+                                        h3.text22 数智化实体零售
+                                        p 利用人工智能和大数据技术提升消费者的购物体验，提高零售商的运营决策效率，帮助品牌商建立感知、触达消费者的渠道                                    
+                                        a.more(href="#") 了解更多
+
+                            .swiper-slide
+                                .item
+                                    .pic
+                                        img(src="img/home-6.jpg", alt="") 
+                                    .txt 
+                                        h3.text22 自动化仓储管理
+                                        p 借助机器学习算法自动识别货物品类，实时计算并更新存货流通状态，实现仓库少人化乃至去人化的高效管理与运营                                  
+                                        a.more(href="#") 了解更多
+                                    
+                            .swiper-slide
+                                .item
+                                    .pic
+                                        img(src="img/home-7.jpg", alt="智能服务") 
+                                    .txt 
+                                        h3.text22 智能服务
+                                        p 依托智能化工具和算法提供人机结合式的服务，自动识别服务步骤，确保SOP有效执行，进一步提升服务品质                                  
+                                        a.more(href="#") 了解更多
+
+                            .swiper-slide
+                                .item
+                                    .pic
+                                        img(src="img/home-8.jpg", alt="工业及制造") 
+                                    .txt 
+                                        h3.text22 工业及制造
+                                        p 运用传感器、物联网以及智能化算法代替简单、机械、重复的人力工作，提高生产效率，降低错误率                                 
+                                        a.more(href="#") 了解更多
 
 
                     //- .swiper-pagination              
@@ -111,167 +109,63 @@ block content
                     .swiper-prev
                         i.iconfont.icon-prev
 
-        section.s4.pt-media-6.pb-media-6 
+        section.s4.pt-media-9.pb-media-9(style="background-image:url(img/home-9.jpg);")
             .container
-                .title-section.text-center.mb-media-5
-                    h2.text36 Customer case
-                    p Professionally empowers the growth of Internet sales of brands in various industries, and uses works to speak for strength
-            .work-list 
-                .swiper-container.case-sliders
-                    .swiper-wrapper
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#27262a;") 
-                                    img(src="img/works/w01.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#e40312;") 
-                                    img(src="img/works/w02.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title                     
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#85c43c;") 
-                                    img(src="img/works/w03.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#f3f3f3;") 
-                                    img(src="img/works/w04.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#139891;") 
-                                    img(src="img/works/w05.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#d4d7da;") 
-                                    img(src="img/works/w06.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title                         
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#41a4f1;") 
-                                    img(src="img/works/w07.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title                           
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title     
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title     
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title     
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title     
-                        .swiper-slide
-                            .item 
-                                a.pic(href="work_detail.html", style="background-color:#804542;") 
-                                    img(src="img/works/w08.png", alt="w01")
-                                h3
-                                    a(href="work_detail.html") Website case title     
-                .nav
-
-                    .swiper-prev2
-                        i.iconfont.icon-prev
-                    a(href="works.html") 
-                        i.iconfont.icon-category-fill
-                    .swiper-next2
-                        i.iconfont.icon-next
+                .row.align-items-center
+                    .col-lg-7
+                        .vid
+                            video(src="#",poster="img/home-10.jpg") 
+                    .col-lg-5 
+                        .txt 
+                            h3.text36.mb-media-3 在充满挑战的后疫情时代助力德国线下零售智慧升级
+                            p.mb-media-3 德国数一数二的零售品牌如何以数智化技术为消费者提供无接触式购物体验？如何灵活部署、快速实现场景化落地？
+                            a.more(href="#") 查看更多客户成功案例视频
+                
 
             
                            
 
-        section.s5             
-            .row.no-gutters 
-                .col-lg-6
-                    .text-container 
-                        .txt
-                            h2.title.text60.wow.fadeInUp Eall Tech
-                            h3.title2.text24.wow.fadeInUp The most creative online digital marketing solution
-                            p.des.wow.fadeInUp We are Committed to build more and better Internet brands, provide professional Internet brand proposal and use high standards of design, create the brand route with a true sense of direction, unremitting our efforts to create the greatest value for our customers internet brand in the interactive marketing field. We have over seven years of efforts & experience, and with nearly a thousand of case experiences, Eall has already become a famous network marketing interactive and brand design and planning company in domestic China, with very high reputation and public praise.
-                            a.more.text26.wow.fadeInUp(href="#") Read more
-                .col-lg-6
-                    img.pic(src="img/home_05.jpg", alt="")
+        section.s5.pt-media-6.pb-media-6(style="background-image:url(img/home-11.jpg);") 
+            .container
+                .txt
+                    h2.title.text36.wow.fadeInUp 体验云拿产品及解决方案            
+                    p.text20.wow.fadeInUp 试用云拿系统，一起感受数智化技术带来的工作、服务方式转变
+                    a.more.wow.fadeInUp.text20(href="#") 获得产品经理1对1讲解 
+                        span or 
+                        | 申请试用Smart零售SaaS运营后台
+           
 
-        section.s6.container.pt-media-5.pb-media-6
-            .title-section 
-                h3.title.text32 The common choice of <strong>1000+</strong> brand customers
+        section.s6
+            img.pic(src="img/home-12.jpg", alt="")
+            .txt-container 
+                .container      
+                    .txt  
+                        h2.title.text36.mb-media-2 企业影响力 — 媒体评价
+                        p.mb-media-4 云拿是人工智能和数字化技术领域的领军企业，具有一定的全球影响力云拿曾在2018年被《财富》杂志评选为最具创新力的企业：“用人的创造力结合机器算法和计算力来创造人机结合的新产品和新技术，将是未来云拿独树一帜的创新风格。”
+                        .row.mb-media-3
+                            .col 
+                                .item 
+                                    .num.text100 90
+                                        span.unit.text40 %
+                                    p.text22 产品及服务续约
+
+                            .col
+                                .item 
+                                    .num.text100 100
+                                        span.unit.text40 +
+                                    p.text22 全球合作伙伴和客户
+                        a.more.text20(href="#") 阅读更多报道
             
-            .partners
-                .swiper-container.partner-sliders
-                    .swiper-wrapper
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner7.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner8.jpg", alt="")                              
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner9.jpg", alt="") 
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner10.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner11.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner12.jpg", alt="")                            
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner13.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner14.jpg", alt="")                              
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner15.jpg", alt="") 
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner16.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner17.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner18.jpg", alt="")  
-                        .swiper-slide
-                            .item         
-                                img(src="img/partners/partner19.jpg", alt="")  
-
-                .swiper-next1
-                    i.iconfont.icon-next
-                .swiper-prev1
-                    i.iconfont.icon-prev
+        section.s7
+            img.pic(src="img/home-13.jpg", alt="")
+            .txt-container 
+                .container      
+                    .txt  
+                        p 免费电子书下载 产品使用
+                        h2.title.text36.mb-media-2 产品使用手册：如何用数字化手段实现智能化实体零售运营
+                        p.mb-media-4 这是一本信息覆盖最全的电子书，产品使用者必读，可帮助你的零售业态更加快速高效地实现数智化转型
+           
+                        a.more.text20(href="#") 下载电子书
               
             
 block bkfooter
@@ -303,27 +197,15 @@ block bkfooter
                 //- },
             });
 
-            var swiper1 = new Swiper('.work-slider', {
-               
-                //- speed: 1000,
-                //- mousewheel: true,
-                //- pagination: {
-                //-     el: '.swiper-pagination',
-                //-     clickable: true,
-                //- },
+ 
+
+            var swiper = new Swiper(".case-sliders", {
+                slidesPerView: 1,            
+                spaceBetween: 20,
+                loop:true,
                 navigation: {              
                     nextEl: '.swiper-next',
                     prevEl: '.swiper-prev',
-                },
-            });
-
-            var swiper = new Swiper(".case-sliders", {
-                slidesPerView: 1,
-                slidesPerColumn: 2,
-                spaceBetween: 20,
-                navigation: {              
-                    nextEl: '.swiper-next2',
-                    prevEl: '.swiper-prev2',
                 },
                  breakpoints: {
                     640: {

@@ -95,3 +95,24 @@
         border-radius: 30px;
     }
 }
+
+.more{
+    display: inline-block;
+    padding: .3rem 2rem;
+    background-color: $color-primary;
+    color:#fff;
+    border-radius: 3px;
+    &:hover{
+        background-color: $color-secondary;
+    }
+}
+
+.btn-view{
+    border:3px #fff solid;
+    display: inline-block;
+    padding: .5rem 2rem;
+    color:#fff;
+    @include mq(xxl){
+        font-size: rem(18);
+    }
+}

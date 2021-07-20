@@ -1,93 +1,63 @@
 .site-footer {    
-    background-image:  url(../img/foot.jpg);
-    background-position: center bottom;
-    background-size: cover;
-    color:#ACADAD;
-    .intro{
-        padding-bottom: 3rem;
-        padding-right: 2rem;
-        .logo{
-            max-width: 211px;
+  
+    color:#fff;
+    background-color: #24292D;
+    .sub-nav {
+        dt{
+            margin-bottom: 1.3rem;
         }
-        .name{
-            padding-top: 1rem;
-            padding-bottom: 1.5rem;
-            font-size: rem(18);     
-            @include mq(xl){
-                font-size: rem(20); 
-            }  
-            @include mq(xxl){
-                font-size: rem(22);           
-            }  
-        }
-    }
-    
-    .contact_right{
-        padding-left: 2rem;
-        .qr{
-            text-align: center;
-            font-size: rem(14);
-            img{
-                margin-bottom: .5rem;
-            }
-        }
-        h2, h3{
-            color:#fff;
-        }
-        .t1{
-            font-size: rem(16);
-            @include mq(xxl){
-                font-size: rem(18);           
-            } 
-        }
-        .num{
-            font-size: rem(20);
-            @include mq(xl){
-                font-size: rem(22); 
-            }  
-            @include mq(xxl){
-                font-size: rem(24);           
-            } 
-        }
-        .contact{
-            @include reset-list();
+        dd{
             margin-bottom: 1rem;
-        }
-        .sejiao {
-            img{
-                max-width: 20px;
+            a{
+                color:#A2A7AB;
+                &:hover{
+                    color:#fff;
+                }
             }
         }
     }
-    
 
-    .links {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        border-top: 1px solid;
-        a{
-            display: inline-block;            
-            padding: 0 1rem;
-            border-right: 1px solid;
-            @include mq(xxl){
-                font-size: rem(14);           
-            }  
-        }
-    }
     .bot {
+        border-top:1px rgba(255,255,255,.22) solid;
+        margin-top: 2rem;
         padding: 1rem 0;  
-        font-size: rem(12);
+      
         @include mq(md){
-            padding: 1.5rem 0;  
-            font-size: rem(14);            
+            padding: 1.5rem 0;             
         }  
         @include mq(xl){
             padding: 1.5rem 0;              
         }  
-        @include mq(xxl){
-            padding: 2rem 0;  
-        }  
-       
+     
+        .title{
+         
+            @include mq(xl){
+                font-size: rem(18);
+            }  
+            @include mq(xxl){
+                font-size: rem(20);
+            }  
+        }
+        .social  {
+            a{
+                color:$color-primary;
+                .iconfont{
+                    font-size: rem(20);
+                    @include mq(md){
+                        font-size: rem(22);
+                    }  
+                    @include mq(lg){
+                        font-size: rem(24);
+                    }  
+                    @include mq(xl){
+                        font-size: rem(26);
+                    }  
+                    @include mq(xxl){
+                        font-size: rem(28);
+                    }  
+                }
+            }
+        }
     }
 }
 

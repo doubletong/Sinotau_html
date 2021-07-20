@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2660807 */
-  src: url('iconfont.woff2?t=1625731295926') format('woff2'),
-       url('iconfont.woff?t=1625731295926') format('woff'),
-       url('iconfont.ttf?t=1625731295926') format('truetype');
+  src: url('iconfont.woff2?t=1625738025707') format('woff2'),
+       url('iconfont.woff?t=1625738025707') format('woff'),
+       url('iconfont.ttf?t=1625738025707') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,30 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ins:before {
+  content: "\e600";
+}
+
+.icon-twitter:before {
+  content: "\e822";
+}
+
+.icon-facebook:before {
+  content: "\e601";
+}
+
+.icon-in:before {
+  content: "\e64d";
+}
+
+.icon-youtube:before {
+  content: "\e8db";
+}
+
+.icon-search:before {
+  content: "\e63e";
 }
 
 .icon-prev:before {

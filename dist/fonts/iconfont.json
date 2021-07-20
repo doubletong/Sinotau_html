@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "22762073",
+      "name": "ins",
+      "font_class": "ins",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "432081",
+      "name": "twitter3",
+      "font_class": "twitter",
+      "unicode": "e822",
+      "unicode_decimal": 59426
+    },
+    {
+      "icon_id": "606269",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "10485790",
+      "name": "in",
+      "font_class": "in",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "18986843",
+      "name": "youtube",
+      "font_class": "youtube",
+      "unicode": "e8db",
+      "unicode_decimal": 59611
+    },
+    {
+      "icon_id": "4352875",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
       "icon_id": "22755867",
       "name": "next",
       "font_class": "prev",

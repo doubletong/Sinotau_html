@@ -1,0 +1,126 @@
+extends includes/layout.pug
+
+block title
+    | 数字化大型超市方案
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/Hypermarket.jpg", srcset="img/banners/Hypermarket@2x.jpg 2x", alt="")
+        .breadcrumb
+            .container
+                ul.map-path
+                    li
+                        a(href="index.html")  首页  
+                    li
+                        a(href="solution.html")  解决方案  
+                    li.current  数字化大型超市解决方案
+
+        .txt-container
+            .container
+                .txt
+                    h1.wow.fadeInUp.text60.mb-media-3 云拿数字化大型超市解决方案
+                    p.wow.fadeInUp.text20 应对数字化变革、疫情等已知或未知因素的冲击
+              
+        
+    .page.page-solution-2
+        .container
+            section.s1.pt-media-5.pb-media-5   
+                .row.align-items-center 
+                    .col-lg-6.order-lg-last
+                        .pic.wow.fadeInUp 
+                            img(src="img/sol-13.png", srcset="img/sol-13@2x.png 2x", alt="电子价签")
+                    .col-lg-6
+                        .txt.wow.fadeInUp 
+                            h2.text36.mb-media-3 电子价签
+                            ul 
+                                li 256位全彩显示，相较电子墨水内容更为丰富且部署成本低，无需更换电池
+                                li 可批量调整商品价格，并同步修改线上价格以保证各渠道一致性
+
+            section.s1.pt-media-5.pb-media-5   
+                .row.align-items-center 
+                    .col-lg-6
+                        .pic.wow.fadeInUp 
+                            img(src="img/sol-14.png", srcset="img/sol-14@2x.png 2x", alt="数字货架")
+                    .col-lg-6
+                        .txt.wow.fadeInUp 
+                            h2.text36.mb-media-3 数字货架
+                            ul 
+                                li 可实时更新货架陈列情况，缺货状态自动发送补货提醒，降低因栏位空缺造成的销量下滑、消费者满意度下降等问题
+                                li 自动检测商品是否被陈列在要求陈列的位置上，避免因上架或消费者错放等导致的误陈列
+                                li 基于AI摄像头识别消费者动作及关注商品，通过数字化触点实时推送可能感兴趣的活动信息或优惠折扣，以精准营销提高购买转化率
+
+            section.s1.pt-media-5.pb-media-5   
+                .row.align-items-center 
+                    .col-lg-6.order-lg-last
+                        .pic.wow.fadeInUp 
+                            img(src="img/sol-15.png", srcset="img/sol-15@2x.png 2x", alt="SaaS商户管控平台")
+                    .col-lg-6
+                        .txt.wow.fadeInUp 
+                            h2.text36.mb-media-3 SaaS商户管控平台
+                            ul 
+                                li 基于商品陈列及拿放情况的可视化，评估商品在不同位置的销售效果并及时做出调整
+                                li 基于消费者逛店轨迹与关注商品的可视化，生成店内热力图及拿放热力图，用于指导后续陈列和选品优化
+                                li 自动分析店员的工作内容并进行质量评估，确保SOP有效执行，推动服务提升
+
+            section.s1.pt-media-5.pb-media-5   
+                .row.align-items-center 
+                    .col-lg-6
+                        .pic.wow.fadeInUp 
+                            img(src="img/sol-16.png", srcset="img/sol-16@2x.png 2x", alt="智能巡检机器人")
+                    .col-lg-6
+                        .txt.wow.fadeInUp 
+                            h2.text36.mb-media-3 智能巡检机器人
+                            ul 
+                                li 适用于零售行业，旨在解决排面缺货问题，确保陈列合规性、价格完整性等，并在不增加人手的情况下提升门店服务质量
+                                li 巡检期间可安全避让人或障碍物，支持以语音交互的方式服务消费者
+                                li 沉淀多样化、高价值的数据，生成可操作的指导手册，提高整体运营效率与质量
+                                li 实时远程升级程序，快速完成性能优化
+      
+
+            
+            
+        
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            centeredSlides: true,
+            loop:true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+                },
+             
+            }
+        });
+
+
+     
+
+      
+       
+
+     
