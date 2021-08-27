@@ -1,0 +1,187 @@
+extends includes/layout.pug
+
+block title
+    | 资质荣誉
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/about.jpg", alt="")       
+
+        .txt-container
+            .container
+                .row 
+                    .col-lg
+                        .txt
+                            h1.wow.fadeInUp.text70 企业简介
+                            p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
+                    
+    .container
+        .sub_nav.wow.fadeInDown
+            ul.menus              
+                li
+                    a(href="about.html") 企业简介
+                li 
+                    a(href="70years.html") 胜宇70年
+                li 
+                    a(href="team.html") 团队管理
+                li.active 
+                    a(href="honors.html") 资质荣誉
+                li 
+                    a(href="csr.html") 社会责任
+                li 
+                    a(href="brand.html") 胜宇品牌
+              
+        
+    .page.page-honors.pt-media-9
+        .container
+            section.s1.pb-media-5                   
+                .pic.wow.fadeInUp 
+                    img(src="img/honor_1.jpg", alt="电子价签")
+                 
+                .txt.wow.fadeInUp 
+                    p 我们执着于为市场提供符合时代不断发展需求的优质电缆产品，我们的产品必须经受得住行业的试炼与市场的考验。胜宇赢得的每一项荣誉，通过的每一类认证，收获的每一次评价，都是对用户坚实的承诺。
+
+            section.s2.pb-media-9
+                .container-1
+                    .tabs 
+                        .tab-header.mb-media-3 
+                            a.active(href="#c1") 企业基本资格证书
+                            a(href="#c2") 经营许可类证书
+                            a(href="#c3") 产品类证书
+                            a(href="#c4") 其他证书
+
+                        .tab-body 
+                            #c1.list.active 
+                                .row.gx-3.mb-media-3
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c1.jpg", alt="")
+                                            figcaption 营业执照正本
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c2.jpg", alt="")
+                                            figcaption 营业执照正本
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c3.jpg", alt="")
+                                            figcaption 营业执照正本
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c4.jpg", alt="")
+                                            figcaption 营业执照正本
+
+                                .down_file
+                                    a(href="#") 下载以上资质
+                                        i.iconfont.icon-down
+                                    a.all(href="#") 打包下载所有资质证书
+
+
+                            #c2.list
+                                .row.gx-3.mb-media-3
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c1.jpg", alt="")
+                                            figcaption 营业执照正本
+                                   
+                                .down_file
+                                    a(href="#") 下载以上资质
+                                        i.iconfont.icon-down
+                                    a.all(href="#") 打包下载所有资质证书
+
+
+                            #c3.list 
+                                .row.gx-3.mb-media-3
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c1.jpg", alt="")
+                                            figcaption 营业执照正本
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c2.jpg", alt="")
+                                            figcaption 营业执照正本
+                              
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c4.jpg", alt="")
+                                            figcaption 营业执照正本
+
+
+                                .down_file
+                                    a(href="#") 下载以上资质
+                                        i.iconfont.icon-down
+                                    a.all(href="#") 打包下载所有资质证书
+                            #c4.list
+                                .row.gx-3.mb-media-3
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c1.jpg", alt="")
+                                            figcaption 营业执照正本
+                                  
+                                    .col-md-6.col-lg-3 
+                                        figure.item 
+                                            img(src="img/certs/c4.jpg", alt="")
+                                            figcaption 营业执照正本
+
+                                .down_file
+                                    a(href="#") 下载以上资质
+                                        i.iconfont.icon-down
+                                    a.all(href="#") 打包下载所有资质证书
+
+
+               
+            
+            
+        
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            centeredSlides: true,
+            loop:true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+                },
+             
+            }
+        });
+
+        $(function(){
+            $('.tab-header a').click(function(e){
+                e.preventDefault();
+                $(this).addClass('active').siblings().removeClass('active');
+                var el = $(this).attr('href');
+                $(el).addClass('active').siblings().removeClass('active');
+            });
+        })
+
+
+     
+
+      
+       
+
+     

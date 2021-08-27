@@ -10,10 +10,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/animate.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/styles.min.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+    <link href="fonts/iconfont.css?v=86401c1c775b6d4b4eb7a35c4bcfac42" rel="stylesheet">
+    <link href="css/animate.css?v=86401c1c775b6d4b4eb7a35c4bcfac42" rel="stylesheet">
+    <link href="css/styles.min.css?v=86401c1c775b6d4b4eb7a35c4bcfac42" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=86401c1c775b6d4b4eb7a35c4bcfac42"></script>
     <script>
       new WOW().init();
       
@@ -22,29 +22,71 @@
   </head>
   <body>
     <header class="site-header" id="site-header"> 
-      <div class="top-col"> 
-        <div class="container"> 
-          <div class="row align-items-center justify-content-end">
-            <div class="col-auto"> <a class="down" href="#"> <i class="iconfont icon-earth"></i></a></div>
-            <div class="col-auto"> <a class="search" href="#"> <i class="iconfont icon-search"></i></a></div>
-            <div class="col-auto"> <a class="contact" href="#">联系云拿</a></div>
-            <div class="col-auto"> <a class="app" href="#">申请试用</a></div>
-            <div class="col-auto"> <a class="login" href="#">登录</a></div>
+      <div class="top_col">
+        <div class="container">
+          <div class="row align-items-center gx-0"> 
+            <div class="col">
+              <div class="site_name">胜宇电缆 胜宇70年</div>
+            </div>
+            <div class="col-auto"> 
+              <div class="social"> <a href="#"><i class="iconfont icon-wechat"> </i></a><a href="#"><i class="iconfont icon-sina"> </i></a><a href="#"><i class="iconfont icon-jingdong"> </i></a></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="menus-and-logo container">
         <div class="row align-items-center">  
-          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/logo.svg" alt="logo"></a></div>
-          <div class="col">               
+          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/logo.png" alt="logo"></a></div>
+          <div class="col">
             <ul class="mainav"> 
-              <li><a href="solution.html">解决方案</a></li>
-              <li><a href="about.html">产品</a></li>
-              <li><a href="services.html">帮助和学习中心</a></li>
-              <li> <a href="works.html">活动</a></li>
-              <li><a href="news.html">关于云拿</a></li>
-              <li><a href="support.html">博客</a></li>
+              <li class="current hasnav"><a href="about.html">企业简介     </a>
+                <ul class="sub-menu">                    
+                  <li class="active"> <a href="about.html">企业简介</a></li>
+                  <li> <a href="70years.html">胜宇70年</a></li>
+                  <li> <a href="team.html">团队管理</a></li>
+                  <li> <a href="honors.html">资质荣誉</a></li>
+                  <li> <a href="csr.html">社会责任</a></li>
+                  <li> <a href="brand.html">胜宇品牌</a></li>
+                </ul>
+              </li>
+              <li><a href="products.html">产品信息        </a></li>
+              <li><a href="power.html">生产实力        </a></li>
+              <li> <a href="actives.html">工程案例       </a></li>
+              <li class="hasnav"><a href="about.html">客户支援</a>
+                <ul class="sub-menu">                       
+                  <li><a href="service.html">服务文化</a></li>
+                  <li><a href="network.html">销售网络</a></li>
+                  <li><a href="contact.html">联系我们</a></li>
+                  <li><a href="FAQ.html">常见问题与解答</a></li>
+                </ul>
+              </li>
             </ul>
+          </div>
+          <div class="col-auto">
+            <ul class="second_nav">
+              <li> <a href="news.html">新闻中心</a></li>
+              <li> <a href="jobs">工作机会</a></li>
+            </ul>
+          </div>
+          <div class="col-auto">
+            <form class="search_box" action="#"> 
+              <div class="box"> 
+                <div class="i01"> 
+                  <input class="keyword" id="keyword" type="search" name="keyword">
+                </div>
+                <div class="i02"> 
+                  <button type="submit"><i class="iconfont icon-search"> </i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-auto">
+            <div class="lang-switcher"><a class="down" href="#"> <i class="iconfont icon-earth"></i></a>
+              <ul class="languages">                        
+                <li> <a class="active" href="#">简体中文</a></li>
+                <li> <a href="#"> English</a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
@@ -57,11 +99,16 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="application.html">Application</a></li>
-          <li><a href="about.html">Company</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="solution.html">解决方案</a></li>
+          <li><a href="products.html">产品</a></li>
+          <li><a href="help.html">帮助和学习中心                </a></li>
+          <li> <a href="actives.html">活动            </a></li>
+          <li><a href="about.html">关于云拿</a>
+            <ul class="sub-menu">                       
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">博客</a></li>
         </ul>
       </div>
     </header>
@@ -185,71 +232,88 @@
         </div>
       </div>
     </div>
-    <footer class="site-footer" id="pageFooter">   
-      <div class="container pt-media-5">
-        <div class="row justify-content-between">
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">常用链接</dt>
-              <dd> <a href="#">什么是无感支付</a></dd>
-              <dd> <a href="#">什么是电商式运营</a></dd>
-              <dd> <a href="#">采用云拿方案将获得哪些能力</a></dd>
-              <dd> <a href="#">云拿产品矩阵</a></dd>
-              <dd> <a href="#">经典行业案例</a></dd>
-            </dl>
+    <footer class="site-footer" id="pageFooter">  
+      <div class="footer_nav"> 
+        <div class="row gx-0"> 
+          <div class="col"> 
+            <figure> <img src="img/icons/yzyl.svg" alt="优质原料">
+              <figcaption>优质原料</figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">帮助和资源</dt>
-              <dd> <a href="#">云拿知乎</a></dd>
-              <dd> <a href="#">学习和支持</a></dd>
-              <dd> <a href="#">查看本地服务团队</a></dd>
-              <dd> <a href="#">集成商合作伙伴系统登录</a></dd>
-              <dd> <a href="#">开放职位信息</a></dd>
-              <dd> <a href="#">加入云拿邮件通知列表</a></dd>
-            </dl>
+          <div class="col"> 
+            <figure> <img src="img/icons/jgxz.svg" alt="精工细作">
+              <figcaption>精工细作            </figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">活动</dt>
-              <dd> <a href="#">行业活动</a></dd>
-              <dd> <a href="#">线下培训</a></dd>
-              <dd> <a href="#">系统研讨会</a></dd>
-              <dd> <a href="#">使用者社群</a></dd>
-              <dd> <a href="#">云拿Empower发布会</a></dd>
-            </dl>
+          <div class="col"> 
+            <figure> <img src="img/icons/zyjc.svg" alt="专业检测">
+              <figcaption>专业检测</figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">关于云拿</dt>
-              <dd> <a href="#">我们的故事</a></dd>
-              <dd> <a href="#">新闻中心</a></dd>
-              <dd> <a href="#">工作在云拿</a></dd>
-              <dd> <a href="#">法务</a></dd>
-              <dd> <a href="#">隐私策略</a></dd>
-              <dd> <a href="#">网站Cookie声明</a></dd>
-              <dd> <a href="#">联系我们</a></dd>
-            </dl>
-          </div>
-        </div>
-        <div class="bot">           
-          <div class="row align-items-center">
-            <div class="col-lg"> 
-              <div class="copyright">Copyright &copy; 2003-2021 CloudPik. All Rights Reserved.<a href="http://beian.miit.gov.cn/"> 粤ICP备05096447号    </a></div>
-            </div>
-            <div class="col-lg-auto"> 
-              <label class="title">关注我们</label>
-            </div>
-            <div class="col-lg-auto"> 
-              <div class="social">                       <a href="#"> <i class="iconfont icon-facebook"></i></a><a href="#"> <i class="iconfont icon-twitter"></i></a><a href="#"> <i class="iconfont icon-in"></i></a><a href="#"> <i class="iconfont icon-ins"></i></a><a href="#"> <i class="iconfont icon-youtube"></i></a></div>
-            </div>
+          <div class="col"> 
+            <figure class="last"> <img src="img/icons/zycj.svg" alt="卓越成就">
+              <figcaption>卓越成就</figcaption>
+            </figure>
           </div>
         </div>
       </div>
-    </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/app.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+      <div class="container pb-media-3">
+        <div class="left_col">
+          <div class="title-section">
+            <h2>联系我们</h2>
+          </div>
+          <div class="contacts pb-media-3 mb-media-3">
+            <div class="row gx-0">
+              <div class="col-md">
+                <div class="contact">
+                  <h3>广东胜宇电缆实业有限公司</h3>
+                  <ul>
+                    <li> <strong>地址：</strong>广州市黄埔区东枝路23号</li>
+                    <li> <strong>邮编：</strong>510530</li>
+                    <li> <strong>服务热线: </strong>400-0099-020</li>
+                    <li> <strong>传真: </strong>+86-020-3160 8486</li>
+                    <li> <strong>邮箱：</strong>service@gdsycable.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="qr">    
+                  <div class="name">胜宇电缆@微信</div><img src="img/qrcode.png" alt="胜宇电缆@微信">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bot">       
+            <nav class="bot_nav"> <a href="#">产品库                                          </a><a href="#">生产实力</a><a href="#">顾客中心</a><a href="#">关于胜宇</a><a href="#">工程案例</a><a href="#">下载中心</a><a href="#">新闻中心</a><a href="#">工作机会</a><a href="#">保持联络</a></nav>
+            <div class="copyright">Copyright © 2020 胜宇电缆 版权所有 <a href="http://beian.miit.gov.cn/"> 粤ICP备18119466号  </a></div>
+            <dl class="link_list"> 
+              <dt>友情链接：</dt>
+              <dd> <a href="#">电缆 </a></dd>
+              <dd> <a href="#">电力电缆 </a></dd>
+              <dd> <a href="#">矿物质电缆 </a></dd>
+              <dd> <a href="#">btly电缆 </a></dd>
+              <dd> <a href="#">yttw电缆 </a></dd>
+              <dd> <a href="#">bttz电缆 </a></dd>
+              <dd> <a href="#">矿物绝缘电缆 </a></dd>
+              <dd> <a href="#">rttz电缆 </a></dd>
+              <dd> <a href="#">宁夏绿化管 </a></dd>
+              <dd> <a href="#">防爆电机 </a></dd>
+              <dd> <a href="#">铝板 </a></dd>
+              <dd> <a href="#">上海自仪股份 </a></dd>
+              <dd> <a href="#">贴标机 </a></dd>
+              <dd> <a href="#">q345d无缝管 </a></dd>
+              <dd> <a href="#">静态混合器 </a></dd>
+              <dd> <a href="#">微量元素分析仪 </a></dd>
+              <dd> <a href="#">高空清洗 </a></dd>
+              <dd> <a href="#">变送器 </a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </footer><a class="toTop" id="toTop" href="#"><i class="iconfont icon-top"></i></a>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=86401c1c775b6d4b4eb7a35c4bcfac42"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=86401c1c775b6d4b4eb7a35c4bcfac42"></script>
+    <script src="js/app.js?v=86401c1c775b6d4b4eb7a35c4bcfac42"></script>
     <script>
       $(function(){
       

@@ -10,11 +10,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/animate.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="js/vendor/lightbox2/dist/css/lightbox.min.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/styles.min.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+    <link href="fonts/iconfont.css?v=2994a724186142d27818535cf6238ee2" rel="stylesheet">
+    <link href="css/animate.css?v=2994a724186142d27818535cf6238ee2" rel="stylesheet">
+    <link href="css/styles.min.css?v=2994a724186142d27818535cf6238ee2" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=2994a724186142d27818535cf6238ee2"></script>
     <script>
       new WOW().init();
       
@@ -23,29 +22,64 @@
   </head>
   <body>
     <header class="site-header" id="site-header"> 
-      <div class="top-col"> 
-        <div class="container"> 
-          <div class="row align-items-center justify-content-end">
-            <div class="col-auto"> <a class="down" href="#"> <i class="iconfont icon-earth"></i></a></div>
-            <div class="col-auto"> <a class="search" href="#"> <i class="iconfont icon-search"></i></a></div>
-            <div class="col-auto"> <a class="contact" href="#">联系云拿</a></div>
-            <div class="col-auto"> <a class="app" href="#">申请试用</a></div>
-            <div class="col-auto"> <a class="login" href="#">登录</a></div>
+      <div class="top_col">
+        <div class="container">
+          <div class="row align-items-center gx-0"> 
+            <div class="col">
+              <div class="site_name">胜宇电缆 胜宇70年</div>
+            </div>
+            <div class="col-auto"> 
+              <div class="social"> <a href="#"><i class="iconfont icon-wechat"> </i></a><a href="#"><i class="iconfont icon-sina"> </i></a><a href="#"><i class="iconfont icon-jingdong"> </i></a></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="menus-and-logo container">
         <div class="row align-items-center">  
-          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/logo.svg" alt="logo"></a></div>
-          <div class="col">               
+          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/logo.png" alt="logo"></a></div>
+          <div class="col">
             <ul class="mainav"> 
-              <li><a href="solution.html">解决方案</a></li>
-              <li><a href="about.html">产品</a></li>
-              <li><a href="services.html">帮助和学习中心</a></li>
-              <li> <a href="works.html">活动</a></li>
-              <li><a href="news.html">关于云拿</a></li>
-              <li><a href="support.html">博客</a></li>
+              <li class="current hasnav"><a href="about.html">企业简介     </a>
+                <ul class="sub-menu">                    
+                  <li class="active"> <a href="about.html">企业简介</a></li>
+                  <li> <a href="#">胜用70年</a></li>
+                  <li> <a href="#">团队管理</a></li>
+                  <li> <a href="#">资质荣誉</a></li>
+                  <li> <a href="#">社会责任</a></li>
+                  <li> <a href="#">胜宇品牌</a></li>
+                </ul>
+              </li>
+              <li><a href="portfolios.html">产品信息        </a></li>
+              <li><a href="news.html">生产实力        </a></li>
+              <li> <a href="actives.html">工程案例       </a></li>
+              <li><a href="about.html">客户支援</a></li>
             </ul>
+          </div>
+          <div class="col-auto">
+            <ul class="second_nav">
+              <li> <a href="#">新闻中心</a></li>
+              <li> <a href="#">工作机会</a></li>
+            </ul>
+          </div>
+          <div class="col-auto">
+            <form class="search_box" action="#"> 
+              <div class="box"> 
+                <div class="i01"> 
+                  <input class="keyword" id="keyword" type="search" name="keyword">
+                </div>
+                <div class="i02"> 
+                  <button type="submit"><i class="iconfont icon-search"> </i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-auto">
+            <div class="lang-switcher"><a class="down" href="#"> <i class="iconfont icon-earth"></i></a>
+              <ul class="languages">                        
+                <li> <a class="active" href="#">简体中文</a></li>
+                <li> <a href="#"> English</a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
@@ -58,11 +92,16 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="application.html">Application</a></li>
-          <li><a href="about.html">Company</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="solution.html">解决方案</a></li>
+          <li><a href="products.html">产品</a></li>
+          <li><a href="help.html">帮助和学习中心                </a></li>
+          <li> <a href="actives.html">活动            </a></li>
+          <li><a href="about.html">关于云拿</a>
+            <ul class="sub-menu">                       
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">博客</a></li>
         </ul>
       </div>
     </header>
@@ -79,12 +118,14 @@
     </div>
     <div class="page-solution-shop">
       <section class="s1"> 
-        <div class="container">
-          <div class="row align-items-center"> 
-            <div class="col-lg"> 
-              <div class="des text20">云拿科技凭借数字化无人便利店方案，荣获第四届“中国创翼”创业创新大赛上海选拔赛创业组三等奖，点击阅读，深入了解该方案</div>
+        <div class="top-bar"> 
+          <div class="container"> 
+            <div class="row align-items-center">                       
+              <div class="col-md">
+                <div class="des text20">云拿科技凭借数字化无人便利店方案，荣获第四届“中国创翼”创业创新大赛上海选拔赛创业组三等奖，点击阅读，深入了解该方案</div>
+              </div>
+              <div class="col-md-auto"> <a class="more text20" href="#">点击阅读</a></div>
             </div>
-            <div class="col-lg-auto"> <a class="more text20" href="#">点击阅读</a></div>
           </div>
         </div>
       </section>
@@ -141,99 +182,123 @@
             <p>以一站式服务增强顾客体验，助力门店降本增效</p>
           </div>
           <div class="power"> 
-            <div class="row g-5"> 
+            <div class="row gx-5"> 
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">智能选品</div>
+                      <div class="txt">                                   
+                        <div class="title text28">智能选品</div>
+                        <p>基于历史销售数据分析人、货匹配度，持续优化商品，满足目标客群即时性消费诉求</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">渠道融合</div>
+                      <div class="txt">
+                        <div class="title text28">渠道融合</div>
+                        <p>通过线上线下渠道融合增强顾客粘性，借助线上商城扩充线下SKU，提高门店坪效</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">优化陈列</div>
+                      <div class="txt">  
+                        <div class="title text28">优化陈列</div>
+                        <p>根据货架排面的商品拿放热力图，调整商品陈列，提高销售转化</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">超低盗损</div>
+                      <div class="txt">  
+                        <div class="title text28">超低盗损</div>
+                        <p>支持错拿错放、货物入包，结算错漏近乎为零，针对异常行为及时推送警报信息</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">精准营销</div>
+                      <div class="txt">  
+                        <div class="title text28">精准营销</div>
+                        <p>通过交互式智慧屏或语音系统，推送千人千面的营销内容，提高触达效率</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">缺货提醒</div>
+                      <div class="txt">  
+                        <div class="title text28">缺货提醒</div>
+                        <p>实时更新货架陈列状态，当商品数量低于阈值时自动推送补货信息，避免栏位空置</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">动态定价</div>
+                      <div class="txt">  
+                        <div class="title text28">动态定价</div>
+                        <p>打通价格系统、促销系统以及销售系统，在平衡成本与效益的基础上实现自动化定价</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
                 <div class="item">
-                  <div class="row g-0 align-items-center"> 
+                  <div class="row g-0">
                     <div class="col-auto"> 
-                      <div class="icon"> <img src="img/icon-plus.svg" alt="plus"></div>
+                      <div class="icon"> <img src="img/icons/plus.svg" alt="plus"></div>
                     </div>
                     <div class="col">
-                      <div class="title text28">自动进货</div>
+                      <div class="txt">  
+                        <div class="title text28">自动进货</div>
+                        <p>依据历史销售数据、近期节日、未来天气等，精准预测销量，自动下达进货订单</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,7 +324,7 @@
             </div>
             <div class="col-md-6 col-lg-4"> 
               <div class="item">
-                <div class="pic"> <img src="img/sol-2.jpg" srcset="img/sol-2@2x.jpg 2x" alt="品牌商"></div>
+                <div class="pic"> <img src="img/clients/c-2.png" srcset="img/clients/c-2@2x.png 2x" alt="品牌商"></div>
                 <div class="txt">
                   <p class="mb-media-2">新加坡Pick＆GO引进云拿方案，将“拿了就走，自动结算”的门店带入校园，服务师生群体</p><a href="#">了解更多</a>
                 </div>
@@ -267,7 +332,7 @@
             </div>
             <div class="col-md-6 col-lg-4"> 
               <div class="item">
-                <div class="pic"> <img src="img/sol-3.jpg" srcset="img/sol-3@2x.jpg 2x" alt="其他行业"></div>
+                <div class="pic"> <img src="img/clients/c-3.png" srcset="img/clients/c-3@2x.png 2x" alt="其他行业"></div>
                 <div class="txt">
                   <p class="mb-media-2">韩国emart24引进云拿方案，推出全韩首家自动结算型无人便利店，用以降低人工成本、提升品牌竞争力</p><a href="#">了解更多</a>
                 </div>
@@ -366,45 +431,45 @@
           </div>
         </div>
       </section>
-      <section class="s6 pt-media-6 pb-media-6">
+      <section class="s6 section-common-2 pt-media-6 pb-media-6">
         <div class="container"> 
           <div class="title-section text-center mb-media-4">
             <h2 class="text36 mb-media-2">行业全景解读</h2>
             <p>了解云拿最新动态，追踪巨头最新战略，洞悉行业最新趋势</p>
           </div>
-          <div class="four-dot mb-media-4"> 
-            <div class="row"> 
+          <div class="four mb-media-4"> 
+            <div class="row g-4 g-xxl-5">                 
               <div class="col-md-6"> 
-                <div class="item"> <img src="img/sol-9.jpg" alt="">
+                <div class="item-2" style="background-image:url(img/sol-9.jpg)">            
                   <div class="txt"> 
-                    <h3 class="text26">日本 - 如何维系引以为傲的24小时营业制</h3><a class="btn-view" href="#">阅读报告</a>
+                    <h3 class="text26">日本 - 如何维系引以为傲的24小时营业制</h3><a class="readme" href="#">阅读报告</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
-                <div class="item"> <img src="img/sol-10.jpg" alt="">
+                <div class="item-2" style="background-image:url(img/sol-10.jpg)">                          
                   <div class="txt"> 
-                    <h3 class="text26">前进的道路：零售行业领袖对现代化零售服务交付的见解</h3><a class="btn-view" href="#">阅读报告</a>
+                    <h3 class="text26">前进的道路：零售行业领袖对现代化零售服务交付的见解</h3><a class="readme" href="#">阅读报告</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
-                <div class="item"> <img src="img/sol-11.jpg" alt="">
+                <div class="item-2" style="background-image:url(img/sol-11.jpg)">                        
                   <div class="txt"> 
-                    <h3 class="text26">通过云管理平台推动门店数字化转型</h3><a class="btn-view" href="#">阅读报告</a>
+                    <h3 class="text26">通过云管理平台推动门店数字化转型</h3><a class="readme" href="#">阅读报告</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6"> 
-                <div class="item"> <img src="img/sol-12.jpg" alt="">
+                <div class="item-2" style="background-image:url(img/sol-12.jpg)">                           
                   <div class="txt"> 
-                    <h3 class="text26">云拿的系统安全性</h3><a class="btn-view" href="#">阅读报告</a>
+                    <h3 class="text26">云拿的系统安全性</h3><a class="readme" href="#">阅读报告</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="text-center"><a class="more text22" href="#">探索更多关于云拿无人便利店的信息和资源</a></div>
+          <div class="text-center"><a class="more-span text22" href="#">探索更多关于云拿无人便利店的信息和资源</a></div>
         </div>
       </section>
       <section class="section-common pt-media-9 pb-media-9" style="background-image:url(img/home-11.jpg);"> 
@@ -415,79 +480,100 @@
         </div>
       </section>
     </div>
-    <footer class="site-footer" id="pageFooter">   
-      <div class="container pt-media-5">
-        <div class="row justify-content-between">
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">常用链接</dt>
-              <dd> <a href="#">什么是无感支付</a></dd>
-              <dd> <a href="#">什么是电商式运营</a></dd>
-              <dd> <a href="#">采用云拿方案将获得哪些能力</a></dd>
-              <dd> <a href="#">云拿产品矩阵</a></dd>
-              <dd> <a href="#">经典行业案例</a></dd>
-            </dl>
+    <footer class="site-footer" id="pageFooter">  
+      <div class="footer_nav"> 
+        <div class="row gx-0"> 
+          <div class="col"> 
+            <figure> <img src="img/icons/yzyl.svg" alt="优质原料">
+              <figcaption>优质原料</figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">帮助和资源</dt>
-              <dd> <a href="#">云拿知乎</a></dd>
-              <dd> <a href="#">学习和支持</a></dd>
-              <dd> <a href="#">查看本地服务团队</a></dd>
-              <dd> <a href="#">集成商合作伙伴系统登录</a></dd>
-              <dd> <a href="#">开放职位信息</a></dd>
-              <dd> <a href="#">加入云拿邮件通知列表</a></dd>
-            </dl>
+          <div class="col"> 
+            <figure> <img src="img/icons/jgxz.svg" alt="精工细作">
+              <figcaption>精工细作            </figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">活动</dt>
-              <dd> <a href="#">行业活动</a></dd>
-              <dd> <a href="#">线下培训</a></dd>
-              <dd> <a href="#">系统研讨会</a></dd>
-              <dd> <a href="#">使用者社群</a></dd>
-              <dd> <a href="#">云拿Empower发布会</a></dd>
-            </dl>
+          <div class="col"> 
+            <figure> <img src="img/icons/zyjc.svg" alt="专业检测">
+              <figcaption>专业检测</figcaption>
+            </figure>
           </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">关于云拿</dt>
-              <dd> <a href="#">我们的故事</a></dd>
-              <dd> <a href="#">新闻中心</a></dd>
-              <dd> <a href="#">工作在云拿</a></dd>
-              <dd> <a href="#">法务</a></dd>
-              <dd> <a href="#">隐私策略</a></dd>
-              <dd> <a href="#">网站Cookie声明</a></dd>
-              <dd> <a href="#">联系我们</a></dd>
-            </dl>
-          </div>
-        </div>
-        <div class="bot">           
-          <div class="row align-items-center">
-            <div class="col-lg"> 
-              <div class="copyright">Copyright &copy; 2003-2021 CloudPik. All Rights Reserved.<a href="http://beian.miit.gov.cn/"> 粤ICP备05096447号    </a></div>
-            </div>
-            <div class="col-lg-auto"> 
-              <label class="title">关注我们</label>
-            </div>
-            <div class="col-lg-auto"> 
-              <div class="social">                       <a href="#"> <i class="iconfont icon-facebook"></i></a><a href="#"> <i class="iconfont icon-twitter"></i></a><a href="#"> <i class="iconfont icon-in"></i></a><a href="#"> <i class="iconfont icon-ins"></i></a><a href="#"> <i class="iconfont icon-youtube"></i></a></div>
-            </div>
+          <div class="col"> 
+            <figure class="last"> <img src="img/icons/zycj.svg" alt="卓越成就">
+              <figcaption>卓越成就</figcaption>
+            </figure>
           </div>
         </div>
       </div>
-    </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/app.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/vendor/lightbox2/dist/js/lightbox.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+      <div class="container pb-media-3">
+        <div class="left_col">
+          <div class="title-section">
+            <h2>联系我们</h2>
+          </div>
+          <div class="contacts pb-media-3 mb-media-3">
+            <div class="row gx-0">
+              <div class="col-md">
+                <div class="contact">
+                  <h3>广东胜宇电缆实业有限公司</h3>
+                  <ul>
+                    <li> <strong>地址：</strong>广州市黄埔区东枝路23号</li>
+                    <li> <strong>邮编：</strong>510530</li>
+                    <li> <strong>服务热线: </strong>400-0099-020</li>
+                    <li> <strong>传真: </strong>+86-020-3160 8486</li>
+                    <li> <strong>邮箱：</strong>service@gdsycable.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="qr">    
+                  <div class="name">胜宇电缆@微信</div><img src="img/qrcode.png" alt="胜宇电缆@微信">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bot">       
+            <nav class="bot_nav"> <a href="#">产品库                                          </a><a href="#">生产实力</a><a href="#">顾客中心</a><a href="#">关于胜宇</a><a href="#">工程案例</a><a href="#">下载中心</a><a href="#">新闻中心</a><a href="#">工作机会</a><a href="#">保持联络</a></nav>
+            <div class="copyright">Copyright © 2020 胜宇电缆 版权所有 <a href="http://beian.miit.gov.cn/"> 粤ICP备18119466号  </a></div>
+            <dl class="link_list"> 
+              <dt>友情链接：</dt>
+              <dd> <a href="#">电缆 </a></dd>
+              <dd> <a href="#">电力电缆 </a></dd>
+              <dd> <a href="#">矿物质电缆 </a></dd>
+              <dd> <a href="#">btly电缆 </a></dd>
+              <dd> <a href="#">yttw电缆 </a></dd>
+              <dd> <a href="#">bttz电缆 </a></dd>
+              <dd> <a href="#">矿物绝缘电缆 </a></dd>
+              <dd> <a href="#">rttz电缆 </a></dd>
+              <dd> <a href="#">宁夏绿化管 </a></dd>
+              <dd> <a href="#">防爆电机 </a></dd>
+              <dd> <a href="#">铝板 </a></dd>
+              <dd> <a href="#">上海自仪股份 </a></dd>
+              <dd> <a href="#">贴标机 </a></dd>
+              <dd> <a href="#">q345d无缝管 </a></dd>
+              <dd> <a href="#">静态混合器 </a></dd>
+              <dd> <a href="#">微量元素分析仪 </a></dd>
+              <dd> <a href="#">高空清洗 </a></dd>
+              <dd> <a href="#">变送器 </a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </footer><a class="toTop" id="toTop" href="#"><i class="iconfont icon-top"></i></a>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=2994a724186142d27818535cf6238ee2"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=2994a724186142d27818535cf6238ee2"></script>
+    <script src="js/app.js?v=2994a724186142d27818535cf6238ee2"></script>
     <script>
       $(function () {
-          lightbox.option({
-              'resizeDuration': 200,
-              'wrapAround': true
-          })
-      
+          $('.power .item').click(function(e){
+              $(this).find('p').slideToggle();
+              $(this).toggleClass('open');
+              var img = $(this).find('img');
+              if($(this).hasClass('open')){
+                  img.attr('src','img/icons/minus.svg')
+              }else{
+                  img.attr('src','img/icons/plus.svg')
+              }
+          });
       
       });
     </script>

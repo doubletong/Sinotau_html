@@ -1,0 +1,128 @@
+extends includes/layout.pug
+
+block title
+    | 博客
+
+block bkheader
+   
+
+block content               
+    .banner.banner-blog.wow.fadeInUp
+        .breadcrumb
+            .container
+                ul.map-path
+                    li
+                        a(href="index.html")  首页                 
+                    li.current 博客
+
+        .txt-container
+            .container
+                h1.wow.fadeInUp.text60.mb-media-3 云拿博客
+               
+
+    .page.page-blog.pt-media-6.pb-media-6
+        
+        section.s1.container.mb-media-4
+            .row.justify-content-between 
+                .col-md-6.col-lg-3 
+                    .categories.wow.fadeInUp
+                        select#categories(name="category")
+                            option(value="") 查看全部
+                            option(value="1") 分类一
+                            option(value="2") 分类二
+
+                .col-md-6.col-lg-4
+                    .input-box.wow.fadeInUp                        
+                        input.keyword(type="search", name="keyword", placeholder="搜索云拿博客技术文档") 
+                        a.icon(href="#")
+                            i.iconfont.icon-search
+        section.s2.container
+            .articles
+                .row
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b1.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b2.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b3.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b4.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b5.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                    .col-md-6.col-lg-4
+                        .item.wow.fadeInUp
+                            img(src="img/temp/b6.jpg", alt="韩国金南道教授的中国行：我看到了无现金、无接触时代的到来")
+                            .txt
+                                h2.text24 韩国金南道教授的中国行：我看到了无现金、无接触时代的到来
+                                p 我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来我看到了无现金、无接触时代的到来
+                                a(href="blog_detail.html") 查看详情
+                                    i.iconfont.icon-next
+
+                footer.quality-footer.wow.fadeInUp
+                    ul.pagination.text-center
+                        li.page-item
+                            a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 
+                                i.iconfont.icon-prev
+                                
+                        li.page-item
+                            a.page-link(href='#') 1
+                        li.page-item.active(aria-current='page')
+                            a.page-link(href='#')
+                                | 2                          
+                        li.page-item
+                            a.page-link(href='#') 3
+                        li.page-item
+                            a.page-link.next(href='#') 
+                                i.iconfont.icon-next
+                    
+
+                    
+block bkfooter
+
+   
+    script.
+        $(function () {
+        
+  
+        
+        });
+
+     
+
+
+

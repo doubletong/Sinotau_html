@@ -1,82 +1,54 @@
 .site-header {
-    position:relative;
+    position:absolute;    
+    width: 100%;
+    background-color: #fff;   
+    box-shadow : 0px 0px 20px rgba(12, 42, 195, 0.1);
+ 
+    z-index: map-get($zindex, header);
     left: 0;
     top: 0;
-    z-index: 8000;
-    width: 100%;
-    background-color: #fff;
-    height: 45px;
-    transition: all .2s;   
-    border-bottom: 5px $color-primary solid;
-    @include mq(md) {      
-            
+    @include mq(md) {
+        height: 60px;
     }
-    @include mq(lg) {     
-        height: auto;
+    @include mq(lg) {
+        height: 70px;
     }
-    @include mq(xl) {       
- 
+    @include mq(xl) {
+        height: 80px;
     }
-    @include mq(xxl) {       
-
+    @include mq(xxl) {
+        height: 100px;
     }
-    .top-col{
-        height: 50px;
-        background-color: #F3F7FA;
-        @include mq(xxl) {       
-            height: 60px;
-        }
-        a{
-            color: #C6CDD3;
-            &:hover{
-                color: $color-primary;
-            }
-            &.down{
-                position: relative;
-                display: block;
-                padding-right: 1rem;
-                &::after{
-                    content: " ";
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: .8rem;
-                    z-index: 50;
-                    width: 0;
-                    height: 0;
-                    border:4px transparent solid;
-                    border-top-color: #C6CDD3;
-                }
-            }
-            &.contact{
-                display: inline-block;
-                border-radius: 3px;
-                background: #fff;
-                border: 1px solid $color-primary;
-                padding: .05rem .6rem;
-                color:$color-primary;
-            }
-            &.app{
-                display: inline-block;
-                border-radius: 3px;
-                background: $color-primary;
-                border: 1px solid $color-primary;
-                padding: .1rem .6rem;
-                color: #fff;
-            }
-        }
+    @include mq(xxxl) {
+        height: 130px;
        
     }
-
     .container,
     .row {
         height: 100%;
     }
+    
+    .menus-and-logo{
+        position: relative;
+        &::before {
+            content: "";
+            background-color: #eee;          
+            height: 3px;                       
+            left: 50%;
+            bottom: -3px;                     
+            z-index: 10;
+            position: absolute;
+            transform: translateX(-50%);
+         
+                width: calc(100% - 24px);
+            
+        }
+    }
 
     .logo {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+     
         display: block;
+        transition: all .5s;
         width: 80px;
         @include mq(md) {
             width: 100px;
@@ -85,121 +57,139 @@
             width: 110px;
         }
         @include mq(xl) {
-            width: 140px;
+            width: 130px;
         }
         @include mq(xxl) {
-            width: 164px;
+            width: 140px;
+        }
+        @include mq(xxxl){
+            width: 156px;
+            padding-bottom: rem(30);
         }
     }
     
     .mainav {
         @include reset-list();
-        display: none;
-        text-align: right; 
+        display: none;       
         @include mq(lg) {
             display: block;
+            text-align: right;
         }
       
         &>li {
             display: inline-block;
             position: relative;          
-            height: 100%;
-            margin-left: 2rem;
-            @include mq(xl){
-                margin-left: 3rem;
-            }
-            @include mq(xxl){
-                margin-left: 4rem;
-            }
+         
             &>a {
                 display: block;             
                 height: 100%;
-                position: relative;               
+                color:#000;
+                position: relative;  
+                padding: 0 1rem;     
+                transition: all .3s;    
                 @include mq(lg) {  
-                    height: 50px;
-                    line-height: 50px;
+                  
+                    padding: 0 1.3rem;         
                 }
                 @include mq(xl) {              
-                    height: 60px;
-                    line-height: 60px;    
+                  
+                    padding: 0 1.5rem;    
                 }
                 @include mq(xxl) {              
-                    height: 70px;
-                    line-height: 70px;       
+                  
+                   
                 }
+                @include mq(xxxl) {              
+                                
+                    padding: rem(23) 6rem;  
+                    font-size: rem(18);
+                }
+               
                 &:hover {
                     color: $color-secondary;
                 }
-                &.active {
-                    color: $color-secondary;
-                    &::after {
-                        content: "";
-                        background-color: $color-secondary;
-                        width: 14px;
-                        height: 2px;
-                        left: 50%;
-                        top: 80%;
-                        margin-left: -7px;
-                        z-index: 10;
-                        position: absolute;
+              
+            }
+            &:last-child{
+                &>a{
+                    &::after{
+                        content:" ";
+                        display: none;
+                        
                     }
                 }
             }
+            &.current{
+                &>a{
+                    color:$color-primary;
+                    &::before {
+                        content: "";
+                        background-color: $color-primary;
+                        width: 70%;
+                        height: 3px;                       
+                        left: 50%;
+                        bottom: -3px;                     
+                        z-index: 20;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        @include mq(xxxl){
+                            width: calc(100% - 12rem);
+                        }
+                    }
+                }
+            }
+           
             .sub-menu {
                 position: absolute;
-                width: 154px;
-                left: 50%;
+                width: 132px;
+                left: 0;
                 top: 50px;
                 z-index: 10;
-                background-color: #fff;
-                @include reset-list();
-                margin-left: -77px;
-                border-top: 5px solid $color-secondary;
+                background-color: $color-secondary;
+                @include reset-list();   
                 margin-top: 10px;
                 display: none;
-                transition: all .2s;
-                box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
+                transition: all .2s;             
+                padding: 1rem 0;
                 @include mq(xl) {
                     top: 60px;
                 }
                 @include mq(xxl) {
                     top: 70px;
                 }
-                &>li {
+                li {
                     position: relative;
                     a {
                         display: block;
-                        padding: .8rem 1rem;
+                        padding: .5rem 1rem .5rem 1.5rem;
                         line-height: 1.5;
-                        text-align: center;
-                        &:hover {
-                            background-color: $color-primary;
-                            color: #fff;
+                        text-align: left;
+                        color: #fff;
+                        font-size: rem(13);
+                        &:hover {                            
+                            color: $color-primary;
                         }
-                        &.active {
-                            background-color: $color-primary;
-                            color: #fff;
-                        }
+                    
                     }
-                    .lastnav {
-                        @include reset-list();
-                        position: absolute;
-                        width: 150px;
-                        right: -180px;
-                        top: 0;
-                        z-index: 10;
-                        background-color: #fff;
-                        opacity: 0;
-                        transition: all .2s;
-                        box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.12);
-                    }
-                    &.hasnav {
-                        &:hover {
-                            .lastnav {
-                                opacity: 1;
-                                right: -150px;
+                  
+                    &.active {
+                        a{
+                            position: relative;
+                            display: block;
+                            color:#fff;
+                            &::after {
+                                content: "";
+                                background-color: $color-primary;
+                                width: 16px;
+                                height: 16px;
+                                left: 1.2rem;
+                                top: 40%;                               
+                                z-index: -10;
+                                position: absolute;
+                                border-radius: 50%;
                             }
                         }
+                       
                     }
                 }
             }
@@ -213,8 +203,78 @@
             }
         }
     }
-    
 
+    .search{
+        display: block;
+        margin-bottom: .7rem;
+        .iconfont{
+           font-size: 1.8rem;
+        }
+    }
+    
+    .lang-switcher{
+        position: relative;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+        .down{               
+            .iconfont{
+                color:$color-secondary;            
+                font-size: rem(20);
+                @include mq(xxl){
+                    font-size: rem(22);
+                }
+            }
+        }
+       
+        .languages{
+            position: absolute;
+            border-radius: 6px;
+            left: 50%;
+            top:45px;
+            z-index: 2000;
+            transform: translateX(-50%);
+            background-color: #fff;
+            // filter: drop-shadow(0px 0px 22px rgba(255,255,255,0.8));
+            width: 120px;
+            @include reset-list();
+            // box-shadow: 0px 0px 22px rgba(0,0,0,0.15);
+            filter: drop-shadow(0 0 0.5rem rgba(0,0,0,.15));
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            visibility: hidden;
+            &::after{
+                position: absolute;
+                left: 50%;
+                top: -10px;
+                border:5px transparent solid;
+                border-bottom-color:#fff;
+                width: 0;
+                height: 0;
+                content: " ";
+                transform: translateX(-50%);
+                z-index: 100;
+            }
+            li{
+                a{
+                    display: block;
+                    padding: .2rem;
+                    text-align: center;
+                    &.active{
+                        color:$color-secondary;
+                    }
+                }
+            }
+            
+        }
+        &:hover{
+            .iconfont{
+                color:#fff;
+            }
+            .languages{
+                visibility: visible;
+            }
+        }
+    }
  
     .mobilemenu {
         @include mq(lg) {
@@ -252,13 +312,13 @@
     .menu-over {
         position: fixed;
         right: -100vw;
-        top: 45px;
+        top: 100px;
         width: 100%;
-        height: calc(110vh - 45px);
+        height: calc(110vh - 100px);
         background-color: #fff;
         opacity: 0;
         box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
-        z-index: -10;
+        z-index: 1000;
         transition: all .5s;
         @include mq(md) {
             top: 60px;
@@ -334,50 +394,49 @@
                 }
             }
         }
-        .minemailoa {
-            text-align: center;
-            margin-top: 1rem;
-            a {
-                border-radius: 50%;
-                background-image: linear-gradient( -45deg, rgb(98, 174, 75) 0%, rgb(8, 87, 166) 100%);
-                text-align: center;
-                display: inline-block;
-                width: 26px;
-                height: 26px;
-                line-height: 26px;
-                color: #fff;
-                &.oa {
-                    margin-left: .8rem;
-                }
-            }
-        }
+       
     }
     &.fixheader {
-        background-color: #fff;
+      
+        position: fixed;
+        left: 0;       
+        z-index: 8000;
+        @include mq(xxxl){
+            height: 80px;
+        }
+        .logo{
+            @include mq(xxxl){
+                width: 120px;
+                padding-bottom: 1rem;
+            }
+        }
         .mainav {
             &>li {
                 &>a {
                     text-shadow: none;
+                    @include mq(xxxl){
+                        padding: 1rem 6rem;
+                    }
                     &:hover {
                         color: $color-primary;
                     }
                 }
             }
         }
-        .ql {
-            a {
-                border: 1px solid $color-primary;
-                color: $color-primary;
-                &.active {
-                    background-color: $color-primary;
-                    color: #fff;
-                }
+        .search{
+            @include mq(xxxl){
+                margin-bottom: .3rem;
             }
         }
+        
         .one,
         .two,
         .three {
             background-color: $color-primary;
+        }
+        .menu-over {
+            top: 50px;
+            height: calc(110vh - 102px);
         }
     }
 }

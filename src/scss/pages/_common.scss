@@ -1,27 +1,50 @@
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+// @font-face {
+//     font-family: "AlibabPuHuiTi";
+//     src: url("../fonts/Alibaba-PuHuiTi-Regular.ttf") format("truetype");
+
+// }
+// @font-face {
+//     font-family: "AlibabPuHuiTi";
+//     src: url("../fonts/Alibaba-PuHuiTi-Bold.ttf") format("truetype");
+//     font-weight: bold;
+// }
+// @font-face {
+//     font-family: "AlibabPuHuiTi";
+//     src: url("../fonts/Alibaba-PuHuiTi-Medium.ttf") format("truetype");
+//     font-weight: 500;
+// }
+
+// @font-face {
+//     font-family: "AlibabPuHuiTi";
+//     src: url("../fonts/Alibaba-PuHuiTi-Light.ttf") format("truetype");
+//     font-weight: 300;
+// }
+
+
+// @font-face {
+//     font-family: 'Source Han Sans SC';
+//     src: '../fonts/SourceHanSansSC-VF.otf.woff2' format('woff2-variations');
+//     font-weight: 125 950;
+//     font-stretch: 75% 125%;
+//    }
+
+h1,h2{
+    font-weight: bold;  
 }
 
-@font-face {
-    font-family: "ElliotSans";
-    src: url("../fonts/ElliotSans-Bold.ttf") format("truetype");
-    font-weight: bold;
-}
 
 body {
-    color: $regent-grey;
+    color: #000;
     background-color: #fff;
     // font-family:  "PingFang SC", "Microsoft YaHei", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family:  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",  Helvetica, Tahoma, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: rem(14);
     margin: 0 auto;
     line-height: 1.8;
     position: relative;
-
+ 
     @include mq(md) {
-        font-size: rem(16);       
-
+        font-size: 1rem; 
     }
     @include mq(lg) {
         font-size: rem(14);     
@@ -30,9 +53,11 @@ body {
     @include mq(xl) {      
 
     }
-    @include mq(xxl) {         
-
+    @include mq(xxl) {   
         font-size: 1rem;     
+    }
+    @include mq(xxxl) {   
+        padding-top: 130px;
     }
 }
 
@@ -46,117 +71,157 @@ a {
 }
 
 .container {
-    @include mq(xxl) {
-        max-width: 1210px;
+    @include mq(xxxl) {
+        max-width: 1550px;
     }
 }
 
-.title-section {
-   
-    margin-bottom: 1rem;
-    h2 {
-        color: $color-secondary;    
+.title-section {   
+
+    h3 {
+        color: $color-primary;    
         text-transform: uppercase;  
+        font-weight: bold;
     }
+   
 }
 
-h2,
-h3 {
-    color: $color-secondary;      
-}
 
 .banner {
     position: relative;
     .bg{
         width: 100%;
-    }
-    .breadcrumb{
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        color:#fff;
+        height: 350px;
+        object-fit: cover;
+        object-position: center center;
+        @include mq(md){
+            height: 500px;
+        }
+        @include mq(lg){
+            height: 600px;
+        }
+        @include mq(xl){
+            height: 700px;
+        }
         @include mq(xxl){
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            height: auto;
         }
-        .map-path{
-            @include reset-list();
-            li{
-                display: inline-block;
-               
-                &::after{
-                    content: "/";
-                    transform: translateX(100%);
-                }
-                a{
-                    color:rgba(255, 255, 255, .6);
-                    &:hover{
-                        color:#fff;
-                    }
-                }
-                &.current{
-                    &::after{
-                        display: none;
-                    }
-                }
-            }
-        }
-
-
+   
     }
+
     .txt-container {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 45%;      
         z-index: 10;
-        color: #fff;
-        text-align: center;
+        color: $color-primary;
+       
         h1{
             line-height: 1;
+            position: relative;
+            padding-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
+            &::after{
+                content: " ";
+                display: block;
+                width: 60px;
+                height: 3px;
+                background-color: $color-primary;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
         };
-        p{
-            max-width: 480px;
-            margin: 0 auto;
+        p{           
+          
+            @include mq(xxl){
+                font-size: rem(18);
+            }
         }
+
+        
    
     }
  
 }
-.two-level-nav{  
-    background-color: #F3F7FA;    
-      
-    .sub-nav{       
-        a{
-            display: inline-block;
-            padding: 1rem 2rem;
-            @include mq(xxl){
-                padding: 1.5rem 2rem;
-            }
-            &.active{
-                position: relative;
-                &::after{
-                    position: absolute;
-                    content: " ";
-                    display: block;
-                    left: 50%;
-                    bottom: 0;
-                    border:6px transparent solid;
-                    border-bottom-color: $color-primary;
-                    width: 0;
-                    height: 0;
-                    transform: translateX(-50%);
-                }
-            }
-        }
-        
+
+.sub_nav{
+    background: $color-primary url('../img/logo_bg_3.png') no-repeat right -4.3rem top -6.6rem;
+    height: 370px;
+    width: 720px;
+    padding: 2rem;  
+    border-radius: 6px;
+    position: relative;
+    margin: -320px 0 0 auto;
+    z-index: 200;
+    &::after{
+        content: " ";
+        display: block;
+        width: 0;height: 0;
+        border:45px solid transparent;
+        border-left-color: $color-primary;
+        position: absolute;
+        left: 10%;
+        bottom: -40px;
+        transform: rotate(7deg)
         
     }
+ 
+    ul{
+        @include reset-list();
+        @include vertical-align();
+        li{
+            display: inline-block;
+            margin-bottom: 2rem;
+            background: url(../img/icons/arrow-right.png) no-repeat right center;
+            a{
+                display: block;
+                padding: 0 2.8rem 0 2rem;
+                color:#fff;
+                font-size: rem(18);
+                @include mq(md){
+                    font-size: rem(20);
+                }
+                @include mq(lg){
+                    font-size: rem(24);
+                }
+                @include mq(xl){
+                    font-size: rem(28);
+                }
+                @include mq(xxl){
+                    font-size: rem(30);
+                }
+                @include mq(xxxl){
+                    font-size: rem(32);
+                }
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+            &.active{
+                a{
+                    color: #fff;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background-color: $color-secondary;
+                        width: 70%;
+                        height: 27px;
+                        border-radius: 14px;
+                        left: 47%;
+                        top: 55%;                     
+                        z-index: -10;
+                        position: absolute;
+                        transform: translateX(-50%);
+                    }
+                }
+               
+            }
+        }
+    }
 }
+
 .site-path {
   
     padding: 1rem 0;
@@ -182,43 +247,6 @@ img {
 .line-1 {
     border: none;
     border-top: 1px #ddd solid;
-}
-
-.section-common{
-    background-color: $color-secondary;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#fff;
-    .txt{
-        text-align: center;
-        h2{
-            color:#fff;
-            @include mq(xxl){
-                margin-bottom: 2rem;
-            }
-        }
- 
-        a{
-            display: inline-block;
-            padding: .3rem 1.3rem;
-            background-color: $color-primary;
-            color:#fff;
-            border-radius: 3px;
-            &:hover{
-                background-color: $color-secondary;
-            }
-            span{
-                border-radius: 50%;
-                display: inline-block;
-                background-color: #fff;
-                color:$color-primary;
-                height: 25px;
-                width: 25px;
-                line-height: 25px;
-            }
-        }
-    }
 }
 
 .text100 {
@@ -302,16 +330,22 @@ img {
 }
 .text46 {
     font-size: rem(22);
+    @include mq(sm) {
+        font-size: rem(26);
+    }
     @include mq(md) {
-        font-size: rem(28);
+        font-size: rem(30);
     }
     @include mq(lg) {
         font-size: rem(34);
     }
     @include mq(xl) {
-        font-size: rem(40);
+        font-size: rem(38);
     }
     @include mq(xxl) {
+        font-size: rem(42);
+    }
+    @include mq(xxxl) {
         font-size: rem(46);
     }
 }
@@ -348,10 +382,9 @@ img {
 }
 
 .text36 {
-    font-size: rem(16);
-    @include mq(md) {
-        font-size: rem(24);
-    }
+   
+    font-size: rem(24);
+  
     @include mq(lg) {
         font-size: rem(28);
     }
@@ -412,9 +445,9 @@ img {
 }
 
 .text28 {
-    font-size: rem(16);
+    font-size: rem(20);
     @include mq(md) {
-        font-size: rem(20);
+        font-size: rem(22);
     }
     @include mq(lg) {
         font-size: rem(24);
@@ -444,9 +477,9 @@ img {
 }
 
 .text24 {
-    @include mq(lg) {
-        font-size: rem(18);
-    }
+   
+    font-size: rem(18);
+  
     @include mq(xl) {
         font-size: rem(22);
     }
@@ -604,10 +637,9 @@ img {
 }
 
 .pb-media-5 {
-    padding-bottom: 1rem;
-    @include mq(md) {
-        padding-bottom: 2rem;
-    }
+
+    padding-bottom: 2rem;
+ 
     @include mq(lg) {
         padding-bottom: 3rem;
     }
@@ -621,16 +653,17 @@ img {
 
 .pb-media-6 {
     padding-bottom: 2rem;
-    @include mq(md) {
+   
+    @include mq(lg) {
         padding-bottom: 3rem;
     }
-    @include mq(lg) {
+    @include mq(xl) {
         padding-bottom: 4rem;
     }
-    @include mq(xl) {
+    @include mq(xxl) {
         padding-bottom: 5rem;
     }
-    @include mq(xxl) {
+    @include mq(xxxl) {
         padding-bottom: 6rem;
     }
 }
@@ -711,7 +744,7 @@ img {
     @include mq(md) {
         margin-bottom: 2rem;
     }
-    @include mq(lg) {
+    @include mq(xl) {
         margin-bottom: 3rem;
     }
 }
@@ -730,10 +763,9 @@ img {
 }
 
 .mb-media-5 {
-    margin-bottom: 1rem;
-    @include mq(md) {
-        margin-bottom: 2rem;
-    }
+  
+    margin-bottom: 2rem;
+ 
     @include mq(lg) {
         margin-bottom: 3rem;
     }
@@ -777,49 +809,70 @@ img {
     }
 }
 
-.map {
-    position: relative;
-    img {
-        width: 100%;
+.container-1{
+    max-width: 1110px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contacts-common {
+    text-align: left;          
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
+    padding: 1rem;
+    @include mq(md){
+        padding: 2rem;
     }
-    .dot {
-        width: 20px;
-        height: 20px;
-        background-color: $color-secondary;
-        border-radius: 50%;
-        position: absolute;
+    @include mq(lg){
+        padding: 3rem;
+    }
+    @include mq(xl){
+        padding: 4rem;
+    }
+    .item{
+        &.first{
+            border-right: 5px $color-primary solid;
+        }
+    }
+    h3{
+        position: relative;
         z-index: 100;
-        line-height: 20px;
-        transform: translateX(-50%) translateY(-50%);
-        &::after {
-            position: absolute;
+        &::after{
             content: " ";
             display: block;
-            width: 6px;
-            height: 6px;
+         
             border-radius: 50%;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background-color: #fff;
-        }
-        &::before {
+            background-color: rgb(233, 79, 32);
             position: absolute;
-            content: " ";
-            display: block;
-            width: 50px;
-            height: 1px;
-            left: 100%;
-            top: 50%;
-            background-color: $color-secondary;
+    
+            width: 40px;
+            height: 40px;
+            left: -0.8rem;
+            top: -0.4rem;
+            z-index: -1;   
+              
+              
         }
-        .city {
-            position: absolute;
-            left: 400%;
-            white-space: nowrap;
-            color: $color-secondary;
-            z-index: 10;
-            top: 0;
+    }
+    dl{
+        position: relative;
+        margin-bottom: 0rem;
+        line-height: 1.5;
+        @include mq(xxl){
+            font-size: rem(18);
         }
+        dt{
+            float: left;
+            width: 60px;
+            font-weight: normal;
+
+        }
+        dd{
+            margin-left: 70px;
+        }
+
     }
 }

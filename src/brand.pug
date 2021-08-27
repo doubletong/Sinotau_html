@@ -1,0 +1,108 @@
+extends includes/layout.pug
+
+block title
+    | 云拿智能仓储方案
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/about.jpg", alt="")       
+
+        .txt-container
+            .container
+                .row 
+                    .col-lg
+                        .txt
+                            h1.wow.fadeInUp.text70 企业简介
+                            p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
+                    
+    .container
+        .sub_nav.wow.fadeInDown
+            ul.menus              
+                li
+                    a(href="about.html") 企业简介
+                li 
+                    a(href="70years.html") 胜宇70年
+                li 
+                    a(href="team.html") 团队管理
+                li
+                    a(href="honors.html") 资质荣誉
+                li 
+                    a(href="csr.html") 社会责任
+                li.active  
+                    a(href="brand.html") 胜宇品牌
+              
+              
+        
+    .page.page-brand.pt-media-9
+        section.s1.container-1.mb-media-7 
+            
+            .row.align-items-center
+                .col-lg-6                  
+                    .pic
+                        img(src="img/brand_1.png", alt="胜宇")                    
+
+                .col-lg-6
+                    .txt
+                        .title-section 
+                            h2.text48 品牌形象升级
+                           
+                       
+                        p.des 本次品牌形象升级，反映了胜宇的发展与成长，象征着胜宇未来的光明前景。<br>新标志以简洁现代的风格清晰地传递了我们的核心理念：XX 、XX 、XX。<br>标志中以“胜”字为字体创意设计，提取“Sheng Yu Cable”首字母与“胜”字巧妙结合。
+                        p.des1 品牌符号，为提高品牌的易识别、易阅读、易传播、易应用，以电缆圆与“胜”字结合为品牌符号，让品牌形象迅速传播，增加消费者对品牌的信任度，增加企业人员对品牌的自豪感。<br>从而不断传达胜文化的核心理念。
+
+            section.s2.mb-media-7 
+                .container-1
+                    img(src="img/brand_2.png", alt="胜宇")            
+
+            section.s3.mb-media-7 
+                .container-1
+                    img(src="img/brand_3.png", alt="胜宇")        
+        
+
+            
+            
+        
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            centeredSlides: true,
+            loop:true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+                },
+             
+            }
+        });
+
+
+     
+
+      
+       
+
+     

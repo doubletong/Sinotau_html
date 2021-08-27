@@ -7,47 +7,68 @@ block bkheader
    
 
 block content
-    .banner.banner-about.wow.fadeInDown(style="background-image:url(img/banners/team.jpg)")
-        .container
-            .title
-                h1.wow.fadeInUp 领军人才
-                p.wow.fadeInUp 以人为本，向远而生。
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/about.jpg", alt="")       
+
+        .txt-container
+            .container                
+                .txt
+                    h1.wow.fadeInUp.text70 企业简介
+                    p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
+
+    .container
+        .sub_nav.wow.fadeInDown
+            ul.menus              
+                li
+                    a(href="about.html") 企业简介
+                li
+                    a(href="70years.html") 胜宇70年
+                li.active   
+                    a(href="team.html") 团队管理
+                li 
+                    a(href="honors.html") 资质荣誉
+                li 
+                    a(href="csr.html") 社会责任
+                li 
+                    a(href="brand.html") 胜宇品牌
+                        
               
 
-    .wrapper
-        .page.page-team.pt-media-5.pb-media-3
-            .container  
-                .row
+  
+    .page.page-team.pt-media-9
+        .container-1
+            .item 
+                .row.gx-0
                     .col-lg-6 
-                        .item
-                            .txt 
-                                .post 中国科学院院士
-                                .name.text36 侯文博·博士
-                                p.des 中华医学会心血管分会主任委员、全国五一劳 动奖章获得者、长江学者特聘教授，上海复旦 大学生命科学研究院院长、上海市心血管病研 究所所长、上海中山医院心内科主任。先后承担20余项国家和部级重大项目包括： 国家重点科究计划、863计划、973计划、 科技支撑、国自然基金、国家杰出青年基 金、211工程重点学科建设、985工程重点 学科建设等。
-                            img(src="img/team/team_1.jpg", alt="侯文博·博士")
+                        .pic
+                            img(src="img/team_1.jpg", alt="")
+                           
+                    .col-lg-6                         
+                        .txt 
+                            h3.title.text24 我们希望帮助员工成长，<br>从而改善他们的生活。                            
+                            p.des 我们给与员工学习的机会，培养他们的兴趣与专长，提供完善的员工培训计划，帮助他们迈向成功的职业生涯。
+            
+            .item 
+                .row.gx-0
                     .col-lg-6 
-                        .item.ood
-                            .txt 
-                                .post 美国肿瘤护理协会前任主席(ONS)
-                                .name.text36 玛丽.古莱特·MD 
-                                p.des 现任美国亚特兰大艾默里理疗集团护理创新及研究联合主席，她此前七年担任美国艾默里大学附属医院副院长，分管患者中心和护理部。
-                            img(src="img/team/team_2.jpg", alt="玛丽.古莱特·MD")
+                        .pic
+                            img(src="img/team_2.jpg", alt="")
+                           
+                    .col-lg-6                         
+                        .txt 
+                            h3.title.text24 确保他们能受到尊重，<br>尊严可以得到维护。                  
+                            p.des 让员工有权拥有一个可以自由表达切身问题的环境，大家在快乐的氛围中，与企业同步成长。
 
+            .item 
+                .row.gx-0
                     .col-lg-6 
-                        .item
-                            .txt 
-                                .post 同济大学二级教授
-                                .name.text36 张海军·MD 
-                                p.des 中组建生物医用材料改性技术国家地方联合工程实验室等国家和省级平台 6 个并担任首席科学家;创办两家高新技术企业，即将在创业板上市。
-                            img(src="img/team/team_3.jpg", alt="张海军·MD ")
-
-                    .col-lg-6 
-                        .item.ood
-                            .txt 
-                                .post 世界血管通路大会(WoCoVA)主席
-                                .name.text36 Mauro Pittiruti·博士  
-                                p.des Catholic University外科学教授，血管通路领域世界范围内著名专家。每年血管通路植入量超过1000例。作为欧洲血管通路大会（EVAN）创始人和多个欧、美学会 ESPEN、AVA、WoCoVA常务委员，因在血管通路研究的杰出贡献，获Suzanne Herbst医学大奖。
-                            img(src="img/team/team_4.jpg", alt="Mauro Pittiruti·博士  ")
+                        .pic
+                            img(src="img/team_3.jpg", alt="")
+                           
+                    .col-lg-6                         
+                        .txt 
+                            h3.title.text24 以责任为信念，不仅仅对客户， <br>也是对自己。            
+                            p.des 秉承商业诚信的原则，在运营中，包括处理各类关系、实践、采购、生产、运营、销售等方面，应始终保持诚信可靠。
 
 
 block bkfooter

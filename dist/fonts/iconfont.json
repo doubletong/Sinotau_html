@@ -1,79 +1,58 @@
 {
-  "id": "2660807",
-  "name": "云拿",
+  "id": "2768799",
+  "name": "PUSH",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "22762073",
-      "name": "ins",
-      "font_class": "ins",
-      "unicode": "e600",
-      "unicode_decimal": 58880
+      "icon_id": "13074968",
+      "name": "down arrow",
+      "font_class": "downarrow",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
     },
     {
-      "icon_id": "432081",
-      "name": "twitter3",
-      "font_class": "twitter",
-      "unicode": "e822",
-      "unicode_decimal": 59426
+      "icon_id": "14112224",
+      "name": "round_right",
+      "font_class": "go",
+      "unicode": "e619",
+      "unicode_decimal": 58905
     },
     {
-      "icon_id": "606269",
-      "name": "facebook",
-      "font_class": "facebook",
-      "unicode": "e601",
-      "unicode_decimal": 58881
+      "icon_id": "4922080",
+      "name": "箭头右",
+      "font_class": "right",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
     },
     {
-      "icon_id": "10485790",
-      "name": "in",
-      "font_class": "in",
-      "unicode": "e64d",
-      "unicode_decimal": 58957
-    },
-    {
-      "icon_id": "18986843",
-      "name": "youtube",
-      "font_class": "youtube",
-      "unicode": "e8db",
-      "unicode_decimal": 59611
-    },
-    {
-      "icon_id": "4352875",
-      "name": "search",
-      "font_class": "search",
-      "unicode": "e63e",
-      "unicode_decimal": 58942
-    },
-    {
-      "icon_id": "22755867",
-      "name": "next",
+      "icon_id": "10060838",
+      "name": "箭头",
       "font_class": "prev",
-      "unicode": "e6df",
-      "unicode_decimal": 59103
+      "unicode": "e629",
+      "unicode_decimal": 58921
     },
     {
-      "icon_id": "400697",
-      "name": "earth",
-      "font_class": "earth",
-      "unicode": "e6de",
-      "unicode_decimal": 59102
+      "icon_id": "23882187",
+      "name": "箭头",
+      "font_class": "next",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
     },
     {
-      "icon_id": "1018303",
+      "icon_id": "109796",
       "name": "top",
       "font_class": "top",
-      "unicode": "e648",
-      "unicode_decimal": 58952
+      "unicode": "e653",
+      "unicode_decimal": 58963
     },
     {
-      "icon_id": "8078256",
-      "name": "next",
-      "font_class": "next",
-      "unicode": "e609",
-      "unicode_decimal": 58889
+      "icon_id": "23863822",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e600",
+      "unicode_decimal": 58880
     }
   ]
 }

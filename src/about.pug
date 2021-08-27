@@ -1,264 +1,564 @@
 extends includes/layout.pug
 
 block title
-    | About
+    | 关于我们
 
 block bkheader
-    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
 
-
-block content  
-    .banner.banner-about.wow.fadeInUp
-        img(src="img/banners/about.jpg", alt="About")
-    .two-nav.wow.fadeInUp
-        ul.sub-nav
-            li 
-                a(href="#") about eall
-            li 
-                a(href="#") ability
-            li 
-                a(href="#") process
-            li 
-                a(href="#") FAQ
-
+block content
+    
     .page.page-about
-        section.s1.container.pt-media-6.pb-media-6
-            .row.align-items-center
-                .col-lg-6
-                    .txt-container
-                        .title-section 
-                            h2.wow.fadeInUp Our Strength
-                            p.wow.fadeInUp Taking innovation as the core,Specializing in high quality
+        section.s1.container.pt-media-5.pb-media-8
+            .bg.mb-media-7
+                img.bg(src="img/SVG/about_bg.svg", alt="关于我们")
+                h1.title.text46 优质智能化服务系统供应商
+                .c1
+                    img(src="img/SVG/dot.svg", alt="dot")
+                
+            .intro 
+                .row.align-items-center
+                    .col-md
+                        .title-section.mb-media-4
+                            h3.text30 公司概况
+                        .des 
+                            p “璞盛科技 PUSH-TECH”
+                            p 集合创意与技术，用创新驱动服务变革，实现建筑空间服务模式、管理模式系统创新，进而促进不同建筑空间的转型升级。
+                            p “璞”的本意为未琢之玉，“盛”则为兴盛，繁荣昌盛之意，结合着英文“PUSH” 则为推动，寓意着通过团队的力量助力所服务的客户取得更进一步的成就和辉煌。
+                    
+                    .col-md-auto
+                        .logo
+                            img(src="img/SVG/logo.svg", alt="logo")
 
-                        .pic.wow.fadeInUp 
-                            img(src="img/about_01.jpg", alt="Our Strength")
 
-                .col-lg-6
-                    .txt
-                        h3.text22.wow.fadeInUp Shenzhen Eall Tech Co., Ltd.
-                        p.wow.fadeInUp Established in April 2003, Eall is a network integration, planning, and interactive visual communication company. With innovation as our core, we provide our customers with high quality interactive design services through our professional flow and innovative visuals.
-                        p.wow.fadeInUp Specialized in high quality multimedia interactive and all-round web design, Eall also has a strong R & D design team and top-quality design professionals. For years our team has been active in the Shenzhen high-end website design, enterprise brand website, product display website. We have worked with businesses related to network interactive and creative industry, and several other fields such as network branding, network public relations, Internet reputation building, network unified brand promotion, plane ads, flash animation, interactive games, digital interactive, multimedia applications and internet technology research and development.
-                        p.wow.fadeInUp We are Committed to build more and better Internet brands, provide professional Internet brand proposal and use high standards of design, create the brand route with a true sense of direction, unremitting our efforts to create the greatest value for our customers internet brand in the interactive marketing field. We have over seven years of efforts & experience, and with nearly a thousand of case experiences, Eall has already become a famous network marketing interactive and brand design and planning company in domestic China, with very high reputation and public praise.
 
+        section.s2.pt-media-5.pb-media-5.mb-media-7  
+            .container
+                .row.align-items-center 
+                    .col-md-auto
+                        .title-section.pt-media-5.pb-media-5 
+                            h3.text30 愿景及使命
+                    .col-md 
+                        p 推动建筑的智能化服务与绿色低碳排放的发展，与客户共创服务体验新时代。
+           
+        section.s3
+            .container.pt-media-6.pb-media-9         
+                img.c1(src="img/SVG/about_bg_1.svg", alt="c")
+                .title-section.text-center                               
+                    h2.text30 发展历程
+
+                .years 
+                    .row.justify-content-between
+                        .col-auto
+                            .year 现在                                
+                        .col-auto
+                            .year 2020                                
+                        .col-auto 
+                            .year 2019
+                  
+        
+        section.s4.pt-media-5.pb-media-5 
+            .container 
+                .history.mb-media-7
+                    .row.g-xxl-5 
+                        .col-md-6.col-lg-4 
+                            .item 
+                                h3.title.text30 2021
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                        .col-md-6.col-lg-4 
+                            .item 
+                                h3.title.text30 2020
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                        .col-md-6.col-lg-4 
+                            .item 
+                                h3.title.text30 2019
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+                                .ev 
+                                    .row 
+                                        .col-auto 
+                                            .mon 1月
+                                        .col 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东逝
+
+
+                .title-section.mb-media-4
+                    h3.text30 创始团队
+                .team 
+                    .row.justify-content-between 
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t1.png", alt="")
+                                .txt 
+                                    .name 盛南
+                                    .job 创始人
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t2.png", alt="")
+                                .txt 
+                                    .name 陈颀
+                                    .job CEO
+
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t3.png", alt="")
+                                .txt 
+                                    .name Jiayi Zhao
+                                    .job CTO
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t4.png", alt="")
+                                .txt 
+                                    .name 林双剑
+                                    .job CGM
+
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t5.png", alt="")
+                                .txt 
+                                    .name 李昕惠
+                                    .job CFO
+                        .col-auto 
+                            .item 
+                                .pic 
+                                    img(src="img/1x/t6.png", alt="")
+                                .txt 
+                                    .name 黄剑波
+                                    .job CMO
+
+        section.s5.pt-media-5.pb-media-5
+            .container 
+                .title-section.mb-media-4
+                    h3.text30 创始团队
+
+                .swiper.mySwiper 
+                    .swiper-wrapper
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/partner.png", alt="")
+                                figcaption 璞盛科技
+            
+
+          
+                    .swiper-pagination
+
+        section.s6.pt-media-5.pb-media-5
+            .container 
+                .title-section.mb-media-4
+                    h3.text30 资质认证
+
+                .swiper.mySwiper2 
+                    .swiper-wrapper
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                               
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                        
+                        .swiper-slide
+                            figure.item 
+                                img(src="img/1x/cert-80.jpg", alt="")
+                      
+
+                    .swiper-pagination
+
+        section.s7.pt-media-5.pb-media-5
+            .container 
+                .title-section.mb-media-4
+                    h3.text30 售后服务
+                
+                h4.sub-title.text20.mb-media-3 普通售后
+                .faq.mb-media-3 
+                    .item.open 
+                        .qheader 
+                            h5.text20 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东？
+                        .qbody
+                            p 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢，古今多少事，都付笑谈中。是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。
+
+                    .item 
+                        .qheader 
+                            h5 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东？
+                        .qbody
+                            p 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢，古今多少事，都付笑谈中。是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。
+
+                    .item 
+                        .qheader 
+                            h5 滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东滚滚长江东逝水滚滚长江东逝水滚滚长江东逝水滚滚长江东滚滚长江东？
+                        .qbody
+                            p 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢，古今多少事，都付笑谈中。是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。 几度夕阳红。白发渔樵江渚上，都付笑谈中。
+
+                h4.sub-title.text20.mb-media-3 定制售后
+                .contact.mb-media-7
+                    .row.g-xxl-5
+                        .col-lg-6 
+                            form.form-contact(action="#") 
+                                .row 
+                                    .col-md-6 
+                                        .form-group 
+                                            label.form-label(for="") 姓名*
+                                            input.form-control(type="text", name="name")
+
+
+                                    .col-md-6 
+                                        .form-group 
+                                            label.form-label(for="") 邮箱*
+                                            input.form-control(type="email", name="email")
+                                            
+
+                                .row 
+                                    .col-md-6 
+                                        .form-group 
+                                            label.form-label(for="") 电话*
+                                            input.form-control(type="text", name="name")
+
+
+                                    .col-md-6 
+                                        .form-group 
+                                            label.form-label(for="") 国家
+                                            input.form-control(type="text", name="name")
+
+
+                                .form-group 
+                                    label.form-label(for="") 公司*
+                                    input.form-control(type="text", name="name")
+
+                                
+                                .form-group 
+                                    label.form-label(for="") 信息*                                 
+                                    textarea.form-control(name="message", rows="2") 
+
+                                .att
+                                    .row.align-items-center
+                                        .col-auto
+                                            img(src="img/SVG/fujian.svg", style="width:40px;" alt="")
+                                        .col 添加附件
+
+                                button.btn.btn-primary.btn-radius(type="submit") 发送消息
+
+                        .col-lg-6 
+                            .row.g-xxl-5 
+                                .col-md-auto 
+                                    figure.qr 
+                                        img(src="img/1x/qrcode1.png", alt="企业公众号")
+                                        figcaption 企业公众号
+                                    figure.qr 
+                                        img(src="img/1x/qrcode2.png", alt="客服微信")
+                                        figcaption 客服微信
+
+                                .col-md
+                                    #map-gaode.map-gaode 
+
+                .join
+                    .row.mb-media-4.align-items-center 
+                        .col-md-4.col-lg-3
+                            .title-section
+                                h3.text30 加入我们
+                        .col-md-8.col-lg-9
+                            .des02.text30 Push yourself. Live boldly. Never settle！
+
+                    .joblist
+                        .row.justify-content-between
+                            .col-md-6.col-lg-4.col-xl-3
+                                .item 
+                                    header.hd
+                                        h4 校园招聘
+                                        a.down(href="javascript:void(0);") 
+                                            i.iconfont.icon-downarrow
+                                    .list
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+
+                            .col-md-6.col-lg-4.col-xl-3
+                                .item 
+                                    header.hd
+                                        h4 社会招聘
+                                        a.down(href="javascript:void(0);") 
+                                            i.iconfont.icon-downarrow
+                                    .list
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+
+                            .col-md-6.col-lg-4.col-xl-3
+                                .item 
+                                    header.hd
+                                        h4 海外招聘
+                                        a.down(href="javascript:void(0);") 
+                                            i.iconfont.icon-downarrow
+                                    .list
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
+                                        .li.row
+                                            .col 
+                                                .text20 技术类
+                                            .col-auto 
+                                                a(href="job_detail.html") 查看岗位
+                                                    i.iconfont.icon-right
 
                            
-        section.s2.container.pt-media-6.pb-media-6
-            .row
-                .col-lg-6
-                    .txt-container
-                        .title-section 
-                            h2.wow.fadeInUp Our orientation
-                            p.wow.fadeInUp Best Creativity Internet Marketing
-
-                    .txt 
-                        h3.text22.wow.fadeInUp Eall website design
-                        p.wow.fadeInUp Specializes in high-quality natural website design, independent in technology development and application, user experience and interactive planning, large interactive website project operation, the development of complex custom demands. We have a focused, high-quality professional team, with internationalized vision : from good web application development engineers, senior web designers, to IT professionals. We have finished hundreds of web projects, and are experienced in website design, custom communication and project management.
-
-
-                .col-lg-6
-                    .pic.wow.fadeInRight 
-                        img(src="img/about_02.jpg", alt="医疗创新 以人为本")   
-
-
-        section.s3.pt-media-6.pb-media-6
-            .container
-                .orientation
-                    .txt-container
-                        .title-section 
-                            h2.wow.fadeInUp Our orientation
-                    
-                    p We would like to show you to our warm and pleasant work atmosphere, invite you to understand our modern refined thinking, our spirit of creation, individuality, and the strong belief that out of knowledge comes our strength.
-                    p Good at group of wisdom, we hope that our team spirit is forever young. Truly, the Internet world is huge, but our thoughts always hold the basic idea: We refuse to be mediocre. So you can let your fantasies, inspiration, & imagination go unrestrained. Be free to change the way you dress, to change your hairstyle, to change the way you see yourself...Eall, with a strong atmosphere and unique creations, we will tailor for you an individual character and style, and make you look brand-new.
-                    p In Eall, we believe knowledge is power. The knowledge of our staff is the Eall’s favorite quality and our backbone, and the learning and knowledge of our management has become the most distinct difference of our company. You don’t need to worry about your accidental mistakes; the Eall team understands “failure is the mother of success”, and we will amplify your advantage, give you courage and more support, so as to help you learn from your failures, fix them, and pursue new success.
-                    p You must cultivate strong ambition. You should succeed, because you have self-confidence; you will be successful, because you have come to Eall. Work is no longer exhausting and tiring. Eall’s comfortable working environment is waiting for you: A friendly, warm team that will bring a little sunshine into your heart; So while we work, you can have a nice coffee; a stroll in the garden, a swim, do some exercise, or just let yourself feel relaxed and happy......
-                    
-            
-
-
-        section.s4.pt-media-6.pb-media-6
-            .container
-                .row
-                    .col-lg-6 
-                        figure.pic 
-                                img(src="img/about_04.jpg", alt="Corporate Social Responsibility") 
-
-                    .col-lg-6
-                        .txt
-                            .txt-container
-                                .title-section 
-                                    h2.wow.fadeInUp Corporate Social Responsibility
-
-                            p Our mission is to maintain a safe, healthy, and sustainable environment for all employees, creating awareness amongst the management and all members of staff of their rights and responsibilities.
-                            p We believe that the foundation of that environment exists at its heart, and includes awareness of employee rights, clean and safe facilities, and a management structure committed to both upholding those standards and also striving to find ways to improve them.
-                            p We subscribe to a high level of social awareness activity by engaging with organisations, such as local NGOs, that exist to enable us to maintain this target.
-
-                            
-        section.s5.pt-media-6.pb-media-6
-            .container
-                .title-section.text-center 
-                    h2.text46 ability
-
-                .tab 
-                    .tab-header 
-                        .row.no-gutters 
-                            .col-md-6.col-lg-3
-                                h3.active Combining network marketing strategy
-                            .col-md-6.col-lg-3
-                                h3 China high-end web design
-                            .col-md-6.col-lg-3
-                                h3 Why choose us
-                            .col-md-6.col-lg-3
-                                h3 High price returns
-                    .tab-body
-                        .content.active 
-                            p.wow.fadeInUp Integrated Internet marketing is no longer about running a simple website. Even US President Obama employed an Integrated Internet strategy in his 2008 Presidential campaign so maybe your company should also do the same.
-                            p.wow.fadeInUp Instead of a marketing strategy that based on only websites, we believe that your company needs an integrated Internet marketing strategy. Eall can help you develop an integrated Internet marketing strategy making use of a variety of marketing techniques available on the Internet. We are experts of integrated Internet marketing and together, we can make your brand name known all over the world via integrated Internet marketing.
-                            p.wow.fadeInUp Today, companies are spending millions on building their websites and promoting their websites. However only very few companies can be able to their money’s worth from this kind of marketing strategy.
-                            p.wow.fadeInUp For most companies, their internet marketing services including domain name registration, virtual hosting, website construction and website promotion are provided by ISP’s as their packaged services. These packaged services have generated a lot of business for ISP’s and other internet marketing companies, however they have not provided much value added for the companies that they are supposed to serve. The reason is simple, these ISP’s and internet marketing companies don’t understand the marketing needs of small and medium-sized enterprises and their packaged services do not add value to their customers.
-                            p.wow.fadeInUp For example, in the current market, network advertising, competitive ranking, network name, internet keyword are hot topics for internet marketing. However these tools would not likely add much value to your marketing effort if they were not specifically designed and catered to your company’s particular needs. For many internet marketing companies and ISP’s, they would provide these services as a package without customizing to the needs of their individual clients. As a result, it is unlikely that their clients would get any real benefits from their services.
-                            p.wow.fadeInUp A truly cost- and- benefit effective internet marketing strategy must integrates the marketing techniques available on the internet with the marketing needs of the customers.
-
-        section.s6.pt-media-6.pb-media-6
-            .container
-                .title-section.text-center 
-                    h2.text46 process
-
-                figure.pic1.mb-media-8
-                    img(src="img/about_08.png", alt="")
-
-                figure.pic2
-                    img(src="img/about_09.png", alt="")
-
-        section.s7.pt-media-6.pb-media-6
-            .container
-                .title-section.text-center 
-                    h2.text46 FAQ
-                .questions 
-                    .item.active.wow.fadeInUp 
-                        h3.title 
-                            span 1
-                            | Can you perform your services for overseas clients?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                            p We will follow the same business practice that we use for our local clients
-                            ol 
-                                li Enquiry
-                                li Our proposal
-                                li Your approval
-                                li 60% down payment
-                                li The first cut (draft design/project)
-                                li Your feedback followed by your approval
-                                li Rework according to your specifications, development &amp; testing
-
-                            p We are as effective and responsive as your local team; we would like to say - even better ;)
-                    
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 2
-                            | Where can I view your portfolio?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 3
-                            | How much and how do you charge?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-             
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 4
-                            | What is the typical development time of a website?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-             
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 5
-                            | What technologies do you work with?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-             
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 6
-                            | What is Eall.com.cn and what services you offer?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 7
-                            | Do you optimize websites for search engines (SEO)?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 8
-                            | Do you provide hosting too? Can I use my preferred web host but have the site built by you?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 9
-                            | What if I only want to upgrade an existing website? 
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 10
-                            | I don’t know exactly what I need. Can you help me?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    .item.wow.fadeInUp 
-                        h3.title 
-                            span 11
-                            | How about the legal side - non-disclosure agreements, contracts, etc.?
-                            i.iconfont.icon-right
-                        .des 
-                            p Yes, sure, we can and we do! In our connected world distance is not a factor in conducting business from anywhere in the planet. The team at Eall.com.cn is as effective and responsive as your local team, we would say - even better ;). We provide support virtually 24 hours a day online by email, phone, chat (Skype, MSN, YIM). We will send you files so you can assess the development process right away.
-                   
-                    
-                    
-             
-            
-          
 
 block bkfooter
 
-    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script(src='https://webapi.amap.com/maps?v=1.4.15&key=1cacf315d4678f9f550379b274a06d7a',type="text/javascript")
+   
     script.
-        $(function(){
-            $('.item .title').click(function(e){
-                e.preventDefault();
-                //- $(this).closest('.item').siblings('.active').removeClass('active');
-                $that = $(this);
-                $(this).next('.des').slideToggle(300,function(){
-                    //alert("slideToggle() 方法已完成!");
-                    $that.closest('.item').toggleClass('active');
-                });
-                
-               
-            });
-        })
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+                1400: {
+                    slidesPerView: 6,
+                    spaceBetween: 30,
+                },
+            },
+        });
 
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+                1400: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+       
+ 
+        var map = new AMap.Map('map-gaode', {
+            zoom:16,//级别
+            center: [113.94705,22.530902],//中心点坐标
+            viewMode:'3D', //使用3D视图
+            //- lang: "en" 
+        });
+
+        var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+
+        var marker = new AMap.Marker({
+            position: new AMap.LngLat(113.94705,22.530902),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            title: 'ealltech'
+        });
+
+        marker.content = 'PUSH';
+        marker.on('click', markerClick);
+        marker.emit('click', {target: marker});
+        // 将创建的点标记添加到已有的地图实例：
+        map.add(marker);
+
+        function markerClick(e) {
+            infoWindow.setContent(e.target.content);
+            infoWindow.open(map, e.target.getPosition());
+        }
+    
+        $(function () {
+            $('.faq .item .qheader').click(function(e){
+                $(this).next().slideToggle();
+
+                $(this).closest('.item').toggleClass('open')
+            });
+
+
+            $('.joblist .item .hd').click(function(e){
+                $(this).next().slideToggle();
+                $(this).toggleClass('open')
+            });
+        
+        });
+
+     
+
+      
+       
 
      

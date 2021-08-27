@@ -1,0 +1,76 @@
+
+.banner-apply{
+    z-index: 8000;
+    padding-bottom: 3rem;
+    @include mq(lg){
+        padding-bottom: 0;
+    }
+    .title-section {
+        color: #fff; 
+        margin-bottom: 5rem;
+        @include mq(lg){
+            max-width: 650px;
+            margin-bottom: 0rem;
+        }
+
+        @include vertical-align(); 
+        h1{
+            max-width: 460px;
+        }
+    }    
+    .form-col {
+        border-top: 5px solid $color-primary;     
+        position: relative;
+        background-color: #fff;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+        padding: 4rem 30px 3rem;
+        @include mq(lg){
+            margin-top: -30px;
+            margin-bottom: -50px;
+        }
+        @include mq(xl){
+            margin-top: -42px;
+            margin-bottom: -64px;
+        }
+        .icon{
+            width: 68px;
+            height: 68px;
+            text-align: center;
+            background-color: $color-secondary;
+            border-radius: 50%;
+            border:5px solid #fff;
+            padding-top: .8rem;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%,-50%);
+            filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+        }
+        .item{
+            margin-bottom: .4rem;
+            a{
+                color:$color-primary;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.page-apply{
+    background-color: #fff;
+    .s1{
+        padding-top: 2rem;
+        @include mq(lg){
+            padding-top: 10rem;
+        }
+        .pic{
+            width: 50px;
+            padding-top: 5px;
+        }
+    }
+   
+    
+    
+}

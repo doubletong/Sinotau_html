@@ -10,10 +10,10 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
     <meta name="theme-color" content="#fafafa">
-    <link href="fonts/iconfont.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/animate.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <link href="css/styles.min.css?v=9b52401e5feb88db2c42b3ff83ae108a" rel="stylesheet">
-    <script src="js/vendor/wow/dist/wow.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+    <link href="fonts/iconfont.css?v=d9aca66463e0a226b9dd9ea9c1ba7b2c" rel="stylesheet">
+    <link href="css/animate.css?v=d9aca66463e0a226b9dd9ea9c1ba7b2c" rel="stylesheet">
+    <link href="css/styles.min.css?v=d9aca66463e0a226b9dd9ea9c1ba7b2c" rel="stylesheet">
+    <script src="js/vendor/wow/dist/wow.min.js?v=d9aca66463e0a226b9dd9ea9c1ba7b2c"></script>
     <script>
       new WOW().init();
       
@@ -22,30 +22,18 @@
   </head>
   <body>
     <header class="site-header" id="site-header"> 
-      <div class="top-col"> 
-        <div class="container"> 
-          <div class="row align-items-center justify-content-end">
-            <div class="col-auto"> <a class="down" href="#"> <i class="iconfont icon-earth"></i></a></div>
-            <div class="col-auto"> <a class="search" href="#"> <i class="iconfont icon-search"></i></a></div>
-            <div class="col-auto"> <a class="contact" href="#">联系云拿</a></div>
-            <div class="col-auto"> <a class="app" href="#">申请试用</a></div>
-            <div class="col-auto"> <a class="login" href="#">登录</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row align-items-center">  
-          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/logo.svg" alt="logo"></a></div>
-          <div class="col">               
+      <div class="menus-and-logo container">
+        <div class="row align-items-end">  
+          <div class="col-auto"><a class="logo" href="index.html">                  <img id="logo" src="img/SVG/logo.svg" alt="logo"></a></div>
+          <div class="col">
             <ul class="mainav"> 
-              <li><a href="solution.html">解决方案</a></li>
-              <li><a href="about.html">产品</a></li>
-              <li><a href="services.html">帮助和学习中心</a></li>
-              <li> <a href="works.html">活动</a></li>
-              <li><a href="news.html">关于云拿</a></li>
-              <li><a href="support.html">博客</a></li>
+              <li class="current"><a href="index.html">产品与服务     </a></li>
+              <li><a href="cases.html">合作案例        </a></li>
+              <li class="parent"><a href="news.html">媒体中心        </a></li>
+              <li> <a href="about.html">关于我们    </a></li>
             </ul>
           </div>
+          <div class="col-auto"><a class="search" href="#">        <i class="iconfont icon-search"> </i></a></div>
           <div class="col-auto mobilemenu">
             <div class="menu-toggle">
               <div class="one"></div>
@@ -57,205 +45,207 @@
       </div>
       <div class="menu-over" id="overmenu">
         <ul class="mobilenav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="application.html">Application</a></li>
-          <li><a href="about.html">Company</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="solution.html">解决方案</a></li>
+          <li><a href="products.html">产品</a></li>
+          <li><a href="help.html">帮助和学习中心                </a></li>
+          <li> <a href="actives.html">活动            </a></li>
+          <li><a href="about.html">关于云拿</a>
+            <ul class="sub-menu">                       
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">博客</a></li>
         </ul>
       </div>
     </header>
-    <div class="banner banner-about wow fadeInUp"><img src="img/banners/contact.jpg" alt="Contact Us"></div>
-    <div class="page page-contact container">
-      <section class="s1 pt-media-6 pb-media-6">
-        <div class="row"> 
-          <div class="col-lg-6">
-            <div class="add-list"> 
-              <div class="item"> 
-                <h3 class="title text32">Hongkong Office</h3>
-                <dl class="contact"> 
-                  <dt class="phone">Phone: </dt>
-                  <dd>00852-6387-2336    Mr.Stanley</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="email">Email:</dt>
-                  <dd>eallinfo@gmail.com</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="address">Address:</dt>
-                  <dd>300 Nathan Road, 9p New Lucky House, Kowloon, Hong Kong</dd>
-                </dl>
+    <div class="banner banner-solution wow fadeInUp"><img class="bg" src="img/banners/contact.jpg" alt="">
+      <div class="txt-container">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-lg">
+              <div class="txt">
+                <h1 class="wow fadeInUp text70">客户支援</h1>
+                <p class="wow fadeInUp">咨询不便事项，联系我们，我们将尽快为您解答，<br>我们将会成为时刻倾听客户心声的企业，<br>将通过持续的优化与发展，<br>不断创新和进取，不断提升公司的品牌价值和核心竞争力。</p>
               </div>
-              <div class="item"> 
-                <h3 class="title text32">Shenzhen Office (Headquarters)</h3>
-                <dl class="contact"> 
-                  <dt class="phone">Phone: </dt>
-                  <dd>86-755-8528 1158    86-755-8175 0066</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="email">Email:</dt>
-                  <dd>eallsales@gmail.com    eallinfo@gmail.com</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="address">Address:</dt>
-                  <dd>No. 29, Gaoxin Nanhuan Road, High-tech Zone Community, Yuehai Street, Nanshan District, Shenzhen, Phase I, Overseas Student Venture Building, 2002</dd>
-                </dl>
-              </div>
-              <div class="item"> 
-                <h3 class="title text32">USA Office (Los Angeles)</h3>
-                <dl class="contact"> 
-                  <dt class="phone">Phone: </dt>
-                  <dd>+1 323 712 7188    Mr.Sergio</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="email">Email:</dt>
-                  <dd>sergio@ealltech.com</dd>
-                </dl>
-                <dl class="contact"> 
-                  <dt class="address">Address:</dt>
-                  <dd>1012 W. Beverly Blvd. #862 Montebello, CA 90640 U.S.A.</dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6"> 
-            <div class="map-gaode" id="map-gaode"> </div>
-          </div>
-        </div>
-      </section>
-      <section class="s2 pt-media-6 pb-media-6">
-        <div class="row"> 
-          <div class="col-md-6 col-lg-3">
-            <div class="item"> 
-              <h3 class="text32">Beijing Office</h3>
-              <dl class="contact"> 
-                <dt class="phone">Phone: </dt>
-                <dd>86-010-63798823    Mr. Du</dd>
-              </dl>
-              <dl class="contact"> 
-                <dt class="email">Email:</dt>
-                <dd>bj@eall.com.cn</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="item"> 
-              <h3 class="text32">Shanghai Office</h3>
-              <dl class="contact"> 
-                <dt class="phone">Phone: </dt>
-                <dd>(0)15000030325    Mr. Tian</dd>
-              </dl>
-              <dl class="contact"> 
-                <dt class="email">Email:</dt>
-                <dd>william@eall.com.cn</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="item"> 
-              <h3 class="text32">Wuhan Office</h3>
-              <dl class="contact"> 
-                <dt class="phone">Phone: </dt>
-                <dd>(0)13886177058    Mr. Liang</dd>
-              </dl>
-              <dl class="contact"> 
-                <dt class="email">Email:</dt>
-                <dd>wh@eall.com.cn</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="item"> 
-              <h3 class="text32">Wuhan Office</h3>
-              <dl class="contact"> 
-                <dt class="phone">Phone: </dt>
-                <dd>(0)13926430883    Mr. Du</dd>
-              </dl>
-              <dl class="contact"> 
-                <dt class="email">Email:</dt>
-                <dd>duyusheng@eall.com.cn</dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer class="site-footer" id="pageFooter">   
-      <div class="container pt-media-5">
-        <div class="row justify-content-between">
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">常用链接</dt>
-              <dd> <a href="#">什么是无感支付</a></dd>
-              <dd> <a href="#">什么是电商式运营</a></dd>
-              <dd> <a href="#">采用云拿方案将获得哪些能力</a></dd>
-              <dd> <a href="#">云拿产品矩阵</a></dd>
-              <dd> <a href="#">经典行业案例</a></dd>
-            </dl>
-          </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">帮助和资源</dt>
-              <dd> <a href="#">云拿知乎</a></dd>
-              <dd> <a href="#">学习和支持</a></dd>
-              <dd> <a href="#">查看本地服务团队</a></dd>
-              <dd> <a href="#">集成商合作伙伴系统登录</a></dd>
-              <dd> <a href="#">开放职位信息</a></dd>
-              <dd> <a href="#">加入云拿邮件通知列表</a></dd>
-            </dl>
-          </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">活动</dt>
-              <dd> <a href="#">行业活动</a></dd>
-              <dd> <a href="#">线下培训</a></dd>
-              <dd> <a href="#">系统研讨会</a></dd>
-              <dd> <a href="#">使用者社群</a></dd>
-              <dd> <a href="#">云拿Empower发布会</a></dd>
-            </dl>
-          </div>
-          <div class="col-lg-auto">
-            <dl class="sub-nav"> 
-              <dt class="text22">关于云拿</dt>
-              <dd> <a href="#">我们的故事</a></dd>
-              <dd> <a href="#">新闻中心</a></dd>
-              <dd> <a href="#">工作在云拿</a></dd>
-              <dd> <a href="#">法务</a></dd>
-              <dd> <a href="#">隐私策略</a></dd>
-              <dd> <a href="#">网站Cookie声明</a></dd>
-              <dd> <a href="#">联系我们</a></dd>
-            </dl>
-          </div>
-        </div>
-        <div class="bot">           
-          <div class="row align-items-center">
-            <div class="col-lg"> 
-              <div class="copyright">Copyright &copy; 2003-2021 CloudPik. All Rights Reserved.<a href="http://beian.miit.gov.cn/"> 粤ICP备05096447号    </a></div>
-            </div>
-            <div class="col-lg-auto"> 
-              <label class="title">关注我们</label>
-            </div>
-            <div class="col-lg-auto"> 
-              <div class="social">                       <a href="#"> <i class="iconfont icon-facebook"></i></a><a href="#"> <i class="iconfont icon-twitter"></i></a><a href="#"> <i class="iconfont icon-in"></i></a><a href="#"> <i class="iconfont icon-ins"></i></a><a href="#"> <i class="iconfont icon-youtube"></i></a></div>
             </div>
           </div>
         </div>
       </div>
-    </footer><a class="toTop" id="toTop" href="javascript:void(0);"><i class="iconfont icon-top"></i></a>
-    <script src="js/vendor/modernizr-3.8.0.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
-    <script src="js/app.js?v=9b52401e5feb88db2c42b3ff83ae108a"></script>
+    </div>
+    <div class="container">
+      <div class="sub_nav wow fadeInDown">
+        <ul class="menus">             
+          <li><a href="service.html">服务文化</a></li>
+          <li><a href="network.html">销售网络</a></li>
+          <li class="active"> <a href="contact.html">联系我们</a></li>
+          <li><a href="FAQ.html">常见问题与解答</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page page-contact pt-media-9">
+      <section class="s1 mb-media-5">
+        <aside class="contact pt-media-6 pb-media-6">
+          <div class="txt-container">
+            <div class="title-section"> 
+              <h2 class="text48">广东胜宇电缆实业有限公司</h2>
+            </div>
+            <p class="des mb-media-2">感谢您访问胜宇电缆。<br/>胜宇电缆将始终成为倾听顾客声音的企业。<br/>如有不便事项或咨询事宜，请在此填写。<br/>我们将尽快予以处理。</p>
+            <h3 class="phone text24">售后服务热线：400-0099-020 </h3>
+          </div>
+        </aside>
+        <div class="form_main pt-media-5 pb-media-5">
+          <h3 class="title text24">请填写您的要求</h3>
+          <form class="form-message" action="#"> 
+            <div class="row"> 
+              <div class="col-xl-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="姓名" required="required">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="电话" required="required">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="公司" required="required">
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="邮箱" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">                      
+              <textarea class="form-control" name="message" rows="4" placeholder="请填写您的合作需求" required="required"></textarea>
+            </div>
+            <button class="btn-send text24" type="submit"> <i class="iconfont icon-go"></i>提交</button>
+          </form>
+        </div>
+      </section>
+      <section class="s2 container-1 pt-media-5 pb-media-5">
+        <div class="contacts-common"> 
+          <div class="row gx-5"> 
+            <div class="col-md-6">
+              <div class="item first"> 
+                <h3 class="text24 mb-media-3">国内市场</h3>
+                <dl> 
+                  <dt>电话：</dt>
+                  <dd>+86-13802758211(微信/方经理) <br/>+86-020-28982598</dd>
+                </dl>
+                <dl> 
+                  <dt>传真：</dt>
+                  <dd>+86-020-3216 0096</dd>
+                </dl>
+                <dl> 
+                  <dt>邮箱：</dt>
+                  <dd>info@SunwinCable.com</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item"> 
+                <h3 class="text24 mb-media-3">Global market 国际贸易部</h3>
+                <dl> 
+                  <dt>Tel+:  </dt>
+                  <dd>+86-013650891576(WhatsApp/Miss wu) <br/>+86-020-89613381</dd>
+                </dl>
+                <dl> 
+                  <dt>Fax:</dt>
+                  <dd>+86-020-3216 0096</dd>
+                </dl>
+                <dl> 
+                  <dt>E-mail:</dt>
+                  <dd>chloe@gdsycable.com</dd>
+                </dl>
+                <dl> 
+                  <dt>Skype:</dt>
+                  <dd>shengyucable</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s3 pt-media-5 pb-media-9">
+        <div class="address"> 
+          <h3 class="text24">地址：广州市经济开发区东区东枝路23号</h3>
+        </div>
+        <div class="map-gaode" id="map-gaode">           </div>
+      </section>
+    </div>
+    <footer class="site-footer" id="pageFooter"> 
+      <div class="container">
+        <div class="logo"> <img src="img/SVG/logo_bot.svg" alt="logo"></div>
+        <div class="contacts">
+          <div class="row justify-content-between"> 
+            <div class="col-auto">
+              <div class="row"> 
+                <div class="col-auto"> <img class="icon" src="img/SVG/icon-phone.svg" alt="phone"></div>
+                <div class="col"> 
+                  <dl class="txt">
+                    <dt>服务热线</dt>
+                    <dd>123456789012</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row"> 
+                <div class="col-auto"> <img class="icon" src="img/SVG/icon-comment.svg" alt="phone"></div>
+                <div class="col"> 
+                  <dl class="txt">
+                    <dt>企业邮箱</dt>
+                    <dd>HR—PUSH_hr_push@163.com</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row"> 
+                <div class="col-auto"> <img class="icon" src="img/SVG/icon-wechat.svg" alt="企业微信"></div>
+                <div class="col"> 
+                  <dl class="txt">
+                    <dt>企业微信</dt>
+                    <dd>dhcdchdddsjfvdkvjd</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="row"> 
+                <div class="col-auto"> <img class="icon" src="img/SVG/icon-marker.svg" alt="企业地址"></div>
+                <div class="col"> 
+                  <dl class="txt">
+                    <dt>企业地址</dt>
+                    <dd>深圳市南山区前海路泛海城市广场写字楼二栋801</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bot">
+          <div class="copyright">Copyright © 2020 PUSH 版权所有 <a href="http://beian.miit.gov.cn/"> 粤ICP备18119466号  </a></div>
+        </div>
+      </div>
+    </footer><a class="toTop" id="toTop" href="#"><i class="iconfont icon-top"></i></a>
+    <script src="js/vendor/modernizr-3.8.0.min.js?v=d9aca66463e0a226b9dd9ea9c1ba7b2c"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js?v=d9aca66463e0a226b9dd9ea9c1ba7b2c"></script>
+    <script src="js/app.js?v=d9aca66463e0a226b9dd9ea9c1ba7b2c"></script>
     <script src="https://webapi.amap.com/maps?v=2.0&amp;key=1cacf315d4678f9f550379b274a06d7a" type="text/javascript"></script>
     <script>
       var map = new AMap.Map('map-gaode', {
-          zoom:12,//级别
-          center: [86.08683,44.415465],//中心点坐标
+          zoom:16,//级别
+          center: [113.486017,23.13986],//中心点坐标
           viewMode:'3D'//使用3D视图
       });
       
       var marker = new AMap.Marker({
-          position: new AMap.LngLat(86.08683,44.415465),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
-          title: 'ealltech'
+          position: new AMap.LngLat(113.486017,23.13986),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+          title: '胜宇'
       });
       
       // 将创建的点标记添加到已有的地图实例：

@@ -1,0 +1,176 @@
+extends includes/layout.pug
+
+block title
+    | 数字化无人便利店方案
+
+block bkheader
+    
+
+block content
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/about.jpg", alt="")       
+
+        .txt-container
+            .container
+                .row 
+                    .col-lg
+                        .txt
+                            h1.wow.fadeInUp.text70 企业简介
+                            p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
+                    
+    .container 
+        .sub_nav.wow.fadeInDown
+            ul.menus              
+                li
+                    a(href="about.html") 企业简介
+                li.active  
+                    a(href="70years.html") 胜宇70年
+                li 
+                    a(href="team.html") 团队管理
+                li 
+                    a(href="hero.html") 资质荣誉
+                li 
+                    a(href="csr.html") 社会责任
+                li 
+                    a(href="brand.html") 胜宇品牌
+
+    .page.page-years
+        section.s1.pb-media-5
+            .container-1 
+                .title-section 
+                    h2.text48 品质70年
+
+                p.des.mb-media-3 胜宇采用进口优质原料，拥有一流生产设备、标准化生产线管理、职业化管理团队等顶尖硬件实力，使得胜宇始终深受广大顾客的喜爱和认可。
+                .quality 
+                    .row.gx-3
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_5.jpg", alt="")
+                                    .icon 
+                                        img(src="img/icons/yuanliao.png", alt="优质原料")
+                                .txt 
+                                    h3.text24 优质原料
+                                    p 进口铜芯、百米保证<br>自主研发、阻燃绝缘
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_6.jpg", alt="")
+                                    .icon 
+                                        img(src="img/icons/config.png", alt="精工细作")
+                                .txt 
+                                    h3.text24 精工细作
+                                    p 德国检验仪器<br>32道检测工序<br>专业检验工程师
+
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_7.jpg", alt="")
+                                    .icon 
+                                        img(src="img/icons/check2.png", alt="专业检测")
+                                .txt 
+                                    h3.text24 专业检测
+                                    p ISO9001质量管理体系<br>标准化生产管理<br>精细化品质管理
+
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_8.jpg", alt="")
+                                    .icon 
+                                        img(src="img/icons/jiangbie.png", alt="卓越成效")
+                                .txt 
+                                    h3.text24 卓越成效
+                                    p 安全、节能<br>环保、稳定
+
+
+
+        section.s2.pt-media-4.pb-media-3
+            .container-1
+                .title-section 
+                    h2.text48 责任70年
+                p.des.mb-media-3 事业做大了，就有更多的责任需要承担，我们只有努力的做，用心的做，用真心的做。在未来的无数个70年里，始终如一。
+
+                .zheren.text24 
+                    .row.justify-content-between
+                        .col-auto 
+                            figure 
+                                img(src="img/icons/guanghuai.png", alt="关怀")
+                                figcaption 关怀
+                        .col-auto 
+                            figure 
+                                img(src="img/icons/yongxin.png", alt="用心")
+                                figcaption 用心
+
+                        .col-auto 
+                            figure 
+                                img(src="img/icons/jianchi.png", alt="坚持")
+                                figcaption 坚持
+
+                        .col-auto 
+                            figure 
+                                img(src="img/icons/caoyue.png", alt="超越")
+                                figcaption 超越
+
+                        .col-auto 
+                            figure 
+                                img(src="img/icons/chizi.png", alt="细节")
+                                figcaption 细节
+                
+                
+                
+
+        section.s1.pt-media-6.pb-media-5
+            .container-1 
+                .title-section 
+                    h2.text48 守护70年
+
+                p.des.mb-media-3 胜宇70年不仅意味着品质70年，正如一个房子使用寿命70年，胜宇更希望的是像家一样，守护你走过一路风雨。
+
+                .quality 
+                    .row.gx-2
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_9.jpg", alt="")
+                                   
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_10.jpg", alt="")
+                                   
+
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_11.jpg", alt="")
+                                   
+
+                        .col-md-6.col-lg-3
+                            .item 
+                                .pic 
+                                    img(src="img/about_12.jpg", alt="")
+                                 
+           
+
+block bkfooter
+
+
+    script.
+        
+        $(function () {
+            $('.power .item').click(function(e){
+                $(this).find('p').slideToggle();
+                $(this).toggleClass('open');
+                var img = $(this).find('img');
+                if($(this).hasClass('open')){
+                    img.attr('src','img/icons/minus.svg')
+                }else{
+                    img.attr('src','img/icons/plus.svg')
+                }
+            });
+        
+        });
+      
+       
+
+     

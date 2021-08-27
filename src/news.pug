@@ -2,148 +2,208 @@ extends includes/layout.pug
 
 block title
     | 媒体中心
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
 block content
     .banner.banner-news.wow.fadeInUp
-        img(src="img/banners/news.jpg", alt="News")      
+        img(src="img/1x/banner-news-80.jpg", alt="News")      
 
     .page.page-news.container.pt-media-6.pb-media-6
-        .row 
-            .col-md-8.col-lg-9
-                .news-list
-                    .item
-                        .row 
-                            .col-md-4
-                                .pic 
-                                    a(href="news_detail.html") 
-                                        img(src="img/temp/n1.jpg", alt="")
-                            .col-md-8
-                                .txt
-                                    .row 
-                                        .col-9 
-                                            h3
-                                                a(href="news_detail.html") Eall is a Shenzhen web design company offering cost effective
-                                        .col-3 
-                                            .date.wow.fadeInUp 2021/05/12
-                                    p.des.wow.fadeInUp Eall is a Shenzhen web design company offering cost effective, comprehensive design solutions for foreign and domestic companies in Shenzhen and Hong Kong, China who wish to expand their customer base by extending their reach ...
-                                    a.more.wow.fadeInUp(href="news_detail.html") SEE MORE 
+        section.s1.mb-media-7 
+            .row.align-items-end 
+                .col-lg-3
+                    .header-news
+                        h2 社会报道
+                        .links
+                            .row.justify-content-between.align-items-center                                
+                                .col-auto
+                                    a.more(href="list.html") 查看全部
+                                        i.iconfont.icon-right
+                                .col-auto
+                                    .swiper-prev
+                                        i.iconfont.icon-prev
+                                    .swiper-next
+                                        i.iconfont.icon-next
+                                        
+                .col-lg-9
+                    .swiper.mySwiper 
+                        .swiper-wrapper
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item 
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic  
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+
+
+        section.s1.s2 
+            .row.align-items-end 
+                .col-lg-3.order-lg-last
+                    .header-news
+                        h2 社会报道
+                        .links
+                            .row.justify-content-between.align-items-center 
+                                
+                                .col-auto.order-lg-last
+                                    a.more(href="list.html") 查看全部
                                         i.iconfont.icon-right
 
-                    .item
-                        .row 
-                            .col-md-4
-                                .pic 
-                                    a(href="news_detail.html") 
-                                        img(src="img/temp/n2.jpg", alt="")
-                            .col-md-8
-                                .txt
-                                    .row 
-                                        .col-9 
-                                            h3
-                                                a(href="news_detail.html") Eall is a Shenzhen web design company offering cost effective
-                                        .col-3 
-                                            .date.wow.fadeInUp 2021/05/12
-                                    p.des.wow.fadeInUp Eall is a Shenzhen web design company offering cost effective, comprehensive design solutions for foreign and domestic companies in Shenzhen and Hong Kong, China who wish to expand their customer base by extending their reach ...
-                                    a.more.wow.fadeInUp(href="news_detail.html") SEE MORE 
-                                        i.iconfont.icon-right
+                                .col-auto
+                                    .swiper-prev2
+                                        i.iconfont.icon-prev
+                                    .swiper-next2
+                                        i.iconfont.icon-next
+                                        
+                .col-lg-9
+                    .swiper.mySwiper2 
+                        .swiper-wrapper
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
 
-                    .item
-                        .row 
-                            .col-md-4
-                                .pic 
-                                    a(href="news_detail.html") 
-                                        img(src="img/temp/n3.jpg", alt="")
-                            .col-md-8
-                                .txt
-                                    .row 
-                                        .col-9 
-                                            h3
-                                                a(href="news_detail.html") Eall is a Shenzhen web design company offering cost effective
-                                        .col-3 
-                                            .date.wow.fadeInUp 2021/05/12
-                                    p.des.wow.fadeInUp Eall is a Shenzhen web design company offering cost effective, comprehensive design solutions for foreign and domestic companies in Shenzhen and Hong Kong, China who wish to expand their customer base by extending their reach ...
-                                    a.more.wow.fadeInUp(href="news_detail.html") SEE MORE 
-                                        i.iconfont.icon-right
-
-                    .item
-                        .row 
-                            .col-md-4
-                                .pic 
-                                    a(href="news_detail.html") 
-                                        img(src="img/temp/n4.jpg", alt="")
-                            .col-md-8
-                                .txt
-                                    .row 
-                                        .col-9 
-                                            h3
-                                                a(href="news_detail.html") Eall is a Shenzhen web design company offering cost effective
-                                        .col-3 
-                                            .date.wow.fadeInUp 2021/05/12
-                                    p.des.wow.fadeInUp Eall is a Shenzhen web design company offering cost effective, comprehensive design solutions for foreign and domestic companies in Shenzhen and Hong Kong, China who wish to expand their customer base by extending their reach ...
-                                    a.more.wow.fadeInUp(href="news_detail.html") SEE MORE 
-                                        i.iconfont.icon-right
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                            .swiper-slide
+                                .item
+                                    .pic 
+                                        img(src="img/1x/thumb-80.jpg", alt="")
+                                    .date 2021年01月01日
+                                    h3.title 
+                                        a(href="news_detail.html") 是非成败转头空，青山依旧在，惯看秋月春......
+                                    p.des 是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长......
+                                    a.more(href="news_detail.html") 
+                                        i.iconfont.icon-go
+                        
                                                 
                                     
                     
                                                 
-                            
-                footer.quality-footer.wow.fadeInUp
-                    ul.pagination.text-center
-                        li.page-item
-                            a.page-link.prev(href='#', tabindex='-1', aria-disabled='true') 
-                                i.iconfont.icon-prev
-                                
-                        li.page-item
-                            a.page-link(href='#') 1
-                        li.page-item.active(aria-current='page')
-                            a.page-link(href='#')
-                                | 2                          
-                        li.page-item
-                            a.page-link(href='#') 3
-                        li.page-item
-                            a.page-link.next(href='#') 
-                                i.iconfont.icon-next
+               
 
 
-            .col-md-4.col-lg-3
-                aside.right-col
-                    h3.title.text22.wow.fadeInUp Latest News
-                    ul.list 
-                        li.wow.fadeInUp 
-                            .pic 
-                                a(href="news_detail.html") 
-                                    img(src="img/temp/n7.jpg", alt="")
-                            h3 
-                                a(href="news_detail.html")  Eall is a Shenzhen web design...
-
-                        li.wow.fadeInUp 
-                            .pic 
-                                a(href="news_detail.html") 
-                                    img(src="img/temp/n5.jpg", alt="")
-                            h3 
-                                a(href="news_detail.html")  Eall is a Shenzhen web design...
-
-                        li.wow.fadeInUp 
-                            .pic 
-                                a(href="news_detail.html") 
-                                    img(src="img/temp/n6.jpg", alt="")
-                            h3 
-                                a(href="news_detail.html")  Eall is a Shenzhen web design...
-
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
-                        li.txt 
-                            a(href="news_detail.html")  Eall is a Shenzhen web design...
+            
         
 block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
     script.
-        $(function(){
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+           
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            navigation: {              
+                    nextEl: '.swiper-next2',
+                    prevEl: '.swiper-prev2',
+                },
+           
+        });
+
         
-        })

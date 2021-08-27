@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 2660807 */
-  src: url('iconfont.woff2?t=1625738025707') format('woff2'),
-       url('iconfont.woff?t=1625738025707') format('woff'),
-       url('iconfont.ttf?t=1625738025707') format('truetype');
+  font-family: "iconfont"; /* Project id 2768799 */
+  src: url('iconfont.woff2?t=1630002575870') format('woff2'),
+       url('iconfont.woff?t=1630002575870') format('woff'),
+       url('iconfont.ttf?t=1630002575870') format('truetype');
 }
 
 .iconfont {
@@ -13,43 +13,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ins:before {
-  content: "\e600";
+.icon-downarrow:before {
+  content: "\e60a";
 }
 
-.icon-twitter:before {
-  content: "\e822";
+.icon-go:before {
+  content: "\e619";
 }
 
-.icon-facebook:before {
-  content: "\e601";
-}
-
-.icon-in:before {
-  content: "\e64d";
-}
-
-.icon-youtube:before {
-  content: "\e8db";
-}
-
-.icon-search:before {
-  content: "\e63e";
+.icon-right:before {
+  content: "\e65e";
 }
 
 .icon-prev:before {
-  content: "\e6df";
-}
-
-.icon-earth:before {
-  content: "\e6de";
-}
-
-.icon-top:before {
-  content: "\e648";
+  content: "\e629";
 }
 
 .icon-next:before {
-  content: "\e609";
+  content: "\e65f";
+}
+
+.icon-top:before {
+  content: "\e653";
+}
+
+.icon-search:before {
+  content: "\e600";
 }
 

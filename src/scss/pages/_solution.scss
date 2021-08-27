@@ -1,22 +1,30 @@
 .page-solution{
     .solutions{
-
         .item {
     
             background: #fff;
             border: 1px solid #626466;
+            margin-bottom: rem(20);
+            @include mq(lg){
+                margin-bottom: 0;
+            }
             .pic{
                 margin-bottom: 1rem;
             }
     
             .txt {
             
-                padding: 2rem;
+                padding: 1rem;
                 height: 100%;
                 position: relative;
-             
+                @include mq(lg){
+                    padding: 2rem;
+                }
                 h3 {
                     margin-bottom: 1rem;
+                }
+                p{
+                    height: 100px;
                 }
                 a{
                     color:$color-primary;
@@ -36,7 +44,16 @@
             border: none;
         }
         .item{
-            margin-bottom: 4rem;
+            margin-bottom: 1.5rem;
+            @include mq(lg){
+                margin-bottom: 2rem;
+            }
+            @include mq(xl){
+                margin-bottom: 3rem;
+            }
+            @include mq(xxl){
+                margin-bottom: 4rem;
+            }
             h3.t1{
                 @include mq(xxl){
                     margin-bottom: 1.5rem;
@@ -85,6 +102,23 @@
 
 
 .banner-solution-shop{
+  
+    .bg{
+        height: 360px;
+        @include mq(md){
+            height: 400px;
+        }
+        @include mq(lg){
+            height: 460px;
+        }
+        @include mq(xl){
+            height: 560px;
+        }
+        @include mq(xxl){
+            height: 660px;
+        }
+    }
+
     .txt-container{
         text-align: left;
         color:$regent-grey;
@@ -92,16 +126,18 @@
         .txt{
             background-color: #fff;
             padding: 1rem;
-            border-top:8px $color-primary solid;
+            border-top: 3px $color-primary solid;
 
             @include mq(lg){
                 width: 58%;
+                border-top: 5px $color-primary solid;
             }
             @include mq(xl){
                 padding: 2rem 2rem 3rem;
             }
             @include mq(xxl){
                 padding: 2rem 3rem 5rem;
+                border-top: 8px $color-primary solid;
             }
             h1{
                 color:$color-secondary;
@@ -116,31 +152,15 @@
 }
 
 .page-solution-shop{
-    .s1{
-        background-color: $color-primary;
-        padding-top: rem(20);
-        padding-bottom: rem(20);
-        @include mq(xxl){
-            padding-top: rem(30);
-            padding-bottom: rem(30);
-        }
-        .des{
+
+    .s1{      
+        .des{           
            
-            color:#fff;
             @include mq(lg){
-                padding-right:10%;
+                max-width: 85%;
             }
         }
-        .more{
-            display: block;
-            border-radius: 3px;
-            background: #fff;
-            padding: .3rem 2rem;
-            color:$color-primary;
-            &:hover{
-                background-color: $color-secondary;
-            }
-        }
+   
     }
     .s2{
         .title-section{
@@ -149,6 +169,10 @@
             }
         }
         .pic{
+            margin-bottom: 2rem;
+            @include mq(lg){
+                margin-bottom: 0;
+            }
             img{
                 width: 100%;
             }
@@ -164,23 +188,51 @@
         background-color: $color-background;
         .power {
             .item{
+                cursor: pointer;
                 background-color: #fff;
-                .icon{
-                    background-color: $color-secondary;                    
-                    padding: 2rem 1.5rem;
+                margin-bottom: 1rem;
+                @include mq(xl){
+                    margin-bottom: 2rem;
                 }
-                .title{
-                    padding: 0 2rem;
+                .col-auto {
+                    background-color: $color-secondary;           
                 }
+                .icon{                             
+                    padding:1.2rem 1rem;
+                    height: 100%;
+                    @include mq(lg){
+                        padding: 1.9rem 1.5rem;
+                    }
+                    img{
+                        width: 16px;
+                        @include mq(lg){
+                            width: auto;
+                        }
+                    }
+                }
+                .txt  {
+                    padding: 1rem 1.5rem;     
+                    @include mq(lg){
+                        padding: 1.4rem 2rem;     
+                    }             
+                   p{
+                    margin: 0;
+                    display: none;
+                   } 
+                }
+                
             }
         }
     }
     .s4{
         .clients{
             .item {
-    
+                margin-bottom: 1rem;
                 background: $color-background;
                 border: 1px solid #626466;
+                @include mq(lg){
+                    margin-bottom: 0;
+                }
                 .pic{    
                     background: #fff;             
                     padding: 2rem;
@@ -197,16 +249,21 @@
         
                 .txt {
                 
-                    padding: 2rem;
+                    padding: 1rem 1rem 2rem;
                     height: 100%;
                     position: relative;
+                    @include mq(md){
+                        padding: 2rem;
+                    }    
                     @include mq(lg){
-                        padding: 1rem;
+                        padding: 1rem 1rem 2rem;
                     }    
                     @include mq(xl){
                         padding: 1.75rem;
                     }    
-                  
+                  p{
+                      min-height: 75px;
+                  }
                     a{
                         color:$color-primary;
                         &:hover{
@@ -230,37 +287,15 @@
             }
         }
     }
-}
 
-.s5{
-    background: $color-background;
-
-    
-}
-.s6{
-
-    .item{
-        position: relative;
-        margin-bottom: rem(30);
-        img{
-            width: 100%;
-        }
-        .txt{
-            position: absolute;
-            left: 0;
-            top: 50%;
-            text-align: center;
-            width: 100%;
-            transform: translateY(-50%);
-            z-index: 100;
-            color:#fff;
-            h3{
-                color:#fff;
-                margin-bottom: 1.5rem;
-            }
-        }
+    .s5{
+        background: $color-background;    
     }
+
+
 }
+
+
 
 .page-solution-2{
     background-color: $color-background;
@@ -268,8 +303,16 @@
         border-bottom: 1px $regent-grey solid;
         .pic{
             text-align: center;
+            margin-bottom: 2rem;            
             @include mq(lg){
                 text-align: left;
+                margin-bottom: 0;
+            }
+            img{
+                max-width: 70%;
+                @include mq(lg){
+                    max-width: 100%;
+                }
             }
         }
         .order-lg-last{
@@ -310,16 +353,7 @@
 }
 
 .page-solution-3{
-    .list{
-        @include reset-list();
-        li{
-            margin-bottom: .8rem;
-            img{
-                vertical-align: middle;
-                margin-right: .5rem;
-            }
-        }
-    }
+
 
     .c1{
         background-color: $color-background;
@@ -330,8 +364,16 @@
         border-bottom: 1px $regent-grey solid;
         .pic{
             text-align: center;
+            margin-bottom: 2rem;            
             @include mq(lg){
                 text-align: left;
+                margin-bottom: 0;
+            }
+            img{
+                max-width: 70%;
+                @include mq(lg){
+                    max-width: 100%;
+                }
             }
         }
         .order-lg-last{
@@ -343,14 +385,258 @@
         }
        
         ul{
-            padding-left: 1.2rem;
+            @include reset-list();
             li{
                 margin-bottom: .6rem;
                 line-height: 2.2;
+                position: relative;
+                padding-left: 1.5rem;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                    width: 7px;
+                    height: 7px;
+                    background: #646d76;
+                    border-radius: 50%;
+
+                }
             }
         }
         &:last-child{
             border-bottom: none;
         }
     }
+}
+
+.page-solution-store{
+    .s1{
+        .title-section{
+            margin-bottom: 2rem;
+            @include mq(md){
+                margin-bottom: 3rem;
+            }
+            @include mq(xl){
+                margin-bottom: 4rem;
+            }
+        }
+        
+    }
+    .s3{
+        background-color: #F3F7FA;
+        .pic{
+            margin-bottom: 1.5rem;
+            text-align: center;
+            @include mq(lg){
+                margin-bottom: 0;
+            }
+        }
+        .txt{
+           
+            @include mq(lg){
+                padding-left: 2rem;
+            }
+            @include mq(xxl){
+                padding-left: 3rem;
+            }
+              @include mq(xxl){
+                padding-left: 4rem;
+            }
+
+            h2{
+                margin-bottom: 1rem;
+                @include mq(xl){
+                    margin-bottom: 2rem;
+                }
+            }
+
+        }
+        .list{
+            @include reset-list();
+            li{
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 11px;
+                    left: -1.3rem;
+                    width: 7px;
+                    height: 7px;
+                    background: #646d76;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
+    .s4{
+       
+        .c1{
+            max-width: 980px;
+            background-color: #fff;
+            margin: 0 auto;
+            border-top:8px $color-primary solid;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            @include mq(xl){
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            @include mq(xxl){
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+            .pic{
+                text-align: center;
+                margin-bottom: 1rem;
+                @include mq(lg){
+                    margin-bottom: 0;
+                } 
+                img{
+                    max-width: 70%;
+                    @include mq(lg){
+                        max-width: 100%;
+                    } 
+                }
+            }
+            .txt{
+                text-align: left;
+                color:$regent-grey;
+                padding: 1rem;
+                @include mq(lg){
+                    padding: 0;
+                    padding-right: 2rem;
+                }
+               
+                @include mq(xl){
+                    padding-right: 3rem;
+                }
+                @include mq(xxl){
+                    padding-right: 4rem;
+                }
+                h2{
+                    color:$color-secondary;
+                    max-width: 330px;
+                    margin-bottom: 1.5rem;
+                }
+                p{
+                    @include mq(xxl){
+                        font-size: rem(18);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.page-solution-gas{
+    
+    .blue-bg{
+        background-color: #F3F7FA;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+    .s1{
+        border-bottom: 1px #000 solid;
+        .pic{
+            
+            text-align: center;
+            margin-bottom: 2rem;            
+            @include mq(lg){
+                text-align: left;
+                margin-bottom: 0;
+            }
+            img{
+                width: 100%;
+                display: block;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+    .s2{
+        border-bottom: none;
+    }
+    .s3{
+        .title-section{
+            margin-bottom: 1rem;
+            @include mq(md){
+                margin-bottom: 1.5rem;
+            }
+            @include mq(xl){
+                margin-bottom: 3rem;
+            }
+            @include mq(xxl){
+                margin-bottom: 4rem;
+            }
+        }
+     
+    }
+}
+
+.page-solution-makeups{
+    
+    .s2{
+        border-bottom: 1px solid $regent-grey;
+        .pic{
+            opacity: 0.94;
+            box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.16);
+
+        }
+    }
+
+    .c1{
+        background-color: #F3F7FA;
+    }
+    .s3{
+        border-bottom: none;
+
+    }   
+    
+}
+
+.page-solution-fmcg{
+    .s1{
+        .top-bar {                   
+            .des{
+                max-width: 560px;
+                color:#fff;           
+            }           
+        }
+    }
+    .s3{
+        background-color: #F3F7FA;
+        .liangdian{
+            .item{
+                margin-bottom: 2rem;
+                @include mq(xl){
+                    margin-bottom: 3rem;
+                }
+                .icon{
+                    width: 50px;
+                }
+                .txt{
+                    h3{
+                        color:#45515D;
+                    }
+                    p{
+                        color:#47515B;
+                    }
+                }
+            }
+        }
+    }
+
+    .s4{
+        .pic{
+            text-align: center;
+        }
+        .txt{
+            p{
+                margin-bottom: 2rem;
+                color:#646D76;
+            }
+        }
+    }
+    
 }

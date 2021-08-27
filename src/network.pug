@@ -1,0 +1,122 @@
+extends includes/layout.pug
+
+block title
+    | 快消品牌数字化方案
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-solution.wow.fadeInUp
+        img.bg(src="img/banners/contact.jpg", alt="")       
+
+        .txt-container
+            .container
+                .row 
+                    .col-lg
+                        .txt
+                            h1.wow.fadeInUp.text70 客户支援
+                            p.wow.fadeInUp 咨询不便事项，联系我们，我们将尽快为您解答，<br>我们将会成为时刻倾听客户心声的企业，<br>将通过持续的优化与发展，<br>不断创新和进取，不断提升公司的品牌价值和核心竞争力。
+                            
+
+
+    .container
+        .sub_nav.wow.fadeInDown
+            ul.menus              
+                li
+                    a(href="service.html") 服务文化
+                li.active 
+                    a(href="network.html") 销售网络
+                li 
+                    a(href="contact.html") 联系我们
+                li
+                    a(href="FAQ.html") 常见问题与解答
+              
+              
+        
+    .page.page-network.pt-media-9
+        section.s1.mb-media-5
+            .container-1.text-center 
+                .title-section
+                    h2.text48 网络销售
+                p.des.mb-media-4 在世界的每一个角落都有我们胜宇的存在，<br/>我们的销售网络遍布世界各地。
+            
+            .pic 
+                img(src="img/net_1.jpg", alt="网络销售")
+
+        section.s2.pt-media-5.pb-media-5   
+            .container-1.text-center 
+                .title-section
+                    h2.text48 联系我们
+                p.des.mb-media-4 胜宇电缆将始终成为倾听顾客声音的企业，<br/>业务咨询，产品咨询，联系我们，欢迎您的来电。
+
+                .contacts-common 
+                    .row.gx-5 
+                        .col-md-6
+                            .item.first 
+                                h3.text24.mb-media-3 国内市场
+                                dl 
+                                    dt 电话：
+                                    dd +86-13802758211(微信/方经理) <br/>+86-020-28982598
+                                dl 
+                                    dt 传真：
+                                    dd +86-020-3216 0096
+                                dl 
+                                    dt 邮箱：
+                                    dd info@SunwinCable.com
+                        .col-md-6
+                            .item 
+                                h3.text24.mb-media-3 Global market 国际贸易部
+                                dl 
+                                    dt Tel+:  
+                                    dd +86-013650891576(WhatsApp/Miss wu) <br/>+86-020-89613381
+                                dl 
+                                    dt Fax:
+                                    dd +86-020-3216 0096
+                                dl 
+                                    dt E-mail:
+                                    dd chloe@gdsycable.com
+                                dl 
+                                    dt Skype:
+                                    dd shengyucable
+        
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            grabCursor: true,
+            centeredSlides: true,
+            loop:true,
+            // init: false,
+             navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+                },
+             
+            }
+        });
+
+
+     
+
+      
+       
+
+     

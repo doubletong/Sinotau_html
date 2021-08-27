@@ -1,0 +1,36 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    title 
+       block title 
+       | - CloudPik
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='manifest', href='site.webmanifest')
+    link(rel='apple-touch-icon', href='icon.png')
+    // Place favicon.ico in the root directory
+    meta(name='theme-color', content='#fafafa')
+    link(href='fonts/iconfont.css', rel='stylesheet')
+    link(href='css/animate.css', rel='stylesheet')
+    block bkheader
+    link(href='css/styles.min.css', rel='stylesheet')
+    
+    script(src='js/vendor/wow/dist/wow.min.js')
+    script.
+        new WOW().init();
+
+   
+  body
+    include headerForApply.pug   
+
+    block content
+        
+    include footer.pug
+    
+    
+    script(src='js/vendor/modernizr-3.8.0.min.js')
+    script(src='js/vendor/jquery-3.4.1.min.js')
+    script(src='js/app.js')
+
+    block bkfooter

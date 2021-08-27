@@ -1,0 +1,105 @@
+extends includes/layoutForApply.pug
+
+block title
+    | 申请试用
+block content
+    .banner.banner-apply(style="background-image:url(img/banners/apply.jpg)")
+        .container
+            .row 
+                .col-lg-7
+                    .title-section     
+                        h1.text60.wow.fadeInUp 申请试用定制版 Cloudpick SavviCloud系统
+                        p.text28.wow.fadeInUp 亲自感受数字化、智能化、自动化零售技术对业务带来的改变
+                .col-lg-5 
+                    .form-col 
+                        .icon 
+                            img(src="img/icon-email.svg", alt="email")
+                        .title-section.mb-media-2
+                            h2.text32 立即申请
+                        form.form-apply(action="", method="post") 
+                            .form-group.wow.fadeInUp 
+                                .form-label 姓名
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 电话
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 邮箱
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 国家/地区
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 所属行业
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 所在公司
+                                input.form-control(type="text")  
+                            .form-group.wow.fadeInUp 
+                                .form-label 公司规模
+                                input.form-control(type="text")  
+                            
+                            .form-group 
+                                .item.wow.fadeInUp  
+                                    input#check01.form-checkbox(type="checkbox", name="check01") 
+                                    label(for="check01") 我已阅读并同意云拿的<a href="#">隐私协议</a>和<a href="#">使用条款</a>
+                                .item.wow.fadeInUp 
+                                    input#check02.form-checkbox(type="checkbox", name="check02") 
+                                    label(for="check02") 我已知晓并同意云拿通过电子邮件发送相关资料
+
+                            button.btn.btn-primary.btn-block.btn-radius.wow.fadeInUp(type="submit") 发送消息
+                              
+
+
+    .page.page-apply
+        section.s1.container.pb-media-6
+            .row.g-5
+                .col-lg-6
+                    .item 
+                        .row.g-0 
+                            .col-auto 
+                                .pic
+                                    img.wow.fadeInUp(src="img/icons/desktop.svg", alt="")
+                            .col 
+                                p.text22.wow.fadeInUp 全方位自助式获悉门店运营平台全貌，浏览和操作各功能模块，熟悉工具使用方式
+
+                .col-lg-6
+                    .item 
+                        .row.g-0 
+                            .col-auto 
+                                .pic
+                                    img.wow.fadeInUp(src="img/icons/mobile.svg", alt="")
+                            .col 
+                                p.text22.wow.fadeInUp 导入云拿自营门店运营数据，保证试用系统足够真实，由此获得最直观的认识
+
+                .col-lg-6
+                    .item 
+                        .row.g-0 
+                            .col-auto 
+                                .pic
+                                    img.wow.fadeInUp(src="img/icons/article.svg", alt="")
+                            .col 
+                                p.text22.wow.fadeInUp 借助内置帮助文档系统，深入了解运营平台使用方式与技巧，获得线上线下高度融合的无缝管理体验
+
+                .col-lg-6
+                    .item 
+                        .row.g-0 
+                            .col-auto
+                                .pic 
+                                    img.wow.fadeInUp(src="img/icons/book.svg", alt="")
+                            .col 
+                                p.text22.wow.fadeInUp 阅读API手册，了解如何将Cloudpick SavviCloud系统与您的系统打通，我们还将联合您的IT团队快速进行定制化开发用于实现那些尚未被满足的功能及需求
+
+            
+        section.section-common.pt-media-9.pb-media-9(style="background-image:url(img/home-11.jpg);") 
+            .container
+                .txt
+                    h2.title.text36.wow.fadeInUp 对于使用系统存在疑问？请拨打以下电话
+                    a.more.wow.fadeInUp.text20(href="#") +86 400-060-9811
+                                       
+        
+block bkfooter
+    script.
+        $(function(){
+        
+        })

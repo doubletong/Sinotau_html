@@ -1,98 +1,128 @@
 .page-news {
-    .news-list {
-        margin-bottom: 2rem;
-        @include mq(xl){
-            padding-right: 3rem;
-        }
-        @include mq(xxl){
-            margin-bottom: 3rem;
-            padding-right: 5rem;
-        }
-        .item {
-            position: relative;
-            margin-bottom: 2rem;
-            @include mq(xxl){
-                margin-bottom: 3rem;
+    .s1{
+        .header-news{
+            
+            h2{
+                margin-bottom: 12rem;
+                color: $color-primary;
+                font-style: italic;
             }
-            .txt{
-                border-bottom: 1px #eee solid;
-                padding-bottom: 2rem;
-                @include mq(xxl){
-                    padding-bottom: 3rem;
+            .links{
+                line-height: 1;
+                padding-right: 1rem;
+                .swiper-prev,.swiper-next{
+                    display: inline-block;
+                    color: #ccc;
+                   
+                    .iconfont{
+                        font-size: rem(36);
+                    }
                 }
-                p.des{
-                    margin-bottom: 2rem;
-                    color: #999;
-                    text-align: justify;
-                 
+                .swiper-prev{
+                    margin-right: 1rem;
                 }
-            }
-           
-            h3 {
-                @include mq(xxl){
-                    margin-bottom: 1.5rem;
-                }
-                a {
-                    color: #333;
-                    &:hover {
+                a{
+                    color: #ccc;
+                    &:hover{
                         color: $color-primary;
                     }
                 }
             }
-            .date {
-                text-align: right;
-                color:#999;
+        }
+        .swiper{
+            .swiper-slide {
+                width: 28%;
             }
-         
-         
-        }
-    }
-    .right-col{
-        padding: 1rem 2rem;
-        background-color: #f8f8f8;
-        .title{
-            color:$color-primary;
-        }
-
-        .list {
-            @include reset-list();
-            li{
-                margin-bottom: 1.5rem;
+            .item{
+                border-left: 1px #DCDDDD solid;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+                position: relative;
                 .pic{
                     overflow: hidden;
-                    a{
+                    img{
+                        width: 100%;
                         display: block;
-                        margin-bottom: .4rem;
-                        img{
-                            display: block;
-                            transition: all .3s;
-                        }
-                        &:hover{
-                            img{
-                                transform: scale(1.1);
-                            }
+                        margin-bottom: 1rem;
+                        transition: all .3s;
+                    }
+                }
+                
+                .title{
+                    font-size: rem(18);
+                    margin-bottom: 1.5rem;
+                    @include mq(xxl){
+                        font-size: rem(20);
+                    }                   
+                }
+                .date,.des{
+                    color: #999;
+                    margin-bottom: .6rem;
+                }
+                .des{
+                    margin-bottom: 3rem;
+                }
+                .more{
+                    position: absolute;
+                    left: 2rem;
+                    bottom: 0;
+                    z-index: 100;
+                    color:#ccc;
+                    line-height: 1;
+                    .iconfont{
+                        font-size: rem(32);
+                    }
+                }
+
+                &:hover{
+                    .date{
+                        color: $color-primary;
+                    }
+                    .title{
+                        a{
+                            color: $color-primary;
                         }
                     }
-                   
-                }
-                h3{
-                    font-weight: normal;
-                }
-                &.txt{
-                    border-bottom: 1px #c6c6c6 dashed;
-                    margin: 0;
-                    a{
-                        display: block;
-                        padding: .6rem 0;
-                        color:#666;
-                        &:hover{
-                            color:$color-primary;
+                    .more{
+                        color: $color-primary;
+                    }
+                    .pic{
+                        img{
+                            transform: scale(1.1);
                         }
+                    }
+                }
+                
+            }
+        }
+        &.s2{
+            .header-news{
+                h2{
+                 
+                    @include mq(lg){
+                        text-align: right;
+                    }
+                }
+                .links{
+                    .swiper-prev2,.swiper-next2{
+                        display: inline-block;
+                        color: #ccc;
+                       
+                        .iconfont{
+                            font-size: rem(36);
+                        }
+                    }
+                    .swiper-prev2{
+                        margin-right: 1rem;
                     }
                 }
             }
         }
+       
     }
+
+    
 }
 
 

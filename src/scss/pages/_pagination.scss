@@ -9,30 +9,38 @@
         margin: 0;
         a {
             display: block;
-            line-height: 1;
-            padding: .5rem .72rem;
-            color: #999;
+            line-height: 1;          
+            color: #fff;
             margin: 0 .1rem;
-            background-color: #f3f3f3;
-            @include mq(md) {               
-                padding: .7rem 1rem;
-            }
+         
+            border-radius: 50%;
+            background-color: rgb(233, 79, 32);
+            text-align: center;
+        
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+         
+              
+           
         }
         &.active {
             a {
-                color: $color-primary;
+                color: #999;
+                background-color: #fff;
+                border:1px #ddd solid;
             }
         }
         &:hover {
             a {
-                color: $color-primary;
+                background-color: $color-secondary;
+                color:#fff;
             }
         }
-        .prev,
-        .next {       
-            text-align: center;          
-            background-color: transparent;
-        }
+        // .prev,
+        // .next {       
+        //     text-align: center;          
+        // }
     }
 }
 

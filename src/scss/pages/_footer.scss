@@ -1,64 +1,51 @@
-.site-footer {    
-  
+.site-footer { 
+    position: relative;
     color:#fff;
-    background-color: #24292D;
-    .sub-nav {
-        dt{
-            margin-bottom: 1.3rem;
-        }
-        dd{
+    background: $color-primary url('../img/1x/wave.png') no-repeat center bottom;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media only screen and (min-device-pixel-ratio: 2) {
+        background: $color-primary url('../img/2x/wave@2x.png') no-repeat center bottom;
+    }
+    .logo{
+        max-width: 100px;
+        margin-bottom: 2rem;
+    }
+    
+ 
+        .contacts{
             margin-bottom: 1rem;
-            a{
-                color:#A2A7AB;
+            .icon{
+                width: 50px;
+            }
+            .txt{
+                margin: 0;
+                padding: 0;
+                dt{
+                    font-weight: normal;
+                    
+                }
+            }
+            
+        }
+        
+    
+        .bot{
+            
+            .copyright{
+               color: lighten($color-primary,30%);
+               a{
+                color: lighten($color-primary,30%);
                 &:hover{
-                    color:#fff;
+                    color: #fff;
                 }
+               }
             }
+           
         }
-    }
 
-    .bot {
-        border-top:1px rgba(255,255,255,.22) solid;
-        margin-top: 2rem;
-        padding: 1rem 0;  
-      
-        @include mq(md){
-            padding: 1.5rem 0;             
-        }  
-        @include mq(xl){
-            padding: 1.5rem 0;              
-        }  
-     
-        .title{
-         
-            @include mq(xl){
-                font-size: rem(18);
-            }  
-            @include mq(xxl){
-                font-size: rem(20);
-            }  
-        }
-        .social  {
-            a{
-                color:$color-primary;
-                .iconfont{
-                    font-size: rem(20);
-                    @include mq(md){
-                        font-size: rem(22);
-                    }  
-                    @include mq(lg){
-                        font-size: rem(24);
-                    }  
-                    @include mq(xl){
-                        font-size: rem(26);
-                    }  
-                    @include mq(xxl){
-                        font-size: rem(28);
-                    }  
-                }
-            }
-        }
-    }
+    
+ 
 }
 
 .toTop {

@@ -1,0 +1,87 @@
+.page-cases {
+    .swiper {
+        width: 100%;
+        position: relative;     
+        padding-bottom: 7rem;  
+        padding-top: 7rem; 
+      }
+
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    // height: 535px;
+    @include mq(lg){
+        width: 500px;
+    }
+    @include mq(xl){
+        width: 600px;
+    }
+    @include mq(xxl){
+        width: 700px;
+    }
+    @include mq(xxxl){
+        width: 800px;
+    }
+    .item{
+        position: relative;
+        margin: 0;
+        figcaption{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1rem 2rem;
+            text-align: center;           
+            background : rgba(0, 0, 0, .6); 
+            width: 100%;
+            color: #fff;
+        }
+    }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+    .swiper-prev,.swiper-next{
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        max-width: 72px;
+        transform: translateY(-50%);
+        z-index: 3000;
+        @include mq(xl){
+            left: 20%;
+        }
+        @include mq(xxxl){
+            left: 21.5%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .swiper-next{
+        left: auto;
+        right: 20%;
+        @include mq(xxl){
+            right: 20%;
+        }
+        @include mq(xxxl){
+            right: 21.5%;
+        }
+    }
+    
+     
+
+}
+.swiper-pagination-bullet{
+    width: 30px;
+    height: 30px;
+    border:8px solid #fff;
+    background-color: $color-primary;
+    opacity: .1;
+}
+.swiper-pagination-bullet-active{
+    border:8px solid lighten($color-primary, 55%);
+    opacity: 1;
+}
