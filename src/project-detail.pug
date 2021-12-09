@@ -1,0 +1,124 @@
+extends includes/layoutWithoutHeaderAndFooter.pug
+
+block title
+    | 项目详情
+
+block bkheader
+    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.wow.fadeInUp.mb-5(style="background-image:url(img/temp/banner-1.jpg);")
+        .page-header-1    
+            .row.align-items-center 
+                .col 
+                    a.logo(href="index.html") 
+                        img(src="img/logo_white.svg", alt="logo")
+                .col-auto
+                    a.back(href="javascript:history.go(-1);") 
+                        i.iconfont.icon-back 
+                        | 返回
+        
+        .intro 
+            h1.text46 北外滩77号街坊
+            p.mb-media-3 使用性质：住宅类租赁住房<br/>设计单位：华东建筑设计研究总院
+            .actions 
+                a.btn.btn-white.btn-radius(href="#") 购买产品
+                a.btn.btn-primary.btn-radius(href="design.html") 定制产品
+
+        ul.project-nav 
+            li.active 
+                a(href="project-detail.html") 产品信息
+            li 
+                a(href="project-detail-1.html") 工程            
+            li 
+                a(href="project-detail-2.html") 采购
+            li 
+                a(href="project-detail-3.html") 建设
+        
+    .project.container
+        section.s1
+            .row.row-cols-2.row-cols-md-3.row-cols-lg-6.gx-0.gy-4
+                .col 
+                    .item 
+                        .num.text40 162757
+                        .des 建筑面积 (平方米)
+                .col 
+                    .item 
+                        .num.text40 28
+                        .des 单元数量 (个)
+                .col 
+                    .item 
+                        .num.text40 30
+                        .des 建筑层数 (层)
+                .col 
+                    .item 
+                        .num.text40 3.5
+                        .des 建筑层高 (米)
+                .col 
+                    .item 
+                        .num.text40 10.6
+                        .des 建造成本 (亿元)
+
+                .col 
+                    .item 
+                        .num.text40 2
+                        .des 施工周期 (年)
+                    
+    
+
+        section.s2
+            .row.gx-0
+                .col-lg-6 
+                    .pic 
+                        img(src="img/temp/p-d-1.jpg", alt="北外滩77号街坊")
+                .col-lg-6
+                    .detail
+                        .title-section(style="margin-bottom:0;")
+                            h2.text30 北外滩77号街坊
+
+                        .intro
+                            .price
+                                .row 
+                                    .col-auto
+                                        .item
+                                            label(for="") 建造价格
+                                            .txt 4500 元/㎡
+                                    .col-auto
+                                        .item
+                                            label(for="") 产品价格
+                                            .txt 50,000 元 
+                                                span 起
+                            
+                            .dataList
+                                .row
+                                    .col-md-6
+                                        ul.item
+                                            li 使用性质：住宅类租赁住房
+                                            li 建设单位：上海颀颀开发建设有限公司
+                                            li 设计单位：华东建筑设计研究总院
+                                            li 建设地点：上海市虹口区北外滩
+                                            li 总建筑面积：48767平方米
+                                            li 总建筑高度：91.05米
+                                            li 层数：地上23层，地下3层
+
+                                    .col-md-6
+                                        ul.item
+                                            li 设计时间：2021年06月
+                                            li 竣工时间：2023年12月
+                                            li 主体结构类型：装配整体式剪力墙结构体系
+                                            li 主要外饰面材料：石材 玻璃 铝板 涂料
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script.
+        
+
+
+     
+
+      
+       
+
+     

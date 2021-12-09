@@ -1,339 +1,161 @@
-.page-about {
-    .s1{      
-        position: relative;
-        .bg{
-            margin-left: auto;
-            margin-right: auto;
-           width: 55.72%;   
-           position: relative;  
-           max-width: 847px; 
-           img{
-               width: 100%;
-           }    
-           .title{
-               position: absolute;
-               left: 50%;
-               top:50%;
-               transform: translate(-50%,-50%);
-               white-space: nowrap;
-               z-index: 100;
-           }
-           .c1{
-               position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 200;
-                width: 100%;
-                height: 100%;
-                animation: unSpin 7s linear 0s infinite;
-                img{
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-44.7%,-43.4%);
-                    z-index: 300;
-                    width: 92.8%;
-                }
-           }
-        }
-        .intro{
-            .logo{                
-                img{
-                    width: 194px;
-                }
-            }
-        }
-        
-    }
-    
-    .s2 {
-        background-color: #F3F4FC;
-        position: relative;
-        .title-section{
-            border-right: 1px #DCDDDD solid;
-            padding-right: 10rem;
-            h3{
-                margin: 0;
-            }
-        }
+.page-about{
+    .s1{
         p{
-            margin: 0;
-            padding-left: 8rem;
-        }
-        
-    }
-    .s3 {
-        background: $color-primary url(../img/SVG/about_bg_2.svg) no-repeat right -18rem bottom -43rem;
-        background-size: 52.8% auto;
-        color: #fff; 
-        .container{
-            position: relative;
-            .c1{
-                position: absolute;
-                left: 15px;
-                top: 0;
-                z-index: 100;
-                transform: translateY(-50%);
-                max-width: 210px;
-            }
-        }
-        .title-section{           
-            margin-bottom: 3rem;           
-        }
-        .years{
-            max-width: 810px;
-            margin: 0 auto;
-            position: relative;
-            padding-bottom: 1.4rem;
-            &::after{
-                content: "";
-                display: block;
-                height: 3px;
-                width: 96%;
-                background-color: rgba(255,255,255,.5);
-                z-index: 0;
-                left: 50%;
-                bottom: 0;
-                position:absolute;
-                transform: translateX(-50%);
-            }
-            .year{
-                position: relative;
-                &::after{
-                    content: "";
+            br{
+                display: none;
+                @include mq(lg){
                     display: block;
-                    height: 22px;
-                    width: 22px;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    z-index: 0;
-                    left: 50%;
-                    bottom: -2rem;
-                    transform: translateX(-50%);
-                    position:absolute;
                 }
             }
         }
-   
-
     }
-    
-    .s4 {
-        background-color: #fff;
-        background-image: url('../img/SVG/about_bg_3.svg');
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        .item{
-            .title{
-                border-bottom: 1px #ddd solid;
-                color:$color-primary;
-                margin-bottom: 1rem;
-                padding-bottom: 1.5rem;
-            }
-        }
-        .ev{   
-            margin-bottom: 1rem;       
-            
+    .s2{
+        background: url('../img/about_1.jpg') no-repeat center top;
+        padding-top: 7rem;
+        background-size: auto 200px;
+        @include mq(lg){
+            background-size: auto auto;
+            padding-top: 10rem;
         }
 
-        .team{
-            .item{
-                text-align: center;
-                .pic{
+        .intro{
+            background: #fff url('../img/about_2.svg') no-repeat left bottom;
+            padding: 1rem;
+           
+            box-shadow: 3px 5px 5px rgba(51, 107, 173, 0.2);
+            @include mq(lg){
+                padding: 4rem 0;
+            }
+            @include mq(xl){
+                padding: 5rem 1rem;
+            }
+            @include mq(xxl){
+                padding: 6rem 1rem;
+            }
+            .title{
+                margin-bottom: 2rem;
+                @include mq(lg){
+                    text-align: center;
+                }
+            }
+            .txt{
+              
+                @include mq(lg){
+                    padding: 0 3rem;
+                    border-left: 1px #eee solid;
+                }
+               
+                h3{
                     margin-bottom: 1rem;
-                    img{
-                        transition: all .3s;
+                    @include mq(lg){
+                        margin-bottom: 1.5rem;
                     }
                 }
-                .txt{
-                    color:$color-primary;
-                    @include mq(xxl){
-                        font-size: rem(18);
-                    }
-                    .name{
-                        position: relative;
-                        padding-bottom: .6rem;
-                        &::after{
-                            position: absolute;
-                            content: "";
-                            border-radius: 50%;
-                            width: 6px;
-                            height: 6px;
-                            background-color: $color-primary;
-                            left: 50%;
-                            bottom: 0;
-                            transform: translateX(-50%);
-                            
-                        }
-                    }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .s3{
+        .list{
+            @include reset-list();
+            margin-bottom: 2rem;
+            @include mq(lg){
+                text-align: center;
+                margin-bottom: 0;
+            }
+            li{
+                padding:.3rem 0;
+             
+                @include mq(lg){
+                    margin-bottom: 1rem;
+                    padding:.5rem 1rem;
                 }
                 &:hover{
-                    .pic{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
+                    background-color: $color-primary;
+                    color: #fff;
                 }
             }
         }
-  
     }
-    .s5{
-        background-color: #FAFBFE;
-        .item {
-            padding-top: 2rem;
-            text-align: center;  
-            padding-bottom: 6rem;     
-            @include mq(xl){
-                font-size: rem(18);
-            }
-            @include mq(xxl){
-                font-size: rem(20);
-            }
-            img{
-                margin-bottom: 1rem;
-                filter: drop-shadow(0 0 20px rgba(0,0,0,.15));
+
+    .s4{
+        .note{
+            @include reset-list();
+            li{
+                display: inline-block;
+                margin-right: 1rem;
             }
         }
-    }
-    .s6{
         .item{
-            text-align: center;
-            padding-bottom: 6rem;     
-            img{
-                border: #CED4F3 solid 10px;
+            margin-bottom: 1rem;
+            .item-header{
+                background-color: #F4F5F9;
+                padding: .6rem 1rem;
+                @include mq(md){
+                    padding: 1rem 1.5rem;
+                }
+                @include mq(xl){
+                    padding: 1.3rem 2rem;
+                }
             }
-        }
-    }
-
-    .s7{
-        background: #FAFBFE url('../img/SVG/about_bg_4.svg') no-repeat center bottom -2rem;
-        .faq {
-
-            .item{
-                margin-bottom: 20px;
-                overflow: hidden;
-                border-radius : 10px;  
-                box-shadow: 0 0 20px rgba(0,0,0,.05);    
-                .qheader{
-                    background : #FFFFFF;
-                    padding: 1.5rem 2rem;                   
+            .title{
+                color: $color-primary;
+                font-size: rem(18);
+             
+                @include mq(lg){
+                    font-size: rem(20);
+                }
+                @include mq(xl){
+                    font-size: rem(22);
+                }
+                @include mq(xxl){
+                    font-size: rem(24);
+                }
+            }
+            .open{
+               .iconfont{
+                    display: block;
                     transition: all .3s;
-                                  
-                    cursor: pointer;
-                    h5{
-                        margin: 0;
-                    }   
-                    &:hover{
-                        background-color: $color-primary;
-                        color: #fff;
+                    font-size: rem(18);                
+                    @include mq(lg){
+                        font-size: rem(20);
                     }
-                  
-                              
-                }
-                .qbody{
-                    background : #fff;
-                    padding: 1.5rem 2rem;    
-                    display: none;
-                    p{
-                        margin: 0;
+                    @include mq(xl){
+                        font-size: rem(22);
                     }
-                }
-                &.open{
-                    .qheader{
-                        background-color: $color-primary;
-                        color: #fff;
-                    }
-                    .qbody{
-                        display: block;
-                    }
-                }
-            }
-        }
-        .sub-title{
-            color: $color-primary;
-        }
-        .contact{
-            .att{
-                margin-bottom: 2rem;
-            }
-        }
-    
-        .qr {
-            text-align: center;
-           
-            @include mq(xxl){
-                margin-bottom: 2rem;
-            }
-            img{
-                margin-bottom: .6rem;
-            }
-        }
-        .map-gaode {
-            height: 370px;
-        }
-
-        .des02{
-            color: $color-primary;
-        }
-    }
-    .join{
-        .title-section{
-            h3{
-                margin: 0;
-            }
-        }
-        .joblist{
-            .item{
-               
-                background : #ECEEFA;
-                border-radius: 10px;
-              
-                overflow: hidden;
-                .hd{
-                    text-align: center;
-                    padding: 1rem 0 0;
-                    transition: all .3s;
-                    a{
-                        color: $color-primary;
-                    }
-                    .iconfont{
-                        @include mq(xxl){
-                            font-size: rem(20);
-                        }
-                    }
-                    &.open{
-                        color: #fff;
-                        background-color: $color-primary;
-                        a{
-                            color: #fff;
-                        }
-                    }
-                }
-                h4{
-                    font-weight: normal;
-                    margin: 0;
                     @include mq(xxl){
-                        font-size: rem(18);
+                        font-size: rem(24);
                     }
+               }
+               &.up{
+                   .iconfont{
+                       transform: rotate(180deg);
+                   }
+               }
+            }
+
+            .item-body {
+                background-color: #E7E9F2;
+                padding: 1rem;
+                display: none;
+                @include mq(xl){
+                    padding: 1.5rem 2rem;
                 }
-                .list{
-                    background-color: #fff;
-                    padding: 2rem;
-                    color: $color-primary;
-                    display: none;
-                    .li{
-                        padding-top: .2rem;
-                        padding-bottom: .2rem;
-                    }
-                    a{
-                        color: $color-primary;
-                    }
+                h3{
+                    font-size: rem(18);
+                }
+            }
+            &.active{
+                .item-body{
+                    display: block;
                 }
             }
         }
     }
+
+    
 
 }
 

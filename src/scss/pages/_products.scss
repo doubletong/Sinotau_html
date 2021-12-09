@@ -1,90 +1,218 @@
 .page-product {  
-    
-    .s1 {        
+    .category{
         .item{
-            border-bottom: 1px #707070 solid;
+           
+            background-color: #fff;
             .pic{
-                text-align: center;
-                margin-bottom: 2rem;
+                display: block;
                 img{
-                    max-width: 70%;
-                    @include mq(lg){
-                        max-width: 100%;
-                    }
+                    width: 100%;
                 }
             }
-            a{
-                color: $color-primary;
+           .txt{
+                box-shadow: 0 0 15px rgba(0,0,0,.1);
+                padding: 1rem 1.5rem;
+                .cat{
+                    font-size: rem(24);
+                    color: $color-secondary;
+                }
+                .name{
+                    color: #999;
+                    font-size: rem(14);
+                }
+                a{
+                    color: #999;
+                    margin-left: 1rem;
+                    font-size: rem(14);
+                    &:hover{
+                        color: $color-secondary;
+                    }
+                }
+           }
+           &:hover{
+               background-color: $color-primary;
+               .txt{
+                   .cat{
+                       color: #fff;
+                   }
+                   .name{
+                       color: #fff;
+                   }
+                   a{
+                       color: #fff;        
+                       &:hover{
+                           text-decoration: underline;
+                       }               
+                   }
+               }
+           }
+        }
+    }
+    
+    
+}
+
+
+.page-product-detail{
+    .s1{
+        .pic{
+            text-align: center;
+        }
+        .title{
+            color: $color-primary;
+        }
+        header{
+            border-bottom: 1px #eee solid;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            @include mq(xl){
+                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .des{
+            h4{
+                font-size: rem(18);
+                margin-bottom: 1rem;
+            }
+            ul{
+                @include reset-list();
+                li{
+                    padding-left: 1rem;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: " ";
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 100;
+                        background-color: $color-primary;
+                    }
+                }
             }
         }
     }
     .s2{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #fff;
-        .title-section{
-            max-width: 610px;
-            h2{
-                color: #fff;
-                margin-bottom: 1rem;
-            }
-            p{
-                @include mq(xxl){
-                    font-size: rem(18);
+        .tab{
+            border-bottom: 1px #eee solid;
+            .tab-header{
+                border-bottom: #eee 1px solid;
+                margin-bottom: 2rem;
+                @include mq(xl){
+                    margin-bottom: 3rem
                 }
-            }
-        }
-      
-    }
+                ul{
+                    @include reset-list();
+                    li{
+                        display: inline-block;
+                        position: relative;
+                        margin-right: 1.2rem;
+                        padding: .6rem 0;
+                        cursor: pointer;                      
+                        font-size: rem(16);
 
-    .s3{
-        .item{
-            background-color: #F3F7FA;
-            border:1px #707070 solid;
-            margin-bottom: 1rem;
-            @include mq(lg){
-                margin-bottom: 0;
-            }
-            .pic{
-                position: relative;
-                overflow: hidden;
-                img.bg{
-                    width: 100%;
-                    transition: all .6s;
-                }
-                .icon {
-                    position: absolute;
-                    left: 50%;
-                    top:50%;
-                    transform: translate(-50%,-50%);
-                }
-              
-            }
-            .txt{
-                padding: 1rem 1rem 2rem;
-                @include mq(xxl){
-                    padding: 2.5rem 30px 3rem;
-                }
-                h3{
-                    text-align: justify;
-                    margin-bottom: 1rem;
-                    @include mq(xxl){
-                        margin-bottom: 1.5rem;
-                    }
-                    p{
-                        text-align: justify;
-                    }
-                }
-            }
-            &:hover{
-                .pic{
-                    img.bg{
-                        transform: scale(1.1);
+                        @include mq(md){
+                            font-size: rem(18);
+                            margin-right: 3rem;
+                        }
+                        @include mq(lg){
+                            font-size: rem(20);
+                            margin-right: 4rem;
+                        }
+                        @include mq(xl){
+                            font-size: rem(22);
+                            margin-right: 6rem;
+                        }
+                        @include mq(xxl){
+                            font-size: rem(24);
+                            margin-right: 8rem;
+                        }
+                        &.active{
+                            color: $color-primary;
+                            &::after{
+                                content: " ";
+                                display: block;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: -2px;
+                                height: 3px;
+                                width: 40px;
+                                background-color: $color-primary;
+                                z-index: 100;
+                            }
+                        }
                     }
                 }
             }
         }
+        .tab-body{
+            
+            .content{
+                display: none;
+                &.active{
+                    display: block;
+                }
+
+                .icons {
+                    text-align: center;     
+                    padding-top: 1rem;               
+                    img{
+                        margin-bottom: 1rem;
+                        max-width: 60%;
+                        height: 50px;
+                        object-fit: contain;
+                        object-position: center center;
+                        @include mq(lg){
+                            height: 60px;
+                        }
+                    }
+                }
+                table{
+                    width: 100%;
+                    tr{
+                        &:nth-child(2n+1){
+                            background-color: #f7f7f7;
+                        }
+                        td{
+                            padding: .8rem 1rem;
+                            font-size: rem(14);
+                        }
+                    }
+                }
+
+                figure{
+                    margin-bottom: 2rem;
+                    figcaption{
+                        padding-top: .5rem;
+                    }
+                }
+            }
+            .d1{
+                margin-bottom: 3rem;
+                dt{
+                    color: $color-primary;
+                    margin-bottom: 1rem;
+                }
+                dd{
+                    position: relative;
+                    padding-left: 2rem;
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;
+                    }
+                }
+            }
+       
+        }
     }
-    
 }

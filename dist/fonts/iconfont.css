@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 2768799 */
-  src: url('iconfont.woff2?t=1630002575870') format('woff2'),
-       url('iconfont.woff?t=1630002575870') format('woff'),
-       url('iconfont.ttf?t=1630002575870') format('truetype');
+  font-family: "iconfont"; /* Project id 2958971 */
+  src: url('iconfont.woff2?t=1637809107871') format('woff2'),
+       url('iconfont.woff?t=1637809107871') format('woff'),
+       url('iconfont.ttf?t=1637809107871') format('truetype');
 }
 
 .iconfont {
@@ -13,31 +13,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-downarrow:before {
-  content: "\e60a";
+.icon-arrow-down:before {
+  content: "\e7b2";
 }
 
-.icon-go:before {
-  content: "\e619";
-}
-
-.icon-right:before {
-  content: "\e65e";
-}
-
-.icon-prev:before {
-  content: "\e629";
-}
-
-.icon-next:before {
-  content: "\e65f";
+.icon-back:before {
+  content: "\e679";
 }
 
 .icon-top:before {
-  content: "\e653";
+  content: "\e69e";
 }
 
-.icon-search:before {
-  content: "\e600";
+.icon-sort-full:before {
+  content: "\ea4b";
+}
+
+.icon-sort-up-full:before {
+  content: "\ea4c";
+}
+
+.icon-sort-down-full:before {
+  content: "\ea4d";
 }
 

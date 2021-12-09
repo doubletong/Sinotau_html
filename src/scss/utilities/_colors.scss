@@ -3,40 +3,41 @@
 // descriptive colors
 // =============
 $tangerine: #e94f20;
-$navy: #1f2a66;
-$bouquet: #294666;
+$navy:#06132B;
+$bouquet: #1D4E89;
 $venus: #0F2351;
-$patina: #51aeff;
+$skyblue: #7EAEE8;
 $nebula:#51354d;
+$crimson:#D4080B;
 $white: #F3F7FA;
 $dawn-pink: #f2ece4;
 $wafer: #e1d7d2;
-$iron: #333;
-$regent-grey: #aaa;
+$iron: #595757;
+$grayish: #999;
 $aqua: #00F0B4;
-$azure-blue:#0C2AC3;
-$midnight-blue: #036;
+$azure-blue:#6798F3;
+$dark-blue:  #004698;
 $black: #000;
 // main color palette
 // =============
-$color-primary: $azure-blue;
-$color-secondary: $aqua;
-$color-accent: $patina;
+$color-primary: $dark-blue;
+$color-secondary: $azure-blue;
+$color-accent: $skyblue;
 $color-shadow: rgba($black, .125);
-$color-note: #666;
+$color-note: $grayish;
 // Common colors
-$color-background: $white;
+$color-background: $navy;
 $color-background-shade: $iron;
 $color-background-invert: $black;
-$color-text: #666;
-$color-text-weak: $regent-grey;
-$color-text-strong: $midnight-blue;
-$color-text-heading: $regent-grey;
+$color-text: $iron;
+$color-text-weak: $iron;
+$color-text-strong: $navy;
+$color-text-heading: $iron;
 $color-text-invert: rgba($color-background, .75);
 $color-text-strong-invert: $color-background;
 // Links
 $color-link: $color-primary;
-$color-link-hover: $midnight-blue;
+$color-link-hover: $navy;
 $color-link-visited: $bouquet;
 // Code
 $color-code: #333;
@@ -51,3 +52,8 @@ $color-success: #2cde2c;
 $color-warning: #cf8600;
 $color-important: #d00;
 $color-notice: #66b;
+
+// gray color
+.bg-gray-700{
+    background-color: #3c3c3d;
+}

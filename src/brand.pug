@@ -1,103 +1,114 @@
 extends includes/layout.pug
 
 block title
-    | 云拿智能仓储方案
+    | 品牌客户
 
 block bkheader
-    link(href='js/vendor/swiper/css/swiper-bundle.min.css', rel='stylesheet')
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
 
 block content
-    .banner.banner-solution.wow.fadeInUp
-        img.bg(src="img/banners/about.jpg", alt="")       
+    .banner.banner-blog.wow.fadeInUp
+        img.bg(src="img/1x/clients_bg-80.jpg", alt="我们的客户")
+        h1.title.text40 我们的客户
 
-        .txt-container
-            .container
-                .row 
-                    .col-lg
-                        .txt
-                            h1.wow.fadeInUp.text70 企业简介
-                            p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
-                    
-    .container
-        .sub_nav.wow.fadeInDown
-            ul.menus              
-                li
-                    a(href="about.html") 企业简介
-                li 
-                    a(href="70years.html") 胜宇70年
-                li 
-                    a(href="team.html") 团队管理
-                li
-                    a(href="honors.html") 资质荣誉
-                li 
-                    a(href="csr.html") 社会责任
-                li.active  
-                    a(href="brand.html") 胜宇品牌
-              
-              
+    .menus-wrap
+        ul.sub-menus 
+            li.active 
+                a(href="brand.html")  品牌客户
+            li
+                a(href="partner.html")  合作客户
+
+               
         
-    .page.page-brand.pt-media-9
-        section.s1.container-1.mb-media-7 
-            
-            .row.align-items-center
-                .col-lg-6                  
-                    .pic
-                        img(src="img/brand_1.png", alt="胜宇")                    
+    .page.page-brand.pt-media-9.pb-media-9
+        section.s1.container    
+            .title-section.mb-media-4 
+                h2.text40 策信为众多一流企业提供优质服务
+            .mb-media-6
+                .p1 策信凭借卓越的服务，赢得了多家上市企业以及大型集团公司的认可和信赖。越来越多的企业选择策信作为常年的合作伙伴。          
+                .p2 未来，我们将继续秉承“策知得失 信存有道”的理念，努力成为中国最具影响力的专业财税服务机构。降低客户财税风险，成就客户最大价值，帮助杰出的企业更为成功。    
 
-                .col-lg-6
-                    .txt
-                        .title-section 
-                            h2.text48 品牌形象升级
-                           
-                       
-                        p.des 本次品牌形象升级，反映了胜宇的发展与成长，象征着胜宇未来的光明前景。<br>新标志以简洁现代的风格清晰地传递了我们的核心理念：XX 、XX 、XX。<br>标志中以“胜”字为字体创意设计，提取“Sheng Yu Cable”首字母与“胜”字巧妙结合。
-                        p.des1 品牌符号，为提高品牌的易识别、易阅读、易传播、易应用，以电缆圆与“胜”字结合为品牌符号，让品牌形象迅速传播，增加消费者对品牌的信任度，增加企业人员对品牌的自豪感。<br>从而不断传达胜文化的核心理念。
+            .brands
+                .swiper.mySwiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-1.svg", alt="大参林")
+                                figcaption 大参林                                   
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-2.svg", alt="海马汽车")
+                                figcaption 海马汽车
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-3.svg", alt="深圳能源")
+                                figcaption 深圳能源
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-4.svg", alt="格林美")
+                                figcaption 格林美
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-5.svg", alt="中国航信")
+                                figcaption 中国航信
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-6.svg", alt="万泽集团")
+                                figcaption 万泽集团
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-7.svg", alt="海南椰岛")
+                                figcaption 海南椰岛
 
-            section.s2.mb-media-7 
-                .container-1
-                    img(src="img/brand_2.png", alt="胜宇")            
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-5.svg", alt="中国航信")
+                                figcaption 中国航信
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-6.svg", alt="万泽集团")
+                                figcaption 万泽集团
+                        .swiper-slide
+                            figure.item
+                                img(src="img/SVG/brand-7.svg", alt="海南椰岛")
+                                figcaption 海南椰岛
 
-            section.s3.mb-media-7 
-                .container-1
-                    img(src="img/brand_3.png", alt="胜宇")        
-        
 
-            
-            
+                .swiper-next 
+                    i.iconfont.icon-next
+                .swiper-prev 
+                    i.iconfont.icon-prev
         
 
 
 block bkfooter
 
-    script(src='js/vendor/swiper/js/swiper-bundle.min.js')
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
     script.
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            grabCursor: true,
-            centeredSlides: true,
-            loop:true,
-            // init: false,
-             navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
+        var swiper1 = new Swiper('.mySwiper', {
+            slidesPerView: 2,
+            spaceBetween: 40,            
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },          
             breakpoints: {
                 640: {
-                slidesPerView: 2,
-                spaceBetween: 30,
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
                 768: {
-                slidesPerView: 2,
-                spaceBetween: 60,
+                    slidesPerView: 5,
+                    spaceBetween: 30,
                 },
-             
-            }
+                1024: {
+                    slidesPerView: 7,
+                    spaceBetween: 30,
+                },
+            },
         });
+
+        
 
 
      

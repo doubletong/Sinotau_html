@@ -1,10 +1,119 @@
+.page-brand{
+    background: #0552AF url('../img/1x/map.png') no-repeat center center;
+    background-size: auto 100%;
+    text-align: center;
+    color: #fff;
 
+    .title-section{
+        h2{
+            font-weight: normal;
+        }
+    }
+    .p1, .p2{
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+    .p2{
+        max-width: 800px;
+    }
+   
+    .brands {
+        max-width: 920px;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      
+        .item{
+            img{
+                margin-bottom: 1rem;
+            }
+        }
+        .swiper-next,.swiper-prev{
+            position: absolute;
+            left: 0;
+            top: .2rem;
+            z-index: 1000;
+            .iconfont{
+                font-size: 2.75rem;
+            }
+         
+        }
+        .swiper-next{
+            left: auto;
+            right: 0;
+        }
+    }
+}
 
-.page-clients{
-    .item{
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+.page-partner{
+    background: url('../img/1x/partner_bg-80.jpg') no-repeat center top;
+    background-size: auto 300px;
+    @include mq(md){
+        background-size: auto 360px;
+    }
+    @include mq(lg){
+        background-size: 100% auto;
+    }
+   
+    .p3{
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: left;
+        color:#fff;
+    }
+    .partners{
+        background: #fff url('../img/SVG/love.svg') no-repeat center top 9rem;
+        background-size: 275px auto;
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+        padding: 1.5rem 1rem;
         text-align: center;
-    } 
-
+        max-width: 1105px;
+        margin: 0 auto;
+        @include mq(md){
+            padding: 2rem 3rem;
+        }
+        @include mq(xxl){
+            padding: 3rem 5rem;
+        }
+        @include mq(xxxl){
+            padding: 4rem 5rem;
+        }
+        .tab-header{
+            @include reset-list();
+            margin-bottom: 2rem;
+            @include mq(xxl){
+                margin-bottom: 3rem;
+            }
+            li{
+                display: inline-block;
+                color: #898989;
+                border-right: 1px #ddd solid;
+                padding: 0 1rem;
+                line-height: 1;
+                cursor: pointer;
+                &:last-child{
+                    border-right: none;
+                }
+                &.active{
+                    font-size: rem(26);
+                    color: $color-text;
+                }
+            }
+        }
+        .tab-body{
+            display: none;
+            &.active{
+                display: block;
+            }
+            .col{
+                margin-bottom: 1rem;
+                @include mq(xxl){
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
 }

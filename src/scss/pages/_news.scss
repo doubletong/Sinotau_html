@@ -1,169 +1,133 @@
 .page-news {
-    .s1{
-        .header-news{
-            
-            h2{
-                margin-bottom: 12rem;
-                color: $color-primary;
-                font-style: italic;
+    .news-list{
+        margin-bottom: 3rem;
+        .item{
+            background-color: #fff;
+           
+            .pic{
+                display: block;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transition: all .3s;
+                }
+               
             }
-            .links{
-                line-height: 1;
-                padding-right: 1rem;
-                .swiper-prev,.swiper-next{
-                    display: inline-block;
-                    color: #ccc;
-                   
-                    .iconfont{
-                        font-size: rem(36);
-                    }
-                }
-                .swiper-prev{
-                    margin-right: 1rem;
-                }
-                a{
-                    color: #ccc;
-                    &:hover{
-                        color: $color-primary;
-                    }
+            .txt{
+                padding: 1rem 1rem;
+                @include mq(lg){
+                    padding: 1rem 2rem;
                 }
             }
-        }
-        .swiper{
-            .swiper-slide {
-                width: 28%;
+            h3{
+                font-size: 1rem;
             }
-            .item{
-                border-left: 1px #DCDDDD solid;
-                padding-left: 2rem;
-                padding-right: 2rem;
-                padding-bottom: 2rem;
-                position: relative;
+            .date{
+                color: $color-note;              
+                font-size: rem(14);
+                margin-bottom: .6rem;
+            }
+            &:hover{
+                box-shadow: 3px 3px 12px rgba(0,0,0,.1);
                 .pic{
-                    overflow: hidden;
                     img{
-                        width: 100%;
-                        display: block;
-                        margin-bottom: 1rem;
-                        transition: all .3s;
+                        transform: scale(1.1);
                     }
                 }
-                
-                .title{
-                    font-size: rem(18);
-                    margin-bottom: 1.5rem;
-                    @include mq(xxl){
-                        font-size: rem(20);
-                    }                   
-                }
-                .date,.des{
-                    color: #999;
-                    margin-bottom: .6rem;
-                }
-                .des{
-                    margin-bottom: 3rem;
-                }
-                .more{
-                    position: absolute;
-                    left: 2rem;
-                    bottom: 0;
-                    z-index: 100;
-                    color:#ccc;
-                    line-height: 1;
-                    .iconfont{
-                        font-size: rem(32);
-                    }
-                }
+            }
+          
+        }
 
-                &:hover{
-                    .date{
-                        color: $color-primary;
-                    }
-                    .title{
-                        a{
-                            color: $color-primary;
-                        }
-                    }
-                    .more{
-                        color: $color-primary;
-                    }
-                    .pic{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-                
-            }
-        }
-        &.s2{
-            .header-news{
-                h2{
-                 
-                    @include mq(lg){
-                        text-align: right;
-                    }
-                }
-                .links{
-                    .swiper-prev2,.swiper-next2{
-                        display: inline-block;
-                        color: #ccc;
-                       
-                        .iconfont{
-                            font-size: rem(36);
-                        }
-                    }
-                    .swiper-prev2{
-                        margin-right: 1rem;
-                    }
-                }
-            }
-        }
        
     }
 
     
 }
 
+// .page-news-list{
+//     .title-section{
+//         color: $color-primary;
+//     }
+//     .news-list{
+//         .item{
+//             background-color: #FAFBFE;
+//             .pic{
+//                 display: block;
+//                 img{
+//                     width: 100%;
+//                 }
+//             }
+//             .txt{
+//                 padding: 1.5rem;
+//                 @include mq(xxl){
+//                     padding: 1.5rem 2rem;
+//                 }
+//                 .date{
+//                     color: $color-primary;
+//                     margin-bottom: .5rem;
+//                 }
+//                 .title{
+//                     margin-bottom: 1rem;
+//                     font-size: rem(18);
+//                     @include mq(xl){
+//                         font-size: rem(20);
+//                     }
+//                 }
+//                 a{
+//                     color:$color-primary;
+//                 }
+//                 .des{
+//                     color: #999;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .page-news-detail {
-    .news-header{
-        text-align: center;
-        border-bottom: 1px #eee solid;
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
-        @include mq(xl){
-            margin-bottom: 3rem;
+    .news-header{        
+        margin-bottom: 1rem;
+       
+        @include mq(md){
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
         }
-        @include mq(xxl){
-            margin-bottom: 4rem;
-        }
+        
         h1{
             color:#333;
+            margin-bottom:1rem ;
+            @include mq(md){
+                margin-bottom:2rem ;
+            }
         }
-        .date{
-            text-align: center;
+        .date{           
             color:#999;
         }
+       
     }
     .container {
-       
-        @include mq(xxl){
-            max-width: 1266px;
+        position: relative;
+        @include mq(lg){
+            max-width: 830px;
         }
         .content {
-            border-bottom: 1px #ccc solid;
+           
             color: #8a9095;
-            padding-bottom: 2rem;
-            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            @include mq(md) {
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+            }
             @include mq(xl) {
                 padding-bottom: 3rem;
                 margin-bottom: 3rem;
             }
+         
             p {
-                text-align: justify;
-           
+                text-align: justify;           
             }
+            
             .pic {
                 text-align: center;
                 margin-bottom: 2rem;
@@ -172,14 +136,19 @@
         }
         .pagenav {
             a {
+                width: 100%;
+                display: inline-block;              
              
-                display: inline-block;
-                height: 36px; 
-                line-height: 36px;
-                overflow: hidden;
                 text-overflow: ellipsis;
-                white-space: nowrap;            
-        
+           
+                border: 1px #eee solid;
+                padding: .5rem 1rem;
+                span{
+                    display: none;
+                    @include mq(lg){
+                        display: inline;
+                    }
+                }
                 &:hover {               
                     color:$color-primary;
                 }
@@ -189,6 +158,7 @@
                     }
                 }
                 &.next{
+                    text-align: right;
                     .iconfont{
                         margin-left: 1rem;
                     }

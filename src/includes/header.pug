@@ -1,61 +1,41 @@
 header#site-header.site-header 
     .menus-and-logo.container
-        .row.align-items-end   
+        .row.align-items-center   
             .col-auto
                 a.logo(href="index.html")                   
-                    img#logo(src="img/SVG/logo.svg", alt="logo")
-           
+                    img.logo_color(src="img/logo.svg", alt="logo")
+                  
             .col
-                ul.mainav  
-                    li.current
-                        a(href="index.html") 产品与服务     
-                       
-
+                ul.mainav      
+                    li(class={active: currentUrl === 'index.html'})
+                        a(href="index.html") 首页
                     li
-                        a(href="cases.html") 合作案例        
-                    li.parent
-                        a(href="news.html") 媒体中心        
-                        //- ul.sub-menu                     
-                        //-     li 
-                        //-         a(href="#") Instruments &amp; Meters
-                        //-     li 
-                        //-         a(href="#") Smart Household
-                        //-     li 
-                        //-         a(href="#") Inverter
-                        //-     li 
-                        //-         a(href="#") Power Elec tronics
-                        //-     li 
-                        //-         a(href="#") Medical power supply
-                        //-     li 
-                        //-         a(href="#") Power distribution
+                        a(href="application.html") 研究成果
+                    li
+                        a(href="service.html") 新闻动态       
                     li  
-                        a(href="about.html") 关于我们    
-                        //- ul.sub-menu                        
-                        //-     li
-                        //-         a(href="overview.html") Overview
-                        //-     li
-                        //-         a(href="certificates.html") Certificates
-                        //-     li
-                        //-         a(href="tradeshows.html") Tradeshows
-         
+                        a(href="news.html") 会员资料           
+                    li(class={active: currentUrl === 'team.html'})
+                        a(href="team.html") 研究队伍
+                    li  
+                        a(href="contact.html") 加入我们
     
-            .col-auto
-                a.search(href="#")         
-                    i.iconfont.icon-search 
-                      
-                    
-
             //- .col-auto
-            //-     .lang-switcher
-            //-         a.down(href="#") 
-            //-             i.iconfont.icon-earth
-            //-         ul.languages                         
-            //-             li 
-            //-                 a.active(href="#") 简体中文
-            //-             li 
-            //-                 a(href="#")  English
-                        
+            //-     a.search(href="#")         
+            //-         i.iconfont.icon-search 
 
+            .col-auto
+                .lang-switcher
+                    a.active(href="#") CN 
+                    | |
+                    a(href="#") EN
+
+            .col-auto
+                .loginReg                    
+                    a(href="#") 注册 
+                    | / 
+                    a(href="#") 登录
+                    
             .col-auto.mobilemenu
                 .menu-toggle
                     .one
@@ -66,28 +46,12 @@ header#site-header.site-header
     div#overmenu.menu-over
         ul.mobilenav
             li
-                a(href="solution.html") 解决方案
+                a(href="application.html") 解决方案
             li
-                a(href="products.html") 产品
-            li
-                a(href="help.html") 帮助和学习中心                
+                a(href="service.html") 客户体验       
             li  
-                a(href="actives.html") 活动            
-            li
-                a(href="about.html") 关于云拿
-                ul.sub-menu                        
-                    li
-                        a(href="contact.html") 联系我们
-                    
-            li
-                a(href="blog.html") 博客
-                
-                
-                //- ul.subnav                        
-                //-     li
-                //-         a(href="contact.html") WEGO Shenzhen   
-            
-
-       
-          
-    
+                a(href="news.html") 案例资源           
+            li  
+                a(href="contact.html") 关于我们
+            li  
+                a(href="contact.html") 联系我们

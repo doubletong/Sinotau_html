@@ -1,3 +1,7 @@
+/*!
+* Scrolloverflow 2.0.6 module for fullPage.js >= 3
+* https://github.com/alvarotrigo/fullPage.js
+*/
 /**
 * Customized version of iScroll.js 0.1.3
 * It fixes bugs affecting its integration with fullpage.js
@@ -2139,7 +2143,7 @@ if ( typeof module != 'undefined' && module.exports ) {
 
 
 /*!
-* Scrolloverflow 2.0.4 module for fullPage.js >= 3
+* Scrolloverflow 2.0.6 module for fullPage.js >= 3
 * https://github.com/alvarotrigo/fullPage.js
 * @license MIT licensed
 *
@@ -2235,7 +2239,7 @@ if ( typeof module != 'undefined' && module.exports ) {
             */
             function createScrollBarForAll(){
                 if(fp_utils.hasClass(document.body, RESPONSIVE)){
-                    removeResponsiveScrollOverflows();
+                    forEachSectionAndSlide(removeScrollBar);
                 }
                 else{
                     forEachSectionAndSlide(createScrollBar);
@@ -2326,13 +2330,11 @@ if ( typeof module != 'undefined' && module.exports ) {
             /**
             * Removes scrollOverflow for sections using the class `fp-auto-height-responsive`
             */
-            function removeResponsiveScrollOverflows(){
+            function removeScrollBar(element){
                 var scrollOverflowHandler = self.options.scrollOverflowHandler;
-                forEachSectionAndSlide(function(element){
-                    if(fp_utils.hasClass( fp_utils.closest(element, SECTION_SEL), AUTO_HEIGHT_RESPONSIVE)){
-                        scrollOverflowHandler.remove(element);
-                    }
-                });
+                if(fp_utils.hasClass( fp_utils.closest(element, SECTION_SEL), AUTO_HEIGHT_RESPONSIVE)){
+                    scrollOverflowHandler.remove(element);
+                }
             }
 
             //public functions
@@ -2355,6 +2357,7 @@ if ( typeof module != 'undefined' && module.exports ) {
             refreshId: null,
             iScrollInstances: [],
             lastScrollY: null,
+            hasBeenInit: false,
 
             // Default options for iScroll.js used when using scrollOverflow
             iscrollOptions: {
@@ -2374,6 +2377,8 @@ if ( typeof module != 'undefined' && module.exports ) {
 
                 //fixing bug in iScroll with links: https://github.com/cubiq/iscroll/issues/783
                 iscrollHandler.iscrollOptions.click = isTouch; // see #2035
+
+                iscrollHandler.hasBeenInit = true;
 
                 //extending iScroll options with the user custom ones
                 iscrollHandler.iscrollOptions = fp_utils.deepExtend(iscrollHandler.iscrollOptions, options.scrollOverflowOptions);
@@ -2395,6 +2400,19 @@ if ( typeof module != 'undefined' && module.exports ) {
                         }
                     }
                 });
+            },
+
+            // Enables or disables the whole iScroll feature based on the given parameter.
+            setIscroll: function(target, enable){
+                if(!iscrollHandler.hasBeenInit || !target){
+                    return;
+                }
+                var scrollable = fp_utils.closest(target, SCROLLABLE_SEL) || ($(SCROLLABLE_SEL, target) && $(SCROLLABLE_SEL, target)[0]);
+                var action = enable ? 'enable' : 'disable';
+                
+                if(scrollable){
+                    scrollable.fp_iscrollInstance[action]();
+                }
             },
 
             /**
@@ -2469,7 +2487,15 @@ if ( typeof module != 'undefined' && module.exports ) {
                 if (type === 'top'){
                     return scroller.y >= 0 && !fp_utils.getScrollTop(scrollable);
                 } else if (type === 'bottom') {
-                    return (0 - scroller.y) + fp_utils.getScrollTop(scrollable) + scrollable.offsetHeight >= scrollable.scrollHeight;
+
+                    // Checking the same position twice? We are at the very bottom (at least on Desktop)
+                    var isDoubleChecking = iscrollHandler.lastScrollY === scroller.y;
+                    iscrollHandler.lastScrollY = scroller.y;
+    
+                    // An offset of 1px is required for IE / Edge to work
+                    var offset = isDoubleChecking ? 1 : 0;
+                    
+                    return offset + (0 - scroller.y) + fp_utils.getScrollTop(scrollable) + scrollable.offsetHeight >= scrollable.scrollHeight;
                 }
             },
 

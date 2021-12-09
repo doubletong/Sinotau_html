@@ -5,16 +5,19 @@
     padding: .2rem 1.5rem;
     transition: all .3s;
     @include mq(md) {
-        padding: .4rem 2rem;
+        padding: .3rem 1.5rem;
     }
     @include mq(lg) {
-        padding: .5rem 2rem;
+        padding: .4rem 2rem;
+        font-size: rem(14);
     }
     @include mq(xl) {
         padding: .55rem 2.5rem;
+        font-size: rem(16);
     }
     @include mq(xxl) {
-        padding: .6rem 3rem;   
+        padding: .725rem 3rem;   
+        font-size: rem(16);
     }
     &:hover {
         background-color: #fff;
@@ -38,6 +41,14 @@
             color: #fff;
         }
     }
+    &.btn-white-outline {
+        color: #fff;
+        border: #fff 1px solid;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
     &.btn-yellow {
         background-color: $color-secondary;
         color: #fff;
@@ -46,12 +57,36 @@
             color: #fff;
         }
     }
+    &.btn-white {
+        background-color: #fff;
+        color: #333;
+        &:hover {
+            background-color: #fff;
+            color: $color-primary;
+        }
+    }
+    &.btn-white-outline {
+        border-color: #fff;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: $color-primary;
+        }
+    }
+    &.btn-gray {
+        background-color: #afafaf;
+        color: #fff;
+        &:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    }
     &.btn-primary {
         color: #fff;
-        background-color: $color-primary;
+        background: linear-gradient(90deg, #2b56a6 0%, #689af5 100%);
         &:hover {
             color: #fff;
-            background-color: darken($color-primary, 10%);
+            transform: translateY(-2px);
         }
     }
     &.btn-primary-outline {
@@ -143,33 +178,27 @@ a.more-span{
 
 }
 
-.form-group{
-    border-bottom: 1px #ddd solid ;
+.form-group{  
     margin-bottom: 1rem;
     position: relative;
-    padding-left: 60px;
-    // @include mq(xl){
-    //     margin-bottom: 1.5rem;
-    // }
-    // @include mq(xxl){
-    //     margin-bottom: 2rem;
-    // }
-    .form-label{
-        display: block;
+    padding-left: 5rem;
+    .form-label{      
         margin-bottom: .3rem;
+        display: block;
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 10;        
+        z-index: 10;      
+        line-height: 30px;  
     }
     .form-control{
-        width: 100%; 
-        border: none;      
-        background-color: transparent; 
+        width: 100%;  
         outline: none;
-        @include mq(xxl){
-            font-size: rem(18);
-        }
-        
+        height: 30px;
+        border-radius: 15px;
+        background: #f2f2f2;
+        border: none;
+        padding-left: .6rem;
+        padding-right: .6rem;
     }
 }

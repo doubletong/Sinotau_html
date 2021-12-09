@@ -1,10 +1,11 @@
 doctype html
-html.no-js(lang='')
+- var bodyClass = ['tzg-body'];
+html.no-js(lang='zh-CN')
   head
     meta(charset='utf-8')
     title 
        block title 
-       | - CloudPik
+       | - ECADI
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(rel='manifest', href='site.webmanifest')
@@ -20,16 +21,14 @@ html.no-js(lang='')
     script.
         new WOW().init();
 
-   
-  body
+
+  body(class='' + bodyClass)
     include header.pug   
 
     block content
         
     include footer.pug
     
-    
-    script(src='js/vendor/modernizr-3.8.0.min.js')
     script(src='js/vendor/jquery-3.4.1.min.js')
     script(src='js/app.js')
 

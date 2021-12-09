@@ -1,467 +1,74 @@
 
 
 .page-service {
+    
+    @include mq(lg){
+        background: url('../img/1x/service_bg_1-80.jpg') no-repeat center top;
+        background-size:cover ;
+    }
+    .container{
+        @include mq(xl){
+            max-width: 1010px;
+        }
+    }
     .s1{
+
         .item{
-            position: relative;
-            height: 100%;
-                border-radius: 5px;
-                background-color: rgb(255, 255, 255);
-                box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
-               text-align: center;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            @include mq(xxxl){
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-            .icon{
-                margin-bottom: 1rem;
-                @include mq(xxl){
-                    margin-bottom: 2rem;
-                }
-             
-            }
-            h3{
-                display: inline-block;
-                margin-bottom: 1rem;
-                position: relative;
-                max-width: 106px;
-                margin: 0 auto 1.5rem;
-                z-index: 100;
-                color:$color-secondary;
-                &::after{       
-                    content: " ";          
-                    display: block;
-                        border-radius: 50%;
-                        background-color: rgb(233, 79, 32);
-                        position: absolute;
-                        left: -0.4rem;
-                        top: -5px;
-                        width: 30px;
-                        height: 30px;
-                        z-index: -1;
-                    
-                      
-                }
-            }
-              
-        }
-    }
-    .s2{
-        position: relative;
-        .bg{
-            display: block;
-            margin: 0 0 0 auto;
-            width: 50%;
-        }
-        .txt-container{
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            width: 56.25%;          
-            border-radius: 6px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);      
-            padding-left: 50vw;
-            background: #fff url(../img/logo_bg_4.png) no-repeat right -4.8rem bottom -7.6rem;  
-            
-            .txt{
-                min-width: 580px;
-                margin-left: -826px;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-              
-        }
-       
-    }
-    .s3{
-        .title-section{
-            &::after{
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-
-
-        .shouqian {
+            border:1px #eee solid;
             padding: 1rem;
-            border-radius: 6px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);           
-            @include mq(lg){
-                padding: 2rem;
-            }   
+            margin-bottom: 1rem;
             @include mq(xl){
-                padding: 3rem;                
-            }    
-            .pic{
-                display: block;              
-                border-radius: 6px;                   
-                box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
-                  
-            } 
-            .txt{
-                .title-section{
-                    &::after{
-                        left: 0;
-                        transform: translateX(0);
-                    }
-                }
-                .des{
-                    @include mq(xxl){
-                        font-size: rem(18);
-                    }
-                }
+                margin-bottom: 2rem;
+                padding: 1.5rem 2rem;
             }
-        }
-        .shouzhong{
            
-            border-radius: 6px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
-            overflow: hidden;
-       
-            .txt{
-                padding: 1rem;
-                @include mq(lg){
-                    padding: 2rem;
-                }
-                @include mq(xl){
-                    padding: 3rem;
-                }
-                .title-section{
-                    h3{
-                        color:$color-secondary;
-                    }
-                    &::after{
-                        left: 0;
-                        transform: translateX(0);
-                    }
-                }
-            }
-           .des{
-            @include mq(xxl){
-                font-size: rem(18);
-            }
-            
-           }
-           .c1{
-        
-                border-radius: 6px;
-                background-color: rgb(244, 167, 143);
-                box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
-                padding: 1rem;
-                @include mq(lg){
-                    padding: 2rem;
-                }
-                @include mq(xl){
-                    padding: 3rem;
-                }
-                h3{
-                    font-weight: normal;
-                    margin-bottom: 1rem;
-                    position: relative;
-                    z-index: 10;
-                    color:$color-secondary;
-                    @include mq(xl){
-                        margin-bottom: 2rem;
-                    }
-                    &::after{
-                        display: block;
-                        content: " ";
-                        z-index: -1;                     
-                        border-radius: 50%;
-                        background-color: rgb(233, 79, 32);              
-                        width: 29px;
-                        height: 29px;
-                        position:absolute;
-                        left: -0.4em;
-                        top: 0.7rem;               
-                          
-                    }
-                }
-                .list{
-                    color: #fff;
-                    padding-left: 1.3rem;
-                    li{
-                        @include mq(xxl){
-                            font-size: rem(18);
-                        }
-                    }
-                }
-           }
-        }
-    }
-}
-
-
-.page-faq{
-    position: relative;
-    .bg{
-        width: 35.6%;
-        height: 1150px;
-        object-fit: cover;
-        object-position: center center;
-    }
-    .c{
-        position: absolute;
-        top:47%;
-        right: 0;
-        z-index: 100;
-        width: 68.75%;
-        transform: translateY(-50%);      
-        border-radius: 6px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1); 
-        padding:  5rem;
-       
-        .questions {
-            max-width: 992px;
-            margin: 0 auto;
-        }
-        .ul-list {           
-            @include reset-list();
-            li{
-                border:1px #d7d7d7 solid;
-                margin-bottom: rem(10);
-                a{
-                    display: block;
-                    padding: 1rem 2rem;
-                    position: relative;
-                    span{
-                        display: block;
-                        border-radius: 50%;
-                        background-color: #fff;                      
-                        width: 17px;
-                        height: 17px;
-                        line-height: 12px;
-                        text-align: center; 
-                        transition: all .3s;
-                        position: absolute;
-                        right: 2rem;
-                        top:50%;
-                        transform: translateY(-50%);
-                        .iconfont{
-                            font-size: rem(12);
-                        }
-                    }
-                    &:hover{                      
-                        span{
-                            background-color: $color-primary;
-                            color:#fff;
-                        }
-                    }
-                }
-                @include mq(xxl){
-                    font-size: rem(18);
-                }
-            }
-        }
-    }
-}
-
-
-.page-network{
-    .s1{
-        .title-section{
-            &::after{
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        .des{
-            @include mq(xxl){
-                font-size: rem(18);
-            }
-        }
-    }
-    .s2{
-        .title-section{
-            &::after{
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        .des{
-            @include mq(xxl){
-                font-size: rem(18);
-            }
-        }
-        
-    }
-}
-
-.page-contact{
-    position: relative;
-    .s1{
-        position: relative;
-        z-index: 100;
-        &::after{
-            content: " ";
-            display: block;
-            width: 60%;
-            height: 100%;
-            right: 0;
-            top: 0;
-            position: absolute;
-            background-color: $color-primary;
-            z-index: -1;
-            border-radius: 3px;
-        }
-        .contact{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            width: 45%;
-            z-index: 500;          
-            border-radius: 6px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);     
-            .txt-container{
-                margin-left: 50vw;
-                @include mq(lg){
-                    width: 380px;
-                    transform: translateX(-475px);
-                }
-                @include mq(xl){
-                    width: 565px;
-                    transform: translateX(-565px);
-                }
-                @include mq(xxl){
-                    width: 655px;
-                    transform: translateX(-655px);
-                }
-                @include mq(xxxl){
-                    width: 800px;
-                    transform: translateX(-800px);
-                }
-            }
-        }
-        .phone{
-            position: relative;
-            z-index: 300;
-            &::after{
-                content: " ";
-                display: block;
-                    border-radius: 50%;
-                    background-color: rgb(233, 79, 32);
-                    position: absolute;
-                    left: -0.7rem;
-                    top: -0.4rem;
-                    width: 40px;
-                    height: 40px;
-                    z-index: -1;
-                
-                  
-            }
-        }
-        .form_main {
-            width: 50%;
-            margin: 0 0 0 auto;
-            .title{
-                position: relative;
-                z-index: 50;
-                margin-bottom: 1rem;
-                @include mq(lg){
-                    margin-bottom: 2rem;
-                }
-                @include mq(xl){
-                    margin-bottom: 3rem;
-                }
-                &::after{
-                    left: -0.8rem;
-                    top:-0.3rem;
-                    position: absolute;
-                    z-index: -1;
-                    content: " ";
-                    display: block;       
-                    border-radius: 50%;
-                    background-color: rgb(255, 255, 255);                    
-                    width: 40px;
-                    height: 40px;
-         
-                }
-            }
-            .form-message{
-       
-                @include mq(lg){                   
-                    max-width: 380px;
-                }
-                @include mq(xl){
-                   
-                    max-width: 565px;
-                }
-                @include mq(xxl){
-                  
-                    max-width: 655px;
-                }
-                @include mq(xxxl){
-                    max-width: 800px;
-                }
-            }
-            .btn-send{
+            .icon{
+                border-right: 1px #eee solid;
+                padding-right: 2rem;
+                line-height: 1;
                 .iconfont{
-                    padding-right: .3rem;
-                    font-size: rem(18);
+                    font-size: 2rem;
                     @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(22);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(24);
-                    }
-                    @include mq(xxxl){
-                        font-size: rem(26);
+                        font-size: 3rem;
                     }
                 }
             }
-        }
-    }
-    .s3{
-        position: relative;
-        .address {
-          
-            border-radius: 6px;
-            background-color: $color-secondary;
-            box-shadow: 0px 5px 14.25px 0.75px rgba(84, 87, 90, 0.1);
-            position: absolute;
-            left: 50%;
-            top: 2rem;
-            width: 629px;
-            height: 96px;
-            z-index: 355;
-            transform: translateX(-50%);
-            text-align: center;
-            padding: 2rem;
-            h3{
-                color:#fff;
-                display: inline-block;
-                position: relative;
-                &::after{
-                    left: -0.8rem;
-                    top:-0.3rem;
-                    position: absolute;
-                    z-index: -1;
-                    content: " ";
-                    display: block;       
-                    border-radius: 50%;
-                    background-color:$color-primary;                    
-                    width: 40px;
-                    height: 40px;
-         
+            .title{
+                color: #0F3F95;
+                span{
+                    font-size: rem(14);
+                    margin-left: 1rem;
+                    color: #666;
+                    @include mq(lg){
+                        margin-left: 2rem;
+                    }
                 }
             }
-              
+            .down{
+                .iconfont{
+                    font-size: 1rem;
+                    @include mq(lg){
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            &:hover{
+                background-color: $color-primary;
+                color: #fff;
+                .title{
+                    color: #fff;
+                    span{
+                      
+                        color: #fff;
+                    }
+                }
+                .down{
+                    color: #fff;
+                }
+            }
         }
-        .map-gaode{
-            height: 715px;
-        }
+        
     }
+    
     
 }

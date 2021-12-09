@@ -10,11 +10,11 @@
         a {
             display: block;
             line-height: 1;          
-            color: #fff;
+            color: #ccc;
             margin: 0 .1rem;
          
             border-radius: 50%;
-            background-color: rgb(233, 79, 32);
+            background-color: #fff;
             text-align: center;
         
             width: 38px;
@@ -26,21 +26,22 @@
         }
         &.active {
             a {
-                color: #999;
-                background-color: #fff;
-                border:1px #ddd solid;
+                color: #333;
+          
             }
         }
         &:hover {
             a {
-                background-color: $color-secondary;
+                background-color: $color-primary;
                 color:#fff;
             }
         }
-        // .prev,
-        // .next {       
-        //     text-align: center;          
-        // }
+        .prev,
+        .next {       
+            text-align: center;  
+            border:1px #eee solid;     
+            line-height: 36px;
+        }
     }
 }
 

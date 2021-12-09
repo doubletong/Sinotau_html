@@ -1,16 +1,56 @@
 .page-cases {
+    .title-section{
+        h2{
+            color: $color-primary;
+            padding: 1rem;
+            text-align: center;
+            background-image: url('../img/SVG/title_bg.svg');
+            background-position: center center;
+            background-size: auto 50px;
+            background-repeat: no-repeat;
+            @include mq(lg){
+                text-align: left;
+                background-position: left center;
+            }
+        }
+        @include mq(lg){
+            display: none;
+        }
+    }
     .swiper {
         width: 100%;
         position: relative;     
-        padding-bottom: 7rem;  
-        padding-top: 7rem; 
+        padding-bottom:5rem; 
+        @include mq(md){
+            padding-bottom: 6rem;            
+        }
+        @include mq(lg){
+            padding-bottom: 4rem;  
+            padding-top: 4rem; 
+        }
+        @include mq(xl){
+            padding-bottom: 5rem;  
+            padding-top: 5rem; 
+        }
+        @include mq(xxl){
+            padding-bottom: 6rem;  
+            padding-top: 6rem; 
+        }
+        @include mq(xxxl){
+            padding-bottom: 7rem;  
+            padding-top: 7rem; 
+        }
+    
       }
 
     .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 400px;
+    width: 100%;
     // height: 535px;
+    @include mq(md){
+        width: 500px;
+    }
     @include mq(lg){
         width: 500px;
     }
@@ -50,6 +90,10 @@
         max-width: 72px;
         transform: translateY(-50%);
         z-index: 3000;
+        display: none;
+        @include mq(lg){
+            display: block;
+        }
         @include mq(xl){
             left: 20%;
         }
