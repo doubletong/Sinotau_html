@@ -1,0 +1,106 @@
+extends includes/layout.pug
+
+block title
+    | 投资者互动
+    - var currentUrl = 'investors.html'
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-investors
+        img.bg(src="img/banners/investors.jpg", alt="投资者互动")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 投资者互动
+
+    .page.page-investors-s11.container.pt-media-6.pb-media-6
+        .title-section.text-center 
+            h2.text28 投资者会议预告
+
+        .table-container
+            table.table.meetings
+                thead 
+                    tr 
+                        th 时间
+                        th 事项
+                        th 地点
+                tbody 
+                    tr 
+                        td 2022-05-24
+                        td 路演中2022上市公司路演大会
+                        td 线上会议
+
+                    tr 
+                        td 2022-05-25
+                        td 兴业证券医药复苏专题
+                        td 线上会议
+
+                    tr 
+                        td 2022-05-30
+                        td 中金医药健康产业论坛
+                        td 线上会议
+
+        small.note 本集团已注册并计划出席的会议
+
+
+
+               
+
+    .page.page-investors-s12.container
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 投资者问答
+        
+        #faqs.faqs 
+            .item
+                .title 康哲药业控股有限公司什么时候成立？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司什么时候上市？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司的主要业务是什么？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司员工数量有多少？推广人员多少人？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司的年度财报截点是什么时候？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司的业绩公告公布在什么时间？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 康哲药业控股有限公司核数师是哪家？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+            .item 
+                .title 如何查阅康哲药业控股有限公司的业绩公告、财务报告及其他公告？
+                .des 1995年康哲药业控股有限公司全资子公司深圳市康哲药业有限公司在深圳成立。
+
+
+    .page.page-investors-s13.pt-media-9.pb-media-6   
+        .container.text-center
+            h2.title.text28.mb-media-4 如您有任何问题，请联系投资者关系部
+        
+            p 
+                a.btn.btn-primary-outline.btn-radius(href="contact.html") 联系我们 &gt;&gt;
+
+
+
+
+block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        $('#faqs .item').click(function(e){
+            $(this).toggleClass('open');
+            $(this).find('.des').slideToggle();
+        })
+
+        
+
+     
+
+      
+       
+
+     

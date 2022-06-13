@@ -3,271 +3,210 @@ extends includes/layout.pug
 
 block title
     | 首页
-    - var bodyClass = ['tzg-body home-body'];
+    //- - var bodyClass = ['tzg-body home-body'];
     - var currentUrl = 'index.html'
 block bkheader    
-    link(href='js/vendor/fullpage/fullpage.min.css', rel='stylesheet')
+
     link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
-    script(src='js/vendor/fullpage/fullpage.min.js')
-    script(src='js/vendor/fullpage/fullpage.extensions.min.js')
     script(src='js/vendor/swiper/swiper-bundle.min.js')
 block content  
-    #fullpage.page.page-home
+    .page.page-home
         section.s1.section
-            .swiper.mySwiper01
+            .swiper.mySwiper01                
                 .swiper-wrapper
-                    .swiper-slide(style='background-image:url(img/home-bg-s1.jpg)') 
+                    .swiper-slide
+                        img.bg(src="img/banners/slider_1.jpg", alt="")
                         .txt-container
-                            .txt 
-                                h2.text66 共<span>享</span> 共<span>建</span> 共<span>未来</span>
-                                p.text30 热烈庆祝电源管理技术创新联盟成立！
-                                a(class="btn btn-primary btn-radius", href="projects.html") 了解更多 
+                            .container
+                                .txt 
+                                    h2.text60 行动带来改变
+                                    h3.text30 Positive change through action
+                                    p.text24 “我们以实际行动推进积极改变保护地球环境与自然生态”
+                                    a.more.text28(class="btn btn-white", href="#") 订阅我们获取最新消息
+                                       
+
+                    .swiper-slide
+                        img.bg(src="img/banners/slider_1.jpg", alt="")
+                        .txt-container
+                            .container
+                                .txt 
+                                    h2.text60 行动带来改变
+                                    h3.text30 Positive change through action
+                                    p.text24 “我们以实际行动推进积极改变保护地球环境与自然生态”
+                                    a.more.text28(class="btn btn-white", href="#") 订阅我们获取最新消息
                                         
-                    .swiper-slide(style='background-image:url(img/home-bg-s1-slide2.jpg)')  
+                                        
+                    .swiper-slide
+                        img.bg(src="img/banners/slider_1.jpg", alt="")
                         .txt-container
-                            .txt.txt2 
-                                h2.text66 电源管理技术创新<span>联盟</span> （PMIC)
-                                p.text22 浙江大学杭州国际科创中心电源联盟技术创新联盟（简称PMIC）的目标是在电源管理技术领域开展具有系统性、前瞻性的产学研联合研究，开发未来信息电源系统、新能源车电源系统的核心技术，助推我国电力电子产业的转型和升级同时培养创新型研究和工程技术人才。
-                                a(class="btn btn-primary btn-radius", href="projects.html") 了解更多 
+                            .container
+                                .txt 
+                                    h2.text60 行动带来改变
+                                    h3.text30 Positive change through action
+                                    p.text24 “我们以实际行动推进积极改变保护地球环境与自然生态”
+                                    a.more.text28(class="btn btn-white", href="#") 订阅我们获取最新消息
+                                       
                     
+                .swiper-next
+                    i.iconfont.icon-next
+                .swiper-prev
+                    i.iconfont.icon-prev
                 .swiper-pagination         
    
-            
+            img.overly(src="img/slider-overly.svg", alt="遮层")
 
-        section.s2.section
-            .swiper.mySwiper02
-                .swiper-wrapper
-                    .swiper-slide
-                        img.bg(src="img/home-s2-bg-1.jpg", alt="联合研究")
-                        .txt-container
-                            .txt 
-                                .pic 
-                                    img(src="img/home-icon-01.svg", alt="联合研究")
-                                h2.text30 联合研究
-                                p.name.text20 joint research
-                                p.des.text20 在电源管理技术领域开展具有系统性/前瞻性的产学研联合研究，以及开展颠覆性的技术创新
+        section.s2.section.container.pt-media-6.pb-media-6
+            .title-section 
+                h2.text50 我们持续关注本土及全球环境议题
+                p.text26 以不同项目推动实际改变
+
+            .row.g-xxl-5
+                .col-md-6.col-lg-4
+                    .item
+                        .pic 
+                            img(src="img/home_1.jpg" srcset="img/home_1@2x.jpg 2x, img/home_1.jpg 1x" , alt="气候与能源")
                                         
-                    .swiper-slide
-                        img.bg(src="img/home-s2-bg-2.jpg", alt="技术创新")
-                        .txt-container
-                            .txt 
-                                .pic 
-                                    img(src="img/home-icon-02.svg", alt="技术创新")
-                                h2.text30 技术创新
-                                p.name.text20 technological innovation
-                                p.des.text20 开发未来信息电源系统和新能源车电源系统的核心技术
-
-                    .swiper-slide
-                        img.bg(src="img/home-s2-bg-3.jpg", alt="转型升级")
-                        .txt-container
-                            .txt 
-                                .pic 
-                                    img(src="img/home-icon-03.svg", alt="转型升级")
-                                h2.text30 转型升级
-                                p.name.text20 Reforming promotion
-                                p.des.text20 助推我国电力电子产业的转型和升级
-                    .swiper-slide
-                        img.bg(src="img/home-s2-bg-4.jpg", alt="培养人才")
-                        .txt-container
-                            .txt 
-                                .pic 
-                                    img(src="img/home-icon-04.svg", alt="培养人才")
-                                h2.text30 培养人才
-                                p.name.text20 produce e talents
-                                p.des.text20 培养创新型研究和工程技术人才
-                    
-                .swiper-pagination         
-                    
-
-        section.s3.section(style="background-image:url(img/home-bg-s3.jpg)")
-            
-            .container
-                .row.mb-media-3 
-                    .col-6.col-md-3
-                        .item 
-                            .pic 
-                                img(src="img/home-icon-05.svg", alt="")
-                            .num 
-                                strong.qu 3
-                                span 位
-                    .col-6.col-md-3
-                        .item 
-                            .pic 
-                                img(src="img/home-icon-06.svg", alt="")
-                            .num 
-                                strong.qu 6
-                                span 名
-
-                    .col-6.col-md-3
-                        .item 
-                            .pic 
-                                img(src="img/home-icon-07.svg", alt="")
-                            .num 
-                                strong.qu 30
-                                span +
-                    .col-6.col-md-3
-                        .item 
-                            .pic 
-                                img(src="img/home-icon-08.svg", alt="")
-                            .num 
-                                strong.qu 10
-                                span +
-
-                .txt 
-                    h2.text36 电源管理技术创新联盟（PMIC)
-                    p 电源管理技术创新联盟（PMIC)是由浙江大学杭州国际科创中心与行业相关企事业单位自愿结成的跨行业、开放性的技术创新机构，旨在电源管理技术领域开展具有系统性、前瞻性的产学研联合研究与技术创新，开发未来信息电源系统、新能源车电源系统等核心技术，不断吸纳致力于电源管理新技术和新产品研发的国内外相关单位加盟创新联盟，为电力电子产业培养创新型研究和工程人才。平台上的各个产品根据市场的需求、规范要求的改变和各个公司技术的提升，不定期更新产品，改变现有设计的模式，让设计人员从基本的重复无效工作中得到释放。
-                    p 联盟现有研究团队情况：联盟由三位学术带头人领衔，目前拥有6名工程师和30余位研究生（其中8名博士研究生）， 2021年度同步开展的研究课题数有10至12项。
-               
-
-        section.s4.section 
-            .swiper.mySwiper03 
-                .swiper-wrapper
-                    .swiper-slide
-                        a.item(href="news-detail.html")
-                            img.bg(src="img/temp/n-1.jpg", alt="热烈庆祝电源管理技术创新联盟成立！")                           
-                            .txt 
-                                h2.text26 热烈庆祝电源管理技术创新联盟成立！
-                                .date.text20 2021.12.18
-                                p.text20.des 电源管理技术创新联盟2021年第三次会议将于2021年12月18日在 杭州博地中心丽筠酒店召开。
-                                .text-right 
-                                    span.btn.btn-white-outline.btn-radius 查看详情
-                        
-                                        
-                    .swiper-slide
-                        a.item(href="news-detail.html")
-                            img.bg(src="img/temp/n-2.jpg", alt="热烈庆祝电源管理技术创新联盟成立！")                           
-                            .txt 
-                                h2.text26 从新能源、智能电网到数据中心！浙大杭州科创中心这场盛会，赋能电源管理技术新未来！
-                                .date.text20 2020.04.20
-                                p.text20.des 想要手机运行越来越高效吗？想要新能源汽车续航能力不断提升吗？一个前所未有的时代正在到来“能量+信息”将成为人类社会发展势不可挡的力量和能源革命同步兴起的是超级电气化而这背后也对电源管理技术提出了新挑战！
-                                .text-right 
-                                    span.btn.btn-white-outline.btn-radius 查看详情
-
-                    .swiper-slide
-                        a.item(href="news-detail.html")
-                            img.bg(src="img/temp/n-3.jpg", alt="热烈庆祝电源管理技术创新联盟成立！")                           
-                            .txt 
-                                h2.text26 浙江大学杭州国际科创中心电源联盟技术创新联盟介绍
-                                .date.text20 2020.04.18
-                                p.text20.des 浙江大学杭州国际科创中心电源联盟技术创新联（简称PMIC），位于浙江省杭州市萧山区建设三路733号，联盟成立于2021年4月18日。PMIC是在自愿、平等、互利、合作的基础上，本着“互惠互利、优势互补、协同创新、共同发展、合作共赢”的宗旨...
-                                .text-right 
-                                    span.btn.btn-white-outline.btn-radius 查看详情
-                .swiper-pagination
-            
-
-        section.s5.section(style="background-image:url(img/home-bg-s5.jpg)")
-            .container
-                .swiper.mySwiper04 
-                    .swiper-wrapper
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/001.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/002.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/003.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/004.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/005.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/006.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/007.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/008.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/009.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/010.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/001.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/011.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/012.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/013.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/014.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/015.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/016.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/017.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/018.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/019.png", alt="001") 
-
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/021.png", alt="001") 
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/022.png", alt="001") 
-                                            
-                        .swiper-slide
-                            .item
-                                img.bg(src="img/partners/023.png", alt="001") 
-
-                    
-                    .swiper-pagination
-
-        section.s6.section(style="background-image:url(img/home-bg-s6.jpg)")
-            .container
-                .row.align-items-center 
-                    .col-lg-7
                         .txt 
-                            h2.text46 基础引领  开放众筹
-                            p.des.text20 Foundation leads open crowdfunding
-                    .col-lg-5
-                        .contact 
-                            .txt
-                                h3.title.text36 联系我们 CONTACT US
-                                ul 
-                                    li 联系人：张兰
-                                    li 联系电话：13750831250
-                                    li 邮箱：2.l211401@zju.edu.cn
-                                    li 地址：浙江省杭州市萧山区建设三路733号
+                            h3.title.text30 气候与能源
+                            p 气候变化是人类有史以来面临的最大的环境威胁和挑战。中国承受着气候变化带来的严重影响，同时也已经成为全球最大的温室气体排放国，每年消费全球一半的煤炭。绿色和平气候与能源项目在中国的工作主要是推动中国摆脱对煤炭的过度依赖、倡导可再生能源革命，以助力中国在全球的应对气候变化和低碳发展进程中发挥更重要的作用。
+
+                .col-md-6.col-lg-4
+                    .item
+                        .pic 
+                            img(src="img/home_2.jpg" srcset="img/home_2@2x.jpg 2x, img/home_2.jpg 1x" , alt="保护生物多样性")
+                                        
+                        .txt 
+                            h3.title.text30 保护生物多样性
+                            p 绿色和平致力于保存、守护与修复地球上最宝贵的生态系统。万物繁茂的森林，生机勃勃的海洋，是生物多样性的依存所在、更能帮助人类对抗气候危机，对世界的福祉至关重要。绿色和平的森林与海洋保护项目在中国的工作主要是帮助推进关键生态系统的保护、修复与可持续管理，助力中国陆地与海洋生物多样性下降的趋势得到遏制并逐渐恢复，并助力中国为全球生物多样性保护做出切实贡献。我们尝试讲述一个人与自然和谐共存的故事，让更多的人珍视地球的蓬勃生命力，并能从中受益。
+
+                .col-md-6.col-lg-4
+                    .item
+                        .pic 
+                            img(src="img/home_3.jpg" srcset="img/home_3@2x.jpg 2x, img/home_3.jpg 1x" , alt="可持续生活")
+                                        
+                        .txt 
+                            h3.title.text30 可持续生活
+                            p 人类的福祉与环境和自然的健康密不可分。绿色和平想要探寻，如何在尊重自然资源与生态阈值的限度之内，实现可持续生产、有度消费、重新定义美好生活。我们通过原创的影像记录、科学的调研报告、面对面的公众倡导，与大家共同构建一个更绿色、更公平、更和平的未来。在中国，绿色和平开展一系列项目，一方面抗击污染行为、推动环境治理、保护公众的健康；一方面倡导可持续消费、减少浪费、提升城市废弃物管理。探索公众发挥点滴力量、参与生态文明建设的路径。
+
+        section.s3.section.pb-media-6.container.mb-media-7    
+            .title-section 
+                h2.text50 我们的行动正在发生
+                p.text26 了解绿色和平最新项目成果及故事        
+           
+            .news-list.mb-media-3
+                .row.g-4.g-lg-5.g-xxl-6
+                    .col-md-6
+                        a.item(href="news-detail.html" title="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比") 
+                            .pic 
+                                img(src="img/temp/n01.jpg", alt="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比")
+                            .txt 
+                                .dt
+                                    .date.text50 18
+                                    .month 2022.01
+                                h3.text24 最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比
+                                p 2022年1月18日，北京——国际环保机构绿色和平与中华环保联合会今日共同发布报告《转型与挑战——零排放汽车转型如何助力中国汽车领域碳达峰和碳减排》（下称报告）...
                                 
-                                a.btn.btn-white-outline.btn-radius(href="contact.html") 联系我们
+                                .tags 
+                                    span #气候与能源
+                                    span #新闻
+                    .col-md-6
+                        a.item.ood(href="news-detail.html" title="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比") 
+                            .pic 
+                                img(src="img/temp/n02.jpg", alt="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比")
+                            .txt 
+                                .dt
+                                    .date.text50 18
+                                    .month 2022.01
+                                h3.text24 最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比
+                                p 2022年1月18日，北京——国际环保机构绿色和平与中华环保联合会今日共同发布报告《转型与挑战——零排放汽车转型如何助力中国汽车领域碳达峰和碳减排》（下称报告）...
+                                
+                                .tags 
+                                    span #气候与能源
+                                    span #新闻
+
+                    .col-md-6
+                        a.item(href="news-detail.html" title="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比") 
+                            .pic 
+                                img(src="img/temp/n01.jpg", alt="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比")
+                            .txt 
+                                .dt
+                                    .date.text50 18
+                                    .month 2022.01
+                                h3.text24 最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比
+                                p 2022年1月18日，北京——国际环保机构绿色和平与中华环保联合会今日共同发布报告《转型与挑战——零排放汽车转型如何助力中国汽车领域碳达峰和碳减排》（下称报告）...
+                                
+                                .tags 
+                                    span #气候与能源
+                                    span #新闻
+
+                    .col-md-6
+                        a.item.ood(href="news-detail.html" title="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比") 
+                            .pic 
+                                img(src="img/temp/n02.jpg", alt="最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比")
+                            .txt 
+                                .dt
+                                    .date.text50 18
+                                    .month 2022.01
+                                h3.text24 最新研究：汽车领域碳达峰后减排乏力，需大幅提高零排放汽车销量占比
+                                p 2022年1月18日，北京——国际环保机构绿色和平与中华环保联合会今日共同发布报告《转型与挑战——零排放汽车转型如何助力中国汽车领域碳达峰和碳减排》（下称报告）...
+                                
+                                .tags 
+                                    span #气候与能源
+                                    span #新闻
+                    
+            footer.bt.text-center 
+                a.more.text30(href="news.html") 了解更多故事
+
+
+        section.s4
+            img.overly(src="img/slider-overly.svg", alt="遮层")
+            .container
+                .c1.mb-media-4
+                    h3.text36 守护地球50载<br/>感谢有你
+                    p 绿色和平的环境保护之旅自1971年正式启航,每一个为环境带来积极改变的成就的发生都源于你的关注与支持。
+
+                .row 
+                    .col-lg-4 
+                        .sidebar
+                            
+                            .mb-media-6    
+                                ul.years 
+                                    li 1969
+                                    li.active 1970
+                                    li 1971
+
+                            h2.title.text50.mb-media-3 反核的起点
+                            p 绿色和平伴随着国际反核运动而诞生、发展。1970年代，我们通过非暴力直接行动，迫使美国放弃了阿拉斯加安其卡岛的核试验基地，迫使法国结束了在南太平洋地区的大气核试验，并最终在1996年成功推动联合国采纳了全面禁止核试验的公约。
+                
+                    .col-lg-8
+                        figure.pic.text-right 
+                            img(src="img/home_4.png", alt="守护地球50载感谢有你") 
+
+               
+                        
+                    
+
+        section.s5
+            img.overly(src="img/section-overly.svg", alt="遮层")
+            video.bg(src="img/video-bg.mp4" loop autoplay muted playsinline) 
+            .c2
+                .container
+                    .c3
+                        h2.text50.mb-media-2 我们相信公众力量
+                        p.text20.mb-media-5 汇聚多元凝聚力，环境由你来改变
+                        .row 
+                            .col 
+                                a.text28(href="#") 加入绿色和平
+                            .col
+                                a.text28.m1(href="#") 成为志愿者
+                                
+                    
+                
 
 
 
+
+        
 
             
 block bkfooter
@@ -279,20 +218,7 @@ block bkfooter
     //- //script(src='js/vendor/waypoints/lib/jquery.waypoints.min.js')
     //- //script(src='js/vendor/jquery.counterup/jquery.counterup.min.js')
     script.
-        new fullpage('#fullpage', {
-            //options here
-            verticalCentered: true,
-            //- autoScrolling:true,
-            //- scrollHorizontally: true,
-            licenseKey: "750A6298-E6DA42F7-9B37E662-7341082F",
-            anchors: ['about', 'projects', 'portfolios', 'members', 'contact', 'footer'],
-            autoScrolling:true,
-            scrollHorizontally: true,
-            slidesNavigation: true,     
-            navigation:true,   
-            navigationPosition: 'left',
-            navigationTooltips: ['首页', '目标', '关于我们', '新闻', '联盟会员', '联系我们'],
-        });
+       
         var swiper1 = new Swiper('.mySwiper01', {           
             loop:true,
             autoplay: {
@@ -303,15 +229,23 @@ block bkfooter
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
         
         });
      
         var swiper2 = new Swiper(".mySwiper02", {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
             pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+                el: ".swiper-pagination",
+                type: "progressbar",
             },
             breakpoints: {
                 640: {
@@ -325,9 +259,7 @@ block bkfooter
                 992: {
                     slidesPerView: 3,                  
                 },
-                1200: {
-                    slidesPerView: 4,                  
-                },
+              
             },
         });
 
@@ -378,4 +310,21 @@ block bkfooter
                 },               
             },
         });
+
+        $(function(){
+            $(".list .li").hover(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                current_img = $(this).attr('data-id');
+                $('#'+current_img).fadeIn().siblings().fadeOut();
+            })
+
+            $(".re-list li").hover(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                current_img = $(this).attr('data-id');
+                $('#'+current_img).fadeIn().siblings().fadeOut();
+
+            })
+
+             
+        })
   

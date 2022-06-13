@@ -2,210 +2,128 @@ extends includes/layout.pug
 
 block title
     | 关于我们
-
+    - var currentUrl = 'about.html'
 block bkheader
     link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
 
 block content
-    .banner.banner-blog.wow.fadeInUp
-        img.bg(src="img/banners/about.jpg", alt="关于奥创")
-        .txt
+    .banner.banner-about
+        img.bg(src="img/banners/about.jpg", alt="集团介绍")
+        .txt.pb-media-6
             .container            
-                h1.wow.fadeInUp.text56 关于奥创
+                h1.wow.fadeInUp.text60 集团介绍
        
 
-    .page.page-about
-        section.s1.pt-media-6.pb-media-6
-            .container 
-                .title-section 
-                    h2.text36 公司简介
-                h3.text24.mb-media-2 用于工业和科学领域的超快激光器制造商
-                p 杭州奥创光子技术有限公司成立于2018年6月，<br/>公司主要从事工业高功率飞秒激光器及其核心器件的研发、生产销售与应用。<br/>公司技术团队由中科院西安光学精密机械研究所国家重点实验室核心队伍及海归超快激光器工程化专家共同组成，<br/>是目前国内超快激光领域较为完善研发生产团队。<br/>经过多年的核心器件布局与商业化运作，已实现飞秒激光器量产。
+    
+    section.page.page-about-s1.container.pt-media-6 
+        .txt.text-center.text28 链接医药创新与商业化，把控产品全生命周期管理的开放式平台型企业，致力于提供有竞争力的产品和服务，满足中国尚未满足的医疗、健康与美的需求
+       
 
-        
-         
-        section.s2.pb-media-6
-            .container
-                .intro
-                    .row.g-0
-                        .col-lg-6
-                            h2.title.text36 愿景和使命
-                        .col-lg-6 
-                            .txt 
-                                h3.text24 超快激光领域领军企业
-                                p 作为国内领先的激光技术供应商之一，奥创为客户提供各类超快激光光源和应用解决方案，具有从器件到整机的集成能力。致力于实现超快激光器上下游产业链的垂直整合。
-                                
-           
-        section.s3.pt-media-6.pb-media-6.container              
-            .title-section                           
-                h2.text36 奥创荣誉
+    
+    section.page.page-about-s2.pt-media-6.pb-media-6
+        .container
+            .row.align-items-center 
+                .col-lg-7
+                    .left_col 
+                        .title-section.text-center
+                            h2.text60 集团介绍
+                            h3.text60 ABOUT US
 
-            .honor 
-                .row.justify-content-between 
-                    .col-lg-6 
-                        ul.list 
-                            li 2018“创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                            li “创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                            li “创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                            li 中山火炬光电信息技术创新创业大赛金奖
-                            li “创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                            li “创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                            li 中山火炬光电信息技术创新创业大赛金奖
-                            li “创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                    .col-lg-6.col-xl-5
-                        img#honor-img(src="img/about_3.jpg", alt="")
+                        p.text20 我们携手全球生物科技/制药公司，合作开发全球首创（FIC）、同类最优*（BIC）创新产品。我们负责创新产品临床开发和商业化，提升医药创新研发效率。
+                        p.text20 我们拥有把控创新产品全生命周期关键节点的管理体系及专业团队，拥有多专业科室的专家网络，拥有对市场的深刻认知及充沛的自有现金流，可洞察与挖掘未被满足的临床需求，可高效推进创新产品中国临床开发和商业化进程，赋能科研成果向诊疗实践的持续转化，惠及更多患者。
+                        p.text20 我们深耕专科领域，如心脑血管、消化、中枢神经、皮肤/医美、眼科、妇儿科等。在售产品已获得领先的市场地位。
+                        p.text20 我们利用专科领域优势资源，通过专科线分拆独立运营提升规模效率，打造小专科领域的大龙头，推动高质量、可持续的健康发展。
+                        p  
+                            small *同类最优（BIC）：拥有创新制剂、创新给药方式等以达到同类治疗效果最佳、或最安全、或最具性价比的创新产品
+                .col-lg-5.text-center
+                    .right_col
+                        .row 
+                            .col-6 
+                                .item.mb-media-4 
+                                    .value.text40 92.3亿
+                                    p.text20 销售收入*<br/>
+                                        small *若全按药品销售收入计算
 
-        
-        section.s4.pt-media-6.pb-media-6.container            
-            .title-section                        
-                h2.text36 加入奥创
+                                    
+                            .col-6 
+                                .item.mb-media-4 
+                                    .value.text40 30.3亿
+                                    p.text20 净利润
 
-            .job-list 
-                .item.active
-                    .item-header
-                        .row.align-items-center
-                            .col 
-                                .title  光学工程师
-                            .col-auto.d-none.d-md-block 
-                                ul.note 
-                                    li 工作地点：杭州    
-                                    li 招聘人数：3人
-                            .col-auto 
-                                a.open(href="#") 
-                                    i.iconfont.icon-top
-                    .item-body 
-                        h3 岗位职责
-                        ol 
-                            li 负责高功率光纤激光器的研发工作，包括高功率光纤激光器的设计、光路搭建、性能测试及优化改进等。
-                            li 负责高功率光纤激光器中光学元器件的选型、测试以及检验标准的建立等。
-                            li 负责高功率光纤激光器相关技术文件的编制工作。
-                            li 负责处理高功率光纤激光器在设计、工艺、生产、测试、试验方面的技术问题和质量问题。
-                        h3 任职要求
-                        ol 
-                            li 光学工程、光信息科学与技术、光电子、激光等相关专业本科及以上学历；
-                            li 有光纤激光器研发设计相关工作经验；
-                            li 熟悉超快光纤激光器的原理与结构；
-                            li 有使用光纤熔接机的经验优先；
-                            li 具有良好的团队协作精神，学习能力强，动手能力。
-                        
-                        p 简历投递至邮箱：zjj@ultronphotonics.com
+                            .col-6 
+                                .item.mb-media-4 
+                                    .value.text40 ~30款
+                                    p.text20 款创新产品
 
-                .item
-                    .item-header
-                        .row.align-items-center
-                            .col 
-                                .title  光学工程师
-                            .col-auto.d-none.d-md-block  
-                                ul.note 
-                                    li 工作地点：杭州    
-                                    li 招聘人数：3人
-                            .col-auto 
-                                a.open(href="#") 
-                                    i.iconfont.icon-top
-                    .item-body 
-                        h3 岗位职责
-                        ol 
-                            li 负责高功率光纤激光器的研发工作，包括高功率光纤激光器的设计、光路搭建、性能测试及优化改进等。
-                            li 负责高功率光纤激光器中光学元器件的选型、测试以及检验标准的建立等。
-                            li 负责高功率光纤激光器相关技术文件的编制工作。
-                            li 负责处理高功率光纤激光器在设计、工艺、生产、测试、试验方面的技术问题和质量问题。
-                        h3 任职要求
-                        ol 
-                            li 光学工程、光信息科学与技术、光电子、激光等相关专业本科及以上学历；
-                            li 有光纤激光器研发设计相关工作经验；
-                            li 熟悉超快光纤激光器的原理与结构；
-                            li 有使用光纤熔接机的经验优先；
-                            li 具有良好的团队协作精神，学习能力强，动手能力。
-                        
-                        p 简历投递至邮箱：zjj@ultronphotonics.com
+                            .col-6 
+                                .item.mb-media-4 
+                                    .value.text40 5,292位
+                                    p.text20 康哲集团员工
+                            .col-6 
+                                .item.mb-media-4 
+                                    small 销售网络覆盖
+                                    .value.text40 ~5万家
+                                    p.text20 款创新产品
 
-                .item
-                    .item-header
-                        .row.align-items-center
-                            .col 
-                                .title  光学工程师
-                            .col-auto.d-none.d-md-block  
-                                ul.note 
-                                    li 工作地点：杭州    
-                                    li 招聘人数：3人
-                            .col-auto 
-                                a.open(href="#") 
-                                    i.iconfont.icon-top
-                    .item-body 
-                        h3 岗位职责
-                        ol 
-                            li 负责高功率光纤激光器的研发工作，包括高功率光纤激光器的设计、光路搭建、性能测试及优化改进等。
-                            li 负责高功率光纤激光器中光学元器件的选型、测试以及检验标准的建立等。
-                            li 负责高功率光纤激光器相关技术文件的编制工作。
-                            li 负责处理高功率光纤激光器在设计、工艺、生产、测试、试验方面的技术问题和质量问题。
-                        h3 任职要求
-                        ol 
-                            li 光学工程、光信息科学与技术、光电子、激光等相关专业本科及以上学历；
-                            li 有光纤激光器研发设计相关工作经验；
-                            li 熟悉超快光纤激光器的原理与结构；
-                            li 有使用光纤熔接机的经验优先；
-                            li 具有良好的团队协作精神，学习能力强，动手能力。
-                        
-                        p 简历投递至邮箱：zjj@ultronphotonics.com
+                            .col-6 
+                                .item.mb-media-4 
+                                    small 销售网络覆盖
+                                    .value.text40 >20万家
+                                    p.text20 康哲集团员工
 
+                        p 
+                            small *相关数据均截至2021年12月31日
+                
+    section.page.page-about-s3.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6.order-lg-last 
+                    .right_col.pb-media-6 
+                        .title-section.mb-media-6 
+                            h2.text60 使命
+                            h3.text60 MISSION
 
-                .item
-                    .item-header
-                        .row.align-items-center
-                            .col 
-                                .title  销售工程师
-                            .col-auto.d-none.d-md-block  
-                                ul.note 
-                                    li 工作地点：杭州    
-                                    li 招聘人数：3人
-                            .col-auto 
-                                a.open(href="#") 
-                                    i.iconfont.icon-top
-                    .item-body 
-                        h3 岗位职责
-                        ol 
-                            li 负责高功率光纤激光器的研发工作，包括高功率光纤激光器的设计、光路搭建、性能测试及优化改进等。
-                            li 负责高功率光纤激光器中光学元器件的选型、测试以及检验标准的建立等。
-                            li 负责高功率光纤激光器相关技术文件的编制工作。
-                            li 负责处理高功率光纤激光器在设计、工艺、生产、测试、试验方面的技术问题和质量问题。
-                        h3 任职要求
-                        ol 
-                            li 光学工程、光信息科学与技术、光电子、激光等相关专业本科及以上学历；
-                            li 有光纤激光器研发设计相关工作经验；
-                            li 熟悉超快光纤激光器的原理与结构；
-                            li 有使用光纤熔接机的经验优先；
-                            li 具有良好的团队协作精神，学习能力强，动手能力。
-                        
-                        p 简历投递至邮箱：zjj@ultronphotonics.com
+                        .txt.text40 提供有竞争力的产品和服务，<br/>满足中国尚未满足的医疗、<br/>健康与美的需求
 
-                .item
-                    .item-header
-                        .row.align-items-center
-                            .col 
-                                .title  固体激光工程师
-                            .col-auto.d-none.d-md-block  
-                                ul.note 
-                                    li 工作地点：杭州    
-                                    li 招聘人数：3人
-                            .col-auto 
-                                a.open(href="#") 
-                                    i.iconfont.icon-top
-                    .item-body 
-                        h3 岗位职责
-                        ol 
-                            li 负责高功率光纤激光器的研发工作，包括高功率光纤激光器的设计、光路搭建、性能测试及优化改进等。
-                            li 负责高功率光纤激光器中光学元器件的选型、测试以及检验标准的建立等。
-                            li 负责高功率光纤激光器相关技术文件的编制工作。
-                            li 负责处理高功率光纤激光器在设计、工艺、生产、测试、试验方面的技术问题和质量问题。
-                        h3 任职要求
-                        ol 
-                            li 光学工程、光信息科学与技术、光电子、激光等相关专业本科及以上学历；
-                            li 有光纤激光器研发设计相关工作经验；
-                            li 熟悉超快光纤激光器的原理与结构；
-                            li 有使用光纤熔接机的经验优先；
-                            li 具有良好的团队协作精神，学习能力强，动手能力。
-                        
-                        p 简历投递至邮箱：zjj@ultronphotonics.com
+                .col-lg-6 
+                    .pic 
+                        img(src="img/about_5.jpg", alt="使命")
+
+    section.page.page-about-s3.page-about-s4.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6
+                    .right_col.pb-media-6 
+                        .title-section.mb-media-6 
+                            h2.text60 定位
+                            h3.text60 POSITION
+
+                        .txt.text40 链接医药创新与商业化，<br/>拥有产品全生命周期管理能力<br/>的开放型综合药企
+
+                .col-lg-6 
+                    .pic 
+                        img(src="img/about_4.jpg", alt="定位")
+
+    section.page.page-about-s3.page-about-s5.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6.order-lg-last 
+                    .right_col.pb-media-6 
+                        .title-section.mb-media-6 
+                            h2.text60 核心价值观
+                            h3.text60 CORE VALUE
+
+                        .txt.text40 为客户创造价值、为社会承担责任创新与变革以奋斗者为本坚守道德与诚信的底线用专业的能力，进取的精神，不断实现挑战与超越
+
+                .col-lg-6 
+                    .pic 
+                        img(src="img/about_6.jpg", alt="定位")
+
+            
+                   
+                       
+
+    
 
 
             

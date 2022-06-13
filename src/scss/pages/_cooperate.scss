@@ -1,0 +1,118 @@
+.page-cooperate{
+    &.page-cooperate-s1{
+        .text40{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    &.page-cooperate-s2{
+        width: 80%;
+        max-width: 1524px;
+        margin: 0 auto;
+        .view{
+            background: url(../img/icon-arrow-right.svg) no-repeat right center;
+            display: inline-block;
+            padding-right: 1.5rem;
+        }
+        .map{
+            position: relative;
+            .marker{
+                position: absolute;
+                left: 45%;
+                top: 20%;
+                z-index: 200;
+                transform: translate(-50%,-100%);
+            }
+        }
+    }
+
+    &.page-cooperate-s3{
+        .left_col{
+            height: 100%;
+            background: #FAFAFA url(../img/map.svg) no-repeat left -100px center;
+            position: relative;
+            .txt{
+                @include vertical-align();
+                padding-left: 20%;
+            }
+        }
+        .right_col {
+            .item,.item2{
+                height: 360px;
+                padding: 1rem 2rem;
+                @include mq(xxl){
+                    padding: 1rem 3rem;
+                }
+                @include mq(xxl){
+                    padding: 1rem 4rem;
+                }
+                .c1{
+                    @include vertical-align();
+                    h3{
+                        font-weight: normal;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                p{
+                    text-align: justify;
+                }
+                &.i1{
+                    background: url(../img/icon-yiyuan.svg) no-repeat center center;
+                }
+                &.i2{
+                    background: url(../img/icon-bag.svg) no-repeat center center;
+                }
+                &.i3{
+                    background: url(../img/icon-woshou.svg) no-repeat center center;
+                }
+
+            }
+            .item{
+                background-color: rgba(242,150,0,.2);
+            }
+        }
+    }
+    &.page-cooperate-s4{
+        .txt{
+            border-left: 10px #DDD1B1 solid;
+            padding-left: 4rem;
+            
+            @include mq(lg){
+                padding-right: 5rem;
+                max-width: 610px;
+                margin: 0 auto;
+                padding-bottom: 1rem;
+            }
+            .t1{
+                margin-bottom: 1rem;
+            }
+            .list{
+                .li{
+                    border-bottom: 1px #B29F6B solid;
+                    .num{
+                        color: #DDD1B1;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    &.page-cooperate-s5{
+        h2{
+            font-weight: normal;
+        }
+        .item {
+            border-left: 1px #B29F6B solid;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            min-height: 140px;
+            @include mq(xl){
+                padding-bottom: 3rem;
+                padding-top: 3rem;
+                min-height: 170px;
+            }
+        }
+    }
+}

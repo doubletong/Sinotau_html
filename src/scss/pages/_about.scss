@@ -1,161 +1,521 @@
-.page-about{
-    .s1{
-        p{
-            br{
-                display: none;
-                @include mq(lg){
-                    display: block;
+.page-about-s1{
+    .txt{
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+}
+.page-about-s2{
+    .title-section{
+        padding-bottom: 0;
+        @include mq(xl){
+            padding-bottom: 1rem;
+        }
+        h2{
+            color: $color-primary;
+            line-height: 1;
+        }
+        h3{
+            color: rgba(242,150,0, .4);
+            line-height: 1;
+        }
+    }
+    .left_col{
+        max-width: 704px;
+        margin: 0 auto;
+        border-top: 5px $color-primary solid;
+        padding-top: 2rem;
+      
+        @include mq(lg){
+            padding-top: 0;
+            padding-left: 2rem;
+            border-top:none;
+            border-left: 5px $color-primary solid;
+        }
+        @include mq(xl){
+            padding-left: 3rem;
+            border-left-width: 7px ;
+        }
+        @include mq(xxl){
+            padding-left: 4rem;
+            border-left-width: 10px ;
+        }
+    }
+    .right_col{
+        .item{
+         
+            .value{
+                color: #E6A53A;
+            }
+            p{
+                small{
+                    font-size: rem(14);
                 }
             }
         }
     }
-    .s2{
-        background: url('../img/about_1.jpg') no-repeat center top;
-        padding-top: 7rem;
-        background-size: auto 200px;
-        @include mq(lg){
-            background-size: auto auto;
-            padding-top: 10rem;
-        }
+}
 
-        .intro{
-            background: #fff url('../img/about_2.svg') no-repeat left bottom;
-            padding: 1rem;
-           
-            box-shadow: 3px 5px 5px rgba(51, 107, 173, 0.2);
-            @include mq(lg){
-                padding: 4rem 0;
-            }
+.page-about-s3{
+    .pic{
+        text-align: center;
+    }
+    .right_col{
+       
+        margin: 0 auto;
+        border-top: 5px #4F76D0 solid;
+        padding-top: 2rem;
+        @include mq(lg){
+            max-width: 614px;
+            padding-top: 0;
+            border-top: none;
+            border-right: 5px #4F76D0 solid;
+            padding-right: 2rem;
+        }
+        @include mq(xl){
+            padding-right: 3rem;
+            border-right-width: 7px ;
+        }
+        @include mq(xxl){
+            padding-right: 5rem;
+            border-right-width: 10px ;
+        }
+     
+        .title-section{
+            text-align: center;
+            padding-bottom: 0;
             @include mq(xl){
-                padding: 5rem 1rem;
+                padding-bottom: 1rem;
+            }
+            h2{
+                color: #4F76D0;
+                line-height: 1;
+            }
+            h3{
+                color: rgba(79,118,208,.4);
+                line-height: 1;
+                font-weight: lighter;
+            }
+        }
+        .txt{
+            text-align: justify;
+        }
+    }
+}
+
+.page-about-s4{
+    .right_col{
+        border-right: none;       
+        padding-right: 0;      
+
+        border-top: 5px #58BA86 solid;
+        padding-top: 2rem;
+      
+        @include mq(lg){
+            padding-top: 0;
+            padding-left: 2rem;
+            border-top:none;
+            border-left: 10px #58BA86 solid;
+        }
+        @include mq(xl){
+            padding-left: 3rem;
+        }
+        @include mq(xxl){
+            padding-left: 5rem;
+        }
+        .title-section{
+            h2{
+                color: #58BA86;
+                
+            }
+            h3{
+                color: rgba(88,186,134,.4);
+            }
+        }
+    }
+}
+
+.page-about-s5{
+    .right_col{
+        border-color: #0093E9;
+        .title-section{
+            h2{
+                color: #0093E9;
+                
+            }
+            h3{
+                color: rgba(18,147,233,.4);
+                
+            }
+        }
+    }
+}
+
+
+.page-team-s1{
+    text-align: center;
+    .title-section{
+        h2{
+            font-weight: normal;
+        }
+    }
+    .team_list {
+        .item{
+            display: block;
+            max-width: 384px;
+            margin: 0 auto 2rem;
+            @include mq(xl){
+                margin: 0 auto 3rem;
             }
             @include mq(xxl){
-                padding: 6rem 1rem;
+                margin: 0 auto 4rem;
             }
-            .title{
-                margin-bottom: 2rem;
-                @include mq(lg){
-                    text-align: center;
-                }
-            }
-            .txt{
-              
-                @include mq(lg){
-                    padding: 0 3rem;
-                    border-left: 1px #eee solid;
-                }
-               
-                h3{
-                    margin-bottom: 1rem;
-                    @include mq(lg){
-                        margin-bottom: 1.5rem;
-                    }
-                }
-                p{
-                    margin: 0;
-                }
-            }
-        }
-    }
-    .s3{
-        .list{
-            @include reset-list();
-            margin-bottom: 2rem;
-            @include mq(lg){
-                text-align: center;
-                margin-bottom: 0;
-            }
-            li{
-                padding:.3rem 0;
-             
-                @include mq(lg){
-                    margin-bottom: 1rem;
-                    padding:.5rem 1rem;
-                }
-                &:hover{
-                    background-color: $color-primary;
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    .s4{
-        .note{
-            @include reset-list();
-            li{
-                display: inline-block;
-                margin-right: 1rem;
-            }
-        }
-        .item{
-            margin-bottom: 1rem;
-            .item-header{
-                background-color: #F4F5F9;
-                padding: .6rem 1rem;
+            .pic{
+                transition: all .3s;
+                padding: 0 3rem;
                 @include mq(md){
-                    padding: 1rem 1.5rem;
-                }
-                @include mq(xl){
-                    padding: 1.3rem 2rem;
+                    padding: 0;
                 }
             }
-            .title{
-                color: $color-primary;
+            .name{
+                border-bottom: 1px $color-primary solid;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+            .post{
+                font-size: rem(14);
+            }
+            &:hover{
+                .pic{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+
+.page-team-detail{
+    background-color: #FEF8EF;
+    .pic{
+        height: 100%;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .txt{
+        padding: 2rem;
+        .name{
+            border-bottom: 1px $color-text solid;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .post{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+
+.page-honor{
+    background: url(../img/about_bg.svg) no-repeat left -200px bottom -1000px;
+    padding-bottom: 15rem;
+    .years{
+        text-align: right;
+        margin-bottom: 1rem;
+        a{
+            display: inline-block;
+            position: relative;
+            margin-left: 1rem;
+            line-height: 70px;
+            color: #A8A8A8;
+            @include mq(md){
+                line-height:90px;
+                margin-left: 1.5rem;
+            }
+            @include mq(lg){
+                line-height: 120px;
+                margin-left: 2rem;
+            }
+            @include mq(xl){
                 font-size: rem(18);
-             
+                margin-left: 3rem;
+                line-height: 180px;
+            }
+            @include mq(xxl){
+                font-size: rem(20);
+                margin-left: 6rem;
+                line-height: 255px;
+            }
+            &::after{
+                content: " ";
+                display: block;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 5px;
+                height: 5px;
+                background: #c9c9c9;
+                position: absolute;
+                bottom: 1rem;
+                border-radius: 50%;
+                transition: all .3s;
+                @include mq(md){
+                    bottom: 1.5rem;                   
+                }
                 @include mq(lg){
-                    font-size: rem(20);
+                    bottom: 2.5rem;
+                    width: 7px;
+                    height: 7px;
                 }
                 @include mq(xl){
-                    font-size: rem(22);
+                    width: 12px;
+                    height: 12px;
+                    bottom: 3rem;
                 }
                 @include mq(xxl){
-                    font-size: rem(24);
-                }
-            }
-            .open{
-               .iconfont{
-                    display: block;
-                    transition: all .3s;
-                    font-size: rem(18);                
-                    @include mq(lg){
-                        font-size: rem(20);
-                    }
-                    @include mq(xl){
-                        font-size: rem(22);
-                    }
-                    @include mq(xxl){
-                        font-size: rem(24);
-                    }
-               }
-               &.up{
-                   .iconfont{
-                       transform: rotate(180deg);
-                   }
-               }
-            }
-
-            .item-body {
-                background-color: #E7E9F2;
-                padding: 1rem;
-                display: none;
-                @include mq(xl){
-                    padding: 1.5rem 2rem;
-                }
-                h3{
-                    font-size: rem(18);
+                    width: 20px;
+                    height: 20px;
+                    bottom: 4rem;
                 }
             }
             &.active{
-                .item-body{
-                    display: block;
+                background: url(../img/about_1.svg) no-repeat center center;
+                font-size: rem(20);
+                background-size: contain;
+                text-align: center;
+                color: #5C5C5C;
+                width:70px;
+                height: 70px;
+                @include mq(md){
+                    width:90px;
+                    height: 90px;
+                    font-size: rem(24);
+                }
+                @include mq(lg){
+                    font-size: rem(30);
+                    width:120px;
+                    height: 120px;
+                }
+                @include mq(xl){
+                    width:180px;
+                    height: 180px;
+                    font-size: rem(60);
+                }
+                @include mq(xxl){
+                    width:255px;
+                    height: 255px;             
+                }
+                &::after{
+                  background-color: $color-primary;
+                  bottom: 1rem;
+                  @include mq(md){
+                    bottom: 1.4rem;
+                  }
+                  @include mq(lg){
+                    bottom: 2rem;
+                  }
+                  @include mq(xl){
+               
+                        bottom: 1.8rem;
+                    }
+                    @include mq(xxl){
+                    
+                        bottom: 3rem;
+                    }
+                }
+               
+            }
+        }
+    }
+
+    .left_col{
+        @include mq(lg){
+            padding-right: 2rem;
+        }    
+        @include mq(xl){
+            padding-right: 3rem;
+        }         
+
+    }
+    .right_col{
+        @include mq(lg){
+            padding-left: 2rem;
+        }
+        @include mq(xl){
+            padding-left: 3rem;
+        }
+        
+    }
+
+    .title-section{
+        border-top: 1px $color-primary solid;
+        padding-top: 1rem;
+        margin-bottom: 0;
+        @include mq(xl){
+            padding-top: 1.5rem;
+            padding-bottom: 1.5;
+        }
+        @include mq(xxl){
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        h3{
+            color: $color-primary;
+            font-weight: normal;
+        }
+    }
+    .list{
+        @include reset-list();
+        li{
+            background: url(../img/dot.svg) no-repeat left top .3rem;
+            padding-left: 30px;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+    }   
+
+}
+
+.page-responsibility{
+    &.page-res-s1{
+        background: url(../img/about_bg_1.png) no-repeat center center;
+        background-size: cover;
+    }
+    .t1{
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .left_col {
+        background: url(../img/about_2.jpg) no-repeat center center;
+        background-size: cover;
+        .txt{
+            position: relative;
+            width: 90%;          
+            padding: 2rem;
+            overflow: hidden;
+            color: #fff;
+            @include mq(lg){
+                width: 500px;         
+            }
+
+            @include mq(xl){
+                padding: 4rem 4rem 4rem 7rem;
+                width: 726px;
+                height: 335px;
+            }
+            @include mq(xxl){
+                padding: 4rem 4rem 4rem 9rem;
+            }
+            img{
+                filter: blur(2rem);
+                max-width: none;
+                width: 120%;
+                height: 120%;
+                object-fit: cover;
+                object-position: left center;
+                position: absolute;
+                left:-50px;            
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .text40{
+                position: relative;
+                z-index: 200;
+            }
+
+        }
+    }
+    .right_col{
+        height: 100%;
+        .box{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color:#FAFAFA;
+            position: relative;
+            @include mq(lg){
+                height: 50%;
+            }
+            &:first-child{
+                background-color: #E8E8E8;
+            }
+            .txt{
+            
+                padding-left: 2rem;
+                padding-right: 2rem;
+                @include mq(lg){
+                    @include vertical-align(); 
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+                @include mq(xl){
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+                @include mq(xxl){
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+                h3{
+                    margin-bottom: 1rem;
+                    @include mq(xxl){
+                        margin-bottom: 2rem;
+                    }
+                }
+                a.more{
+                    display: inline-block;
+                    font-size: small;
+                    border-radius:15px;
+                    border:1px #595757 solid;
+                    padding: 0 1rem;
+                }
+            }
+           
+        }
+    }
+
+    &.page-res-s3{
+        .title-section{
+            padding-bottom: 0;
+            @include mq(xl){
+                padding-bottom: 1rem;
+            }
+            h3{
+           
+                @include mq(xl){
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .item{
+            max-width: 383px;
+            margin: 0 auto 2rem;
+            @include mq(lg){
+                margin-bottom: 0;
+            }
+            .pic{
+                margin-bottom: 1rem;
+                display: block;
+            }
+            .txt{
+
+                h3{
+                    font-size: rem(20);
+                    font-weight: normal;
+                }
+                a.more{
+                    display: inline-block;
+                    font-size: small;
+                    border-radius:15px;
+                    border:1px #595757 solid;
+                    padding: 0 1rem;
                 }
             }
         }
     }
 
-    
 
 }
 

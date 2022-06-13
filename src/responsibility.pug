@@ -1,0 +1,121 @@
+extends includes/layout.pug
+
+block title
+    | 社会责任
+    - var currentUrl = 'about.html'
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-about
+        img.bg(src="img/banners/responsibily.jpg", alt="社会责任", style="height:67vh;")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 社会责任
+       
+
+    
+    section.page.page-responsibility.page-res-s1.pt-media-9.pb-media-9
+        .container
+            p.t1.text40.text-center 贯彻环保理念，成就社会责任价值，致力于成为全球领先的可持续发展医药企业
+
+    section.page.page-responsibility.page-res-s2
+        .row.g-0 
+            .col-lg-7 
+                .left_col.pt-media-9.pb-media-9 
+                    .txt 
+                        img(src="img/about_2.jpg", alt="")
+                        .text40 持续升级内部治理实践，获MSCI-ESG连续两年维持“AA”评级
+
+            .col-lg-5
+                .right_col 
+                    .box 
+                        .txt
+                            h3.text40 环境、社会及管治报告
+                            a.more(href="#") 查看完整报告
+                    .box
+                        .txt
+                            h3.text40 环境、社会及管治委员会
+                            a.more(href="#") 了解委员会职权范围
+        
+    section.page.page-responsibility.page-res-s3.pt-media-6.pb-media-6
+        .container
+            .title-section.text-center 
+                h3.text40 社会公益动态
+                p 践行企业社会责任，助力建设健康、和谐、可持续的社区环境
+
+
+            .news 
+                .row 
+                    .col-md-4
+                        .item 
+                            a.pic(href="#") 
+                                img(src="img/temp/001.jpg", alt="")
+
+                            .txt 
+                                h3 
+                                    a(href="#") 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+
+                                p 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员……
+                                a.more(href="#") 了解更多
+
+                    
+                    .col-md-4
+                        .item 
+                            a.pic(href="#") 
+                                img(src="img/temp/002.jpg", alt="")
+
+                            .txt 
+                                h3 
+                                    a(href="#") 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+
+                                p 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员……
+                                a.more(href="#") 了解更多
+
+
+                    .col-md-4
+                        .item 
+                            a.pic(href="#") 
+                                img(src="img/temp/003.jpg", alt="")
+
+                            .txt 
+                                h3 
+                                    a(href="#") 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+
+                                p 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员……
+                                a.more(href="#") 了解更多
+
+                       
+
+    
+
+
+            
+                
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+
+    script.
+       
+    
+        $(function () {
+            $('.item-header .open').click(function(e){
+                
+                e.preventDefault();
+                $(this).toggleClass('up');
+                // $(this).next().slideToggle();
+                
+                $(this).closest('.item-header').next().slideToggle();
+            });
+        
+        });
+
+     
+
+      
+       
+
+     

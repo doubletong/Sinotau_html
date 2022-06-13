@@ -1,0 +1,98 @@
+extends includes/layout.pug
+
+block title
+    | 投资者关系
+    - var currentUrl = 'investors.html'
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-investors
+        img.bg(src="img/banners/investors.jpg", alt="投资者关系")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 投资者关系
+
+    .page.page-investors-s2.pt-media-6.pb-media-6       
+        .container(style="text-align:center;height:300px") 内容嵌入
+        .container-fluid 
+            .row.align-items-center 
+                .col-lg
+                    .intro 
+                        h2.title.text40 集团介绍
+                        .des 康哲药业(00867.HK)是一家链接医药创新与商业化，把控产品全生命周期管理的开放式平台型企业，致力于提供有竞争力的产品和服务，满足中国尚未满足的医疗、健康与美的需求。本集团于2010年9月28日在香港联合交易所主板市场上市，已入选摩根士丹利资本国际（MSCI）中国指数、恒生医疗保健指数等，属沪港通、深港通标的交易对象；2021年本集团MSCI-ESG评级为AA，位列全球同业领先水平。
+                        .text-right 
+                            a.more.btn.btn-default-outline.btn-radius(href="about.html") 了解更多
+                
+                .col-lg
+                    .chart(style="height:300px;") 图表嵌入
+
+
+    .page.page-investors-s3.container.pt-media-7.pb-media-7    
+        .row.g-4 
+            .col-6.col-lg-3 
+                a.item(href="stock.html") 
+                    img(src="img/icon-stock.svg", alt="股票信息")
+                    .text40 股票信息
+            .col-6.col-lg-3 
+                a.item(href="finance.html") 
+                    img(src="img/icon-money.svg", alt="财务情况")
+                    .text40 财务情况
+            .col-6.col-lg-3 
+                .item 
+                    img(src="img/icon-info.svg", alt="信息披露")
+                    .text40 信息披露
+            .col-6.col-lg-3 
+                .item 
+                    img(src="img/icon-manage.svg", alt="公司管治")
+                    .text40 公司管治
+
+    .page.page-investors-s4.pt-media-9.pb-media-9   
+        .container
+            .txt 
+                p.title.text20 投资者关系联系方式
+                p
+                    a.more.btn.btn-white-outline.btn-radius(href="contact.html") 联系我们
+
+
+            
+    
+
+
+
+
+block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop:true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 600,
+                modifier: 1,
+            
+                slideShadows: true,
+            },
+            navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        
+
+     
+
+      
+       
+
+     

@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 2958971 */
-  src: url('iconfont.woff2?t=1637809107871') format('woff2'),
-       url('iconfont.woff?t=1637809107871') format('woff'),
-       url('iconfont.ttf?t=1637809107871') format('truetype');
+  font-family: "iconfont"; /* Project id 3206367 */
+  src: url('iconfont.woff2?t=1645832837468') format('woff2'),
+       url('iconfont.woff?t=1645832837468') format('woff'),
+       url('iconfont.ttf?t=1645832837468') format('truetype');
 }
 
 .iconfont {
@@ -13,27 +13,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-down:before {
-  content: "\e7b2";
+.icon-next:before {
+  content: "\e609";
 }
 
-.icon-back:before {
-  content: "\e679";
+.icon-prev:before {
+  content: "\e884";
 }
 
 .icon-top:before {
   content: "\e69e";
 }
 
-.icon-sort-full:before {
-  content: "\ea4b";
+.icon-sina:before {
+  content: "\e660";
 }
 
-.icon-sort-up-full:before {
-  content: "\ea4c";
+.icon-wechat-fill:before {
+  content: "\e883";
 }
 
-.icon-sort-down-full:before {
-  content: "\ea4d";
+.icon-bilibili:before {
+  content: "\e600";
 }
 

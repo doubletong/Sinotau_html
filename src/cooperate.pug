@@ -1,0 +1,161 @@
+extends includes/layout.pug
+
+block title
+    | 战略合作
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-cooperate
+        img.bg(src="img/banners/cooperate.jpg", alt="战略合作")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 战略合作
+
+   
+        
+    section.page.page-cooperate.page-cooperate-s1.container.pt-media-9.pb-media-9            
+        .text40.text-center 我们通过多维度的合作模式，与全球研发力量携手共建可持续的、开放共赢的医药创新生态        
+           
+
+    section.page.page-cooperate.page-cooperate-s2.pb-media-9
+        .map 
+            img(src="img/coo-2.jpg", alt="地图") 
+            .marker 
+                img(src="img/icon-marker.svg", alt="")
+
+        .container.text-center 
+            a.view(href="#") 查看我们的合作伙伴
+
+    section.page.page-cooperate.page-cooperate-s3
+        .row.g-0 
+            .col-lg-6 
+                .left_col 
+                    .txt 
+                        p.text40 凭借近三十年的合作经验，<br/>我们已成为全球多家<br/>Biotech、Biopharma<br/>及大药企可信赖的战略合作伙伴
+                        p.text40 我们可以提供——
+            .col-lg-6 
+                .right_col 
+                    .row.g-0 
+                        .col-md-6 
+                            .item 
+                                .c1
+                                    h3.text20.text-center 灵活、开放、<br/>共赢的合作模式
+                                    p 股权投资、资产购买、授权许可、合作研发等
+
+                        .col-md-6 
+                            .item2.i1 
+                                .c1
+                                    h3.text20.text-center 前沿临床需求信息
+                                    p 拥有广泛专家网络和深入市场的推广团队，可洞察与挖掘未被满足的临床需求
+                        
+                        .col-md-6 
+                            .item2.i2 
+                                .c1
+                                    h3.text20.text-center 强劲的盈利能力和<br/>资金实力
+                                    p 过去十年（2012-2021），营业额（若全按药品销售收入计算）及净利润复合增长率均超过20%，连续十五年ROE维持在20%以上。2021年，营业额达人民币83亿元，净利润达人民币30亿元
+
+                        .col-md-6 
+                            .item 
+                                .c1
+                                    h3.text20.text-center 遵循严格的合规原则和<br/>商业道德标准
+                                    p 拥有覆盖运营各环节的合规管控体系及国际标准的商业道德准则，保障诚信廉洁的商业合作
+                            
+                        .col-md-6 
+                            .item 
+                                .c1
+                                    h3.text20.text-center 高效的临床执行与<br/>注册事务团队
+                                    p 拥有专业的临床执行和注册事务团队，可高效推进产品在中国及其它授权国家/地区的临床
+
+                        .col-md-6 
+                            .item2.i3 
+                                .c1
+                                    h3.text20.text-center 成熟的商业化体系
+                                    p 拥有约4,000名专业的市场及推广相关人员，覆盖中国约50,000家医院及医疗机构、超过 20 万家终端零售药店，可快速推进创新成果的商业化兑现
+        
+    section.page.page-cooperate.page-cooperate-s4.container.pt-media-9.pb-media-9       
+        .row
+            .col-lg-7 
+                .txt 
+                    .t1.text20 我们在寻找更多合作伙伴
+                    h2.t2.text40.mb-media-3 康哲正在寻找具有以下优势和特点的合作伙伴
+
+                    .list 
+                        .li 
+                            .num.text40 01
+                            p.text20 拥有同类首创或全球创新解决方案
+                        .li 
+                            .num.text40 02
+                            p.text20 拥有与我们现有治疗领域互补的创新产品，或新治疗领域的优势技术平台
+                        .li 
+                            .num.text40 03
+                            p.text20 包括已拿到临床批件到已上市的创新产品；针对早期阶段/临床前阶段创新产品我们有独立的风投部门
+
+            .col-lg-5 
+                img(src="img/coo-1.jpg", alt="我们在寻找更多合作伙伴")
+
+    section.page.page-cooperate.page-cooperate-s5.container.pt-media-5.pb-media-9  
+        .title-section.mb-media-5 
+            h2.text40.text-center 如果您有意愿与我们合作，请联系业务发展部
+
+        .row 
+            .col-md-6.col-lg-3 
+                dl.item 
+                    dt 电话
+                    dd (86)755-82416868
+
+            .col-md-6.col-lg-3 
+                dl.item  
+                    dt 邮箱
+                    dd Contact@cms.net.cn
+
+            .col-md-6.col-lg-3 
+                dl.item  
+                    dt 香港
+                    dd 香港北角英皇道510号港运大厦21楼2106室
+
+            .col-md-6.col-lg-3 
+                dl.item  
+                    dt 深圳
+                    dd 中国广东省深圳市南山区大新路198号马家龙创新大厦B座6-8楼
+            
+        
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        var swiper1 = new Swiper('.mySwiper', {
+            slidesPerView: 2,
+            spaceBetween: 40,            
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },          
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 7,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        
+
+
+     
+
+      
+       
+
+     

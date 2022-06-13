@@ -1,0 +1,58 @@
+extends includes/layout.pug
+
+block title
+    | 眼科业务
+    - var currentUrl = 'business.html'
+
+block bkheader
+    link(href='js/vendor/lightbox2/css/lightbox.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-products
+        img.bg(src="img/banners/business-3.jpg", alt="眼科业务")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 眼科业务
+        
+    .page.page-business-s1.page-business-s4.pt-media-9.pb-media-9
+        .container
+            h2.text40 识别、开发和商业化临床急需的眼科药械组合，<br/>推动眼科领域诊疗认知与技术突破
+          
+        
+    .page.page-business-s2.pt-media-9.pb-media-9
+        .intro 中国眼病患者数量居全球第一，很多眼科疾病会导致不同程度的视觉损伤或丧失，已成为重大公共卫生问题。康哲药业眼科业务（“康哲维盛”）借助集团眼科领域专业产品组合、广泛医生专家网络及渠道资源等，旨在推动眼科临床急需诊疗方案的识别、开发和商业化，加速眼科领域创新技术突破。
+   
+        
+    #c3.page.page-products-s2.container.pt-media-6.pb-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 眼科线核心在售产品
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="莫娜丽莎")
+                        h3.title 喜辽妥（多磺酸粘多糖乳膏）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 适用于形成和没有形成血肿的钝器挫伤及无法通过按压治疗的浅表性静脉炎
+
+
+
+                
+
+
+block bkfooter
+
+    script(src='js/vendor/lightbox2/js/lightbox.min.js')
+    script.
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 100
+        })
+
+

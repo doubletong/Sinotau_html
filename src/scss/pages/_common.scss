@@ -21,31 +21,38 @@
 // }
 
 
-@font-face {
-    font-family: 'Source Han Sans SC';
-    src: '../fonts/SourceHanSansSC-VF.otf.woff2' format('woff2-variations');
-    font-weight: 125 950;
-    font-stretch: 75% 125%;
-   }
+// @font-face {
+//     font-family: 'Source Han Sans SC';
+//     src: '../fonts/SourceHanSansSC-VF.otf.woff2' format('woff2-variations');
+//     font-weight: 125 950;
+//     font-stretch: 75% 125%;
+//    }
 
 //变量字体使用
-@font-face {
-    font-family: 'Source Sans';
-    src: url('../fonts/SourceHanSansSC-VF.ttf') format("truetype-variations");
-    font-weight: 1 999;
+// @font-face {
+//     font-family: 'Source Sans';
+//     src: url('../fonts/SourceHanSansSC-VF.ttf') format("truetype-variations");
+//     font-weight: 1 999;
+// }
+
+h1,h2,h3,h4{    
+    color: $color-text-heading;
+    font-weight: bold;
 }
 
-h1,h2,h3,h4{
-    font-weight: 500;  
+.container{
+    @include mq(xxxl){
+        max-width: 1550px;
+    }
 }
 
 
 body {
-    color: #575757;
-    background-color: #f7f7f7;
+    color: $color-text;
+    background-color: #fff;
     // font-family:  "PingFang SC", "Microsoft YaHei", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
     font-family:  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",  Helvetica, Tahoma,"Source Sans", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: rem(14);
+    font-size: 1rem;
     margin: 0 auto;
     line-height: 1.8;
     position: relative;
@@ -55,7 +62,9 @@ body {
     @include mq(lg) {
         font-size: rem(14);    
     }
-
+    @include mq(xl) {
+        font-size: 1rem;    
+    }
  
 }
 
@@ -73,28 +82,29 @@ a {
     padding-bottom: 1rem;
     position: relative;
     margin-bottom: 2rem;
+    color:$color-text-heading;
     h2 {     
         text-transform: uppercase;  
         font-weight: normal;
-        color: #000;
+        
     }
     
-    &.text-white{
-        color: #fff;
-        &::after{            
-            background-color: #fff;         
-        }
-    }
-}
-
-.title-section-2{
-    border-left: 4px $color-primary solid;
-    padding-left: rem(10);
 }
 
 
 .banner {
     position: relative;
+    &::before{
+        position: absolute;
+        height: 207px;
+        background: linear-gradient( rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0)  100%);
+        content: " ";
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
     .bg{
         width: 100%;
         height: 250px;
@@ -103,9 +113,10 @@ a {
         @include mq(md){
             height: 300px;
         }
-        @include mq(lg){
-           
-            height: auto;
+        @include mq(lg){           
+            height: 100vh;
+            object-fit: cover;
+            object-position: center center;
         }
      
     }
@@ -113,91 +124,19 @@ a {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 50%;      
+        bottom: 0;      
         z-index: 10;
-        color: #fff;
-        transform: translateY(-50%);
-      
-        .title {
-            padding-bottom: 2.5rem;
-            position: relative;
-            margin-bottom: 2rem;
-            &::after{
-                content: " ";
-                display: block;
-                width: 40px;
-                height: 8px;
-                background-color: #fff;
-                z-index: 100;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-            }
+        
+        h1{
+            color: #fff;
+            font-weight: normal;
         }
     }
     
  
 }
-.menus-wrap{
-    overflow-x: auto;
-    position: relative;
 
-    
-}
-.sub-menus {  
-    
-    text-align: center;
-    @include reset-list();
-    border-bottom: 1px #eee solid;
-    
-    white-space: nowrap;
-    li{
-        display: inline-block;       
-        position: relative;
-     
-        &.active{
-            a{
-                color: $color-primary;
-            }
-            &::after{
-                content: " ";
-                display: block;
-                width: 50px;height: 3px;             
-                background-color: $color-primary;
-                position: absolute;
-                left: 50%;
-                bottom: -1px;
-                transform: translateX(-50%)
-                
-            }
-        }
-        a{
-            display: block;
-            padding: 1rem 1rem .5rem;
-            font-size: rem(14);
-            @include mq(md){
-                padding: 2rem 3rem .6rem;
-                font-size: rem(16);
-            }
-            @include mq(lg){
-                padding: 2rem 3rem .6rem;
-                font-size: rem(18);
-            }
-            @include mq(xl){
-                
-                font-size: rem(22);
-            }
-            @include mq(xxl){
-               
-                font-size: rem(24);
-            }
-           
-        }
-    }
- 
- 
-    
-}
+
 
 .site-path  {
     background-color: #F2F3F5;
@@ -293,15 +232,15 @@ img {
 }
 
 .text60 {
-    font-size: rem(26);
+    font-size: rem(20);
     @include mq(md) {
-        font-size: rem(36);
+        font-size: rem(30);
     }
     @include mq(lg) {
-        font-size: rem(48);
+        font-size: rem(40);
     }
     @include mq(xl) {
-        font-size: rem(54);
+        font-size: rem(50);
     }
     @include mq(xxl) {
         font-size: rem(60);
@@ -323,7 +262,7 @@ img {
         font-size: rem(56);
     }
 }
-.text46 {
+.text50 {
     font-size: rem(22);
     @include mq(sm) {
         font-size: rem(26);
@@ -338,22 +277,23 @@ img {
         font-size: rem(38);
     }
     @include mq(xxl) {
-        font-size: rem(42);
+        font-size: rem(44);
     }
     @include mq(xxxl) {
-        font-size: rem(46);
+        font-size: rem(50);
     }
+
 }
 .text40 {
-    font-size: rem(22);
+    font-size: rem(18);
     @include mq(md) {
-        font-size: rem(28);
+        font-size: rem(22);
     }
     @include mq(lg) {
-        font-size: rem(32);
+        font-size: rem(28);
     }
     @include mq(xl) {
-        font-size: rem(36);
+        font-size: rem(34);
     }
     @include mq(xxl) {
         font-size: rem(40);
@@ -424,15 +364,15 @@ img {
 }
 
 .text30 {
-    font-size: rem(22);
+    
     @include mq(md) {
-        font-size: rem(24);
+        font-size: rem(18);
     }
     @include mq(lg) {
-        font-size: rem(26);
+        font-size: rem(22);
     }
     @include mq(xl) {
-        font-size: rem(28);
+        font-size: rem(26);
     }
     @include mq(xxl) {
         font-size: rem(30);
@@ -820,25 +760,4 @@ img {
     }
 }
 
-.bg-gray-100{
-    background-color: #F4F5F9;
-}
 
-.common-comment{
-    position: relative;
-    .title-section-2{
-        margin-bottom: 1rem;
-    }
-   
-    .des{
-        background: url('../img/yinhao.svg') no-repeat left top;
-        max-width: 760px;
-        padding-top: 2rem;
-        padding-left: 1.4rem;
-        margin-bottom: 2rem;
-        @include mq(xl){
-            margin-bottom: 3rem;
-        }
-    }
-   
-}

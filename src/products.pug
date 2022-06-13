@@ -1,0 +1,383 @@
+extends includes/layout.pug
+
+block title
+    | 在售产品
+    - var currentUrl = 'business.html'
+
+block bkheader
+    link(href='js/vendor/lightbox2/css/lightbox.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-products
+        img.bg(src="img/banners/products.jpg", alt="领导团队")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 在售产品
+
+
+    .page.page-products-s1.container.pt-media-5.pb-media-6
+        ul.categories
+            li.active 
+                a(href="#") 全部
+            li 
+                a(href="#c1") 心血管线
+            li 
+                a(href="#c2") 消化线
+            li 
+                a(href="#c3") 眼科线
+            li 
+                a(href="#c4") 皮肤线
+            li 
+                a(href="#c5") 医美线
+            li 
+                a(href="#c6") 其它产品
+
+
+    #c1.page.page-products-s2.container.pt-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 心脑血管线
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="波依定")
+                        h3.title 波依定 (非洛地平缓释片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 高血压，稳定性心绞痛
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="新活素")
+                        h3.title 新活素(注射用重组人脑利钠肽)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 适用于患有休息或轻微活动时呼吸困难的急性失代偿心力衰竭患者的静脉治疗。按NYHA分级大于Ⅱ级
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="黛力新")
+                        h3.title 黛力新 (氟哌噻吨美利曲辛片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 轻中度抑郁和焦虑
+                                dd - 神经衰弱、心因性抑郁、抑郁性神经官能症、隐匿性抑郁，心身疾病伴焦虑和情感淡漠，更年期抑郁，嗜酒及药瘾者的焦躁不安及抑郁
+
+                
+    #c2.page.page-products-s2.container.pt-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 消化线
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="优思弗")
+                        h3.title 优思弗(熊去氧胆酸胶囊)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 胆囊胆固醇结石 — 必须是X射线能穿透的结石，同时胆囊收缩功能须正常
+                                dd - 胆汁淤积性肝病（如：原发性胆汁性肝硬化）
+                                dd - 胆汁反流性胃炎
+
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="莎尔福")
+                        h3.title 莎尔福(美沙拉秦肠溶片、美沙拉秦栓、美沙拉秦灌肠液)
+
+                        .des
+                            ul                               
+                                li 美沙拉秦肠溶片  
+                                li 用于溃疡性结肠炎的治疗：
+                                li 包括急性发作期的治疗和防止复发的维持治疗
+                                li 用于克罗恩病急性发作期的治疗
+
+                            ul                               
+                                li 美沙拉秦栓  
+                                li 用于直肠型溃疡性结肠炎的治疗
+
+                            ul                               
+                                li 美沙拉秦灌肠液
+                                li 用于直肠乙状结肠型溃疡性结肠炎急性发作期的治疗
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="亿活")
+                        h3.title 亿活 (布拉氏酵母菌散)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 用于治疗成人和儿童腹泻，及肠道菌群失调所引起的腹泻症状
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="亿活")
+                        h3.title 慷彼申(米曲菌胰酶片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 用于消化酶减少引起的消化不良
+              
+    
+    #c3.page.page-products-s2.container.pt-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 眼科线
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="优思弗")
+                        h3.title 施图伦滴眼液(七叶洋地黄双苷滴眼液) 
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 眼底黄斑变性
+                                dd - 所有类型的眼疲劳，包括眼肌性、神经性和适应性的
+
+
+
+    #c4.page.page-products-s2.container.pt-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 皮肤线
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="莫娜丽莎")
+                        h3.title 莫娜丽莎（注射用修饰透明质酸钠凝胶）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 用于面部真皮组织中层及深层注射，以纠正中重度鼻唇沟皱纹
+
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="施得美")
+                        h3.title 施得美（自风干型疤痕护理硅凝胶）
+
+                        .des
+                            dl                               
+                                dt 适应症/功能（中国）
+                                li 用于预防和改善疤痕组织增生。须在创口或创面完全愈合后才能使用（50g）
+                            dl                               
+                                dt 适应症/功能（美国、瑞士等）
+                                li 用于预防和治疗膨胀纹（妊娠纹），适用于孕妇、哺乳期母亲、儿童及皮肤敏感人群
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="亿活")
+                        h3.title 施可复（自风干型疤痕护理硅凝胶）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 用于预防和改善疤痕组织增生。须在创口或创面完全愈合后才能使用（5g，10g，20g）
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="亿活")
+                        h3.title 美斯蒂克-美塑优产品系列（含五款产品）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 用于提升皮肤紧致程度、滋润皮肤、增加皮肤弹性等 
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="芮芙拉产品系列（含七款产品）")
+                        h3.title 芮芙拉产品系列（含七款产品）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 温和修护，补水淡斑，焕白提亮
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="艾蓓尔产品系列（含五款产品）")
+                        h3.title 艾蓓尔产品系列（含五款产品）
+
+                        .des
+                            dl 
+                                dt 适应症/功能
+                                dd 用于滋润皮肤，保湿补水，缓解肌肤干燥情况
+
+
+    #c5.page.page-products-s2.container.pt-media-6.pb-media-6
+        .title-section.text-center.mb-media-4 
+            h2.text40 其它产品
+        
+        section.products
+            .row.g-xl-5 
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="依姆多(单硝酸异山梨酯缓释片)")
+                        h3.title 依姆多(单硝酸异山梨酯缓释片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 冠心病的长期治疗、预防血管痉挛型和混合型心绞痛，也适用于心肌梗死后的治疗及慢性心衰的长期治疗
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="益盖宁 (依降钙素注射液)")
+                        h3.title 益盖宁 (依降钙素注射液)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 骨质疏松症引起的疼痛
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="兰美抒 (盐酸特比萘芬片)")
+                        h3.title 兰美抒 (盐酸特比萘芬片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 由皮肤癣菌如毛癣菌（红色毛癣菌、须癣毛癣菌、疣状毛癣菌、断发毛癣菌、紫色毛癣菌）、犬小孢子菌和絮状表皮癣菌引起的皮肤、毛发真菌感染
+                                dd - 仅用于治疗大面积、严重的皮肤真菌感染（体癣、股癣、足癣、头癣）和念珠菌（如白色假丝酵母）引起的皮肤酵母菌感染，应根据感染部位、严重性和范围慎重考虑口服给药的必要性
+                                dd - 皮肤癣菌（丝状真菌）感染引起的甲癣
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="伊诺舒 (盐酸氨溴索注射液)")
+                        h3.title 伊诺舒 (盐酸氨溴索注射液)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 适用于伴有痰液分泌不正常及排痰功能不良的急性、慢性呼吸道疾病，如慢性支气管炎急性加重、喘息型支气管炎、支气管扩张及支气管哮喘的祛痰治疗
+                                dd - 术后肺部并发症的预防性治疗
+                                dd - 早产儿及新生儿呼吸窘迫综合症（IRDS）的治疗
+
+                
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="喜达康 (口服水解蛋白/水解蛋白口服溶液)")
+                        h3.title 喜达康 (口服水解蛋白/水解蛋白口服溶液)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 用于低蛋白血症以及各种疾病所致的营养不良、全身衰竭
+                                dd - 用于烧伤、骨折及术后伤口愈合不良
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="喜达康 (口服水解蛋白/水解蛋白口服溶液)")
+                        h3.title 溴隐亭 (甲磺酸溴隐亭片)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 溴隐亭用于两种不同类型的适应症：内分泌系统适应症和神经系统适应症
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="喜达康 (口服水解蛋白/水解蛋白口服溶液)")
+                        h3.title 默维可 (聚乙二醇钠钾散)
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd - 适用于伴有痰液分泌不正常及排痰功能不良的急性、慢性呼吸道疾病，如慢性支气管炎急性加重、喘息型支气管炎、支气管扩张及支气管哮喘的祛痰治疗
+                                dd - 术后肺部并发症的预防性治疗
+                                dd - 早产儿及新生儿呼吸窘迫综合症（IRDS）的治疗
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="喜达康 (口服水解蛋白/水解蛋白口服溶液)")
+                        h3.title 肝复乐片
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 健脾理气，化瘀软坚，清热解毒。用于以肝瘀脾虚为主证的原发性肝癌，症见上腹肿块，胁肋疼痛，神疲乏力，食少纳呆，脘腹胀满，心烦易怒，口苦咽干等。对于上述证候的乙型肝炎肝硬化患者的肝功能及肝纤维化血清学指标有改善作用
+
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="茵莲清肝颗粒")
+                        h3.title 茵莲清肝颗粒
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd 清热解毒，调肝和脾。用于急性甲型、慢性乙型病毒性肝炎属“湿热蕴结，肝脾不和”证者，症见胁痛、脘痞、纳呆、乏力等
+
+                .col-md-6.col-lg-4 
+                    .item 
+                        .pic 
+                            img(src="img/temp/pro_01.jpg", alt="丹参酮胶囊")
+                        h3.title 丹参酮胶囊
+
+                        .des
+                            dl 
+                                dt 适应症
+                                dd  [处方药]适应症
+                                 dd  抗菌消炎。用于痤疮，扁桃腺炎，外耳道炎症，疖、痈、外伤感染，烧伤感染，乳腺炎，蜂窝组织炎，骨髓炎等
+                                dd  [OTC甲类]适应症
+                                dd  抗菌消炎。用于痤疮，扁桃腺炎，疖
+
+
+
+block bkfooter
+
+    script(src='js/vendor/lightbox2/js/lightbox.min.js')
+    script.
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 100
+        })

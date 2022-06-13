@@ -1,0 +1,66 @@
+extends includes/layout.pug
+
+block title
+    | 股票信息
+    - var currentUrl = 'investors.html'
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-investors
+        img.bg(src="img/banners/investors.jpg", alt="股票信息")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 股票信息
+
+    .page.page-investors-s1.container.pt-media-7
+        .title-section.mb-media-3.text-center
+            h2.text28 股票报价
+        .des 内容嵌入
+
+    .page.page-investors-s1.container.pt-media-7.pb-media-7    
+        .title-section.mb-media-3.text-center
+            h2.text28 股票走势图
+        .des 内容嵌入
+
+        
+    
+
+
+
+
+block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop:true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 600,
+                modifier: 1,
+            
+                slideShadows: true,
+            },
+            navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        
+
+     
+
+      
+       
+
+     

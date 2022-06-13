@@ -1,0 +1,160 @@
+extends includes/layout.pug
+
+block title
+    | 业绩亮点
+    - var currentUrl = 'investors.html'
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-investors
+        img.bg(src="img/banners/investors.jpg", alt="公司管治")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 公司管治
+
+    .page.page-investors-s7.pt-media-6.pb-media-6
+        .intro
+            .row.g-0.align-items-center
+                .col-lg
+                    .pic 
+                        img(src="img/inv_2.jpg", alt="")
+                .col-lg
+                    .txt 
+                        .text30 康哲药业坚持高标准的企业管治，以力求实现股东长期价值最大化。我们建立了完善的企业管治架构，董事会负责确定战略决策、领导业务运营及识别相关风险等，下设审核委员会、提名委员会、薪酬委员会和环境、社会及管治委员会，负责审察专项事务。 
+                
+
+    .page.page-investors-s8.container.pb-media-6    
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 董事会
+        .row
+            .col-md-6
+                dl
+                    dt 执行董事
+                    dd 林     刚
+                    dd 陈洪兵
+                    dd 陈燕玲
+
+
+            .col-md-6
+                 dl
+                    dt 独立非执行董事
+                    dd 梁创顺
+                    dd 罗     莹
+                    dd 冯     征
+
+
+    .page.page-investors-s9.container.pb-media-6    
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 委员会
+        table.table
+            tr
+                td
+                    dl.names
+                        dt 
+                        dd 林    刚                        
+                        dd 陈燕玲
+                        dd 梁创顺
+                        dd 罗    莹
+                        dd 冯    征
+
+
+                td
+                    dl
+                        dt 审核委员会<br/><small>职权范围 >></small>
+                        dd /
+                        dd /
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd 
+                            img(src="img/icon-user-add.svg", alt="主席")
+                td
+                    dl
+                        dt 薪酬委员会<br/><small>职权范围 >></small>
+                        dd /
+                        dd /
+                        dd 
+                            img(src="img/icon-user-add.svg", alt="主席")
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                td
+                    dl
+                        dt 提名委员会<br/><small>职权范围 >></small>
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd /
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd 
+                            img(src="img/icon-user-add.svg", alt="主席")
+                        
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+
+                td
+                    dl
+                        dt 环境、社会及管治委员会<br/><small>职权范围 >></small>
+                        
+                        dd /
+                         dd 
+                            img(src="img/icon-user-add.svg", alt="主席")
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        dd /                        
+                        dd 
+                            img(src="img/icon-user.svg", alt="成员")
+                        
+
+    .page.page-investors-s10.container.pb-media-6   
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 管理制度
+        .row.g-md-5 
+            .col-md-4 
+                a.item(href="#") 康哲集团员工职业道德守则
+            .col-md-4 
+                a.item(href="#") 康哲集团行为准则
+            .col-md-4 
+                a.item(href="#") 康哲集团反舞弊管理制度
+
+
+
+
+block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop:true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 600,
+                modifier: 1,
+            
+                slideShadows: true,
+            },
+            navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        
+
+     
+
+      
+       
+
+     

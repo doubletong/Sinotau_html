@@ -1,0 +1,89 @@
+extends includes/layout.pug
+
+block title
+    | 关于我们
+    - var currentUrl = 'about.html'
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content
+    .banner.banner-honor
+        img.bg(src="img/banners/honor.jpg", alt="大事记&amp;集团荣誉")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 大事记&amp;集团荣誉
+       
+
+    
+    section.page.page-honor.pt-media-5
+        .container
+            nav.years 
+                a(href="#") 2022 
+                a.active(href="#") 2021
+                a(href="#") 2020
+                a(href="#") 2019
+                a(href="#") 2018
+                a(href="#") 2017            
+         
+  
+        
+            .row.pb-media-6.g-5
+                .col-lg-6
+                    .left_col
+                        .title-section                           
+                            h3.text28 大事记                   
+                        
+                        ul.list 
+                            li 开启对中国Biotech产业化投资模型，股权投资泰诺麦博并与其成立合营公司，共同开发4款全人源抗体新药
+                            li 开启自主定制创新产品模式，委托一家CRO定制开发4款创新药
+                            li 创新药地西泮鼻喷雾剂、替瑞奇珠单抗注射液、甲氨蝶呤注射液（预充式）（银屑病适应症）注册上市许可申请获中国NMPA受理
+                            li 获得中国NMPA对德度司他片、甲氨蝶呤注射液（预充式）（类风关适应症）、亚甲蓝肠溶缓释片的临床试验通知书
+                            li 皮肤医美公司“康哲美丽”正式成立；收购Luqa Ventures、康乃馨医疗科技及旭俐医疗3家皮肤医美专业公司，与OVMEDI达成战略合作；且获得安束喜、Vmonalisa莫娜丽莎玻尿酸、FUBA5200聚焦超声塑身仪及Omega VL 线雕等产品在中国大陆及（或）其他国家或地区的资产或产品权利
+                            li 眼科业务独立运营
+        
+
+                .col-lg-6
+                    .right_col
+                        .title-section                           
+                            h3.text28 集团荣誉
+                        ul.list 
+                            li 荣获金港股“最佳医药及医疗公司”大奖
+                            li 荣获《机构投资者》杂志“受尊崇公司”称号、“最佳环境、社会与管治”前三甲
+                            li 荣登南方周末“2020年医药制造企业社会责任榜”
+                            li 荣膺新浪财经金麒麟“最具社会责任上市公司”奖
+                            li 深圳康哲荣登“2021深圳500强企业”榜单
+                   
+                       
+
+    
+
+
+            
+                
+
+
+block bkfooter
+
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+
+    script.
+       
+    
+        $(function () {
+            $('.item-header .open').click(function(e){
+                
+                e.preventDefault();
+                $(this).toggleClass('up');
+                // $(this).next().slideToggle();
+                
+                $(this).closest('.item-header').next().slideToggle();
+            });
+        
+        });
+
+     
+
+      
+       
+
+     

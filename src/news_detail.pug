@@ -4,24 +4,19 @@ block title
     | 新闻动态
 
 block content
-    .site-path 
-        .container 
-            ol.breadcrumb 
-                li 
-                    a(href="index.html") 首页
-                li  
-                    a(href="news.html") 新闻中心 
-                li.current 公司新闻
+    .banner.banner-news.wow.fadeInUp
+        img.bg(src="img/banners/news.jpg", alt="")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 集团新闻
 
     .page.page-news-detail.pt-media-6.pb-media-8 
         .container
-            .news-header
-                h1.text24.wow.fadeInUp 我司荣获2018“创客湾区”中山火炬光电信息技术创新创业大赛金奖
-                .row
-                    .col-auto
-                        .date.wow.fadeInUp 2020/07/11
-                    .col-auto 
-                        .source.wow.fadeInUp 来源：人民日报
+            .news-header.text-center
+                h1.text24.wow.fadeInUp 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+                
+                .date.wow.fadeInUp 2020/07/11
+                   
 
   
             
@@ -29,23 +24,24 @@ block content
                 
                 p 您需要了解的有关穆罕默德·本·扎耶德人工智能大学 (MBZUAI) 的信息，这是世界上第一所研究生级别的研究型人工智能 (AI) 大学。以及你需要了解的地区和世界“人工智能震中研究”，尽在HBR阿拉伯采访MBZUAI总裁Eric教授，他是世界领先的人工智能科学家之一。在加入 MBZUAI 之前，Eric 教授是卡内基梅隆大学计算机科学教授，Petuum Inc. 创始人、董事长兼首席科学家，Petuum Inc. 被公认为 2018 年世界经济论坛技术先锋，致力于构建标准化的人工智能开发平台和适用于广泛和通用工业人工智能应用的操作系统。埃里克教授押注 MBZUAI 成为全球人工智能中心，世界上最伟大的思想聚集在这里，向世界展示真正的人工智能未来会是什么样子。我知道我们所有人都对这位全球领导者和专家提出了自己的问题，这就是为什么我试图在这次详细的谈话中尽可能多地总结。
                 figure.pic
-                    img(src="img/temp/nd02.jpg", alt="")
+                    img(src="img/temp/nd01.jpg", alt="")
 
                 p n fact, it is easy to remember Eall (Easy-All) of all simple, you only need to give us your requirement, such as business web site, enterprise software or business advertising, All the other to do it to us. One-stop service at any time to meet your business needs.
                 p With our solutions and services, combined with professional knowledge and understanding, we are committed to provide three easy (3E) of the Internet application services:
 
-            footer.pagenav.wow.fadeInUp
-                .row.justify-content-between
-                    .col-6
-                        a.news-nav.prev(href="news_detail.html")
-                            i.iconfont.icon-prev 
-                            | 上一篇
-                    .col-6
-                        a.news-nav.next(href="news_detail.html")                               
-                            | 下一篇 
-                            i.iconfont.icon-next
+            //- footer.pagenav.wow.fadeInUp
+            //-     .row.justify-content-between
+            //-         .col-6
+            //-             a.news-nav.prev(href="news_detail.html")
+            //-                 i.iconfont.icon-prev 
+            //-                 | 上一篇
+            //-         .col-6
+            //-             a.news-nav.next(href="news_detail.html")                               
+            //-                 | 下一篇 
+            //-                 i.iconfont.icon-next
                    
-          
+            footer.text-center 
+                a.back(href="news.html") 返回列表
 
 block bkfooter
     script.

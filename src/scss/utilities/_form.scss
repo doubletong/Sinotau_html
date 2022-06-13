@@ -8,15 +8,15 @@
         padding: .3rem 1.5rem;
     }
     @include mq(lg) {
-        padding: .4rem 2rem;
+        padding: .2rem 1.5rem;
         font-size: rem(14);
     }
     @include mq(xl) {
-        padding: .55rem 2.5rem;
+        padding: .35rem 2rem;
         font-size: rem(16);
     }
     @include mq(xxl) {
-        padding: .725rem 3rem;   
+        padding: .5rem 2rem;   
         font-size: rem(16);
     }
     &:hover {
@@ -37,8 +37,9 @@
         color: #000;
         border: #000 1px solid;
         &:hover {
-            background-color: #000;
+            background-color: $color-primary;
             color: #fff;
+            border-color: $color-primary;
         }
     }
     &.btn-white-outline {
@@ -83,20 +84,20 @@
     }
     &.btn-primary {
         color: #fff;
-        background: linear-gradient(90deg, #2b56a6 0%, #689af5 100%);
+        background: $color-secondary;
         &:hover {
             color: #fff;
             transform: translateY(-2px);
         }
     }
     &.btn-primary-outline {
-        border: $color-primary 1px solid;
-        color: $color-primary;
+        border: $color-secondary 1px solid;
+        color: $color-secondary;
         @include mq(lg) {
-            border: $color-primary 2px solid;
+            border: $color-secondary 1px solid;
         }
         &:hover {
-            background-color: $color-primary;
+            background-color: $color-secondary;
             color: #fff;
         }
     }
@@ -119,64 +120,6 @@
     border-radius: 26px;   
 }
 
-.btn-more{
-    display: inline-block;
-    padding: .3rem 1.5rem;
-    background-color: $color-primary;
-    color:#fff;
-    border-radius: 20px;
-    &:hover{
-        color:#fff;
-        background-color: $color-secondary;
-    }
-}
-.btn-down{
-    display: inline-block;
-    padding: .5rem 3rem;
-    background-color: $color-primary;
-    color:$color-secondary;
-    border-radius: 25px;
-    &:hover{    
-        color:$color-secondary;   
-        background-color: #fff;
-    }
-}
-
-a.more-span{
-    display: inline-block;
-    padding: .3rem 2rem;
-    background-color: $color-primary;
-    color:#fff;
-    border-radius: 3px;
-  
-    span{
-        border-radius: 50%;
-        display: inline-block;
-        background-color: #fff;
-        color:$color-primary;
-        height: 25px;
-        width: 25px;
-        line-height: 25px;
-    }
-    &:hover{
-        color:#fff;
-        background-color: $color-secondary;
-        span{
-            color:#fff;
-            background-color: $color-secondary;
-        }
-    }
-}
-
-.btn-send{
-    border-radius: 3px;
-    background-color: #fff;
-    display: inline-block;
-    padding: .5rem 1.5rem;
-    color:$color-primary;
-    border: none;  
-
-}
 
 .form-group{  
     margin-bottom: 1rem;

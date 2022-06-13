@@ -1,0 +1,143 @@
+extends includes/layout.pug
+
+block title
+    | 业绩亮点
+    - var currentUrl = 'investors.html'
+
+block bkheader
+    link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
+
+block content   
+    .banner.banner-investors
+        img.bg(src="img/banners/investors.jpg", alt="业绩亮点")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 业绩亮点
+
+    .page.page-investors-s5.container.pt-media-6.pb-media-4       
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 业绩概览
+        
+
+        .table-container 
+            p.text-right 
+                small （除非另作说明，金额均为人民币百万元）
+            table.table 
+                thead 
+                    tr 
+                        th 年份
+                        th 2021
+                        th 2020
+                        th 2019
+                        th 2018
+                        th 2017
+                tbody 
+                    tr 
+                        td 营业额
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+                    tr 
+                        td 营业额（若全按药品销售收入计算）
+                        td 9,230.2
+                        td 7,395.2
+                        td 6,416.3
+                        td 5,799.6
+                        td 5,332.0
+                    tr 
+                        td 年度溢利
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+                    tr 
+                        td 每股基本盈利（人民币元）
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+                    tr 
+                        td 每股年度总股息（人民币元）
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+                    tr 
+                        td 资产负债率
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+                    tr 
+                        td 净资产收益率
+                        td 8,337.2
+                        td 6,946.0
+                        td 8,337.2
+                        td 8,337.2
+                        td 8,337.2
+            p 
+                small *截至12月31日止年度
+
+    .page.page-investors-s6.container.pt-media-3.pb-media-6    
+        .title-section.text-center.mb-media-3 
+            h2.text28.wow.fadeInUp 近十年业绩亮点
+        .row.g-lg-5 
+            .col-lg-6
+                figure.item 
+                    img(src="img/chart_1.svg", alt="营业额")
+            .col-lg-6
+                figure.item 
+                    img(src="img/chart_2.svg", alt="年度溢利")
+            .col-lg-6
+                figure.item 
+                    img(src="img/chart_3.svg", alt="派息比率与股息率")
+            .col-lg-6
+                figure.item 
+                    img(src="img/chart_4.svg", alt="ROE")
+
+
+    
+
+
+
+
+block bkfooter
+    script(src='js/vendor/swiper/swiper-bundle.min.js')
+    script.
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop:true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 600,
+                modifier: 1,
+            
+                slideShadows: true,
+            },
+            navigation: {              
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        
+
+     
+
+      
+       
+
+     

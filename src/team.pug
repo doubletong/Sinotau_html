@@ -1,81 +1,147 @@
 extends includes/layout.pug
 
 block title
-    | 领军人才
+    | 管理团队
     
 block bkheader
-   
+    
+    link(href='js/vendor/glightbox/css/glightbox.min.css', rel='stylesheet')
+    script(src='js/vendor/glightbox/js/glightbox.min.js')
 
 block content
-    .banner.banner-solution.wow.fadeInUp
-        img.bg(src="img/banners/about.jpg", alt="")       
-
-        .txt-container
-            .container                
-                .txt
-                    h1.wow.fadeInUp.text70 企业简介
-                    p.wow.fadeInUp 胜宇科技，拥有来自香港胜宇科技发展有限公司的研发、<br>生产、管理、营销等核心专家，<br>作为高级布线和连接解决方案领导者，<br>胜宇科技通过一系列一流的产品和创新的服务为生活带来活力。
-
-    .container
-        .sub_nav.wow.fadeInDown
-            ul.menus              
-                li
-                    a(href="about.html") 企业简介
-                li
-                    a(href="70years.html") 胜宇70年
-                li.active   
-                    a(href="team.html") 团队管理
-                li 
-                    a(href="honors.html") 资质荣誉
-                li 
-                    a(href="csr.html") 社会责任
-                li 
-                    a(href="brand.html") 胜宇品牌
-                        
-              
+    .banner.banner-team
+        img.bg(src="img/banners/team.jpg", alt="领导团队")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 领导团队
 
   
-    .page.page-team.pt-media-9
-        .container-1
-            .item 
-                .row.gx-0
-                    .col-lg-6 
-                        .pic
-                            img(src="img/team_1.jpg", alt="")
-                           
-                    .col-lg-6                         
-                        .txt 
-                            h3.title.text24 我们希望帮助员工成长，<br>从而改善他们的生活。                            
-                            p.des 我们给与员工学习的机会，培养他们的兴趣与专长，提供完善的员工培训计划，帮助他们迈向成功的职业生涯。
-            
-            .item 
-                .row.gx-0
-                    .col-lg-6 
-                        .pic
-                            img(src="img/team_2.jpg", alt="")
-                           
-                    .col-lg-6                         
-                        .txt 
-                            h3.title.text24 确保他们能受到尊重，<br>尊严可以得到维护。                  
-                            p.des 让员工有权拥有一个可以自由表达切身问题的环境，大家在快乐的氛围中，与企业同步成长。
+    .page.page-team-s1.container.pt-media-6
+        .title-section.mb-media-6 
+            h2.text28 董事会成员
 
-            .item 
-                .row.gx-0
-                    .col-lg-6 
-                        .pic
-                            img(src="img/team_3.jpg", alt="")
-                           
-                    .col-lg-6                         
+        .team_list 
+            .row.g-xl-5 
+                .col-md-4
+                    a.item.glightbox(href="team_detail.html", data-glightbox="width: 900; height: 476;") 
+                        .pic 
+                            img(src="img/temp/t1.jpg", alt="林刚")
                         .txt 
-                            h3.title.text24 以责任为信念，不仅仅对客户， <br>也是对自己。            
-                            p.des 秉承商业诚信的原则，在运营中，包括处理各类关系、实践、采购、生产、运营、销售等方面，应始终保持诚信可靠。
+                            .name.text20 林刚
+                            .post 创始人、主席兼行政总裁、总裁
+
+                .col-md-4
+                    a.item.iframe-lightbox-link(href="http://localhost:5001/team_detail.html",data-padding-bottom="56.25%", rel="lightbox") 
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈洪兵")
+                        .txt 
+                            .name.text20 陈洪兵
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈燕玲")
+                        .txt 
+                            .name.text20 陈燕玲
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t1.jpg", alt="林刚")
+                        .txt 
+                            .name.text20 林刚
+                            .post 创始人、主席兼行政总裁、总裁
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈洪兵")
+                        .txt 
+                            .name.text20 陈洪兵
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈燕玲")
+                        .txt 
+                            .name.text20 陈燕玲
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+    .page.page-team-s1.container.pt-media-6.pb-media-6
+        .title-section.mb-media-6 
+            h2.text28 高级管理团队
+
+        .team_list 
+            .row.g-xl-5 
+                .col-md-4
+                    a.item(href="#") 
+                        .pic 
+                            img(src="img/temp/t1.jpg", alt="林刚")
+                        .txt 
+                            .name.text20 林刚
+                            .post 创始人、主席兼行政总裁、总裁
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈洪兵")
+                        .txt 
+                            .name.text20 陈洪兵
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈燕玲")
+                        .txt 
+                            .name.text20 陈燕玲
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t1.jpg", alt="林刚")
+                        .txt 
+                            .name.text20 林刚
+                            .post 创始人、主席兼行政总裁、总裁
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈洪兵")
+                        .txt 
+                            .name.text20 陈洪兵
+                            .post 创始人、主席兼行政总裁、总裁
+
+
+                .col-md-4
+                    a.item(href="#")  
+                        .pic 
+                            img(src="img/temp/t2.jpg", alt="陈燕玲")
+                        .txt 
+                            .name.text20 陈燕玲
+                            .post 创始人、主席兼行政总裁、总裁
+
+                
+            
+            
+
 
 
 block bkfooter
 
 
     script.
-      
+        const lightbox = GLightbox();
         $(function () {
         
   

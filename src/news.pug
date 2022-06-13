@@ -6,59 +6,145 @@ block title
 block bkheader
     link(href='js/vendor/swiper/swiper-bundle.min.css', rel='stylesheet')
 block content
-    .banner.banner-solution.wow.fadeInUp
+    .banner.banner-news.wow.fadeInUp
         img.bg(src="img/banners/news.jpg", alt="")
-        .txt
+        .txt.pb-media-6
             .container            
-                h1.wow.fadeInUp.text56 新闻中心
+                h1.wow.fadeInUp.text60 集团新闻
 
-    .menus-wrap
-        ul.sub-menus 
-            li.active 
-                a(href="news.html")  展会活动
-            li
-                a(href="news2.html")  公司新闻
+    
+    section.page.page-news.container.pt-media-6
+        .title-section.text-center
+            h2.text40 最新资讯
+        
+        .swiper.newsSwipers              
+            .swiper-wrapper
+                .swiper-slide
+                    .row.g-0 
+                        .col-lg-6 
+                            img.bg(src="img/temp/ns01.jpg", alt="")
+                        .col-lg-6
+                            .txt-container                                
+                                .txt 
+                                    .date 2022.03.10
+                                    h3.text28 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+                                    p.mb-media-6 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员，3月9日，康哲药业控股有限公司（“康哲药业”）子公司深圳市康哲药业有限公司通过南山区慈善会捐赠价值...
+                                    a.more(href="#") 了解更多
 
-    .page.page-news.container.pt-media-6.pb-media-6
+                .swiper-slide
+                    .row.g-0 
+                        .col-lg-6 
+                            img.bg(src="img/temp/ns01.jpg", alt="")
+                        .col-lg-6
+                            .txt-container                                
+                                .txt 
+                                    .date 2022.03.10
+                                    h3.text28 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+                                    p.mb-media-6 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员，3月9日，康哲药业控股有限公司（“康哲药业”）子公司深圳市康哲药业有限公司通过南山区慈善会捐赠价值...
+                                    a.more(href="#") 了解更多
+
+                .swiper-slide
+                    .row.g-0 
+                        .col-lg-6 
+                            img.bg(src="img/temp/ns01.jpg", alt="")
+                        .col-lg-6
+                            .txt-container                                
+                                .txt 
+                                    .date 2022.03.10
+                                    h3.text28 康哲药业暖心捐赠 助力深圳市南山区疫情防控
+                                    p.mb-media-6 近期，深圳市新冠肺炎疫情多点散发，南山区疫情防控形势严峻。为支持深圳市南山区疫情防控工作、慰问一线抗疫人员，3月9日，康哲药业控股有限公司（“康哲药业”）子公司深圳市康哲药业有限公司通过南山区慈善会捐赠价值...
+                                    a.more(href="#") 了解更多
+                                                        
+                
+            //- .swiper-next
+            //-     i.iconfont.icon-next
+            //- .swiper-prev
+            //-     i.iconfont.icon-prev
+            .swiper-pagination     
+
+    section.page.page-news.container.pt-media-6.pb-media-6
+        .title-section 
+            h2.text40.text-center 全部新闻
+            .years-subscribe
+                .row 
+                    .col 
+                        a.subscribe(href="#")
+                            i.iconfont.icon-email 
+                            | 订阅
+                    .col 
+                        .years 
+                            select(name="year") 
+                                option(value="") 年份
+                                option(value="2018") 2018
+                                option(value="2017") 2017
+
         section.news-list
-            .row.row-cols-1.row-cols-md-2.g-4.g-lg-5
-                .col
-                    .item
-                        .pic 
-                            img(src="img/temp/ex01.jpg", alt="")
-                        .txt
-                            .date 2021-06-21
-                            h3
-                                a(href="news_detail.html") 奥创光子携西安光机所亮相中国国际高新技术成果交易会
+            .item 
+                .row.align-items-center
+                    .col-md-9.col-lg-10                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-md-3.col-lg-2                      
+                        .date 2021-06-21
 
-                .col
-                    .item
-                        .pic 
-                            img(src="img/temp/ex01.jpg", alt="")
-                        .txt
-                            .date 2021-06-21
-                            h3
-                                a(href="news_detail.html") 奥创光子携西安光机所亮相中国国际高新技术成果交易会
+            .item 
+                .row.align-items-center
+                    .col                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）子公司深圳康哲上榜“2021年度南山区纳税百强企业”
+                    .col-auto                       
+                        .date 2021-06-21
 
-                .col
-                    .item
-                        .pic 
-                            img(src="img/temp/ex01.jpg", alt="")
-                        .txt
-                            .date 2021-06-21
-                            h3
-                                a(href="news_detail.html") 奥创光子携西安光机所亮相中国国际高新技术成果交易会
+            
+            .item 
+                .row.align-items-center
+                    .col-md-9.col-lg-10                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-md-3.col-lg-2                      
+                        .date 2021-06-21
 
-                .col
-                    .item
-                        .pic 
-                            img(src="img/temp/ex01.jpg", alt="")
-                        .txt
-                            .date 2021-06-21
-                            h3
-                                a(href="news_detail.html") 奥创光子携西安光机所亮相中国国际高新技术成果交易会
-                               
-                 
+            .item 
+                .row.align-items-center
+                    .col                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-auto                       
+                        .date 2021-06-21
+
+            .item 
+                .row.align-items-center
+                    .col-md-9.col-lg-10                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-md-3.col-lg-2                      
+                        .date 2021-06-21
+
+            .item 
+                .row.align-items-center
+                    .col                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-auto                       
+                        .date 2021-06-21
+
+
+            .item 
+                .row.align-items-center
+                    .col-md-9.col-lg-10                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-md-3.col-lg-2                      
+                        .date 2021-06-21
+
+            .item 
+                .row.align-items-center
+                    .col                   
+                        .title
+                            a(href="news_detail.html") 康哲药业（867.HK）创新药甲氨蝶呤注射液(预充式)用于治疗RA的中国III期桥接试验完成首例受试者给药
+                    .col-auto                       
+                        .date 2021-06-21
+                     
 
         footer.quality-footer.wow.fadeInUp
             ul.pagination.text-center
@@ -81,23 +167,22 @@ block content
 block bkfooter
     script(src='js/vendor/swiper/swiper-bundle.min.js')
     script.
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
+        var swiper = new Swiper(".newsSwipers", {            
             spaceBetween: 0,
-            navigation: {              
-                    nextEl: '.swiper-next',
-                    prevEl: '.swiper-prev',
-                },
-           
+            loop:true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
         });
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: "auto",
-            spaceBetween: 0,
-            navigation: {              
-                    nextEl: '.swiper-next2',
-                    prevEl: '.swiper-prev2',
-                },
-           
-        });
+     
 
         
