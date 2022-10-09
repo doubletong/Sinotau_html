@@ -1,104 +1,88 @@
 extends includes/layout.pug
 
 block title
-    | 联系我们
-
+    | 联系方式
+    - var currentUrl = 'contact.html'
 block bkheader
    
 
 block content    
-    .banner.banner-blog.wow.fadeInUp
-        img.bg(src="img/banners/contact.jpg", alt="联系我们")
-        .txt
-            .container
-                h1.text56 联系我们
-                  
-
-    .page.page-contact.pt-media-6.pb-media-6       
-        section.s1.mb-media-5.container
-            .title-section-2.mb-media-2 
-                h2.text36 联系方式
-            .tab 
-                .tab-header 
-                    ul 
-                        li.active 杭州奥创光子技术有限公司
-                        li 杭州奥创光子技术有限公司2
-
-                .tab-body 
-                    .content.active 
-                        .row 
-                            .col-lg-5
-                                aside.contact 
-                                    dl.d1 
-                                        dt 公司信息
-                                        dd 
-                                            i.iconfont.icon-phone
-                                            | 0571-83680750w
-                                        dd 
-                                            i.iconfont.icon-email
-                                            | sale@ultronphotonics.com
-                                        dd 
-                                            i.iconfont.icon-home
-                                            | 浙江省杭州市萧山经济开发区鸿兴路117号
-                                    dl.d1 
-                                        dt 市场对接人员
-                                        dd 
-                                            i.iconfont.icon-phone
-                                            | 张先生
-                                        dd 
-                                            i.iconfont.icon-mobile
-                                            | 18652602609
-                                        dd 
-                                            i.iconfont.icon-email
-                                            | zc@ultronphotonics.com
+    .banner.banner-contact
+        img.bg(src="img/banners/contact.jpg", alt="联系方式")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 联系方式
 
 
-                            .col-lg-7
-                                #map-gaode0.map-gaode
+    section.page.page-contact-s1.container.pt-media-6    
+        
+        .title-section.text-center
+            h2.text40 联系方式
 
-                    .content 
-                        .row 
-                            .col-lg-5
-                                aside.contact 
-                                    dl.d1 
-                                        dt 公司信息
-                                        dd 
-                                            i.iconfont.icon-phone
-                                            | 0571-83680750
-                                        dd 
-                                            i.iconfont.icon-email
-                                            | sale@ultronphotonics.com
-                                        dd 
-                                            i.iconfont.icon-home
-                                            | 浙江省杭州市萧山经济开发区鸿兴路117号
-                                    dl.d1 
-                                        dt 市场对接人员
-                                        dd 
-                                            i.iconfont.icon-phone
-                                            | 张先生
-                                        dd 
-                                            i.iconfont.icon-mobile
-                                            | 18652602609
-                                        dd 
-                                            i.iconfont.icon-email
-                                            | zc@ultronphotonics.com
+        .mb-media-3
+            ul.forms
+                li
+                    a.active(href="contact.html") 业务合作
+                li 
+                    a(href="contact-1.html") 投资者关系
+                li 
+                    a(href="contact-2.html") 医学问询
+                li 
+                    a(href="contact-3.html") 不良事件报告
+                li 
+                    a(href="contact-4.html") 投诉举报
 
-
-                            .col-lg-7
-                                #map-gaode1.map-gaode
-                    
+                
                 
 
-        section.common-comment.pt-media-5.container
-            .title-section-2 
-                h2.text36 留言咨询
+        .form-body 
+            .row 
+                .col-lg-4 
+                    .left_col 
+                        p.text22 如果您有意愿与我们合作，请联系业务发展部或填写右方表格
+                        dl.mb-media-5 
+                            dt 业务发展部
+                            dd 电话：（86）755-82416868
+                            dd 邮箱：Contact@cms.net.cn
 
-            .des 
-                p 如果您有任何意见建议想对我们说，都可以通过下面的方式发送信息给我们。我们将非常乐意跟你畅快的交流！ 请留下您准确的联系方式，我们承诺对您的个人信息保密。
-                
-            img(src="img/temp/001.png", alt="")
-                               
-            
+                        p 
+                            a(href="cooperate.html") 了解更多战略合作详情 &gt;&gt;
+                            
+
+
+                .col-lg-8
+                    .form-container
+                        p 表单组件
+                                    
+
+    section.page.page-contact-s2.container.pt-media-6.pb-media-6   
+        .row 
+            .col-lg-4 
+                .left_col 
+                    .title-section
+                        h2.text30 康哲药业官方公众号
+                    img(src="img/qr_code.png", alt="康哲药业官方公众号")
+                    .text20 扫描，识别二维码，关注我们
+            .col-lg-8  
+                .right_col 
+                    .title-section
+                        h2.text30.text-center 主要联络地址
+                    .txt 
+                        .row 
+                            .col-md-6 
+                                dl 
+                                    dt.text28 香港
+                                    dd 电话：(852) 2369-7678
+                                    dd 传真：(852) 2389-1320
+                                    dd 地址： 香港北角英皇道510号港运大厦21楼2106室
+
+                            .col-md-6 
+                                dl 
+                                    dt.text28 深圳
+                                    dd 电话： (86) 755-82416868
+                                    dd 传真： (86) 755-82416622
+                                    dd 地址： 中国广东省深圳市南山区大新路198号马家龙创新大厦B座6-8楼
+                   
                     
 block bkfooter
    

@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3206367 */
-  src: url('iconfont.woff2?t=1645832837468') format('woff2'),
-       url('iconfont.woff?t=1645832837468') format('woff'),
-       url('iconfont.ttf?t=1645832837468') format('truetype');
+  font-family: "iconfont"; /* Project id 3623198 */
+  src: url('iconfont.woff2?t=1664159361861') format('woff2'),
+       url('iconfont.woff?t=1664159361861') format('woff'),
+       url('iconfont.ttf?t=1664159361861') format('truetype');
 }
 
 .iconfont {
@@ -13,27 +13,87 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-next:before {
-  content: "\e609";
+.icon-search:before {
+  content: "\e67d";
 }
 
-.icon-prev:before {
-  content: "\e884";
+.icon-arrow-down:before {
+  content: "\e7b2";
 }
 
-.icon-top:before {
+.icon-lishishuju:before {
   content: "\e69e";
 }
 
-.icon-sina:before {
-  content: "\e660";
+.icon-daorumoban:before {
+  content: "\e63e";
 }
 
-.icon-wechat-fill:before {
-  content: "\e883";
+.icon-erweima:before {
+  content: "\e602";
 }
 
-.icon-bilibili:before {
+.icon-shangwuquan:before {
+  content: "\e64b";
+}
+
+.icon-email:before {
+  content: "\e605";
+}
+
+.icon-xueli:before {
+  content: "\e604";
+}
+
+.icon-book:before {
+  content: "\e674";
+}
+
+.icon-mobile-phone:before {
+  content: "\e678";
+}
+
+.icon-jianzhu:before {
+  content: "\e643";
+}
+
+.icon-user:before {
+  content: "\e99e";
+}
+
+.icon-close:before {
+  content: "\e646";
+}
+
+.icon-rili:before {
+  content: "\e60d";
+}
+
+.icon-menu:before {
+  content: "\e63d";
+}
+
+.icon-shijian:before {
   content: "\e600";
+}
+
+.icon-resume-s:before {
+  content: "\e64a";
+}
+
+.icon-wechat:before {
+  content: "\e634";
+}
+
+.icon-bianji:before {
+  content: "\e601";
+}
+
+.icon-jianli:before {
+  content: "\e677";
+}
+
+.icon-upload:before {
+  content: "\e682";
 }
 

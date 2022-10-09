@@ -1,0 +1,47 @@
+extends includes/layout.pug
+
+block title
+    | 创新研究
+    - var currentUrl = 'research.html'
+block bkheader
+    
+
+block content
+    .member-header
+        .container
+            .row 
+                .col-auto
+                    img.avatar(src="img/avatar.png", alt="头像")
+                .col 
+                    .name.text20 doubletong 
+                    .des 1326537642
+
+    section.page.page-member
+        ul.nav 
+            li 
+                a.nav1(href="resume.html")  
+                    i.iconfont.icon-jianli
+                    | 简历管理
+                    
+            li 
+                a.nav1(href="applied.html")
+                    i.iconfont.icon-bianji
+                    | 我的申请
+
+        
+
+                
+
+block bkfooter
+
+
+    script.
+        
+        $(function () {
+            
+        
+        });
+      
+       
+
+     

@@ -1,0 +1,132 @@
+extends includes/layout.pug
+
+block title
+    | 联系方式
+    - var currentUrl = 'contact.html'
+block bkheader
+   
+
+block content    
+    .banner.banner-contact
+        img.bg(src="img/banners/contact.jpg", alt="联系方式")
+        .txt.pb-media-6
+            .container            
+                h1.wow.fadeInUp.text60 联系方式
+
+
+    section.page.page-contact-s1.container.pt-media-6    
+        
+        .title-section.text-center
+            h2.text40 联系方式
+
+        .mb-media-3
+            ul.forms
+                li
+                    a(href="contact.html") 业务合作
+                li 
+                    a(href="contact-1.html") 投资者关系
+                li 
+                    a(href="contact-2.html") 医学问询
+                li 
+                    a.active(href="contact-3.html") 不良事件报告
+                li 
+                    a(href="contact-4.html") 投诉举报
+
+                
+                
+
+        .form-body 
+            .row 
+                .col-lg-4 
+                    .left_col 
+                        p.text22.mb-media-3 如您发现我们的产品出现任何不良事件，请联系药物警戒部或填写右方表格
+                        dl.mb-media-3
+                            dt 药物警戒部
+                            dd 邮箱：safety@cms.net.cn
+
+                        p 根据相关法律法规规定，上市许可持有人（例如生产企业、经营企业等）有义务收集不良事件，并根据法律法规要求向国家监管机构告。请如实填写相关信息，我们承诺对您的个人数据等隐私信息进行严格保密
+
+
+                .col-lg-8
+                    .form-container
+                        p 表单组件
+                                    
+
+    section.page.page-contact-s2.container.pt-media-6.pb-media-6   
+        .row 
+            .col-lg-4 
+                .left_col 
+                    .title-section
+                        h2.text30 康哲药业官方公众号
+                    img(src="img/qr_code.png", alt="康哲药业官方公众号")
+                    .text20 扫描，识别二维码，关注我们
+            .col-lg-8  
+                .right_col 
+                    .title-section
+                        h2.text30.text-center 主要联络地址
+                    .txt 
+                        .row 
+                            .col-md-6 
+                                dl 
+                                    dt.text28 香港
+                                    dd 电话：(852) 2369-7678
+                                    dd 传真：(852) 2389-1320
+                                    dd 地址： 香港北角英皇道510号港运大厦21楼2106室
+
+                            .col-md-6 
+                                dl 
+                                    dt.text28 深圳
+                                    dd 电话： (86) 755-82416868
+                                    dd 传真： (86) 755-82416622
+                                    dd 地址： 中国广东省深圳市南山区大新路198号马家龙创新大厦B座6-8楼
+                   
+                    
+block bkfooter
+   
+    script(src='https://webapi.amap.com/maps?v=1.4.15&key=1cacf315d4678f9f550379b274a06d7a',type="text/javascript")   
+    script.
+        function loadMap(divId){
+            var map = new AMap.Map(divId, {
+                zoom:14.7,//级别
+                center: [109.013174,34.211564],//中心点坐标
+                viewMode:'3D', //使用3D视图
+                //- lang: "en" 
+            });
+
+            var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+
+            var marker = new AMap.Marker({
+                position: new AMap.LngLat(109.013174,34.211564),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+                title: '奥创光子'
+            });
+
+            marker.content = '奥创光子';
+            marker.on('click', markerClick);
+            marker.emit('click', {target: marker});
+            // 将创建的点标记添加到已有的地图实例：
+            map.add(marker);
+
+            function markerClick(e) {
+                infoWindow.setContent(e.target.content);
+                infoWindow.open(map, e.target.getPosition());
+            }
+        }
+        
+        loadMap('map-gaode0')
+
+        $(function () {       
+            $('.tab-header li').click(function(e){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+                $li = $(this).index();
+                // alert($li );
+                $('.tab-body .content').eq($li).siblings().removeClass('active');
+                $('.tab-body .content').eq($li).addClass('active');
+                loadMap('map-gaode' + $li)
+            })
+        
+        });
+
+
+
+

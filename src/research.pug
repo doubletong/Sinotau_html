@@ -2,524 +2,127 @@ extends includes/layout.pug
 
 block title
     | 创新研究
-
+    - var currentUrl = 'research.html'
 block bkheader
     
 
 block content
     .banner.banner-team
-        img.bg(src="img/banners/team.jpg", alt="创新研究")
+        img.bg(src="img/banners/research.jpg", alt="创新研究")
         .txt.pb-media-6
             .container            
                 h1.wow.fadeInUp.text60 创新研究
 
-    .wrapper 
-        .leftCol
-            form(action="#", method="get")
-                header.logo 
-                    a(href="/")
-                        img(src="img/logo_red.svg", alt="logo")
-
-                .searchBox 
-                
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 搜索内容：
-                            input.form-control(type="search", name="keyword")                    
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 项目类型：
-                            select.form-control(name="projectType")
-                                option(value="") 请选择项目类型
-                                option(value="1") 产业园区
-                                option(value="2") 总部办公
-                                option(value="3") 医疗疗养
-                                option(value="4") 教育建筑
-                                option(value="5") 高端公寓
-                                option(value="6") 酒店建筑
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 项目地区：
-                            select.form-control(name="projectType")
-                                option(value="") 请选择项目地区
-                                option(value="1") 上海
-                                option(value="2") 北京
-                                option(value="3") 深圳
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 单方造价：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minPrice")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxPrice")
-                                .col-auto 元/㎡
-                    
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 单方数量：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 户
-                    
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 项目年代：
-                            .row.gx-2
-                                .col 
-                                    select.form-control(name="projectType")
-                                        option(value="1996") 1996
-                                        option(value="1997") 1997
-                                        option(value="1998") 1998
-                                        option(value="1999") 1999
-                                        option(value="2000") 2000
-                                        option(value="2001") 2001
-                                        option(value="2002") 2002
-
-                                .col-auto 层高
-                                .col 
-                                    input.form-control(type="number", name="maxFu", value="3.4") 
-                                .col-auto m
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 项目层数：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 层
-
-                    .form-col 
-                        .form-group
-                            label.form-label(style="line-height:1.1") 标准层<br/>建筑面积：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto ㎡
-
-                    .form-col 
-                        .form-group
-                            label.form-label(style="line-height:1.1") 地上总<br/>建筑面积：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto ㎡
-
-                    .form-col 
-                        .form-group
-                            label.form-label 项目长度：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 米
-                           
-                    .form-col 
-                        .form-group
-                            label.form-label 项目宽度：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 米
-
-                    .form-col 
-                        .form-group
-                            label.form-label 总高度：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 层
-
-                    .form-col 
-                        .form-group
-                            label.form-label 建筑成本：
-                            .row.gx-2
-                                .col 
-                                    input.form-control(type="number", name="minFu")
-                                .col-auto -
-                                .col 
-                                    input.form-control(type="number", name="maxFu")
-                                .col-auto 元
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 设计方：
-                            select.form-control(name="projectType")
-                                option(value="") 请选择设计方
-                                option(value="1") 公司一
-                                option(value="2") 公司二
-                                option(value="3") 公司三
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 供应方：
-                            select.form-control(name="projectType")
-                                option(value="") 请选择供应方
-                                option(value="1") 公司一
-                                option(value="2") 公司二
-                                option(value="3") 公司三
-
-                    .form-col 
-                        .form-group
-                            label.form-label(for="") 建造方：
-                            select.form-control(name="projectType")
-                                option(value="") 请选择建造方
-                                option(value="1") 公司一
-                                option(value="2") 公司二
-                                option(value="3") 公司三
-                           
-                footer.actions
-                    .row 
-                        .col 
-                            button.btn.btn-default.btn-radius(type="reset") 清空选项
-                        .col
-                            button.btn.btn-primary.btn-radius(type="submit") 筛选项目
-
-        .mainContent
-            .orderby.row.mb-4
-                .col-auto 结果排序：
-                .col 
-                    ul 
-                        li.active 
-                            a(href="projects.html") 智能排序
-                        li 
-                            a(href="projects.html?sort=price") 建造成本
-                                i.iconfont.icon-sort-full
-                        li 
-                            a(href="projects.html?sort=area") 建筑面积
-                                i.iconfont.icon-sort-up-full
-                        li 
-                            a(href="projects.html?sort=speed") 施工速度
-                                i.iconfont.icon-sort-down-full
-
-                                
+    section.page.page-research-s1.container.pt-media-9.pb-media-7
+        .txt.text28.text-center 我们聚焦未被满足的临床需求，拓展与深化全球创新合作，快速推动临床开发和商业化进程，赋能科研技术转化，使患者受益
         
-            .projects
-                .row.row-cols-md-2.row-cols-xl-3.row-cols-xxl-4.g-4
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
 
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
+    section.page.page-about-s2.page-research-s2.pt-media-6.pb-media-6
+        .container
+            .row.align-items-center 
+                .col-lg-6
+                    .left_col 
+                        .title-section.text-center
+                            h2.text60 创新研究介绍
+                            h3.text60 R&amp;D Introduction
 
+                        p.text20 聚焦未被满足的临床需求，与全球生物科技公司/生物制药公司合作，共同开发全球首创（FIC）、同类最优*（BIC）创新产品。与合作方专注各自所长，我们负责中国或特定市场临床开发和商业化运营，提升创新药物研发效率。
+                        p  
+                            small 同类最优（BIC）：拥有创新制剂、创新给药方式等以达到同类治疗效果最佳、或最安全、或最具性价比的创新产品
+
+                .col-lg-6.text-center
+                    .right_col
+                      
+                        .item.mb-media-4 
+                            .value.text40 ~30款
+                            p.text20 创新产品                            
+                    
+                        .item.mb-media-4 
+                            .value.text40 &gt;10个
+                            p.text20 正在进行的临床研究，以注册性<br/>随机对照试验（RCT）为主
+
+                
+                        .item.mb-media-4 
+                            .value.text40 3个
+                            p.text20 中国新药上市申请<br/>获受理
+
+                    
+
+                        p 
+                            small *相关数据均截至2021年12月31日
+                
+    section.page.page-about-s3.page-research-s3.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6.order-lg-last 
+                    .right_col
+                        .title-section
+                            h2.text60 研发模式
+                            h3.text60 R&amp;D Model
+
+                        .list 
+                            .item 
+                                .num.text40 01
+                                h3.title.text20 股权投资海外Biotech及与全球Biopharma战略合作
+                                p
+                                    small 布局海外处于临床中后期或已获批上市的创新产品，我们负责产品在中国及其它授权国家/地区的临床开发、注册上市及商业化，提升患者对创新药的可及性
+                                p 
+                                    a.more(href="partners.html")
+                                        small 了解更多 &gt;&gt;
                             
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-
-
-
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
+                            .item 
+                                .num.text40 02
+                                h3.title.text20 产业化投资中国Biotech
+                                p
+                                    small 对拥有创新技术平台的中国Biotech进行股权投资，Biotech负责新药发现、临床前研究，我们负责产品在中国及其它授权国家/地区的临床开发、注册上市及商业化，提升中国创新药研发效率，加速本土创新成果落地
+                                p 
+                                    a.more(href="partners-2.html")
+                                        small 了解更多 &gt;&gt;
                             
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
+                            .item     
+                                .num.text40 03
+                                h3.title.text20 自主定制开发创新产品
+                                p
+                                    small 针对自身优势科室，围绕新靶点、热门靶点，委托CRO提供产品临床前研究服务，我们自主推进创新药全生命周期管控，并拥有产品的全球权利
+                                p 
+                                    a.more(href="partners-3.html")
+                                        small 了解更多 &gt;&gt;
+                        
 
-                            .more 查看详情
+                .col-lg-6 
+                    .pic 
+                        img(src="img/re_01.jpg", alt="研发模式")
 
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
+    section.page.page-about-s3.page-about-s4.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6
+                    .right_col
+                        .title-section.mb-media-6 
+                            h2.text60 临床开发
+                            h3.text60 Development
 
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
+                        .txt
+                            p.text20 拥有医学、临床、药物警戒和质量保障四位一体的临床开发体系和专业团队，确保医学策略科学合理、临床运营高效合规、产品安全风险可控
+                            p.text20 拥有被验证的临床快速入组能力：<br/>替瑞奇珠单抗注射液2.5个月（含春节）完成220例入组0.09% 环孢素滴眼液4个月（含春节）完成384例入组
+                .col-lg-6 
+                    .pic 
+                        img(src="img/re_02.jpg", alt="临床开发")
 
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
+    section.page.page-about-s3.page-about-s5.pt-media-6.pb-media-6     
+        .container 
+            .row.align-items-center 
+                .col-lg-6.order-lg-last 
+                    .right_col.pb-media-9 
+                        .title-section.mb-media-6 
+                            h2.text60 创新管线
+                            h3.text60 Pipeline
 
-                            .more 查看详情
+                        .txt.text20 我们专注心脑血管、中枢神经、消化、眼科、皮肤、儿科等疾病范畴，已建立差异化的创新管线 
 
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-
-
-
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
-
-
-                    .col
-                        a.item(href="project-detail.html") 
-                            .pic
-                                img(src="img/temp/p001.jpg", alt="松江养老社区")
-                            .des 
-                                .row.mb-2 
-                                    .col 
-                                        h4 松江养老社区
-                                    .col-auto
-                                        .area 4500 元/㎡
-                                .row 
-                                    .col-6 
-                                        .fd 建筑面积：162757平方米
-                                    .col-6
-                                        .fd 单元数量：28个单元
-
-                               
-                                    .col-6 
-                                        .fd 建筑层数：30层
-                                    .col-6
-                                        .fd 建筑层高：2.5米
-
-                            
-                                    .col-6 
-                                        .fd 建造成本：10.6亿
-                                    .col-6
-                                        .fd 施工周期：2年
-                                    
-                                    .col-6
-                                        .fd 项目年代：2021（1990）
-
-                            .more 查看详情
+                .col-lg-6 
+                    .pic 
+                        img(src="img/re_03.jpg", alt="创新管线")    
                   
 
                 

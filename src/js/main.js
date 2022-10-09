@@ -99,29 +99,27 @@ $(document).ready(function() {
         }
     });
 
-    // btn.on('click', function(e) {
-    //     e.preventDefault();
-    //     $('html, body').animate({ scrollTop: 0 }, '300');
-    // });
 
-    $('#toolbar .box .box-header').click(function(e){
-        $(this).closest('.box').toggleClass('open');
+
+    $('.menu-service .qr').click(function(e){
+        $('#qrcode').closest('.overly').fadeIn();
+    });
+
+    $('.menu-service .nav').click(function(e){
+        $('#menus').slideToggle();
+        if( $('.menu-service .nav>i').hasClass('icon-close')){
+            $('.menu-service .nav>i').removeClass('icon-close').addClass('icon-menu');
+        }else{
+            $('.menu-service .nav>i').addClass('icon-close').removeClass('icon-menu');
+        }
+        
+    });
+
+    $('.btn-close').click(function(e){
+        e.preventDefault();
+        $(this).closest('.overly').fadeOut();
     });
 
 
 
 });
-
-// Check if API exists
-if (document && document.fonts) {
-    // Do not block page loading
-    setTimeout(function() {
-        document.fonts.load('16px "YouSheBiaoTiHei"').then(() => {
-            // Make font using elements visible
-            document.documentElement.classList.add('font-loaded');
-        })
-    }, 0)
-} else {
-    // Fallback if API does not exist 
-    document.documentElement.classList.add('font-loaded');
-}

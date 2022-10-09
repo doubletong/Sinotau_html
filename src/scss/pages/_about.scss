@@ -17,6 +17,7 @@
         h3{
             color: rgba(242,150,0, .4);
             line-height: 1;
+            
         }
     }
     .left_col{
@@ -24,7 +25,7 @@
         margin: 0 auto;
         border-top: 5px $color-primary solid;
         padding-top: 2rem;
-      
+        text-align: justify;
         @include mq(lg){
             padding-top: 0;
             padding-left: 2rem;
@@ -404,7 +405,7 @@
             @include mq(xl){
                 padding: 4rem 4rem 4rem 7rem;
                 width: 726px;
-                height: 335px;
+               
             }
             @include mq(xxl){
                 padding: 4rem 4rem 4rem 9rem;
@@ -421,7 +422,7 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
-            .text40{
+            .text50{
                 position: relative;
                 z-index: 200;
             }
@@ -459,6 +460,7 @@
                     padding-right: 5rem;
                 }
                 h3{
+                    font-weight: normal;
                     margin-bottom: 1rem;
                     @include mq(xxl){
                         margin-bottom: 2rem;

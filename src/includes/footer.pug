@@ -1,102 +1,39 @@
-footer#pageFooter.site-footer
-  
-    .container 
- 
-        .row.menus.justify-content-between
-            .col-auto 
-                h3 关于康哲
-                ul 
-                    li 
-                        a(href="#") 集团介绍
-                    li 
-                        a(href="#") 管理团队
-                    li 
-                        a(href="#") 大事记
-                    li 
-                        a(href="#") 集团荣誉
-                    li 
-                        a(href="#") 社会责任
-                
-            .col-auto  
-                h3 创新研究
-                ul 
-                    li 
-                        a(href="#") 研发模式
-                    li 
-                        a(href="#") 创新管线
-                   
-            
-            .col-auto  
-                h3 康哲业务
-                ul 
-                    li 
-                        a(href="#") 药品业务
-                    li 
-                        a(href="#") 皮肤医美
-                    li 
-                        a(href="#") 大健康
-            .col-auto  
-                h3 新闻中心
-                ul 
-                    li 
-                        a(href="#") 集团新闻
-                    li 
-                        a(href="#") 最新资讯
-                    li 
-                        a(href="#") 全部新闻
-                    li 
-                        a(href="#") 合作伙伴相关新闻
-                    
-            
-            .col-auto  
-                h3 投资者关系
-                ul 
-                    li 
-                        a(href="#") 股票信息
-                    li 
-                        a(href="#") 财务情况
-                    li 
-                        a(href="#") 信息披露
-                    li 
-                        a(href="#") 集团管治
-                    li 
-                        a(href="#") 投资者问答
-     
+.menu-service 
+    .item.qr
+        i.iconfont.icon-erweima
 
-            .col-auto  
-                h3 联系我们
-                ul 
-                    li 
-                        a(href="#") 加入我们
-                    li 
-                        a(href="#") 联系方式
-                          
-
-      
-    .copyright
-        .logo 
-            img(src="img/logo_bot.svg", alt="")
-        .container 
-            .row 
-                .col-lg-6 
-                    ul.bot_nav 
-                        li 
-                            a(href="#") 网站地图
-                        li 
-                            a(href="#") 隐私声明
-                        li 
-                            a(href="#") 使用条款
-                        li 
-                            a(href="#") 医药代表备案公示
+    .item.nav
+        i.iconfont.icon-menu
+        #menus.menus 
+            ul 
+                li 
+                    a(href="#") 
+                        i.iconfont.icon-jianli
+                        | 微简历
+                li 
+                    a(href="#")
+                        i.iconfont.icon-daorumoban
+                        | 导入简历
+                li 
+                    a(href="member.html") 
+                        i.iconfont.icon-user
+                        | 个人中心
+                //- li 
+                //-     a(href="#") 
+                //-         i.iconfont.icon-lishishuju
+                //-         | 历史操作
 
 
-                .col-lg-6 
-                    .rights All rights reserved by CMS Group  2001-2022 ERP of CMS Group
 
-    .container       
-        .bot.text-center 互联网药品信息服务资格证书编号：（粤）-非经营性-2021-0109| 粤ICP备18157737号| 粤公网安备 44030502003605号    
+#qrcode.overly
+    .card
+        figure
+            .qr
+                img(src="img/qrcode.png", alt="二维码")
+            figcaption 长按关注礼来招聘
 
-a#toTop.toTop(href="#")
-    i.iconfont.icon-top
+        .btn-close
+            i.iconfont.icon-close
+        
 
 

@@ -1,0 +1,156 @@
+extends includes/layout.pug
+
+block title
+    | 联系方式
+    - var currentUrl = 'contact.html'
+block bkheader
+   
+
+block content    
+    
+
+    section.page.page-apply 
+        .job-detail 
+            .group 
+                h3.title 基本信息
+
+                .list 
+                    .item 
+                        .icon
+                            .iconfont.icon-user
+                        .label  姓名
+                        .content 陈进
+                    .item 
+                        .icon
+                            .iconfont.icon-mobile-phone
+                        .label  手机号码
+                        .content 18818881888
+                    .item 
+                        .icon
+                            .iconfont.icon-email
+                        .label  电子邮箱
+                        .content 2288990987@qq.com
+
+            .group 
+                h3.title 教育经历
+
+                .list 
+                    .item 
+                        .icon
+                            .iconfont.icon-xueli
+                        .label  最高学历
+                        .content 陈进
+                    .item 
+                        .icon
+                            .iconfont.icon-jianzhu
+                        .label  学校名称
+                        .content 18818881888
+                    .item 
+                        .icon
+                            .iconfont.icon-book
+                        .label  专业名称
+                        .content 2288990987@qq.com
+
+            .group 
+                h3.title 工作经历
+
+                .list 
+                    .item 
+                        .icon
+                            .iconfont.icon-jianzhu
+                        .label  公司名称
+                        .content 陈进
+                    .item 
+                        .icon
+                            .iconfont.icon-shangwuquan
+                        .label  职位
+                        .content 18818881888
+                    .item 
+                        .icon
+                            .iconfont.icon-shijian
+                        .label  起始日期
+                        .content 2288990987@qq.com
+                    .item 
+                        .icon
+                            .iconfont.icon-shijian
+                        .label  结束日期
+                        .content 2288990987@qq.com
+
+            .group 
+                h3.title 附件
+
+                .list 
+                    .item 
+                        .icon
+                            .iconfont.icon-user
+                        .label  附件
+                        .content  
+                            a(href="#") 附件名称
+                   
+            .form-control 
+                <label>
+                    <input type="checkbox" id="acf-field_633abe874a7af" name="acf[field_633abe874a7af]" value="1" class="" autocomplete="off" checked="checked">
+                    <span class="message">我同意<a href="#">个人信息保护声明</a></span>
+                </label>
+
+            <div class="acf-form-submit">
+                .row 
+                    .col 
+                        <a href="/member/edit-profile/" class="btn btn-primary-outline btn-radius btn-block">返回编辑</a>
+                
+                    .col
+                        <input type="submit" class="btn btn-primary btn-radius btn-block" value="申请职位">                   
+                
+            </div>
+        
+                   
+                    
+block bkfooter
+   
+    script(src='https://webapi.amap.com/maps?v=1.4.15&key=1cacf315d4678f9f550379b274a06d7a',type="text/javascript")   
+    script.
+        function loadMap(divId){
+            var map = new AMap.Map(divId, {
+                zoom:14.7,//级别
+                center: [109.013174,34.211564],//中心点坐标
+                viewMode:'3D', //使用3D视图
+                //- lang: "en" 
+            });
+
+            var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+
+            var marker = new AMap.Marker({
+                position: new AMap.LngLat(109.013174,34.211564),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+                title: '奥创光子'
+            });
+
+            marker.content = '奥创光子';
+            marker.on('click', markerClick);
+            marker.emit('click', {target: marker});
+            // 将创建的点标记添加到已有的地图实例：
+            map.add(marker);
+
+            function markerClick(e) {
+                infoWindow.setContent(e.target.content);
+                infoWindow.open(map, e.target.getPosition());
+            }
+        }
+        
+        loadMap('map-gaode0')
+
+        $(function () {       
+            $('.tab-header li').click(function(e){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+                $li = $(this).index();
+                // alert($li );
+                $('.tab-body .content').eq($li).siblings().removeClass('active');
+                $('.tab-body .content').eq($li).addClass('active');
+                loadMap('map-gaode' + $li)
+            })
+        
+        });
+
+
+
+
